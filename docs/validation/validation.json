@@ -1,0 +1,53 @@
+{
+  "created_date": "2026-10-13",
+  "python": "3.13.5",
+  "unit_tests": {
+    "run": 69,
+    "passed": 69,
+    "failed": 0,
+    "network": "mocked / synthetic fixtures"
+  },
+  "javascript_syntax": "node --check passed",
+  "workflow_yaml": "parsed locally; GitHub execution not performed",
+  "seed_records": 266,
+  "seed_core": 53,
+  "seed_strong_identity_conflicts": 0,
+  "public_initial_records": 0,
+  "private_preview_records": 266,
+  "browser": {
+    "browser": "Chromium / in-memory render, resource navigation blocked by environment policy",
+    "preview_records": 266,
+    "preview_core": 53,
+    "checks": [
+      "initial rendering",
+      "DG + core filter = 7",
+      "title search",
+      "detail dialog",
+      "RIS content generated",
+      "session favorites",
+      "390px no horizontal overflow",
+      "public privacy default empty",
+      "not-run state shown"
+    ],
+    "javascript_errors": [],
+    "not_verified": [
+      "file:// navigation",
+      "localhost navigation",
+      "actual browser download",
+      "live API",
+      "GitHub deployment"
+    ]
+  },
+  "live_api_test": {
+    "attempted": "arXiv id_list request",
+    "result": "network DNS resolution failed in this runtime",
+    "not_tested": [
+      "live arXiv pagination",
+      "authenticated Zotero API",
+      "model generation API",
+      "GitHub Actions execution",
+      "GitHub Pages deployment"
+    ]
+  },
+  "privacy": "Initial index excludes original notes, collection names, export paths, attachments and raw Zotero item keys; a public repository still exposes submitted bibliographic metadata."
+}
