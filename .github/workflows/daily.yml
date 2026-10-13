@@ -1,0 +1,117 @@
+name: Daily papers and deploy
+on:
+  schedule:
+    - cron: '35 8 * * *'
+      timezone: America/Los_Angeles
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: 'Fetch papers before deployment'
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - 'atlas/**'
+      - 'scripts/**'
+      - 'web/**'
+      - 'data/**'
+      - 'config.json'
+      - '.github/workflows/daily.yml'
+permissions:
+  contents: read
+concurrency:
+  group: 3d-seg-state-and-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+      pages: read
+    outputs:
+      pages_ready: ${{ steps.pages.outcome == 'success' }}
+      update_outcome: ${{ steps.update.outcome }}
+      llm_outcome: ${{ steps.llm.outcome }}
+      zotero_outcome: ${{ steps.zotero.outcome }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Verify pipeline
+        run: python -m unittest discover -s tests -v
+      - name: Read selected Zotero collection (disabled by default)
+        id: zotero
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+          ZOTERO_LIBRARY_ID: ${{ secrets.ZOTERO_LIBRARY_ID }}
+          ZOTERO_COLLECTION_KEY: ${{ secrets.ZOTERO_COLLECTION_KEY }}
+        run: python scripts/sync_zotero.py
+      - name: Discover papers and check known revisions
+        id: update
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        run: python scripts/update.py
+      - name: Prepare optional abstract-only AI drafts
+        id: llm
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python scripts/enrich.py
+      - name: Check GitHub Pages configuration
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+      - name: Build using the public field allowlist
+        env:
+          ATLAS_SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python scripts/build.py
+      - name: Preserve data and source cursors
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/seed.json data/store.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: update 3D paper discovery state'
+            git push origin HEAD:main
+          fi
+      - name: Write run summary
+        if: always()
+        run: |
+          python scripts/status.py >> "$GITHUB_STEP_SUMMARY"
+          echo 'If deployment is not configured: Settings → Pages → Source → GitHub Actions.' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    if: needs.build.outputs.pages_ready == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4
+  report-failure:
+    needs: [build, deploy]
+    if: always() && (needs.build.outputs.update_outcome == 'failure' || needs.build.outputs.llm_outcome == 'failure' || needs.build.outputs.zotero_outcome == 'failure')
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - run: |
+          echo 'A source or optional integration failed. Existing data were retained. Check source status and rerun.'
+          exit 1

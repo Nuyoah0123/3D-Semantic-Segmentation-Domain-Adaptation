@@ -1,0 +1,23 @@
+name: Tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ['atlas/**', 'scripts/**', 'tests/**', 'web/**', 'config.json']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/build.py
