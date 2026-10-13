@@ -1,0 +1,62 @@
+{
+  "name": "3D Segmentation Observatory",
+  "name_zh": "三维分割 · 每日文献观察站",
+  "site_url": "",
+  "display_timezone": "America/Los_Angeles",
+  "user_agent": "3D-Seg-Daily/1.0 (set repository URL here after deployment)",
+  "publication": {
+    "publish_imported_references": false,
+    "publish_auto_candidates": true,
+    "publish_abstracts": false,
+    "publish_ai_drafts": false,
+    "include_related": true
+  },
+  "arxiv": {
+    "initial_lookback_days": 30,
+    "overlap_days": 7,
+    "max_window_days": 30,
+    "page_size": 50,
+    "max_pages_per_query": 12,
+    "request_interval_seconds": 3.2,
+    "timeout_seconds": 40,
+    "attempts": 3,
+    "revision_batch_size": 40,
+    "queries": [
+      {
+        "id": "domain-adaptation",
+        "query": "(all:\"3D\" OR all:\"point cloud\" OR all:LiDAR OR all:\"three dimensional\" OR all:\"RGB-D\") AND (all:segmentation OR all:\"scene understanding\") AND (all:\"domain adaptation\" OR all:\"domain adaptive\" OR all:\"domain shift\" OR all:\"cross domain\")",
+        "enabled": true
+      },
+      {
+        "id": "domain-generalization",
+        "query": "(all:\"3D\" OR all:\"point cloud\" OR all:LiDAR OR all:\"three dimensional\" OR all:\"RGB-D\") AND (all:segmentation OR all:\"scene understanding\") AND (all:\"domain generalization\" OR all:\"domain generalisation\" OR all:\"unseen domains\" OR all:\"out of distribution\")",
+        "enabled": true
+      },
+      {
+        "id": "open-vocabulary",
+        "query": "(all:\"3D\" OR all:\"point cloud\" OR all:LiDAR OR all:\"three dimensional\" OR all:\"RGB-D\") AND (all:segmentation OR all:\"scene understanding\") AND (all:\"open vocabulary\" OR all:\"open-vocabulary\" OR all:\"open world\" OR all:\"open set\" OR all:\"language driven\")",
+        "enabled": true
+      },
+      {
+        "id": "test-time-adaptation",
+        "query": "(all:\"3D\" OR all:\"point cloud\" OR all:LiDAR OR all:\"three dimensional\" OR all:\"RGB-D\") AND (all:segmentation OR all:\"scene understanding\") AND (all:\"test time adaptation\" OR all:\"test-time adaptation\" OR all:\"continual test time\")",
+        "enabled": true
+      }
+    ]
+  },
+  "llm": {
+    "enabled": false,
+    "max_per_run": 5,
+    "max_per_utc_day": 10,
+    "max_abstract_chars": 12000,
+    "max_output_tokens": 900
+  },
+  "zotero": {
+    "enabled": false,
+    "library_type": "users",
+    "library_id": "",
+    "collection_key": "",
+    "max_pages": 20,
+    "read_only": true
+  }
+}
