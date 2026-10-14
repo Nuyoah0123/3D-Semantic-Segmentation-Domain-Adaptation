@@ -29,7 +29,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-13T20:47:44Z",
+      "last_seen": "2026-10-14T19:38:04Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -87,7 +87,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-13T20:47:44Z",
+      "last_seen": "2026-10-14T19:38:04Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -571,7 +571,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-13T20:47:44Z",
+      "last_seen": "2026-10-14T19:38:04Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -826,7 +826,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-13T20:47:44Z",
+      "last_seen": "2026-10-14T19:38:04Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3926,28 +3926,2301 @@
       "full_text_read": false,
       "warnings": [],
       "versions": []
+    },
+    "arxiv:2610.16177": {
+      "id": "arxiv:2610.16177",
+      "title": "DIGS: Distribution-Informed Gaussian Splatting for Training-Free Open-Vocabulary 3D Segmentation",
+      "authors": [
+        "Zhifan Zeng",
+        "Wenbo Xiao",
+        "Arcot Sowmya",
+        "Changming Sun"
+      ],
+      "abstract": "Open-vocabulary 3D Gaussian segmentation typically binds semantic features to the per-Gaussian state via per-scene gradient training (1-4 h) or the more recent closed-form distillation. Both commit each primitive to a single feature; therefore, boundary Gaussians spanning multiple 2D instances are forced into a hard decision that degrades retrieval accuracy and yields unstable mask boundaries at render time. We present DIGS, a training-free framework with two stages, class-agnostic mapping and multi-modal encoding, that decouples instance discovery from linguistic naming. At the Gaussian level, our distribution-informed representation maintains an explicit top-$M$ label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions at boundary primitives allows a late-argmax renderer to recover clean instance boundaries. A bidirectional state machine aggregates these distributions into a persistent class-agnostic instance ontology. The instance-level encoding stage then fuses the CLIP visual embedding of each instance's isolated 3D footprint with the CLIP-text embedding of an LLM-generated attribute description, disambiguating visually similar instances. On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0-3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms. It reaches 71.95% mean mIoU on LERF-OVS, outperforming both the training-free SFS and training-based LaGa baselines. DIGS also achieves the highest mean mIoU on LERF-Mask and 3D-OVS and surpasses Gaga and ObjectGS on Replica under their respective evaluation protocols. Code is available at https://github.com/ZephyrZos/DIGS.",
+      "published": "2026-10-12T04:52:38Z",
+      "updated": "2026-10-12T04:52:38Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.16177"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.16177",
+      "pdf": "https://arxiv.org/pdf/2610.16177",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "cross-modal",
+          "distillation",
+          "vision-language"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "DIGS: Distribution-Informed Gaussian Splatting for Training-Free Open-Vocabulary 3D Segmentation\nOpen-vocabulary 3D Gaussian segmentation typically binds semantic features to the p"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0254": {
+      "id": "W0254",
+      "title": "Part2Object: Hierarchical Unsupervised 3D Instance Segmentation",
+      "authors": [
+        "Cheng Shi",
+        "Yulin Zhang",
+        "Bin Yang",
+        "Jiajin Tang",
+        "Yuexin Ma",
+        "Sibei Yang"
+      ],
+      "abstract": "Unsupervised 3D instance segmentation aims to segment objects from a 3D point cloud without any annotations. Existing methods face the challenge of either too loose or too tight clustering, leading to under-segmentation or over-segmentation. To address this issue, we propose Part2Object, hierarchical clustering with object guidance. Part2Object employs multi-layer clustering from points to object parts and objects, allowing objects to manifest at any layer. Additionally, it extracts and utilizes 3D objectness priors from temporally consecutive 2D RGB frames to guide the clustering process. Moreover, we propose Hi-Mask3D to support hierarchical 3D object part and instance segmentation. By training Hi-Mask3D on the objects and object parts extracted from Part2Object, we achieve consistent and superior performance compared to state-of-the-art models in various settings, including unsupervised instance segmentation, data-efficient fine-tuning, and cross-dataset generalization. Code is release at https://github.com/ChengShiest/Part2Object",
+      "published": "2024-07-14T05:18:15Z",
+      "updated": "2024-07-14T05:18:15Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2407.10084"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.10084"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.10084",
+      "pdf": "https://arxiv.org/pdf/2407.10084",
+      "venue": "arXiv",
+      "comment": "Accept to ECCV2024",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0233": {
+      "id": "W0233",
+      "title": "UnO: Unsupervised Occupancy Fields for Perception and Forecasting",
+      "authors": [
+        "Ben Agro",
+        "Quinlan Sykora",
+        "Sergio Casas",
+        "Thomas Gilles",
+        "Raquel Urtasun"
+      ],
+      "abstract": "Perceiving the world and forecasting its future state is a critical task for self-driving. Supervised approaches leverage annotated object labels to learn a model of the world -- traditionally with object detections and trajectory predictions, or temporal bird's-eye-view (BEV) occupancy fields. However, these annotations are expensive and typically limited to a set of predefined categories that do not cover everything we might encounter on the road. Instead, we learn to perceive and forecast a continuous 4D (spatio-temporal) occupancy field with self-supervision from LiDAR data. This unsupervised world model can be easily and effectively transferred to downstream tasks. We tackle point cloud forecasting by adding a lightweight learned renderer and achieve state-of-the-art performance in Argoverse 2, nuScenes, and KITTI. To further showcase its transferability, we fine-tune our model for BEV semantic occupancy forecasting and show that it outperforms the fully supervised state-of-the-art, especially when labeled data is scarce. Finally, when compared to prior state-of-the-art on spatio-temporal geometric occupancy prediction, our 4D world model achieves a much higher recall of objects from classes relevant to self-driving.",
+      "published": "2024-06-12T23:22:23Z",
+      "updated": "2024-06-12T23:22:23Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2406.08691"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2406.08691",
+      "pdf": "https://arxiv.org/pdf/2406.08691",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0025": {
+      "id": "W0025",
+      "title": "STiL: Semi-supervised Tabular-Image Learning for Comprehensive Task-Relevant Information Exploration in Multimodal Classification",
+      "authors": [
+        "Siyi Du",
+        "Xinzhe Luo",
+        "Declan P. O'Regan",
+        "Chen Qin"
+      ],
+      "abstract": "Multimodal image-tabular learning is gaining attention, yet it faces challenges due to limited labeled data. While earlier work has applied self-supervised learning (SSL) to unlabeled data, its task-agnostic nature often results in learning suboptimal features for downstream tasks. Semi-supervised learning (SemiSL), which combines labeled and unlabeled data, offers a promising solution. However, existing multimodal SemiSL methods typically focus on unimodal or modality-shared features, ignoring valuable task-relevant modality-specific information, leading to a Modality Information Gap. In this paper, we propose STiL, a novel SemiSL tabular-image framework that addresses this gap by comprehensively exploring task-relevant information. STiL features a new disentangled contrastive consistency module to learn cross-modal invariant representations of shared information while retaining modality-specific information via disentanglement. We also propose a novel consensus-guided pseudo-labeling strategy to generate reliable pseudo-labels based on classifier consensus, along with a new prototype-guided label smoothing technique to refine pseudo-label quality with prototype embeddings, thereby enhancing task-relevant information learning in unlabeled data. Experiments on natural and medical image datasets show that STiL outperforms the state-of-the-art supervised/SSL/SemiSL image/multimodal approaches. Our code is available at https://github.com/siyi-wind/STiL.",
+      "published": "2025-03-08T16:51:45Z",
+      "updated": "2025-03-15T15:31:28Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2503.06277"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.06277"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.06277",
+      "pdf": "https://arxiv.org/pdf/2503.06277",
+      "venue": "arXiv",
+      "comment": "16 pages (including 5 pages of supplementary materials), accepted by CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0037": {
+      "id": "W0037",
+      "title": "OT Score: An OT based Confidence Score for Prototype-Assisted Source Free Unsupervised Domain Adaptation",
+      "authors": [
+        "Yiming Zhang",
+        "Sitong Liu",
+        "Alex Cloninger"
+      ],
+      "abstract": "We address the computational and theoretical limitations of current distributional alignment methods for source-free unsupervised domain adaptation (SFUDA) using source class-mean features. In particular, we focus on estimating classification performance and confidence in the absence of target labels. Current theoretical frameworks for these methods often yield computationally intractable quantities and fail to adequately reflect the properties of the alignment algorithms employed. To overcome these challenges, we introduce the Optimal Transport (OT) score, a confidence metric derived from a novel theoretical analysis that exploits the flexibility of decision boundaries induced by Semi-Discrete Optimal Transport alignment. The proposed OT score is intuitively interpretable and theoretically rigorous. It provides principled uncertainty estimates for any given set of target pseudo-labels. Experimental results demonstrate that OT score outperforms existing confidence scores. Moreover, it improves SFUDA performance through training-time reweighting and provides a reliable, label-free proxy for model performance.",
+      "published": "2025-05-16T20:09:05Z",
+      "updated": "2026-04-29T00:27:35Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2505.11669"
+        ],
+        "doi": [
+          "10.48550/arXiv.2505.11669"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.11669",
+      "pdf": "https://arxiv.org/pdf/2505.11669",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Confidence Score for Prototype-Assisted Source Free Unsupervised Domain Adaptation\nWe address the computational and theoretical limitations of current distributional alignment method"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0172": {
+      "id": "W0172",
+      "title": "APCoTTA: Continual Test-Time Adaptation for Semantic Segmentation of Airborne LiDAR Point Clouds",
+      "authors": [
+        "Yuan Gao",
+        "Shaobo Xia",
+        "Sheng Nie",
+        "Cheng Wang",
+        "Xiaohuan Xi",
+        "Bisheng Yang"
+      ],
+      "abstract": "Airborne laser scanning (ALS) point cloud semantic segmentation is a fundamental task for large-scale 3D scene understanding. Fixed models deployed in real-world scenarios often suffer from performance degradation due to continuous domain shifts caused by environmental and sensor changes. Continuous Test-Time Adaptation (CTTA) enables adaptation to evolving unlabeled domains, but its application to ALS point clouds remains underexplored, hindered by the lack of benchmarks and the risks of catastrophic forgetting and error accumulation. To address these challenges, we propose APCoTTA (ALS Point cloud Continuous Test-Time Adaptation), a novel CTTA framework tailored for ALS point cloud semantic segmentation. APCoTTA consists of three key components. First, we adapt a gradient-driven layer selection mechanism for ALS point clouds, selectively updating low-confidence layers while freezing stable ones to preserve source knowledge and mitigate catastrophic forgetting. Second, an entropy-based consistency loss discards unreliable samples and enforces consistency regularization solely on reliable ones, effectively reducing error accumulation and improving adaptation stability. Third, a random parameter interpolation mechanism stochastically blends adapted parameters with source model parameters, further balancing target adaptation and source knowledge retention. Finally, we construct two benchmarks, ISPRSC and H3DC, to address the lack of CTTA benchmarks for ALS point cloud segmentation. Extensive experiments demonstrate that APCoTTA achieves superior performance on both benchmarks, improving mIoU by approximately 9\\% and 14\\% over direct inference. The new benchmarks and code are available at https://github.com/Gaoyuan2/APCoTTA.",
+      "published": "2025-05-15T05:21:16Z",
+      "updated": "2026-05-01T02:04:25Z",
+      "version": 4,
+      "identifiers": {
+        "arxiv": [
+          "2505.09971"
+        ],
+        "doi": [
+          "10.1016/j.isprsjprs.2026.04.040",
+          "10.48550/arXiv.2505.09971"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.09971",
+      "pdf": "https://arxiv.org/pdf/2505.09971",
+      "venue": "ISPRS Journal of Photogrammetry and Remote Sensing Volume 237, July 2026, Pages 339-354",
+      "comment": "18 pages,12 figures",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "TTA"
+        ],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "TTA",
+            "quote": "APCoTTA: Continual Test-Time Adaptation for Semantic Segmentation of Airborne LiDAR Point Clouds\nAirborne laser scanning (ALS) point c"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0252": {
+      "id": "W0252",
+      "title": "3x2: 3D Object Part Segmentation by 2D Semantic Correspondences",
+      "authors": [
+        "Anh Thai",
+        "Weiyao Wang",
+        "Hao Tang",
+        "Stefan Stojanov",
+        "Matt Feiszli",
+        "James M. Rehg"
+      ],
+      "abstract": "3D object part segmentation is essential in computer vision applications. While substantial progress has been made in 2D object part segmentation, the 3D counterpart has received less attention, in part due to the scarcity of annotated 3D datasets, which are expensive to collect. In this work, we propose to leverage a few annotated 3D shapes or richly annotated 2D datasets to perform 3D object part segmentation. We present our novel approach, termed 3-By-2 that achieves SOTA performance on different benchmarks with various granularity levels. By using features from pretrained foundation models and exploiting semantic and geometric correspondences, we are able to overcome the challenges of limited 3D annotations. Our approach leverages available 2D labels, enabling effective 3D object part segmentation. Our method 3-By-2 can accommodate various part taxonomies and granularities, demonstrating interesting part label transfer ability across different object categories. Project website: \\url{https://ngailapdi.github.io/projects/3by2/}.",
+      "published": "2024-07-12T19:08:00Z",
+      "updated": "2024-07-12T19:08:00Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2407.09648"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.09648"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.09648",
+      "pdf": "https://arxiv.org/pdf/2407.09648",
+      "venue": "arXiv",
+      "comment": "Accepted to ECCV 2024",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0069": {
+      "id": "W0069",
+      "title": "DATR: Unsupervised Domain Adaptive Detection Transformer with Dataset-Level Adaptation and Prototypical Alignment",
+      "authors": [
+        "Jianhong Han",
+        "Liang Chen",
+        "Yupei Wang"
+      ],
+      "abstract": "Object detectors frequently encounter significant performance degradation when confronted with domain gaps between collected data (source domain) and data from real-world applications (target domain). To address this task, numerous unsupervised domain adaptive detectors have been proposed, leveraging carefully designed feature alignment techniques. However, these techniques primarily align instance-level features in a class-agnostic manner, overlooking the differences between extracted features from different categories, which results in only limited improvement. Furthermore, the scope of current alignment modules is often restricted to a limited batch of images, failing to learn the entire dataset-level cues, thereby severely constraining the detector's generalization ability to the target domain. To this end, we introduce a strong DETR-based detector named Domain Adaptive detection TRansformer (DATR) for unsupervised domain adaptation of object detection. Firstly, we propose the Class-wise Prototypes Alignment (CPA) module, which effectively aligns cross-domain features in a class-aware manner by bridging the gap between object detection task and domain adaptation task. Then, the designed Dataset-level Alignment Scheme (DAS) explicitly guides the detector to achieve global representation and enhance inter-class distinguishability of instance-level features across the entire dataset, which spans both domains, by leveraging contrastive learning. Moreover, DATR incorporates a mean-teacher based self-training framework, utilizing pseudo-labels generated by the teacher model to further mitigate domain bias. Extensive experimental results demonstrate superior performance and generalization capabilities of our proposed DATR in multiple domain adaptation scenarios. Code is released at https://github.com/h751410234/DATR.",
+      "published": "2024-05-20T03:48:45Z",
+      "updated": "2024-05-20T03:48:45Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2405.11765"
+        ],
+        "doi": [
+          "10.1109/TIP.2025.3527370",
+          "10.48550/arXiv.2405.11765"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2405.11765",
+      "pdf": "https://arxiv.org/pdf/2405.11765",
+      "venue": "arXiv",
+      "comment": "Manuscript submitted to IEEE Transactions on Image Processing",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ed Domain Adaptive detection TRansformer (DATR) for unsupervised domain adaptation of object detection. Firstly, we propose the Class-wise Prototypes Alignment (CPA) module, which ef"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0184": {
+      "id": "W0184",
+      "title": "Multi-modal NeRF Self-Supervision for LiDAR Semantic Segmentation",
+      "authors": [
+        "Xavier Timoneda",
+        "Markus Herb",
+        "Fabian Duerr",
+        "Daniel Goehring",
+        "Fisher Yu"
+      ],
+      "abstract": "LiDAR Semantic Segmentation is a fundamental task in autonomous driving perception consisting of associating each LiDAR point to a semantic label. Fully-supervised models have widely tackled this task, but they require labels for each scan, which either limits their domain or requires impractical amounts of expensive annotations. Camera images, which are generally recorded alongside LiDAR pointclouds, can be processed by the widely available 2D foundation models, which are generic and dataset-agnostic. However, distilling knowledge from 2D data to improve LiDAR perception raises domain adaptation challenges. For example, the classical perspective projection suffers from the parallax effect produced by the position shift between both sensors at their respective capture times. We propose a Semi-Supervised Learning setup to leverage unlabeled LiDAR pointclouds alongside distilled knowledge from the camera images. To self-supervise our model on the unlabeled scans, we add an auxiliary NeRF head and cast rays from the camera viewpoint over the unlabeled voxel features. The NeRF head predicts densities and semantic logits at each sampled ray location which are used for rendering pixel semantics. Concurrently, we query the Segment-Anything (SAM) foundation model with the camera image to generate a set of unlabeled generic masks. We fuse the masks with the rendered pixel semantics from LiDAR to produce pseudo-labels that supervise the pixel predictions. During inference, we drop the NeRF head and run our model with only LiDAR. We show the effectiveness of our approach in three public LiDAR Semantic Segmentation benchmarks: nuScenes, SemanticKITTI and ScribbleKITTI.",
+      "published": "2024-11-05T10:13:23Z",
+      "updated": "2024-11-05T10:13:23Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2411.02969"
+        ],
+        "doi": [
+          "10.48550/arXiv.2411.02969"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2411.02969",
+      "pdf": "https://arxiv.org/pdf/2411.02969",
+      "venue": "arXiv",
+      "comment": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2024",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "distillation",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "illing knowledge from 2D data to improve LiDAR perception raises domain adaptation challenges. For example, the classical perspective projection suffers from the parallax effect prod"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0193": {
+      "id": "W0193",
+      "title": "PanoGen++: Domain-Adapted Text-Guided Panoramic Environment Generation for Vision-and-Language Navigation",
+      "authors": [
+        "Sen Wang",
+        "Dongliang Zhou",
+        "Liang Xie",
+        "Chao Xu",
+        "Ye Yan",
+        "Erwei Yin"
+      ],
+      "abstract": "Vision-and-language navigation (VLN) tasks require agents to navigate three-dimensional environments guided by natural language instructions, offering substantial potential for diverse applications. However, the scarcity of training data impedes progress in this field. This paper introduces PanoGen++, a novel framework that addresses this limitation by generating varied and pertinent panoramic environments for VLN tasks. PanoGen++ incorporates pre-trained diffusion models with domain-specific fine-tuning, employing parameter-efficient techniques such as low-rank adaptation to minimize computational costs. We investigate two settings for environment generation: masked image inpainting and recursive image outpainting. The former maximizes novel environment creation by inpainting masked regions based on textual descriptions, while the latter facilitates agents' learning of spatial relationships within panoramas. Empirical evaluations on room-to-room (R2R), room-for-room (R4R), and cooperative vision-and-dialog navigation (CVDN) datasets reveal significant performance enhancements: a 2.44% increase in success rate on the R2R test leaderboard, a 0.63% improvement on the R4R validation unseen set, and a 0.75-meter enhancement in goal progress on the CVDN validation unseen set. PanoGen++ augments the diversity and relevance of training environments, resulting in improved generalization and efficacy in VLN tasks.",
+      "published": "2025-03-13T01:16:58Z",
+      "updated": "2025-03-13T01:16:58Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2503.09938"
+        ],
+        "doi": [
+          "10.1016/j.neunet.2025.107320"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.09938",
+      "pdf": "https://arxiv.org/pdf/2503.09938",
+      "venue": "arXiv",
+      "comment": "This paper was accepted by Neural Networks",
+      "categories": [
+        "cs.CV",
+        "cs.MM",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0055": {
+      "id": "W0055",
+      "title": "OmniSAM: Omnidirectional Segment Anything Model for UDA in Panoramic Semantic Segmentation",
+      "authors": [
+        "Ding Zhong",
+        "Xu Zheng",
+        "Chenfei Liao",
+        "Yuanhuiyi Lyu",
+        "Jialei Chen",
+        "Shengyang Wu",
+        "Linfeng Zhang",
+        "Xuming Hu"
+      ],
+      "abstract": "Segment Anything Model 2 (SAM2) has emerged as a strong base model in various pinhole imaging segmentation tasks. However, when applying it to $360^\\circ$ domain, the significant field-of-view (FoV) gap between pinhole ($70^\\circ \\times 70^\\circ$) and panoramic images ($180^\\circ \\times 360^\\circ$) poses unique challenges. Two major concerns for this application includes 1) inevitable distortion and object deformation brought by the large FoV disparity between domains; 2) the lack of pixel-level semantic understanding that the original SAM2 cannot provide. To address these issues, we propose a novel OmniSAM framework, which makes the first attempt to apply SAM2 for panoramic semantic segmentation. Specifically, to bridge the first gap, OmniSAM first divides the panorama into sequences of patches. These patches are then treated as image sequences in similar manners as in video segmentation tasks. We then leverage the SAM2's memory mechanism to extract cross-patch correspondences that embeds the cross-FoV dependencies, improving feature continuity and the prediction consistency along mask boundaries. For the second gap, OmniSAM fine-tunes the pretrained image encoder and reutilize the mask decoder for semantic prediction. An FoV-based prototypical adaptation module with dynamic pseudo label update mechanism is also introduced to facilitate the alignment of memory and backbone features, thereby improving model generalization ability across different sizes of source models. Extensive experimental results demonstrate that OmniSAM outperforms the state-of-the-art methods by large margins, e.g., 79.06% (+10.22%) on SPin8-to-SPan8, 62.46% (+6.58%) on CS13-to-DP13.",
+      "published": "2025-03-10T09:21:08Z",
+      "updated": "2025-10-11T04:08:17Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2503.07098"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.07098"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.07098",
+      "pdf": "https://arxiv.org/pdf/2503.07098",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0259": {
+      "id": "W0259",
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous Driving",
+      "authors": [
+        "Lingdong Kong",
+        "Xiang Xu",
+        "Jiawei Ren",
+        "Wenwei Zhang",
+        "Liang Pan",
+        "Kai Chen",
+        "Wei Tsang Ooi",
+        "Ziwei Liu"
+      ],
+      "abstract": "Efficient data utilization is crucial for advancing 3D scene understanding in autonomous driving, where reliance on heavily human-annotated LiDAR point clouds challenges fully supervised methods. Addressing this, our study extends into semi-supervised learning for LiDAR semantic segmentation, leveraging the intrinsic spatial priors of driving scenes and multi-sensor complements to augment the efficacy of unlabeled datasets. We introduce LaserMix++, an evolved framework that integrates laser beam manipulations from disparate LiDAR scans and incorporates LiDAR-camera correspondences to further assist data-efficient learning. Our framework is tailored to enhance 3D scene consistency regularization by incorporating multi-modality, including 1) multi-modal LaserMix operation for fine-grained cross-sensor interactions; 2) camera-to-LiDAR feature distillation that enhances LiDAR feature learning; and 3) language-driven knowledge guidance generating auxiliary supervisions using open-vocabulary models. The versatility of LaserMix++ enables applications across LiDAR representations, establishing it as a universally applicable solution. Our framework is rigorously validated through theoretical analysis and extensive experiments on popular driving perception datasets. Results demonstrate that LaserMix++ markedly outperforms fully supervised alternatives, achieving comparable accuracy with five times fewer annotations and significantly improving the supervised-only baselines. This substantial advancement underscores the potential of semi-supervised approaches in reducing the reliance on extensive labeled data in LiDAR-based 3D scene understanding systems.",
+      "published": "2024-05-08T17:59:53Z",
+      "updated": "2025-12-05T12:51:41Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2405.05258"
+        ],
+        "doi": [
+          "10.1109/tpami.2025.3535625",
+          "10.48550/arXiv.2405.05258"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2405.05258",
+      "pdf": "https://arxiv.org/pdf/2405.05258",
+      "venue": "arXiv",
+      "comment": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "OV"
+        ],
+        "task": "semantic",
+        "methods": [
+          "cross-modal",
+          "distillation",
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "riven knowledge guidance generating auxiliary supervisions using open-vocabulary models. The versatility of LaserMix++ enables applications across LiDAR representations, establishi"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0222": {
+      "id": "W0222",
+      "title": "GrabDAE: An Innovative Framework for Unsupervised Domain Adaptation Utilizing Grab-Mask and Denoise Auto-Encoder",
+      "authors": [
+        "Junzhou Chen",
+        "Xuan Wen",
+        "Ronghui Zhang",
+        "Bingtao Ren",
+        "Di Wu",
+        "Zhigang Xu",
+        "Danwei Wang"
+      ],
+      "abstract": "Unsupervised Domain Adaptation (UDA) aims to adapt a model trained on a labeled source domain to an unlabeled target domain by addressing the domain shift. Existing Unsupervised Domain Adaptation (UDA) methods often fall short in fully leveraging contextual information from the target domain, leading to suboptimal decision boundary separation during source and target domain alignment. To address this, we introduce GrabDAE, an innovative UDA framework designed to tackle domain shift in visual classification tasks. GrabDAE incorporates two key innovations: the Grab-Mask module, which blurs background information in target domain images, enabling the model to focus on essential, domain-relevant features through contrastive learning; and the Denoising Auto-Encoder (DAE), which enhances feature alignment by reconstructing features and filtering noise, ensuring a more robust adaptation to the target domain. These components empower GrabDAE to effectively handle unlabeled target domain data, significantly improving both classification accuracy and robustness. Extensive experiments on benchmark datasets, including VisDA-2017, Office-Home, and Office31, demonstrate that GrabDAE consistently surpasses state-of-the-art UDA methods, setting new performance benchmarks. By tackling UDA's critical challenges with its novel feature masking and denoising approach, GrabDAE offers both significant theoretical and practical advancements in domain adaptation.",
+      "published": "2024-10-10T15:19:57Z",
+      "updated": "2024-10-10T15:19:57Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2410.08023"
+        ],
+        "doi": [
+          "10.48550/arXiv.2410.08023"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2410.08023",
+      "pdf": "https://arxiv.org/pdf/2410.08023",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "GrabDAE: An Innovative Framework for Unsupervised Domain Adaptation Utilizing Grab-Mask and Denoise Auto-Encoder\nUnsupervised Domain Adaptation (UDA) aims to adapt a m"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0039": {
+      "id": "W0039",
+      "title": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation",
+      "authors": [
+        "Min Huang",
+        "Zifeng Xie",
+        "Bo Sun",
+        "Ning Wang"
+      ],
+      "abstract": "Multi-source domain adaptation (MSDA) plays an important role in industrial model generalization. Recent efforts on MSDA focus on enhancing multi-domain distributional alignment while omitting three issues, e.g., the class-level discrepancy quantification, the unavailability of noisy pseudo-label, and source transferability discrimination, potentially resulting in suboptimal adaption performance. Therefore, we address these issues by proposing a prototype aggregation method that models the discrepancy between source and target domains at the class and domain levels. Our method achieves domain adaptation based on a group of prototypes (i.e., representative feature embeddings). A similarity score-based strategy is designed to quantify the transferability of each domain. At the class level, our method quantifies class-specific cross-domain discrepancy according to reliable target pseudo-labels. At the domain level, our method establishes distributional alignment between noisy pseudo-labeled target samples and the source domain prototypes. Therefore, adaptation at the class and domain levels establishes a complementary mechanism to obtain accurate predictions. The results on three standard benchmarks demonstrate that our method outperforms most state-of-the-art methods. In addition, we provide further elaboration of the proposed method in light of the interpretable results obtained from the analysis experiments.",
+      "published": "2024-12-20T06:44:35Z",
+      "updated": "2024-12-20T06:44:35Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2412.16255"
+        ],
+        "doi": [
+          "10.48550/arXiv.2412.16255"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2412.16255",
+      "pdf": "https://arxiv.org/pdf/2412.16255",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation\nMulti-source domain adaptation (MSDA) plays an important role in industr"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0205": {
+      "id": "W0205",
+      "title": "LiCAR: pseudo-RGB LiDAR image for CAR segmentation",
+      "authors": [
+        "Ignacio de Loyola Páez-Ubieta",
+        "Edison P. Velasco-Sánchez",
+        "Santiago T. Puente"
+      ],
+      "abstract": "With the advancement of computing resources, an increasing number of Neural Networks (NNs) are appearing for image detection and segmentation appear. However, these methods usually accept as input a RGB 2D image. On the other side, Light Detection And Ranging (LiDAR) sensors with many layers provide images that are similar to those obtained from a traditional low resolution RGB camera. Following this principle, a new dataset for segmenting cars in pseudo-RGB images has been generated. This dataset combines the information given by the LiDAR sensor into a Spherical Range Image (SRI), concretely the reflectivity, near infrared and signal intensity 2D images. These images are then fed into instance segmentation NNs. These NNs segment the cars that appear in these images, having as result a Bounding Box (BB) and mask precision of 88% and 81.5% respectively with You Only Look Once (YOLO)-v8 large. By using this segmentation NN, some trackers have been applied so as to follow each car segmented instance along a video feed, having great performance in real world experiments.",
+      "published": "2025-01-21T07:57:07Z",
+      "updated": "2025-01-21T07:57:07Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2501.13960"
+        ],
+        "doi": [
+          "10.48550/arXiv.2501.13960"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2501.13960",
+      "pdf": "https://arxiv.org/pdf/2501.13960",
+      "venue": "arXiv",
+      "comment": "This is a preprint version of the work accepted at 5th International Conference on Robotics, Computer Vision and Intelligent Systems (ROBOVIS 2025)",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0204": {
+      "id": "W0204",
+      "title": "SAM-guided Pseudo Label Enhancement for Multi-modal 3D Semantic Segmentation",
+      "authors": [
+        "Mingyu Yang",
+        "Jitong Lu",
+        "Hun-Seok Kim"
+      ],
+      "abstract": "Multi-modal 3D semantic segmentation is vital for applications such as autonomous driving and virtual reality (VR). To effectively deploy these models in real-world scenarios, it is essential to employ cross-domain adaptation techniques that bridge the gap between training data and real-world data. Recently, self-training with pseudo-labels has emerged as a predominant method for cross-domain adaptation in multi-modal 3D semantic segmentation. However, generating reliable pseudo-labels necessitates stringent constraints, which often result in sparse pseudo-labels after pruning. This sparsity can potentially hinder performance improvement during the adaptation process. We propose an image-guided pseudo-label enhancement approach that leverages the complementary 2D prior knowledge from the Segment Anything Model (SAM) to introduce more reliable pseudo-labels, thereby boosting domain adaptation performance. Specifically, given a 3D point cloud and the SAM masks from its paired image data, we collect all 3D points covered by each SAM mask that potentially belong to the same object. Then our method refines the pseudo-labels within each SAM mask in two steps. First, we determine the class label for each mask using majority voting and employ various constraints to filter out unreliable mask labels. Next, we introduce Geometry-Aware Progressive Propagation (GAPP) which propagates the mask label to all 3D points within the SAM mask while avoiding outliers caused by 2D-3D misalignment. Experiments conducted across multiple datasets and domain adaptation scenarios demonstrate that our proposed method significantly increases the quantity of high-quality pseudo-labels and enhances the adaptation performance over baseline methods.",
+      "published": "2025-02-02T23:52:37Z",
+      "updated": "2025-02-02T23:52:37Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2502.00960"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2502.00960",
+      "pdf": "https://arxiv.org/pdf/2502.00960",
+      "venue": "arXiv",
+      "comment": "ICRA 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "alignment",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "models in real-world scenarios, it is essential to employ cross-domain adaptation techniques that bridge the gap between training data and real-world data. Recently, self-training w"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0263": {
+      "id": "W0263",
+      "title": "Train Till You Drop: Towards Stable and Robust Source-free Unsupervised 3D Domain Adaptation",
+      "authors": [
+        "Björn Michele",
+        "Alexandre Boulch",
+        "Tuan-Hung Vu",
+        "Gilles Puy",
+        "Renaud Marlet",
+        "Nicolas Courty"
+      ],
+      "abstract": "We tackle the challenging problem of source-free unsupervised domain adaptation (SFUDA) for 3D semantic segmentation. It amounts to performing domain adaptation on an unlabeled target domain without any access to source data; the available information is a model trained to achieve good performance on the source domain. A common issue with existing SFUDA approaches is that performance degrades after some training time, which is a by product of an under-constrained and ill-posed problem. We discuss two strategies to alleviate this issue. First, we propose a sensible way to regularize the learning problem. Second, we introduce a novel criterion based on agreement with a reference model. It is used (1) to stop the training when appropriate and (2) as validator to select hyperparameters without any knowledge on the target domain. Our contributions are easy to implement and readily amenable for all SFUDA methods, ensuring stable improvements over all baselines. We validate our findings on various 3D lidar settings, achieving state-of-the-art performance. The project repository (with code) is: github.com/valeoai/TTYD.",
+      "published": "2024-09-06T17:13:14Z",
+      "updated": "2024-09-06T17:13:14Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2409.04409"
+        ],
+        "doi": [
+          "10.48550/arXiv.2409.04409"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2409.04409",
+      "pdf": "https://arxiv.org/pdf/2409.04409",
+      "venue": "arXiv",
+      "comment": "Accepted to ECCV 2024. Project repository: github.com/valeoai/TTYD",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "You Drop: Towards Stable and Robust Source-free Unsupervised 3D Domain Adaptation\nWe tackle the challenging problem of source-free unsupervised domain adaptation (SFUDA) for 3D sema"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0147": {
+      "id": "W0147",
+      "title": "Multi-View Projection for Unsupervised Domain Adaptation in 3D Semantic Segmentation",
+      "authors": [
+        "Andrew Caunes",
+        "Thierry Chateau",
+        "Vincent Fremont"
+      ],
+      "abstract": "3D semantic segmentation plays a pivotal role in autonomous driving and road infrastructure analysis, yet state-of-the-art 3D models are prone to severe domain shift when deployed across different datasets. In this paper, we propose an Unsupervised Domain Adaptation approach where a 3D segmentation model is trained on the target dataset using pseudo-labels generated by a novel multi-view projection framework. Our approach first aligns Lidar scans into coherent 3D scenes and renders them from multiple virtual camera poses to create large-scale synthetic 2D semantic segmentation datasets in various modalities. The generated datasets are used to train an ensemble of 2D segmentation models in point cloud view domain on each modality. During inference, the models process a large amount of views per scene; the resulting logits are back-projected to 3D with a depth-aware voting scheme to generate final point-wise labels. These labels are then used to fine-tune a 3D segmentation model in the target domain. We evaluate our approach Real-to-Real on the nuScenes and SemanticKITTI datasets. We also evaluate it Simulation-to-Real with the SynLidar dataset. Our contributions are a novel method that achieves state-of-the-art results in Real-to-Real Unsupervised Domain Adaptation, and we also demonstrate an application of our method to segment rare classes, for which target 3D annotations are not available, by only using 2D annotations for those classes and leveraging 3D annotations for other classes in a source domain.",
+      "published": "2025-05-21T14:08:42Z",
+      "updated": "2026-01-22T09:57:06Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2505.15545"
+        ],
+        "doi": [
+          "10.48550/arXiv.2505.15545"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.15545",
+      "pdf": "https://arxiv.org/pdf/2505.15545",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Multi-View Projection for Unsupervised Domain Adaptation in 3D Semantic Segmentation\n3D semantic segmentation plays a pivotal role in autonomous driving and"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0027": {
+      "id": "W0027",
+      "title": "Training-Free Zero-Shot Temporal Action Detection with Vision-Language Models",
+      "authors": [
+        "Chaolei Han",
+        "Hongsong Wang",
+        "Jidong Kuang",
+        "Lei Zhang",
+        "Jie Gui"
+      ],
+      "abstract": "Existing zero-shot temporal action detection (ZSTAD) methods predominantly use fully supervised or unsupervised strategies to recognize unseen activities. However, these training-based methods are prone to domain shifts and require high computational costs, which hinder their practical applicability in real-world scenarios. In this paper, unlike previous works, we propose a training-Free Zero-shot temporal Action Detection (FreeZAD) method, leveraging existing vision-language (ViL) models to directly classify and localize unseen activities within untrimmed videos without any additional fine-tuning or adaptation. We mitigate the need for explicit temporal modeling and reliance on pseudo-label quality by designing the LOGarithmic decay weighted Outer-Inner-Contrastive Score (LogOIC) and frequency-based Actionness Calibration. Furthermore, we introduce a test-time adaptation (TTA) strategy using Prototype-Centric Sampling (PCS) to expand FreeZAD, enabling ViL models to adapt more effectively for ZSTAD. Extensive experiments on the THUMOS14 and ActivityNet-1.3 datasets demonstrate that our training-free method outperforms state-of-the-art unsupervised methods while requiring only 1/13 of the runtime. When equipped with TTA, the enhanced method further narrows the gap with fully supervised methods.",
+      "published": "2025-01-23T16:13:58Z",
+      "updated": "2025-01-23T16:13:58Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2501.13795"
+        ],
+        "doi": [
+          "10.48550/arXiv.2501.13795"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2501.13795",
+      "pdf": "https://arxiv.org/pdf/2501.13795",
+      "venue": "IEEE Transactions on Multimedia, 2026",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "TTA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "vision-language",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "TTA",
+            "quote": "quency-based Actionness Calibration. Furthermore, we introduce a test-time adaptation (TTA) strategy using Prototype-Centric Sampling (PCS) to expand FreeZAD, enabling ViL models t"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0028": {
+      "id": "W0028",
+      "title": "PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images",
+      "authors": [
+        "Nanqing Liu",
+        "Xun Xu",
+        "Yongyi Su",
+        "Haojie Zhang",
+        "Heng-Chao Li"
+      ],
+      "abstract": "Segment Anything Model (SAM) is an advanced foundational model for image segmentation, which is gradually being applied to remote sensing images (RSIs). Due to the domain gap between RSIs and natural images, traditional methods typically use SAM as a source pre-trained model and fine-tune it with fully supervised masks. Unlike these methods, our work focuses on fine-tuning SAM using more convenient and challenging point annotations. Leveraging SAM's zero-shot capabilities, we adopt a self-training framework that iteratively generates pseudo-labels for training. However, if the pseudo-labels contain noisy labels, there is a risk of error accumulation. To address this issue, we extract target prototypes from the target dataset and use the Hungarian algorithm to match them with prediction prototypes, preventing the model from learning in the wrong direction. Additionally, due to the complex backgrounds and dense distribution of objects in RSI, using point prompts may result in multiple objects being recognized as one. To solve this problem, we propose a negative prompt calibration method based on the non-overlapping nature of instance masks. In brief, we use the prompts of overlapping masks as corresponding negative signals, resulting in refined masks. Combining the above methods, we propose a novel Pointly-supervised Segment Anything Model named PointSAM. We conduct experiments on RSI datasets, including WHU, HRSID, and NWPU VHR-10, and the results show that our method significantly outperforms direct testing with SAM, SAM2, and other comparison methods. Furthermore, we introduce PointSAM as a point-to-box converter and achieve encouraging results, suggesting that this method can be extended to other point-supervised tasks. The code is available at https://github.com/Lans1ng/PointSAM.",
+      "published": "2024-09-20T11:02:18Z",
+      "updated": "2025-01-12T15:10:26Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2409.13401"
+        ],
+        "doi": [
+          "10.1109/TGRS.2025.3529031",
+          "10.48550/arXiv.2409.13401"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2409.13401",
+      "pdf": "https://arxiv.org/pdf/2409.13401",
+      "venue": "arXiv",
+      "comment": "Accepted by IEEE TGRS",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0141": {
+      "id": "W0141",
+      "title": "No Thing, Nothing: Highlighting Safety-Critical Classes for Robust LiDAR Semantic Segmentation in Adverse Weather",
+      "authors": [
+        "Junsung Park",
+        "Hwijeong Lee",
+        "Inha Kang",
+        "Hyunjung Shim"
+      ],
+      "abstract": "Existing domain generalization methods for LiDAR semantic segmentation under adverse weather struggle to accurately predict \"things\" categories compared to \"stuff\" categories. In typical driving scenes, \"things\" categories can be dynamic and associated with higher collision risks, making them crucial for safe navigation and planning. Recognizing the importance of \"things\" categories, we identify their performance drop as a serious bottleneck in existing approaches. We observed that adverse weather induces degradation of semantic-level features and both corruption of local features, leading to a misprediction of \"things\" as \"stuff\". To mitigate these corruptions, we suggest our method, NTN - segmeNt Things for No-accident. To address semantic-level feature corruption, we bind each point feature to its superclass, preventing the misprediction of things classes into visually dissimilar categories. Additionally, to enhance robustness against local corruption caused by adverse weather, we define each LiDAR beam as a local region and propose a regularization term that aligns the clean data with its corrupted counterpart in feature space. NTN achieves state-of-the-art performance with a +2.6 mIoU gain on the SemanticKITTI-to-SemanticSTF benchmark and +7.9 mIoU on the SemanticPOSS-to-SemanticSTF benchmark. Notably, NTN achieves a +4.8 and +7.9 mIoU improvement on \"things\" classes, respectively, highlighting its effectiveness.",
+      "published": "2025-03-20T07:40:24Z",
+      "updated": "2025-03-24T12:16:42Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2503.15910"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2503.15910",
+      "pdf": "https://arxiv.org/pdf/2503.15910",
+      "venue": "arXiv",
+      "comment": "18 pages, accepted in CVPR 2025",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DG"
+        ],
+        "task": "semantic",
+        "methods": [
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "r Robust LiDAR Semantic Segmentation in Adverse Weather\nExisting domain generalization methods for LiDAR semantic segmentation under adverse weather struggle to accurately predict \"thing"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0143": {
+      "id": "W0143",
+      "title": "RegMixMatch: Optimizing Mixup Utilization in Semi-Supervised Learning",
+      "authors": [
+        "Haorong Han",
+        "Jidong Yuan",
+        "Chixuan Wei",
+        "Zhongyang Yu"
+      ],
+      "abstract": "Consistency regularization and pseudo-labeling have significantly advanced semi-supervised learning (SSL). Prior works have effectively employed Mixup for consistency regularization in SSL. However, our findings indicate that applying Mixup for consistency regularization may degrade SSL performance by compromising the purity of artificial labels. Moreover, most pseudo-labeling based methods utilize thresholding strategy to exclude low-confidence data, aiming to mitigate confirmation bias; however, this approach limits the utility of unlabeled samples. To address these challenges, we propose RegMixMatch, a novel framework that optimizes the use of Mixup with both high- and low-confidence samples in SSL. First, we introduce semi-supervised RegMixup, which effectively addresses reduced artificial labels purity by using both mixed samples and clean samples for training. Second, we develop a class-aware Mixup technique that integrates information from the top-2 predicted classes into low-confidence samples and their artificial labels, reducing the confirmation bias associated with these samples and enhancing their effective utilization. Experimental results demonstrate that RegMixMatch achieves state-of-the-art performance across various SSL benchmarks.",
+      "published": "2024-12-14T08:22:49Z",
+      "updated": "2025-04-17T07:12:52Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2412.10741"
+        ],
+        "doi": [
+          "10.48550/arXiv.2412.10741"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2412.10741",
+      "pdf": "https://arxiv.org/pdf/2412.10741",
+      "venue": "arXiv",
+      "comment": "Accepted in AAAI Conference on Artificial Intelligence (AAAI-25)",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0054": {
+      "id": "W0054",
+      "title": "ElimPCL: Eliminating Noise Accumulation with Progressive Curriculum Labeling for Source-Free Domain Adaptation",
+      "authors": [
+        "Jie Cheng",
+        "Hao Zheng",
+        "Meiguang Zheng",
+        "Lei Wang",
+        "Hao Wu",
+        "Jian Zhang"
+      ],
+      "abstract": "Source-Free Domain Adaptation (SFDA) aims to train a target model without source data, and the key is to generate pseudo-labels using a pre-trained source model. However, we observe that the source model often produces highly uncertain pseudo-labels for hard samples, particularly those heavily affected by domain shifts, leading to these noisy pseudo-labels being introduced even before adaptation and further reinforced through parameter updates. Additionally, they continuously influence neighbor samples through propagation in the feature space.To eliminate the issue of noise accumulation, we propose a novel Progressive Curriculum Labeling (ElimPCL) method, which iteratively filters trustworthy pseudo-labeled samples based on prototype consistency to exclude high-noise samples from training. Furthermore, a Dual MixUP technique is designed in the feature space to enhance the separability of hard samples, thereby mitigating the interference of noisy samples on their neighbors.Extensive experiments validate the effectiveness of ElimPCL, achieving up to a 3.4% improvement on challenging tasks compared to state-of-the-art methods.",
+      "published": "2025-03-31T04:28:27Z",
+      "updated": "2025-03-31T04:28:27Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2503.23712"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.23712"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.23712",
+      "pdf": "https://arxiv.org/pdf/2503.23712",
+      "venue": "arXiv",
+      "comment": "ICME 2025 camera-ready",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ccumulation with Progressive Curriculum Labeling for Source-Free Domain Adaptation\nSource-Free Domain Adaptation (SFDA) aims to train a target model without source data, and the key"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0256": {
+      "id": "W0256",
+      "title": "LiOn-XA: Unsupervised Domain Adaptation via LiDAR-Only Cross-Modal Adversarial Training",
+      "authors": [
+        "Thomas Kreutz",
+        "Jens Lemke",
+        "Max Mühlhäuser",
+        "Alejandro Sanchez Guinea"
+      ],
+      "abstract": "In this paper, we propose LiOn-XA, an unsupervised domain adaptation (UDA) approach that combines LiDAR-Only Cross-Modal (X) learning with Adversarial training for 3D LiDAR point cloud semantic segmentation to bridge the domain gap arising from environmental and sensor setup changes. Unlike existing works that exploit multiple data modalities like point clouds and RGB image data, we address UDA in scenarios where RGB images might not be available and show that two distinct LiDAR data representations can learn from each other for UDA. More specifically, we leverage 3D voxelized point clouds to preserve important geometric structure in combination with 2D projection-based range images that provide information such as object orientations or surfaces. To further align the feature space between both domains, we apply adversarial training using both features and predictions of both 2D and 3D neural networks. Our experiments on 3 real-to-real adaptation scenarios demonstrate the effectiveness of our approach, achieving new state-of-the-art performance when compared to previous uni- and multi-model UDA methods. Our source code is publicly available at https://github.com/JensLe97/lion-xa.",
+      "published": "2024-10-21T09:50:17Z",
+      "updated": "2024-10-21T09:50:17Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2410.15833"
+        ],
+        "doi": [
+          "10.48550/arXiv.2410.15833"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2410.15833",
+      "pdf": "https://arxiv.org/pdf/2410.15833",
+      "venue": "arXiv",
+      "comment": "Preprint, Paper has been accepted at IROS2024",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "cross-modal",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "LiOn-XA: Unsupervised Domain Adaptation via LiDAR-Only Cross-Modal Adversarial Training\nIn this paper, we propose LiOn-XA, an unsupervised"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0041": {
+      "id": "W0041",
+      "title": "Reducing Semantic Ambiguity In Domain Adaptive Semantic Segmentation Via Probabilistic Prototypical Pixel Contrast",
+      "authors": [
+        "Xiaoke Hao",
+        "Shiyu Liu",
+        "Chuanbo Feng",
+        "Ye Zhu"
+      ],
+      "abstract": "Domain adaptation aims to reduce the model degradation on the target domain caused by the domain shift between the source and target domains. Although encouraging performance has been achieved by combining cognitive learning with the self-training paradigm, they suffer from ambiguous scenarios caused by scale, illumination, or overlapping when deploying deterministic embedding. To address these issues, we propose probabilistic proto-typical pixel contrast (PPPC), a universal adaptation framework that models each pixel embedding as a probability via multivariate Gaussian distribution to fully exploit the uncertainty within them, eventually improving the representation quality of the model. In addition, we derive prototypes from probability estimation posterior probability estimation which helps to push the decision boundary away from the ambiguity points. Moreover, we employ an efficient method to compute similarity between distributions, eliminating the need for sampling and reparameterization, thereby significantly reducing computational overhead. Further, we dynamically select the ambiguous crops at the image level to enlarge the number of boundary points involved in contrastive learning, which benefits the establishment of precise distributions for each category. Extensive experimentation demonstrates that PPPC not only helps to address ambiguity at the pixel level, yielding discriminative representations but also achieves significant improvements in both synthetic-to-real and day-to-night adaptation tasks. It surpasses the previous state-of-the-art (SOTA) by +5.2% mIoU in the most challenging daytime-to-nighttime adaptation scenario, exhibiting stronger generalization on other unseen datasets. The code and models are available at https://github.com/DarlingInTheSV/Probabilistic-Prototypical-Pixel-Contrast.",
+      "published": "2024-09-27T08:25:03Z",
+      "updated": "2024-09-27T08:25:03Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2409.18543"
+        ],
+        "doi": [
+          "10.1016/j.neunet.2024.106806"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2409.18543",
+      "pdf": "https://arxiv.org/pdf/2409.18543",
+      "venue": "arXiv",
+      "comment": "revise",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "antic Segmentation Via Probabilistic Prototypical Pixel Contrast\nDomain adaptation aims to reduce the model degradation on the target domain caused by the domain shift between the so"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0253": {
+      "id": "W0253",
+      "title": "3D Weakly Supervised Semantic Segmentation with 2D Vision-Language Guidance",
+      "authors": [
+        "Xiaoxu Xu",
+        "Yitian Yuan",
+        "Jinlong Li",
+        "Qiudan Zhang",
+        "Zequn Jie",
+        "Lin Ma",
+        "Hao Tang",
+        "Nicu Sebe",
+        "Xu Wang"
+      ],
+      "abstract": "In this paper, we propose 3DSS-VLG, a weakly supervised approach for 3D Semantic Segmentation with 2D Vision-Language Guidance, an alternative approach that a 3D model predicts dense-embedding for each point which is co-embedded with both the aligned image and text spaces from the 2D vision-language model. Specifically, our method exploits the superior generalization ability of the 2D vision-language models and proposes the Embeddings Soft-Guidance Stage to utilize it to implicitly align 3D embeddings and text embeddings. Moreover, we introduce the Embeddings Specialization Stage to purify the feature representation with the help of a given scene-level label, specifying a better feature supervised by the corresponding text embedding. Thus, the 3D model is able to gain informative supervisions both from the image embedding and text embedding, leading to competitive segmentation performances. To the best of our knowledge, this is the first work to investigate 3D weakly supervised semantic segmentation by using the textual semantic information of text category labels. Moreover, with extensive quantitative and qualitative experiments, we present that our 3DSS-VLG is able not only to achieve the state-of-the-art performance on both S3DIS and ScanNet datasets, but also to maintain strong generalization capability.",
+      "published": "2024-07-13T09:39:11Z",
+      "updated": "2024-08-30T03:58:50Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2407.09826"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.09826"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.09826",
+      "pdf": "https://arxiv.org/pdf/2407.09826",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "vision-language",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0067": {
+      "id": "W0067",
+      "title": "Universal Domain Adaptation for Semantic Segmentation",
+      "authors": [
+        "Seun-An Choe",
+        "Keon-Hee Park",
+        "Jinwoo Choi",
+        "Gyeong-Moon Park"
+      ],
+      "abstract": "Unsupervised domain adaptation for semantic segmentation (UDA-SS) aims to transfer knowledge from labeled source data to unlabeled target data. However, traditional UDA-SS methods assume that category settings between source and target domains are known, which is unrealistic in real-world scenarios. This leads to performance degradation if private classes exist. To address this limitation, we propose Universal Domain Adaptation for Semantic Segmentation (UniDA-SS), achieving robust adaptation even without prior knowledge of category settings. We define the problem in the UniDA-SS scenario as low confidence scores of common classes in the target domain, which leads to confusion with private classes. To solve this problem, we propose UniMAP: UniDA-SS with Image Matching and Prototype-based Distinction, a novel framework composed of two key components. First, Domain-Specific Prototype-based Distinction (DSPD) divides each class into two domain-specific prototypes, enabling finer separation of domain-specific features and enhancing the identification of common classes across domains. Second, Target-based Image Matching (TIM) selects a source image containing the most common-class pixels based on the target pseudo-label and pairs it in a batch to promote effective learning of common classes. We also introduce a new UniDA-SS benchmark and demonstrate through various experiments that UniMAP significantly outperforms baselines. The code is available at https://github.com/KU-VGI/UniMAP.",
+      "published": "2025-05-28T15:14:11Z",
+      "updated": "2025-06-05T22:38:25Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2505.22458"
+        ],
+        "doi": [
+          "10.48550/arXiv.2505.22458"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.22458",
+      "pdf": "https://arxiv.org/pdf/2505.22458",
+      "venue": "arXiv",
+      "comment": "Accepted by CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Universal Domain Adaptation for Semantic Segmentation\nUnsupervised domain adaptation for semantic segmentation (UDA-SS) aims to"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0008": {
+      "id": "W0008",
+      "title": "Learning Class Prototypes for Unified Sparse Supervised 3D Object Detection",
+      "authors": [
+        "Yun Zhu",
+        "Le Hui",
+        "Hang Yang",
+        "Jianjun Qian",
+        "Jin Xie",
+        "Jian Yang"
+      ],
+      "abstract": "Both indoor and outdoor scene perceptions are essential for embodied intelligence. However, current sparse supervised 3D object detection methods focus solely on outdoor scenes without considering indoor settings. To this end, we propose a unified sparse supervised 3D object detection method for both indoor and outdoor scenes through learning class prototypes to effectively utilize unlabeled objects. Specifically, we first propose a prototype-based object mining module that converts the unlabeled object mining into a matching problem between class prototypes and unlabeled features. By using optimal transport matching results, we assign prototype labels to high-confidence features, thereby achieving the mining of unlabeled objects. We then present a multi-label cooperative refinement module to effectively recover missed detections through pseudo label quality control and prototype label cooperation. Experiments show that our method achieves state-of-the-art performance under the one object per scene sparse supervised setting across indoor and outdoor datasets. With only one labeled object per scene, our method achieves about 78%, 90%, and 96% performance compared to the fully supervised detector on ScanNet V2, SUN RGB-D, and KITTI, respectively, highlighting the scalability of our method. Code is available at https://github.com/zyrant/CPDet3D.",
+      "published": "2025-03-27T02:37:05Z",
+      "updated": "2025-06-13T08:15:04Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2503.21099"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.21099"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.21099",
+      "pdf": "https://arxiv.org/pdf/2503.21099",
+      "venue": "arXiv",
+      "comment": "Accepted by CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0030": {
+      "id": "W0030",
+      "title": "HGL: Hierarchical Geometry Learning for Test-time Adaptation in 3D Point Cloud Segmentation",
+      "authors": [
+        "Tianpei Zou",
+        "Sanqing Qu",
+        "Zhijun Li",
+        "Alois Knoll",
+        "Lianghua He",
+        "Guang Chen",
+        "Changjun Jiang"
+      ],
+      "abstract": "3D point cloud segmentation has received significant interest for its growing applications. However, the generalization ability of models suffers in dynamic scenarios due to the distribution shift between test and training data. To promote robustness and adaptability across diverse scenarios, test-time adaptation (TTA) has recently been introduced. Nevertheless, most existing TTA methods are developed for images, and limited approaches applicable to point clouds ignore the inherent hierarchical geometric structures in point cloud streams, i.e., local (point-level), global (object-level), and temporal (frame-level) structures. In this paper, we delve into TTA in 3D point cloud segmentation and propose a novel Hierarchical Geometry Learning (HGL) framework. HGL comprises three complementary modules from local, global to temporal learning in a bottom-up manner.Technically, we first construct a local geometry learning module for pseudo-label generation. Next, we build prototypes from the global geometry perspective for pseudo-label fine-tuning. Furthermore, we introduce a temporal consistency regularization module to mitigate negative transfer. Extensive experiments on four datasets demonstrate the effectiveness and superiority of our HGL. Remarkably, on the SynLiDAR to SemanticKITTI task, HGL achieves an overall mIoU of 46.91\\%, improving GIPSO by 3.0\\% and significantly reducing the required adaptation time by 80\\%. The code is available at https://github.com/tpzou/HGL.",
+      "published": "2024-07-17T08:08:03Z",
+      "updated": "2024-07-17T08:08:03Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2407.12387"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.12387"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.12387",
+      "pdf": "https://arxiv.org/pdf/2407.12387",
+      "venue": "ECCV 2024",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "TTA"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "TTA",
+            "quote": "HGL: Hierarchical Geometry Learning for Test-time Adaptation in 3D Point Cloud Segmentation\n3D point cloud segmentation has received significant interest f"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0255": {
+      "id": "W0255",
+      "title": "Augmented Efficiency: Reducing Memory Footprint and Accelerating Inference for 3D Semantic Segmentation through Hybrid Vision",
+      "authors": [
+        "Aditya Krishnan",
+        "Jayneel Vora",
+        "Prasant Mohapatra"
+      ],
+      "abstract": "Semantic segmentation has emerged as a pivotal area of study in computer vision, offering profound implications for scene understanding and elevating human-machine interactions across various domains. While 2D semantic segmentation has witnessed significant strides in the form of lightweight, high-precision models, transitioning to 3D semantic segmentation poses distinct challenges. Our research focuses on achieving efficiency and lightweight design for 3D semantic segmentation models, similar to those achieved for 2D models. Such a design impacts applications of 3D semantic segmentation where memory and latency are of concern. This paper introduces a novel approach to 3D semantic segmentation, distinguished by incorporating a hybrid blend of 2D and 3D computer vision techniques, enabling a streamlined, efficient process. We conduct 2D semantic segmentation on RGB images linked to 3D point clouds and extend the results to 3D using an extrusion technique for specific class labels, reducing the point cloud subspace. We perform rigorous evaluations with the DeepViewAgg model on the complete point cloud as our baseline by measuring the Intersection over Union (IoU) accuracy, inference time latency, and memory consumption. This model serves as the current state-of-the-art 3D semantic segmentation model on the KITTI-360 dataset. We can achieve heightened accuracy outcomes, surpassing the baseline for 6 out of the 15 classes while maintaining a marginal 1% deviation below the baseline for the remaining class labels. Our segmentation approach demonstrates a 1.347x speedup and about a 43% reduced memory usage compared to the baseline.",
+      "published": "2024-07-23T00:04:10Z",
+      "updated": "2024-07-23T00:04:10Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2407.16102"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.16102"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.16102",
+      "pdf": "https://arxiv.org/pdf/2407.16102",
+      "venue": "arXiv",
+      "comment": "18 pages, 3 figures, 3 tables",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0223": {
+      "id": "W0223",
+      "title": "Bringing Masked Autoencoders Explicit Contrastive Properties for Point Cloud Self-Supervised Learning",
+      "authors": [
+        "Bin Ren",
+        "Guofeng Mei",
+        "Danda Pani Paudel",
+        "Weijie Wang",
+        "Yawei Li",
+        "Mengyuan Liu",
+        "Rita Cucchiara",
+        "Luc Van Gool",
+        "Nicu Sebe"
+      ],
+      "abstract": "Contrastive learning (CL) for Vision Transformers (ViTs) in image domains has achieved performance comparable to CL for traditional convolutional backbones. However, in 3D point cloud pretraining with ViTs, masked autoencoder (MAE) modeling remains dominant. This raises the question: Can we take the best of both worlds? To answer this question, we first empirically validate that integrating MAE-based point cloud pre-training with the standard contrastive learning paradigm, even with meticulous design, can lead to a decrease in performance. To address this limitation, we reintroduce CL into the MAE-based point cloud pre-training paradigm by leveraging the inherent contrastive properties of MAE. Specifically, rather than relying on extensive data augmentation as commonly used in the image domain, we randomly mask the input tokens twice to generate contrastive input pairs. Subsequently, a weight-sharing encoder and two identically structured decoders are utilized to perform masked token reconstruction. Additionally, we propose that for an input token masked by both masks simultaneously, the reconstructed features should be as similar as possible. This naturally establishes an explicit contrastive constraint within the generative MAE-based pre-training paradigm, resulting in our proposed method, Point-CMAE. Consequently, Point-CMAE effectively enhances the representation quality and transfer performance compared to its MAE counterpart. Experimental evaluations across various downstream applications, including classification, part segmentation, and few-shot learning, demonstrate the efficacy of our framework in surpassing state-of-the-art techniques under standard ViTs and single-modal settings. The source code and trained models are available at: https://github.com/Amazingren/Point-CMAE.",
+      "published": "2024-07-08T12:28:56Z",
+      "updated": "2024-07-08T12:28:56Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2407.05862"
+        ],
+        "doi": [
+          "10.48550/arXiv.2407.05862"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2407.05862",
+      "pdf": "https://arxiv.org/pdf/2407.05862",
+      "venue": "arXiv",
+      "comment": "Bringing Masked Autoencoders Explicit Contrastive Properties for Point Cloud Self-Supervised Learning",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0031": {
+      "id": "W0031",
+      "title": "$\\texttt{BATCLIP}$: Bimodal Online Test-Time Adaptation for CLIP",
+      "authors": [
+        "Sarthak Kumar Maharana",
+        "Baoming Zhang",
+        "Leonid Karlinsky",
+        "Rogerio Feris",
+        "Yunhui Guo"
+      ],
+      "abstract": "Although open-vocabulary classification models like Contrastive Language Image Pretraining (CLIP) have demonstrated strong zero-shot learning capabilities, their robustness to common image corruptions remains poorly understood. Through extensive experiments, we show that zero-shot CLIP lacks robustness to common image corruptions during test-time, necessitating the adaptation of CLIP to unlabeled corrupted images using test-time adaptation (TTA). However, we found that existing TTA methods have severe limitations in adapting CLIP due to their unimodal nature. To address these limitations, we propose $\\texttt{BATCLIP}$, a bimodal $\\textbf{online}$ TTA method designed to improve CLIP's robustness to common image corruptions. The key insight of our approach is not only to adapt the visual encoders for improving image features but also to strengthen the alignment between image and text features by promoting a stronger association between the image class prototype, computed using pseudo-labels, and the corresponding text feature. We evaluate our approach on benchmark image corruption datasets and achieve state-of-the-art results in online TTA for CLIP. Furthermore, we evaluate our proposed TTA approach on various domain generalization datasets to demonstrate its generalization capabilities. Our code is available at https://github.com/sarthaxxxxx/BATCLIP",
+      "published": "2024-12-03T21:02:14Z",
+      "updated": "2025-07-31T20:17:23Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2412.02837"
+        ],
+        "doi": [
+          "10.48550/arXiv.2412.02837"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2412.02837",
+      "pdf": "https://arxiv.org/pdf/2412.02837",
+      "venue": "arXiv",
+      "comment": "ICCV 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DG",
+          "OV",
+          "TTA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "vision-language",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "P. Furthermore, we evaluate our proposed TTA approach on various domain generalization datasets to demonstrate its generalization capabilities. Our code is available at https://github.co"
+          },
+          {
+            "label": "OV",
+            "quote": "BATCLIP}$: Bimodal Online Test-Time Adaptation for CLIP\nAlthough open-vocabulary classification models like Contrastive Language Image Pretraining (CLIP) have demonstrated strong z"
+          },
+          {
+            "label": "TTA",
+            "quote": "$\\texttt{BATCLIP}$: Bimodal Online Test-Time Adaptation for CLIP\nAlthough open-vocabulary classification models like Contrastive Language Image Pretra"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0026": {
+      "id": "W0026",
+      "title": "Leveraging Labelled Data Knowledge: A Cooperative Rectification Learning Network for Semi-supervised 3D Medical Image Segmentation",
+      "authors": [
+        "Yanyan Wang",
+        "Kechen Song",
+        "Yuyuan Liu",
+        "Shuai Ma",
+        "Yunhui Yan",
+        "Gustavo Carneiro"
+      ],
+      "abstract": "Semi-supervised 3D medical image segmentation aims to achieve accurate segmentation using few labelled data and numerous unlabelled data. The main challenge in the design of semi-supervised learning methods consists in the effective use of the unlabelled data for training. A promising solution consists of ensuring consistent predictions across different views of the data, where the efficacy of this strategy depends on the accuracy of the pseudo-labels generated by the model for this consistency learning strategy. In this paper, we introduce a new methodology to produce high-quality pseudo-labels for a consistency learning strategy to address semi-supervised 3D medical image segmentation. The methodology has three important contributions. The first contribution is the Cooperative Rectification Learning Network (CRLN) that learns multiple prototypes per class to be used as external knowledge priors to adaptively rectify pseudo-labels at the voxel level. The second contribution consists of the Dynamic Interaction Module (DIM) to facilitate pairwise and cross-class interactions between prototypes and multi-resolution image features, enabling the production of accurate voxel-level clues for pseudo-label rectification. The third contribution is the Cooperative Positive Supervision (CPS), which optimises uncertain representations to align with unassertive representations of their class distributions, improving the model's accuracy in classifying uncertain regions. Extensive experiments on three public 3D medical segmentation datasets demonstrate the effectiveness and superiority of our semi-supervised learning method.",
+      "published": "2025-02-17T05:29:50Z",
+      "updated": "2025-02-17T05:29:50Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2502.11456"
+        ],
+        "doi": [
+          "10.1016/j.media.2025.103461"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2502.11456",
+      "pdf": "https://arxiv.org/pdf/2502.11456",
+      "venue": "arXiv",
+      "comment": "Medical Image Analysis",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0149": {
+      "id": "W0149",
+      "title": "HiLoTs: High-Low Temporal Sensitive Representation Learning for Semi-Supervised LiDAR Segmentation in Autonomous Driving",
+      "authors": [
+        "R. D. Lin",
+        "Pengcheng Weng",
+        "Yinqiao Wang",
+        "Han Ding",
+        "Jinsong Han",
+        "Fei Wang"
+      ],
+      "abstract": "LiDAR point cloud semantic segmentation plays a crucial role in autonomous driving. In recent years, semi-supervised methods have gained popularity due to their significant reduction in annotation labor and time costs. Current semi-supervised methods typically focus on point cloud spatial distribution or consider short-term temporal representations, e.g., only two adjacent frames, often overlooking the rich long-term temporal properties inherent in autonomous driving scenarios. In driving experience, we observe that nearby objects, such as roads and vehicles, remain stable while driving, whereas distant objects exhibit greater variability in category and shape. This natural phenomenon is also captured by LiDAR, which reflects lower temporal sensitivity for nearby objects and higher sensitivity for distant ones. To leverage these characteristics, we propose HiLoTs, which learns high-temporal sensitivity and low-temporal sensitivity representations from continuous LiDAR frames. These representations are further enhanced and fused using a cross-attention mechanism. Additionally, we employ a teacher-student framework to align the representations learned by the labeled and unlabeled branches, effectively utilizing the large amounts of unlabeled data. Experimental results on the SemanticKITTI and nuScenes datasets demonstrate that our proposed HiLoTs outperforms state-of-the-art semi-supervised methods, and achieves performance close to LiDAR+Camera multimodal approaches. Code is available on https://github.com/rdlin118/HiLoTs",
+      "published": "2025-03-22T12:29:15Z",
+      "updated": "2025-03-22T12:29:15Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2503.17752"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.17752"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.17752",
+      "pdf": "https://arxiv.org/pdf/2503.17752",
+      "venue": "arXiv",
+      "comment": "accepted by CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "cross-modal",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0038": {
+      "id": "W0038",
+      "title": "ProtoGuard-guided PROPEL: Class-Aware Prototype Enhancement and Progressive Labeling for Incremental 3D Point Cloud Segmentation",
+      "authors": [
+        "Haosheng Li",
+        "Yuecong Xu",
+        "Junjie Chen",
+        "Kemi Ding"
+      ],
+      "abstract": "3D point cloud semantic segmentation technology has been widely used. However, in real-world scenarios, the environment is evolving. Thus, offline-trained segmentation models may lead to catastrophic forgetting of previously seen classes. Class-incremental learning (CIL) is designed to address the problem of catastrophic forgetting. While point clouds are common, we observe high similarity and unclear boundaries between different classes. Meanwhile, they are known to be imbalanced in class distribution. These lead to issues including misclassification between similar classes and the long-tail problem, which have not been adequately addressed in previous CIL methods. We thus propose ProtoGuard and PROPEL (Progressive Refinement Of PsEudo-Labels). In the base-class training phase, ProtoGuard maintains geometric and semantic prototypes for each class, which are combined into prototype features using an attention mechanism. In the novel-class training phase, PROPEL inherits the base feature extractor and classifier, guiding pseudo-label propagation and updates based on density distribution and semantic similarity. Extensive experiments show that our approach achieves remarkable results on both the S3DIS and ScanNet datasets, improving the mIoU of 3D point cloud segmentation by a maximum of 20.39% under the 5-step CIL scenario on S3DIS.",
+      "published": "2025-04-02T11:58:04Z",
+      "updated": "2025-04-12T08:17:42Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2504.01648"
+        ],
+        "doi": [
+          "10.48550/arXiv.2504.01648"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2504.01648",
+      "pdf": "https://arxiv.org/pdf/2504.01648",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0040": {
+      "id": "W0040",
+      "title": "Prototype and Instance Contrastive Learning for Unsupervised Domain Adaptation in Speaker Verification",
+      "authors": [
+        "Wen Huang",
+        "Bing Han",
+        "Zhengyang Chen",
+        "Shuai Wang",
+        "Yanmin Qian"
+      ],
+      "abstract": "Speaker verification system trained on one domain usually suffers performance degradation when applied to another domain. To address this challenge, researchers commonly use feature distribution matching-based methods in unsupervised domain adaptation scenarios where some unlabeled target domain data is available. However, these methods often have limited performance improvement and lack generalization in various mismatch situations. In this paper, we propose Prototype and Instance Contrastive Learning (PICL), a novel method for unsupervised domain adaptation in speaker verification through dual-level contrastive learning. For prototype contrastive learning, we generate pseudo labels via clustering to create dynamically updated prototype representations, aligning instances with their corresponding class or cluster prototypes. For instance contrastive learning, we minimize the distance between different views or augmentations of the same instance, ensuring robust and invariant representations resilient to variations like noise. This dual-level approach provides both high-level and low-level supervision, leading to improved generalization and robustness of the speaker verification model. Unlike previous studies that only evaluated mismatches in one situation, we have conducted relevant explorations on various datasets and achieved state-of-the-art performance currently, which also proves the generalization of our method.",
+      "published": "2024-10-22T13:59:34Z",
+      "updated": "2024-10-22T13:59:34Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2410.17033"
+        ],
+        "doi": [
+          "10.48550/arXiv.2410.17033"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2410.17033",
+      "pdf": "https://arxiv.org/pdf/2410.17033",
+      "venue": "arXiv",
+      "comment": "Accepted to ISCSLP 2024",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "augmentation",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Prototype and Instance Contrastive Learning for Unsupervised Domain Adaptation in Speaker Verification\nSpeaker verification system trained on one domain usually suffers performan"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0236": {
+      "id": "W0236",
+      "title": "Hyperbolic Image-and-Pointcloud Contrastive Learning for 3D Classification",
+      "authors": [
+        "Naiwen Hu",
+        "Haozhe Cheng",
+        "Yifan Xie",
+        "Pengcheng Shi",
+        "Jihua Zhu"
+      ],
+      "abstract": "3D contrastive representation learning has exhibited remarkable efficacy across various downstream tasks. However, existing contrastive learning paradigms based on cosine similarity fail to deeply explore the potential intra-modal hierarchical and cross-modal semantic correlations about multi-modal data in Euclidean space. In response, we seek solutions in hyperbolic space and propose a hyperbolic image-and-pointcloud contrastive learning method (HyperIPC). For the intra-modal branch, we rely on the intrinsic geometric structure to explore the hyperbolic embedding representation of point cloud to capture invariant features. For the cross-modal branch, we leverage images to guide the point cloud in establishing strong semantic hierarchical correlations. Empirical experiments underscore the outstanding classification performance of HyperIPC. Notably, HyperIPC enhances object classification results by 2.8% and few-shot classification outcomes by 5.9% on ScanObjectNN compared to the baseline. Furthermore, ablation studies and confirmatory testing validate the rationality of HyperIPC's parameter settings and the effectiveness of its submodules.",
+      "published": "2024-09-24T07:13:37Z",
+      "updated": "2024-09-24T07:13:37Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2409.15810"
+        ],
+        "doi": [
+          "10.48550/arXiv.2409.15810"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2409.15810",
+      "pdf": "https://arxiv.org/pdf/2409.15810",
+      "venue": "arXiv",
+      "comment": "Accepted at IROS2024",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "cross-modal"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0109": {
+      "id": "W0109",
+      "title": "MICDrop: Masking Image and Depth Features via Complementary Dropout for Domain-Adaptive Semantic Segmentation",
+      "authors": [
+        "Linyan Yang",
+        "Lukas Hoyer",
+        "Mark Weber",
+        "Tobias Fischer",
+        "Dengxin Dai",
+        "Laura Leal-Taixé",
+        "Marc Pollefeys",
+        "Daniel Cremers",
+        "Luc Van Gool"
+      ],
+      "abstract": "Unsupervised Domain Adaptation (UDA) is the task of bridging the domain gap between a labeled source domain, e.g., synthetic data, and an unlabeled target domain. We observe that current UDA methods show inferior results on fine structures and tend to oversegment objects with ambiguous appearance. To address these shortcomings, we propose to leverage geometric information, i.e., depth predictions, as depth discontinuities often coincide with segmentation boundaries. We show that naively incorporating depth into current UDA methods does not fully exploit the potential of this complementary information. To this end, we present MICDrop, which learns a joint feature representation by masking image encoder features while inversely masking depth encoder features. With this simple yet effective complementary masking strategy, we enforce the use of both modalities when learning the joint feature representation. To aid this process, we propose a feature fusion module to improve both global as well as local information sharing while being robust to errors in the depth predictions. We show that our method can be plugged into various recent UDA methods and consistently improve results across standard UDA benchmarks, obtaining new state-of-the-art performances.",
+      "published": "2024-08-29T12:15:10Z",
+      "updated": "2024-08-29T12:15:10Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2408.16478"
+        ],
+        "doi": [
+          "10.48550/arXiv.2408.16478"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2408.16478",
+      "pdf": "https://arxiv.org/pdf/2408.16478",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "y Dropout for Domain-Adaptive Semantic Segmentation\nUnsupervised Domain Adaptation (UDA) is the task of bridging the domain gap between a labeled source domain, e.g., synthetic data,"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0024": {
+      "id": "W0024",
+      "title": "Domain-Agnostic Feature Modulation for Semi-Supervised Domain Generalization",
+      "authors": [
+        "Venuri Amarasinghe",
+        "Kalinga Bandara",
+        "Isun Randila",
+        "Asini Jayakody",
+        "Chamuditha Jayanga Galappaththige",
+        "Ranga Rodrigo"
+      ],
+      "abstract": "Semi-supervised domain generalization (SSDG) leverages a small fraction of labeled data alongside unlabeled data to enhance model generalization. Most of the existing SSDG methods rely on pseudo-labeling (PL) for unlabeled data, often assuming access to domain labels-a privilege not always available. However, domain shifts introduce domain noise, leading to inconsistent PLs that degrade model performance. Methods derived from FixMatch suffer particularly from lower PL accuracy, reducing the effectiveness of unlabeled data. To address this, we tackle the more challenging domain-label agnostic SSDG, where domain labels for unlabeled data are not available during training. First, we propose a feature modulation strategy that enhances class-discriminative features while suppressing domain-specific information. This modulation shifts features toward Similar Average Representations-a modified version of class prototypes-that are robust across domains, encouraging the classifier to distinguish between closely related classes and feature extractor to form tightly clustered, domain-invariant representations. Second, to mitigate domain noise and improve pseudo-label accuracy, we introduce a loss-scaling function that dynamically lowers the fixed confidence threshold for pseudo-labels, optimizing the use of unlabeled data. With these key innovations, our approach achieves significant improvements on four major domain generalization benchmarks-even without domain labels. We will make the code available.",
+      "published": "2025-03-26T18:10:10Z",
+      "updated": "2026-05-28T04:54:56Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2503.20897"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.20897"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.20897",
+      "pdf": "https://arxiv.org/pdf/2503.20897",
+      "venue": "arXiv",
+      "comment": "Accepted at CVPRW 2026",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DG"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "Domain-Agnostic Feature Modulation for Semi-Supervised Domain Generalization\nSemi-supervised domain generalization (SSDG) leverages a small fraction of labeled data alongside u"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0264": {
+      "id": "W0264",
+      "title": "Extremely Simple Multimodal Outlier Synthesis for Out-of-Distribution Detection and Segmentation",
+      "authors": [
+        "Moru Liu",
+        "Hao Dong",
+        "Jessica Kelly",
+        "Olga Fink",
+        "Mario Trapp"
+      ],
+      "abstract": "Out-of-distribution (OOD) detection and segmentation are crucial for deploying machine learning models in safety-critical applications such as autonomous driving and robot-assisted surgery. While prior research has primarily focused on unimodal image data, real-world applications are inherently multimodal, requiring the integration of multiple modalities for improved OOD detection. A key challenge is the lack of supervision signals from unknown data, leading to overconfident predictions on OOD samples. To address this challenge, we propose Feature Mixing, an extremely simple and fast method for multimodal outlier synthesis with theoretical support, which can be further optimized to help the model better distinguish between in-distribution (ID) and OOD data. Feature Mixing is modality-agnostic and applicable to various modality combinations. Additionally, we introduce CARLA-OOD, a novel multimodal dataset for OOD segmentation, featuring synthetic OOD objects across diverse scenes and weather conditions. Extensive experiments on SemanticKITTI, nuScenes, CARLA-OOD datasets, and the MultiOOD benchmark demonstrate that Feature Mixing achieves state-of-the-art performance with a $10 \\times$ to $370 \\times$ speedup. Our source code and dataset will be available at https://github.com/mona4399/FeatureMixing.",
+      "published": "2025-05-22T17:54:30Z",
+      "updated": "2026-03-04T15:17:55Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2505.16985"
+        ],
+        "doi": [
+          "10.48550/arXiv.2505.16985"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.16985",
+      "pdf": "https://arxiv.org/pdf/2505.16985",
+      "venue": "arXiv",
+      "comment": "NeurIPS 2025",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "cross-modal"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0155": {
+      "id": "W0155",
+      "title": "Label-Efficient LiDAR Semantic Segmentation with 2D-3D Vision Transformer Adapters",
+      "authors": [
+        "Julia Hindel",
+        "Rohit Mohan",
+        "Jelena Bratulic",
+        "Daniele Cattaneo",
+        "Thomas Brox",
+        "Abhinav Valada"
+      ],
+      "abstract": "LiDAR semantic segmentation models are typically trained from random initialization as universal pre-training is hindered by the lack of large, diverse datasets. Moreover, most point cloud segmentation architectures incorporate custom network layers, limiting the transferability of advances from vision-based architectures. Inspired by recent advances in universal foundation models, we propose BALViT, a novel approach that leverages frozen vision models as amodal feature encoders for learning strong LiDAR encoders. Specifically, BALViT incorporates both range-view and bird's-eye-view LiDAR encoding mechanisms, which we combine through a novel 2D-3D adapter. While the range-view features are processed through a frozen image backbone, our bird's-eye-view branch enhances them through multiple cross-attention interactions. Thereby, we continuously improve the vision network with domain-dependent knowledge, resulting in a strong label-efficient LiDAR encoding mechanism. Extensive evaluations of BALViT on the SemanticKITTI and nuScenes benchmarks demonstrate that it outperforms state-of-the-art methods on small data regimes. We make the code and models publicly available at: http://balvit.cs.uni-freiburg.de.",
+      "published": "2025-03-05T09:30:49Z",
+      "updated": "2025-03-05T09:30:49Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2503.03299"
+        ],
+        "doi": [
+          "10.48550/arXiv.2503.03299"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.03299",
+      "pdf": "https://arxiv.org/pdf/2503.03299",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-14T19:38:04Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-13T20:47:44Z",
-      "last_success": "2026-10-13T20:47:44Z"
+      "completed_until": "2026-10-14T19:38:04Z",
+      "last_success": "2026-10-14T19:38:04Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-13T20:47:44Z",
-      "last_success": "2026-10-13T20:47:44Z"
+      "completed_until": "2026-10-14T19:38:04Z",
+      "last_success": "2026-10-14T19:38:04Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-13T20:47:44Z",
-      "last_success": "2026-10-13T20:47:44Z"
+      "completed_until": "2026-10-14T19:38:04Z",
+      "last_success": "2026-10-14T19:38:04Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-13T20:47:44Z",
-      "last_success": "2026-10-13T20:47:44Z"
+      "completed_until": "2026-10-14T19:38:04Z",
+      "last_success": "2026-10-14T19:38:04Z"
     }
   },
   "events": [
@@ -4447,9 +6720,296 @@
       "paper_id": "W0058",
       "title": "CNG-SFDA:Clean-and-Noisy Region Guided Online-Offline Source-Free Domain Adaptation",
       "at": "2026-10-13T20:47:44Z"
+    },
+    {
+      "key": "5aaebabf92a82b8bd1d2c30b",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.16177",
+      "title": "DIGS: Distribution-Informed Gaussian Splatting for Training-Free Open-Vocabulary 3D Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "8c2c33060223fa5d7fbfc7e2",
+      "kind": "indexed-existing",
+      "paper_id": "W0254",
+      "title": "Part2Object: Hierarchical Unsupervised 3D Instance Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "0c6d4ff636c0e752561d9400",
+      "kind": "indexed-existing",
+      "paper_id": "W0233",
+      "title": "UnO: Unsupervised Occupancy Fields for Perception and Forecasting",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "7be1d444bae5aa8a6649b3c3",
+      "kind": "indexed-existing",
+      "paper_id": "W0025",
+      "title": "STiL: Semi-supervised Tabular-Image Learning for Comprehensive Task-Relevant Information Exploration in Multimodal Classification",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "0be522f44d46ed116f44fe49",
+      "kind": "indexed-existing",
+      "paper_id": "W0037",
+      "title": "OT Score: An OT based Confidence Score for Prototype-Assisted Source Free Unsupervised Domain Adaptation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "510e72ba04262c34706ecf88",
+      "kind": "indexed-existing",
+      "paper_id": "W0172",
+      "title": "APCoTTA: Continual Test-Time Adaptation for Semantic Segmentation of Airborne LiDAR Point Clouds",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "f4cf68dd4c72b08e02b81c4c",
+      "kind": "indexed-existing",
+      "paper_id": "W0252",
+      "title": "3x2: 3D Object Part Segmentation by 2D Semantic Correspondences",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "85a9f9e8fdeaae1d2751750a",
+      "kind": "indexed-existing",
+      "paper_id": "W0069",
+      "title": "DATR: Unsupervised Domain Adaptive Detection Transformer with Dataset-Level Adaptation and Prototypical Alignment",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "fc4d268a9629bf24488653f7",
+      "kind": "indexed-existing",
+      "paper_id": "W0184",
+      "title": "Multi-modal NeRF Self-Supervision for LiDAR Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "2aa06764112cd801e00ab965",
+      "kind": "indexed-existing",
+      "paper_id": "W0193",
+      "title": "PanoGen++: Domain-Adapted Text-Guided Panoramic Environment Generation for Vision-and-Language Navigation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "ffcc3cad8a8687300888e847",
+      "kind": "indexed-existing",
+      "paper_id": "W0055",
+      "title": "OmniSAM: Omnidirectional Segment Anything Model for UDA in Panoramic Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "782c1e6fe3906d42e56db10a",
+      "kind": "indexed-existing",
+      "paper_id": "W0259",
+      "title": "Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous Driving",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "c49ffe0141415b227c284212",
+      "kind": "indexed-existing",
+      "paper_id": "W0222",
+      "title": "GrabDAE: An Innovative Framework for Unsupervised Domain Adaptation Utilizing Grab-Mask and Denoise Auto-Encoder",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "fefa442a1ff5126bc66f0164",
+      "kind": "indexed-existing",
+      "paper_id": "W0039",
+      "title": "Multi-Source Unsupervised Domain Adaptation with Prototype Aggregation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "7402b6f18e3984d1805372e9",
+      "kind": "indexed-existing",
+      "paper_id": "W0205",
+      "title": "LiCAR: pseudo-RGB LiDAR image for CAR segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "ea647a49ba785c6319c373bc",
+      "kind": "indexed-existing",
+      "paper_id": "W0204",
+      "title": "SAM-guided Pseudo Label Enhancement for Multi-modal 3D Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "4742fa65428e1a568e2bd62d",
+      "kind": "indexed-existing",
+      "paper_id": "W0263",
+      "title": "Train Till You Drop: Towards Stable and Robust Source-free Unsupervised 3D Domain Adaptation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "33693850974aa1ebfd72fcb7",
+      "kind": "indexed-existing",
+      "paper_id": "W0147",
+      "title": "Multi-View Projection for Unsupervised Domain Adaptation in 3D Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "503121932405ddee6870913c",
+      "kind": "indexed-existing",
+      "paper_id": "W0027",
+      "title": "Training-Free Zero-Shot Temporal Action Detection with Vision-Language Models",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "5d781074b9aca02382bcc8c3",
+      "kind": "indexed-existing",
+      "paper_id": "W0028",
+      "title": "PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "8fb27b231888c4a65ab9a0c1",
+      "kind": "indexed-existing",
+      "paper_id": "W0141",
+      "title": "No Thing, Nothing: Highlighting Safety-Critical Classes for Robust LiDAR Semantic Segmentation in Adverse Weather",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "84ffc4986df61e55479539e9",
+      "kind": "indexed-existing",
+      "paper_id": "W0143",
+      "title": "RegMixMatch: Optimizing Mixup Utilization in Semi-Supervised Learning",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "acfd0156f482f4271eba98db",
+      "kind": "indexed-existing",
+      "paper_id": "W0054",
+      "title": "ElimPCL: Eliminating Noise Accumulation with Progressive Curriculum Labeling for Source-Free Domain Adaptation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "3025546e267784e46aec523d",
+      "kind": "indexed-existing",
+      "paper_id": "W0256",
+      "title": "LiOn-XA: Unsupervised Domain Adaptation via LiDAR-Only Cross-Modal Adversarial Training",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "91ca671ecea2abb8b043c75c",
+      "kind": "indexed-existing",
+      "paper_id": "W0041",
+      "title": "Reducing Semantic Ambiguity In Domain Adaptive Semantic Segmentation Via Probabilistic Prototypical Pixel Contrast",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "5e424bf08083d069d351478b",
+      "kind": "indexed-existing",
+      "paper_id": "W0253",
+      "title": "3D Weakly Supervised Semantic Segmentation with 2D Vision-Language Guidance",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "57c31dbae9a2d07e3a195455",
+      "kind": "indexed-existing",
+      "paper_id": "W0067",
+      "title": "Universal Domain Adaptation for Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "8a7471acbfdf1d37faba8258",
+      "kind": "indexed-existing",
+      "paper_id": "W0008",
+      "title": "Learning Class Prototypes for Unified Sparse Supervised 3D Object Detection",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "e6544048928282adced0b8d1",
+      "kind": "indexed-existing",
+      "paper_id": "W0030",
+      "title": "HGL: Hierarchical Geometry Learning for Test-time Adaptation in 3D Point Cloud Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "5934b3a2ed4466b11cc60798",
+      "kind": "indexed-existing",
+      "paper_id": "W0255",
+      "title": "Augmented Efficiency: Reducing Memory Footprint and Accelerating Inference for 3D Semantic Segmentation through Hybrid Vision",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "5ca53d686087990f5552e5e8",
+      "kind": "indexed-existing",
+      "paper_id": "W0223",
+      "title": "Bringing Masked Autoencoders Explicit Contrastive Properties for Point Cloud Self-Supervised Learning",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "24f68f6cbb204fa7a630244e",
+      "kind": "indexed-existing",
+      "paper_id": "W0031",
+      "title": "$\\texttt{BATCLIP}$: Bimodal Online Test-Time Adaptation for CLIP",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "584771faa87aa3a9ea79bc3b",
+      "kind": "indexed-existing",
+      "paper_id": "W0026",
+      "title": "Leveraging Labelled Data Knowledge: A Cooperative Rectification Learning Network for Semi-supervised 3D Medical Image Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "bf91495317ba4a88e5d5e0c6",
+      "kind": "indexed-existing",
+      "paper_id": "W0149",
+      "title": "HiLoTs: High-Low Temporal Sensitive Representation Learning for Semi-Supervised LiDAR Segmentation in Autonomous Driving",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "a163d90ba7c1c35fee655876",
+      "kind": "indexed-existing",
+      "paper_id": "W0038",
+      "title": "ProtoGuard-guided PROPEL: Class-Aware Prototype Enhancement and Progressive Labeling for Incremental 3D Point Cloud Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "5a250637bcde71a4214f9df5",
+      "kind": "indexed-existing",
+      "paper_id": "W0040",
+      "title": "Prototype and Instance Contrastive Learning for Unsupervised Domain Adaptation in Speaker Verification",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "0d50f0269721cdd044e81145",
+      "kind": "indexed-existing",
+      "paper_id": "W0236",
+      "title": "Hyperbolic Image-and-Pointcloud Contrastive Learning for 3D Classification",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "e658229259fe5fa8ba6d545c",
+      "kind": "indexed-existing",
+      "paper_id": "W0109",
+      "title": "MICDrop: Masking Image and Depth Features via Complementary Dropout for Domain-Adaptive Semantic Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "afaef41632e902ec39fba7b4",
+      "kind": "indexed-existing",
+      "paper_id": "W0024",
+      "title": "Domain-Agnostic Feature Modulation for Semi-Supervised Domain Generalization",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "da685fa5c3301e1c109f652a",
+      "kind": "indexed-existing",
+      "paper_id": "W0264",
+      "title": "Extremely Simple Multimodal Outlier Synthesis for Out-of-Distribution Detection and Segmentation",
+      "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "69f9b21aa9033226fb8a5c7c",
+      "kind": "indexed-existing",
+      "paper_id": "W0155",
+      "title": "Label-Efficient LiDAR Semantic Segmentation with 2D-3D Vision Transformer Adapters",
+      "at": "2026-10-14T19:38:04Z"
     }
   ],
-  "revision_cursor": 40,
+  "revision_cursor": 80,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -4503,71 +7063,124 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-14T19:38:04Z",
+      "status": "ok",
+      "counts": {
+        "new": 1,
+        "revised": 0,
+        "existing": 40,
+        "metadata": 0,
+        "unchanged": 6,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-06T20:47:44Z",
+          "end": "2026-10-14T19:38:04Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-06T20:47:44Z",
+          "end": "2026-10-14T19:38:04Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-06T20:47:44Z",
+          "end": "2026-10-14T19:38:04Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-06T20:47:44Z",
+          "end": "2026-10-14T19:38:04Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 163
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-13T20:47:44Z",
+    "at": "2026-10-14T19:38:04Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-13T20:47:44Z",
+    "at": "2026-10-14T19:38:04Z",
     "status": "ok",
     "counts": {
-      "new": 31,
+      "new": 1,
       "revised": 0,
       "existing": 40,
       "metadata": 0,
-      "unchanged": 3,
+      "unchanged": 6,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-09-13T20:47:44Z",
-        "end": "2026-10-13T20:47:44Z",
-        "backlog_days": 0,
-        "status": "ok",
-        "matched": 9
-      },
-      {
-        "source": "domain-generalization",
-        "start": "2026-09-13T20:47:44Z",
-        "end": "2026-10-13T20:47:44Z",
-        "backlog_days": 0,
-        "status": "ok",
-        "matched": 7
-      },
-      {
-        "source": "open-vocabulary",
-        "start": "2026-09-13T20:47:44Z",
-        "end": "2026-10-13T20:47:44Z",
-        "backlog_days": 0,
-        "status": "ok",
-        "matched": 16
-      },
-      {
-        "source": "test-time-adaptation",
-        "start": "2026-09-13T20:47:44Z",
-        "end": "2026-10-13T20:47:44Z",
+        "start": "2026-10-06T20:47:44Z",
+        "end": "2026-10-14T19:38:04Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 2
       },
       {
+        "source": "domain-generalization",
+        "start": "2026-10-06T20:47:44Z",
+        "end": "2026-10-14T19:38:04Z",
+        "backlog_days": 0,
+        "status": "ok",
+        "matched": 2
+      },
+      {
+        "source": "open-vocabulary",
+        "start": "2026-10-06T20:47:44Z",
+        "end": "2026-10-14T19:38:04Z",
+        "backlog_days": 0,
+        "status": "ok",
+        "matched": 2
+      },
+      {
+        "source": "test-time-adaptation",
+        "start": "2026-10-06T20:47:44Z",
+        "end": "2026-10-14T19:38:04Z",
+        "backlog_days": 0,
+        "status": "ok",
+        "matched": 1
+      },
+      {
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 162
+        "total_known": 163
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-13T20:47:44Z",
+  "last_full_success": "2026-10-14T19:38:04Z",
   "llm_last_run": {
-    "at": "2026-10-13T20:47:58Z",
+    "at": "2026-10-14T19:38:17Z",
     "status": "disabled",
     "attempted": 0,
     "succeeded": 0,
