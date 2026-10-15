@@ -29,7 +29,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-15T19:20:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -87,7 +87,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-15T19:20:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3956,7 +3956,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-15T19:20:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6199,28 +6199,2307 @@
       "full_text_read": false,
       "warnings": [],
       "versions": []
+    },
+    "W0118": {
+      "id": "W0118",
+      "title": "LogoSP: Local-global Grouping of Superpoints for Unsupervised Semantic Segmentation of 3D Point Clouds",
+      "authors": [
+        "Zihui Zhang",
+        "Weisheng Dai",
+        "Hongtao Wen",
+        "Bo Yang"
+      ],
+      "abstract": "We study the problem of unsupervised 3D semantic segmentation on raw point clouds without needing human labels in training. Existing methods usually formulate this problem into learning per-point local features followed by a simple grouping strategy, lacking the ability to discover additional and possibly richer semantic priors beyond local features. In this paper, we introduce LogoSP to learn 3D semantics from both local and global point features. The key to our approach is to discover 3D semantic information by grouping superpoints according to their global patterns in the frequency domain, thus generating highly accurate semantic pseudo-labels for training a segmentation network. Extensive experiments on two indoor and an outdoor datasets show that our LogoSP surpasses all existing unsupervised methods by large margins, achieving the state-of-the-art performance for unsupervised 3D semantic segmentation. Notably, our investigation into the learned global patterns reveals that they truly represent meaningful 3D semantics in the absence of human labels during training.",
+      "published": "2025-06-09T15:21:37Z",
+      "updated": "2025-06-09T15:21:37Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2506.07857"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.07857"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.07857",
+      "pdf": "https://arxiv.org/pdf/2506.07857",
+      "venue": "arXiv",
+      "comment": "CVPR 2025. Code and data are available at: https://github.com/vLAR-group/LogoSP",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0049": {
+      "id": "W0049",
+      "title": "HEDN: A Hard-Easy Dual Network with Source Reliability Assessment for Cross-Subject EEG Emotion Recognition",
+      "authors": [
+        "Qiang Wang",
+        "Liying Yang",
+        "Jiayun Song",
+        "Yifan Bai",
+        "Jingtao Du"
+      ],
+      "abstract": "Cross-subject electroencephalography (EEG) emotion recognition remains a major challenge in brain-computer interfaces (BCIs) due to substantial inter-subject variability. Multi-Source Domain Adaptation (MSDA) offers a potential solution, but existing MSDA frameworks typically assume equal source quality, leading to negative transfer from low-reliability domains and prohibitive computational overhead due to multi-branch model designs. To address these limitations, we propose the Hard-Easy Dual Network (HEDN), a lightweight reliability-aware MSDA framework. HEDN introduces a novel Source Reliability Assessment (SRA) mechanism that dynamically evaluates the structural integrity of each source domain during training. Based on this assessment, sources are routed to two specialized branches: an Easy Network that exploits high-quality sources to construct fine-grained, structure-aware prototypes for reliable pseudo-label generation, and a Hard Network that utilizes adversarial training to refine and align low-quality sources. Furthermore, a cross-network consistency loss aligns predictions between branches to preserve semantic coherence. Extensive experiments conducted on SEED, SEED-IV, and DEAP datasets demonstrate that HEDN achieves state-of-the-art performance across both cross-subject and cross-dataset evaluation protocols while reducing adaptation complexity.",
+      "published": "2025-11-10T07:14:31Z",
+      "updated": "2025-12-12T11:21:59Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2511.06782"
+        ],
+        "doi": [
+          "10.48550/arXiv.2511.06782"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2511.06782",
+      "pdf": "https://arxiv.org/pdf/2511.06782",
+      "venue": "arXiv",
+      "comment": "This work has been submitted to the IEEE for possible publication",
+      "categories": [
+        "cs.HC",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "BCIs) due to substantial inter-subject variability. Multi-Source Domain Adaptation (MSDA) offers a potential solution, but existing MSDA frameworks typically assume equal source qual"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0019": {
+      "id": "W0019",
+      "title": "VK-Det: Visual Knowledge Guided Prototype Learning for Open-Vocabulary Aerial Object Detection",
+      "authors": [
+        "Jianhang Yao",
+        "Yongbin Zheng",
+        "Siqi Lu",
+        "Wanying Xu",
+        "Peng Sun"
+      ],
+      "abstract": "To identify objects beyond predefined categories, open-vocabulary aerial object detection (OVAD) leverages the zero-shot capabilities of visual-language models (VLMs) to generalize from base to novel categories. Existing approaches typically utilize self-learning mechanisms with weak text supervision to generate region-level pseudo-labels to align detectors with VLMs semantic spaces. However, text dependence induces semantic bias, restricting open-vocabulary expansion to text-specified concepts. We propose $\\textbf{VK-Det}$, a $\\textbf{V}$isual $\\textbf{K}$nowledge-guided open-vocabulary object $\\textbf{Det}$ection framework $\\textit{without}$ extra supervision. First, we discover and leverage vision encoder's inherent informative region perception to attain fine-grained localization and adaptive distillation. Second, we introduce a novel prototype-aware pseudo-labeling strategy. It models inter-class decision boundaries through feature clustering and maps detection regions to latent categories via prototype matching. This enhances attention to novel objects while compensating for missing supervision. Extensive experiments show state-of-the-art performance, achieving 30.1 $\\mathrm{mAP}^{N}$ on DIOR and 23.3 $\\mathrm{mAP}^{N}$ on DOTA, outperforming even extra supervised methods.",
+      "published": "2025-11-22T14:19:59Z",
+      "updated": "2025-11-22T14:19:59Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2511.18075"
+        ],
+        "doi": [
+          "10.48550/arXiv.2511.18075"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2511.18075",
+      "pdf": "https://arxiv.org/pdf/2511.18075",
+      "venue": "arXiv",
+      "comment": "15 pages, 8 figures, accepted by AAAI 2026",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "OV"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "distillation",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "VK-Det: Visual Knowledge Guided Prototype Learning for Open-Vocabulary Aerial Object Detection\nTo identify objects beyond predefined categories, open-vocabulary aerial ob"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0047": {
+      "id": "W0047",
+      "title": "USBD: Universal Structural Basis Distillation for Source-Free Graph Domain Adaptation",
+      "authors": [
+        "Yingxu Wang",
+        "Kunyu Zhang",
+        "Mengzhu Wang",
+        "Siyang Gao",
+        "Nan Yin"
+      ],
+      "abstract": "SF-GDA is pivotal for privacy-preserving knowledge transfer across graph datasets. Although recent works incorporate structural information, they implicitly condition adaptation on the smoothness priors of sourcetrained GNNs, thereby limiting their generalization to structurally distinct targets. This dependency becomes a critical bottleneck under significant topological shifts, where the source model misinterprets distinct topological patterns unseen in the source domain as noise, rendering pseudo-label-based adaptation unreliable. To overcome this limitation, we propose the Universal Structural Basis Distillation, a framework that shifts the paradigm from adapting a biased model to learning a universal structural basis for SF-GDA. Instead of adapting a biased source model to a specific target, our core idea is to construct a structure-agnostic basis that proactively covers the full spectrum of potential topological patterns. Specifically, USBD employs a bi-level optimization framework to distill the source dataset into a compact structural basis. By enforcing the prototypes to span the full Dirichlet energy spectrum, the learned basis explicitly captures diverse topological motifs, ranging from low-frequency clusters to high-frequency chains, beyond those present in the source. This ensures that the learned basis creates a comprehensive structural covering capable of handling targets with disparate structures. For inference, we introduce a spectral-aware ensemble mechanism that dynamically activates the optimal prototype combination based on the spectral fingerprint of the target graph. Extensive experiments on benchmarks demonstrate that USBD significantly outperforms state-of-the-art methods, particularly in scenarios with severe structural shifts, while achieving superior computational efficiency by decoupling the adaptation cost from the target data scale.",
+      "published": "2026-02-09T09:39:07Z",
+      "updated": "2026-02-09T09:39:07Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2602.08431"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.08431"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.08431",
+      "pdf": "https://arxiv.org/pdf/2602.08431",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "distillation",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "D: Universal Structural Basis Distillation for Source-Free Graph Domain Adaptation\nSF-GDA is pivotal for privacy-preserving knowledge transfer across graph datasets. Although recent"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0052": {
+      "id": "W0052",
+      "title": "From Entanglement to Alignment: Representation Space Decomposition for Unsupervised Time Series Domain Adaptation",
+      "authors": [
+        "Rongyao Cai",
+        "Ming Jin",
+        "Qingsong Wen",
+        "Kexin Zhang"
+      ],
+      "abstract": "Domain shift poses a fundamental challenge in time series analysis, where models trained on source domain often fail dramatically when applied in target domain with different yet similar distributions. While current unsupervised domain adaptation (UDA) methods attempt to align cross-domain feature distributions, they typically treat features as indivisible entities, ignoring their intrinsic compositions that govern domain adaptation. We introduce DARSD, a novel UDA framework with theoretical explainability that explicitly realizes UDA tasks from the perspective of representation space decomposition. Our core insight is that effective domain adaptation requires not just alignment, but principled disentanglement of transferable knowledge from mixed representations. DARSD consists of three synergistic components: (I) An adversarial learnable common invariant basis that projects original features into a domain-invariant subspace while preserving semantic content; (II) A prototypical pseudo-labeling mechanism that dynamically separates target features based on confidence, hindering error accumulation; (III) A hybrid contrastive optimization strategy that simultaneously enforces feature clustering and consistency while mitigating emerging distribution gaps. Comprehensive experiments conducted on four benchmarks (WISDM, HAR, HHAR, and MFD) demonstrate DARSD's superiority against 12 UDA algorithms, achieving optimal performance in 35 out of 53 scenarios and ranking first across all benchmarks.",
+      "published": "2025-07-28T16:26:28Z",
+      "updated": "2025-08-06T07:55:26Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2507.20968"
+        ],
+        "doi": [
+          "10.48550/arXiv.2507.20968"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.20968",
+      "pdf": "https://arxiv.org/pdf/2507.20968",
+      "venue": "arXiv",
+      "comment": "15 pages, 7 figures",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Representation Space Decomposition for Unsupervised Time Series Domain Adaptation\nDomain shift poses a fundamental challenge in time series analysis, where models trained on source"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0130": {
+      "id": "W0130",
+      "title": "CLIPoint3D: Language-Grounded Few-Shot Unsupervised 3D Point Cloud Domain Adaptation",
+      "authors": [
+        "Mainak Singha",
+        "Sarthak Mehrotra",
+        "Paolo Casari",
+        "Subhasis Chaudhuri",
+        "Elisa Ricci",
+        "Biplab Banerjee"
+      ],
+      "abstract": "Recent vision-language models (VLMs) such as CLIP demonstrate impressive cross-modal reasoning, extending beyond images to 3D perception. Yet, these models remain fragile under domain shifts, especially when adapting from synthetic to real-world point clouds. Conventional 3D domain adaptation approaches rely on heavy trainable encoders, yielding strong accuracy but at the cost of efficiency. We introduce CLIPoint3D, the first framework for few-shot unsupervised 3D point cloud domain adaptation built upon CLIP. Our approach projects 3D samples into multiple depth maps and exploits the frozen CLIP backbone, refined through a knowledge-driven prompt tuning scheme that integrates high-level language priors with geometric cues from a lightweight 3D encoder. To adapt task-specific features effectively, we apply parameter-efficient fine-tuning to CLIP's encoders and design an entropy-guided view sampling strategy for selecting confident projections. Furthermore, an optimal transport-based alignment loss and an uncertainty-aware prototype alignment loss collaboratively bridge source-target distribution gaps while maintaining class separability. Extensive experiments on PointDA-10 and GraspNetPC-10 benchmarks show that CLIPoint3D achieves consistent 3-16% accuracy gains over both CLIP-based and conventional encoder-based baselines. Project page: https://sarthakm320.github.io/CLIPoint3D.",
+      "published": "2026-02-23T23:17:12Z",
+      "updated": "2026-04-21T14:05:24Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2602.20409"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.20409"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.20409",
+      "pdf": "https://arxiv.org/pdf/2602.20409",
+      "venue": "arXiv",
+      "comment": "Accepted in CVPR 2026",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "cross-modal",
+          "vision-language",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "IPoint3D: Language-Grounded Few-Shot Unsupervised 3D Point Cloud Domain Adaptation\nRecent vision-language models (VLMs) such as CLIP demonstrate impressive cross-modal reasoning, ext"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0111": {
+      "id": "W0111",
+      "title": "Masked Representation Modeling for Domain-Adaptive Segmentation",
+      "authors": [
+        "Wenlve Zhou",
+        "Zhiheng Zhou",
+        "Tiantao Xian",
+        "Yikui Zhai",
+        "Weibin Wu",
+        "Biyun Ma"
+      ],
+      "abstract": "Unsupervised domain adaptation (UDA) for semantic segmentation seeks to transfer models from a labeled source domain to an unlabeled target domain. While auxiliary self-supervised tasks such as contrastive learning have enhanced feature discriminability, masked modeling remains underexplored due to architectural constraints and misaligned objectives. We propose Masked Representation Modeling (MRM), an auxiliary task that performs representation masking and reconstruction directly in the latent space. Unlike prior masked modeling methods that reconstruct low-level signals (e.g., pixels or visual tokens), MRM targets high-level semantic features, aligning its objective with segmentation and integrating seamlessly into standard architectures like DeepLab and DAFormer. To support efficient reconstruction, we design a lightweight auxiliary module, Rebuilder, which is jointly trained with the segmentation network but removed during inference, introducing zero test-time overhead. Extensive experiments demonstrate that MRM consistently improves segmentation performance across diverse architectures and UDA benchmarks. When integrated with four representative baselines, MRM achieves an average gain of +2.3 mIoU on GTA $\\rightarrow$ Cityscapes and +2.8 mIoU on Cityscapes $\\rightarrow$ Synthia, establishing it as a simple, effective, and generalizable strategy for unsupervised domain-adaptive semantic segmentation.",
+      "published": "2025-09-17T08:16:05Z",
+      "updated": "2026-03-14T02:58:29Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2509.13801"
+        ],
+        "doi": [
+          "10.48550/arXiv.2509.13801"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2509.13801",
+      "pdf": "https://arxiv.org/pdf/2509.13801",
+      "venue": "arXiv",
+      "comment": "CVPR 2026",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "sentation Modeling for Domain-Adaptive Segmentation\nUnsupervised domain adaptation (UDA) for semantic segmentation seeks to transfer models from a labeled source domain to an unlabel"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0023": {
+      "id": "W0023",
+      "title": "Continual Multiple Instance Learning with Enhanced Localization for Histopathological Whole Slide Image Analysis",
+      "authors": [
+        "Byung Hyun Lee",
+        "Wongi Jeong",
+        "Woojae Han",
+        "Kyoungbun Lee",
+        "Se Young Chun"
+      ],
+      "abstract": "Multiple instance learning (MIL) significantly reduced annotation costs via bag-level weak labels for large-scale images, such as histopathological whole slide images (WSIs). However, its adaptability to continual tasks with minimal forgetting has been rarely explored, especially on instance classification for localization. Weakly incremental learning for semantic segmentation has been studied for continual localization, but it focused on natural images, leveraging global relationships among hundreds of small patches (e.g., $16 \\times 16$) using pre-trained models. This approach seems infeasible for MIL localization due to enormous amounts ($\\sim 10^5$) of large patches (e.g., $256 \\times 256$) and no available global relationships such as cancer cells. To address these challenges, we propose Continual Multiple Instance Learning with Enhanced Localization (CoMEL), an MIL framework for both localization and adaptability with minimal forgetting. CoMEL consists of (1) Grouped Double Attention Transformer (GDAT) for efficient instance encoding, (2) Bag Prototypes-based Pseudo-Labeling (BPPL) for reliable instance pseudo-labeling, and (3) Orthogonal Weighted Low-Rank Adaptation (OWLoRA) to mitigate forgetting in both bag and instance classification. Extensive experiments on three public WSI datasets demonstrate superior performance of CoMEL, outperforming the prior arts by up to $11.00\\%$ in bag-level accuracy and up to $23.4\\%$ in localization accuracy under the continual MIL setup.",
+      "published": "2025-07-03T07:48:37Z",
+      "updated": "2025-07-08T08:38:58Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2507.02395"
+        ],
+        "doi": [
+          "10.48550/arXiv.2507.02395"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.02395",
+      "pdf": "https://arxiv.org/pdf/2507.02395",
+      "venue": "arXiv",
+      "comment": "Accepted at ICCV 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0022": {
+      "id": "W0022",
+      "title": "VFM-Guided Semi-Supervised Detection Transformer under Source-Free Constraints for Remote Sensing Object Detection",
+      "authors": [
+        "Jianhong Han",
+        "Yupei Wang",
+        "Liang Chen"
+      ],
+      "abstract": "Unsupervised domain adaptation methods have been widely explored to bridge domain gaps. However, in real-world remote-sensing scenarios, privacy and transmission constraints often preclude access to source domain data, which limits their practical applicability. Recently, Source-Free Object Detection (SFOD) has emerged as a promising alternative, aiming at cross-domain adaptation without relying on source data, primarily through a self-training paradigm. Despite its potential, SFOD frequently suffers from training collapse caused by noisy pseudo-labels, especially in remote sensing imagery with dense objects and complex backgrounds. Considering that limited target domain annotations are often feasible in practice, we propose a Vision foundation-Guided DEtection TRansformer (VG-DETR), built upon a semi-supervised framework for SFOD in remote sensing images. VG-DETR integrates a Vision Foundation Model (VFM) into the training pipeline in a \"free lunch\" manner, leveraging a small amount of labeled target data to mitigate pseudo-label noise while improving the detector's feature-extraction capability. Specifically, we introduce a VFM-guided pseudo-label mining strategy that leverages the VFM's semantic priors to further assess the reliability of the generated pseudo-labels. By recovering potentially correct predictions from low-confidence outputs, our strategy improves pseudo-label quality and quantity. In addition, a dual-level VFM-guided alignment method is proposed, which aligns detector features with VFM embeddings at both the instance and image levels. Through contrastive learning among fine-grained prototypes and similarity matching between feature maps, this dual-level alignment further enhances the robustness of feature representations against domain gaps. Extensive experiments demonstrate that VG-DETR achieves superior performance in source-free remote sensing detection tasks.",
+      "published": "2025-08-15T02:35:56Z",
+      "updated": "2025-08-26T08:55:26Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2508.11167"
+        ],
+        "doi": [
+          "10.48550/arXiv.2508.11167"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2508.11167",
+      "pdf": "https://arxiv.org/pdf/2508.11167",
+      "venue": "arXiv",
+      "comment": "Manuscript submitted to IEEE TCSVT",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ree Constraints for Remote Sensing Object Detection\nUnsupervised domain adaptation methods have been widely explored to bridge domain gaps. However, in real-world remote-sensing scen"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0007": {
+      "id": "W0007",
+      "title": "Do It Yourself: Learning Semantic Correspondence from Pseudo-Labels",
+      "authors": [
+        "Olaf Dünkel",
+        "Thomas Wimmer",
+        "Christian Theobalt",
+        "Christian Rupprecht",
+        "Adam Kortylewski"
+      ],
+      "abstract": "Finding correspondences between semantically similar points across images and object instances is one of the everlasting challenges in computer vision. While large pre-trained vision models have recently been demonstrated as effective priors for semantic matching, they still suffer from ambiguities for symmetric objects or repeated object parts. We propose improving semantic correspondence estimation through 3D-aware pseudo-labeling. Specifically, we train an adapter to refine off-the-shelf features using pseudo-labels obtained via 3D-aware chaining, filtering wrong labels through relaxed cyclic consistency, and 3D spherical prototype mapping constraints. While reducing the need for dataset-specific annotations compared to prior work, we establish a new state-of-the-art on SPair-71k, achieving an absolute gain of over 4% and of over 7% compared to methods with similar supervision requirements. The generality of our proposed approach simplifies the extension of training to other data sources, which we demonstrate in our experiments.",
+      "published": "2025-06-05T17:54:33Z",
+      "updated": "2025-09-23T15:05:01Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2506.05312"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.05312"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.05312",
+      "pdf": "https://arxiv.org/pdf/2506.05312",
+      "venue": "arXiv",
+      "comment": "ICCV 2025. Project page: https://genintel.github.io/DIY-SC",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0145": {
+      "id": "W0145",
+      "title": "Multi-Modal Assistance for Unsupervised Domain Adaptation on Point Cloud 3D Object Detection",
+      "authors": [
+        "Shenao Zhao",
+        "Pengpeng Liang",
+        "Zhoufan Yang"
+      ],
+      "abstract": "Unsupervised domain adaptation for LiDAR-based 3D object detection (3D UDA) based on the teacher-student architecture with pseudo labels has achieved notable improvements in recent years. Although it is quite popular to collect point clouds and images simultaneously, little attention has been paid to the usefulness of image data in 3D UDA when training the models. In this paper, we propose an approach named MMAssist that improves the performance of 3D UDA with multi-modal assistance. A method is designed to align 3D features between the source domain and the target domain by using image and text features as bridges. More specifically, we project the ground truth labels or pseudo labels to the images to get a set of 2D bounding boxes. For each 2D box, we extract its image feature from a pre-trained vision backbone. A large vision-language model (LVLM) is adopted to extract the box's text description, and a pre-trained text encoder is used to obtain its text feature. During the training of the model in the source domain and the student model in the target domain, we align the 3D features of the predicted boxes with their corresponding image and text features, and the 3D features and the aligned features are fused with learned weights for the final prediction. The features between the student branch and the teacher branch in the target domain are aligned as well. To enhance the pseudo labels, we use an off-the-shelf 2D object detector to generate 2D bounding boxes from images and estimate their corresponding 3D boxes with the aid of point cloud, and these 3D boxes are combined with the pseudo labels generated by the teacher model. Experimental results show that our approach achieves promising performance compared with state-of-the-art methods in three domain adaptation tasks on three popular 3D object detection datasets. The code is available at https://github.com/liangp/MMAssist.",
+      "published": "2025-11-11T08:27:22Z",
+      "updated": "2025-11-11T08:27:22Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2511.07966"
+        ],
+        "doi": [
+          "10.48550/arXiv.2511.07966"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2511.07966",
+      "pdf": "https://arxiv.org/pdf/2511.07966",
+      "venue": "arXiv",
+      "comment": "Accepted to AAAI-26",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "adjacent",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "vision-language",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Multi-Modal Assistance for Unsupervised Domain Adaptation on Point Cloud 3D Object Detection\nUnsupervised domain adaptation for LiDAR-based 3D object detecti"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0056": {
+      "id": "W0056",
+      "title": "Grad-CL: Source Free Domain Adaptation with Gradient Guided Feature Disalignment",
+      "authors": [
+        "Rini Smita Thakur",
+        "Rajeev Ranjan Dwivedi",
+        "Vinod K Kurmi"
+      ],
+      "abstract": "Accurate segmentation of the optic disc and cup is critical for the early diagnosis and management of ocular diseases such as glaucoma. However, segmentation models trained on one dataset often suffer significant performance degradation when applied to target data acquired under different imaging protocols or conditions. To address this challenge, we propose \\textbf{Grad-CL}, a novel source-free domain adaptation framework that leverages a pre-trained source model and unlabeled target data to robustly adapt segmentation performance without requiring access to the original source data. Grad-CL combines a gradient-guided pseudolabel refinement module with a cosine similarity-based contrastive learning strategy. In the first stage, salient class-specific features are extracted via a gradient-based mechanism, enabling more accurate uncertainty quantification and robust prototype estimation for refining noisy pseudolabels. In the second stage, a contrastive loss based on cosine similarity is employed to explicitly enforce inter-class separability between the gradient-informed features of the optic cup and disc. Extensive experiments on challenging cross-domain fundus imaging datasets demonstrate that Grad-CL outperforms state-of-the-art unsupervised and source-free domain adaptation methods, achieving superior segmentation accuracy and improved boundary delineation. Project and code are available at https://visdomlab.github.io/GCL/.",
+      "published": "2025-09-12T10:51:46Z",
+      "updated": "2025-09-12T10:51:46Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2509.10134"
+        ],
+        "doi": [
+          "10.48550/arXiv.2509.10134"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2509.10134",
+      "pdf": "https://arxiv.org/pdf/2509.10134",
+      "venue": "arXiv",
+      "comment": "Accepted in BMVC 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Grad-CL: Source Free Domain Adaptation with Gradient Guided Feature Disalignment\nAccurate segmentation of the optic disc and cup is critic"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0167": {
+      "id": "W0167",
+      "title": "Prmpt2Adpt: Prompt-Based Zero-Shot Domain Adaptation for Resource-Constrained Environments",
+      "authors": [
+        "Yasir Ali Farrukh",
+        "Syed Wali",
+        "Irfan Khan",
+        "Nathaniel D. Bastian"
+      ],
+      "abstract": "Unsupervised Domain Adaptation (UDA) is a critical challenge in real-world vision systems, especially in resource-constrained environments like drones, where memory and computation are limited. Existing prompt-driven UDA methods typically rely on large vision-language models and require full access to source-domain data during adaptation, limiting their applicability. In this work, we propose Prmpt2Adpt, a lightweight and efficient zero-shot domain adaptation framework built around a teacher-student paradigm guided by prompt-based feature alignment. At the core of our method is a distilled and fine-tuned CLIP model, used as the frozen backbone of a Faster R-CNN teacher. A small set of low-level source features is aligned to the target domain semantics-specified only through a natural language prompt-via Prompt-driven Instance Normalization (PIN). These semantically steered features are used to briefly fine-tune the detection head of the teacher model. The adapted teacher then generates high-quality pseudo-labels, which guide the on-the-fly adaptation of a compact student model. Experiments on the MDS-A dataset demonstrate that Prmpt2Adpt achieves competitive detection performance compared to state-of-the-art methods, while delivering up to 7x faster adaptation and 5x faster inference speed using few source images-making it a practical and scalable solution for real-time adaptation in low-resource domains.",
+      "published": "2025-06-20T13:43:54Z",
+      "updated": "2025-06-20T13:43:54Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2506.16994"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.16994"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.16994",
+      "pdf": "https://arxiv.org/pdf/2506.16994",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "distillation",
+          "vision-language",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Prmpt2Adpt: Prompt-Based Zero-Shot Domain Adaptation for Resource-Constrained Environments\nUnsupervised Domain Adaptation (UDA) is a critical challenge"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0159": {
+      "id": "W0159",
+      "title": "Point-MoE: Large-Scale Multi-Dataset Training with Mixture-of-Experts for 3D Semantic Segmentation",
+      "authors": [
+        "Xuweiyi Chen",
+        "Wentao Zhou",
+        "Aruni RoyChowdhury",
+        "Zezhou Cheng"
+      ],
+      "abstract": "While massively scaling both data and models have become central in NLP and 2D vision, their benefits for 3D point cloud understanding remain limited. We study the initial step of scaling 3D point cloud understanding under a realistic regime: large-scale multi-dataset joint training for 3D semantic segmentation, with no dataset labels available at training or inference time. Point clouds arise from a wide range of sensors (e.g., depth cameras, LiDAR) and scenes (\\eg, indoor, outdoor), yielding heterogeneous scanning patterns, sampling densities, and semantic biases; naively mixing such datasets degrades standard models. Therefore, we introduce Point-MoE, a Mixture-of-Experts design that expands model capacity through sparsely activated expert MLPs and a lightweight top-$k$ router, allowing tokens to select specialized experts without requiring dataset supervision. Trained jointly on a diverse mix of indoor and outdoor datasets, and evaluated on seen datasets as well as in zero-shot settings, Point-MoE outperforms prior methods without using dataset labels for either training or inference. This outlines a scalable path for 3D perception: letting the model discover structure in heterogeneous 3D data rather than imposing it via manual curation or dataset-specific heuristics.",
+      "published": "2025-05-29T18:21:47Z",
+      "updated": "2026-02-28T12:58:38Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2505.23926"
+        ],
+        "doi": [
+          "10.48550/arXiv.2505.23926"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2505.23926",
+      "pdf": "https://arxiv.org/pdf/2505.23926",
+      "venue": "arXiv",
+      "comment": "Project page: https://point-moe.cs.virginia.edu/",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0021": {
+      "id": "W0021",
+      "title": "Beyond Single Images: Retrieval Self-Augmented Unsupervised Camouflaged Object Detection",
+      "authors": [
+        "Ji Du",
+        "Xin Wang",
+        "Fangwei Hao",
+        "Mingyang Yu",
+        "Chunyuan Chen",
+        "Jiesheng Wu",
+        "Bin Wang",
+        "Jing Xu",
+        "Ping Li"
+      ],
+      "abstract": "At the core of Camouflaged Object Detection (COD) lies segmenting objects from their highly similar surroundings. Previous efforts navigate this challenge primarily through image-level modeling or annotation-based optimization. Despite advancing considerably, this commonplace practice hardly taps valuable dataset-level contextual information or relies on laborious annotations. In this paper, we propose RISE, a RetrIeval SElf-augmented paradigm that exploits the entire training dataset to generate pseudo-labels for single images, which could be used to train COD models. RISE begins by constructing prototype libraries for environments and camouflaged objects using training images (without ground truth), followed by K-Nearest Neighbor (KNN) retrieval to generate pseudo-masks for each image based on these libraries. It is important to recognize that using only training images without annotations exerts a pronounced challenge in crafting high-quality prototype libraries. In this light, we introduce a Clustering-then-Retrieval (CR) strategy, where coarse masks are first generated through clustering, facilitating subsequent histogram-based image filtering and cross-category retrieval to produce high-confidence prototypes. In the KNN retrieval stage, to alleviate the effect of artifacts in feature maps, we propose Multi-View KNN Retrieval (MVKR), which integrates retrieval results from diverse views to produce more robust and precise pseudo-masks. Extensive experiments demonstrate that RISE outperforms state-of-the-art unsupervised and prompt-based methods. Code is available at https://github.com/xiaohainku/RISE.",
+      "published": "2025-10-21T09:12:26Z",
+      "updated": "2025-10-21T09:12:26Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2510.18437"
+        ],
+        "doi": [
+          "10.48550/arXiv.2510.18437"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2510.18437",
+      "pdf": "https://arxiv.org/pdf/2510.18437",
+      "venue": "arXiv",
+      "comment": "ICCV 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype",
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0002": {
+      "id": "W0002",
+      "title": "LOSC: LiDAR Open-voc Segmentation Consolidator",
+      "authors": [
+        "Nermin Samet",
+        "Gilles Puy",
+        "Renaud Marlet"
+      ],
+      "abstract": "We study the use of image-based Vision-Language Models (VLMs) for open-vocabulary segmentation of lidar scans in driving settings. Classically, image semantics can be back-projected onto 3D point clouds. Yet, resulting point labels are noisy and sparse. We consolidate these labels to enforce both spatio-temporal consistency and robustness to image-level augmentations. We then train a 3D network based on these refined labels. This simple method, called LOSC, outperforms the SOTA of zero-shot open-vocabulary semantic and panoptic segmentation on both nuScenes and SemanticKITTI, with significant margins. Code is available at https://github.com/valeoai/LOSC.",
+      "published": "2025-07-10T10:10:13Z",
+      "updated": "2026-03-13T23:48:10Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2507.07605"
+        ],
+        "doi": [
+          "10.48550/arXiv.2507.07605"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.07605",
+      "pdf": "https://arxiv.org/pdf/2507.07605",
+      "venue": "arXiv",
+      "comment": "3DV 2026, Oral",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "vision-language",
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "e study the use of image-based Vision-Language Models (VLMs) for open-vocabulary segmentation of lidar scans in driving settings. Classically, image semantics can be back-projected"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0048": {
+      "id": "W0048",
+      "title": "Source-Free Domain Adaptation for Geospatial Point Cloud Semantic Segmentation",
+      "authors": [
+        "Yuan Gao",
+        "Di Cao",
+        "Xiaohuan Xi",
+        "Sheng Nie",
+        "Shaobo Xia",
+        "Cheng Wang"
+      ],
+      "abstract": "Semantic segmentation of 3D geospatial point clouds is fundamental to remote sensing applications, yet domain shifts caused by regional and acquisition-related variations often degrade model performance. Although domain adaptation can mitigate such shifts, existing methods typically require access to source-domain data, which is often infeasible due to privacy concerns and regulatory policies. To address this, we propose LoGo (Local-Global Dual-Consensus), a novel source-free unsupervised domain adaptation (SFUDA) framework requiring only a pretrained model and unlabeled target data. At the local level, we introduce a class-balanced prototype estimation module that ensures that robust feature prototypes can be generated even for sample-scarce tail classes, effectively mitigating the feature collapse caused by long-tailed distributions. At the global level, we introduce an optimal transport-based global distribution alignment module that formulates pseudo-label assignment as a global optimization problem, effectively correcting the over-dominance of head classes inherent in local greedy assignments, and thereby preventing model predictions from being severely biased towards majority classes. Finally, we propose a dual-consistency pseudo-label filtering mechanism that retains only high-confidence pseudo-labels where local multi-augmented ensemble predictions align with global optimal transport assignments for self-training. Extensive experiments on two challenging benchmarks, encompassing cross-scene and cross-sensor settings, demonstrate that LoGo consistently outperforms existing state-of-the-art methods. The source code is available at https://github.com/GYproject/LoGo-SFUDA.",
+      "published": "2026-01-13T09:37:57Z",
+      "updated": "2026-05-26T01:48:14Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2601.08375"
+        ],
+        "doi": [
+          "10.48550/arXiv.2601.08375"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2601.08375",
+      "pdf": "https://arxiv.org/pdf/2601.08375",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype",
+          "augmentation",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Source-Free Domain Adaptation for Geospatial Point Cloud Semantic Segmentation\nSemantic segmentation of 3D geospatial point cloud"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0148": {
+      "id": "W0148",
+      "title": "Unsupervised Domain Adaptation for 3D LiDAR Semantic Segmentation Using Contrastive Learning and Multi-Model Pseudo Labeling",
+      "authors": [
+        "Abhishek Kaushik",
+        "Norbert Haala",
+        "Uwe Soergel"
+      ],
+      "abstract": "Addressing performance degradation in 3D LiDAR semantic segmentation due to domain shifts (e.g., sensor type, geographical location) is crucial for autonomous systems, yet manual annotation of target data is prohibitive. This study addresses the challenge using Unsupervised Domain Adaptation (UDA) and introduces a novel two-stage framework to tackle it. Initially, unsupervised contrastive learning at the segment level is used to pre-train a backbone network, enabling it to learn robust, domain-invariant features without labels. Subsequently, a multi-model pseudo-labeling strategy is introduced, utilizing an ensemble of diverse state-of-the-art architectures (including projection, voxel, hybrid, and cylinder-based methods). Predictions from these models are aggregated via hard voting to generate high-quality, refined pseudo-labels for the unlabeled target domain, mitigating single-model biases. The contrastively pre-trained network is then fine-tuned using these robust pseudo-labels. Experiments adapting from SemanticKITTI to unlabeled target datasets (SemanticPOSS, SemanticSlamantic) demonstrate significant improvements in segmentation accuracy compared to direct transfer and single-model UDA approaches. These results highlight the effectiveness of combining contrastive pre-training with refined ensemble pseudo-labeling for bridging complex domain gaps without requiring target domain annotations.",
+      "published": "2025-07-24T08:21:43Z",
+      "updated": "2025-07-24T08:21:43Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2507.18176"
+        ],
+        "doi": [
+          "10.24407/KXP:1928486487",
+          "10.24407/kxp:1928486487"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.18176",
+      "pdf": "https://arxiv.org/pdf/2507.18176",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Unsupervised Domain Adaptation for 3D LiDAR Semantic Segmentation Using Contrastive Learning and Multi-Model Pseudo Labeling\nAddre"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0051": {
+      "id": "W0051",
+      "title": "ALISE: Annotation-Free LiDAR Instance Segmentation for Autonomous Driving",
+      "authors": [
+        "Yongxuan Lyu",
+        "Guangfeng Jiang",
+        "Hongsi Liu",
+        "Jun Liu"
+      ],
+      "abstract": "The manual annotation of outdoor LiDAR point clouds for instance segmentation is extremely costly and time-consuming. Current methods attempt to reduce this burden but still rely on some form of human labeling. To completely eliminate this dependency, we introduce ALISE, a novel framework that performs LiDAR instance segmentation without any annotations. The central challenge is to generate high-quality pseudo-labels in a fully unsupervised manner. Our approach starts by employing Vision Foundation Models (VFMs), guided by text and images, to produce initial pseudo-labels. We then refine these labels through a dedicated spatio-temporal voting module, which combines 2D and 3D semantics for both offline and online optimization. To achieve superior feature learning, we further introduce two forms of semantic supervision: a set of 2D prior-based losses that inject visual knowledge into the 3D network, and a novel prototype-based contrastive loss that builds a discriminative feature space by exploiting 3D semantic consistency. This comprehensive design results in significant performance gains, establishing a new state-of-the-art for unsupervised 3D instance segmentation. Remarkably, our approach even outperforms MWSIS, a method that operates with supervision from ground-truth (GT) 2D bounding boxes by a margin of 2.53% in mAP (50.95% vs. 48.42%).",
+      "published": "2025-10-07T10:15:18Z",
+      "updated": "2025-10-10T03:25:38Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2510.05752"
+        ],
+        "doi": [
+          "10.48550/arXiv.2510.05752"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2510.05752",
+      "pdf": "https://arxiv.org/pdf/2510.05752",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [
+          "self-training",
+          "prototype",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0165": {
+      "id": "W0165",
+      "title": "Preserving Clusters in Prompt Learning for Unsupervised Domain Adaptation",
+      "authors": [
+        "Tung-Long Vuong",
+        "Hoang Phan",
+        "Vy Vo",
+        "Anh Bui",
+        "Thanh-Toan Do",
+        "Trung Le",
+        "Dinh Phung"
+      ],
+      "abstract": "Recent approaches leveraging multi-modal pre-trained models like CLIP for Unsupervised Domain Adaptation (UDA) have shown significant promise in bridging domain gaps and improving generalization by utilizing rich semantic knowledge and robust visual representations learned through extensive pre-training on diverse image-text datasets. While these methods achieve state-of-the-art performance across benchmarks, much of the improvement stems from base pseudo-labels (CLIP zero-shot predictions) and self-training mechanisms. Thus, the training mechanism exhibits a key limitation wherein the visual embedding distribution in target domains can deviate from the visual embedding distribution in the pre-trained model, leading to misguided signals from class descriptions. This work introduces a fresh solution to reinforce these pseudo-labels and facilitate target-prompt learning, by exploiting the geometry of visual and text embeddings - an aspect that is overlooked by existing methods. We first propose to directly leverage the reference predictions (from source prompts) based on the relationship between source and target visual embeddings. We later show that there is a strong clustering behavior observed between visual and text embeddings in pre-trained multi-modal models. Building on optimal transport theory, we transform this insight into a novel strategy to enforce the clustering property in text embeddings, further enhancing the alignment in the target domain. Our experiments and ablation studies validate the effectiveness of the proposed approach, demonstrating superior performance and improved quality of target prompts in terms of representation.",
+      "published": "2025-06-13T06:33:27Z",
+      "updated": "2025-06-13T06:33:27Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2506.11493"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.11493"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.11493",
+      "pdf": "https://arxiv.org/pdf/2506.11493",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "vision-language",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Preserving Clusters in Prompt Learning for Unsupervised Domain Adaptation\nRecent approaches leveraging multi-modal pre-trained models like CLIP for Unsupervised Domain Adapt"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0033": {
+      "id": "W0033",
+      "title": "Unified Unsupervised and Sparsely-Supervised 3D Object Detection by Semantic Pseudo-Labeling and Prototype Learning",
+      "authors": [
+        "Yushen He",
+        "Lei Zhao",
+        "Weidong Chen"
+      ],
+      "abstract": "3D object detection is essential for autonomous driving and robotic perception, yet its reliance on large-scale manually annotated data limits scalability and adaptability. To reduce annotation dependency, unsupervised and sparsely-supervised paradigms have emerged. However, they face intertwined challenges: low-quality pseudo-labels, unstable feature mining, and a lack of a unified training framework. This paper proposes SPL, a unified training framework for both unsupervised and sparsely-supervised 3D object detection via \\underline{S}emantic \\underline{P}seudo-labeling and prototype \\underline{L}earning. SPL first generates high-quality pseudo-labels by integrating image semantics, point cloud geometry, and temporal cues, producing both 3D bounding boxes for dense objects and 3D point labels for sparse ones. These pseudo-labels are not used directly but as probabilistic priors within a novel, multi-stage prototype learning strategy. This strategy stabilizes feature representation learning through memory-based initialization and momentum-based prototype updating, effectively mining features from both labeled and unlabeled data. Extensive experiments on KITTI and nuScenes datasets demonstrate that SPL significantly outperforms state-of-the-art methods in both settings. Our work provides a robust and generalizable solution for learning 3D object detectors with minimal or no manual annotations. Our code is available at https://github.com/TossherO/SPL.",
+      "published": "2026-02-25T01:26:34Z",
+      "updated": "2026-04-12T08:42:43Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2602.21484"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.21484"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.21484",
+      "pdf": "https://arxiv.org/pdf/2602.21484",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0001": {
+      "id": "W0001",
+      "title": "Exploring Single Domain Generalization of LiDAR-based Semantic Segmentation under Imperfect Labels",
+      "authors": [
+        "Weitong Kong",
+        "Zichao Zeng",
+        "Di Wen",
+        "Jiale Wei",
+        "Kunyu Peng",
+        "June Moh Goo",
+        "Jan Boehm",
+        "Rainer Stiefelhagen"
+      ],
+      "abstract": "Accurate perception is critical for vehicle safety, with LiDAR as a key enabler in autonomous driving. To ensure robust performance across environments, sensor types, and weather conditions without costly re-annotation, domain generalization in LiDAR-based 3D semantic segmentation is essential. However, LiDAR annotations are often noisy due to sensor imperfections, occlusions, and human errors. Such noise degrades segmentation accuracy and is further amplified under domain shifts, threatening system reliability. While noisy-label learning is well-studied in images, its extension to 3D LiDAR segmentation under domain generalization remains largely unexplored, as the sparse and irregular structure of point clouds limits direct use of 2D methods. To address this gap, we introduce the novel task Domain Generalization for LiDAR Semantic Segmentation under Noisy Labels (DGLSS-NL) and establish the first benchmark by adapting three representative noisy-label learning strategies from image classification to 3D segmentation. However, we find that existing noisy-label learning approaches adapt poorly to LiDAR data. We therefore propose DuNe, a dual-view framework with strong and weak branches that enforce feature-level consistency and apply cross-entropy loss based on confidence-aware filtering of predictions. Our approach shows state-of-the-art performance by achieving 56.86% mIoU on SemanticKITTI, 42.28% on nuScenes, and 52.58% on SemanticPOSS under 10% symmetric label noise, with an overall Arithmetic Mean (AM) of 49.57% and Harmonic Mean (HM) of 48.50%, thereby demonstrating robust domain generalization in DGLSS-NL tasks. The code is available on our project page.",
+      "published": "2025-10-10T06:11:34Z",
+      "updated": "2026-03-10T11:52:53Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2510.09035"
+        ],
+        "doi": [
+          "10.48550/arXiv.2510.09035"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2510.09035",
+      "pdf": "https://arxiv.org/pdf/2510.09035",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DG"
+        ],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "Exploring Single Domain Generalization of LiDAR-based Semantic Segmentation under Imperfect Labels\nAccurate perception is critical for veh"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0108": {
+      "id": "W0108",
+      "title": "Multi-Channel Uncertainty-Weighted Score Matching for Conditional Diffusion in Medical UDA",
+      "authors": [
+        "Chen Li",
+        "Meilong Xu",
+        "Xiaoling Hu",
+        "Weimin Lyu",
+        "Chao Chen"
+      ],
+      "abstract": "Robust medical image segmentation across modalities remains challenging due to severe domain shifts and the lack of target-domain labels. While diffusion models have been explored for cross-domain generation and augmentation, target-domain conditional diffusion training typically relies on highly noisy pseudo masks; naively conditioning on a single Arg-Max pseudo-label can corrupt diffusion training and downstream segmentation. We propose UPDiff-UDA, a unified UDA framework whose core is an uncertainty-guided training objective for target-domain conditional diffusion. Given an imperfect source-trained segmenter, we use its per-pixel softmax distribution to form ranked pseudo-label maps (Arg-Max, Arg-2nd, Arg-3rd, ...). Each map yields a conditional score estimate, and we aggregate them via pixel-wise confidence weighting to obtain an uncertainty-reweighted score for score matching, improving robustness to pseudo-label noise while leveraging alternative plausible labels in uncertain regions. We further provide a theoretical justification showing that confidence-weighted aggregation follows a minimum-MSE convex-combination principle under the segmenter-induced surrogate label distribution. To improve pseudo-condition quality, we also introduce a feature-guided, low-degree-of-freedom Bézier curve adaptation to reduce appearance gaps. Experiments on multiple public datasets and modality shifts show that UPDiff-UDA generates high-fidelity labeled target-style samples for augmentation and consistently outperforms strong UDA baselines. The code for this project is available at: https://github.com/superlc1995/Multi-Channel-Uncertainty-Diffusion-UDA",
+      "published": "2025-09-26T15:23:17Z",
+      "updated": "2026-06-29T21:57:15Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2509.22476"
+        ],
+        "doi": [
+          "10.48550/arXiv.2509.22476"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2509.22476",
+      "pdf": "https://arxiv.org/pdf/2509.22476",
+      "venue": "arXiv",
+      "comment": "28 pages, 7 figures. Accepted by ECCV'2026",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0020": {
+      "id": "W0020",
+      "title": "Beyond Boundaries: Leveraging Vision Foundation Models for Source-Free Object Detection",
+      "authors": [
+        "Huizai Yao",
+        "Sicheng Zhao",
+        "Pengteng Li",
+        "Yi Cui",
+        "Shuo Lu",
+        "Weiyu Guo",
+        "Yunfan Lu",
+        "Yijie Xu",
+        "Hui Xiong"
+      ],
+      "abstract": "Source-Free Object Detection (SFOD) aims to adapt a source-pretrained object detector to a target domain without access to source data. However, existing SFOD methods predominantly rely on internal knowledge from the source model, which limits their capacity to generalize across domains and often results in biased pseudo-labels, thereby hindering both transferability and discriminability. In contrast, Vision Foundation Models (VFMs), pretrained on massive and diverse data, exhibit strong perception capabilities and broad generalization, yet their potential remains largely untapped in the SFOD setting. In this paper, we propose a novel SFOD framework that leverages VFMs as external knowledge sources to jointly enhance feature alignment and label quality. Specifically, we design three VFM-based modules: (1) Patch-weighted Global Feature Alignment (PGFA) distills global features from VFMs using patch-similarity-based weighting to enhance global feature transferability; (2) Prototype-based Instance Feature Alignment (PIFA) performs instance-level contrastive learning guided by momentum-updated VFM prototypes; and (3) Dual-source Enhanced Pseudo-label Fusion (DEPF) fuses predictions from detection VFMs and teacher models via an entropy-aware strategy to yield more reliable supervision. Extensive experiments on six benchmarks demonstrate that our method achieves state-of-the-art SFOD performance, validating the effectiveness of integrating VFMs to simultaneously improve transferability and discriminability.",
+      "published": "2025-11-10T17:06:01Z",
+      "updated": "2026-01-20T22:30:08Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2511.07301"
+        ],
+        "doi": [
+          "10.48550/arXiv.2511.07301"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2511.07301",
+      "pdf": "https://arxiv.org/pdf/2511.07301",
+      "venue": "arXiv",
+      "comment": "Accepted to AAAI 2026. Extended version with full Appendix",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "distillation",
+          "prototype",
+          "alignment",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0138": {
+      "id": "W0138",
+      "title": "Modality-Balanced Collaborative Distillation for Multi-Modal Domain Generalization",
+      "authors": [
+        "Xiaohan Wang",
+        "Zhangtao Cheng",
+        "Ting Zhong",
+        "Leiting Chen",
+        "Fan Zhou"
+      ],
+      "abstract": "Weight Averaging (WA) has emerged as a powerful technique for enhancing generalization by promoting convergence to a flat loss landscape, which correlates with stronger out-of-distribution performance. However, applying WA directly to multi-modal domain generalization (MMDG) is challenging: differences in optimization speed across modalities lead WA to overfit to faster-converging ones in early stages, suppressing the contribution of slower yet complementary modalities, thereby hindering effective modality fusion and skewing the loss surface toward sharper, less generalizable minima. To address this issue, we propose MBCD, a unified collaborative distillation framework that retains WA's flatness-inducing advantages while overcoming its shortcomings in multi-modal contexts. MBCD begins with adaptive modality dropout in the student model to curb early-stage bias toward dominant modalities. A gradient consistency constraint then aligns learning signals between uni-modal branches and the fused representation, encouraging coordinated and smoother optimization. Finally, a WA-based teacher conducts cross-modal distillation by transferring fused knowledge to each uni-modal branch, which strengthens cross-modal interactions and steer convergence toward flatter solutions. Extensive experiments on MMDG benchmarks show that MBCD consistently outperforms existing methods, achieving superior accuracy and robustness across diverse unseen domains.",
+      "published": "2025-11-25T12:38:28Z",
+      "updated": "2026-01-28T03:49:16Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2511.20258"
+        ],
+        "doi": [
+          "10.48550/arXiv.2511.20258"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2511.20258",
+      "pdf": "https://arxiv.org/pdf/2511.20258",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DG"
+        ],
+        "task": "other",
+        "methods": [
+          "cross-modal",
+          "distillation",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "Modality-Balanced Collaborative Distillation for Multi-Modal Domain Generalization\nWeight Averaging (WA) has emerged as a powerful technique for enhancing generalization by promoting"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0160": {
+      "id": "W0160",
+      "title": "Learning to Adapt Frozen CLIP for Few-Shot Test-Time Domain Adaptation",
+      "authors": [
+        "Zhixiang Chi",
+        "Li Gu",
+        "Huan Liu",
+        "Ziqiang Wang",
+        "Yanan Wu",
+        "Yang Wang",
+        "Konstantinos N Plataniotis"
+      ],
+      "abstract": "Few-shot Test-Time Domain Adaptation focuses on adapting a model at test time to a specific domain using only a few unlabeled examples, addressing domain shift. Prior methods leverage CLIP's strong out-of-distribution (OOD) abilities by generating domain-specific prompts to guide its generalized, frozen features. However, since downstream datasets are not explicitly seen by CLIP, solely depending on the feature space knowledge is constrained by CLIP's prior knowledge. Notably, when using a less robust backbone like ViT-B/16, performance significantly drops on challenging real-world benchmarks. Departing from the state-of-the-art of inheriting the intrinsic OOD capability of CLIP, this work introduces learning directly on the input space to complement the dataset-specific knowledge for frozen CLIP. Specifically, an independent side branch is attached in parallel with CLIP and enforced to learn exclusive knowledge via revert attention. To better capture the dataset-specific label semantics for downstream adaptation, we propose to enhance the inter-dispersion among text features via greedy text ensemble and refinement. The text and visual features are then progressively fused in a domain-aware manner by a generated domain prompt to adapt toward a specific domain. Extensive experiments show our method's superiority on 5 large-scale benchmarks (WILDS and DomainNet), notably improving over smaller networks like ViT-B/16 with gains of \\textbf{+5.1} in F1 for iWildCam and \\textbf{+3.1\\%} in WC Acc for FMoW.",
+      "published": "2025-06-18T03:49:22Z",
+      "updated": "2025-06-18T03:49:22Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2506.17307"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.17307"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.17307",
+      "pdf": "https://arxiv.org/pdf/2506.17307",
+      "venue": "arXiv",
+      "comment": "ICLR2025,https://github.com/chi-chi-zx/L2C",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "vision-language"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Learning to Adapt Frozen CLIP for Few-Shot Test-Time Domain Adaptation\nFew-shot Test-Time Domain Adaptation focuses on adapting a model at test time to a specific domain"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0104": {
+      "id": "W0104",
+      "title": "Prototype-Guided Pseudo-Labeling with Neighborhood-Aware Consistency for Unsupervised Adaptation",
+      "authors": [
+        "Eman Ali",
+        "Chetan Arora",
+        "Muhammad Haris Khan"
+      ],
+      "abstract": "In unsupervised adaptation for vision-language models such as CLIP, pseudo-labels derived from zero-shot predictions often exhibit significant noise, particularly under domain shifts or in visually complex scenarios. Conventional pseudo-label filtering approaches, which rely on fixed confidence thresholds, tend to be unreliable in fully unsupervised settings. In this work, we propose a novel adaptive pseudo-labeling framework that enhances CLIP's adaptation performance by integrating prototype consistency and neighborhood-based consistency. The proposed method comprises two key components: PICS, which assesses pseudo-label accuracy based on in-class feature compactness and cross-class feature separation; and NALR, which exploits semantic similarities among neighboring samples to refine pseudo-labels dynamically. Additionally, we introduce an adaptive weighting mechanism that adjusts the influence of pseudo-labeled samples during training according to their estimated correctness. Extensive experiments on 11 benchmark datasets demonstrate that our method achieves state-of-the-art performance in unsupervised adaptation scenarios, delivering more accurate pseudo-labels while maintaining computational efficiency.",
+      "published": "2025-07-22T19:08:24Z",
+      "updated": "2025-07-22T19:08:24Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2507.22075"
+        ],
+        "doi": [
+          "10.48550/arXiv.2507.22075"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.22075",
+      "pdf": "https://arxiv.org/pdf/2507.22075",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "vision-language",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0050": {
+      "id": "W0050",
+      "title": "DAMSDAN: Distribution-Aware Multi-Source Domain Adaptation Network for Cross-Domain EEG-based Emotion Recognition",
+      "authors": [
+        "Fo Hu",
+        "Can Wang",
+        "Qinxu Zheng",
+        "Xusheng Yang",
+        "Bin Zhou",
+        "Gang Li",
+        "Yu Sun",
+        "Wen-an Zhang"
+      ],
+      "abstract": "Significant inter-individual variability limits the generalization of EEG-based emotion recognition under cross-domain settings. We address two core challenges in multi-source adaptation: (1) dynamically modeling distributional heterogeneity across sources and quantifying their relevance to a target to reduce negative transfer; and (2) achieving fine-grained semantic consistency to strengthen class discrimination. We propose a distribution-aware multi-source domain adaptation network (DAMSDAN). DAMSDAN integrates prototype-based constraints with adversarial learning to drive the encoder toward discriminative, domain-invariant emotion representations. A domain-aware source weighting strategy based on maximum mean discrepancy (MMD) dynamically estimates inter-domain shifts and reweights source contributions. In addition, a prototype-guided conditional alignment module with dual pseudo-label interaction enhances pseudo-label reliability and enables category-level, fine-grained alignment, mitigating noise propagation and semantic drift. Experiments on SEED and SEED-IV show average accuracies of 94.86\\% and 79.78\\% for cross-subject, and 95.12\\% and 83.15\\% for cross-session protocols. On the large-scale FACED dataset, DAMSDAN achieves 82.88\\% (cross-subject). Extensive ablations and interpretability analyses corroborate the effectiveness of the proposed framework for cross-domain EEG-based emotion recognition.",
+      "published": "2025-10-20T12:18:46Z",
+      "updated": "2025-10-20T12:18:46Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2510.17475"
+        ],
+        "doi": [
+          "10.48550/arXiv.2510.17475"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2510.17475",
+      "pdf": "https://arxiv.org/pdf/2510.17475",
+      "venue": "arXiv",
+      "comment": "14 pages, 9 figures",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "DAMSDAN: Distribution-Aware Multi-Source Domain Adaptation Network for Cross-Domain EEG-based Emotion Recognition\nSignificant inter-individual variability lim"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0032": {
+      "id": "W0032",
+      "title": "Prototype-Based Pseudo-Label Denoising for Source-Free Domain Adaptation in Remote Sensing Semantic Segmentation",
+      "authors": [
+        "Bin Wang",
+        "Fei Deng",
+        "Zeyu Chen",
+        "Zhicheng Yu",
+        "Yiguang Liu"
+      ],
+      "abstract": "Source-Free Domain Adaptation (SFDA) enables domain adaptation for semantic segmentation of Remote Sensing Images (RSIs) using only a well-trained source model and unlabeled target domain data. However, the lack of ground-truth labels in the target domain often leads to the generation of noisy pseudo-labels. Such noise impedes the effective mitigation of domain shift (DS). To address this challenge, we propose ProSFDA, a prototype-guided SFDA framework. It employs prototype-weighted pseudo-labels to facilitate reliable self-training (ST) under pseudo-labels noise. We, in addition, introduce a prototype-contrast strategy that encourages the aggregation of features belonging to the same class, enabling the model to learn discriminative target domain representations without relying on ground-truth supervision. Extensive experiments show that our approach substantially outperforms existing methods.",
+      "published": "2025-09-21T06:33:59Z",
+      "updated": "2025-09-21T06:33:59Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2509.16942"
+        ],
+        "doi": [
+          "10.48550/arXiv.2509.16942"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2509.16942",
+      "pdf": "https://arxiv.org/pdf/2509.16942",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Prototype-Based Pseudo-Label Denoising for Source-Free Domain Adaptation in Remote Sensing Semantic Segmentation\nSource-Free Domain Adaptation (SFDA) enables domain adaptat"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0151": {
+      "id": "W0151",
+      "title": "Boosting LiDAR-Based Localization with Semantic Insight: Camera Projection versus Direct LiDAR Segmentation",
+      "authors": [
+        "Sven Ochs",
+        "Philip Schörner",
+        "Marc René Zofka",
+        "J. Marius Zöllner"
+      ],
+      "abstract": "Semantic segmentation of LiDAR data presents considerable challenges, particularly when dealing with diverse sensor types and configurations. However, incorporating semantic information can significantly enhance the accuracy and robustness of LiDAR-based localization techniques for autonomous mobile systems. We propose an approach that integrates semantic camera data with LiDAR segmentation to address this challenge. By projecting LiDAR points into the semantic segmentation space of the camera, our method enhances the precision and reliability of the LiDAR-based localization pipeline. For validation, we utilize the CoCar NextGen platform from the FZI Research Center for Information Technology, which offers diverse sensor modalities and configurations. The sensor setup of CoCar NextGen enables a thorough analysis of different sensor types. Our evaluation leverages the state-of-the-art Depth-Anything network for camera image segmentation and an adaptive segmentation network for LiDAR segmentation. To establish a reliable ground truth for LiDAR-based localization, we make us of a Global Navigation Satellite System (GNSS) solution with Real-Time Kinematic corrections (RTK). Additionally, we conduct an extensive 55 km drive through the city of Karlsruhe, Germany, covering a variety of environments, including urban areas, multi-lane roads, and rural highways. This multimodal approach paves the way for more reliable and precise autonomous navigation systems, particularly in complex real-world environments.",
+      "published": "2025-09-24T18:55:42Z",
+      "updated": "2025-09-24T18:55:42Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2509.20486"
+        ],
+        "doi": [
+          "10.48550/arXiv.2509.20486"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2509.20486",
+      "pdf": "https://arxiv.org/pdf/2509.20486",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "cross-modal"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0265": {
+      "id": "W0265",
+      "title": "UniLiPs: Unified LiDAR Pseudo-Labeling with Geometry-Grounded Dynamic Scene Decomposition",
+      "authors": [
+        "Filippo Ghilotti",
+        "Samuel Brucker",
+        "Nahku Saidy",
+        "Matteo Matteucci",
+        "Mario Bijelic",
+        "Felix Heide"
+      ],
+      "abstract": "Unlabeled LiDAR logs, in autonomous driving applications, are inherently a gold mine of dense 3D geometry hiding in plain sight - yet they are almost useless without human labels, highlighting a dominant cost barrier for autonomous-perception research. In this work we tackle this bottleneck by leveraging temporal-geometric consistency across LiDAR sweeps to lift and fuse cues from text and 2D vision foundation models directly into 3D, without any manual input. We introduce an unsupervised multi-modal pseudo-labeling method relying on strong geometric priors learned from temporally accumulated LiDAR maps, alongside with a novel iterative update rule that enforces joint geometric-semantic consistency, and vice-versa detecting moving objects from inconsistencies. Our method simultaneously produces 3D semantic labels, 3D bounding boxes, and dense LiDAR scans, demonstrating robust generalization across three datasets. We experimentally validate that our method compares favorably to existing semantic segmentation and object detection pseudo-labeling methods, which often require additional manual supervision. We confirm that even a small fraction of our geometrically consistent, densified LiDAR improves depth prediction by 51.5% and 22.0% MAE in the 80-150 and 150-250 meters range, respectively.",
+      "published": "2026-01-08T16:52:28Z",
+      "updated": "2026-01-08T16:52:28Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2601.05105"
+        ],
+        "doi": [
+          "10.48550/arXiv.2601.05105"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2601.05105",
+      "pdf": "https://arxiv.org/pdf/2601.05105",
+      "venue": "Proceedings of the International Conference on 3D Vision (3DV), 2026",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0142": {
+      "id": "W0142",
+      "title": "Move What Matters: Parameter-Efficient Domain Adaptation via Optimal Transport Flow for Collaborative Perception",
+      "authors": [
+        "Zesheng Jia",
+        "Jin Wang",
+        "Siao Liu",
+        "Lingzhi Li",
+        "Ziyao Huang",
+        "Yunjiang Xu",
+        "Jianping Wang"
+      ],
+      "abstract": "Efficient domain adaptation remains a fundamental challenge for deploying multi-agent systems across diverse environments in Vehicle-to-Everything (V2X) collaborative perception. Despite the success of Parameter-Efficient Fine-Tuning (PEFT) in natural language processing and conventional vision tasks, directly applying PEFT to collaborative perception recovers only a limited portion of the performance lost to domain shift. In this work, we identify two complementary bottlenecks that limit this recovery: (i) inter-frame redundancy within a collaborative sequence, which makes the effectiveness of scarce labels sensitive to frame selection, and (ii) foreground cues that become less linearly decodable in deeper-stage representations of a frozen backbone. To address these issues, we propose FlowAdapt, a parameter-efficient framework grounded in optimal transport. Wasserstein Greedy Sampling casts frame selection as minimizing the $W_{\\infty}$ distance from the sequence to the retained subset, which equals its covering radius, so a farthest first traversal returns a subset provably within twice the optimum. Progressive Knowledge Transfer then routes compressed early-stage features into the deeper stages, gating each stage-local correction by that early evidence. Extensive experiments across target domains and fusion architectures show that FlowAdapt achieves state-of-the-art adaptation performance with about 1\\% trainable parameters, and maintains this lead under localization noise.",
+      "published": "2026-02-12T04:36:50Z",
+      "updated": "2026-08-03T09:35:51Z",
+      "version": 5,
+      "identifiers": {
+        "arxiv": [
+          "2602.11565"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.11565"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.11565",
+      "pdf": "https://arxiv.org/pdf/2602.11565",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Move What Matters: Parameter-Efficient Domain Adaptation via Optimal Transport Flow for Collaborative Perception\nEfficient domain adaptation remains a funda"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0153": {
+      "id": "W0153",
+      "title": "Heterogeneous-Modal Unsupervised Domain Adaptation via Latent Space Bridging",
+      "authors": [
+        "Jiawen Yang",
+        "Shuhao Chen",
+        "Shengtao Zhang",
+        "Ke Tang",
+        "Yu Zhang"
+      ],
+      "abstract": "Unsupervised domain adaptation (UDA) effectively bridges the domain gap between a labeled source domain and an unlabeled target domain, but assumes that the two domains share the same modality. Heterogeneous domain adaptation (HDA) instead handles different feature spaces across domains, yet requires labeled target samples or paired data linking the source and target domains. Neither applies when a labeled source domain and a fully unlabeled target domain each hold an entirely distinct modality (e.g., 2D images and 3D point clouds). To address this limitation, we introduce a new setting termed Heterogeneous-Modal Unsupervised Domain Adaptation (HMUDA), which transfers knowledge across modalities via an unlabeled bridge domain containing paired observations from both modalities, whose distribution may deviate from those of the source and target domains. To learn under the HMUDA setting, we propose Latent Space Bridging (LSB), a dual-branch framework where a feature consistency loss on paired bridge samples closes the modality gap and a class-centroid alignment loss reduces the source-target discrepancy. Extensive experiments on eight benchmark settings covering both 2D-to-3D and 3D-to-2D transfer demonstrate that LSB achieves state-of-the-art performance.",
+      "published": "2025-06-19T02:31:51Z",
+      "updated": "2026-10-08T08:37:39Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2506.15971"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.15971"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.15971",
+      "pdf": "https://arxiv.org/pdf/2506.15971",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "cross-modal",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Heterogeneous-Modal Unsupervised Domain Adaptation via Latent Space Bridging\nUnsupervised domain adaptation (UDA) effectively bridges the domain gap b"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0036": {
+      "id": "W0036",
+      "title": "UP2D: Uncertainty-aware Progressive Pseudo-label Denoising for Source-Free Domain Adaptive Medical Image Segmentation",
+      "authors": [
+        "Quang-Khai Bui-Tran",
+        "Thanh-Huy Nguyen",
+        "Manh D. Ho",
+        "Thinh B. Lam",
+        "Vi Vu",
+        "Hoang-Thien Nguyen",
+        "Phat Huynh",
+        "Ulas Bagci"
+      ],
+      "abstract": "Medical image segmentation models face severe performance drops under domain shifts, especially when data sharing constraints prevent access to source images. We present a novel Uncertainty-aware Progressive Pseudo-label Denoising (UP2D) framework for source-free domain adaptation (SFDA), designed to mitigate noisy pseudo-labels and class imbalance during adaptation. UP2D integrates three key components: (i) a Refined Prototype Filtering module that suppresses uninformative regions and constructs reliable class prototypes to denoise pseudo-labels, (ii) an Uncertainty-Guided EMA (UG-EMA) strategy that selectively updates the teacher model based on spatially weighted boundary uncertainty, and (iii) a quantile-based entropy minimization scheme that focuses learning on ambiguous regions while avoiding overconfidence on easy pixels. This single-stage student-teacher framework progressively improves pseudo-label quality and reduces confirmation bias. Extensive experiments on three challenging retinal fundus benchmarks demonstrate that UP2D achieves state-of-the-art performance across both standard and open-domain settings, outperforming prior UDA and SFDA approaches while maintaining superior boundary precision.",
+      "published": "2025-10-29T06:43:12Z",
+      "updated": "2025-10-29T06:43:12Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2510.26826"
+        ],
+        "doi": [
+          "10.48550/arXiv.2510.26826"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2510.26826",
+      "pdf": "https://arxiv.org/pdf/2510.26826",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "eess.IV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "gressive Pseudo-label Denoising (UP2D) framework for source-free domain adaptation (SFDA), designed to mitigate noisy pseudo-labels and class imbalance during adaptation. UP2D integr"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0150": {
+      "id": "W0150",
+      "title": "Rein++: Efficient Generalization and Adaptation for Semantic Segmentation with Vision Foundation Models",
+      "authors": [
+        "Zhixiang Wei",
+        "Xiaoxiao Ma",
+        "Ruishen Yan",
+        "Tao Tu",
+        "Huaian Chen",
+        "Jinjin Zheng",
+        "Yi Jin",
+        "Enhong Chen"
+      ],
+      "abstract": "Vision Foundation Models(VFMs) have achieved remarkable success in various computer vision tasks. However, their application to semantic segmentation is hindered by two significant challenges: (1) the disparity in data scale, as segmentation datasets are typically much smaller than those used for VFM pre-training, and (2) domain distribution shifts, where real-world segmentation scenarios are diverse and often underrepresented during pre-training. To overcome these limitations, we present Rein++, an efficient VFM-based segmentation framework that demonstrates superior generalization from limited data and enables effective adaptation to diverse unlabeled scenarios. Specifically, Rein++ comprises a domain generalization solution Rein-G and a domain adaptation solution Rein-A. Rein-G introduces a set of trainable, instance-aware tokens that effectively refine the VFM's features for the segmentation task. This parameter-efficient approach fine-tunes less than 1% of the backbone's parameters, enabling robust generalization. Building on the Rein-G, Rein-A performs unsupervised domain adaptation at both the instance and logit levels to mitigate domain shifts. In addition, it incorporates a semantic transfer module that leverages the class-agnostic capabilities of the segment anything model to enhance boundary details in the target domain. The integrated Rein++ pipeline first learns a generalizable model on a source domain (e.g., daytime scenes) and subsequently adapts it to diverse target domains (e.g., nighttime scenes) without any target labels. Comprehensive experiments demonstrate that Rein++ significantly outperforms state-of-the-art methods with efficient training, underscoring its roles an efficient, generalizable, and adaptive segmentation solution for VFMs, even for large models with billions of parameters. The code is available at https://github.com/wloves/Rein.",
+      "published": "2025-08-03T08:53:30Z",
+      "updated": "2025-08-03T08:53:30Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2508.01667"
+        ],
+        "doi": [
+          "10.48550/arXiv.2508.01667"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2508.01667",
+      "pdf": "https://arxiv.org/pdf/2508.01667",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA",
+          "DG"
+        ],
+        "task": "semantic",
+        "methods": [
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": ", Rein++ comprises a domain generalization solution Rein-G and a domain adaptation solution Rein-A. Rein-G introduces a set of trainable, instance-aware tokens that effectively refin"
+          },
+          {
+            "label": "DG",
+            "quote": "to diverse unlabeled scenarios. Specifically, Rein++ comprises a domain generalization solution Rein-G and a domain adaptation solution Rein-A. Rein-G introduces a set of trainable, inst"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0176": {
+      "id": "W0176",
+      "title": "SAM4D: Segment Anything in Camera and LiDAR Streams",
+      "authors": [
+        "Jianyun Xu",
+        "Song Wang",
+        "Ziqian Ni",
+        "Chunyong Hu",
+        "Sheng Yang",
+        "Jianke Zhu",
+        "Qiang Li"
+      ],
+      "abstract": "We present SAM4D, a multi-modal and temporal foundation model designed for promptable segmentation across camera and LiDAR streams. Unified Multi-modal Positional Encoding (UMPE) is introduced to align camera and LiDAR features in a shared 3D space, enabling seamless cross-modal prompting and interaction. Additionally, we propose Motion-aware Cross-modal Memory Attention (MCMA), which leverages ego-motion compensation to enhance temporal consistency and long-horizon feature retrieval, ensuring robust segmentation across dynamically changing autonomous driving scenes. To avoid annotation bottlenecks, we develop a multi-modal automated data engine that synergizes VFM-driven video masklets, spatiotemporal 4D reconstruction, and cross-modal masklet fusion. This framework generates camera-LiDAR aligned pseudo-labels at a speed orders of magnitude faster than human annotation while preserving VFM-derived semantic fidelity in point cloud representations. We conduct extensive experiments on the constructed Waymo-4DSeg, which demonstrate the powerful cross-modal segmentation ability and great potential in data annotation of proposed SAM4D.",
+      "published": "2025-06-26T17:59:14Z",
+      "updated": "2025-06-26T17:59:14Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2506.21547"
+        ],
+        "doi": [
+          "10.48550/arXiv.2506.21547"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2506.21547",
+      "pdf": "https://arxiv.org/pdf/2506.21547",
+      "venue": "arXiv",
+      "comment": "Accepted by ICCV2025, Project Page: https://SAM4D-Project.github.io",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "alignment",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0053": {
+      "id": "W0053",
+      "title": "Source-Free Domain Adaptation via Multi-view Contrastive Learning",
+      "authors": [
+        "Amirfarhad Farhadi",
+        "Naser Mozayani",
+        "Azadeh Zamanifar"
+      ],
+      "abstract": "Domain adaptation has become a widely adopted approach in machine learning due to the high costs associated with labeling data. It is typically applied when access to a labeled source domain is available. However, in real-world scenarios, privacy concerns often restrict access to sensitive information, such as fingerprints, bank account details, and facial images. A promising solution to this issue is Source-Free Unsupervised Domain Adaptation (SFUDA), which enables domain adaptation without requiring access to labeled target domain data. Recent research demonstrates that SFUDA can effectively address domain discrepancies; however, two key challenges remain: (1) the low quality of prototype samples, and (2) the incorrect assignment of pseudo-labels. To tackle these challenges, we propose a method consisting of three main phases. In the first phase, we introduce a Reliable Sample Memory (RSM) module to improve the quality of prototypes by selecting more representative samples. In the second phase, we employ a Multi-View Contrastive Learning (MVCL) approach to enhance pseudo-label quality by leveraging multiple data augmentations. In the final phase, we apply a noisy label filtering technique to further refine the pseudo-labels. Our experiments on three benchmark datasets - VisDA 2017, Office-Home, and Office-31 - demonstrate that our method achieves approximately 2 percent and 6 percent improvements in classification accuracy over the second-best method and the average of 13 well-known state-of-the-art approaches, respectively.",
+      "published": "2025-07-04T06:15:23Z",
+      "updated": "2025-07-04T06:15:23Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2507.03321"
+        ],
+        "doi": [
+          "10.48550/arXiv.2507.03321"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2507.03321",
+      "pdf": "https://arxiv.org/pdf/2507.03321",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype",
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Source-Free Domain Adaptation via Multi-view Contrastive Learning\nDomain adaptation has become a widely adopted approach in machi"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0157": {
+      "id": "W0157",
+      "title": "Integrating SAM Supervision for 3D Weakly Supervised Point Cloud Segmentation",
+      "authors": [
+        "Lechun You",
+        "Zhonghua Wu",
+        "Weide Liu",
+        "Xulei Yang",
+        "Jun Cheng",
+        "Wei Zhou",
+        "Bharadwaj Veeravalli",
+        "Guosheng Lin"
+      ],
+      "abstract": "Current methods for 3D semantic segmentation propose training models with limited annotations to address the difficulty of annotating large, irregular, and unordered 3D point cloud data. They usually focus on the 3D domain only, without leveraging the complementary nature of 2D and 3D data. Besides, some methods extend original labels or generate pseudo labels to guide the training, but they often fail to fully use these labels or address the noise within them. Meanwhile, the emergence of comprehensive and adaptable foundation models has offered effective solutions for segmenting 2D data. Leveraging this advancement, we present a novel approach that maximizes the utility of sparsely available 3D annotations by incorporating segmentation masks generated by 2D foundation models. We further propagate the 2D segmentation masks into the 3D space by establishing geometric correspondences between 3D scenes and 2D views. We extend the highly sparse annotations to encompass the areas delineated by 3D masks, thereby substantially augmenting the pool of available labels. Furthermore, we apply confidence- and uncertainty-based consistency regularization on augmentations of the 3D point cloud and select the reliable pseudo labels, which are further spread on the 3D masks to generate more labels. This innovative strategy bridges the gap between limited 3D annotations and the powerful capabilities of 2D foundation models, ultimately improving the performance of 3D weakly supervised segmentation.",
+      "published": "2025-08-27T14:13:01Z",
+      "updated": "2025-08-27T14:13:01Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2508.19909"
+        ],
+        "doi": [
+          "10.48550/arXiv.2508.19909"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2508.19909",
+      "pdf": "https://arxiv.org/pdf/2508.19909",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "augmentation",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0015": {
+      "id": "W0015",
+      "title": "Towards Multimodal Domain Generalization with Few Labels",
+      "authors": [
+        "Hongzhao Li",
+        "Hao Dong",
+        "Hualei Wan",
+        "Shupan Li",
+        "Mingliang Xu",
+        "Muhammad Haris Khan"
+      ],
+      "abstract": "Multimodal models ideally should generalize to unseen domains while remaining data-efficient to reduce annotation costs. To this end, we introduce and study a new problem, Semi-Supervised Multimodal Domain Generalization (SSMDG), which aims to learn robust multimodal models from multi-source data with few labeled samples. We observe that existing approaches fail to address this setting effectively: multimodal domain generalization methods cannot exploit unlabeled data, semi-supervised multimodal learning methods ignore domain shifts, and semi-supervised domain generalization methods are confined to single-modality inputs. To overcome these limitations, we propose a unified framework featuring three key components: Consensus-Driven Consistency Regularization, which obtains reliable pseudo-labels through confident fused-unimodal consensus; Disagreement-Aware Regularization, which effectively utilizes ambiguous non-consensus samples; and Cross-Modal Prototype Alignment, which enforces domain- and modality-invariant representations while promoting robustness under missing modalities via cross-modal translation. We further establish the first SSMDG benchmarks, on which our method consistently outperforms strong baselines in both standard and missing-modality scenarios. Our benchmarks and code are available at https://github.com/lihongzhao99/SSMDG.",
+      "published": "2026-02-26T12:05:56Z",
+      "updated": "2026-02-26T12:05:56Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2602.22917"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.22917"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.22917",
+      "pdf": "https://arxiv.org/pdf/2602.22917",
+      "venue": "arXiv",
+      "comment": "Accepted to CVPR 2026",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "excluded",
+        "tracks": [
+          "DG"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "Towards Multimodal Domain Generalization with Few Labels\nMultimodal models ideally should generalize to unseen domains while remaining data-"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0113": {
+      "id": "W0113",
+      "title": "Cross-view Domain Generalization via Geometric Consistency for LiDAR Semantic Segmentation",
+      "authors": [
+        "Jindong Zhao",
+        "Yuan Gao",
+        "Yang Xia",
+        "Sheng Nie",
+        "Jun Yue",
+        "Weiwei Sun",
+        "Shaobo Xia"
+      ],
+      "abstract": "Domain-generalized LiDAR semantic segmentation (LSS) seeks to train models on source-domain point clouds that generalize reliably to multiple unseen target domains, which is essential for real-world LiDAR applications. However, existing approaches assume similar acquisition views (e.g., vehicle-mounted) and struggle in cross-view scenarios, where observations differ substantially due to viewpoint-dependent structural incompleteness and non-uniform point density. Accordingly, we formulate cross-view domain generalization for LiDAR semantic segmentation and propose a novel framework, termed CVGC (Cross-View Geometric Consistency). Specifically, we introduce a cross-view geometric augmentation module that models viewpoint-induced variations in visibility and sampling density, generating multiple cross-view observations of the same scene. Subsequently, a geometric consistency module enforces consistent semantic and occupancy predictions across geometrically augmented point clouds of the same scene. Extensive experiments on six public LiDAR datasets establish the first systematic evaluation of cross-view domain generalization for LiDAR semantic segmentation, demonstrating that CVGC consistently outperforms state-of-the-art methods when generalizing from a single source domain to multiple target domains with heterogeneous acquisition viewpoints. The source code will be publicly available at https://github.com/KintomZi/CVGC-DG",
+      "published": "2026-02-16T07:19:46Z",
+      "updated": "2026-02-16T07:19:46Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2602.14525"
+        ],
+        "doi": [
+          "10.48550/arXiv.2602.14525"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2602.14525",
+      "pdf": "https://arxiv.org/pdf/2602.14525",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-15T19:20:19Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DG"
+        ],
+        "task": "semantic",
+        "methods": [
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "Cross-view Domain Generalization via Geometric Consistency for LiDAR Semantic Segmentation\nDomain-generalized LiDAR semantic segment"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-14T19:38:04Z",
-      "last_success": "2026-10-14T19:38:04Z"
+      "completed_until": "2026-10-15T19:20:19Z",
+      "last_success": "2026-10-15T19:20:19Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-14T19:38:04Z",
-      "last_success": "2026-10-14T19:38:04Z"
+      "completed_until": "2026-10-15T19:20:19Z",
+      "last_success": "2026-10-15T19:20:19Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-14T19:38:04Z",
-      "last_success": "2026-10-14T19:38:04Z"
+      "completed_until": "2026-10-15T19:20:19Z",
+      "last_success": "2026-10-15T19:20:19Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-14T19:38:04Z",
-      "last_success": "2026-10-14T19:38:04Z"
+      "completed_until": "2026-10-15T19:20:19Z",
+      "last_success": "2026-10-15T19:20:19Z"
     }
   },
   "events": [
@@ -7007,9 +9286,289 @@
       "paper_id": "W0155",
       "title": "Label-Efficient LiDAR Semantic Segmentation with 2D-3D Vision Transformer Adapters",
       "at": "2026-10-14T19:38:04Z"
+    },
+    {
+      "key": "e8bd5fba68da872dec6dc138",
+      "kind": "indexed-existing",
+      "paper_id": "W0118",
+      "title": "LogoSP: Local-global Grouping of Superpoints for Unsupervised Semantic Segmentation of 3D Point Clouds",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "8437ef4fc80a45852c350fa8",
+      "kind": "indexed-existing",
+      "paper_id": "W0049",
+      "title": "HEDN: A Hard-Easy Dual Network with Source Reliability Assessment for Cross-Subject EEG Emotion Recognition",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "a7dbf30bf6814e6901529866",
+      "kind": "indexed-existing",
+      "paper_id": "W0019",
+      "title": "VK-Det: Visual Knowledge Guided Prototype Learning for Open-Vocabulary Aerial Object Detection",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "53da554ab2d2551eae9c2911",
+      "kind": "indexed-existing",
+      "paper_id": "W0047",
+      "title": "USBD: Universal Structural Basis Distillation for Source-Free Graph Domain Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "c7d9180098e154817cbfff20",
+      "kind": "indexed-existing",
+      "paper_id": "W0052",
+      "title": "From Entanglement to Alignment: Representation Space Decomposition for Unsupervised Time Series Domain Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "80b2d42cca888518929f1873",
+      "kind": "indexed-existing",
+      "paper_id": "W0130",
+      "title": "CLIPoint3D: Language-Grounded Few-Shot Unsupervised 3D Point Cloud Domain Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "daa8584f6f52078de20f18c5",
+      "kind": "indexed-existing",
+      "paper_id": "W0111",
+      "title": "Masked Representation Modeling for Domain-Adaptive Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "d8309f3ca5076cb49ece0f7a",
+      "kind": "indexed-existing",
+      "paper_id": "W0023",
+      "title": "Continual Multiple Instance Learning with Enhanced Localization for Histopathological Whole Slide Image Analysis",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "a51b3989536eaf07de3956cd",
+      "kind": "indexed-existing",
+      "paper_id": "W0022",
+      "title": "VFM-Guided Semi-Supervised Detection Transformer under Source-Free Constraints for Remote Sensing Object Detection",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "ba1fc6e73f2c0699aa86a9a6",
+      "kind": "indexed-existing",
+      "paper_id": "W0007",
+      "title": "Do It Yourself: Learning Semantic Correspondence from Pseudo-Labels",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "ce630d26c848599b8082f75b",
+      "kind": "indexed-existing",
+      "paper_id": "W0145",
+      "title": "Multi-Modal Assistance for Unsupervised Domain Adaptation on Point Cloud 3D Object Detection",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "59979c75ae6eae48b5193e61",
+      "kind": "indexed-existing",
+      "paper_id": "W0056",
+      "title": "Grad-CL: Source Free Domain Adaptation with Gradient Guided Feature Disalignment",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "a9996ae1be00456da4accfe5",
+      "kind": "indexed-existing",
+      "paper_id": "W0167",
+      "title": "Prmpt2Adpt: Prompt-Based Zero-Shot Domain Adaptation for Resource-Constrained Environments",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "692a48cb7352297939bb813d",
+      "kind": "indexed-existing",
+      "paper_id": "W0159",
+      "title": "Point-MoE: Large-Scale Multi-Dataset Training with Mixture-of-Experts for 3D Semantic Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "bb82098bced6c0eee77b411b",
+      "kind": "indexed-existing",
+      "paper_id": "W0021",
+      "title": "Beyond Single Images: Retrieval Self-Augmented Unsupervised Camouflaged Object Detection",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "155a8a1c266a709af2bb97da",
+      "kind": "indexed-existing",
+      "paper_id": "W0002",
+      "title": "LOSC: LiDAR Open-voc Segmentation Consolidator",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "d146ffcf0f4aba5577b90acf",
+      "kind": "indexed-existing",
+      "paper_id": "W0048",
+      "title": "Source-Free Domain Adaptation for Geospatial Point Cloud Semantic Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "a822d0dcf26577ce78dff5e2",
+      "kind": "indexed-existing",
+      "paper_id": "W0148",
+      "title": "Unsupervised Domain Adaptation for 3D LiDAR Semantic Segmentation Using Contrastive Learning and Multi-Model Pseudo Labeling",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "61eb46a24ac475b64a98322e",
+      "kind": "indexed-existing",
+      "paper_id": "W0051",
+      "title": "ALISE: Annotation-Free LiDAR Instance Segmentation for Autonomous Driving",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "02fe96bf11a26a891d47c83d",
+      "kind": "indexed-existing",
+      "paper_id": "W0165",
+      "title": "Preserving Clusters in Prompt Learning for Unsupervised Domain Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "8dd24c32d060d8c123ef46b4",
+      "kind": "indexed-existing",
+      "paper_id": "W0033",
+      "title": "Unified Unsupervised and Sparsely-Supervised 3D Object Detection by Semantic Pseudo-Labeling and Prototype Learning",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "22140eb3817b51940b86ff30",
+      "kind": "indexed-existing",
+      "paper_id": "W0001",
+      "title": "Exploring Single Domain Generalization of LiDAR-based Semantic Segmentation under Imperfect Labels",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "10fbb8e178196d4e2cfc89ac",
+      "kind": "indexed-existing",
+      "paper_id": "W0108",
+      "title": "Multi-Channel Uncertainty-Weighted Score Matching for Conditional Diffusion in Medical UDA",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "dacea52ddfc28a291d702fb9",
+      "kind": "indexed-existing",
+      "paper_id": "W0020",
+      "title": "Beyond Boundaries: Leveraging Vision Foundation Models for Source-Free Object Detection",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "765454bd34378fb90a5dc306",
+      "kind": "indexed-existing",
+      "paper_id": "W0138",
+      "title": "Modality-Balanced Collaborative Distillation for Multi-Modal Domain Generalization",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "6a1552591a7f3c2863e52e7e",
+      "kind": "indexed-existing",
+      "paper_id": "W0160",
+      "title": "Learning to Adapt Frozen CLIP for Few-Shot Test-Time Domain Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "193afe34747526208d342f40",
+      "kind": "indexed-existing",
+      "paper_id": "W0104",
+      "title": "Prototype-Guided Pseudo-Labeling with Neighborhood-Aware Consistency for Unsupervised Adaptation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "c73740aeac125c2d0027f093",
+      "kind": "indexed-existing",
+      "paper_id": "W0050",
+      "title": "DAMSDAN: Distribution-Aware Multi-Source Domain Adaptation Network for Cross-Domain EEG-based Emotion Recognition",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "a4045fc5507b5f422ff3cc6c",
+      "kind": "indexed-existing",
+      "paper_id": "W0032",
+      "title": "Prototype-Based Pseudo-Label Denoising for Source-Free Domain Adaptation in Remote Sensing Semantic Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "33fb0275fa0b30f8685a5050",
+      "kind": "indexed-existing",
+      "paper_id": "W0151",
+      "title": "Boosting LiDAR-Based Localization with Semantic Insight: Camera Projection versus Direct LiDAR Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "c52ef42fec5fe8b0484bc498",
+      "kind": "indexed-existing",
+      "paper_id": "W0265",
+      "title": "UniLiPs: Unified LiDAR Pseudo-Labeling with Geometry-Grounded Dynamic Scene Decomposition",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "4cdba9ad258fb1692b74601c",
+      "kind": "indexed-existing",
+      "paper_id": "W0142",
+      "title": "Move What Matters: Parameter-Efficient Domain Adaptation via Optimal Transport Flow for Collaborative Perception",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "683d3622c411a9f800a47b70",
+      "kind": "indexed-existing",
+      "paper_id": "W0153",
+      "title": "Heterogeneous-Modal Unsupervised Domain Adaptation via Latent Space Bridging",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "935fef128a09506e74063302",
+      "kind": "indexed-existing",
+      "paper_id": "W0036",
+      "title": "UP2D: Uncertainty-aware Progressive Pseudo-label Denoising for Source-Free Domain Adaptive Medical Image Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "8bf25c693f8347d609e8478a",
+      "kind": "indexed-existing",
+      "paper_id": "W0150",
+      "title": "Rein++: Efficient Generalization and Adaptation for Semantic Segmentation with Vision Foundation Models",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "565873241c3d9ce65d4679e3",
+      "kind": "indexed-existing",
+      "paper_id": "W0176",
+      "title": "SAM4D: Segment Anything in Camera and LiDAR Streams",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "7129aef0f8b857d354c7d6b8",
+      "kind": "indexed-existing",
+      "paper_id": "W0053",
+      "title": "Source-Free Domain Adaptation via Multi-view Contrastive Learning",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "717bbf1faa2523649b63861a",
+      "kind": "indexed-existing",
+      "paper_id": "W0157",
+      "title": "Integrating SAM Supervision for 3D Weakly Supervised Point Cloud Segmentation",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "3a2a76c6251a97f390b0f34e",
+      "kind": "indexed-existing",
+      "paper_id": "W0015",
+      "title": "Towards Multimodal Domain Generalization with Few Labels",
+      "at": "2026-10-15T19:20:19Z"
+    },
+    {
+      "key": "c1bed3650320be50c02959f5",
+      "kind": "indexed-existing",
+      "paper_id": "W0113",
+      "title": "Cross-view Domain Generalization via Geometric Consistency for LiDAR Semantic Segmentation",
+      "at": "2026-10-15T19:20:19Z"
     }
   ],
-  "revision_cursor": 80,
+  "revision_cursor": 120,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -7116,58 +9675,111 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-15T19:20:19Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 40,
+        "metadata": 0,
+        "unchanged": 4,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-07T19:38:04Z",
+          "end": "2026-10-15T19:20:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-07T19:38:04Z",
+          "end": "2026-10-15T19:20:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-07T19:38:04Z",
+          "end": "2026-10-15T19:20:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-07T19:38:04Z",
+          "end": "2026-10-15T19:20:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 163
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-14T19:38:04Z",
+    "at": "2026-10-15T19:20:19Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-14T19:38:04Z",
+    "at": "2026-10-15T19:20:19Z",
     "status": "ok",
     "counts": {
-      "new": 1,
+      "new": 0,
       "revised": 0,
       "existing": 40,
       "metadata": 0,
-      "unchanged": 6,
+      "unchanged": 4,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-06T20:47:44Z",
-        "end": "2026-10-14T19:38:04Z",
+        "start": "2026-10-07T19:38:04Z",
+        "end": "2026-10-15T19:20:19Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 2
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-06T20:47:44Z",
-        "end": "2026-10-14T19:38:04Z",
-        "backlog_days": 0,
-        "status": "ok",
-        "matched": 2
-      },
-      {
-        "source": "open-vocabulary",
-        "start": "2026-10-06T20:47:44Z",
-        "end": "2026-10-14T19:38:04Z",
-        "backlog_days": 0,
-        "status": "ok",
-        "matched": 2
-      },
-      {
-        "source": "test-time-adaptation",
-        "start": "2026-10-06T20:47:44Z",
-        "end": "2026-10-14T19:38:04Z",
+        "start": "2026-10-07T19:38:04Z",
+        "end": "2026-10-15T19:20:19Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 1
+      },
+      {
+        "source": "open-vocabulary",
+        "start": "2026-10-07T19:38:04Z",
+        "end": "2026-10-15T19:20:19Z",
+        "backlog_days": 0,
+        "status": "ok",
+        "matched": 1
+      },
+      {
+        "source": "test-time-adaptation",
+        "start": "2026-10-07T19:38:04Z",
+        "end": "2026-10-15T19:20:19Z",
+        "backlog_days": 0,
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "known-revisions",
@@ -7178,9 +9790,9 @@
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-14T19:38:04Z",
+  "last_full_success": "2026-10-15T19:20:19Z",
   "llm_last_run": {
-    "at": "2026-10-14T19:38:17Z",
+    "at": "2026-10-15T19:20:32Z",
     "status": "disabled",
     "attempted": 0,
     "succeeded": 0,
