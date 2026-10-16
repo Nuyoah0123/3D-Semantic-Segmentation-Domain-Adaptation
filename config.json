@@ -1,9 +1,9 @@
 {
   "name": "3D Segmentation Observatory",
   "name_zh": "三维分割 · 每日文献观察站",
-  "site_url": "",
+  "site_url": "https://nuyoah0123.github.io/3D-Semantic-Segmentation-Domain-Adaptation",
   "display_timezone": "America/Los_Angeles",
-  "user_agent": "3D-Seg-Daily/1.0 (set repository URL here after deployment)",
+  "user_agent": "3D-Seg-Daily/1.0 (+https://github.com/Nuyoah0123/3D-Semantic-Segmentation-Domain-Adaptation)",
   "publication": {
     "publish_imported_references": false,
     "publish_auto_candidates": true,

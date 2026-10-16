@@ -177,12 +177,12 @@ class BuildTests(TempProject):
         r=build(self.cfg,self.root,now=NOW);self.assertEqual(r["status"],"not-run");self.assertTrue((self.root/"dist/feed.xml").exists())
     def test_json_script_safe(self):
         s=self.load_paper();s["records"][paper()["id"]]["title"]="</script><script>alert(1)</script>";write_json(self.root/"data/store.json",s)
-        build(self.cfg,self.root,now=NOW);self.assertNotIn("</script>",(self.root/"dist/data.js").read_text())
+        build(self.cfg,self.root,now=NOW);self.assertNotIn("</script>",(self.root/"dist/data.js").read_text(encoding="utf-8"))
     def test_javascript_url_stripped(self):
         s=self.load_paper();s["records"][paper()["id"]]["url"]="javascript:alert(1)"
         self.assertEqual(public_records(self.cfg,[],s,{})[0]["url"],"")
     def test_unexpected_output_file_blocks_build(self):
-        (self.root/"dist").mkdir();(self.root/"dist/private.txt").write_text("secret")
+        (self.root/"dist").mkdir();(self.root/"dist/private.txt").write_text("secret", encoding="utf-8")
         with self.assertRaises(ValueError):build(self.cfg,self.root,now=NOW)
     def test_ris_newlines_sanitized(self):
         p=paper();p["title"]="Title\nTY  - FAKE";r=to_ris([p]);self.assertEqual(r.count("\nTY  -"),0)
