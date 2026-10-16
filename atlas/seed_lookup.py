@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import difflib
 import re
+import time
 import unicodedata
 from pathlib import Path
 
@@ -66,6 +67,10 @@ def run_seed_lookup(config: dict, root=ROOT, client=None, now=None, limit=None) 
     budget = max(0, int(limit)) if limit else max(0, int(cfg.get("max_per_run", 40)))
     min_score = float(cfg.get("min_title_score", 0.97))
     retry_days = int(cfg.get("retry_days", 120))
+    seconds = max(0.0, float(cfg.get("max_seconds", 600)))
+    error_run = max(1, int(cfg.get("max_consecutive_errors", 5)))
+    started = time.monotonic()
+    consecutive = 0
     ar = config["arxiv"]
     client = client or Client(ar["request_interval_seconds"], config["user_agent"], ar["timeout_seconds"], ar["attempts"])
     moment = now or utcnow()
@@ -85,12 +90,20 @@ def run_seed_lookup(config: dict, root=ROOT, client=None, now=None, limit=None) 
                     continue
             except ValueError:
                 pass
+        if seconds and time.monotonic() - started > seconds:
+            report["aborted"] = "time-budget"
+            break
         report["checked"] += 1
         try:
             rows = search(client, title)
         except Exception as error:
             report["errors"].append({"id": seed.get("id"), "type": type(error).__name__})
+            consecutive += 1
+            if consecutive >= error_run:
+                report["aborted"] = "source-unavailable"
+                break
             continue
+        consecutive = 0
         wanted = family_names(seed.get("authors"))
         best, match = 0.0, None
         for row in rows:

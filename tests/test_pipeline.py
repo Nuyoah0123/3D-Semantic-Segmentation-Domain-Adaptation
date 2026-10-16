@@ -350,6 +350,18 @@ class LookupTests(TempProject):
         self.assertEqual(r["checked"],1);self.assertEqual(len(r["errors"]),1)
         self.assertEqual(r["status"],"partial")
         self.assertNotIn(MARKER,read_json(self.root/"data/seed.json")[0])
+    def test_consecutive_errors_abort(self):
+        self.cfg["seed_lookup"]["max_consecutive_errors"]=1
+        seeds=[self.seed(),dict(self.seed(),id="W0002"),dict(self.seed(),id="W0003")]
+        r=self.run_lookup(seeds,[SourceError("offline")])
+        self.assertEqual(r["checked"],1);self.assertEqual(r["aborted"],"source-unavailable")
+    def test_time_budget_abort(self):
+        self.cfg["seed_lookup"]["max_seconds"]=10
+        seeds=[self.seed(),dict(self.seed(),id="W0002")]
+        with patch("atlas.seed_lookup.time.monotonic",side_effect=[0,0,100]):
+            r=self.run_lookup(seeds,[feed([paper()])])
+        self.assertEqual(r["checked"],1);self.assertEqual(r["aborted"],"time-budget")
+        self.assertEqual(read_json(self.root/"data/seed.json")[1]["identifiers"]["arxiv"],[])
     def test_author_mismatch_rejected(self):
         r=self.run_lookup([self.seed(authors=["Someone Else Entirely"])],[feed([paper()])])
         self.assertEqual(r["matched"],0)
