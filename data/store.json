@@ -440,7 +440,198 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": []
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "研究提出面向多中心LGE-MRI双心房壁与腔体分割的两阶段框架，比较二维、三维及融合模型在跨中心、无目标域微调条件下的表现。作者报告腔体分割较稳定，而心房壁尤其在Kobe外部域对域偏移更敏感；ResNeXt混合融合具有较好的整体稳定性。",
+        "problem": {
+          "text": "研究关注多中心LGE-MRI中左、右心房壁与腔体的自动分割，以及不同架构、处理维度和融合策略在跨中心分布偏移下的准确性与可迁移性。作者指出，既有研究多为小规模单中心、主要面向左心房，且缺少可复现的系统性双心房基准。",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "However, automated segmentation is challenging due to thin-walled anatomy, domain shifts across imaging centres, and limited benchmarking of existing methods."
+            },
+            {
+              "page": 5,
+              "quote": "More broadly, progress in this field has been hindered by the lack of systematic benchmarking and reproducible frameworks that can evaluate how different architectures, dimensionalities, and dataset characteristics affect segmentation accuracy and transferability."
+            }
+          ]
+        },
+        "method": {
+          "text": "框架采用两阶段流程：先定位并裁剪包含心房解剖结构的ROI，再分别使用二维和三维U-Net进行精细分割。二维、三维网络输出的softmax概率图按体素进行算术平均，随后取argmax得到最终掩膜；U-Net采用ResNeXt模块，并与卷积、Transformer和状态空间模型进行比较。",
+          "evidence": [
+            {
+              "page": 9,
+              "quote": "The two stages were trained independently: the Stage 1 localisation network was trained first and then fixed, and its predicted ROI was used to crop the inputs for the Stage 2 fine-segmentation networks."
+            },
+            {
+              "page": 9,
+              "quote": "The final ensemble prediction was obtained by voxel-wise arithmetic averaging of the 2D and 3D softmax probability maps, followed by an argmax operation."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，ResNeXt编码器的二维、三维融合配置在整体表现上较稳定，但心房壁分割仍明显受跨中心域偏移影响。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Shows that the hybrid 2D/3D ensemble and ResNeXt encoder provide the most stable overall performance, while atrial wall segmentation remains sensitive to domain shift."
+              }
+            ]
+          },
+          {
+            "text": "跨中心测试中，腔体分割比心房壁分割具有更一致的迁移表现；作者特别指出Kobe队列中的心房壁性能对域偏移更敏感。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "Cavity segmentation transferred more consistently across centres than atrial wall segmentation, while wall performance remained sensitive to domain shift, particularly in the Kobe cohort."
+              }
+            ]
+          },
+          {
+            "text": "ROI定位在所有保留测试病例中均包含完整心房解剖结构，未出现裁剪失败。",
+            "evidence": [
+              {
+                "page": 15,
+                "quote": "The Stage 1 predicted ROI contained the complete atrial anatomy in all 41 held-out test scans, comprising 20 Utah, 11 Waikato, and 10 Kobe scans. This corresponds to an ROI localisation success rate of 100%, with no test case classified as a crop failure."
+              }
+            ]
+          },
+          {
+            "text": "在ResNeXt融合配置下，从Utah迁移到Kobe时心房壁Dice下降幅度大于腔体，说明壁结构对域变化更脆弱。",
+            "evidence": [
+              {
+                "page": 20,
+                "quote": "For the TASSNet ResNeXt ensemble, RA wall Dice decreased from 75.3% on Utah to 51.1% on Kobe, while LA wall Dice decreased from 62.0% to 52.1%. The corresponding cavity reductions were smaller, from 92.0% to 83.2% for the RA cavity and from 92.3% to 90.2% for the LA cavity."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，Kobe队列中ResNeXt融合配置在所评估结构上取得最高Dice，但心房壁Dice仍显著低于腔体Dice。",
+            "evidence": [
+              {
+                "page": 18,
+                "quote": "TASSNet with ResNeXt achieved the highest Dice values for the four evaluated structures, including an LA cavity Dice of 0.902, but wall Dice remained substantially lower than cavity Dice."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          {
+            "text": "由于没有独立的重复标注，研究无法量化观察者间和观察者内变异；作者将其明确列为研究局限。",
+            "evidence": [
+              {
+                "page": 12,
+                "quote": "Because independent repeated annotations were not available, inter-observer and intra-observer variability could not be quantified and remain limitations of this study."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "多中心LGE-MRI双心房壁与腔体分割；Utah用于训练及内部测试，Waikato和Kobe作为外部中心测试；无目标域微调。未说明为标准UDA、TTA或OV任务。",
+          "supervision": "使用人工共识分割作为监督标签，覆盖左心房腔体、右心房腔体、左心房壁和右心房壁；外部测试不进行目标域微调。",
+          "modalities": "单模态LGE-MRI三维体数据；采用二维切片与三维体积两种处理流，并融合其概率图。",
+          "datasets": "University of Utah、Waikato Hospital（新西兰）和Kobe University Hospital（日本）三个LGE-MRI队列。",
+          "evaluation": "分割使用DSC、ASD和HD95，按四类解剖结构及不同中心评估；另报告ROI定位、推理时间以及心房体积和直径测量结果。"
+        },
+        "evidence": [
+          {
+            "claim": "研究关注多中心LGE-MRI中左、右心房壁与腔体的自动分割，以及不同架构、处理维度和融合策略在跨中心分布偏移下的准确性与可迁移性。作者指出，既有研究多为小规模单中心、主要面向左心房，且缺少可复现的系统性双心房基准。",
+            "page": 3,
+            "quote": "However, automated segmentation is challenging due to thin-walled anatomy, domain shifts across imaging centres, and limited benchmarking of existing methods.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=3"
+          },
+          {
+            "claim": "研究关注多中心LGE-MRI中左、右心房壁与腔体的自动分割，以及不同架构、处理维度和融合策略在跨中心分布偏移下的准确性与可迁移性。作者指出，既有研究多为小规模单中心、主要面向左心房，且缺少可复现的系统性双心房基准。",
+            "page": 5,
+            "quote": "More broadly, progress in this field has been hindered by the lack of systematic benchmarking and reproducible frameworks that can evaluate how different architectures, dimensionalities, and dataset characteristics affect segmentation accuracy and transferability.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=5"
+          },
+          {
+            "claim": "框架采用两阶段流程：先定位并裁剪包含心房解剖结构的ROI，再分别使用二维和三维U-Net进行精细分割。二维、三维网络输出的softmax概率图按体素进行算术平均，随后取argmax得到最终掩膜；U-Net采用ResNeXt模块，并与卷积、Transformer和状态空间模型进行比较。",
+            "page": 9,
+            "quote": "The two stages were trained independently: the Stage 1 localisation network was trained first and then fixed, and its predicted ROI was used to crop the inputs for the Stage 2 fine-segmentation networks.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=9"
+          },
+          {
+            "claim": "框架采用两阶段流程：先定位并裁剪包含心房解剖结构的ROI，再分别使用二维和三维U-Net进行精细分割。二维、三维网络输出的softmax概率图按体素进行算术平均，随后取argmax得到最终掩膜；U-Net采用ResNeXt模块，并与卷积、Transformer和状态空间模型进行比较。",
+            "page": 9,
+            "quote": "The final ensemble prediction was obtained by voxel-wise arithmetic averaging of the 2D and 3D softmax probability maps, followed by an argmax operation.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=9"
+          },
+          {
+            "claim": "作者报告，ResNeXt编码器的二维、三维融合配置在整体表现上较稳定，但心房壁分割仍明显受跨中心域偏移影响。",
+            "page": 2,
+            "quote": "Shows that the hybrid 2D/3D ensemble and ResNeXt encoder provide the most stable overall performance, while atrial wall segmentation remains sensitive to domain shift.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=2"
+          },
+          {
+            "claim": "跨中心测试中，腔体分割比心房壁分割具有更一致的迁移表现；作者特别指出Kobe队列中的心房壁性能对域偏移更敏感。",
+            "page": 3,
+            "quote": "Cavity segmentation transferred more consistently across centres than atrial wall segmentation, while wall performance remained sensitive to domain shift, particularly in the Kobe cohort.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=3"
+          },
+          {
+            "claim": "ROI定位在所有保留测试病例中均包含完整心房解剖结构，未出现裁剪失败。",
+            "page": 15,
+            "quote": "The Stage 1 predicted ROI contained the complete atrial anatomy in all 41 held-out test scans, comprising 20 Utah, 11 Waikato, and 10 Kobe scans. This corresponds to an ROI localisation success rate of 100%, with no test case classified as a crop failure.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=15"
+          },
+          {
+            "claim": "在ResNeXt融合配置下，从Utah迁移到Kobe时心房壁Dice下降幅度大于腔体，说明壁结构对域变化更脆弱。",
+            "page": 20,
+            "quote": "For the TASSNet ResNeXt ensemble, RA wall Dice decreased from 75.3% on Utah to 51.1% on Kobe, while LA wall Dice decreased from 62.0% to 52.1%. The corresponding cavity reductions were smaller, from 92.0% to 83.2% for the RA cavity and from 92.3% to 90.2% for the LA cavity.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=20"
+          },
+          {
+            "claim": "作者报告，Kobe队列中ResNeXt融合配置在所评估结构上取得最高Dice，但心房壁Dice仍显著低于腔体Dice。",
+            "page": 18,
+            "quote": "TASSNet with ResNeXt achieved the highest Dice values for the four evaluated structures, including an LA cavity Dice of 0.902, but wall Dice remained substantially lower than cavity Dice.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=18"
+          },
+          {
+            "claim": "由于没有独立的重复标注，研究无法量化观察者间和观察者内变异；作者将其明确列为研究局限。",
+            "page": 12,
+            "quote": "Because independent repeated annotations were not available, inter-observer and intra-observer variability could not be quantified and remain limitations of this study.",
+            "source": "https://arxiv.org/pdf/2609.22398v1#page=12"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v2",
+        "generated_at": "2026-10-16T16:00:14Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "cef3dc527842cddce51def9c9d9a23c58f501b2c1160daa3f5d2b0d93ac548fe",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          26,
+          27,
+          28
+        ]
+      }
     },
     "arxiv:2609.17068": {
       "id": "arxiv:2609.17068",
@@ -3957,7 +4148,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4164,7 +4355,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4903,7 +5094,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -5407,7 +5598,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6137,7 +6328,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-14T19:38:04Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6240,7 +6431,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6291,7 +6482,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6350,7 +6541,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6410,7 +6601,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6469,7 +6660,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6591,7 +6782,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6648,7 +6839,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6697,7 +6888,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6757,7 +6948,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6806,7 +6997,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6864,7 +7055,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6923,7 +7114,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6982,7 +7173,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -7036,7 +7227,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -7086,7 +7277,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -7145,7 +7336,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -7204,7 +7395,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -7260,7 +7451,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -7314,7 +7505,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7428,7 +7619,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -7483,7 +7674,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7542,7 +7733,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7599,7 +7790,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7661,7 +7852,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7717,7 +7908,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -7773,7 +7964,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7832,7 +8023,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7889,7 +8080,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -7940,7 +8131,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -7994,7 +8185,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8051,7 +8242,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8112,7 +8303,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8173,7 +8364,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8238,7 +8429,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8290,7 +8481,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8352,7 +8543,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-15T19:20:19Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8530,7 +8721,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T15:31:25Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -9194,23 +9385,23 @@
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-16T14:16:54Z",
-      "last_success": "2026-10-16T14:16:54Z"
+      "completed_until": "2026-10-16T15:31:25Z",
+      "last_success": "2026-10-16T15:31:25Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-16T14:16:54Z",
-      "last_success": "2026-10-16T14:16:54Z"
+      "completed_until": "2026-10-16T15:31:25Z",
+      "last_success": "2026-10-16T15:31:25Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-16T14:16:54Z",
-      "last_success": "2026-10-16T14:16:54Z"
+      "completed_until": "2026-10-16T15:31:25Z",
+      "last_success": "2026-10-16T15:31:25Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-16T14:16:54Z",
-      "last_success": "2026-10-16T14:16:54Z"
+      "completed_until": "2026-10-16T15:31:25Z",
+      "last_success": "2026-10-16T15:31:25Z"
     }
   },
   "events": [
@@ -10363,7 +10554,7 @@
       "at": "2026-10-16T13:56:19Z"
     }
   ],
-  "revision_cursor": 76,
+  "revision_cursor": 116,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -10682,17 +10873,70 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-16T15:31:25Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 42,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T14:16:54Z",
+          "end": "2026-10-16T15:31:25Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T14:16:54Z",
+          "end": "2026-10-16T15:31:25Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T14:16:54Z",
+          "end": "2026-10-16T15:31:25Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T14:16:54Z",
+          "end": "2026-10-16T15:31:25Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 164
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-16T14:16:53Z",
+    "at": "2026-10-16T15:31:24Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-16T14:16:54Z",
+    "at": "2026-10-16T15:31:25Z",
     "status": "ok",
     "counts": {
       "new": 0,
@@ -10705,32 +10949,32 @@
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-09T14:13:09Z",
-        "end": "2026-10-16T14:16:54Z",
+        "start": "2026-10-09T14:16:54Z",
+        "end": "2026-10-16T15:31:25Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-09T14:13:09Z",
-        "end": "2026-10-16T14:16:54Z",
+        "start": "2026-10-09T14:16:54Z",
+        "end": "2026-10-16T15:31:25Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-09T14:13:09Z",
-        "end": "2026-10-16T14:16:54Z",
+        "start": "2026-10-09T14:16:54Z",
+        "end": "2026-10-16T15:31:25Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 2
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-09T14:13:09Z",
-        "end": "2026-10-16T14:16:54Z",
+        "start": "2026-10-09T14:16:54Z",
+        "end": "2026-10-16T15:31:25Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -10744,12 +10988,149 @@
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-16T14:16:54Z",
+  "last_full_success": "2026-10-16T15:31:25Z",
   "llm_last_run": {
-    "at": "2026-10-16T14:17:08Z",
-    "status": "disabled",
-    "attempted": 0,
-    "succeeded": 0,
-    "errors": []
+    "at": "2026-10-16T15:31:38Z",
+    "status": "partial",
+    "attempted": 32,
+    "succeeded": 1,
+    "skipped": [
+      {
+        "id": "arxiv:2609.16755",
+        "reason": "http-404"
+      }
+    ],
+    "errors": [
+      {
+        "id": "arxiv:2610.00855",
+        "type": "TimeoutError"
+      },
+      {
+        "id": "arxiv:2609.18898",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.21619",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.16177",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.12786",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.11105",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.09784",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.09518",
+        "type": "TimeoutError"
+      },
+      {
+        "id": "arxiv:2610.07569",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.06137",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.03622",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.03474",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.01758",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2610.01726",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.38620",
+        "type": "TimeoutError"
+      },
+      {
+        "id": "arxiv:2609.34853",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.34271",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.32013",
+        "type": "TimeoutError"
+      },
+      {
+        "id": "arxiv:2609.31207",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.31005",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.27462",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.26924",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.26408",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.25319",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.31716",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.23541",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.20475",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.19542",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.19358",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.17068",
+        "type": "ValueError"
+      },
+      {
+        "id": "arxiv:2609.16775",
+        "type": "TimeoutError"
+      }
+    ],
+    "model": "gpt-6.1-sol",
+    "budget": 33,
+    "budget_used_today": 0
+  },
+  "llm_budget": {
+    "2026-10-16": 32
   }
 }
