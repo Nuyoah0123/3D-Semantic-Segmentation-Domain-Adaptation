@@ -15,6 +15,8 @@ from atlas.site import public_records, build, to_ris
 from atlas.enrich import PROMPT_VERSION, build_snippets, run_enrichment, validate_analysis
 from atlas.zotero_sync import sanitize_item, run_sync
 from atlas.seed_lookup import MARKER, run_seed_lookup, title_score
+from atlas.pdf_text import NoPdf, download_pdf
+import urllib.error
 
 NOW=datetime(2026,10,13,12,tzinfo=timezone.utc)
 
@@ -312,6 +314,31 @@ class AITests(TempProject):
         s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":True}
         self.cfg["publication"]["publish_ai_drafts"]=True
         self.assertNotIn("ai_draft",public_records(self.cfg,[],s,{})[0])
+
+class PdfTests(unittest.TestCase):
+    def response(self,body,url):
+        class R:
+            def read(self,n=-1):return body
+            def geturl(self):return url
+            def __enter__(self):return self
+            def __exit__(self,*a):return False
+        return R()
+    def test_version_404_falls_back_to_plain_url(self):
+        calls=[]
+        def fake_open(request,timeout=0):
+            calls.append(request.full_url)
+            if request.full_url.endswith("v2"):
+                raise urllib.error.HTTPError(request.full_url,404,"nf",None,None)
+            return self.response(b"%PDF-1.7 data","https://arxiv.org/pdf/2610.00001")
+        with patch("atlas.pdf_text.urllib.request.urlopen",side_effect=fake_open),tempfile.TemporaryDirectory() as tmp:
+            path=download_pdf("2610.00001",2,Path(tmp),interval=0)
+            self.assertTrue(path.read_bytes().startswith(b"%PDF-"))
+        self.assertEqual(len(calls),2);self.assertTrue(calls[0].endswith("v2"));self.assertFalse(calls[1].endswith("v2"))
+    def test_all_404_raises_nopdf(self):
+        def fake_open(request,timeout=0):
+            raise urllib.error.HTTPError(request.full_url,404,"nf",None,None)
+        with patch("atlas.pdf_text.urllib.request.urlopen",side_effect=fake_open),tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(NoPdf):download_pdf("2610.99999",1,Path(tmp),interval=0)
 
 class LookupTests(TempProject):
     def seed(self,title="Domain Adaptation for 3D Semantic Segmentation",authors=None):

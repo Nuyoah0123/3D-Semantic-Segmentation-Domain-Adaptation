@@ -36,26 +36,38 @@ def download_pdf(arxiv: str, version: int | None, cache_dir: Path, *, interval: 
         if head == b"%PDF-" and 0 < path.stat().st_size <= max_bytes:
             return path
         path.unlink()
-    wait = interval - (time.monotonic() - _last_request[0])
-    if wait > 0:
-        time.sleep(wait)
-    _last_request[0] = time.monotonic()
-    request = urllib.request.Request(_url(arxiv, version), headers={"User-Agent": UA, "Accept": "application/pdf"})
-    try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            if not ARXIV_PDF.match(response.geturl()):
-                raise NoPdf("unexpected-redirect")
-            data = response.read(max_bytes + 1)
-    except urllib.error.HTTPError as error:
-        raise NoPdf(f"http-{error.code}") from None
-    except urllib.error.URLError as error:
-        raise PdfError("network-" + type(error.reason).__name__) from None
-    if len(data) > max_bytes:
-        raise PdfError("pdf-too-large")
-    if not data.startswith(b"%PDF-"):
-        raise NoPdf("not-a-pdf")
-    path.write_bytes(data)
-    return path
+    # A pinned version can 404 (withdrawn revision); the plain id still resolves.
+    candidates = [_url(arxiv, version)]
+    plain = _url(arxiv, None)
+    if plain not in candidates:
+        candidates.append(plain)
+    last: NoPdf | None = None
+    for candidate in candidates:
+        wait = interval - (time.monotonic() - _last_request[0])
+        if wait > 0:
+            time.sleep(wait)
+        _last_request[0] = time.monotonic()
+        request = urllib.request.Request(candidate, headers={"User-Agent": UA, "Accept": "application/pdf"})
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                if not ARXIV_PDF.match(response.geturl()):
+                    raise NoPdf("unexpected-redirect")
+                data = response.read(max_bytes + 1)
+        except urllib.error.HTTPError as error:
+            last = NoPdf(f"http-{error.code}")
+            if error.code == 404:
+                continue
+            raise last from None
+        except urllib.error.URLError as error:
+            raise PdfError("network-" + type(error.reason).__name__) from None
+        if len(data) > max_bytes:
+            raise PdfError("pdf-too-large")
+        if not data.startswith(b"%PDF-"):
+            last = NoPdf("not-a-pdf")
+            continue
+        path.write_bytes(data)
+        return path
+    raise last or NoPdf("http-404")
 
 def load_pages(pdf_path: Path, *, max_pages: int = 40, max_chars_per_page: int = 80_000) -> list[dict]:
     try:
