@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -53,37 +54,50 @@ def normalized(text) -> str:
 def numeric_tokens(text) -> set[str]:
     return set(re.findall(r"(?<![\dA-Za-z.])\d+(?:[.,]\d+)*(?![\dA-Za-z.])", normalized(text)))
 
+def loose(text) -> str:
+    """Typography-tolerant comparison: case/space/hyphen/punctuation-insensitive."""
+    return re.sub(r"\W", "", unicodedata.normalize("NFKC", str(text or "")).lower(), flags=re.UNICODE)
+
 def require_text(value, label: str, maximum: int, minimum: int = 1) -> str:
     if not isinstance(value, str) or not minimum <= len(value.strip()) <= maximum:
         raise ValueError("invalid-" + label)
     return value.strip()
 
 def validate_analysis(result, pages: list[dict], pdf_url: str) -> dict:
-    """Reject wrong schemas, invented quotes, unknown pages and unsupported numbers."""
-    if not isinstance(result, dict) or set(result) != TOP_KEYS:
+    """Reject invented quotes, unknown pages and unsupported numbers.
+
+    Extra model keys are ignored and oversized lists are truncated, but a quote
+    must still be a typography-tolerant match of the actual page text and every
+    number in a Chinese claim must occur inside its supporting quotes.
+    """
+    if not isinstance(result, dict):
         raise ValueError("unexpected-schema")
+    core = {key: result[key] for key in TOP_KEYS if key in result}
+    if set(core) != TOP_KEYS:
+        raise ValueError("missing-schema-keys")
     lookup = {p["page"]: normalized(p["text"]) for p in pages if isinstance(p.get("page"), int) and p.get("text")}
+    loose_lookup = {page: loose(text) for page, text in lookup.items()}
     if not lookup:
         raise ValueError("no-page-text")
     collected: list[dict] = []
 
-    def claim(value, label: str, maximum: int = 450) -> dict:
-        if not isinstance(value, dict) or set(value) != {"text", "evidence"}:
+    def claim(value, label: str, maximum: int = 600) -> dict:
+        if not isinstance(value, dict) or "text" not in value or "evidence" not in value:
             raise ValueError("invalid-" + label)
         text = require_text(value["text"], label, maximum)
         refs = value["evidence"]
-        if not isinstance(refs, list) or not 1 <= len(refs) <= 2:
+        if not isinstance(refs, list) or not refs:
             raise ValueError("missing-evidence-" + label)
         supported: set[str] = set()
         checked: list[dict] = []
-        for ref in refs:
-            if not isinstance(ref, dict) or set(ref) != {"page", "quote"}:
+        for ref in refs[:2]:
+            if not isinstance(ref, dict) or "page" not in ref or "quote" not in ref:
                 raise ValueError("invalid-evidence")
             page = ref["page"]
             if isinstance(page, bool) or not isinstance(page, int) or page not in lookup:
                 raise ValueError("unknown-evidence-page")
-            quote = require_text(ref["quote"], "quote", 300, 8)
-            if normalized(quote) not in lookup[page]:
+            quote = require_text(ref["quote"], "quote", 400, 8)
+            if normalized(quote) not in lookup[page] and loose(quote) not in loose_lookup[page]:
                 raise ValueError("quote-not-in-source")
             supported |= numeric_tokens(quote)
             checked.append({"page": page, "quote": quote})
@@ -92,19 +106,19 @@ def validate_analysis(result, pages: list[dict], pdf_url: str) -> dict:
             raise ValueError("unsupported-number")
         return {"text": text, "evidence": checked}
 
-    summary = require_text(result["summary_zh"], "summary", 240, 8)
-    problem = claim(result["problem"], "problem")
-    method = claim(result["method"], "method")
+    summary = require_text(core["summary_zh"], "summary", 320, 8)
+    problem = claim(core["problem"], "problem")
+    method = claim(core["method"], "method")
     counts = {}
     for key, limit in (("findings", 5), ("limitations", 4)):
-        values = result[key]
-        if not isinstance(values, list) or len(values) > limit:
+        values = core[key]
+        if not isinstance(values, list):
             raise ValueError("invalid-" + key)
-        counts[key] = [claim(value, key) for value in values]
-    role = result["role"]
-    if not isinstance(role, dict) or set(role) != set(ROLE_KEYS):
-        raise ValueError("invalid-role")
-    role = {key: require_text(role[key], "role", 140, 1) for key in ROLE_KEYS}
+        counts[key] = [claim(value, key) for value in values[:limit]]
+    role = core["role"]
+    if not isinstance(role, dict) or any(key not in role for key in ROLE_KEYS):
+        raise ValueError("missing-role-keys")
+    role = {key: require_text(role[key], "role", 200, 1) for key in ROLE_KEYS}
     quote_numbers: set[str] = set()
     for item in collected:
         quote_numbers |= numeric_tokens(item["quote"])
@@ -147,7 +161,17 @@ def call_model(paper: dict, pages: list[dict], cfg: dict, key: str, base: str, m
     content = (choice.get("message") or {}).get("content")
     if not isinstance(content, str) or not content.strip():
         raise ValueError("empty-model-content")
-    return json.loads(content)
+    text = content.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    first, last = text.find("{"), text.rfind("}")
+    if first >= 0 and last > first:
+        text = text[first:last + 1]
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        raise ValueError("invalid-json") from None
 
 def generate(paper: dict, pages: list[dict], cfg: dict, key: str, base: str, model: str) -> dict:
     return validate_analysis(call_model(paper, pages, cfg, key, base, model), pages, pdf_url_for(paper))
@@ -233,8 +257,12 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
             paper["ai_draft"] = draft
             report["succeeded"] += 1
         except Exception as error:
-            # Never log response bodies: they may contain model output or secrets.
-            report["errors"].append({"id": paper["id"], "type": type(error).__name__})
+            # Never log response bodies; only whitelisted validator labels are kept.
+            entry = {"id": paper["id"], "type": type(error).__name__}
+            message = str(error)
+            if re.fullmatch(r"[a-z0-9\-]{3,40}", message):
+                entry["detail"] = message
+            report["errors"].append(entry)
         save()
     if report["errors"] and report["succeeded"] == 0:
         report["status"] = "failed"

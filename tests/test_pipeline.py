@@ -224,6 +224,17 @@ class AITests(TempProject):
     def test_role_schema_enforced(self):
         bad=self.analysis();bad["role"].pop("datasets")
         with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+    def test_tolerant_quote_matching(self):
+        out=self.analysis()
+        out["findings"][0]["evidence"][0]={"page":1,"quote":"target domain mIoU by 12.5 points"}
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertTrue(result["findings"][0]["evidence"])
+    def test_extra_keys_ignored_and_lists_truncated(self):
+        out=self.analysis();out["extra_field"]="ignored"
+        item={"text":"额外结果。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation"}]}
+        out["findings"]=[dict(item) for _ in range(6)]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertNotIn("extra_field",result);self.assertEqual(len(result["findings"]),5)
     def test_off_needs_no_key(self):
         self.cfg["llm"]["enabled"]=False
         self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"disabled")

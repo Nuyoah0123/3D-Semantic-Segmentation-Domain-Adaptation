@@ -49,10 +49,10 @@
     "max_per_run": 8,
     "max_per_utc_day": 24,
     "max_pdf_pages": 40,
-    "max_input_chars": 60000,
+    "max_input_chars": 48000,
     "max_output_tokens": 3000,
     "request_interval_seconds": 3.0,
-    "timeout_seconds": 90,
+    "timeout_seconds": 150,
     "max_pdf_bytes": 60000000,
     "token_parameter": "max_completion_tokens"
   },
