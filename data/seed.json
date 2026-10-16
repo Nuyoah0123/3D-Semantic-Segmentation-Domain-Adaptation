@@ -4677,7 +4677,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0097",
@@ -4724,7 +4729,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "WSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0098",
@@ -4767,7 +4777,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "WSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0099",
@@ -4786,7 +4801,9 @@
       "doi": [
         "10.1109/CVPR52733.2024.01418"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2404.16493"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10657575/",
     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -4813,7 +4830,13 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "USL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2404.16493"
+    }
   },
   {
     "id": "W0100",
@@ -4860,7 +4883,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "WSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0101",
@@ -4905,7 +4933,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0102",
@@ -4920,7 +4953,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2410.12790"
+      ]
     },
     "url": null,
     "venue": "Annual Conference on Neural Information Processing Systems",
@@ -4947,7 +4982,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2410.12790"
+    }
   },
   {
     "id": "W0103",
@@ -4962,7 +5003,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2310.05453"
+      ]
     },
     "url": null,
     "venue": "International Conference on Learning Representations",
@@ -4990,7 +5033,13 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "UniDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2310.05453"
+    }
   },
   {
     "id": "W0104",
@@ -5054,7 +5103,9 @@
       "doi": [
         "10.52202/079017-3050"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2411.00632"
+      ]
     },
     "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ae8b0b5838ba510daff1198474e7b984-Abstract-Conference.html",
     "venue": "Advances in Neural Information Processing Systems",
@@ -5079,7 +5130,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "adjacent3d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2411.00632"
+    }
   },
   {
     "id": "W0106",
@@ -5122,7 +5179,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0107",
@@ -5168,7 +5230,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0108",
@@ -5398,7 +5465,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0113",
@@ -5534,7 +5606,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0116",
@@ -5553,7 +5630,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2508.11265"
+      ]
     },
     "url": null,
     "venue": "International Conference on Computer Vision (ICCV)",
@@ -5578,7 +5657,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2508.11265"
+    }
   },
   {
     "id": "W0117",
@@ -5626,7 +5711,12 @@
     "legacy_core": true,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0118",
@@ -5711,7 +5801,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0120",
@@ -5723,7 +5818,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2511.17455"
+      ]
     },
     "url": null,
     "venue": "British Machine Vision Conference",
@@ -5748,7 +5845,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2511.17455"
+    }
   },
   {
     "id": "W0121",
@@ -5791,7 +5894,12 @@
     "legacy_core": true,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0122",
@@ -5810,7 +5918,9 @@
       "doi": [
         "10.1109/TCSVT.2025.3545971"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2410.19446"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10904908?denied=",
     "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
@@ -5838,7 +5948,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2410.19446"
+    }
   },
   {
     "id": "W0123",
@@ -5855,7 +5971,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2504.14231"
+      ]
     },
     "url": "https://openaccess.thecvf.com/content/CVPR2025W/DriveX/html/Spoecklberger_Exploring_Modality_Guidance_to_Enhance_VFM-based_Feature_Fusion_for_UDA_CVPRW_2025_paper.html",
     "venue": null,
@@ -5879,7 +5997,13 @@
     "legacy_core": true,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:17:55Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2504.14231"
+    }
   },
   {
     "id": "W0124",

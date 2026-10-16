@@ -16805,7 +16805,171 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": []
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究长尾训练分布下的图像级弱监督语义分割，提出共享特征校准方法SFC，通过图像库重采样与多尺度分布加权一致性损失改善CAM及伪标签质量，并报告了新的最先进性能。",
+        "problem": {
+          "text": "作者关注图像级弱监督语义分割中的长尾分布问题：共享特征会使分类器权重生成的CAM对头部类别过度激活、对尾部类别激活不足，从而降低伪标签质量并影响最终分割性能。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "In this work, we are the first to demon- strate that long-tailed distribution in training data can cause sifier weight because the head-class weight receives more the CAM calculated through classifier weights over-activated positive gradients (denoted as ⊕) than the negative ones (de-22 for head classes and under-activ"
+            },
+            {
+              "page": 1,
+              "quote": "This degrades the qual- and under-activation by calibrating the shared features in ities of pseudo labels and further influences the final WSSS head-/tail-class classifier weights."
+            }
+          ]
+        },
+        "method": {
+          "text": "SFC通过平衡不同类别分类器权重中的共享特征比例来生成更好的CAM。具体包括Image Bank Re-sampling，用于提高尾部类别样本的采样频率；以及Multi-Scaled Distribution-Weighted一致性损失，在原图、缩放图的分类器权重CAM与类别原型CAM之间施加加权一致性约束。推理时将分类器权重CAM与原型CAM结合。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "It involvesnetwork to mine novel regions rather solely focusing on an Image Bank Re-sampling (IBR) and a Multi-Scaleddiscriminative regions."
+            },
+            {
+              "page": 3,
+              "quote": "For each training image, two distribution-weighted consistency losses (LPDW and LWDW) are calculated, where LPDW is calculated between the prototype CAM (MP) and classifier weight CAM (MW) of original image and LWDW is calculated between the classifier weight CAMs of down-scaled and original images."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者分析认为，在长尾场景下，共享特征会扩大头部类别分类器权重的CAM并压缩尾部类别分类器权重的CAM，进而造成头部类别过激活和尾部类别欠激活。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In this work, we are the first to demon- strate that long-tailed distribution in training data can cause sifier weight because the head-class weight receives more the CAM calculated through classifier weights over-activated positive gradients (denoted as ⊕) than the negative ones (de-22 for head classes and under-activ"
+              },
+              {
+                "page": 1,
+                "quote": "classes can enlarge the classifier-weight-generated CAM Copyright © 2024, Association for the Advancement of Artificial for the head class and shrink it for the tail class under a Intelligence (www.aaai.org)."
+              }
+            ]
+          },
+          {
+            "text": "图像库重采样提高了尾部类别的训练采样频率，使分布加权一致性损失更频繁地作用于尾部类别。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "In addition, an image bank that stores the latest shown images for different classes is maintained, and images are uniformly sampled from it to complement the original training batch, increasing the consistency loss optimization frequency for tail classes."
+              },
+              {
+                "page": 3,
+                "quote": "where MW denotes the classifier weight CAM, f(·) de- Our proposed IBR is used for increasing the tail-class notes a function that feeds the normalized ReLU activated sampling frequency, thus the MSDW loss will be enforced FW, I, and F into a Pixel Correlation Module (PCM) on the tail classes more frequently, effectivel"
+              }
+            ]
+          },
+          {
+            "text": "作者报告SFC能够显著改善CAM边界，并通过更好的伪标签边界提升WSSS表现。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "On the other hand, as shown in Fig. 1(d), that our SFC significantly improves CAM boundaries and the CAM activated by the head-class prototype (Chen et al. achieves new state-of-the-art performances."
+              },
+              {
+                "page": 1,
+                "quote": "this re-weighting strategy is also demonstrated, proving Then, a series of post-processing methods (Kr¨ahenb¨uhl and that pseudo-labels with better boundaries can be achieved Koltun 2011) are adopted to refine the masks to obtain pixel- through our SFC."
+              }
+            ]
+          }
+        ],
+        "limitations": [],
+        "role": {
+          "setting": "图像级弱监督语义分割，重点处理长尾训练分布；未说明源域/目标域划分。",
+          "supervision": "仅提供图像级标签；像素级标注未作为训练监督使用。",
+          "modalities": "输入为图像，处理图像特征、分类器权重CAM、类别原型CAM及伪标签。",
+          "datasets": "Pascal VOC 2012和COCO 2014。",
+          "evaluation": "报告WSSS性能并声称达到新的最先进结果；具体指标、数据划分和评测协议未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "作者关注图像级弱监督语义分割中的长尾分布问题：共享特征会使分类器权重生成的CAM对头部类别过度激活、对尾部类别激活不足，从而降低伪标签质量并影响最终分割性能。",
+            "page": 1,
+            "quote": "In this work, we are the first to demon- strate that long-tailed distribution in training data can cause sifier weight because the head-class weight receives more the CAM calculated through classifier weights over-activated positive gradients (denoted as ⊕) than the negative ones (de-22 for head classes and under-activ",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          },
+          {
+            "claim": "作者关注图像级弱监督语义分割中的长尾分布问题：共享特征会使分类器权重生成的CAM对头部类别过度激活、对尾部类别激活不足，从而降低伪标签质量并影响最终分割性能。",
+            "page": 1,
+            "quote": "This degrades the qual- and under-activation by calibrating the shared features in ities of pseudo labels and further influences the final WSSS head-/tail-class classifier weights.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          },
+          {
+            "claim": "SFC通过平衡不同类别分类器权重中的共享特征比例来生成更好的CAM。具体包括Image Bank Re-sampling，用于提高尾部类别样本的采样频率；以及Multi-Scaled Distribution-Weighted一致性损失，在原图、缩放图的分类器权重CAM与类别原型CAM之间施加加权一致性约束。推理时将分类器权重CAM与原型CAM结合。",
+            "page": 2,
+            "quote": "It involvesnetwork to mine novel regions rather solely focusing on an Image Bank Re-sampling (IBR) and a Multi-Scaleddiscriminative regions.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=2"
+          },
+          {
+            "claim": "SFC通过平衡不同类别分类器权重中的共享特征比例来生成更好的CAM。具体包括Image Bank Re-sampling，用于提高尾部类别样本的采样频率；以及Multi-Scaled Distribution-Weighted一致性损失，在原图、缩放图的分类器权重CAM与类别原型CAM之间施加加权一致性约束。推理时将分类器权重CAM与原型CAM结合。",
+            "page": 3,
+            "quote": "For each training image, two distribution-weighted consistency losses (LPDW and LWDW) are calculated, where LPDW is calculated between the prototype CAM (MP) and classifier weight CAM (MW) of original image and LWDW is calculated between the classifier weight CAMs of down-scaled and original images.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=3"
+          },
+          {
+            "claim": "作者分析认为，在长尾场景下，共享特征会扩大头部类别分类器权重的CAM并压缩尾部类别分类器权重的CAM，进而造成头部类别过激活和尾部类别欠激活。",
+            "page": 1,
+            "quote": "In this work, we are the first to demon- strate that long-tailed distribution in training data can cause sifier weight because the head-class weight receives more the CAM calculated through classifier weights over-activated positive gradients (denoted as ⊕) than the negative ones (de-22 for head classes and under-activ",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          },
+          {
+            "claim": "作者分析认为，在长尾场景下，共享特征会扩大头部类别分类器权重的CAM并压缩尾部类别分类器权重的CAM，进而造成头部类别过激活和尾部类别欠激活。",
+            "page": 1,
+            "quote": "classes can enlarge the classifier-weight-generated CAM Copyright © 2024, Association for the Advancement of Artificial for the head class and shrink it for the tail class under a Intelligence (www.aaai.org).",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          },
+          {
+            "claim": "图像库重采样提高了尾部类别的训练采样频率，使分布加权一致性损失更频繁地作用于尾部类别。",
+            "page": 3,
+            "quote": "In addition, an image bank that stores the latest shown images for different classes is maintained, and images are uniformly sampled from it to complement the original training batch, increasing the consistency loss optimization frequency for tail classes.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=3"
+          },
+          {
+            "claim": "图像库重采样提高了尾部类别的训练采样频率，使分布加权一致性损失更频繁地作用于尾部类别。",
+            "page": 3,
+            "quote": "where MW denotes the classifier weight CAM, f(·) de- Our proposed IBR is used for increasing the tail-class notes a function that feeds the normalized ReLU activated sampling frequency, thus the MSDW loss will be enforced FW, I, and F into a Pixel Correlation Module (PCM) on the tail classes more frequently, effectivel",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=3"
+          },
+          {
+            "claim": "作者报告SFC能够显著改善CAM边界，并通过更好的伪标签边界提升WSSS表现。",
+            "page": 1,
+            "quote": "On the other hand, as shown in Fig. 1(d), that our SFC significantly improves CAM boundaries and the CAM activated by the head-class prototype (Chen et al. achieves new state-of-the-art performances.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          },
+          {
+            "claim": "作者报告SFC能够显著改善CAM边界，并通过更好的伪标签边界提升WSSS表现。",
+            "page": 1,
+            "quote": "this re-weighting strategy is also demonstrated, proving Then, a series of post-processing methods (Kr¨ahenb¨uhl and that pseudo-labels with better boundaries can be achieved Koltun 2011) are adopted to refine the masks to obtain pixel- through our SFC.",
+            "source": "https://arxiv.org/pdf/2401.11719v1#page=1"
+          }
+        ],
+        "dropped": [
+          {
+            "field": "findings",
+            "reason": "unsupported-number"
+          }
+        ],
+        "repaired": "unsupported-summary-number",
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:21:11Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "635fd8c7c2c5a984807f431eadd4da3f863106e1d983bfd4d66da7da3db7e5cd",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
     },
     "W0110": {
       "id": "W0110",
@@ -17301,7 +17465,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17926,7 +18090,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -18098,7 +18262,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -18332,7 +18496,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -18953,7 +19117,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -19163,7 +19327,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -19399,7 +19563,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20067,7 +20231,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20293,7 +20457,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -20526,7 +20690,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -20981,7 +21145,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -21259,7 +21423,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -21733,7 +21897,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -21973,7 +22137,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -22196,7 +22360,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -23066,7 +23230,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -23262,7 +23426,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24208,7 +24372,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -24586,7 +24750,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24800,7 +24964,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24998,7 +25162,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -25898,7 +26062,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -26155,7 +26319,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -26407,7 +26571,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -26630,7 +26794,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -27656,7 +27820,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -28326,7 +28490,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -28828,7 +28992,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -29476,7 +29640,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -29658,7 +29822,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -30109,7 +30273,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -30513,7 +30677,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -30934,7 +31098,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32452,7 +32616,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32675,7 +32839,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -34046,7 +34210,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -34754,7 +34918,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -35013,7 +35177,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-16T15:31:25Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -35942,7 +36106,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -38836,7 +39000,138 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": []
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究无源域数据条件下的医学图像分割领域适应：仅利用源域预训练模型和无标注目标域数据，通过Chebyshev置信度评估伪标签可靠性，并结合伪标签去噪与教师-学生联合训练提升适应效果。作者报告其方法在跨中心和跨模态场景中优于现有SFDA方法。",
+        "problem": {
+          "text": "研究无监督、无源数据的医学图像分割领域适应问题，即将源域训练好的模型适配到无标注目标域，同时避免在适应过程中访问源域数据。核心难点是域偏移会导致伪标签不准确且含噪，进而影响目标域分割和自训练效果。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "IEEE TRANSACTIONS AND JOURNALS TEMPLATE 1 A Chebyshev Confidence Guided Source-Free Domain Adaptation Framework for Medical Image Segmentation Jiesi Hu, Yanwu Yang, Xutao Guo, Jinghua Wang*, Ting Ma* Abstract— Source-free domain adaptation (SFDA) aims I. INTRODUCTION to adapt models trained on a labeled source domain t"
+            },
+            {
+              "page": 2,
+              "quote": "Due to concerns regarding data privacy, SFDA has emerged On the other hand, prototypical denoising accurately estimates as an approach to achieve adaptation using only unlabeled prototypes and eliminates PLs with poor consistency based on target data and a source model, without relying on the source Chebyshev confidenc"
+            }
+          ]
+        },
+        "method": {
+          "text": "提出Chebyshev置信度引导的SFDA框架，根据预测结果及其不确定性计算伪标签置信度的概率下界，以评估伪标签可靠性；在此基础上采用直接去噪和原型去噪，并引入带置信度加权模块的教师-学生联合训练，使伪标签迭代改进并降低不可靠伪标签的影响。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "is estimated by calculating probability lower bound of the To overcome the challenges induced by domain shifts, PL confidence, given the prediction and the correspond- numerous algorithms have been developed in the field of Un-[cs.CV] ing uncertainty."
+            },
+            {
+              "page": 1,
+              "quote": "Additionally, we propose a novel teacher-student joint training scheme domain data for adaptation, which is often impractical and (TJTS) that incorporates a confidence weighting module to restricted in clinical applications due to privacy and security improve PLs iteratively."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者在跨中心和跨模态等多种领域场景开展了实验，并报告该模型优于其他先进SFDA方法。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "• We conduct extensive experiments across various domain scenarios, including cross-centre and cross-modality set- tings."
+              },
+              {
+                "page": 2,
+                "quote": "The results demonstrate that our model outperforms other state-of-the-art SFDA methods."
+              }
+            ]
+          },
+          {
+            "text": "作者报告教师-学生联合训练与去噪方法能够抑制噪声传播、提高伪标签准确性，从而改善适应性能。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Consequently, source-free domain adaptation denoising methods, effectively prevents the propagation (SFDA) has gained significant interest, particularly in medical of noise and enhances the accuracy of PLs."
+              },
+              {
+                "page": 1,
+                "quote": "sulting in improved adaptation performance."
+              }
+            ]
+          }
+        ],
+        "limitations": [],
+        "role": {
+          "setting": "源域模型向无标注目标域适应，不使用源域数据；涵盖跨临床中心和跨模态场景。",
+          "supervision": "源域使用标注数据训练模型；适应阶段仅使用源域预训练模型与无标注目标域数据，采用伪标签自训练。",
+          "modalities": "医学图像分割，包括视网膜眼底图像和脑部MRI；MRI涉及T1、T1ce、T2及其他模态设置。",
+          "datasets": "眼底：REFUGE源域、RIM-ONE-r3和Drishti-GS目标域；脑肿瘤：BraTS2020。REFUGE含400张标注训练图像。",
+          "evaluation": "在眼底和脑MRI分割上进行跨中心、跨模态SFDA实验；具体评价指标未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "研究无监督、无源数据的医学图像分割领域适应问题，即将源域训练好的模型适配到无标注目标域，同时避免在适应过程中访问源域数据。核心难点是域偏移会导致伪标签不准确且含噪，进而影响目标域分割和自训练效果。",
+            "page": 1,
+            "quote": "IEEE TRANSACTIONS AND JOURNALS TEMPLATE 1 A Chebyshev Confidence Guided Source-Free Domain Adaptation Framework for Medical Image Segmentation Jiesi Hu, Yanwu Yang, Xutao Guo, Jinghua Wang*, Ting Ma* Abstract— Source-free domain adaptation (SFDA) aims I. INTRODUCTION to adapt models trained on a labeled source domain t",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=1"
+          },
+          {
+            "claim": "研究无监督、无源数据的医学图像分割领域适应问题，即将源域训练好的模型适配到无标注目标域，同时避免在适应过程中访问源域数据。核心难点是域偏移会导致伪标签不准确且含噪，进而影响目标域分割和自训练效果。",
+            "page": 2,
+            "quote": "Due to concerns regarding data privacy, SFDA has emerged On the other hand, prototypical denoising accurately estimates as an approach to achieve adaptation using only unlabeled prototypes and eliminates PLs with poor consistency based on target data and a source model, without relying on the source Chebyshev confidenc",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=2"
+          },
+          {
+            "claim": "提出Chebyshev置信度引导的SFDA框架，根据预测结果及其不确定性计算伪标签置信度的概率下界，以评估伪标签可靠性；在此基础上采用直接去噪和原型去噪，并引入带置信度加权模块的教师-学生联合训练，使伪标签迭代改进并降低不可靠伪标签的影响。",
+            "page": 1,
+            "quote": "is estimated by calculating probability lower bound of the To overcome the challenges induced by domain shifts, PL confidence, given the prediction and the correspond- numerous algorithms have been developed in the field of Un-[cs.CV] ing uncertainty.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=1"
+          },
+          {
+            "claim": "提出Chebyshev置信度引导的SFDA框架，根据预测结果及其不确定性计算伪标签置信度的概率下界，以评估伪标签可靠性；在此基础上采用直接去噪和原型去噪，并引入带置信度加权模块的教师-学生联合训练，使伪标签迭代改进并降低不可靠伪标签的影响。",
+            "page": 1,
+            "quote": "Additionally, we propose a novel teacher-student joint training scheme domain data for adaptation, which is often impractical and (TJTS) that incorporates a confidence weighting module to restricted in clinical applications due to privacy and security improve PLs iteratively.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=1"
+          },
+          {
+            "claim": "作者在跨中心和跨模态等多种领域场景开展了实验，并报告该模型优于其他先进SFDA方法。",
+            "page": 2,
+            "quote": "• We conduct extensive experiments across various domain scenarios, including cross-centre and cross-modality set- tings.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=2"
+          },
+          {
+            "claim": "作者在跨中心和跨模态等多种领域场景开展了实验，并报告该模型优于其他先进SFDA方法。",
+            "page": 2,
+            "quote": "The results demonstrate that our model outperforms other state-of-the-art SFDA methods.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=2"
+          },
+          {
+            "claim": "作者报告教师-学生联合训练与去噪方法能够抑制噪声传播、提高伪标签准确性，从而改善适应性能。",
+            "page": 1,
+            "quote": "Consequently, source-free domain adaptation denoising methods, effectively prevents the propagation (SFDA) has gained significant interest, particularly in medical of noise and enhances the accuracy of PLs.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=1"
+          },
+          {
+            "claim": "作者报告教师-学生联合训练与去噪方法能够抑制噪声传播、提高伪标签准确性，从而改善适应性能。",
+            "page": 1,
+            "quote": "sulting in improved adaptation performance.",
+            "source": "https://arxiv.org/pdf/2310.18087v1#page=1"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:20:44Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "434a3ffc04c4ecae4420e0c3d1e796a2a0fe779130cb9b288f28cc908c1d368d",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
     },
     "W0072": {
       "id": "W0072",
@@ -38870,7 +39165,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T21:00:28Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:17:34Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -39563,28 +39858,567 @@
           7
         ]
       }
+    },
+    "W0018": {
+      "id": "W0018",
+      "title": "Generalized Few-shot 3D Point Cloud Segmentation with Vision-Language Model",
+      "authors": [
+        "Zhaochong An",
+        "Guolei Sun",
+        "Yun Liu",
+        "Runjia Li",
+        "Junlin Han",
+        "Ender Konukoglu",
+        "Serge Belongie"
+      ],
+      "abstract": "Generalized few-shot 3D point cloud segmentation (GFS-PCS) adapts models to new classes with few support samples while retaining base class segmentation. Existing GFS-PCS methods enhance prototypes via interacting with support or query features but remain limited by sparse knowledge from few-shot samples. Meanwhile, 3D vision-language models (3D VLMs), generalizing across open-world novel classes, contain rich but noisy novel class knowledge. In this work, we introduce a GFS-PCS framework that synergizes dense but noisy pseudo-labels from 3D VLMs with precise yet sparse few-shot samples to maximize the strengths of both, named GFS-VL. Specifically, we present a prototype-guided pseudo-label selection to filter low-quality regions, followed by an adaptive infilling strategy that combines knowledge from pseudo-label contexts and few-shot samples to adaptively label the filtered, unlabeled areas. Additionally, we design a novel-base mix strategy to embed few-shot samples into training scenes, preserving essential context for improved novel class learning. Moreover, recognizing the limited diversity in current GFS-PCS benchmarks, we introduce two challenging benchmarks with diverse novel classes for comprehensive generalization evaluation. Experiments validate the effectiveness of our framework across models and datasets. Our approach and benchmarks provide a solid foundation for advancing GFS-PCS in the real world. The code is at https://github.com/ZhaochongAn/GFS-VL",
+      "published": "2025-03-20T16:10:33Z",
+      "updated": "2025-05-20T14:45:03Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2503.16282"
+        ],
+        "doi": [
+          "10.1109/CVPR52734.2025.01584"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2503.16282",
+      "pdf": "https://arxiv.org/pdf/2503.16282",
+      "venue": "arXiv",
+      "comment": "Accepted to CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-16T21:17:34Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "vision-language",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "nwhile, 3D vision-language models (3D VLMs), generalizing across open-world novel classes, contain rich but noisy novel class knowledge. In this work, we introduce a GFS-PCS f"
+          },
+          {
+            "label": "OV-related",
+            "quote": "仅有 open-set/open-world 线索，开放词汇设置待确认"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究广义少样本三维点云语义分割：模型先学习基类，再利用新类少量支持样本，同时预测基类与新类。GFS-VL结合3D视觉语言模型的稠密伪标签与少样本的精确标注，并报告在既有及新建基准上取得先进性能。",
+        "problem": {
+          "text": "研究广义少样本点云语义分割，使模型在仅获得新类少量支持样本后，能够在推理时同时分割基类与新类，而不是只预测新类或依赖推理阶段的支持样本。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "To address sion applications [20, 35, 42, 52, 53, 61, 73], and few-shot this, generalized few-shot point cloud semantic segmenta- point cloud semantic segmentation (FS-PCS) has emerged tion (GFS-PCS) [66] was introduced, allowing models to directly segment both base and novel classes after few-shot *Corresponding autho"
+            },
+            {
+              "page": 3,
+              "quote": "only novel classes and require support samples to specify Dataset Base Novel Max (F) Min (F) Max (P) Min (P) target classes during inference."
+            }
+          ]
+        },
+        "method": {
+          "text": "GFS-VL将3D视觉语言模型生成的稠密但含噪伪标签，与少样本提供的精确但稀疏标注结合。方法先用少样本进行原型引导的伪标签筛选，再利用伪标签上下文和少样本进行自适应填补，并通过新类—基类混合策略将支持样本嵌入训练场景以保留上下文。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "In this work, we introduce a GFS-PCS frame- work that synergizes dense but noisy pseudo-labels from 3D VLMs with precise yet sparse few-shot samples to maxi- Support 3D VLM Calibration mize the strengths of both, named GFS-VL."
+            },
+            {
+              "page": 2,
+              "quote": "Third, to further utilize distribution in the previous FS-PCS setting.few-shot samples, we propose a novel-base mix strategy, embedding support samples into training scenes."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，GFS-VL通过结合3D视觉语言模型与少样本数据，在既有和新建立的广义少样本点云分割基准上取得了当前最优性能。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Leveraging lan- performance on both existing and newly established bench- guage models trained on vast open-text data, 3D VLMs ex- marks."
+              }
+            ]
+          },
+          {
+            "text": "实验表明，该框架在不同模型和数据集上均具有效果与泛化能力。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Experiments validate the effec- pseudo-labels with precise few-shot samples, thereby effectively tiveness of our framework across models and datasets."
+              },
+              {
+                "page": 2,
+                "quote": "Experiments demonstrate the effectiveness and gen- hibit strong generalization abilities, allowing recognition of eralizability of our framework across various models and open-set classes in 3D."
+              }
+            ]
+          },
+          {
+            "text": "伪标签筛选用于保留高质量区域并排除错误预测；自适应填补进一步为被筛除而未标注的区域补充信息。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "First, we introduce a pseudo-label selection tech- support classes are modeled: i) Feature optimization [16,nique that uses accurate few-shot data to filter pseudo- 31, 37, 41, 59, 62, 72, 80, 81] – These methods refine sup-labels, retaining only high-quality regions while excluding port prototypes or query features to"
+              },
+              {
+                "page": 2,
+                "quote": "ii) Correlation optimization [1, 2] –proach to enrich these regions."
+              }
+            ]
+          },
+          {
+            "text": "新类—基类混合增强将支持样本嵌入训练场景，作者认为该策略能够保留对新类泛化重要的上下文信息。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Third, to further utilize distribution in the previous FS-PCS setting.few-shot samples, we propose a novel-base mix strategy, embedding support samples into training scenes."
+              },
+              {
+                "page": 3,
+                "quote": "In contrast, our proposed novel- 3D VLMs align 3D point cloud features with language fea- base mix augmentation retains key contextual information tures, enabling open-world 3D understanding."
+              }
+            ]
+          },
+          {
+            "text": "作者提出了覆盖更广泛新类的挑战性基准，并指出既有基线在新基准上的表现有限，说明新基准可用于更全面地评估模型。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "To address this, we introduce two chal- novel classes using co-occurrence knowledge from support lenging benchmarks: one with 40 novel classes from Scan- samples and contextual information from queries."
+              },
+              {
+                "page": 2,
+                "quote": "Additionally, previous baselines exhibit limited some approaches [5, 18, 44, 54, 75] distill 2D features performance when evaluated on our new benchmarks, un- from 2D VLMs [12, 27] into their 3D encoders, while oth- derscoring the necessity of our benchmarks for assess- ers [9, 10, 21, 67] use captioning models [47, 60"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          {
+            "text": "作者指出，现有基准只包含少量新类，类别多样性有限，难以代表真实场景中不断变化的新类复杂性。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "As shown in Fig. 1, these Net [7] and S3DIS [3] datasets include only six novel methods mainly focus on refining prototypes through inter- classes, limiting diversity and failing to represent the com- actions with support/query samples for enhanced segmen- plexity of real-world scenarios where novel classes are con- ta"
+              },
+              {
+                "page": 2,
+                "quote": "For instance, CAPL [56] adapts base prototypes to stantly varying."
+              }
+            ]
+          },
+          {
+            "text": "作者指出，3D视觉语言模型的预测通常含噪，直接使用可能在广义少样本分割模型中累积错误。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "However, predictions from 3D VLMs are often noisy, compound- 3D point cloud segmentation is fundamental in understand- ing errors in GFS-PCS models."
+              }
+            ]
+          },
+          {
+            "text": "作者指出，少样本支持数据提供的知识稀疏，这限制了现有方法的新类泛化能力。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "However, these ap- provide broader and more representative coverage of novel proaches remain limited in novel class generalization due to classes, enabling a more comprehensive evaluation of mod- the sparse knowledge available from few-shot samples."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "广义少样本三维点云语义分割；模型先学习基类，再适应新类，并在测试时同时预测基类与新类。",
+          "supervision": "基类使用带标签训练数据；新类使用K-shot支持样本；3D视觉语言模型伪标签作为额外但含噪的监督来源。",
+          "modalities": "三维点云、点云标签、三维与文本表示，以及3D视觉语言模型生成的区域或点级伪标签。",
+          "datasets": "涉及S3DIS、ScanNet、ScanNet200和ScanNet++，并在ScanNet200与ScanNet++上建立新基准。",
+          "evaluation": "在测试集上评估基类与新类的整体分割；比较既有和新建基准上的模型表现，具体指标未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "研究广义少样本点云语义分割，使模型在仅获得新类少量支持样本后，能够在推理时同时分割基类与新类，而不是只预测新类或依赖推理阶段的支持样本。",
+            "page": 1,
+            "quote": "To address sion applications [20, 35, 42, 52, 53, 61, 73], and few-shot this, generalized few-shot point cloud semantic segmenta- point cloud semantic segmentation (FS-PCS) has emerged tion (GFS-PCS) [66] was introduced, allowing models to directly segment both base and novel classes after few-shot *Corresponding autho",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=1"
+          },
+          {
+            "claim": "研究广义少样本点云语义分割，使模型在仅获得新类少量支持样本后，能够在推理时同时分割基类与新类，而不是只预测新类或依赖推理阶段的支持样本。",
+            "page": 3,
+            "quote": "only novel classes and require support samples to specify Dataset Base Novel Max (F) Min (F) Max (P) Min (P) target classes during inference.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=3"
+          },
+          {
+            "claim": "GFS-VL将3D视觉语言模型生成的稠密但含噪伪标签，与少样本提供的精确但稀疏标注结合。方法先用少样本进行原型引导的伪标签筛选，再利用伪标签上下文和少样本进行自适应填补，并通过新类—基类混合策略将支持样本嵌入训练场景以保留上下文。",
+            "page": 1,
+            "quote": "In this work, we introduce a GFS-PCS frame- work that synergizes dense but noisy pseudo-labels from 3D VLMs with precise yet sparse few-shot samples to maxi- Support 3D VLM Calibration mize the strengths of both, named GFS-VL.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=1"
+          },
+          {
+            "claim": "GFS-VL将3D视觉语言模型生成的稠密但含噪伪标签，与少样本提供的精确但稀疏标注结合。方法先用少样本进行原型引导的伪标签筛选，再利用伪标签上下文和少样本进行自适应填补，并通过新类—基类混合策略将支持样本嵌入训练场景以保留上下文。",
+            "page": 2,
+            "quote": "Third, to further utilize distribution in the previous FS-PCS setting.few-shot samples, we propose a novel-base mix strategy, embedding support samples into training scenes.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者报告，GFS-VL通过结合3D视觉语言模型与少样本数据，在既有和新建立的广义少样本点云分割基准上取得了当前最优性能。",
+            "page": 2,
+            "quote": "Leveraging lan- performance on both existing and newly established bench- guage models trained on vast open-text data, 3D VLMs ex- marks.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "实验表明，该框架在不同模型和数据集上均具有效果与泛化能力。",
+            "page": 1,
+            "quote": "Experiments validate the effec- pseudo-labels with precise few-shot samples, thereby effectively tiveness of our framework across models and datasets.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=1"
+          },
+          {
+            "claim": "实验表明，该框架在不同模型和数据集上均具有效果与泛化能力。",
+            "page": 2,
+            "quote": "Experiments demonstrate the effectiveness and gen- hibit strong generalization abilities, allowing recognition of eralizability of our framework across various models and open-set classes in 3D.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "伪标签筛选用于保留高质量区域并排除错误预测；自适应填补进一步为被筛除而未标注的区域补充信息。",
+            "page": 2,
+            "quote": "First, we introduce a pseudo-label selection tech- support classes are modeled: i) Feature optimization [16,nique that uses accurate few-shot data to filter pseudo- 31, 37, 41, 59, 62, 72, 80, 81] – These methods refine sup-labels, retaining only high-quality regions while excluding port prototypes or query features to",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "伪标签筛选用于保留高质量区域并排除错误预测；自适应填补进一步为被筛除而未标注的区域补充信息。",
+            "page": 2,
+            "quote": "ii) Correlation optimization [1, 2] –proach to enrich these regions.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "新类—基类混合增强将支持样本嵌入训练场景，作者认为该策略能够保留对新类泛化重要的上下文信息。",
+            "page": 2,
+            "quote": "Third, to further utilize distribution in the previous FS-PCS setting.few-shot samples, we propose a novel-base mix strategy, embedding support samples into training scenes.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "新类—基类混合增强将支持样本嵌入训练场景，作者认为该策略能够保留对新类泛化重要的上下文信息。",
+            "page": 3,
+            "quote": "In contrast, our proposed novel- 3D VLMs align 3D point cloud features with language fea- base mix augmentation retains key contextual information tures, enabling open-world 3D understanding.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=3"
+          },
+          {
+            "claim": "作者提出了覆盖更广泛新类的挑战性基准，并指出既有基线在新基准上的表现有限，说明新基准可用于更全面地评估模型。",
+            "page": 2,
+            "quote": "To address this, we introduce two chal- novel classes using co-occurrence knowledge from support lenging benchmarks: one with 40 novel classes from Scan- samples and contextual information from queries.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者提出了覆盖更广泛新类的挑战性基准，并指出既有基线在新基准上的表现有限，说明新基准可用于更全面地评估模型。",
+            "page": 2,
+            "quote": "Additionally, previous baselines exhibit limited some approaches [5, 18, 44, 54, 75] distill 2D features performance when evaluated on our new benchmarks, un- from 2D VLMs [12, 27] into their 3D encoders, while oth- derscoring the necessity of our benchmarks for assess- ers [9, 10, 21, 67] use captioning models [47, 60",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者指出，现有基准只包含少量新类，类别多样性有限，难以代表真实场景中不断变化的新类复杂性。",
+            "page": 2,
+            "quote": "As shown in Fig. 1, these Net [7] and S3DIS [3] datasets include only six novel methods mainly focus on refining prototypes through inter- classes, limiting diversity and failing to represent the com- actions with support/query samples for enhanced segmen- plexity of real-world scenarios where novel classes are con- ta",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者指出，现有基准只包含少量新类，类别多样性有限，难以代表真实场景中不断变化的新类复杂性。",
+            "page": 2,
+            "quote": "For instance, CAPL [56] adapts base prototypes to stantly varying.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者指出，3D视觉语言模型的预测通常含噪，直接使用可能在广义少样本分割模型中累积错误。",
+            "page": 2,
+            "quote": "However, predictions from 3D VLMs are often noisy, compound- 3D point cloud segmentation is fundamental in understand- ing errors in GFS-PCS models.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          },
+          {
+            "claim": "作者指出，少样本支持数据提供的知识稀疏，这限制了现有方法的新类泛化能力。",
+            "page": 2,
+            "quote": "However, these ap- provide broader and more representative coverage of novel proaches remain limited in novel class generalization due to classes, enabling a more comprehensive evaluation of mod- the sparse knowledge available from few-shot samples.",
+            "source": "https://arxiv.org/pdf/2503.16282v2#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:20:24Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "7f655c6e37e45a3fba457cec0b6ce8f5e2a19c02c026b64e5209b7d6a5b202f7",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          13,
+          14
+        ]
+      }
+    },
+    "W0010": {
+      "id": "W0010",
+      "title": "Self-Reinforcing Prototype Evolution with Dual-Knowledge Cooperation for Semi-Supervised Lifelong Person Re-Identification",
+      "authors": [
+        "Kunlun Xu",
+        "Fan Zhuo",
+        "Jiangmeng Li",
+        "Xu Zou",
+        "Jiahuan Zhou"
+      ],
+      "abstract": "Current lifelong person re-identification (LReID) methods predominantly rely on fully labeled data streams. However, in real-world scenarios where annotation resources are limited, a vast amount of unlabeled data coexists with scarce labeled samples, leading to the Semi-Supervised LReID (Semi-LReID) problem where LReID methods suffer severe performance degradation. Existing LReID methods, even when combined with semi-supervised strategies, suffer from limited long-term adaptation performance due to struggling with the noisy knowledge occurring during unlabeled data utilization. In this paper, we pioneer the investigation of Semi-LReID, introducing a novel Self-Reinforcing Prototype Evolution with Dual-Knowledge Cooperation framework (SPRED). Our key innovation lies in establishing a self-reinforcing cycle between dynamic prototype-guided pseudo-label generation and new-old knowledge collaborative purification to enhance the utilization of unlabeled data. Specifically, learnable identity prototypes are introduced to dynamically capture the identity distributions and generate high-quality pseudo-labels. Then, the dual-knowledge cooperation scheme integrates current model specialization and historical model generalization, refining noisy pseudo-labels. Through this cyclic design, reliable pseudo-labels are progressively mined to improve current-stage learning and ensure positive knowledge propagation over long-term learning. Experiments on the established Semi-LReID benchmarks show that our SPRED achieves state-of-the-art performance. Our source code is available at https://github.com/zhoujiahuan1991/ICCV2025-SPRED",
+      "published": "2025-07-02T16:53:39Z",
+      "updated": "2025-07-24T02:26:33Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2507.01884"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2507.01884",
+      "pdf": "https://arxiv.org/pdf/2507.01884",
+      "venue": "arXiv",
+      "comment": "Accepted by ICCV 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-16T21:17:34Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究半监督终身行人重识别（Semi-LReID）：按顺序接收多个数据集，每个数据集仅部分标注，且训练阶段只能访问当前数据。作者提出SPRED，通过原型演化与新旧知识协作生成和净化伪标签，并报告其在既有Semi-LReID基准上达到当前最佳性能，同时提升未标注数据利用和长期知识积累。",
+        "problem": {
+          "text": "研究半监督终身行人重识别问题：模型按顺序学习多个数据集，每个数据集同时包含未标注子集和有标注子集，不同训练数据集的身份标签不重叠；训练第t步只能访问当前数据集，历史与未来数据不可访问。研究重点是利用有限标注数据学习新身份，同时减轻长期学习中的灾难性遗忘，并评估模型对新域的泛化能力。",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "These approaches focus on intra-instance consistency but neglect inter-instance relation In Semi-LReID, a set of T datasets D = {Dt}Tt=1 are given learning."
+            },
+            {
+              "page": 4,
+              "quote": "when t̸ = s. During the t-th training step, only Dt is avail- Old Knowledge Non-Forgetting: Since Lp guides the able, the previous and later datasets are inaccessible."
+            }
+          ]
+        },
+        "method": {
+          "text": "SPRED由双知识协作驱动的伪标签净化（DKCP）和自强化原型演化（SPE）组成。SPE利用可学习身份原型，从伪标签和有限真实标注中动态建模身份分布，并通过邻居原型标注生成高质量伪标签；DKCP同时利用当前模型与历史模型进行聚类，根据聚类一致性筛选可靠伪标签。筛选出的伪标签反过来更新身份原型，形成迭代的自强化循环；此外，原型结构知识蒸馏用于缓解灾难性遗忘。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Specifically, SPRED comprises two key components: Dual-Knowledge Cooperation-driven Pseudo-label Purification (DKCP) and Self-Reinforcing Prototype Evolution (SPE)."
+            },
+            {
+              "page": 2,
+              "quote": "Besides, a prototype learned and complementary historical knowledge to improve ID structure-based knowledge distillation loss is developed to assignment for unlabeled samples."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告SPRED在既有Semi-LReID基准上取得当前最佳性能。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Tra- Semi-LReID benchmarks show that our SPRED achieves ditional LReID methods typically assume that all training state-of-the-art performance."
+              }
+            ]
+          },
+          {
+            "text": "作者报告SPRED显著增强了未标注数据利用，并改善了长期知识积累，相较之下，现有方法在标注率降低时会出现明显性能退化。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "(b) As the labeling rate decreases, collaborative purification to enhance the utilization of un- the performance of existing LReID methods suffers severe degra- labeled data."
+              },
+              {
+                "page": 2,
+                "quote": "Extensive experi- ments on established Semi-LReID benchmarks demonstrate Semi-LReID is to effectively leverage the unlabeled data that SPRED significantly enhances unlabeled data utiliza- while mitigating catastrophic forgetting during long-term tion and long-term knowledge accumulation compared to learning."
+              }
+            ]
+          },
+          {
+            "text": "作者报告双知识协作通过联合当前模型的新知识与历史模型的互补知识，提高了可靠伪标签生成能力；自强化循环则逐步改进伪标签质量和原型学习。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "As shown in Fig. 2 (b), our core idea is to jointly leverage newly learned knowledge (Fig. 2 (b)) and complementary his- torical knowledge (Fig. 2 (c)) to form a Dual-Knowledge Cooperation mechanism (Fig. 2 (d)) that enhances reliable pseudo-label generation."
+              },
+              {
+                "page": 2,
+                "quote": "(d) The proposed a self-reinforcing cycle that iteratively improves pseudo- dual-knowledge cooperation mechanism jointly utilizes the newly label quality and prototype learning."
+              }
+            ]
+          },
+          {
+            "text": "作者报告原型结构知识蒸馏有助于缓解灾难性遗忘，并进一步提升长期知识巩固能力。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Besides, a prototype learned and complementary historical knowledge to improve ID structure-based knowledge distillation loss is developed to assignment for unlabeled samples."
+              },
+              {
+                "page": 2,
+                "quote": "mitigate catastrophic forgetting, further improving the long- term knowledge consolidation capacity."
+              }
+            ]
+          }
+        ],
+        "limitations": [],
+        "role": {
+          "setting": "半监督终身行人重识别；数据集按顺序到达，当前训练步只能访问当前数据，并用测试集评估长期积累及新域泛化。",
+          "supervision": "每个数据集含未标注子集与有标注子集；方法结合有限真实标注、人工标签与伪标签进行学习。",
+          "modalities": "以行人图像/人类图像为主要数据形态，属于视觉行人重识别任务。",
+          "datasets": "包含按序到达的多个训练数据集、对应测试数据集，以及用于新域泛化评估的未见域数据集；具体名称未说明。",
+          "evaluation": "在既有Semi-LReID基准上评测；关注未标注数据利用、长期知识积累、灾难性遗忘及新域泛化，具体指标未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "研究半监督终身行人重识别问题：模型按顺序学习多个数据集，每个数据集同时包含未标注子集和有标注子集，不同训练数据集的身份标签不重叠；训练第t步只能访问当前数据集，历史与未来数据不可访问。研究重点是利用有限标注数据学习新身份，同时减轻长期学习中的灾难性遗忘，并评估模型对新域的泛化能力。",
+            "page": 3,
+            "quote": "These approaches focus on intra-instance consistency but neglect inter-instance relation In Semi-LReID, a set of T datasets D = {Dt}Tt=1 are given learning.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=3"
+          },
+          {
+            "claim": "研究半监督终身行人重识别问题：模型按顺序学习多个数据集，每个数据集同时包含未标注子集和有标注子集，不同训练数据集的身份标签不重叠；训练第t步只能访问当前数据集，历史与未来数据不可访问。研究重点是利用有限标注数据学习新身份，同时减轻长期学习中的灾难性遗忘，并评估模型对新域的泛化能力。",
+            "page": 4,
+            "quote": "when t̸ = s. During the t-th training step, only Dt is avail- Old Knowledge Non-Forgetting: Since Lp guides the able, the previous and later datasets are inaccessible.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=4"
+          },
+          {
+            "claim": "SPRED由双知识协作驱动的伪标签净化（DKCP）和自强化原型演化（SPE）组成。SPE利用可学习身份原型，从伪标签和有限真实标注中动态建模身份分布，并通过邻居原型标注生成高质量伪标签；DKCP同时利用当前模型与历史模型进行聚类，根据聚类一致性筛选可靠伪标签。筛选出的伪标签反过来更新身份原型，形成迭代的自强化循环；此外，原型结构知识蒸馏用于缓解灾难性遗忘。",
+            "page": 2,
+            "quote": "Specifically, SPRED comprises two key components: Dual-Knowledge Cooperation-driven Pseudo-label Purification (DKCP) and Self-Reinforcing Prototype Evolution (SPE).",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "SPRED由双知识协作驱动的伪标签净化（DKCP）和自强化原型演化（SPE）组成。SPE利用可学习身份原型，从伪标签和有限真实标注中动态建模身份分布，并通过邻居原型标注生成高质量伪标签；DKCP同时利用当前模型与历史模型进行聚类，根据聚类一致性筛选可靠伪标签。筛选出的伪标签反过来更新身份原型，形成迭代的自强化循环；此外，原型结构知识蒸馏用于缓解灾难性遗忘。",
+            "page": 2,
+            "quote": "Besides, a prototype learned and complementary historical knowledge to improve ID structure-based knowledge distillation loss is developed to assignment for unlabeled samples.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "作者报告SPRED在既有Semi-LReID基准上取得当前最佳性能。",
+            "page": 1,
+            "quote": "Tra- Semi-LReID benchmarks show that our SPRED achieves ditional LReID methods typically assume that all training state-of-the-art performance.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=1"
+          },
+          {
+            "claim": "作者报告SPRED显著增强了未标注数据利用，并改善了长期知识积累，相较之下，现有方法在标注率降低时会出现明显性能退化。",
+            "page": 1,
+            "quote": "(b) As the labeling rate decreases, collaborative purification to enhance the utilization of un- the performance of existing LReID methods suffers severe degra- labeled data.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=1"
+          },
+          {
+            "claim": "作者报告SPRED显著增强了未标注数据利用，并改善了长期知识积累，相较之下，现有方法在标注率降低时会出现明显性能退化。",
+            "page": 2,
+            "quote": "Extensive experi- ments on established Semi-LReID benchmarks demonstrate Semi-LReID is to effectively leverage the unlabeled data that SPRED significantly enhances unlabeled data utiliza- while mitigating catastrophic forgetting during long-term tion and long-term knowledge accumulation compared to learning.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "作者报告双知识协作通过联合当前模型的新知识与历史模型的互补知识，提高了可靠伪标签生成能力；自强化循环则逐步改进伪标签质量和原型学习。",
+            "page": 2,
+            "quote": "As shown in Fig. 2 (b), our core idea is to jointly leverage newly learned knowledge (Fig. 2 (b)) and complementary his- torical knowledge (Fig. 2 (c)) to form a Dual-Knowledge Cooperation mechanism (Fig. 2 (d)) that enhances reliable pseudo-label generation.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "作者报告双知识协作通过联合当前模型的新知识与历史模型的互补知识，提高了可靠伪标签生成能力；自强化循环则逐步改进伪标签质量和原型学习。",
+            "page": 2,
+            "quote": "(d) The proposed a self-reinforcing cycle that iteratively improves pseudo- dual-knowledge cooperation mechanism jointly utilizes the newly label quality and prototype learning.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "作者报告原型结构知识蒸馏有助于缓解灾难性遗忘，并进一步提升长期知识巩固能力。",
+            "page": 2,
+            "quote": "Besides, a prototype learned and complementary historical knowledge to improve ID structure-based knowledge distillation loss is developed to assignment for unlabeled samples.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          },
+          {
+            "claim": "作者报告原型结构知识蒸馏有助于缓解灾难性遗忘，并进一步提升长期知识巩固能力。",
+            "page": 2,
+            "quote": "mitigate catastrophic forgetting, further improving the long- term knowledge consolidation capacity.",
+            "source": "https://arxiv.org/pdf/2507.01884v2#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:19:54Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "c5c09dc547555261d23af92acb363fd7aefb5dca372da406675939bedf1bd1d7",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          12,
+          13,
+          14,
+          16,
+          17
+        ]
+      }
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-16T21:00:28Z",
-      "last_success": "2026-10-16T21:00:28Z"
+      "completed_until": "2026-10-16T21:17:34Z",
+      "last_success": "2026-10-16T21:17:34Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-16T21:00:28Z",
-      "last_success": "2026-10-16T21:00:28Z"
+      "completed_until": "2026-10-16T21:17:34Z",
+      "last_success": "2026-10-16T21:17:34Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-16T21:00:28Z",
-      "last_success": "2026-10-16T21:00:28Z"
+      "completed_until": "2026-10-16T21:17:34Z",
+      "last_success": "2026-10-16T21:17:34Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-16T21:00:28Z",
-      "last_success": "2026-10-16T21:00:28Z"
+      "completed_until": "2026-10-16T21:17:34Z",
+      "last_success": "2026-10-16T21:17:34Z"
     }
   },
   "events": [
@@ -40763,9 +41597,23 @@
       "paper_id": "W0071",
       "title": "Decoupled Prototype Learning for Reliable Test-Time Adaptation",
       "at": "2026-10-16T21:00:28Z"
+    },
+    {
+      "key": "5cd2cea5ee00959c6aa770cf",
+      "kind": "indexed-existing",
+      "paper_id": "W0018",
+      "title": "Generalized Few-shot 3D Point Cloud Segmentation with Vision-Language Model",
+      "at": "2026-10-16T21:17:34Z"
+    },
+    {
+      "key": "59827fc5fdadd281a3c675d3",
+      "kind": "indexed-existing",
+      "paper_id": "W0010",
+      "title": "Self-Reinforcing Prototype Evolution with Dual-Knowledge Cooperation for Semi-Supervised Lifelong Person Re-Identification",
+      "at": "2026-10-16T21:17:34Z"
     }
   ],
-  "revision_cursor": 68,
+  "revision_cursor": 108,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -41504,55 +42352,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-16T21:17:34Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 2,
+        "metadata": 0,
+        "unchanged": 40,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T21:00:28Z",
+          "end": "2026-10-16T21:17:34Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T21:00:28Z",
+          "end": "2026-10-16T21:17:34Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T21:00:28Z",
+          "end": "2026-10-16T21:17:34Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T21:00:28Z",
+          "end": "2026-10-16T21:17:34Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 179
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-16T21:00:27Z",
+    "at": "2026-10-16T21:17:34Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-16T21:00:28Z",
+    "at": "2026-10-16T21:17:34Z",
     "status": "ok",
     "counts": {
       "new": 0,
       "revised": 0,
-      "existing": 4,
+      "existing": 2,
       "metadata": 0,
-      "unchanged": 38,
+      "unchanged": 40,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-09T20:31:48Z",
-        "end": "2026-10-16T21:00:28Z",
+        "start": "2026-10-09T21:00:28Z",
+        "end": "2026-10-16T21:17:34Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-09T20:31:48Z",
-        "end": "2026-10-16T21:00:28Z",
+        "start": "2026-10-09T21:00:28Z",
+        "end": "2026-10-16T21:17:34Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-09T20:31:48Z",
-        "end": "2026-10-16T21:00:28Z",
+        "start": "2026-10-09T21:00:28Z",
+        "end": "2026-10-16T21:17:34Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 2
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-09T20:31:48Z",
-        "end": "2026-10-16T21:00:28Z",
+        "start": "2026-10-09T21:00:28Z",
+        "end": "2026-10-16T21:17:34Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -41561,24 +42462,29 @@
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 173
+        "total_known": 179
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-16T21:00:28Z",
+  "last_full_success": "2026-10-16T21:17:34Z",
   "llm_last_run": {
-    "at": "2026-10-16T21:02:26Z",
+    "at": "2026-10-16T21:19:30Z",
     "status": "ok",
-    "attempted": 3,
-    "succeeded": 3,
-    "skipped": [],
+    "attempted": 4,
+    "succeeded": 4,
+    "skipped": [
+      {
+        "id": "arxiv:2609.16755",
+        "reason": "http-404"
+      }
+    ],
     "errors": [],
     "model": "gpt-6.1-sol",
-    "budget": 3,
-    "budget_used_today": 219
+    "budget": 6,
+    "budget_used_today": 222
   },
   "llm_budget": {
-    "2026-10-16": 222
+    "2026-10-16": 226
   }
 }
