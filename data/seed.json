@@ -166,7 +166,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T19:20:02Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0005",
