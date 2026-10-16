@@ -12,7 +12,7 @@ from atlas.arxiv_source import parse_feed, query_window, SourceError
 from atlas.pipeline import EMPTY, merge_paper, run_update
 from atlas.triage import classify
 from atlas.site import public_records, build, to_ris
-from atlas.enrich import PROMPT_VERSION, run_enrichment, validate_analysis
+from atlas.enrich import PROMPT_VERSION, build_snippets, run_enrichment, validate_analysis
 from atlas.zotero_sync import sanitize_item, run_sync
 
 NOW=datetime(2026,10,13,12,tzinfo=timezone.utc)
@@ -212,11 +212,42 @@ class AITests(TempProject):
     def test_valid_analysis(self):
         out=validate_analysis(self.analysis(),self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
         self.assertTrue(out["summary_zh"]);self.assertTrue(out["evidence"]);self.assertEqual(out["role"]["setting"],"UDA")
+    def test_snippet_evidence(self):
+        snippets=build_snippets(self.PAGES);self.assertTrue(snippets)
+        out=self.analysis()
+        out["problem"]["evidence"]=[{"snippet":"S1"}]
+        out["method"]["evidence"]=[{"snippet":"S2"}]
+        out["findings"][0]["evidence"]=[{"snippet":"S2"}]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",snippets)
+        self.assertEqual(result["problem"]["evidence"][0]["quote"],snippets[0]["text"])
+        self.assertEqual(result["problem"]["evidence"][0]["page"],snippets[0]["page"])
+    def test_unknown_snippet_rejected(self):
+        snippets=build_snippets(self.PAGES)
+        out=self.analysis();out["method"]["evidence"]=[{"snippet":"S99"}]
+        with self.assertRaises(ValueError):validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",snippets)
     def test_quote_must_exist(self):
         bad=self.analysis();bad["problem"]["evidence"][0]["quote"]="A fabricated excerpt that never existed."
         with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
-    def test_unknown_page_rejected(self):
+    def test_unknown_page_claim_dropped(self):
         bad=self.analysis();bad["findings"][0]["evidence"][0]["page"]=9
+        result=validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertEqual(result["findings"],[]);self.assertEqual(result["dropped"][0]["reason"],"unknown-evidence-page")
+    def test_number_attached_from_other_snippet(self):
+        snippets=build_snippets(self.PAGES)
+        out=self.analysis();out["findings"][0]["evidence"]=[{"snippet":"S1"}]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",snippets)
+        quotes=[e["quote"] for e in result["findings"][0]["evidence"]]
+        self.assertTrue(any("12.5" in q for q in quotes))
+    def test_fabricated_number_drops_claim(self):
+        snippets=build_snippets(self.PAGES)
+        out=self.analysis()
+        out["findings"].append({"text":"目标域 mIoU 提升 97.5 个百分点。","evidence":[{"snippet":"S1"}]})
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",snippets)
+        self.assertEqual(len(result["findings"]),1)
+        self.assertEqual(result["dropped"][0]["reason"],"unsupported-number")
+        self.assertNotIn("97.5",json.dumps(result,ensure_ascii=False))
+    def test_mandatory_claim_number_still_rejects(self):
+        bad=self.analysis();bad["method"]["text"]="在 3 个数据集上评测。"
         with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
     def test_unsupported_number_rejected(self):
         bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
@@ -251,6 +282,22 @@ class AITests(TempProject):
         self.assertEqual(a["attempted"],1);self.assertEqual(a["succeeded"],1);self.assertEqual(b["attempted"],0)
         draft=read_json(self.root/"data/store.json")["records"][paper()["id"]]["ai_draft"]
         self.assertEqual(draft["prompt_version"],PROMPT_VERSION);self.assertFalse(draft["human_approved"])
+    def test_imported_papers_drafted_by_default(self):
+        self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1)
+        p=paper();s=copy.deepcopy(EMPTY);merge_paper(s,[p],p,iso(NOW));self.assertTrue(s["records"][p["id"]]["imported"]);write_json(self.root/"data/store.json",s)
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        loader=lambda p,cfg,root:copy.deepcopy(self.PAGES)
+        gen=lambda p,pages,cfg,key,base,model:copy.deepcopy(self.analysis())
+        r=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(r["attempted"],1);self.assertEqual(r["succeeded"],1)
+    def test_imported_papers_can_be_excluded(self):
+        self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1,include_imported=False)
+        p=paper();s=copy.deepcopy(EMPTY);merge_paper(s,[p],p,iso(NOW));self.assertTrue(s["records"][p["id"]]["imported"]);write_json(self.root/"data/store.json",s)
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        loader=lambda p,cfg,root:copy.deepcopy(self.PAGES)
+        gen=lambda p,pages,cfg,key,base,model:copy.deepcopy(self.analysis())
+        r=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(r["attempted"],0);self.assertEqual(r["succeeded"],0)
     def test_ai_draft_publish_switch_and_allowlist(self):
         s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW))
         s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":False,"private_field":"DO-NOT-PUBLISH"}

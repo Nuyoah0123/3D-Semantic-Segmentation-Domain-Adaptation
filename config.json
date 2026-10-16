@@ -54,7 +54,8 @@
     "request_interval_seconds": 3.0,
     "timeout_seconds": 150,
     "max_pdf_bytes": 60000000,
-    "token_parameter": "max_completion_tokens"
+    "token_parameter": "max_completion_tokens",
+    "include_imported": true
   },
   "zotero": {
     "enabled": false,
