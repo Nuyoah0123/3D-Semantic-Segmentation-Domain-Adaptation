@@ -7507,7 +7507,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -9007,7 +9007,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T20:31:48Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -10050,7 +10050,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T20:31:48Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -12035,7 +12035,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -12282,7 +12282,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -12465,7 +12465,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -12677,7 +12677,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -13416,7 +13416,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -13727,7 +13727,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -14995,7 +14995,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -15513,7 +15513,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -16236,7 +16236,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -16788,7 +16788,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -17104,7 +17104,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17301,7 +17301,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T20:31:48Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17558,7 +17558,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -17736,7 +17736,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -18488,7 +18488,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -18696,7 +18696,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -18953,7 +18953,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -19598,7 +19598,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -19839,7 +19839,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20067,7 +20067,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20743,7 +20743,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -21259,7 +21259,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -21477,7 +21477,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -21973,7 +21973,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -22423,7 +22423,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -22630,7 +22630,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -22865,7 +22865,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -23548,7 +23548,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -23801,7 +23801,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -23989,7 +23989,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24208,7 +24208,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -25220,7 +25220,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -25494,7 +25494,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -25674,7 +25674,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T14:16:54Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -35942,7 +35942,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-16T20:31:48Z",
+      "last_seen": "2026-10-16T21:00:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -38779,28 +38779,812 @@
           9
         ]
       }
+    },
+    "W0059": {
+      "id": "W0059",
+      "title": "A Chebyshev Confidence Guided Source-Free Domain Adaptation Framework for Medical Image Segmentation",
+      "authors": [
+        "Jiesi Hu",
+        "Yanwu Yang",
+        "Xutao Guo",
+        "Jinghua Wang",
+        "Ting Ma"
+      ],
+      "abstract": "Source-free domain adaptation (SFDA) aims to adapt models trained on a labeled source domain to an unlabeled target domain without the access to source data. In medical imaging scenarios, the practical significance of SFDA methods has been emphasized due to privacy concerns. Recent State-of-the-art SFDA methods primarily rely on self-training based on pseudo-labels (PLs). Unfortunately, PLs suffer from accuracy deterioration caused by domain shift, and thus limit the effectiveness of the adaptation process. To address this issue, we propose a Chebyshev confidence guided SFDA framework to accurately assess the reliability of PLs and generate self-improving PLs for self-training. The Chebyshev confidence is estimated by calculating probability lower bound of the PL confidence, given the prediction and the corresponding uncertainty. Leveraging the Chebyshev confidence, we introduce two confidence-guided denoising methods: direct denoising and prototypical denoising. Additionally, we propose a novel teacher-student joint training scheme (TJTS) that incorporates a confidence weighting module to improve PLs iteratively. The TJTS, in collaboration with the denoising methods, effectively prevents the propagation of noise and enhances the accuracy of PLs. Extensive experiments in diverse domain scenarios validate the effectiveness of our proposed framework and establish its superiority over state-of-the-art SFDA methods. Our paper contributes to the field of SFDA by providing a novel approach for precisely estimating the reliability of pseudo-labels and a framework for obtaining high-quality PLs, resulting in improved adaptation performance.",
+      "published": "2023-10-27T12:12:06Z",
+      "updated": "2023-10-27T12:12:06Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2310.18087"
+        ],
+        "doi": [
+          "10.1109/JBHI.2024.3406906"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2310.18087",
+      "pdf": "https://arxiv.org/pdf/2310.18087",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:00:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "A Chebyshev Confidence Guided Source-Free Domain Adaptation Framework for Medical Image Segmentation\nSource-free domain adaptation (SFDA) aims to adapt models"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0072": {
+      "id": "W0072",
+      "title": "Multi-Granularity Class Prototype Topology Distillation for Class-Incremental Source-Free Unsupervised Domain Adaptation",
+      "authors": [
+        "Peihua Deng",
+        "Jiehua Zhang",
+        "Xichun Sheng",
+        "Chenggang Yan",
+        "Yaoqi Sun",
+        "Ying Fu",
+        "Liang Li"
+      ],
+      "abstract": "This paper explores the Class-Incremental Source-Free Unsupervised Domain Adaptation (CI-SFUDA) problem, where the unlabeled target data come incrementally without access to labeled source instances. This problem poses two challenges, the interference of similar source-class knowledge in target-class representation learning and the shocks of new target knowledge to old ones. To address them, we propose the Multi-Granularity Class Prototype Topology Distillation (GROTO) algorithm, which effectively transfers the source knowledge to the class-incremental target domain. Concretely, we design the multi-granularity class prototype self-organization module and the prototype topology distillation module. First, we mine the positive classes by modeling accumulation distributions. Next, we introduce multi-granularity class prototypes to generate reliable pseudo-labels, and exploit them to promote the positive-class target feature self-organization. Second, the positive-class prototypes are leveraged to construct the topological structures of source and target feature spaces. Then, we perform the topology distillation to continually mitigate the shocks of new target knowledge to old ones. Extensive experiments demonstrate that our proposed method achieves state-of-the-art performance on three public datasets. Code is available at https://github.com/dengpeihua/GROTO.",
+      "published": "2024-11-25T03:28:09Z",
+      "updated": "2025-05-27T12:46:03Z",
+      "version": 4,
+      "identifiers": {
+        "arxiv": [
+          "2411.16064"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2411.16064",
+      "pdf": "https://arxiv.org/pdf/2411.16064",
+      "venue": "arXiv",
+      "comment": "Accepted by CVPR 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:00:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "distillation",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "logy Distillation for Class-Incremental Source-Free Unsupervised Domain Adaptation\nThis paper explores the Class-Incremental Source-Free Unsupervised Domain Adaptation (CI-SFUDA) pro"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文研究类增量源自由无监督域适应：目标数据以连续会话、无标注方式到达，适应过程中无法访问源实例或早期目标数据。作者提出GROTO，通过多粒度类别原型自组织与拓扑蒸馏缓解相似源类干扰和旧知识遗忘，并报告其在公开基准上优于现有方法。",
+        "problem": {
+          "text": "研究类增量源自由无监督域适应问题：源域有标签数据用于训练源模型，但适应阶段只能使用无标注目标数据，且目标类别按会话递增、早期目标数据不可用。该问题的主要挑战是相似源类知识干扰目标类表征，以及新目标知识对旧知识造成冲击和遗忘。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Concretely, we design the multi-granularity class supervised Domain Adaptation (CI-SFUDA) problem, where the prototype self-organization module and the prototype topol- labeled source data contain all classes while unlabeled target data ogy distillation module."
+            },
+            {
+              "page": 1,
+              "quote": "Next, we intro- previously learned target data are unavailable for later adaptations."
+            }
+          ]
+        },
+        "method": {
+          "text": "作者提出多粒度类别原型拓扑蒸馏算法GROTO，包含多粒度类别原型自组织模块和原型拓扑蒸馏模块。方法利用原型生成可靠伪标签并促进目标特征自组织，同时构建源、目标特征空间的拓扑结构，通过拓扑蒸馏持续减轻新目标知识对旧知识的冲击。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Concretely, we design the multi-granularity class supervised Domain Adaptation (CI-SFUDA) problem, where the prototype self-organization module and the prototype topol- labeled source data contain all classes while unlabeled target data ogy distillation module."
+            },
+            {
+              "page": 1,
+              "quote": "Then, we adapt target distributions with self-training methods, where perform the topology distillation to continually mitigate the pseudo-labels are generated by a non-parameter classifier shocks of new target knowledge to old ones."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在三个基准数据集的实验中，作者报告GROTO优于现有最先进方法。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "When new class data arrive, they re- Experiments on three benchmark datasets show that our quire training from scratch, consuming substantial time and algorithm outperforms state-of-the-art methods."
+              }
+            ]
+          },
+          {
+            "text": "GROTO在每个会话均取得最佳表现，并且在连续适应过程中对旧类和新类都表现良好。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "2) best performance compared to the other methods at each Session Accuracy: the classification accuracy at each ses- session in Table 3, which also demonstrates that it per- sion to evaluate the ability of sequential adaptation."
+              },
+              {
+                "page": 6,
+                "quote": "forms well on both old and new classes during the contin- ual adaptation of sequential sessions."
+              }
+            ]
+          },
+          {
+            "text": "在后续会话缺少旧类实例的情况下，GROTO的旧类性能相对稳定，作者据此认为其能够缓解灾难性遗忘。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "We compare our GROTO algorithm with five types of meth- Since the absence of old-class instances at later sessions, the ods: (1) source-only: ViT-B [4]; (2) class-incremental do- models of all the methods forget the old knowledge when main adaptation: CIDA [13]; (3) class-incremental unsuper- adapting to new classes, r"
+              },
+              {
+                "page": 6,
+                "quote": "pared to them, indicating that it is effective in mitigating the The final accuracy results of GROTO and the compared catastrophic forgetting problem."
+              }
+            ]
+          },
+          {
+            "text": "与所比较的SFUDA方法相比，作者报告GROTO表现更好。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "2) Compared to SFUDA methods [18, 33], Loss and Module Ablations."
+              },
+              {
+                "page": 6,
+                "quote": "To examine the effectiveness GROTO performs better."
+              }
+            ]
+          }
+        ],
+        "limitations": [],
+        "role": {
+          "setting": "CI-SFUDA；目标数据按不同类别以连续会话到达，目标类别是源标签空间的子集，适应时无法访问源实例和早期目标数据。",
+          "supervision": "源域为有标签数据；适应阶段使用预训练源模型和无标注目标数据，未说明使用目标真实标签进行训练。",
+          "modalities": "以图像数据、图像特征和类别原型为主要数据形态，使用原型相似度生成伪标签。",
+          "datasets": "Office-31-CI、Office-Home-CI和ImageNet-Caltech-CI。",
+          "evaluation": "采用最终准确率和会话准确率，分别评估最终会话所有类别及各会话的分类准确率。"
+        },
+        "evidence": [
+          {
+            "claim": "研究类增量源自由无监督域适应问题：源域有标签数据用于训练源模型，但适应阶段只能使用无标注目标数据，且目标类别按会话递增、早期目标数据不可用。该问题的主要挑战是相似源类知识干扰目标类表征，以及新目标知识对旧知识造成冲击和遗忘。",
+            "page": 1,
+            "quote": "Concretely, we design the multi-granularity class supervised Domain Adaptation (CI-SFUDA) problem, where the prototype self-organization module and the prototype topol- labeled source data contain all classes while unlabeled target data ogy distillation module.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=1"
+          },
+          {
+            "claim": "研究类增量源自由无监督域适应问题：源域有标签数据用于训练源模型，但适应阶段只能使用无标注目标数据，且目标类别按会话递增、早期目标数据不可用。该问题的主要挑战是相似源类知识干扰目标类表征，以及新目标知识对旧知识造成冲击和遗忘。",
+            "page": 1,
+            "quote": "Next, we intro- previously learned target data are unavailable for later adaptations.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=1"
+          },
+          {
+            "claim": "作者提出多粒度类别原型拓扑蒸馏算法GROTO，包含多粒度类别原型自组织模块和原型拓扑蒸馏模块。方法利用原型生成可靠伪标签并促进目标特征自组织，同时构建源、目标特征空间的拓扑结构，通过拓扑蒸馏持续减轻新目标知识对旧知识的冲击。",
+            "page": 1,
+            "quote": "Concretely, we design the multi-granularity class supervised Domain Adaptation (CI-SFUDA) problem, where the prototype self-organization module and the prototype topol- labeled source data contain all classes while unlabeled target data ogy distillation module.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=1"
+          },
+          {
+            "claim": "作者提出多粒度类别原型拓扑蒸馏算法GROTO，包含多粒度类别原型自组织模块和原型拓扑蒸馏模块。方法利用原型生成可靠伪标签并促进目标特征自组织，同时构建源、目标特征空间的拓扑结构，通过拓扑蒸馏持续减轻新目标知识对旧知识的冲击。",
+            "page": 1,
+            "quote": "Then, we adapt target distributions with self-training methods, where perform the topology distillation to continually mitigate the pseudo-labels are generated by a non-parameter classifier shocks of new target knowledge to old ones.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=1"
+          },
+          {
+            "claim": "在三个基准数据集的实验中，作者报告GROTO优于现有最先进方法。",
+            "page": 2,
+            "quote": "When new class data arrive, they re- Experiments on three benchmark datasets show that our quire training from scratch, consuming substantial time and algorithm outperforms state-of-the-art methods.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=2"
+          },
+          {
+            "claim": "GROTO在每个会话均取得最佳表现，并且在连续适应过程中对旧类和新类都表现良好。",
+            "page": 6,
+            "quote": "2) best performance compared to the other methods at each Session Accuracy: the classification accuracy at each ses- session in Table 3, which also demonstrates that it per- sion to evaluate the ability of sequential adaptation.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          },
+          {
+            "claim": "GROTO在每个会话均取得最佳表现，并且在连续适应过程中对旧类和新类都表现良好。",
+            "page": 6,
+            "quote": "forms well on both old and new classes during the contin- ual adaptation of sequential sessions.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          },
+          {
+            "claim": "在后续会话缺少旧类实例的情况下，GROTO的旧类性能相对稳定，作者据此认为其能够缓解灾难性遗忘。",
+            "page": 6,
+            "quote": "We compare our GROTO algorithm with five types of meth- Since the absence of old-class instances at later sessions, the ods: (1) source-only: ViT-B [4]; (2) class-incremental do- models of all the methods forget the old knowledge when main adaptation: CIDA [13]; (3) class-incremental unsuper- adapting to new classes, r",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          },
+          {
+            "claim": "在后续会话缺少旧类实例的情况下，GROTO的旧类性能相对稳定，作者据此认为其能够缓解灾难性遗忘。",
+            "page": 6,
+            "quote": "pared to them, indicating that it is effective in mitigating the The final accuracy results of GROTO and the compared catastrophic forgetting problem.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          },
+          {
+            "claim": "与所比较的SFUDA方法相比，作者报告GROTO表现更好。",
+            "page": 6,
+            "quote": "2) Compared to SFUDA methods [18, 33], Loss and Module Ablations.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          },
+          {
+            "claim": "与所比较的SFUDA方法相比，作者报告GROTO表现更好。",
+            "page": 6,
+            "quote": "To examine the effectiveness GROTO performs better.",
+            "source": "https://arxiv.org/pdf/2411.16064v4#page=6"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:02:50Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "b8b21acf781aebe76b8dc0c86b51a026c1fa7a3a07adbc177788bbaea98e2549",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          10,
+          12,
+          13
+        ]
+      }
+    },
+    "W0062": {
+      "id": "W0062",
+      "title": "DPA: Dual Prototypes Alignment for Unsupervised Adaptation of Vision-Language Models",
+      "authors": [
+        "Eman Ali",
+        "Sathira Silva",
+        "Muhammad Haris Khan"
+      ],
+      "abstract": "Vision-language models (VLMs), e.g., CLIP, have shown remarkable potential in zero-shot image classification. However, adapting these models to new domains remains challenging, especially in unsupervised settings where labeled data is unavailable. Recent research has proposed pseudo-labeling approaches to adapt CLIP in an unsupervised manner using unlabeled target data. Nonetheless, these methods struggle due to noisy pseudo-labels resulting from the misalignment between CLIP's visual and textual representations. This study introduces DPA, an unsupervised domain adaptation method for VLMs. DPA introduces the concept of dual prototypes, acting as distinct classifiers, along with the convex combination of their outputs, thereby leading to accurate pseudo-label construction. Next, it ranks pseudo-labels to facilitate robust self-training, particularly during early training. Finally, it addresses visual-textual misalignment by aligning textual prototypes with image prototypes to further improve the adaptation performance. Experiments on 13 downstream vision tasks demonstrate that DPA significantly outperforms zero-shot CLIP and the state-of-the-art unsupervised adaptation baselines.",
+      "published": "2024-08-16T17:30:27Z",
+      "updated": "2024-12-01T14:53:07Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2408.08855"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2408.08855",
+      "pdf": "https://arxiv.org/pdf/2408.08855",
+      "venue": "arXiv",
+      "comment": "Accepted at WACV 2025",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:00:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "vision-language",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "tual representations. This study introduces DPA, an unsupervised domain adaptation method for VLMs. DPA introduces the concept of dual prototypes, acting as distinct classifiers, alo"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究在目标域无标注条件下适应视觉语言模型的问题。DPA通过图像与文本双原型生成和筛选伪标签，并对齐两类原型，以缓解视觉—文本错位和伪标签噪声。作者报告其在多个下游视觉任务上优于零样本CLIP及无监督适应基线。",
+        "problem": {
+          "text": "研究无监督目标域适应中的视觉语言模型，重点解决CLIP视觉表示与文本表示的域偏移和模态错位。该问题会产生不准确的伪标签，并在适应过程中引发确认偏差。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Nonetheless, ever, this method encounters significant challenges due to these methods struggle due to noisy pseudo-labels result- the noisy pseudo-labels generated by CLIP."
+            },
+            {
+              "page": 1,
+              "quote": "DPA in- sion representations [17,29], leading to inaccurate pseudo- troduces the concept of dual prototypes, acting as distinct labels causing confirmation bias during adaptation."
+            }
+          ]
+        },
+        "method": {
+          "text": "DPA引入图像原型和文本原型作为不同的类别判别器，将两者输出进行凸组合以构造更准确的伪标签；随后通过对齐文本原型与图像原型，改善视觉—文本表示的一致性和目标域适应效果。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "DPA in- sion representations [17,29], leading to inaccurate pseudo- troduces the concept of dual prototypes, acting as distinct labels causing confirmation bias during adaptation."
+            },
+            {
+              "page": 1,
+              "quote": "Finally, it ad- the source images used to train CLIP and the target im- dresses visual-textual misalignment by aligning textual pro- ages typically occurs when the target samples originate totypes with image prototypes to further improve the adap- from an uncommon domain [17]."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在下游视觉任务上，DPA相较零样本CLIP持续取得更好结果，作者报告平均top-1准确率提升+7.83%。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "These image prototypes, outperforms zero-shot CLIP, improving top-1 accuracy byless influenced by erroneous pseudo-labels and closer to im- +7.83% on average."
+              }
+            ]
+          },
+          {
+            "text": "相较于UPL，DPA仍取得一致改进，平均增益为+8.24%；作者同时称其额外计算开销很小。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Our primary objective is to an average gain of +8.24% with minimal additional compu-optimize the relationship between image prototypes \\protectand tational overhead despite slightly larger parameters."
+              }
+            ]
+          },
+          {
+            "text": "DPA还优于POUF和LaFTer，在13个数据集上的平均提升分别为+7.47%和+3.93%，且不需要额外文本语料或进一步预训练。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "DPA also surpasses POUF \\lab e ali a (11) and LaFTer, achieving average increases of +7.47% and l eq: }_{\\te t{ align}} x +3.93%, respectively, across the 13 datasets without requir- { L { ing additional text corpora or further pre-training."
+              }
+            ]
+          },
+          {
+            "text": "作者报告DPA在ESAT数据集上的性能提升相较其他数据集更为显著。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "We note With this alignment, we maximize the (cosine) similarity significantly larger performance improvement on the ESAT between the image prototypes \\protectand the textual prototypes dataset compared to other datasets."
+              }
+            ]
+          },
+          {
+            "text": "根据可视化分析，DPA在捕获跨模态和模态内对齐方面优于所比较的方法。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "The of labeled samples, which poses challenges due to data cosine similarities between visual and textual prototypes and the scarcity, annotation expenses, privacy issues, and practical well-separated visual clusters, as illustrated in (c), demonstrate the limitations."
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          {
+            "text": "作者指出，DPA的参数量略大于比较方法，尽管额外计算开销很小。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Our primary objective is to an average gain of +8.24% with minimal additional compu-optimize the relationship between image prototypes \\protectand tational overhead despite slightly larger parameters."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "无监督域适应：使用无标注目标域数据，将预训练视觉语言模型适应到下游目标任务。",
+          "supervision": "目标域无人工标签，方法通过伪标签和自监督进行适应；作者将其描述为完全无标签的方法。",
+          "modalities": "图像与文本两种模态；使用CLIP的图像表示和文本表示，并构造图像原型与可学习文本原型。",
+          "datasets": "作者报告在13个下游视觉数据集上评测，包括ImageNet、Caltech101、DTD、EuroSAT、FGVCAircraft、Food101、CIFAR10和CIFAR100等。",
+          "evaluation": "以分类准确率为主要评测口径，报告top-1准确率及跨数据集平均增益，并与零样本CLIP、UPL、POUF和LaFTer比较。"
+        },
+        "evidence": [
+          {
+            "claim": "研究无监督目标域适应中的视觉语言模型，重点解决CLIP视觉表示与文本表示的域偏移和模态错位。该问题会产生不准确的伪标签，并在适应过程中引发确认偏差。",
+            "page": 1,
+            "quote": "Nonetheless, ever, this method encounters significant challenges due to these methods struggle due to noisy pseudo-labels result- the noisy pseudo-labels generated by CLIP.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=1"
+          },
+          {
+            "claim": "研究无监督目标域适应中的视觉语言模型，重点解决CLIP视觉表示与文本表示的域偏移和模态错位。该问题会产生不准确的伪标签，并在适应过程中引发确认偏差。",
+            "page": 1,
+            "quote": "DPA in- sion representations [17,29], leading to inaccurate pseudo- troduces the concept of dual prototypes, acting as distinct labels causing confirmation bias during adaptation.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=1"
+          },
+          {
+            "claim": "DPA引入图像原型和文本原型作为不同的类别判别器，将两者输出进行凸组合以构造更准确的伪标签；随后通过对齐文本原型与图像原型，改善视觉—文本表示的一致性和目标域适应效果。",
+            "page": 1,
+            "quote": "DPA in- sion representations [17,29], leading to inaccurate pseudo- troduces the concept of dual prototypes, acting as distinct labels causing confirmation bias during adaptation.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=1"
+          },
+          {
+            "claim": "DPA引入图像原型和文本原型作为不同的类别判别器，将两者输出进行凸组合以构造更准确的伪标签；随后通过对齐文本原型与图像原型，改善视觉—文本表示的一致性和目标域适应效果。",
+            "page": 1,
+            "quote": "Finally, it ad- the source images used to train CLIP and the target im- dresses visual-textual misalignment by aligning textual pro- ages typically occurs when the target samples originate totypes with image prototypes to further improve the adap- from an uncommon domain [17].",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=1"
+          },
+          {
+            "claim": "在下游视觉任务上，DPA相较零样本CLIP持续取得更好结果，作者报告平均top-1准确率提升+7.83%。",
+            "page": 5,
+            "quote": "These image prototypes, outperforms zero-shot CLIP, improving top-1 accuracy byless influenced by erroneous pseudo-labels and closer to im- +7.83% on average.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=5"
+          },
+          {
+            "claim": "相较于UPL，DPA仍取得一致改进，平均增益为+8.24%；作者同时称其额外计算开销很小。",
+            "page": 5,
+            "quote": "Our primary objective is to an average gain of +8.24% with minimal additional compu-optimize the relationship between image prototypes \\protectand tational overhead despite slightly larger parameters.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=5"
+          },
+          {
+            "claim": "DPA还优于POUF和LaFTer，在13个数据集上的平均提升分别为+7.47%和+3.93%，且不需要额外文本语料或进一步预训练。",
+            "page": 5,
+            "quote": "DPA also surpasses POUF \\lab e ali a (11) and LaFTer, achieving average increases of +7.47% and l eq: }_{\\te t{ align}} x +3.93%, respectively, across the 13 datasets without requir- { L { ing additional text corpora or further pre-training.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=5"
+          },
+          {
+            "claim": "作者报告DPA在ESAT数据集上的性能提升相较其他数据集更为显著。",
+            "page": 5,
+            "quote": "We note With this alignment, we maximize the (cosine) similarity significantly larger performance improvement on the ESAT between the image prototypes \\protectand the textual prototypes dataset compared to other datasets.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=5"
+          },
+          {
+            "claim": "根据可视化分析，DPA在捕获跨模态和模态内对齐方面优于所比较的方法。",
+            "page": 2,
+            "quote": "The of labeled samples, which poses challenges due to data cosine similarities between visual and textual prototypes and the scarcity, annotation expenses, privacy issues, and practical well-separated visual clusters, as illustrated in (c), demonstrate the limitations.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=2"
+          },
+          {
+            "claim": "作者指出，DPA的参数量略大于比较方法，尽管额外计算开销很小。",
+            "page": 5,
+            "quote": "Our primary objective is to an average gain of +8.24% with minimal additional compu-optimize the relationship between image prototypes \\protectand tational overhead despite slightly larger parameters.",
+            "source": "https://arxiv.org/pdf/2408.08855v2#page=5"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:03:14Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "bfad54ab69b8a6264d80acad05f9acbc78ea30e328aead3549c050d68accb742",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          12
+        ]
+      }
+    },
+    "W0071": {
+      "id": "W0071",
+      "title": "Decoupled Prototype Learning for Reliable Test-Time Adaptation",
+      "authors": [
+        "Guowei Wang",
+        "Changxing Ding",
+        "Wentao Tan",
+        "Mingkui Tan"
+      ],
+      "abstract": "Test-time adaptation (TTA) is a task that continually adapts a pre-trained source model to the target domain during inference. One popular approach involves fine-tuning model with cross-entropy loss according to estimated pseudo-labels. However, its performance is significantly affected by noisy pseudo-labels. This study reveals that minimizing the classification error of each sample causes the cross-entropy loss's vulnerability to label noise. To address this issue, we propose a novel Decoupled Prototype Learning (DPL) method that features prototype-centric loss computation. First, we decouple the optimization of class prototypes. For each class prototype, we reduce its distance with positive samples and enlarge its distance with negative samples in a contrastive manner. This strategy prevents the model from overfitting to noisy pseudo-labels. Second, we propose a memory-based strategy to enhance DPL's robustness for the small batch sizes often encountered in TTA. We update each class's pseudo-feature from a memory in a momentum manner and insert an additional DPL loss. Finally, we introduce a consistency regularization-based approach to leverage samples with unconfident pseudo-labels. This approach transfers feature styles of samples with unconfident pseudo-labels to those with confident pseudo-labels. Thus, more reliable samples for TTA are created. The experimental results demonstrate that our methods achieve state-of-the-art performance on domain generalization benchmarks, and reliably improve the performance of self-training-based methods on image corruption benchmarks. The code will be released.",
+      "published": "2024-01-15T03:33:39Z",
+      "updated": "2024-01-25T11:09:38Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2401.08703"
+        ],
+        "doi": [
+          "10.1109/TMM.2025.3535400"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2401.08703",
+      "pdf": "https://arxiv.org/pdf/2401.08703",
+      "venue": "arXiv",
+      "comment": "12 pages, 5 figures",
+      "categories": [
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-16T21:00:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DG",
+          "TTA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DG",
+            "quote": "nstrate that our methods achieve state-of-the-art performance on domain generalization benchmarks, and reliably improve the performance of self-training-based methods on image corruption"
+          },
+          {
+            "label": "TTA",
+            "quote": "Decoupled Prototype Learning for Reliable Test-Time Adaptation\nTest-time adaptation (TTA) is a task that continually adapts a pre-trained source model to the"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究无监督测试时适应：利用目标域在线无标签数据持续更新预训练源模型。作者指出伪标签噪声会导致交叉熵适应失稳，并提出解耦原型学习，通过原型中心损失、记忆机制和一致性正则化提升适应可靠性；实验报告其在多类域泛化与图像腐蚀基准上取得较优表现。",
+        "problem": {
+          "text": "研究无真实标签条件下的测试时适应问题：模型在推理阶段利用目标域在线无标签数据更新预训练源模型，但伪标签噪声会使交叉熵损失过拟合噪声，导致适应性能持续下降。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "1 Decoupled Prototype Learning for Reliable Test-Time Adaptation Guowei Wang, Changxing Ding*, Wentao Tan, Mingkui Tan Abstract—Test-time adaptation (TTA) is a task that continually adapts a pre-trained source model to the target domain during inference."
+            },
+            {
+              "page": 1,
+              "quote": "accuracy to continually decrease during adaptation."
+            }
+          ]
+        },
+        "method": {
+          "text": "提出解耦原型学习（DPL）。方法以原型为中心计算损失，先解耦各类别原型的优化，再分别拉近原型与正样本、拉远其与负样本的距离；同时使用按类别维护并以动量更新的伪特征记忆，以应对小批量数据，并通过一致性正则化利用低置信度伪标签样本。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "To address this issue, we propose a novel Decoupled Prototype Learning (DPL) method that features prototype-centric loss computation."
+            },
+            {
+              "page": 2,
+              "quote": "To solve this problem, we design a memory that and meta-test sets."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，原型中心的损失计算能够减弱噪声伪标签对模型参数更新的影响，并使模型持续产生更高质量的伪标签，从而形成更可靠的测试时适应过程。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Finally, we directly use these prototypes as classifier weights to generate pseudo-labels for A. Domain Generalization the incoming data."
+              },
+              {
+                "page": 2,
+                "quote": "This forms a virtuous from various perspectives, including the learning strategy, data circle and ultimately enables reliable TTA."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，基础版DPL已经取得较好的测试时适应性能；加入记忆机制旨在增强其在测试时适应小批量场景下的稳健性。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Notably, the above basic DPL form already achieves excel- Popular DG learning strategies include meta-learning [21], lent TTA performance."
+              },
+              {
+                "page": 2,
+                "quote": "two aspects: first, the batch size during TTA is usually small; Meta-learning approaches [24], [25] expose a model to domain thus some classes may lack data based on the pseudo-labels."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，一致性正则化通过将低置信度样本的特征风格转移到高置信度样本，同时保持语义内容不变，以提升模型对较大域偏移的适应能力。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "De- DPL’s adaptation to large domain shifts."
+              },
+              {
+                "page": 2,
+                "quote": "To remain identical to those of the confident samples."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，该方法在四个域泛化基准PAC​​S、VLCS、OfficeHome和TerraIncognita上取得了最先进性能。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "We demonstrate that our method source domains, including moment-alignment [36]–[39] and achieves state-of-the-art performance through extensive exper- maximum mean discrepancy (MMD)-based alignment [40]."
+              },
+              {
+                "page": 2,
+                "quote": "iments on four domain generalization (DG) benchmarks, (i.e., Additionally, certain studies [41]–[44] assert that domain- PACS [11], VLCS [16], OfficeHome [17], and TerraIncog- specific information may also be helpful."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，该方法在单域泛化基准DomainNet-126以及CIFAR-10-C、CIFAR-100-C和ImageNet-C等图像腐蚀基准上也取得了较优性能。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "This approach also achieves superior performance both domain-specific and domain-invariant features from a on single domain generalization (SDG) benchmarks, such as disentanglement perspective."
+              },
+              {
+                "page": 2,
+                "quote": "DomainNet-126 [19], and popular image corruption bench- Existing DG methods focus on improving performance marks, including CIFAR-10-C [20], CIFAR-100-C [20], and during training."
+              }
+            ]
+          }
+        ],
+        "limitations": [],
+        "role": {
+          "setting": "任务是测试时适应；源模型在源域训练，推理阶段使用目标域在线数据更新。文中也报告域泛化评测。",
+          "supervision": "测试时适应阶段没有真实标签，主要依赖模型预测得到的伪标签；方法选择高置信度伪标签并利用低置信度样本。",
+          "modalities": "输入为图像数据；方法使用图像样本、特征、类别原型和伪特征记忆。",
+          "datasets": "PACS、VLCS、OfficeHome、TerraIncognita、DomainNet-126、CIFAR-10-C、CIFAR-100-C和ImageNet-C。",
+          "evaluation": "作者报告域泛化、单域泛化和图像腐蚀基准上的性能，并与相关方法比较；具体指标和协议未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "研究无真实标签条件下的测试时适应问题：模型在推理阶段利用目标域在线无标签数据更新预训练源模型，但伪标签噪声会使交叉熵损失过拟合噪声，导致适应性能持续下降。",
+            "page": 1,
+            "quote": "1 Decoupled Prototype Learning for Reliable Test-Time Adaptation Guowei Wang, Changxing Ding*, Wentao Tan, Mingkui Tan Abstract—Test-time adaptation (TTA) is a task that continually adapts a pre-trained source model to the target domain during inference.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=1"
+          },
+          {
+            "claim": "研究无真实标签条件下的测试时适应问题：模型在推理阶段利用目标域在线无标签数据更新预训练源模型，但伪标签噪声会使交叉熵损失过拟合噪声，导致适应性能持续下降。",
+            "page": 1,
+            "quote": "accuracy to continually decrease during adaptation.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=1"
+          },
+          {
+            "claim": "提出解耦原型学习（DPL）。方法以原型为中心计算损失，先解耦各类别原型的优化，再分别拉近原型与正样本、拉远其与负样本的距离；同时使用按类别维护并以动量更新的伪特征记忆，以应对小批量数据，并通过一致性正则化利用低置信度伪标签样本。",
+            "page": 1,
+            "quote": "To address this issue, we propose a novel Decoupled Prototype Learning (DPL) method that features prototype-centric loss computation.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=1"
+          },
+          {
+            "claim": "提出解耦原型学习（DPL）。方法以原型为中心计算损失，先解耦各类别原型的优化，再分别拉近原型与正样本、拉远其与负样本的距离；同时使用按类别维护并以动量更新的伪特征记忆，以应对小批量数据，并通过一致性正则化利用低置信度伪标签样本。",
+            "page": 2,
+            "quote": "To solve this problem, we design a memory that and meta-test sets.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，原型中心的损失计算能够减弱噪声伪标签对模型参数更新的影响，并使模型持续产生更高质量的伪标签，从而形成更可靠的测试时适应过程。",
+            "page": 2,
+            "quote": "Finally, we directly use these prototypes as classifier weights to generate pseudo-labels for A. Domain Generalization the incoming data.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，原型中心的损失计算能够减弱噪声伪标签对模型参数更新的影响，并使模型持续产生更高质量的伪标签，从而形成更可靠的测试时适应过程。",
+            "page": 2,
+            "quote": "This forms a virtuous from various perspectives, including the learning strategy, data circle and ultimately enables reliable TTA.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，基础版DPL已经取得较好的测试时适应性能；加入记忆机制旨在增强其在测试时适应小批量场景下的稳健性。",
+            "page": 2,
+            "quote": "Notably, the above basic DPL form already achieves excel- Popular DG learning strategies include meta-learning [21], lent TTA performance.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，基础版DPL已经取得较好的测试时适应性能；加入记忆机制旨在增强其在测试时适应小批量场景下的稳健性。",
+            "page": 2,
+            "quote": "two aspects: first, the batch size during TTA is usually small; Meta-learning approaches [24], [25] expose a model to domain thus some classes may lack data based on the pseudo-labels.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，一致性正则化通过将低置信度样本的特征风格转移到高置信度样本，同时保持语义内容不变，以提升模型对较大域偏移的适应能力。",
+            "page": 2,
+            "quote": "De- DPL’s adaptation to large domain shifts.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，一致性正则化通过将低置信度样本的特征风格转移到高置信度样本，同时保持语义内容不变，以提升模型对较大域偏移的适应能力。",
+            "page": 2,
+            "quote": "To remain identical to those of the confident samples.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，该方法在四个域泛化基准PAC​​S、VLCS、OfficeHome和TerraIncognita上取得了最先进性能。",
+            "page": 2,
+            "quote": "We demonstrate that our method source domains, including moment-alignment [36]–[39] and achieves state-of-the-art performance through extensive exper- maximum mean discrepancy (MMD)-based alignment [40].",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，该方法在四个域泛化基准PAC​​S、VLCS、OfficeHome和TerraIncognita上取得了最先进性能。",
+            "page": 2,
+            "quote": "iments on four domain generalization (DG) benchmarks, (i.e., Additionally, certain studies [41]–[44] assert that domain- PACS [11], VLCS [16], OfficeHome [17], and TerraIncog- specific information may also be helpful.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，该方法在单域泛化基准DomainNet-126以及CIFAR-10-C、CIFAR-100-C和ImageNet-C等图像腐蚀基准上也取得了较优性能。",
+            "page": 2,
+            "quote": "This approach also achieves superior performance both domain-specific and domain-invariant features from a on single domain generalization (SDG) benchmarks, such as disentanglement perspective.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          },
+          {
+            "claim": "作者报告，该方法在单域泛化基准DomainNet-126以及CIFAR-10-C、CIFAR-100-C和ImageNet-C等图像腐蚀基准上也取得了较优性能。",
+            "page": 2,
+            "quote": "DomainNet-126 [19], and popular image corruption bench- Existing DG methods focus on improving performance marks, including CIFAR-10-C [20], CIFAR-100-C [20], and during training.",
+            "source": "https://arxiv.org/pdf/2401.08703v2#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-evidence-v3",
+        "generated_at": "2026-10-16T21:03:30Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "6209741a5cc208404887ea8e119fc8ffefb106f5c4540b3eb6ec33b8bba5d709",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ]
+      }
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-16T20:31:48Z",
-      "last_success": "2026-10-16T20:31:48Z"
+      "completed_until": "2026-10-16T21:00:28Z",
+      "last_success": "2026-10-16T21:00:28Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-16T20:31:48Z",
-      "last_success": "2026-10-16T20:31:48Z"
+      "completed_until": "2026-10-16T21:00:28Z",
+      "last_success": "2026-10-16T21:00:28Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-16T20:31:48Z",
-      "last_success": "2026-10-16T20:31:48Z"
+      "completed_until": "2026-10-16T21:00:28Z",
+      "last_success": "2026-10-16T21:00:28Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-16T20:31:48Z",
-      "last_success": "2026-10-16T20:31:48Z"
+      "completed_until": "2026-10-16T21:00:28Z",
+      "last_success": "2026-10-16T21:00:28Z"
     }
   },
   "events": [
@@ -39951,9 +40735,37 @@
       "paper_id": "W0045",
       "title": "Make It Up: Fake Images, Real Gains in Generalized Few-shot Semantic Segmentation",
       "at": "2026-10-16T13:56:19Z"
+    },
+    {
+      "key": "53d7bfe4deb3dc74b297fecf",
+      "kind": "indexed-existing",
+      "paper_id": "W0059",
+      "title": "A Chebyshev Confidence Guided Source-Free Domain Adaptation Framework for Medical Image Segmentation",
+      "at": "2026-10-16T21:00:28Z"
+    },
+    {
+      "key": "4001dd9d798b4880d3163648",
+      "kind": "indexed-existing",
+      "paper_id": "W0072",
+      "title": "Multi-Granularity Class Prototype Topology Distillation for Class-Incremental Source-Free Unsupervised Domain Adaptation",
+      "at": "2026-10-16T21:00:28Z"
+    },
+    {
+      "key": "019d9e494e78973cfb9ef7d1",
+      "kind": "indexed-existing",
+      "paper_id": "W0062",
+      "title": "DPA: Dual Prototypes Alignment for Unsupervised Adaptation of Vision-Language Models",
+      "at": "2026-10-16T21:00:28Z"
+    },
+    {
+      "key": "374d7b193a29502395995c17",
+      "kind": "indexed-existing",
+      "paper_id": "W0071",
+      "title": "Decoupled Prototype Learning for Reliable Test-Time Adaptation",
+      "at": "2026-10-16T21:00:28Z"
     }
   ],
-  "revision_cursor": 28,
+  "revision_cursor": 68,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -40639,55 +41451,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-16T21:00:28Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 4,
+        "metadata": 0,
+        "unchanged": 38,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T20:31:48Z",
+          "end": "2026-10-16T21:00:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T20:31:48Z",
+          "end": "2026-10-16T21:00:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T20:31:48Z",
+          "end": "2026-10-16T21:00:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T20:31:48Z",
+          "end": "2026-10-16T21:00:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 173
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-16T20:31:48Z",
+    "at": "2026-10-16T21:00:27Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-16T20:31:48Z",
+    "at": "2026-10-16T21:00:28Z",
     "status": "ok",
     "counts": {
       "new": 0,
       "revised": 0,
-      "existing": 0,
+      "existing": 4,
       "metadata": 0,
-      "unchanged": 42,
+      "unchanged": 38,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-09T16:20:00Z",
-        "end": "2026-10-16T20:31:48Z",
+        "start": "2026-10-09T20:31:48Z",
+        "end": "2026-10-16T21:00:28Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-09T19:08:37Z",
-        "end": "2026-10-16T20:31:48Z",
+        "start": "2026-10-09T20:31:48Z",
+        "end": "2026-10-16T21:00:28Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-09T18:10:04Z",
-        "end": "2026-10-16T20:31:48Z",
+        "start": "2026-10-09T20:31:48Z",
+        "end": "2026-10-16T21:00:28Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 2
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-09T18:10:04Z",
-        "end": "2026-10-16T20:31:48Z",
+        "start": "2026-10-09T20:31:48Z",
+        "end": "2026-10-16T21:00:28Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -40696,35 +41561,24 @@
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 164
+        "total_known": 173
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-16T20:31:48Z",
+  "last_full_success": "2026-10-16T21:00:28Z",
   "llm_last_run": {
-    "at": "2026-10-16T20:37:52Z",
-    "status": "failed",
-    "attempted": 1,
-    "succeeded": 0,
-    "skipped": [
-      {
-        "id": "arxiv:2609.16755",
-        "reason": "http-404"
-      }
-    ],
-    "errors": [
-      {
-        "id": "W0095",
-        "type": "ValueError",
-        "detail": "unsupported-summary-number"
-      }
-    ],
+    "at": "2026-10-16T21:02:26Z",
+    "status": "ok",
+    "attempted": 3,
+    "succeeded": 3,
+    "skipped": [],
+    "errors": [],
     "model": "gpt-6.1-sol",
-    "budget": 5,
-    "budget_used_today": 218
+    "budget": 3,
+    "budget_used_today": 219
   },
   "llm_budget": {
-    "2026-10-16": 219
+    "2026-10-16": 222
   }
 }

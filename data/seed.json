@@ -3571,7 +3571,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "crossfield",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0075",
@@ -3664,7 +3669,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0077",
@@ -3712,7 +3722,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0078",
@@ -3728,7 +3743,9 @@
       "doi": [
         "10.1016/j.isprsjprs.2024.12.017"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2406.00891"
+      ]
     },
     "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624004878",
     "venue": "ISPRS Journal of Photogrammetry and Remote Sensing",
@@ -3751,7 +3768,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2406.00891"
+    }
   },
   {
     "id": "W0079",
@@ -3766,7 +3789,9 @@
       "doi": [
         "10.1109/WACV57701.2024.00304"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2111.15656"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10484491/",
     "venue": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
@@ -3793,7 +3818,13 @@
     "legacy_setting_clues": [
       "SFDA",
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2111.15656"
+    }
   },
   {
     "id": "W0080",
@@ -3816,7 +3847,9 @@
       "doi": [
         "10.1109/CVPR52733.2024.02182"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2403.16788"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10657781/",
     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -3840,7 +3873,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2403.16788"
+    }
   },
   {
     "id": "W0081",
@@ -3856,7 +3895,9 @@
       "doi": [
         "10.1109/TIP.2024.3459626"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2310.08071"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10684084/",
     "venue": "IEEE Transactions on Image Processing",
@@ -3884,7 +3925,13 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2310.08071"
+    }
   },
   {
     "id": "W0082",
@@ -3926,7 +3973,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "adjacent3d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0083",
@@ -3972,7 +4024,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0084",
@@ -4020,7 +4077,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0085",
@@ -4065,7 +4127,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0086",
@@ -4111,7 +4178,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "core",
-    "legacy_core": true
+    "legacy_core": true,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0087",
@@ -4161,7 +4233,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "USL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0088",
@@ -4179,7 +4256,9 @@
       "doi": [
         "10.1109/ICMLA61862.2024.00020"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2406.19225"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/abstract/document/10903386",
     "venue": "2024 International Conference on Machine Learning and Applications (ICMLA)",
@@ -4206,7 +4285,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2406.19225"
+    }
   },
   {
     "id": "W0089",
@@ -4253,7 +4338,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0090",
@@ -4296,7 +4386,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0091",
@@ -4340,7 +4435,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "Active-DA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0092",
@@ -4382,7 +4482,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0093",
@@ -4403,7 +4508,9 @@
       "doi": [
         "10.1109/TMI.2024.3404549"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2312.01099"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10538113/",
     "venue": "IEEE Transactions on Medical Imaging",
@@ -4422,7 +4529,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "crossfield",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2312.01099"
+    }
   },
   {
     "id": "W0094",
@@ -4469,7 +4582,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T21:00:49Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0095",
