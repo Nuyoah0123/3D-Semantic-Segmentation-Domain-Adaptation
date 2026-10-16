@@ -12,7 +12,7 @@ from atlas.arxiv_source import parse_feed, query_window, SourceError
 from atlas.pipeline import EMPTY, merge_paper, run_update
 from atlas.triage import classify
 from atlas.site import public_records, build, to_ris
-from atlas.enrich import PROMPT_VERSION, build_snippets, run_enrichment, validate_analysis
+from atlas.enrich import PROMPT_VERSION, build_snippets, generate, run_enrichment, validate_analysis
 from atlas.zotero_sync import sanitize_item, run_sync
 from atlas.seed_lookup import MARKER, run_seed_lookup, title_score
 from atlas.pdf_text import NoPdf, download_pdf
@@ -269,6 +269,23 @@ class AITests(TempProject):
         out["findings"]=[dict(item) for _ in range(6)]
         result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
         self.assertNotIn("extra_field",result);self.assertEqual(len(result["findings"]),5)
+    def test_summary_number_repair_pass(self):
+        bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
+        good=self.analysis();calls=[]
+        def fake(paper,pages,cfg,key,base,model,extra=None):
+            calls.append(extra);return good if extra else bad
+        paper={"title":"t","id":"arxiv:2610.00001","version":1,"identifiers":{"arxiv":["2610.00001"]}}
+        with patch("atlas.enrich.call_model",side_effect=fake):
+            r=generate(paper,self.PAGES,self.cfg["llm"],"k","https://example.org/v1","m")
+        self.assertEqual(len(calls),2);self.assertEqual(r["repaired"],"unsupported-summary-number")
+    def test_structural_error_not_repaired(self):
+        bad=self.analysis();bad["role"].pop("datasets");calls=[]
+        def fake(paper,pages,cfg,key,base,model,extra=None):
+            calls.append(extra);return bad
+        paper={"title":"t","id":"arxiv:2610.00001","version":1,"identifiers":{"arxiv":["2610.00001"]}}
+        with patch("atlas.enrich.call_model",side_effect=fake):
+            with self.assertRaises(ValueError):generate(paper,self.PAGES,self.cfg["llm"],"k","https://example.org/v1","m")
+        self.assertEqual(len(calls),1)
     def test_off_needs_no_key(self):
         self.cfg["llm"]["enabled"]=False
         self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"disabled")

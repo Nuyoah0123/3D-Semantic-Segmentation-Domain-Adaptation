@@ -223,16 +223,18 @@ def pdf_url_for(paper: dict) -> str:
         return ""
     return f"https://arxiv.org/pdf/{ids[0]}v{paper.get('version') or 1}"
 
-def call_model(paper: dict, snippets: list[dict], cfg: dict, key: str, base: str, model: str) -> dict:
+def call_model(paper: dict, snippets: list[dict], cfg: dict, key: str, base: str, model: str, extra=None) -> dict:
     parsed = urlsplit(base)
     if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.query or parsed.fragment:
         raise ValueError("LLM_BASE_URL must be an HTTPS API base without query/userinfo")
     parameter = str(cfg.get("token_parameter", "max_completion_tokens"))
     if parameter not in {"max_completion_tokens", "max_tokens"}:
         raise ValueError("invalid-token-parameter")
+    messages = [{"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": json.dumps({"title": paper["title"], "arxiv_id": paper["id"], "snippets": snippets}, ensure_ascii=False)}]
+    messages.extend(extra or [])
     body = {"model": model,
-            "messages": [{"role": "system", "content": SYSTEM_PROMPT},
-                         {"role": "user", "content": json.dumps({"title": paper["title"], "arxiv_id": paper["id"], "snippets": snippets}, ensure_ascii=False)}],
+            "messages": messages,
             "response_format": {"type": "json_object"},
             parameter: max(500, min(8000, int(cfg.get("max_output_tokens", 3000)))),
             "stream": False}
@@ -262,12 +264,28 @@ def call_model(paper: dict, snippets: list[dict], cfg: dict, key: str, base: str
     except json.JSONDecodeError:
         raise ValueError("invalid-json") from None
 
+REPAIRABLE = {"unsupported-summary-number", "unsupported-number"}
+REPAIR_NOTE = ("上面的 JSON 里有没出处的数字。请只修改有问题的文字字段（summary_zh、problem、method）："
+               "删掉或改写这些数字，只使用引用句子里出现过的数字；其余字段与引用编号保持不变，仍然只输出一个 JSON 对象。")
+
 def generate(paper: dict, pages: list[dict], cfg: dict, key: str, base: str, model: str) -> dict:
     snippets = build_snippets(pages)
     if not snippets:
         raise ValueError("no-snippets")
+    url = pdf_url_for(paper)
     raw = call_model(paper, snippets, cfg, key, base, model)
-    return validate_analysis(raw, pages, pdf_url_for(paper), snippets)
+    try:
+        return validate_analysis(raw, pages, url, snippets)
+    except ValueError as error:
+        if str(error) not in REPAIRABLE:
+            raise
+        # One targeted correction: only the grounding of numbers was wrong.
+        note = [{"role": "assistant", "content": json.dumps(raw, ensure_ascii=False)},
+                {"role": "user", "content": REPAIR_NOTE}]
+        fixed = call_model(paper, snippets, cfg, key, base, model, extra=note)
+        draft = validate_analysis(fixed, pages, url, snippets)
+        draft["repaired"] = str(error)
+        return draft
 
 def default_page_loader(paper: dict, cfg: dict, root: Path) -> list[dict]:
     ids = (paper.get("identifiers") or {}).get("arxiv") or []
