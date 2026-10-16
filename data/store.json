@@ -29,7 +29,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -321,7 +321,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -537,7 +537,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T16:20:00Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2193,7 +2193,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T13:56:19Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2372,7 +2372,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T13:56:19Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2618,7 +2618,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T16:20:00Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2872,7 +2872,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T16:20:00Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -3307,7 +3307,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T13:56:19Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3602,7 +3602,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T13:56:19Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3838,7 +3838,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T16:20:00Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7802,7 +7802,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8039,7 +8039,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8287,7 +8287,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8521,7 +8521,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -8773,7 +8773,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -9007,7 +9007,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -9272,7 +9272,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -9544,7 +9544,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -9829,7 +9829,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -10050,7 +10050,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -10321,7 +10321,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -10542,7 +10542,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -10777,7 +10777,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -11048,7 +11048,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -11336,7 +11336,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -11536,7 +11536,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -11781,7 +11781,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -12927,7 +12927,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -13150,7 +13150,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -13994,7 +13994,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -14234,7 +14234,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -14472,7 +14472,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -14733,7 +14733,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -15285,7 +15285,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -15771,7 +15771,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -15978,7 +15978,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -16436,7 +16436,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -16838,7 +16838,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T14:13:09Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17301,7 +17301,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T18:10:04Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -35942,7 +35942,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-16T18:10:04Z",
+      "last_seen": "2026-10-16T20:31:48Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -38784,23 +38784,23 @@
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-16T16:20:00Z",
-      "last_success": "2026-10-16T16:20:00Z"
+      "completed_until": "2026-10-16T20:31:48Z",
+      "last_success": "2026-10-16T20:31:48Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-16T19:08:37Z",
-      "last_success": "2026-10-16T19:08:37Z"
+      "completed_until": "2026-10-16T20:31:48Z",
+      "last_success": "2026-10-16T20:31:48Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-16T18:10:04Z",
-      "last_success": "2026-10-16T18:10:04Z"
+      "completed_until": "2026-10-16T20:31:48Z",
+      "last_success": "2026-10-16T20:31:48Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-16T18:10:04Z",
-      "last_success": "2026-10-16T18:10:04Z"
+      "completed_until": "2026-10-16T20:31:48Z",
+      "last_success": "2026-10-16T20:31:48Z"
     }
   },
   "events": [
@@ -39953,7 +39953,7 @@
       "at": "2026-10-16T13:56:19Z"
     }
   ],
-  "revision_cursor": 152,
+  "revision_cursor": 28,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -40586,73 +40586,127 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-16T20:31:48Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 42,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T16:20:00Z",
+          "end": "2026-10-16T20:31:48Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T19:08:37Z",
+          "end": "2026-10-16T20:31:48Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T18:10:04Z",
+          "end": "2026-10-16T20:31:48Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T18:10:04Z",
+          "end": "2026-10-16T20:31:48Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 164
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-16T19:50:48Z",
+    "at": "2026-10-16T20:31:48Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-16T19:50:48Z",
-    "status": "failed",
+    "at": "2026-10-16T20:31:48Z",
+    "status": "ok",
     "counts": {
       "new": 0,
       "revised": 0,
       "existing": 0,
       "metadata": 0,
-      "unchanged": 0,
+      "unchanged": 42,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
         "start": "2026-10-09T16:20:00Z",
-        "end": "2026-10-16T19:50:48Z",
+        "end": "2026-10-16T20:31:48Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "domain-generalization",
         "start": "2026-10-09T19:08:37Z",
-        "end": "2026-10-16T19:50:48Z",
+        "end": "2026-10-16T20:31:48Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "open-vocabulary",
         "start": "2026-10-09T18:10:04Z",
-        "end": "2026-10-16T19:50:48Z",
+        "end": "2026-10-16T20:31:48Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 2
       },
       {
         "source": "test-time-adaptation",
         "start": "2026-10-09T18:10:04Z",
-        "end": "2026-10-16T19:50:48Z",
+        "end": "2026-10-16T20:31:48Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "known-revisions",
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "checked": 40,
+        "total_known": 164
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-16T16:20:00Z",
+  "last_full_success": "2026-10-16T20:31:48Z",
   "llm_last_run": {
-    "at": "2026-10-16T20:05:41Z",
-    "status": "partial",
-    "attempted": 35,
-    "succeeded": 34,
+    "at": "2026-10-16T20:37:52Z",
+    "status": "failed",
+    "attempted": 1,
+    "succeeded": 0,
     "skipped": [
       {
         "id": "arxiv:2609.16755",
@@ -40667,10 +40721,10 @@
       }
     ],
     "model": "gpt-6.1-sol",
-    "budget": 45,
-    "budget_used_today": 183
+    "budget": 5,
+    "budget_used_today": 218
   },
   "llm_budget": {
-    "2026-10-16": 218
+    "2026-10-16": 219
   }
 }

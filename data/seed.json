@@ -262,7 +262,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0007",
@@ -388,7 +393,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0010",
@@ -404,7 +414,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2507.01884"
+      ]
     },
     "url": null,
     "venue": null,
@@ -428,7 +440,13 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2507.01884"
+    }
   },
   {
     "id": "W0011",
@@ -474,7 +492,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0012",
@@ -679,7 +702,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2603.02286"
+      ]
     },
     "url": null,
     "venue": null,
@@ -702,7 +727,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2603.02286"
+    }
   },
   {
     "id": "W0017",
@@ -743,7 +774,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "FSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0018",
@@ -763,7 +799,9 @@
       "doi": [
         "10.1109/CVPR52734.2025.01584"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2503.16282"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/11093210/",
     "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -790,7 +828,13 @@
     "legacy_setting_clues": [
       "GFS",
       "OV-related"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2503.16282"
+    }
   },
   {
     "id": "W0019",
@@ -2747,7 +2791,9 @@
       "doi": [
         "10.1109/JBHI.2024.3406906"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2310.18087"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10541072/",
     "venue": "IEEE Journal of Biomedical and Health Informatics",
@@ -2773,7 +2819,13 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2310.18087"
+    }
   },
   {
     "id": "W0060",
@@ -2818,7 +2870,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "FSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0061",
@@ -2862,7 +2919,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0062",
@@ -2876,7 +2938,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2408.08855"
+      ]
     },
     "url": null,
     "venue": null,
@@ -2900,7 +2964,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2408.08855"
+    }
   },
   {
     "id": "W0063",
@@ -2947,7 +3017,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "UDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0064",
@@ -2970,7 +3045,9 @@
       "doi": [
         "10.1109/TPAMI.2024.3408642"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2207.11860"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10546335/",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -2992,7 +3069,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2207.11860"
+    }
   },
   {
     "id": "W0065",
@@ -3030,7 +3113,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0066",
@@ -3073,7 +3161,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0067",
@@ -3162,7 +3255,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0069",
@@ -3255,7 +3353,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SSL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0071",
@@ -3272,7 +3375,9 @@
       "doi": [
         "10.1109/TMM.2025.3535400"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2401.08703"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10855473/",
     "venue": "IEEE Transactions on Multimedia",
@@ -3300,7 +3405,13 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "transfer2d",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2401.08703"
+    }
   },
   {
     "id": "W0072",
@@ -3318,7 +3429,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2411.16064"
+      ]
     },
     "url": null,
     "venue": "Computer Vision and Pattern Recognition",
@@ -3349,7 +3462,13 @@
       "SFDA",
       "UDA",
       "CIL"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2411.16064"
+    }
   },
   {
     "id": "W0073",
@@ -3366,7 +3485,9 @@
       "doi": [
         "10.1109/TMI.2024.3355645"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2307.04596"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10403873/",
     "venue": "IEEE Transactions on Medical Imaging",
@@ -3399,7 +3520,13 @@
     "legacy_setting_clues": [
       "SFDA",
       "OSDA"
-    ]
+    ],
+    "arxiv_lookup": {
+      "at": "2026-10-16T20:35:32Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2307.04596"
+    }
   },
   {
     "id": "W0074",
