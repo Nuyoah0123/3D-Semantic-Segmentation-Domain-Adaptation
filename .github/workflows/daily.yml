@@ -13,6 +13,10 @@ on:
         description: 'AI 解读最多生成篇数（0=按配置默认；可用于补跑历史论文）'
         type: number
         default: 0
+      lookup:
+        description: 'Library arXiv title lookups per run (0=default cap)'
+        type: number
+        default: 0
   push:
     branches: [main]
     paths:
@@ -67,6 +71,13 @@ jobs:
           ZOTERO_LIBRARY_ID: ${{ secrets.ZOTERO_LIBRARY_ID }}
           ZOTERO_COLLECTION_KEY: ${{ secrets.ZOTERO_COLLECTION_KEY }}
         run: python scripts/sync_zotero.py
+      - name: Resolve arXiv IDs for library entries (optional)
+        id: lookup
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        env:
+          ATLAS_LOOKUP_LIMIT: ${{ inputs.lookup }}
+        run: python scripts/resolve_seeds.py
       - name: Discover papers and check known revisions
         id: update
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
@@ -97,6 +108,7 @@ jobs:
           git add data/seed.json data/store.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: update 3D paper discovery state'
+            git pull --rebase --autostash origin main
             git push origin HEAD:main
           fi
       - name: Write run summary

@@ -156,3 +156,12 @@ python scripts/review.py 'arxiv:实际编号' --state rejected --public no
 核对日期：2026-10-13。详情及官方资料见 `docs/SOURCES.md`。
 
 本项目不保证每日都能找到相关论文，也不保证覆盖整个领域。每日运行、获取新候选、人工精选、全文精读是四件不同的事。
+
+## 运行维护补充（2026-10-17）
+
+- **AI 解读覆盖面**：`config.json` 的 `llm.include_imported=true` 让既有题录（含 arXiv 编号约 131 篇）也生成 AI 解读，而不只是新抓取的论文；`max_per_run`/`max_per_utc_day` 控制每日额度。
+- **证据校验规则**：模型只看到编号候选句（S1…S90），结论必须引用候选句编号；结论里的数字必须出现在被引用的句子里。数字若出现在另一句候选句，会自动补挂该句作为证据；若候选句里完全没有该数字，则丢弃这条结论（findings/limitations）或拒绝整篇草稿（problem/method）。丢弃记录只写入 `data/store.json` 的 `ai_draft.dropped`，不会发布到网页。
+- **历史补跑**：Actions → Daily papers and deploy → Run workflow，`drafts` 填写本次最多生成多少篇（如 60）；`lookup` 填写本次最多做多少次 arXiv 标题匹配（如 135）。
+- **arXiv 标题匹配**：新增 `atlas/seed_lookup.py` 与 `scripts/resolve_seeds.py`。对没有 arXiv 编号的题录按标题检索 arXiv，要求标题相似度 ≥ 0.97 且作者姓氏一致；命中后写入 `identifiers.arxiv` 和 `arxiv_lookup` 标记（含相似度、命中编号，可人工复核），同一编号不会分配给两篇题录。未命中者 120 天后重试（`seed_lookup.retry_days`）。匹配成功后，编号巡检会把该题录导入 `data/store.json`，随后进入 AI 解读队列。
+- **并发推送**：数据提交步骤在 push 前先执行 `git pull --rebase --autostash`，避免与人工提交互相覆盖。
+- **相关配置**：`llm.include_imported`、`seed_lookup.{enabled,max_per_run,min_title_score,retry_days}`。

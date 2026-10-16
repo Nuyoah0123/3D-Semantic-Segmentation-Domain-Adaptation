@@ -14,6 +14,7 @@ from atlas.triage import classify
 from atlas.site import public_records, build, to_ris
 from atlas.enrich import PROMPT_VERSION, build_snippets, run_enrichment, validate_analysis
 from atlas.zotero_sync import sanitize_item, run_sync
+from atlas.seed_lookup import MARKER, run_seed_lookup, title_score
 
 NOW=datetime(2026,10,13,12,tzinfo=timezone.utc)
 
@@ -311,6 +312,50 @@ class AITests(TempProject):
         s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":True}
         self.cfg["publication"]["publish_ai_drafts"]=True
         self.assertNotIn("ai_draft",public_records(self.cfg,[],s,{})[0])
+
+class LookupTests(TempProject):
+    def seed(self,title="Domain Adaptation for 3D Semantic Segmentation",authors=None):
+        return {"id":"W0001","title":title,"authors":authors if authors is not None else ["Test Author"],"identifiers":{"arxiv":[],"doi":[]}}
+    def run_lookup(self,seeds,replies,limit=None,now=NOW):
+        write_json(self.root/"data/seed.json",seeds)
+        return run_seed_lookup(self.cfg,self.root,FakeClient(replies),now=now,limit=limit)
+    def test_match_adds_arxiv_id(self):
+        r=self.run_lookup([self.seed()],[feed([paper()])])
+        self.assertEqual(r["matched"],1)
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(seed["identifiers"]["arxiv"],["2610.00001"])
+        self.assertEqual(seed[MARKER]["result"],"matched");self.assertGreaterEqual(seed[MARKER]["score"],0.97)
+    def test_weak_match_recorded_only(self):
+        r=self.run_lookup([self.seed()],[feed([paper(aid="2610.00009",title="A Completely Different Study About Something Else")])])
+        self.assertEqual(r["matched"],0);self.assertEqual(r["none"],1)
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(seed["identifiers"]["arxiv"],[]);self.assertEqual(seed[MARKER]["result"],"none")
+    def test_recent_none_marker_skips_request(self):
+        seed=self.seed();seed[MARKER]={"at":iso(NOW),"result":"none","score":0.1}
+        r=self.run_lookup([seed],[])
+        self.assertEqual(r["checked"],0);self.assertEqual(r["errors"],[])
+    def test_none_marker_retried_after_cooldown(self):
+        seed=self.seed();seed[MARKER]={"at":iso(NOW-timedelta(days=200)),"result":"none","score":0.1}
+        r=self.run_lookup([seed],[feed([paper()])])
+        self.assertEqual(r["checked"],1);self.assertEqual(r["matched"],1)
+    def test_known_id_not_reassigned(self):
+        first=self.seed();second=self.seed();second["id"]="W0002"
+        r=self.run_lookup([first,second],[feed([paper()]),feed([paper()])])
+        self.assertEqual(r["matched"],1)
+        seeds=read_json(self.root/"data/seed.json")
+        ids=[(s["identifiers"]["arxiv"] or [""])[0] for s in seeds]
+        self.assertEqual(ids,["2610.00001",""])
+    def test_source_failure_leaves_no_marker(self):
+        r=self.run_lookup([self.seed()],[SourceError("offline")])
+        self.assertEqual(r["checked"],1);self.assertEqual(len(r["errors"]),1)
+        self.assertEqual(r["status"],"partial")
+        self.assertNotIn(MARKER,read_json(self.root/"data/seed.json")[0])
+    def test_author_mismatch_rejected(self):
+        r=self.run_lookup([self.seed(authors=["Someone Else Entirely"])],[feed([paper()])])
+        self.assertEqual(r["matched"],0)
+    def test_title_score_boundaries(self):
+        self.assertEqual(title_score("Domain Adaptation for 3D Semantic Segmentation","domain   adaptation for 3d semantic-segmentation!"),1.0)
+        self.assertLess(title_score("LiDAR segmentation survey","Point cloud segmentation survey"),0.97)
 
 class ZoteroTests(TempProject):
     def row(self):return {"key":"ABCD1234","data":{"itemType":"journalArticle","title":"Domain Adaptation for 3D Semantic Segmentation","abstractNote":"We study domain adaptation for LiDAR semantic segmentation.","DOI":"10.1234/abc","creators":[{"creatorType":"author","firstName":"Test","lastName":"Author"}],"date":"2025","note":"private","attachments":["/private/file.pdf"],"collections":["SECRETNAME"],"tags":[{"tag":"track:dg"},{"tag":"private:idea"}]}}

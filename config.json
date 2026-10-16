@@ -64,5 +64,11 @@
     "collection_key": "",
     "max_pages": 20,
     "read_only": true
+  },
+  "seed_lookup": {
+    "enabled": true,
+    "max_per_run": 40,
+    "min_title_score": 0.97,
+    "retry_days": 120
   }
 }
