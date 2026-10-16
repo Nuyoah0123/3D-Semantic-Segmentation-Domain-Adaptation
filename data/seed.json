@@ -115,7 +115,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "pending",
-    "legacy_core": false
+    "legacy_core": false,
+    "arxiv_lookup": {
+      "at": "2026-10-16T18:22:15Z",
+      "result": "none",
+      "score": 0.0
+    }
   },
   {
     "id": "W0004",
