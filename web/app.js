@@ -24,6 +24,7 @@ $("library-count").textContent=D.papers.length;
 $("seed-count").textContent=D.index_count;
 $("core-count").textContent=D.papers.filter(p=>p.classification.bucket==="core").length;
 $("reviewed-count").textContent=D.papers.filter(selected).length;
+$("ai-count").textContent=D.papers.filter(p=>p.ai_draft).length;
 $("built").textContent="页面构建于 "+time(D.built_at);
 if(D.site.preview){$("preview-note").hidden=false;$("preview-note").textContent="本地预览：额外展示既有题录；不代表已完成联网抓取，也不代表已经发布。";}
 function link(p,text){const u=validURL(p.url);return u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${text}</a>`:"";}
