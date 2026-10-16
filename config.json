@@ -5,10 +5,10 @@
   "display_timezone": "America/Los_Angeles",
   "user_agent": "3D-Seg-Daily/1.0 (+https://github.com/Nuyoah0123/3D-Semantic-Segmentation-Domain-Adaptation)",
   "publication": {
-    "publish_imported_references": false,
+    "publish_imported_references": true,
     "publish_auto_candidates": true,
     "publish_abstracts": false,
-    "publish_ai_drafts": false,
+    "publish_ai_drafts": true,
     "include_related": true
   },
   "arxiv": {
@@ -45,11 +45,16 @@
     ]
   },
   "llm": {
-    "enabled": false,
-    "max_per_run": 5,
-    "max_per_utc_day": 10,
-    "max_abstract_chars": 12000,
-    "max_output_tokens": 900
+    "enabled": true,
+    "max_per_run": 8,
+    "max_per_utc_day": 24,
+    "max_pdf_pages": 40,
+    "max_input_chars": 60000,
+    "max_output_tokens": 3000,
+    "request_interval_seconds": 3.0,
+    "timeout_seconds": 90,
+    "max_pdf_bytes": 60000000,
+    "token_parameter": "max_completion_tokens"
   },
   "zotero": {
     "enabled": false,

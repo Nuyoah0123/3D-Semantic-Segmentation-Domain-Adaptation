@@ -4,7 +4,7 @@
 
 你的既有文献是起始去重索引，新的论文不依赖你每天从 Zotero 导出。
 
-> 交付状态：源码、本地测试、站点构建和本地预览已准备；仓库已上传到 GitHub，**每日 arXiv 发现已在 GitHub Actions 上实际运行**（检索游标持续推进，数据每日自动提交，最近一次运行 2026-10-15 状态正常）。当前尚未完成的是 **GitHub Pages 发布**：在仓库 Settings → Pages 把 Source 设为 GitHub Actions 后，下一次运行会自动构建并部署网站。可选的 Zotero / 模型 API 集成仍为关闭状态。
+> 交付状态：每日 arXiv 发现与数据提交已在 GitHub Actions 上运行（2026-10-13 起），GitHub Pages 已发布：https://nuyoah0123.github.io/3D-Semantic-Segmentation-Domain-Adaptation/ 。PDF 证据化中文解读管道已就绪：在仓库配置 LLM_API_KEY / LLM_MODEL 后，工作流会为新论文自动生成带页码引用的 AI 草稿（见第 8 节）。Zotero 集成仍为关闭状态。
 
 ## 1. 你最先需要做什么
 
@@ -12,7 +12,7 @@
 
 接着按照 **[部署到 GitHub](docs/DEPLOY.zh-CN.md)** 完成一次性发布。云端定时工作流启用后，不需要你的电脑持续开机，也不需要每天打开 Zotero。
 
-本项目是针对你的方向独立编写的实现，借鉴原项目“静态网站＋定时发现＋人工审核”思路，**不是已经修改好的原仓库 fork，也没有复刻其全文配图、论文卡片和全部交互**。不要把这些文件直接覆盖到原仓库。详见 NOTICE.md。
+本项目是针对你的方向独立编写的实现，借鉴原项目“静态网站＋定时发现＋人工审核＋证据化解读”思路，**不是原仓库的 fork，也没有复刻其论文配图与传播卡片**。详见 NOTICE.md。
 
 ## 2. 当前已经实现
 
@@ -25,13 +25,13 @@
 | 自动分类 | 基于题名/摘要的可解释规则；DA/DG/OV/TTA 多标签，核心/相关/排除分区 |
 | 状态与容错 | 每个查询独立保存游标；失败不前移，部分失败不抹掉已有库；分页不完整时报错 |
 | 人工覆盖 | `data/editorial.json` 独立维护，抓取不覆盖人工标签、排除与公开设置 |
-| 网页 | 检索、方向筛选、近七天新收录、近七天新版本、人工精选、本地收藏、单篇详情 |
+| 网页 | 检索、方向筛选、近七天新收录、近七天新版本、含 AI 解读、人工精选、本地收藏、单篇详情（含证据引用与页码链接） |
 | 输出 | RSS；全库/近七天/当前筛选结果 RIS；近七天发现摘要清单 |
 | Zotero | 可选只读读取一个指定集合、添加新题录；没有写回/删除操作；默认关闭 |
-| AI | 可选 Chat Completions 兼容接口，生成摘要级中文草稿，带引用片段检查和调用次数上限；默认关闭 |
+| AI 解读 | 下载 arXiv PDF → 选取页面文本 → Chat Completions 兼容接口生成证据化中文解读（摘要/问题/方法/结果/局限/实验设置）；每条结论必须附页码与逐字引用，数字必须能在引用中找到；标注“AI 生成 · 待人工复核”；未配置密钥时自动跳过 |
 | 自动部署 | GitHub Actions + Pages，定时、手动触发、代码/人工数据变更后重建 |
 
-**尚未实现**：CVF / OpenReview / 期刊的全面每日发现、自动下载或精读全部 PDF、实验表格可靠抽取、网页在线管理后台、Zotero 双向同步、Excel 修改自动回写、原项目的卡片与配图功能。
+**尚未实现**：CVF / OpenReview / 期刊的全面每日发现、实验表格结构化抽取、网页在线管理后台、Zotero 双向同步、Excel 修改自动回写、论文配图（图表裁剪）与传播卡片。
 
 ## 3. 发布策略：题录公开与精读审核分开
 
@@ -39,16 +39,16 @@
 
 ```json
 "publication": {
-  "publish_imported_references": false,
+  "publish_imported_references": true,
   "publish_auto_candidates": true,
   "publish_abstracts": false,
-  "publish_ai_drafts": false,
+  "publish_ai_drafts": true,
   "include_related": true
 }
 ```
 
-- `publish_imported_references=false`：尊重此前整理包的未公开状态，266 组旧题录先仅用于去重。`_preview/` 是显式本地预览例外，不部署。
-- 将它改为 `true`：允许旧题录的**公开字段**显示在网站上，不会将它们标成已精读；这一步不是每天抓新论文的前提。
+- `publish_imported_references=true`：266 组旧题录的**公开字段**（题名/作者/年份/链接）显示在网站上，并保留你原有分组的分区（核心/相关），不会将它们标成已精读；改回 `false` 可只把它们用于去重。
+- `publish_ai_drafts=true`：显示“AI 生成 · 待人工复核”的中文解读；草稿永远不会自动变成精选或全文精读。
 - 新抓到的核心/相关论文默认作为“自动发现·待审核”发布题名、作者、日期、原文链接和初筛标签；排除项不进入公开站点。
 - 不复制私人批注、附件路径或原集合名称；默认不在公开页面复制摘要全文。
 - `data/seed.json` 本身保留的是脱敏题录索引。如果把源代码仓库设为公开，其中题录清单也能被看见，即使网页尚未展示。**网页开关不是 GitHub 仓库权限控制。**敏感选文清单应使用满足你账号权限条件的私有代码仓库及合适的发布环境。
@@ -60,13 +60,16 @@
 .github/workflows/daily.yml  每日发现、数据提交、构建与发布
 .github/workflows/tests.yml  pull request / push 的只读测试
 config.json                 站点、检索式、公开策略、可选集成
-atlas/                      Python 核心实现（仅标准库）
+atlas/                      Python 核心实现（标准库；PDF 文本解析用可选 PyMuPDF）
+atlas/pdf_text.py           arXiv PDF 下载与分页文本提取
+atlas/enrich.py             证据化中文解读：模型调用、页码/引用/数字校验
 scripts/update.py           执行发现及滚动版本检查
 scripts/build.py            生成公开 dist/ 文件
 scripts/review.py           修改独立人工覆盖层
-scripts/sync_zotero.py       可选只读题录补充
-scripts/enrich.py            可选中文摘要草稿
-scripts/status.py            输出最近一次运行状态
+scripts/sync_zotero.py      可选只读题录补充
+scripts/enrich.py            生成 AI 解读草稿（可用 ATLAS_ENRICH_LIMIT 限制篇数）
+scripts/status.py            输出最近一次运行状态（含 AI 解读统计）
+requirements.txt             AI 解读所需的 PyMuPDF（GitHub Actions 自动安装）
 data/seed.json              266 组脱敏初始题录（保持 Wxxxx 映射）
 data/store.json             后续候选、查询游标、版本、事件、运行状态
 data/editorial.json         人工覆盖层（初始为空）
@@ -78,11 +81,13 @@ docs/                       部署、数据与已知边界
 
 ## 5. 本地运行（不是每天必须执行）
 
-Python 3.11+；当前交付在 Python 3.13.5 上测试。无 pip 运行依赖。
+Python 3.11+；当前交付在 Python 3.13.5 上测试。发现、构建与测试只用标准库；AI 解读需要 `requirements.txt` 里的 PyMuPDF（GitHub Actions 会自动安装）。
 
 ```bash
+python -m pip install -r requirements.txt   # 仅 AI 解读需要
 python -m unittest discover -s tests -v
 python scripts/update.py
+python scripts/enrich.py                    # 可选：生成 AI 解读草稿
 python scripts/build.py
 python -m http.server 8000 --directory dist
 ```
@@ -122,19 +127,21 @@ python scripts/review.py 'arxiv:实际编号' --state rejected --public no
 
 ## 8. 开启可选集成
 
-### AI 中文草稿
+### AI 证据化解读
 
 先阅读 `docs/LIMITS.zh-CN.md`。在 GitHub 的 Settings → Secrets and variables → Actions 设置：
 
 - Secret `LLM_API_KEY`
-- Variable `LLM_BASE_URL`：以 `/v1` 等 API 前缀结尾，脚本会追加 `/chat/completions`
-- Variable `LLM_MODEL`：你账号实际可用且支持 JSON 模式与 `max_completion_tokens` 的模型名称
+- Variable `LLM_MODEL`：你账号实际可用、支持 JSON 模式与 `max_completion_tokens` 的模型名称
+- Variable `LLM_BASE_URL`（可选）：OpenAI 兼容端点，以 `/v1` 等 API 前缀结尾；默认 `https://api.openai.com/v1`
 
-然后将 `llm.enabled` 设为 `true`。不提供默认模型或默认密钥，也不会自动读你的 ChatGPT 登录状态。密钥留在执行环境，不放前端。
+`llm.enabled` 与 `publish_ai_drafts` 已默认开启；未配置密钥时整步自动跳过（状态 not-configured），不影响每日抓取与网站构建。密钥留在执行环境，不放前端。
 
-每轮最多 5 次、按已持久化 UTC 日计数最多 10 次请求；仅处理新发现的核心文献，不自动改写旧库。计次不等于金额预算。超时请求也可能计费；中断/回滚/提交失败可能使云端预算状态不能保存，因此生产使用应另在提供方设置费用限制。
+流程：下载 arXiv PDF（3 秒间隔、60MB 上限、仅 arxiv.org）→ 选取最多 40 页 / 6 万字符的页面节选 → 模型输出 摘要/研究问题/方法/主要结果/作者局限/实验设置 → 校验：页码必须存在、引用必须是页面原文、结论中的数字必须出现在引用中 → 写入 store.json 并标注“AI 生成 · 待人工复核”。
 
-草稿默认仅留在源数据中。`publish_ai_drafts=true` 后会显示“摘要级 AI 草稿·未审核”，仍不会自动标为精选或全文精读。**公开仓库中的 data/store.json 本身也可被访问。**数字和引用片段校验不能证明语义正确。
+每轮最多 8 篇、按已持久化 UTC 日计数最多 24 篇；手工触发工作流时可填写 `drafts` 数字一次补跑更多（例如 30）。计次不等于金额预算。超时请求也可能计费；中断/回滚/提交失败可能使云端预算状态不能保存，生产使用应另在提供方设置费用限制。
+
+修订后旧草稿自动标记 stale、不再展示，等待重新生成。草稿不会自动标为精选或全文精读。**公开仓库中的 data/store.json 本身也可被访问。**页码/引用/数字校验是机械检查，不能证明语义正确。
 
 ### 只读 Zotero 题录补充
 

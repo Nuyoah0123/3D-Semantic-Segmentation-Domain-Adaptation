@@ -12,7 +12,7 @@ from atlas.arxiv_source import parse_feed, query_window, SourceError
 from atlas.pipeline import EMPTY, merge_paper, run_update
 from atlas.triage import classify
 from atlas.site import public_records, build, to_ris
-from atlas.enrich import validate_draft, run_enrichment
+from atlas.enrich import PROMPT_VERSION, run_enrichment, validate_analysis
 from atlas.zotero_sync import sanitize_item, run_sync
 
 NOW=datetime(2026,10,13,12,tzinfo=timezone.utc)
@@ -116,6 +116,15 @@ class MergeTests(unittest.TestCase):
     def test_revision_marks_ai_stale(self):
         s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW));p=s["records"][paper()["id"]];p["ai_draft"]={"source_hash":digest([p["title"],p["abstract"],1]),"stale":False};merge_paper(s,[],paper(version=2),iso(NOW));self.assertTrue(s["records"][paper()["id"]]["ai_draft"]["stale"])
 
+    def test_imported_bucket_not_downgraded(self):
+        seed=paper();seed["id"]="W0001";seed["imported"]=True;seed["classification"]={"bucket":"related","tracks":["DA"],"task":"semantic"}
+        s=copy.deepcopy(EMPTY)
+        incoming=paper();incoming["title"]="A medical image study";incoming["abstract"]="We present a method for medical image analysis."
+        self.assertEqual(merge_paper(s,[seed],incoming,iso(NOW)),"existing")
+        rec=s["records"]["W0001"]
+        self.assertEqual(rec["classification"]["bucket"],"related")
+        self.assertIn("DA",rec["classification"]["tracks"])
+
 class PipelineTests(TempProject):
     def test_success_advances_cursor(self):
         r=run_update(self.cfg,self.root,FakeClient([feed([paper()])]),NOW,check_revisions=False)
@@ -153,10 +162,13 @@ class PipelineTests(TempProject):
 class BuildTests(TempProject):
     def load_paper(self):
         s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW));return s
-    def test_imports_opt_in(self):
+    def test_imports_follow_publication_switch(self):
         p=paper();p["imported"]=True
+        self.cfg["publication"]["publish_imported_references"]=False
         self.assertEqual(public_records(self.cfg,[p],copy.deepcopy(EMPTY),{}),[])
         self.assertEqual(len(public_records(self.cfg,[p],copy.deepcopy(EMPTY),{},True)),1)
+        self.cfg["publication"]["publish_imported_references"]=True
+        self.assertEqual(len(public_records(self.cfg,[p],copy.deepcopy(EMPTY),{})),1)
     def test_unreviewed_candidates_can_publish(self):self.assertEqual(len(public_records(self.cfg,[],self.load_paper(),{})),1)
     def test_private_field_not_published(self):
         s=self.load_paper();s["records"][paper()["id"]]["private_note"]="DO-NOT-PUBLISH"
@@ -188,22 +200,58 @@ class BuildTests(TempProject):
         p=paper();p["title"]="Title\nTY  - FAKE";r=to_ris([p]);self.assertEqual(r.count("\nTY  -"),0)
 
 class AITests(TempProject):
+    PAGES=[{"page":1,"text":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds. Our method improves the target-domain mIoU by 12.5 points over the baseline."}]
+    def analysis(self):
+        q="Our method improves the target-domain mIoU by 12.5 points over the baseline."
+        return {"summary_zh":"论文研究 LiDAR 点云 3D 语义分割的域适应，报告目标域 mIoU 提升 12.5 个百分点。",
+                "problem":{"text":"跨域点云分割需要缓解域偏移。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]},
+                "method":{"text":"作者提出一种域适应方法并在目标域上评估。","evidence":[{"page":1,"quote":q}]},
+                "findings":[{"text":"目标域 mIoU 提升 12.5 个百分点。","evidence":[{"page":1,"quote":q}]}],
+                "limitations":[],
+                "role":{"setting":"UDA","supervision":"源域有标签，目标域无标签","modalities":"LiDAR 点云","datasets":"未说明","evaluation":"目标域 mIoU"}}
+    def test_valid_analysis(self):
+        out=validate_analysis(self.analysis(),self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertTrue(out["summary_zh"]);self.assertTrue(out["evidence"]);self.assertEqual(out["role"]["setting"],"UDA")
     def test_quote_must_exist(self):
-        with self.assertRaises(ValueError):validate_draft({"title_zh":"标题","summary_zh":"摘要","claims":[{"text_zh":"断言","quote":"A fabricated excerpt that never existed."}]},paper()["abstract"])
-    def test_valid_draft(self):
-        d=validate_draft({"title_zh":"标题","summary_zh":"作者研究域适应。","claims":[{"text_zh":"作者研究域适应。","quote":"We study domain adaptation for 3D semantic segmentation"}]},paper()["abstract"]);self.assertIn("claims",d)
-    def test_off_needs_no_key(self):self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"disabled")
-    def test_enabled_missing_key_fails(self):
-        self.cfg["llm"]["enabled"]=True;self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"failed")
+        bad=self.analysis();bad["problem"]["evidence"][0]["quote"]="A fabricated excerpt that never existed."
+        with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+    def test_unknown_page_rejected(self):
+        bad=self.analysis();bad["findings"][0]["evidence"][0]["page"]=9
+        with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+    def test_unsupported_number_rejected(self):
+        bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
+        with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+    def test_role_schema_enforced(self):
+        bad=self.analysis();bad["role"].pop("datasets")
+        with self.assertRaises(ValueError):validate_analysis(bad,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+    def test_off_needs_no_key(self):
+        self.cfg["llm"]["enabled"]=False
+        self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"disabled")
+    def test_enabled_missing_key_not_configured(self):
+        self.assertEqual(run_enrichment(self.cfg,self.root,{})["status"],"not-configured")
     def test_budget_and_no_repeat(self):
         self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1)
         s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW));write_json(self.root/"data/store.json",s)
-        def fake(p,*args):return {"source_hash":digest([p["title"],p["abstract"],p["version"]]),"summary_zh":"草稿","stale":False}
         env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
-        a=run_enrichment(self.cfg,self.root,env,fake);b=run_enrichment(self.cfg,self.root,env,fake)
-        self.assertEqual(a["attempted"],1);self.assertEqual(b["attempted"],0)
-    def test_ai_never_auto_public(self):
-        s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW));s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":False}
+        loader=lambda p,cfg,root:copy.deepcopy(self.PAGES)
+        gen=lambda p,pages,cfg,key,base,model:copy.deepcopy(self.analysis())
+        a=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        b=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(a["attempted"],1);self.assertEqual(a["succeeded"],1);self.assertEqual(b["attempted"],0)
+        draft=read_json(self.root/"data/store.json")["records"][paper()["id"]]["ai_draft"]
+        self.assertEqual(draft["prompt_version"],PROMPT_VERSION);self.assertFalse(draft["human_approved"])
+    def test_ai_draft_publish_switch_and_allowlist(self):
+        s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW))
+        s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":False,"private_field":"DO-NOT-PUBLISH"}
+        self.cfg["publication"]["publish_ai_drafts"]=False
+        self.assertNotIn("ai_draft",public_records(self.cfg,[],s,{})[0])
+        self.cfg["publication"]["publish_ai_drafts"]=True
+        out=public_records(self.cfg,[],s,{})[0]["ai_draft"]
+        self.assertEqual(out["summary_zh"],"draft");self.assertNotIn("private_field",out)
+    def test_stale_draft_not_published(self):
+        s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW))
+        s["records"][paper()["id"]]["ai_draft"]={"summary_zh":"draft","stale":True}
+        self.cfg["publication"]["publish_ai_drafts"]=True
         self.assertNotIn("ai_draft",public_records(self.cfg,[],s,{})[0])
 
 class ZoteroTests(TempProject):

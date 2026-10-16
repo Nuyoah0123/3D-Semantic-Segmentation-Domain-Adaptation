@@ -21,6 +21,26 @@ def event(store: dict, kind: str, paper: dict, now: str, **extra) -> None:
         return
     store["events"].append({"key":key, "kind":kind, "paper_id":paper["id"], "title":paper["title"], "at":now, **extra})
 
+BUCKET_RANK = {"excluded": 0, "related": 1, "core": 2}
+
+def merge_classification(old: dict | None, new: dict, imported: bool) -> dict:
+    """Imported library entries keep their curated bucket; automatic labels may only add.
+
+    A crawler match re-runs the keyword classifier on the abstract. For previously
+    curated references that must not silently downgrade them: an imported "core"
+    or "related" entry stays visible even when the auto keywords miss.
+    """
+    if not old or not isinstance(old, dict):
+        return new
+    merged = dict(new)
+    merged["tracks"] = sorted(set(old.get("tracks", [])) | set(new.get("tracks", [])))
+    if imported:
+        if BUCKET_RANK.get(old.get("bucket"), 0) >= BUCKET_RANK.get(new.get("bucket"), 0):
+            merged["bucket"] = old.get("bucket", new.get("bucket"))
+        if old.get("task") in {"semantic", "adjacent"} and new.get("task") in {"other", "segmentation-unspecified"}:
+            merged["task"] = old["task"]
+    return merged
+
 def merge_paper(store: dict, seeds: list[dict], incoming: dict, now: str) -> str:
     """Strong identifiers merge; similar titles merely create a review warning."""
     seed_map = {p["id"]: p for p in seeds}
@@ -43,7 +63,8 @@ def merge_paper(store: dict, seeds: list[dict], incoming: dict, now: str) -> str
     p["origin"] = "arxiv"
     p["first_seen"] = old.get("first_seen", now) if old else now
     p["last_seen"] = now
-    p["classification"] = classify(p["title"], p.get("abstract", ""))
+    reference = (seed or {}).get("classification") or (old or {}).get("classification")
+    p["classification"] = merge_classification(reference, classify(p["title"], p.get("abstract", "")), bool(seed or (old and old.get("imported"))))
     p["review_status"] = (old or {}).get("review_status", "candidate")
     p["full_text_read"] = False
     p["warnings"] = list((old or {}).get("warnings", []))

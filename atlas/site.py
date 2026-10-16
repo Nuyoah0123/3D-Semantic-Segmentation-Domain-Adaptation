@@ -39,8 +39,8 @@ def public_records(config, seeds, store, editorial, include_imports=False):
         out["abstract"]=p.get("abstract","") if pub["publish_abstracts"] else ""
         # Drafts are opt-in AND marked explicitly; draft does not alter classification or review status.
         draft=p.get("ai_draft")
-        if pub["publish_ai_drafts"] and draft and not draft.get("stale"):
-            out["ai_draft"]={k:draft.get(k) for k in ("title_zh","summary_zh","generated_at","model","scope","human_approved")}
+        if pub["publish_ai_drafts"] and draft and not draft.get("stale") and draft.get("summary_zh"):
+            out["ai_draft"]={k:draft.get(k) for k in ("title_zh","summary_zh","problem","method","findings","limitations","role","evidence","model","prompt_version","scope","generated_at","human_approved")}
         if e.get("public_note"):
             out["public_note"]=e["public_note"]
         result.append(out)

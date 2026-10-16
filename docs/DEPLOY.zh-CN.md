@@ -42,6 +42,19 @@ git push -u origin main
 
 使用 GitHub Desktop 上传也可以，关键仍是目录层级正确，并保留 `.github/workflows`。`.gitignore` 已排除 `_preview/`、`dist/`、ZIP、PDF 和 Excel。
 
+### 启用 AI 证据化解读（可选）
+
+如果希望每篇论文显示带页码引用的中文 AI 解读，在仓库 **Settings → Secrets and variables → Actions** 添加：
+
+- **Secret**：`LLM_API_KEY`（模型服务密钥）
+- **Variables**：`LLM_MODEL`（模型名，例如 `gpt-4o-mini`）；可选 `LLM_BASE_URL`（OpenAI 兼容端点，默认 `https://api.openai.com/v1`）
+
+工作流会自动：下载 arXiv PDF（限速 3 秒/篇）→ 提取页面文本 → 生成中文解读草稿 → 校验页码、逐字引用与数字 → 在网站上标注“AI 生成 · 待人工复核”。未配置密钥时这一步自动跳过，不影响每日发现与站点构建。
+
+如需一次性补跑历史论文：**Actions → Daily papers and deploy → Run workflow**，把 `drafts` 填成数量（例如 30），`refresh` 保持勾选即可。
+
+API 调用会计费，运行次数受 `config.json` 中 `llm.max_per_run` / `llm.max_per_utc_day` 限制；建议同时在模型提供方设置费用上限。
+
 ## D. 启用 Pages 与工作流权限
 
 仓库内：

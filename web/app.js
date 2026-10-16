@@ -27,6 +27,13 @@ $("reviewed-count").textContent=D.papers.filter(selected).length;
 $("built").textContent="页面构建于 "+time(D.built_at);
 if(D.site.preview){$("preview-note").hidden=false;$("preview-note").textContent="本地预览：额外展示既有题录；不代表已完成联网抓取，也不代表已经发布。";}
 function link(p,text){const u=validURL(p.url);return u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${text}</a>`:"";}
+const ROLE_LABELS={setting:"任务设置",supervision:"监督条件",modalities:"模态与数据",datasets:"主要数据集",evaluation:"评测口径"};
+function pdfPageURL(p,page){const id=(p.identifiers&&p.identifiers.arxiv&&p.identifiers.arxiv[0])||"";return id&&page?`https://arxiv.org/pdf/${encodeURIComponent(id)}#page=${encodeURIComponent(page)}`:"";}
+function quoteBlock(p,ev){if(!ev||!ev.quote)return "";const u=pdfPageURL(p,ev.page);return `<blockquote class="evidence">${esc(ev.quote)}${u?` <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">PDF p.${esc(String(ev.page))} ↗</a>`:`<span class="muted"> p.${esc(String(ev.page))}</span>`}</blockquote>`;}
+function claimBlock(p,c){if(!c||!c.text)return "";return `<p>${esc(c.text)}</p>${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}`;}
+function claimList(p,items){return (items||[]).map(c=>`<li>${esc(c.text)}${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}</li>`).join("");}
+function aiSection(p){const d=p.ai_draft;if(!d||!d.summary_zh)return "";const roles=d.role?Object.keys(ROLE_LABELS).filter(k=>d.role[k]).map(k=>`<tr><td>${ROLE_LABELS[k]}</td><td>${esc(d.role[k])}</td></tr>`).join(""):"";
+ return `<h3>AI 解读 <span class="chip ai">AI 生成 · 待人工复核</span></h3><p class="disclaimer">由 ${esc(d.model||"模型")} 依据论文 PDF 页面文本生成（${esc(d.scope||"pdf-evidence")}）；每条结论附原文引用与页码。不是人工精读，不能替代原文核对。</p><p><b>中文摘要：</b>${esc(d.summary_zh)}</p>${d.problem?`<h3>研究问题</h3>${claimBlock(p,d.problem)}`:""}${d.method?`<h3>方法</h3>${claimBlock(p,d.method)}`:""}${(d.findings||[]).length?`<h3>主要结果</h3><ul class="ai">${claimList(p,d.findings)}</ul>`:""}${(d.limitations||[]).length?`<h3>作者说明的局限</h3><ul class="ai">${claimList(p,d.limitations)}</ul>`:""}${roles?`<h3>实验设置</h3><table class="roletable"><tbody>${roles}</tbody></table>`:""}`;}
 function render(){
  const query=$("search").value.trim().toLocaleLowerCase();const track=$("track").value,bucket=$("bucket").value,scope=$("scope").value;
  filtered=D.papers.filter(p=>{
@@ -35,7 +42,7 @@ function render(){
   if(bucket&&c.bucket!==bucket)return false;
   if(scope==="new"&&!recent.has(p.id))return false;
   if(scope==="revised"&&!revised.has(p.id))return false;
-  if(scope==="selected"&&!selected(p))return false;
+  if(scope==="selected"&&!selected(p))return false;if(scope==="ai"&&!p.ai_draft)return false;
   if(scope==="favorites"&&!favorites.has(p.id))return false;
   return !query||[p.title,p.id,p.abstract,...(p.authors||[]),...(c.methods||[]),...(p.identifiers?.arxiv||[]),...(p.identifiers?.doi||[])].join(" ").toLocaleLowerCase().includes(query);
  });
@@ -43,12 +50,12 @@ function render(){
  filtered.sort((a,b)=>sort==="title"?a.title.localeCompare(b.title):String(b[sort]||b.published||"").localeCompare(String(a[sort]||a.published||""))||a.id.localeCompare(b.id));
  $("results").textContent=`找到 ${filtered.length} 篇 · 显示 ${Math.min(shown,filtered.length)} 篇`;
  $("empty").hidden=filtered.length!==0;$("more").hidden=shown>=filtered.length;
- $("papers").innerHTML=filtered.slice(0,shown).map(p=>`<article class="card"><div class="cardtop">${(p.classification.tracks||[]).map(t=>`<span class="chip track">${esc(t)}</span>`).join("")}<span class="chip">${esc(tasks[p.classification.task]||"待核对")}</span><span class="muted">${esc(date(p.published))}</span></div><h3>${esc(p.title)}</h3><p class="authors">${esc((p.authors||[]).slice(0,3).join(" · "))}${(p.authors||[]).length>3?" et al.":""}</p><div>${(p.classification.methods||[]).slice(0,3).map(t=>`<span class="chip">${esc(t)}</span> `).join("")}</div><p class="review">${esc(states[p.review_status]||p.review_status)}${recent.has(p.id)?" · 近七天新收录":""}${revised.has(p.id)?" · 新版本":""}</p><div class="cardfoot"><button data-open="${esc(p.id)}">查看题录与依据 ↗</button>${link(p,"原文 ↗")}<button class="star" data-star="${esc(p.id)}" aria-label="收藏论文">${favorites.has(p.id)?"★":"☆"}</button></div></article>`).join("");
+ $("papers").innerHTML=filtered.slice(0,shown).map(p=>`<article class="card"><div class="cardtop">${(p.classification.tracks||[]).map(t=>`<span class="chip track">${esc(t)}</span>`).join("")}${p.ai_draft?'<span class="chip ai">AI 解读</span>':''}<span class="chip">${esc(tasks[p.classification.task]||"待核对")}</span><span class="muted">${esc(date(p.published))}</span></div><h3>${esc(p.title)}</h3><p class="authors">${esc((p.authors||[]).slice(0,3).join(" · "))}${(p.authors||[]).length>3?" et al.":""}</p><div>${(p.classification.methods||[]).slice(0,3).map(t=>`<span class="chip">${esc(t)}</span> `).join("")}</div><p class="review">${esc(states[p.review_status]||p.review_status)}${recent.has(p.id)?" · 近七天新收录":""}${revised.has(p.id)?" · 新版本":""}</p><div class="cardfoot"><button data-open="${esc(p.id)}">查看题录与依据 ↗</button>${link(p,"原文 ↗")}<button class="star" data-star="${esc(p.id)}" aria-label="收藏论文">${favorites.has(p.id)?"★":"☆"}</button></div></article>`).join("");
 }
 function showPaper(id){
  const p=D.papers.find(x=>x.id===id);if(!p)return;
  const c=p.classification;
- $("detail-body").innerHTML=`<p class="eyebrow">${esc(p.id)} / PAPER RECORD</p><h2>${esc(p.title)}</h2><p>${esc((p.authors||[]).join(" · "))}</p><div class="detailmeta"><b>研究方向：</b>${esc((c.tracks||[]).join(" / ")||"待确认")}　<b>任务：</b>${esc(tasks[c.task]||"待确认")}<br><b>题录日期：</b>${esc(p.published||"未提供")}　<b>版本：</b>${esc(p.version||"待核对")}<br><b>本站首次发现：</b>${esc(p.first_seen?time(p.first_seen):"既有导入题录")}<br><b>阅读状态：</b>${esc(states[p.review_status]||p.review_status)}<br>${link(p,"打开论文来源 ↗")}</div><h3>分类依据与边界</h3><p>${esc(c.note||"题录级分类；尚未核对全文。")}</p><p class="muted">来源范围：${esc(c.basis)}。数据集、类别映射、训练与推理模态、目标域监督及模型选择协议仍需原文核对。</p><h3>原始摘要</h3><p>${esc(p.abstract||"当前公开策略不复制摘要全文。请通过论文来源阅读；此限制不影响抓取时的自动初筛。")}</p>${p.ai_draft?`<h3>中文摘要级草稿</h3><p class="disclaimer">AI 生成，未人工核验；没有进行全文精读。</p><p>${esc(p.ai_draft.summary_zh)}</p>`:""}${p.public_note?`<h3>人工公开笔记</h3><p>${esc(p.public_note)}</p>`:""}<p class="disclaimer">DA、DG、TTA、OV 可以交叉。关键词命中不证明实验设置；不同数据集、类别空间与监督条件下的指标不能直接排名。</p><button class="ghost" id="single-ris">导出这篇题录 RIS ↓</button>`;
+ $("detail-body").innerHTML=`<p class="eyebrow">${esc(p.id)} / PAPER RECORD</p><h2>${esc(p.title)}</h2><p>${esc((p.authors||[]).join(" · "))}</p><div class="detailmeta"><b>研究方向：</b>${esc((c.tracks||[]).join(" / ")||"待确认")}　<b>任务：</b>${esc(tasks[c.task]||"待确认")}<br><b>题录日期：</b>${esc(p.published||"未提供")}　<b>版本：</b>${esc(p.version||"待核对")}<br><b>本站首次发现：</b>${esc(p.first_seen?time(p.first_seen):"既有导入题录")}<br><b>阅读状态：</b>${esc(states[p.review_status]||p.review_status)}<br>${link(p,"打开论文来源 ↗")}</div><h3>分类依据与边界</h3><p>${esc(c.note||"题录级分类；尚未核对全文。")}</p><p class="muted">来源范围：${esc(c.basis)}。数据集、类别映射、训练与推理模态、目标域监督及模型选择协议仍需原文核对。</p><h3>原始摘要</h3><p>${esc(p.abstract||"当前公开策略不复制摘要全文。请通过论文来源阅读；此限制不影响抓取时的自动初筛。")}</p>${aiSection(p)}${p.public_note?`<h3>人工公开笔记</h3><p>${esc(p.public_note)}</p>`:""}<p class="disclaimer">DA、DG、TTA、OV 可以交叉。关键词命中不证明实验设置；不同数据集、类别空间与监督条件下的指标不能直接排名。</p><button class="ghost" id="single-ris">导出这篇题录 RIS ↓</button>`;
  $("single-ris").onclick=()=>downloadRIS([p],p.id.replace(/[^a-zA-Z0-9-]/g,"_")+".ris");
  if(!$("detail").open)$("detail").showModal();
 }
@@ -59,7 +66,7 @@ function downloadRIS(papers,name){
 }
 $("papers").addEventListener("click",e=>{const open=e.target.closest("[data-open]");if(open)showPaper(open.dataset.open);const star=e.target.closest("[data-star]");if(star){const id=star.dataset.star;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem("3d-seg-favorites",JSON.stringify([...favorites]));}catch{}render();}});
 for(const id of ["search","track","bucket","scope","sort"])$(id).addEventListener(id==="search"?"input":"change",()=>{shown=24;render();});
-$("reset").onclick=()=>{$("search").value="";$("track").value="";$("bucket").value="core";$("scope").value="all";$("sort").value="first_seen";shown=24;render();};
+$("reset").onclick=()=>{$("search").value="";$("track").value="";$("bucket").value="";$("scope").value="all";$("sort").value="first_seen";shown=24;render();};
 $("more").onclick=()=>{shown+=24;render();};$("export").onclick=()=>downloadRIS(filtered,"3d-seg-selection.ris");
 $("close").onclick=()=>$("detail").close();$("detail").addEventListener("click",e=>{if(e.target===$("detail"))$("detail").close();});
 $("sources").innerHTML=(D.status.sources||[]).map(s=>`<div class="source"><b>${esc(s.source)}</b><span class="${s.status==="ok"?"good":"bad"}">${s.status==="ok"?"成功":"失败"}${s.backlog_days?" · 仍有日期待回查":""}</span></div>${s.error?`<p class="muted">${esc(s.error)}</p>`:""}`).join("")||'<p class="muted">还没有抓取记录。运行 GitHub Actions 后，这里会显示每个查询的状态。</p>';
