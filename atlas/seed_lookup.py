@@ -59,6 +59,9 @@ def run_seed_lookup(config: dict, root=ROOT, client=None, now=None, limit=None) 
     path = root / "data/seed.json"
     seeds = read_json(path, [])
     store = read_json(root / "data/store.json", {})
+    if (store.get("last_run") or {}).get("status") == "failed":
+        report.update(status="skipped", note="discovery failed; title lookups retry next run")
+        return report
     known = set()
     for seed in seeds:
         known |= {key for key in identity_keys(seed) if key.startswith("arxiv:")}
@@ -67,12 +70,14 @@ def run_seed_lookup(config: dict, root=ROOT, client=None, now=None, limit=None) 
     budget = max(0, int(limit)) if limit else max(0, int(cfg.get("max_per_run", 40)))
     min_score = float(cfg.get("min_title_score", 0.97))
     retry_days = int(cfg.get("retry_days", 120))
-    seconds = max(0.0, float(cfg.get("max_seconds", 600)))
-    error_run = max(1, int(cfg.get("max_consecutive_errors", 5)))
+    seconds = max(0.0, float(cfg.get("max_seconds", 300)))
+    error_run = max(1, int(cfg.get("max_consecutive_errors", 3)))
     started = time.monotonic()
     consecutive = 0
     ar = config["arxiv"]
-    client = client or Client(ar["request_interval_seconds"], config["user_agent"], ar["timeout_seconds"], ar["attempts"])
+    # Fail fast: a rate-limited source must not consume the whole run budget.
+    client = client or Client(ar["request_interval_seconds"], config["user_agent"],
+                              min(30, int(ar["timeout_seconds"])), min(2, int(ar["attempts"])))
     moment = now or utcnow()
     changed = 0
     for seed in seeds:

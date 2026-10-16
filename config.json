@@ -67,10 +67,10 @@
   },
   "seed_lookup": {
     "enabled": true,
-    "max_per_run": 30,
+    "max_per_run": 20,
     "min_title_score": 0.97,
     "retry_days": 120,
-    "max_seconds": 600,
-    "max_consecutive_errors": 5
+    "max_seconds": 300,
+    "max_consecutive_errors": 3
   }
 }

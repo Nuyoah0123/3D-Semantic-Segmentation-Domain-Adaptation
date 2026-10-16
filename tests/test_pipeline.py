@@ -362,6 +362,11 @@ class LookupTests(TempProject):
             r=self.run_lookup(seeds,[feed([paper()])])
         self.assertEqual(r["checked"],1);self.assertEqual(r["aborted"],"time-budget")
         self.assertEqual(read_json(self.root/"data/seed.json")[1]["identifiers"]["arxiv"],[])
+    def test_skipped_when_discovery_failed(self):
+        store=copy.deepcopy(EMPTY);store["last_run"]={"status":"failed"}
+        write_json(self.root/"data/store.json",store)
+        r=self.run_lookup([self.seed()],[])
+        self.assertEqual(r["status"],"skipped");self.assertEqual(r["checked"],0)
     def test_author_mismatch_rejected(self):
         r=self.run_lookup([self.seed(authors=["Someone Else Entirely"])],[feed([paper()])])
         self.assertEqual(r["matched"],0)

@@ -16,4 +16,4 @@ if __name__ == "__main__":
         parser.error("--days must be 1..3650")
     report = run_update(load_config(), days=args.days, check_revisions=not args.no_revisions)
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    sys.exit(0 if report["status"] == "ok" else 2)
+    sys.exit(0 if report["status"] in {"ok", "partial"} else 2)

@@ -10,4 +10,4 @@ if __name__ == "__main__":
     limit = int(raw) if raw.isdigit() and int(raw) > 0 else None
     r = run_seed_lookup(load_config(), limit=limit)
     print(json.dumps(r, ensure_ascii=False, indent=2))
-    sys.exit(0 if r["status"] in {"ok", "disabled", "partial"} else 2)
+    sys.exit(0 if r["status"] in {"ok", "disabled", "partial", "skipped"} else 2)

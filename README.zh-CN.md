@@ -163,5 +163,7 @@ python scripts/review.py 'arxiv:实际编号' --state rejected --public no
 - **证据校验规则**：模型只看到编号候选句（S1…S90），结论必须引用候选句编号；结论里的数字必须出现在被引用的句子里。数字若出现在另一句候选句，会自动补挂该句作为证据；若候选句里完全没有该数字，则丢弃这条结论（findings/limitations）或拒绝整篇草稿（problem/method）。丢弃记录只写入 `data/store.json` 的 `ai_draft.dropped`，不会发布到网页。
 - **历史补跑**：Actions → Daily papers and deploy → Run workflow，`drafts` 填写本次最多生成多少篇（如 60）；`lookup` 填写本次最多做多少次 arXiv 标题匹配（如 135）。
 - **arXiv 标题匹配**：新增 `atlas/seed_lookup.py` 与 `scripts/resolve_seeds.py`。对没有 arXiv 编号的题录按标题检索 arXiv，要求标题相似度 ≥ 0.97 且作者姓氏一致；命中后写入 `identifiers.arxiv` 和 `arxiv_lookup` 标记（含相似度、命中编号，可人工复核），同一编号不会分配给两篇题录。未命中者 120 天后重试（`seed_lookup.retry_days`）。匹配成功后，编号巡检会把该题录导入 `data/store.json`，随后进入 AI 解读队列。
+- **匹配的自我节流**：若本轮抓取来源全部失败，标题匹配自动跳过（下一轮重试）；单轮最多 300 秒、最多 20 篇，连续 3 次请求失败立即中止，避免 arXiv 限流时拖垮整轮运行。
+- **运行红叉语义**：只有抓取来源全部失败或 AI 草稿步骤完全失败才触发 `report-failure`；部分来源失败只在站点状态栏显示“部分来源需要检查”，不阻断部署。
 - **并发推送**：数据提交步骤在 push 前先执行 `git pull --rebase --autostash`，避免与人工提交互相覆盖。
 - **相关配置**：`llm.include_imported`、`seed_lookup.{enabled,max_per_run,min_title_score,retry_days}`。
