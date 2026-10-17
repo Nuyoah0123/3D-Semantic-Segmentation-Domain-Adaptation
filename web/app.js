@@ -48,7 +48,7 @@ function aiSection(p){
  ${d.method?`<h3>② 使用方法</h3>${claimBlock(p,d.method)}`:""}
  ${(d.findings||[]).length?`<h3>③ 得到的结果</h3><ul class="ai">${claimList(p,d.findings)}</ul>`:""}
  ${open.length?`<h3>④ 尚未解决的问题</h3><ul class="ai">${claimListKinds(p,open)}</ul>`:`<h3>④ 尚未解决的问题</h3><p class="muted">作者未明确提到局限或未来方向，本条暂缺。</p>`}
- ${(d.insights||[]).length?`<h3>⑤ 对后续读者的启发 <span class="chip kind">编辑推断</span></h3><p class="disclaimer">以下为编辑基于本文证据的综合推断，不是作者原文结论，请结合原文核对。</p><ul class="ai">${insightList(p,d.insights)}</ul>`:""}
+ ${(d.insights||[]).length?`<h3>⑤ 对后续读者的启发 <span class="chip kind">编辑推断</span></h3><p class="disclaimer">以下为编辑基于本文证据的综合推断，不是作者原文结论，请结合原文核对。</p><ul class="ai">${insightList(p,d.insights)}</ul>`:(d.open_problems!==undefined?`<h3>⑤ 对后续读者的启发</h3><p class="muted">模型没有给出有依据的启发，本条暂缺。</p>`:"")}
  ${roles?`<h3>实验设置</h3><table class="roletable"><tbody>${roles}</tbody></table>`:""}`;}
 
 const TOPICS=D.topics||[];
