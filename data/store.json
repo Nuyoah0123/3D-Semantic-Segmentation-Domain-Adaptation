@@ -42310,7 +42310,7 @@
       "at": "2026-10-17T03:33:33Z"
     }
   ],
-  "revision_cursor": 148,
+  "revision_cursor": 1,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -43155,31 +43155,83 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-17T04:05:51Z",
+      "status": "failed",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 0,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T04:05:51Z",
+          "backlog_days": 0,
+          "status": "failed",
+          "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T04:05:51Z",
+          "backlog_days": 0,
+          "status": "failed",
+          "error": "SourceError: arXiv unavailable after retries: TimeoutError: The read operation timed out"
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T04:05:51Z",
+          "backlog_days": 0,
+          "status": "failed",
+          "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T04:05:51Z",
+          "backlog_days": 0,
+          "status": "failed",
+          "error": "SourceError: arXiv unavailable after retries: HTTP 503"
+        },
+        {
+          "source": "known-revisions",
+          "status": "failed",
+          "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-17T03:33:33Z",
+    "at": "2026-10-17T04:05:51Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-17T03:33:33Z",
-    "status": "partial",
+    "at": "2026-10-17T04:05:51Z",
+    "status": "failed",
     "counts": {
       "new": 0,
       "revised": 0,
-      "existing": 3,
+      "existing": 0,
       "metadata": 0,
-      "unchanged": 37,
+      "unchanged": 0,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T03:33:33Z",
+        "end": "2026-10-17T04:05:51Z",
         "backlog_days": 0,
         "status": "failed",
         "error": "SourceError: arXiv unavailable after retries: HTTP 429"
@@ -43187,15 +43239,15 @@
       {
         "source": "domain-generalization",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T03:33:33Z",
+        "end": "2026-10-17T04:05:51Z",
         "backlog_days": 0,
         "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 503"
+        "error": "SourceError: arXiv unavailable after retries: TimeoutError: The read operation timed out"
       },
       {
         "source": "open-vocabulary",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T03:33:33Z",
+        "end": "2026-10-17T04:05:51Z",
         "backlog_days": 0,
         "status": "failed",
         "error": "SourceError: arXiv unavailable after retries: HTTP 429"
@@ -43203,26 +43255,25 @@
       {
         "source": "test-time-adaptation",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T03:33:33Z",
+        "end": "2026-10-17T04:05:51Z",
         "backlog_days": 0,
         "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "error": "SourceError: arXiv unavailable after retries: HTTP 503"
       },
       {
         "source": "known-revisions",
-        "status": "ok",
-        "checked": 40,
-        "total_known": 187
+        "status": "failed",
+        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
   "last_full_success": "2026-10-16T21:17:34Z",
   "llm_last_run": {
-    "at": "2026-10-17T03:50:52Z",
+    "at": "2026-10-17T04:20:25Z",
     "status": "ok",
-    "attempted": 3,
-    "succeeded": 3,
+    "attempted": 0,
+    "succeeded": 0,
     "skipped": [
       {
         "id": "arxiv:2609.16755",
@@ -43231,8 +43282,8 @@
     ],
     "errors": [],
     "model": "gpt-6.1-sol",
-    "budget": 8,
-    "budget_used_today": 0
+    "budget": 25,
+    "budget_used_today": 3
   },
   "llm_budget": {
     "2026-10-16": 226,
