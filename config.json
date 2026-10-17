@@ -57,7 +57,7 @@
     "token_parameter": "max_completion_tokens",
     "include_imported": true,
     "library_max_per_run": 12,
-    "regenerate_legacy_drafts": true
+    "regenerate_legacy_drafts": false
   },
   "zotero": {
     "enabled": false,
