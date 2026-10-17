@@ -325,6 +325,17 @@ class AITests(TempProject):
         self.cfg["llm"]["regenerate_legacy_drafts"]=True
         second=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
         self.assertEqual(second["attempted"],1);self.assertEqual(second["succeeded"],1)
+    def test_model_outage_aborts_early(self):
+        self.cfg["llm"].update(enabled=True,max_per_run=5,max_per_utc_day=5,max_consecutive_model_errors=2)
+        s=copy.deepcopy(EMPTY)
+        for i in range(3):merge_paper(s,[],paper(aid="2610.0000%d"%i),iso(NOW))
+        write_json(self.root/"data/store.json",s)
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        loader=lambda p,cfg,root:copy.deepcopy(self.PAGES)
+        def gen(p,pages,cfg,key,base,model):
+            raise urllib.error.HTTPError("https://example.org/v1",503,"unavailable",None,None)
+        r=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(r["attempted"],2);self.assertEqual(r["aborted"],"model-unavailable")
     def test_summary_number_repair_pass(self):
         bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
         good=self.analysis();calls=[]

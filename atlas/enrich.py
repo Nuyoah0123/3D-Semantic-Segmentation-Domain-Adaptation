@@ -383,6 +383,8 @@ def run_library_enrichment(config: dict, root=ROOT, environ=None, *, generator=N
         return report
     report["model"] = model
     accepted = accepted_versions(cfg)
+    model_error_run = max(1, int(cfg.get("max_consecutive_model_errors", 5)))
+    consecutive_model_errors = 0
     budget = max(0, int(limit)) if limit else max(0, int(cfg.get("library_max_per_run", 12)))
     report["budget"] = budget
     loader = page_loader or default_page_loader
@@ -429,12 +431,20 @@ def run_library_enrichment(config: dict, root=ROOT, environ=None, *, generator=N
                          input_pages=[p["page"] for p in pages])
             seed["ai_draft"] = draft
             report["succeeded"] += 1
+            consecutive_model_errors = 0
         except Exception as error:
             entry = {"id": seed.get("id"), "type": type(error).__name__}
             message = str(error)
             if re.fullmatch(r"[a-z0-9\-]{3,40}", message):
                 entry["detail"] = message
             report["errors"].append(entry)
+            if isinstance(error, urllib.error.HTTPError) and error.code >= 500:
+                consecutive_model_errors += 1
+                if consecutive_model_errors >= model_error_run:
+                    report["aborted"] = "model-unavailable"
+                    break
+            else:
+                consecutive_model_errors = 0
         save()
     report["status"] = "failed" if report["errors"] and report["succeeded"] == 0 else ("partial" if report["errors"] else "ok")
     return report
@@ -480,6 +490,8 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
         return report
     report["model"] = model
     accepted = accepted_versions(cfg)
+    model_error_run = max(1, int(cfg.get("max_consecutive_model_errors", 5)))
+    consecutive_model_errors = 0
     date = report["at"][:10]
     ledger = store.setdefault("llm_budget", {})
     used = int(ledger.get(date, 0))
@@ -528,6 +540,7 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
                          input_pages=[p["page"] for p in pages])
             paper["ai_draft"] = draft
             report["succeeded"] += 1
+            consecutive_model_errors = 0
         except Exception as error:
             # Never log response bodies; only whitelisted validator labels are kept.
             entry = {"id": paper["id"], "type": type(error).__name__}
@@ -535,6 +548,13 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
             if re.fullmatch(r"[a-z0-9\-]{3,40}", message):
                 entry["detail"] = message
             report["errors"].append(entry)
+            if isinstance(error, urllib.error.HTTPError) and error.code >= 500:
+                consecutive_model_errors += 1
+                if consecutive_model_errors >= model_error_run:
+                    report["aborted"] = "model-unavailable"
+                    break
+            else:
+                consecutive_model_errors = 0
         save()
     if report["errors"] and report["succeeded"] == 0:
         report["status"] = "failed"
