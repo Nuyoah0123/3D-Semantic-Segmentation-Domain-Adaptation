@@ -20,3 +20,7 @@
 .absmeta{font-size:.78rem;color:var(--muted);margin:.15rem 0 .5rem}
 .absmeta a{color:var(--green)}
 .chip.kind{background:#eef6ec;border-color:#d5e6d2;color:var(--green)}
+.reviewrow{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .5rem}
+.reviewbtn{display:inline-block;padding:3px 8px;font-size:11px;border:1px solid var(--line);border-radius:3px;background:var(--white);color:var(--ink);text-decoration:none}
+.reviewbtn:hover{border-color:var(--green);color:var(--green)}
+dialog code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#f2f4ee;padding:1px 5px;border-radius:3px;font-size:11px}

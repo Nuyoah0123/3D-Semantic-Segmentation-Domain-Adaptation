@@ -1,0 +1,42 @@
+name: Apply editorial review
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: 3d-seg-review
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    # Only the repository owner can change review state.
+    if: github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Apply the review request
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/apply_issue_review.py
+      - name: Commit the editorial change
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/editorial.json
+          if ! git diff --cached --quiet; then
+            git pull --rebase --autostash origin main
+            git commit -m "review: apply issue #${{ github.event.issue.number }}"
+            git push origin HEAD:main
+          fi

@@ -190,3 +190,19 @@ AI 草稿的提示词升级为 `3d-seg-reading-v4`，每篇论文按固定五段
 旧版 v3 草稿仍然可读（第 4 段回退到「作者说明的局限」），并且**默认暂停批量重生成**：`llm.regenerate_legacy_drafts: false`。
 需要把存量草稿升级为五段式时，把该开关改为 true 再手动 dispatch（`drafts` 填一次能跑多少篇，例如 60），跑完后建议再改回 false；
 新抓取的论文始终按最新版本 v4 生成。
+
+## 人工审核怎么用（2026-10-17 新增网页通道）
+
+待审核标记来自自动抓取（`candidate` / `imported-unreviewed`）。审核状态保存在 `data/editorial.json`，自动抓取永远不会覆盖它。三种方式：
+
+1. **网页点按钮（推荐）**：打开任意论文的详情弹窗，最下方「人工审核」区块有 9 个按钮——
+   题录已核对 / 摘要已核对 / 已读全文 / 人工精选 / 驳回·隐藏，以及归类（核心方向 / 相关方法 / 移出列表）和「加公开备注」。
+   点击后会在 GitHub 打开一个预填好的 Issue（带 `review` 标签），**提交 Issue 即可**：工作流 `Apply editorial review` 会自动把审核结果写回 `data/editorial.json`、在 Issue 里回复并关闭它，随后站点自动重新部署。
+   出于安全考虑，只有**仓库所有者**提交的 Issue 会被处理。
+2. **命令行（本地）**：`python scripts/review.py 'arxiv:2610.00855' --state metadata-checked`，改完 commit & push 即可。
+3. **GitHub 网页直接改文件**：编辑 `data/editorial.json`，例如
+   ```json
+   { "arxiv:2610.00855": { "state": "abstract-checked", "reviewed_version": 1, "public_note": "已核对摘要" } }
+   ```
+
+状态说明：`metadata-checked`（题录已核对）/ `abstract-checked`（摘要已核对）/ `full-text-read`（人工全文阅读）会记录当时的版本号——论文出新版后站点自动显示「版本已变化 · 需重新核对」；`rejected` 或 `public: false` 会把论文从站点移除；`bucket` 可覆盖自动归类。

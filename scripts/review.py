@@ -3,29 +3,22 @@
 import argparse,json,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from atlas.common import ROOT,read_json,write_json,iso
-from atlas.site import STATES
+from atlas.common import ROOT
+from atlas.editorial import BUCKETS, REVIEW_STATES, TRACKS, apply_review
+
 if __name__=="__main__":
     p=argparse.ArgumentParser()
     p.add_argument("paper_id")
-    p.add_argument("--state",choices=sorted(STATES))
+    p.add_argument("--state",choices=list(REVIEW_STATES))
     p.add_argument("--public",choices=["yes","no"])
-    p.add_argument("--tracks",nargs="*",choices=["DA","DG","OV","TTA"])
-    p.add_argument("--bucket",choices=["core","related","excluded"])
+    p.add_argument("--tracks",nargs="*",choices=list(TRACKS))
+    p.add_argument("--bucket",choices=list(BUCKETS))
     p.add_argument("--public-note",help="This note may be published. Never enter private research here.")
     a=p.parse_args()
-    known={x["id"]:x for x in read_json(ROOT/"data/seed.json",[])}
-    known.update(read_json(ROOT/"data/store.json",{"records":{}})["records"])
-    if a.paper_id not in known:p.error("Unknown paper ID; copy ID from the website")
-    path=ROOT/"data/editorial.json";data=read_json(path,{})
-    e=data.setdefault(a.paper_id,{})
-    if a.state:
-        e["state"]=a.state
-        if a.state in {"metadata-checked","abstract-checked","full-text-read"}:
-            e["reviewed_version"]=known[a.paper_id].get("version")
-    if a.public:e["public"]=a.public=="yes"
-    if a.tracks is not None:e["tracks"]=a.tracks
-    if a.bucket:e["bucket"]=a.bucket
-    if a.public_note is not None:e["public_note"]=a.public_note
-    e["edited_at"]=iso();write_json(path,data)
-    print(json.dumps(e,ensure_ascii=False,indent=2))
+    try:
+        entry=apply_review(ROOT,a.paper_id,state=a.state,
+                           public=None if not a.public else a.public=="yes",
+                           tracks=a.tracks,bucket=a.bucket,public_note=a.public_note)
+    except ValueError as error:
+        p.error(str(error))
+    print(json.dumps(entry,ensure_ascii=False,indent=2))

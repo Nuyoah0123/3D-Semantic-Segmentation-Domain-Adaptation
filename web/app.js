@@ -99,10 +99,22 @@ function render(){
  $("empty").hidden=filtered.length!==0;$("more").hidden=shown>=filtered.length;
  $("papers").innerHTML=filtered.slice(0,shown).map(p=>`<article class="card"><div class="cardtop">${(p.classification.tracks||[]).map(t=>`<span class="chip track">${esc(t)}</span>`).join("")}${p.ai_draft?'<span class="chip ai">AI 解读</span>':''}${p.abstract&&!p.ai_draft?'<span class="chip abstract">仅摘要</span>':''}<span class="chip">${esc(tasks[p.classification.task]||"待核对")}</span><span class="muted">${esc(date(p.published))}</span></div><h3>${esc(p.title)}</h3><p class="authors">${esc((p.authors||[]).slice(0,3).join(" · "))}${(p.authors||[]).length>3?" et al.":""}</p><div>${(p.classification.methods||[]).slice(0,3).map(t=>`<span class="chip">${esc(t)}</span> `).join("")}</div><p class="review">${esc(states[p.review_status]||p.review_status)}${recent.has(p.id)?" · 近七天新收录":""}${revised.has(p.id)?" · 新版本":""}</p><div class="cardfoot"><button data-open="${esc(p.id)}">查看题录与依据 ↗</button>${link(p,"原文 ↗")}<button class="star" data-star="${esc(p.id)}" aria-label="收藏论文">${favorites.has(p.id)?"★":"☆"}</button></div></article>`).join("");
 }
+const REVIEW_ACTIONS=[["metadata-checked","题录已核对"],["abstract-checked","摘要已核对"],["full-text-read","已读全文"],["selected","人工精选"],["rejected","驳回/隐藏"]];
+const REVIEW_BUCKETS=[["core","核心方向"],["related","相关方法"],["excluded","移出列表"]];
+function reviewBlock(p){
+ const repo=(D.site&&D.site.repo)||"";if(!repo)return "";
+ const link=(label,extra,title)=>{const body=`<!-- atlas-review -->\npaper_id: ${p.id}\n${extra}\n\n<!-- 上面两行请勿修改；也可以在下一行补充公开备注（会显示在网站上） -->\n`;
+   const url=`https://github.com/${repo}/issues/new?labels=review&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+   return `<a class="reviewbtn" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`;};
+ const title=suffix=>`[审核] ${suffix} · ${p.title.slice(0,60)}`;
+ return `<h3>人工审核</h3><p class="muted">点击按钮会在 GitHub 打开预填好的审核 Issue，提交后由机器人写回仓库并部署（仅仓库所有者的提交生效）。当前状态：${esc(states[p.review_status]||p.review_status)}。</p>
+ <div class="reviewrow">${REVIEW_ACTIONS.map(([v,label])=>link(label,`state: ${v}`,title(label))).join("")}</div>
+ <div class="reviewrow">${REVIEW_BUCKETS.map(([v,label])=>link("归类："+label,`bucket: ${v}`,title(label))).join("")}${link("加公开备注","note: ","公开备注")}</div>
+ <p class="muted">命令行等价操作：<code>python scripts/review.py '${esc(p.id)}' --state metadata-checked</code>，改完 commit &amp; push 即可。</p>`;}
 function showPaper(id){
  const p=D.papers.find(x=>x.id===id);if(!p)return;
  const c=p.classification;
- $("detail-body").innerHTML=`<p class="eyebrow">${esc(p.id)} / PAPER RECORD</p><h2>${esc(p.title)}</h2><p>${esc((p.authors||[]).join(" · "))}</p><div class="detailmeta"><b>研究方向：</b>${esc((c.tracks||[]).join(" / ")||"待确认")}　<b>任务：</b>${esc(tasks[c.task]||"待确认")}<br><b>题录日期：</b>${esc(p.published||"未提供")}　<b>版本：</b>${esc(p.version||"待核对")}<br><b>本站首次发现：</b>${esc(p.first_seen?time(p.first_seen):"既有导入题录")}<br><b>阅读状态：</b>${esc(states[p.review_status]||p.review_status)}<br>${link(p,"打开论文来源 ↗")}</div><h3>分类依据与边界</h3><p>${esc(c.note||"题录级分类；尚未核对全文。")}</p><p class="muted">来源范围：${esc(c.basis)}。数据集、类别映射、训练与推理模态、目标域监督及模型选择协议仍需原文核对。</p>${abstractBlock(p)}${aiSection(p)}${p.public_note?`<h3>人工公开笔记</h3><p>${esc(p.public_note)}</p>`:""}<p class="disclaimer">DA、DG、TTA、OV 可以交叉。关键词命中不证明实验设置；不同数据集、类别空间与监督条件下的指标不能直接排名。</p><button class="ghost" id="single-ris">导出这篇题录 RIS ↓</button>`;
+ $("detail-body").innerHTML=`<p class="eyebrow">${esc(p.id)} / PAPER RECORD</p><h2>${esc(p.title)}</h2><p>${esc((p.authors||[]).join(" · "))}</p><div class="detailmeta"><b>研究方向：</b>${esc((c.tracks||[]).join(" / ")||"待确认")}　<b>任务：</b>${esc(tasks[c.task]||"待确认")}<br><b>题录日期：</b>${esc(p.published||"未提供")}　<b>版本：</b>${esc(p.version||"待核对")}<br><b>本站首次发现：</b>${esc(p.first_seen?time(p.first_seen):"既有导入题录")}<br><b>阅读状态：</b>${esc(states[p.review_status]||p.review_status)}<br>${link(p,"打开论文来源 ↗")}</div><h3>分类依据与边界</h3><p>${esc(c.note||"题录级分类；尚未核对全文。")}</p><p class="muted">来源范围：${esc(c.basis)}。数据集、类别映射、训练与推理模态、目标域监督及模型选择协议仍需原文核对。</p>${abstractBlock(p)}${aiSection(p)}${p.public_note?`<h3>人工公开笔记</h3><p>${esc(p.public_note)}</p>`:""}${reviewBlock(p)}<p class="disclaimer">DA、DG、TTA、OV 可以交叉。关键词命中不证明实验设置；不同数据集、类别空间与监督条件下的指标不能直接排名。</p><button class="ghost" id="single-ris">导出这篇题录 RIS ↓</button>`;
  $("single-ris").onclick=()=>downloadRIS([p],p.id.replace(/[^a-zA-Z0-9-]/g,"_")+".ris");
  if(!$("detail").open)$("detail").showModal();
 }

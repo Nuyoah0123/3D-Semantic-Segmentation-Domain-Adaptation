@@ -16,6 +16,7 @@ from atlas.enrich import (PROMPT_VERSION, build_snippets, default_page_loader, g
                           run_enrichment, run_library_enrichment, validate_analysis)
 from atlas.zotero_sync import sanitize_item, run_sync
 from atlas.seed_lookup import MARKER, run_seed_lookup, title_score
+from atlas.editorial import apply_review, parse_review_request
 from atlas.pdf_text import NoPdf, download_pdf
 from atlas.metadata import MARKER as ABSTRACT_MARKER, reconstruct_abstract, run_metadata_backfill, work_url
 import urllib.error
@@ -487,6 +488,41 @@ class MetadataTests(TempProject):
     def test_work_url_shapes(self):
         self.assertIn("https://doi.org/10.1234/abc",work_url(self.cfg,doi="https://doi.org/10.1234/abc"))
         self.assertIn("search=",work_url(self.cfg,title="Prototype learning"))
+
+class EditorialTests(TempProject):
+    def setUp(self):
+        super().setUp()
+        s=copy.deepcopy(EMPTY);merge_paper(s,[],paper(),iso(NOW));write_json(self.root/"data/store.json",s)
+    def store(self):return read_json(self.root/"data/store.json",{"records":{}})
+    def test_reviewed_state_binds_the_crawled_version(self):
+        entry=apply_review(self.root,paper()["id"],state="full-text-read",now=NOW)
+        self.assertEqual(entry["state"],"full-text-read");self.assertEqual(entry["reviewed_version"],1)
+        out=public_records(self.cfg,[],self.store(),read_json(self.root/"data/editorial.json",{}))
+        rec=[p for p in out if p["id"]==paper()["id"]][0]
+        self.assertTrue(rec["full_text_read"]);self.assertEqual(rec["review_status"],"full-text-read")
+    def test_reviewed_state_goes_stale_on_new_version(self):
+        apply_review(self.root,paper()["id"],state="abstract-checked",now=NOW)
+        store=self.store();merge_paper(store,[],paper(version=2),iso(NOW));write_json(self.root/"data/store.json",store)
+        out=public_records(self.cfg,[],self.store(),read_json(self.root/"data/editorial.json",{}))
+        rec=[p for p in out if p["id"]==paper()["id"]][0]
+        self.assertEqual(rec["review_status"],"review-stale")
+    def test_candidate_clears_the_version_binding(self):
+        apply_review(self.root,paper()["id"],state="full-text-read",now=NOW)
+        entry=apply_review(self.root,paper()["id"],state="candidate",now=NOW)
+        self.assertEqual(entry["state"],"candidate");self.assertNotIn("reviewed_version",entry)
+    def test_unknown_paper_and_state_rejected(self):
+        with self.assertRaises(ValueError):apply_review(self.root,"arxiv:nope",state="selected")
+        with self.assertRaises(ValueError):apply_review(self.root,paper()["id"],state="bogus")
+    def test_bucket_tracks_and_public_note(self):
+        entry=apply_review(self.root,paper()["id"],bucket="excluded",tracks=["DA","DG"],public_note="审阅备注",now=NOW)
+        self.assertEqual(entry["bucket"],"excluded");self.assertEqual(entry["tracks"],["DA","DG"]);self.assertEqual(entry["public_note"],"审阅备注")
+        out=public_records(self.cfg,[],self.store(),read_json(self.root/"data/editorial.json",{}))
+        self.assertEqual([p for p in out if p["id"]==paper()["id"]],[])
+    def test_parse_review_request(self):
+        parsed=parse_review_request("<!-- atlas-review -->\npaper_id: arxiv:2610.00001\nstate: metadata-checked\nnote: 备注")
+        self.assertEqual(parsed["paper_id"],"arxiv:2610.00001");self.assertEqual(parsed["state"],"metadata-checked")
+        with self.assertRaises(ValueError):parse_review_request("hello")
+        with self.assertRaises(ValueError):parse_review_request("<!-- atlas-review -->\nstate: selected")
 
 class LookupTests(TempProject):
     def seed(self,title="Domain Adaptation for 3D Semantic Segmentation",authors=None):

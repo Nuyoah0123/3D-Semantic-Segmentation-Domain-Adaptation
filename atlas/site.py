@@ -10,7 +10,7 @@ from email.utils import format_datetime
 from .common import ROOT, read_json, write_json, iso, utcnow, parse_time, safe_url
 from .pipeline import EMPTY
 
-STATES={"candidate","selected","metadata-checked","abstract-checked","full-text-read","rejected"}
+from .editorial import REVIEW_STATES as STATES
 
 def public_records(config, seeds, store, editorial, include_imports=False):
     all_papers={p["id"]:copy.deepcopy(p) for p in seeds}
@@ -88,7 +88,7 @@ def build(config,root=ROOT,out:Path|None=None,include_imports=False,now=None):
     events=[e for e in store["events"] if e["paper_id"] in visible and e["kind"] in {"discovered","revised","metadata-updated"}]
     last=store.get("last_run",{"status":"not-run","at":None,"counts":{},"sources":[]})
     # Status labels and query coverage only, no raw request bodies or credentials.
-    payload={"site":{"name":config["name"],"name_zh":config["name_zh"],"timezone":config["display_timezone"],"preview":include_imports},"built_at":iso(now),"status":last,"last_full_success":store.get("last_full_success"),"index_count":len(seeds),"papers":papers,"events":events[-500:],"integrations":{"zotero":store.get("zotero_last_run",{}),"llm":store.get("llm_last_run",{})},"topics":config.get("topics",[]),"policy":{"abstracts":config["publication"]["publish_abstracts"],"ai_drafts":config["publication"]["publish_ai_drafts"]}}
+    payload={"site":{"name":config["name"],"name_zh":config["name_zh"],"timezone":config["display_timezone"],"preview":include_imports,"repo":(config.get("review") or {}).get("repo","")},"built_at":iso(now),"status":last,"last_full_success":store.get("last_full_success"),"index_count":len(seeds),"papers":papers,"events":events[-500:],"integrations":{"zotero":store.get("zotero_last_run",{}),"llm":store.get("llm_last_run",{})},"topics":config.get("topics",[]),"policy":{"abstracts":config["publication"]["publish_abstracts"],"ai_drafts":config["publication"]["publish_ai_drafts"]}}
     serialized=json.dumps(payload,ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace("\u2028","\\u2028").replace("\u2029","\\u2029")
     (out/"data.js").write_text("window.ATLAS = "+serialized+";\n",encoding="utf-8")
     write_json(out/"data.json",payload)
