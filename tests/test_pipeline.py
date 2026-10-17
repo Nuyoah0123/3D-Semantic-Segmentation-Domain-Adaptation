@@ -310,6 +310,21 @@ class AITests(TempProject):
         out=self.analysis();out["findings"].append({"text":"另一个结果。","evidence":[{"snippet":"S99"}]})
         result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",build_snippets(self.PAGES))
         self.assertEqual(len(result["findings"]),1);self.assertEqual(result["dropped"][0]["field"],"findings")
+    def test_legacy_drafts_paused_by_default(self):
+        self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1)
+        p=paper();s=copy.deepcopy(EMPTY);merge_paper(s,[],p,iso(NOW))
+        rec=s["records"][p["id"]]
+        rec["ai_draft"]={"summary_zh":"旧版草稿","stale":False,"prompt_version":"3d-seg-evidence-v3",
+                         "source_hash":digest([rec["title"],rec.get("abstract",""),rec.get("version")])}
+        write_json(self.root/"data/store.json",s)
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        loader=lambda p,cfg,root:copy.deepcopy(self.PAGES)
+        gen=lambda p,pages,cfg,key,base,model:copy.deepcopy(self.analysis())
+        first=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(first["attempted"],0);self.assertEqual(first["succeeded"],0)
+        self.cfg["llm"]["regenerate_legacy_drafts"]=True
+        second=run_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader)
+        self.assertEqual(second["attempted"],1);self.assertEqual(second["succeeded"],1)
     def test_summary_number_repair_pass(self):
         bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
         good=self.analysis();calls=[]

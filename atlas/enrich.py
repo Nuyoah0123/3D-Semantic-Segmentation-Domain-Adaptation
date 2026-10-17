@@ -21,7 +21,23 @@ from .pdf_text import NoPdf, PdfError, download_external_pdf, download_pdf, load
 from .pipeline import EMPTY
 
 PROMPT_VERSION = "3d-seg-reading-v4"
-ACCEPTED_DRAFT_VERSIONS = {PROMPT_VERSION}
+LEGACY_DRAFT_VERSIONS = {"3d-seg-evidence-v2", "3d-seg-evidence-v3"}
+ACCEPTED_DRAFT_VERSIONS = LEGACY_DRAFT_VERSIONS | {PROMPT_VERSION}
+
+
+def accepted_versions(cfg: dict) -> set:
+    """Which stored drafts count as current.
+
+    Legacy drafts stay readable and are NOT regenerated unless the operator
+    opts in with llm.regenerate_legacy_drafts (bulk upgrades cost API calls).
+    """
+    if (cfg or {}).get("regenerate_legacy_drafts"):
+        return {PROMPT_VERSION}
+    return legacy_versions()
+
+
+def legacy_versions() -> set:
+    return set(ACCEPTED_DRAFT_VERSIONS)
 ROLE_KEYS = ("setting", "supervision", "modalities", "datasets", "evaluation")
 TOP_KEYS = {"summary_zh", "problem", "method", "findings", "open_problems", "insights", "role"}
 OPEN_KINDS = ("limitation", "future-work")
@@ -366,6 +382,7 @@ def run_library_enrichment(config: dict, root=ROOT, environ=None, *, generator=N
         save()
         return report
     report["model"] = model
+    accepted = accepted_versions(cfg)
     budget = max(0, int(limit)) if limit else max(0, int(cfg.get("library_max_per_run", 12)))
     report["budget"] = budget
     loader = page_loader or default_page_loader
@@ -387,7 +404,7 @@ def run_library_enrichment(config: dict, root=ROOT, environ=None, *, generator=N
             continue
         expected = digest([seed.get("title"), seed.get("abstract", ""), seed.get("version")])
         draft = seed.get("ai_draft") or {}
-        if (draft.get("source_hash") == expected and draft.get("prompt_version") in ACCEPTED_DRAFT_VERSIONS
+        if (draft.get("source_hash") == expected and draft.get("prompt_version") in accepted
                 and not draft.get("stale")):
             continue
         try:
@@ -462,6 +479,7 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
         save()
         return report
     report["model"] = model
+    accepted = accepted_versions(cfg)
     date = report["at"][:10]
     ledger = store.setdefault("llm_budget", {})
     used = int(ledger.get(date, 0))
@@ -488,7 +506,7 @@ def run_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, pag
             continue
         expected = digest([paper["title"], paper.get("abstract", ""), paper.get("version")])
         draft = paper.get("ai_draft") or {}
-        if draft.get("source_hash") == expected and draft.get("prompt_version") in ACCEPTED_DRAFT_VERSIONS and not draft.get("stale"):
+        if draft.get("source_hash") == expected and draft.get("prompt_version") in accepted and not draft.get("stale"):
             continue
         try:
             pages = loader(paper, cfg, root)
