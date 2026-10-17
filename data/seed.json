@@ -7584,7 +7584,9 @@
       "doi": [
         "10.1109/TPAMI.2022.3159589"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2101.07253"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/9737217",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -7617,6 +7619,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2101.07253"
     }
   },
   {
@@ -7635,7 +7643,9 @@
       "doi": [
         "10.1109/CVPR42600.2020.01262"
       ],
-      "arxiv": []
+      "arxiv": [
+        "1911.12676"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/9157477",
     "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -7671,6 +7681,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "1911.12676"
     }
   },
   {
@@ -7729,6 +7745,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -7746,7 +7767,9 @@
       "doi": [
         "10.1109/CVPRW59228.2023.00015"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2304.02991"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10208374/",
     "venue": "2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
@@ -8004,6 +8027,12 @@
         9,
         10
       ]
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2304.02991"
     }
   },
   {
@@ -8062,6 +8091,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -8078,7 +8112,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2604.19379"
+      ]
     },
     "url": null,
     "venue": "Computer Vision and Pattern Recognition",
@@ -8117,6 +8153,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2604.19379"
     }
   },
   {
@@ -8230,7 +8272,7 @@
     "legacy_core": true,
     "oa_pdf": "https://iris.uniroma1.it/bitstream/11573/1666767/1/Saltori_CoSMix_2022.pdf",
     "abstract_lookup": {
-      "at": "2026-10-17T05:56:59Z",
+      "at": "2026-10-17T07:32:15Z",
       "result": "ok",
       "source": "openalex",
       "abstract": false,
@@ -8578,7 +8620,9 @@
       "doi": [
         "10.1609/aaai.v38i6.28432"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2407.09787"
+      ]
     },
     "url": "https://doi.org/10.1609/aaai.v38i6.28432",
     "venue": "Proceedings of the Thirty-Eighth AAAI Conference on Artificial Intelligence and Thirty-Sixth Conference on Innovative Applications of Artificial Intelligence and Fourteenth Symposium on Educational Advances in Artificial Intelligence",
@@ -8616,6 +8660,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2407.09787"
     }
   },
   {
@@ -8633,7 +8683,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2408.11280"
+      ]
     },
     "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_Exploring_Scene_Affinity_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2025_paper.html",
     "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -8665,6 +8717,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2408.11280"
     }
   },
   {
@@ -8717,6 +8775,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -8737,7 +8800,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2310.08820"
+      ]
     },
     "url": "https://link.springer.com/10.1007/978-3-031-72775-7_4",
     "venue": "Computer Vision – ECCV 2024",
@@ -8767,6 +8832,12 @@
       "at": "2026-10-17T03:10:26Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2310.08820"
     }
   },
   {
@@ -8900,7 +8971,9 @@
       "doi": [
         "10.1109/TPAMI.2026.3651319"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2501.18592"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/11342305",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -8933,6 +9006,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2501.18592"
     }
   },
   {
@@ -8952,7 +9031,9 @@
       "doi": [
         "10.1609/aaai.v37i3.25448"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2307.04231"
+      ]
     },
     "url": "https://doi.org/10.1609/aaai.v37i3.25448",
     "venue": "Proceedings of the Thirty-Seventh AAAI Conference on Artificial Intelligence and Thirty-Fifth Conference on Innovative Applications of Artificial Intelligence and Thirteenth Symposium on Educational Advances in Artificial Intelligence",
@@ -8986,6 +9067,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2307.04231"
     }
   },
   {
@@ -9288,7 +9375,9 @@
       "doi": [
         "10.1609/aaai.v36i2.20040"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2112.04680"
+      ]
     },
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/20040",
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
@@ -9323,6 +9412,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2112.04680"
     }
   },
   {
@@ -9630,6 +9725,11 @@
       "at": "2026-10-17T03:10:26Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -9741,6 +9841,11 @@
       "at": "2026-10-17T03:10:26Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -9808,7 +9913,9 @@
       "doi": [
         "10.1109/TPAMI.2025.3583071"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2506.23227"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/11050997",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -9841,6 +9948,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2506.23227"
     }
   },
   {
@@ -9923,7 +10036,9 @@
       "doi": [
         "10.1109/ICCVW60793.2023.00436"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2309.12140"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10350404",
     "venue": "2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
@@ -9960,6 +10075,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2309.12140"
     }
   },
   {
@@ -10123,6 +10244,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -10141,7 +10267,9 @@
       "doi": [
         "10.1609/aaai.v39i18.34080"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2503.06106"
+      ]
     },
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34080",
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
@@ -10180,6 +10308,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2503.06106"
     }
   },
   {
@@ -10193,7 +10327,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2504.06389"
+      ]
     },
     "url": null,
     "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -10231,6 +10367,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T07:30:39Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2504.06389"
     }
   },
   {

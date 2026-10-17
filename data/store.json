@@ -12107,7 +12107,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -12354,7 +12354,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -13841,7 +13841,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -15147,7 +15147,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -16492,7 +16492,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -17058,7 +17058,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -17538,7 +17538,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17735,7 +17735,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -17992,7 +17992,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -18170,7 +18170,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -18987,7 +18987,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -19195,7 +19195,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -19452,7 +19452,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -20164,7 +20164,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -20409,7 +20409,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20637,7 +20637,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20863,7 +20863,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -21096,7 +21096,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -21327,7 +21327,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -22008,7 +22008,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -22226,7 +22226,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -22774,7 +22774,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -23224,7 +23224,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -23518,7 +23518,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -23753,7 +23753,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24436,7 +24436,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -24738,7 +24738,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -24926,7 +24926,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -25145,7 +25145,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -26157,7 +26157,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -26431,7 +26431,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -26611,7 +26611,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -37550,7 +37550,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -41411,7 +41411,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T21:00:28Z",
-      "last_seen": "2026-10-16T21:17:34Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -41758,7 +41758,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T21:00:28Z",
-      "last_seen": "2026-10-16T21:00:28Z",
+      "last_seen": "2026-10-17T07:30:19Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45297,28 +45297,440 @@
           14
         ]
       }
+    },
+    "W0080": {
+      "id": "W0080",
+      "title": "HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation",
+      "authors": [
+        "Linglin Jing",
+        "Yiming Ding",
+        "Yunpeng Gao",
+        "Zhigang Wang",
+        "Xu Yan",
+        "Dong Wang",
+        "Gerald Schaefer",
+        "Hui Fang",
+        "Bin Zhao",
+        "Xuelong Li"
+      ],
+      "abstract": "Event-based semantic segmentation has gained popularity due to its capability to deal with scenarios under high-speed motion and extreme lighting conditions, which cannot be addressed by conventional RGB cameras. Since it is hard to annotate event data, previous approaches rely on event-to-image reconstruction to obtain pseudo labels for training. However, this will inevitably introduce noise, and learning from noisy pseudo labels, especially when generated from a single source, may reinforce the errors. This drawback is also called confirmation bias in pseudo-labeling. In this paper, we propose a novel hybrid pseudo-labeling framework for unsupervised event-based semantic segmentation, HPL-ESS, to alleviate the influence of noisy pseudo labels. In particular, we first employ a plain unsupervised domain adaptation framework as our baseline, which can generate a set of pseudo labels through self-training. Then, we incorporate offline event-to-image reconstruction into the framework, and obtain another set of pseudo labels by predicting segmentation maps on the reconstructed images. A noisy label learning strategy is designed to mix the two sets of pseudo labels and enhance the quality. Moreover, we propose a soft prototypical alignment module to further improve the consistency of target domain features. Extensive experiments show that our proposed method outperforms existing state-of-the-art methods by a large margin on the DSEC-Semantic dataset (+5.88% accuracy, +10.32% mIoU), which even surpasses several supervised methods.",
+      "published": "2024-03-25T14:02:33Z",
+      "updated": "2024-03-25T14:02:33Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2403.16788"
+        ],
+        "doi": [
+          "10.1109/CVPR52733.2024.02182"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2403.16788",
+      "pdf": "https://arxiv.org/pdf/2403.16788",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "eudo labels. In particular, we first employ a plain unsupervised domain adaptation framework as our baseline, which can generate a set of pseudo labels through self-training. Then, w"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0105": {
+      "id": "W0105",
+      "title": "PCoTTA: Continual Test-Time Adaptation for Multi-Task Point Cloud Understanding",
+      "authors": [
+        "Jincen Jiang",
+        "Qianyu Zhou",
+        "Yuhang Li",
+        "Xinkui Zhao",
+        "Meili Wang",
+        "Lizhuang Ma",
+        "Jian Chang",
+        "Jian Jun Zhang",
+        "Xuequan Lu"
+      ],
+      "abstract": "In this paper, we present PCoTTA, an innovative, pioneering framework for Continual Test-Time Adaptation (CoTTA) in multi-task point cloud understanding, enhancing the model's transferability towards the continually changing target domain. We introduce a multi-task setting for PCoTTA, which is practical and realistic, handling multiple tasks within one unified model during the continual adaptation. Our PCoTTA involves three key components: automatic prototype mixture (APM), Gaussian Splatted feature shifting (GSFS), and contrastive prototype repulsion (CPR). Firstly, APM is designed to automatically mix the source prototypes with the learnable prototypes with a similarity balancing factor, avoiding catastrophic forgetting. Then, GSFS dynamically shifts the testing sample toward the source domain, mitigating error accumulation in an online manner. In addition, CPR is proposed to pull the nearest learnable prototype close to the testing feature and push it away from other prototypes, making each prototype distinguishable during the adaptation. Experimental comparisons lead to a new benchmark, demonstrating PCoTTA's superiority in boosting the model's transferability towards the continually changing target domain.",
+      "published": "2024-11-01T14:41:36Z",
+      "updated": "2024-11-01T14:41:36Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2411.00632"
+        ],
+        "doi": [
+          "10.52202/079017-3050"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2411.00632",
+      "pdf": "https://arxiv.org/pdf/2411.00632",
+      "venue": "arXiv",
+      "comment": "Accepted to NeurIPS 2024",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "TTA"
+        ],
+        "task": "adjacent",
+        "methods": [
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "TTA",
+            "quote": "PCoTTA: Continual Test-Time Adaptation for Multi-Task Point Cloud Understanding\nIn this paper, we present PCoTTA, an innovative, pion"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0088": {
+      "id": "W0088",
+      "title": "ProtoGMM: Multi-prototype Gaussian-Mixture-based Domain Adaptation Model for Semantic Segmentation",
+      "authors": [
+        "Nazanin Moradinasab",
+        "Laura S. Shankman",
+        "Rebecca A. Deaton",
+        "Gary K. Owens",
+        "Donald E. Brown"
+      ],
+      "abstract": "Domain adaptive semantic segmentation aims to generate accurate and dense predictions for an unlabeled target domain by leveraging a supervised model trained on a labeled source domain. The prevalent self-training approach involves retraining the dense discriminative classifier of $p(class|pixel feature)$ using the pseudo-labels from the target domain. While many methods focus on mitigating the issue of noisy pseudo-labels, they often overlook the underlying data distribution p(pixel feature|class) in both the source and target domains. To address this limitation, we propose the multi-prototype Gaussian-Mixture-based (ProtoGMM) model, which incorporates the GMM into contrastive losses to perform guided contrastive learning. Contrastive losses are commonly executed in the literature using memory banks, which can lead to class biases due to underrepresented classes. Furthermore, memory banks often have fixed capacities, potentially restricting the model's ability to capture diverse representations of the target/source domains. An alternative approach is to use global class prototypes (i.e. averaged features per category). However, the global prototypes are based on the unimodal distribution assumption per class, disregarding within-class variation. To address these challenges, we propose the ProtoGMM model. This novel approach involves estimating the underlying multi-prototype source distribution by utilizing the GMM on the feature space of the source samples. The components of the GMM model act as representative prototypes. To achieve increased intra-class semantic similarity, decreased inter-class similarity, and domain alignment between the source and target domains, we employ multi-prototype contrastive learning between source distribution and target samples. The experiments show the effectiveness of our method on UDA benchmarks.",
+      "published": "2024-06-27T14:50:50Z",
+      "updated": "2024-06-27T14:50:50Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2406.19225"
+        ],
+        "doi": [
+          "10.1109/ICMLA61862.2024.00020"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2406.19225",
+      "pdf": "https://arxiv.org/pdf/2406.19225",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ProtoGMM: Multi-prototype Gaussian-Mixture-based Domain Adaptation Model for Semantic Segmentation\nDomain adaptive semantic segmentation aims to generate accurate and"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0122": {
+      "id": "W0122",
+      "title": "Fusion-then-Distillation: Toward Cross-modal Positive Distillation for Domain Adaptive 3D Semantic Segmentation",
+      "authors": [
+        "Yao Wu",
+        "Mingwei Xing",
+        "Yachao Zhang",
+        "Yuan Xie",
+        "Yanyun Qu"
+      ],
+      "abstract": "In cross-modal unsupervised domain adaptation, a model trained on source-domain data (e.g., synthetic) is adapted to target-domain data (e.g., real-world) without access to target annotation. Previous methods seek to mutually mimic cross-modal outputs in each domain, which enforces a class probability distribution that is agreeable in different domains. However, they overlook the complementarity brought by the heterogeneous fusion in cross-modal learning. In light of this, we propose a novel fusion-then-distillation (FtD++) method to explore cross-modal positive distillation of the source and target domains for 3D semantic segmentation. FtD++ realizes distribution consistency between outputs not only for 2D images and 3D point clouds but also for source-domain and augment-domain. Specially, our method contains three key ingredients. First, we present a model-agnostic feature fusion module to generate the cross-modal fusion representation for establishing a latent space. In this space, two modalities are enforced maximum correlation and complementarity. Second, the proposed cross-modal positive distillation preserves the complete information of multi-modal input and combines the semantic content of the source domain with the style of the target domain, thereby achieving domain-modality alignment. Finally, cross-modal debiased pseudo-labeling is devised to model the uncertainty of pseudo-labels via a self-training manner. Extensive experiments report state-of-the-art results on several domain adaptive scenarios under unsupervised and semi-supervised settings. Code is available at https://github.com/Barcaaaa/FtD-PlusPlus.",
+      "published": "2024-10-25T10:14:48Z",
+      "updated": "2024-10-25T10:14:48Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2410.19446"
+        ],
+        "doi": [
+          "10.1109/TCSVT.2025.3545971"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2410.19446",
+      "pdf": "https://arxiv.org/pdf/2410.19446",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA"
+        ],
+        "task": "semantic",
+        "methods": [
+          "self-training",
+          "cross-modal",
+          "distillation",
+          "augmentation",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "in Adaptive 3D Semantic Segmentation\nIn cross-modal unsupervised domain adaptation, a model trained on source-domain data (e.g., synthetic) is adapted to target-domain data (e.g., re"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0102": {
+      "id": "W0102",
+      "title": "Dual Prototype Evolving for Test-Time Generalization of Vision-Language Models",
+      "authors": [
+        "Ce Zhang",
+        "Simon Stepputtis",
+        "Katia Sycara",
+        "Yaqi Xie"
+      ],
+      "abstract": "Test-time adaptation, which enables models to generalize to diverse data with unlabeled test samples, holds significant value in real-world scenarios. Recently, researchers have applied this setting to advanced pre-trained vision-language models (VLMs), developing approaches such as test-time prompt tuning to further extend their practical applicability. However, these methods typically focus solely on adapting VLMs from a single modality and fail to accumulate task-specific knowledge as more samples are processed. To address this, we introduce Dual Prototype Evolving (DPE), a novel test-time adaptation approach for VLMs that effectively accumulates task-specific knowledge from multi-modalities. Specifically, we create and evolve two sets of prototypes--textual and visual--to progressively capture more accurate multi-modal representations for target classes during test time. Moreover, to promote consistent multi-modal representations, we introduce and optimize learnable residuals for each test sample to align the prototypes from both modalities. Extensive experimental results on 15 benchmark datasets demonstrate that our proposed DPE consistently outperforms previous state-of-the-art methods while also exhibiting competitive computational efficiency. Code is available at https://github.com/zhangce01/DPE-CLIP.",
+      "published": "2024-10-16T17:59:49Z",
+      "updated": "2024-10-16T17:59:49Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2410.12790"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2410.12790",
+      "pdf": "https://arxiv.org/pdf/2410.12790",
+      "venue": "arXiv",
+      "comment": "Accepted by NeurIPS 2024. Project page: https://zhangce01.github.io/DPE-CLIP",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "TTA"
+        ],
+        "task": "other",
+        "methods": [
+          "cross-modal",
+          "vision-language",
+          "prototype",
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "TTA",
+            "quote": "Evolving for Test-Time Generalization of Vision-Language Models\nTest-time adaptation, which enables models to generalize to diverse data with unlabeled test samples, holds signifi"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0099": {
+      "id": "W0099",
+      "title": "Commonsense Prototype for Outdoor Unsupervised 3D Object Detection",
+      "authors": [
+        "Hai Wu",
+        "Shijia Zhao",
+        "Xun Huang",
+        "Chenglu Wen",
+        "Xin Li",
+        "Cheng Wang"
+      ],
+      "abstract": "The prevalent approaches of unsupervised 3D object detection follow cluster-based pseudo-label generation and iterative self-training processes. However, the challenge arises due to the sparsity of LiDAR scans, which leads to pseudo-labels with erroneous size and position, resulting in subpar detection performance. To tackle this problem, this paper introduces a Commonsense Prototype-based Detector, termed CPD, for unsupervised 3D object detection. CPD first constructs Commonsense Prototype (CProto) characterized by high-quality bounding box and dense points, based on commonsense intuition. Subsequently, CPD refines the low-quality pseudo-labels by leveraging the size prior from CProto. Furthermore, CPD enhances the detection accuracy of sparsely scanned objects by the geometric knowledge from CProto. CPD outperforms state-of-the-art unsupervised 3D detectors on Waymo Open Dataset (WOD), PandaSet, and KITTI datasets by a large margin. Besides, by training CPD on WOD and testing on KITTI, CPD attains 90.85% and 81.01% 3D Average Precision on easy and moderate car classes, respectively. These achievements position CPD in close proximity to fully supervised detectors, highlighting the significance of our method. The code will be available at https://github.com/hailanyi/CPD.",
+      "published": "2024-04-25T10:38:33Z",
+      "updated": "2024-06-26T10:51:51Z",
+      "version": 3,
+      "identifiers": {
+        "arxiv": [
+          "2404.16493"
+        ],
+        "doi": [
+          "10.1109/CVPR52733.2024.01418"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2404.16493",
+      "pdf": "https://arxiv.org/pdf/2404.16493",
+      "venue": "arXiv",
+      "comment": "Accepted by CVPR 2024",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "adjacent",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
+    },
+    "W0078": {
+      "id": "W0078",
+      "title": "Global High Categorical Resolution Land Cover Mapping via Weak Supervision",
+      "authors": [
+        "Xin-Yi Tong",
+        "Runmin Dong",
+        "Xiao Xiang Zhu"
+      ],
+      "abstract": "Land cover information is indispensable for advancing the United Nations' sustainable development goals, and land cover mapping under a more detailed category system would significantly contribute to economic livelihood tracking and environmental degradation measurement. However, the substantial difficulty in acquiring fine-grained training data makes the implementation of this task particularly challenging. Here, we propose to combine fully labeled source domain and weakly labeled target domain for weakly supervised domain adaptation (WSDA). This is beneficial as the utilization of sparse and coarse weak labels can considerably alleviate the labor required for precise and detailed land cover annotation. Specifically, we introduce the Prototype-based pseudo-label Rectification and Expansion (PRE) approach, which leverages the prototypes (i.e., the class-wise feature centroids) as the bridge to connect sparse labels and global feature distributions. According to the feature distances to the prototypes, the confidence of pseudo-labels predicted in the unlabeled regions of the target domain is assessed. This confidence is then utilized to guide the dynamic expansion and rectification of pseudo-labels. Based on PRE, we carry out high categorical resolution land cover mapping for 10 cities in different regions around the world, severally using PlanetScope, Gaofen-1, and Sentinel-2 satellite images. In the study areas, we achieve cross-sensor, cross-category, and cross-continent WSDA, with the overall accuracy exceeding 80%. The promising results indicate that PRE is capable of reducing the dependency of land cover classification on high-quality annotations, thereby improving label efficiency. We expect our work to enable global fine-grained land cover mapping, which in turn promote Earth observation to provide more precise and thorough information for environmental monitoring.",
+      "published": "2024-06-02T23:18:12Z",
+      "updated": "2024-06-02T23:18:12Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2406.00891"
+        ],
+        "doi": [
+          "10.1016/j.isprsjprs.2024.12.017"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2406.00891",
+      "pdf": "https://arxiv.org/pdf/2406.00891",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": true,
+      "origin": "arxiv",
+      "first_seen": "2026-10-17T07:30:19Z",
+      "last_seen": "2026-10-17T07:30:19Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "other",
+        "methods": [
+          "self-training",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ce domain and weakly labeled target domain for weakly supervised domain adaptation (WSDA). This is beneficial as the utilization of sparse and coarse weak labels can considerably all"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": []
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-16T21:17:34Z",
-      "last_success": "2026-10-16T21:17:34Z"
+      "completed_until": "2026-10-17T07:30:19Z",
+      "last_success": "2026-10-17T07:30:19Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-16T21:17:34Z",
-      "last_success": "2026-10-16T21:17:34Z"
+      "completed_until": "2026-10-17T07:30:19Z",
+      "last_success": "2026-10-17T07:30:19Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-16T21:17:34Z",
-      "last_success": "2026-10-16T21:17:34Z"
+      "completed_until": "2026-10-17T07:30:19Z",
+      "last_success": "2026-10-17T07:30:19Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-16T21:17:34Z",
-      "last_success": "2026-10-16T21:17:34Z"
+      "completed_until": "2026-10-17T07:30:19Z",
+      "last_success": "2026-10-17T07:30:19Z"
     }
   },
   "events": [
@@ -46574,9 +46986,58 @@
       "paper_id": "W0103",
       "title": "Memory-Assisted Sub-Prototype Mining for Universal Domain Adaptation",
       "at": "2026-10-17T05:40:04Z"
+    },
+    {
+      "key": "5584789501d77205f5b9bcf9",
+      "kind": "indexed-existing",
+      "paper_id": "W0080",
+      "title": "HPL-ESS: Hybrid Pseudo-Labeling for Unsupervised Event-based Semantic Segmentation",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "d8cc6e043079dfa4568795ea",
+      "kind": "indexed-existing",
+      "paper_id": "W0105",
+      "title": "PCoTTA: Continual Test-Time Adaptation for Multi-Task Point Cloud Understanding",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "85c823e5d9d49ff0ed778601",
+      "kind": "indexed-existing",
+      "paper_id": "W0088",
+      "title": "ProtoGMM: Multi-prototype Gaussian-Mixture-based Domain Adaptation Model for Semantic Segmentation",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "fd40d4cc5dd8069c37b203a1",
+      "kind": "indexed-existing",
+      "paper_id": "W0122",
+      "title": "Fusion-then-Distillation: Toward Cross-modal Positive Distillation for Domain Adaptive 3D Semantic Segmentation",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "26254faf020cec2a07a8725c",
+      "kind": "indexed-existing",
+      "paper_id": "W0102",
+      "title": "Dual Prototype Evolving for Test-Time Generalization of Vision-Language Models",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "230a503ec2f5dde1585973c8",
+      "kind": "indexed-existing",
+      "paper_id": "W0099",
+      "title": "Commonsense Prototype for Outdoor Unsupervised 3D Object Detection",
+      "at": "2026-10-17T07:30:19Z"
+    },
+    {
+      "key": "a404a9f35e7383dc1118c1a8",
+      "kind": "indexed-existing",
+      "paper_id": "W0078",
+      "title": "Global High Categorical Resolution Land Cover Mapping via Weak Supervision",
+      "at": "2026-10-17T07:30:19Z"
     }
   ],
-  "revision_cursor": 41,
+  "revision_cursor": 81,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -47526,58 +47987,111 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-17T07:30:19Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 0,
+        "existing": 7,
+        "metadata": 0,
+        "unchanged": 35,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T07:30:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T07:30:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T07:30:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-09T21:17:34Z",
+          "end": "2026-10-17T07:30:19Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 187
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-17T05:40:04Z",
+    "at": "2026-10-17T07:30:19Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-17T05:40:04Z",
-    "status": "partial",
+    "at": "2026-10-17T07:30:19Z",
+    "status": "ok",
     "counts": {
       "new": 0,
       "revised": 0,
-      "existing": 6,
+      "existing": 7,
       "metadata": 0,
-      "unchanged": 34,
+      "unchanged": 35,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T05:40:04Z",
+        "end": "2026-10-17T07:30:19Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 503"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "domain-generalization",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T05:40:04Z",
+        "end": "2026-10-17T07:30:19Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "open-vocabulary",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T05:40:04Z",
+        "end": "2026-10-17T07:30:19Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: TimeoutError: The read operation timed out"
+        "status": "ok",
+        "matched": 2
       },
       {
         "source": "test-time-adaptation",
         "start": "2026-10-09T21:17:34Z",
-        "end": "2026-10-17T05:40:04Z",
+        "end": "2026-10-17T07:30:19Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "known-revisions",
@@ -47588,20 +48102,301 @@
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-16T21:17:34Z",
+  "last_full_success": "2026-10-17T07:30:19Z",
   "llm_last_run": {
-    "at": "2026-10-17T06:01:49Z",
-    "status": "ok",
-    "attempted": 60,
-    "succeeded": 60,
+    "at": "2026-10-17T07:32:16Z",
+    "status": "failed",
+    "attempted": 70,
+    "succeeded": 0,
     "skipped": [],
-    "errors": [],
+    "errors": [
+      {
+        "id": "W0122",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0105",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0102",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0088",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0078",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0099",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0080",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0145",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0020",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0049",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0036",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0021",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0050",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0051",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0108",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0151",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0032",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0111",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0056",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0157",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0022",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0150",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0052",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0104",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0053",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0023",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0176",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0167",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0153",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0160",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0165",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0118",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0007",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.16177",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0067",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0264",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0037",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0038",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0054",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0008",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0024",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0149",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0193",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0055",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0025",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0155",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0026",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0027",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0205",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0039",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0143",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0031",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0040",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0222",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0041",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0236",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0028",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0109",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0255",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0254",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0253",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0252",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0223",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0233",
+        "type": "HTTPError"
+      },
+      {
+        "id": "W0069",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.12786",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.11105",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.09784",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.09518",
+        "type": "HTTPError"
+      },
+      {
+        "id": "arxiv:2610.07569",
+        "type": "HTTPError"
+      }
+    ],
     "model": "gpt-6.1-sol",
-    "budget": 60,
-    "budget_used_today": 3
+    "budget": 70,
+    "budget_used_today": 63
   },
   "llm_budget": {
     "2026-10-16": 226,
-    "2026-10-17": 63
+    "2026-10-17": 133
   }
 }
