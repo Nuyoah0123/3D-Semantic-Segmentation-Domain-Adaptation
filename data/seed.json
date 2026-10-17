@@ -8272,7 +8272,7 @@
     "legacy_core": true,
     "oa_pdf": "https://iris.uniroma1.it/bitstream/11573/1666767/1/Saltori_CoSMix_2022.pdf",
     "abstract_lookup": {
-      "at": "2026-10-17T07:32:15Z",
+      "at": "2026-10-17T08:04:24Z",
       "result": "ok",
       "source": "openalex",
       "abstract": false,
@@ -10387,7 +10387,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2506.03521"
+      ]
     },
     "url": null,
     "venue": "AAAI Conference on Artificial Intelligence",
@@ -10425,6 +10427,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2506.03521"
     }
   },
   {
@@ -10510,7 +10518,9 @@
       "doi": [
         "10.1609/aaai.v38i2.27830"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2312.09553"
+      ]
     },
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/27830",
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
@@ -10548,6 +10558,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2312.09553"
     }
   },
   {
@@ -10726,6 +10742,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -10785,6 +10806,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -10837,6 +10863,11 @@
       "at": "2026-10-17T03:10:26Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -10937,6 +10968,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -10984,6 +11020,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11043,6 +11084,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11151,6 +11197,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11169,7 +11220,9 @@
       "doi": [
         "10.1109/CVPRW63382.2024.00124"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2406.09896"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10678546/",
     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
@@ -11205,6 +11258,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2406.09896"
     }
   },
   {
@@ -11222,7 +11281,9 @@
       "doi": [
         "10.1109/CVPR52733.2024.02207"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2312.03502"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10657214/",
     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -11258,6 +11319,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2312.03502"
     }
   },
   {
@@ -11277,7 +11344,9 @@
       "doi": [
         "10.1109/WACV57701.2024.00292"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2308.14126"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10484057/",
     "venue": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
@@ -11317,6 +11386,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2308.14126"
     }
   },
   {
@@ -11336,7 +11411,9 @@
       "doi": [
         "10.1109/ICRA57147.2024.10610316"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2309.11839"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10610316/",
     "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
@@ -11372,6 +11449,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2309.11839"
     }
   },
   {
@@ -11392,7 +11475,9 @@
       "doi": [
         "10.1109/CVPR52733.2024.01800"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2405.02608"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10655334/",
     "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -11424,6 +11509,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2405.02608"
     }
   },
   {
@@ -11471,6 +11562,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11548,7 +11644,9 @@
       "doi": [
         "10.1109/WACV61041.2025.00659"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2501.06836"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10944050/",
     "venue": "2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
@@ -11582,6 +11680,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2501.06836"
     }
   },
   {
@@ -11635,6 +11739,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11685,6 +11794,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11737,6 +11851,11 @@
       "at": "2026-10-17T03:10:26Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -11791,6 +11910,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T08:02:43Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
