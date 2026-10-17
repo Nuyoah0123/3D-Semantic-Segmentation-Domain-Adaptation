@@ -37,6 +37,10 @@ def public_records(config, seeds, store, editorial, include_imports=False):
         out={k:p.get(k) for k in ("id","title","authors","published","updated","version","venue","identifiers","first_seen","date_basis")}
         out.update(url=safe_url(p.get("url","")),imported=imported,origin=p.get("origin",""),classification={k:cl.get(k) for k in ("bucket","tracks","task","methods","basis","certainty","note")},review_status=state,full_text_read=state=="full-text-read")
         out["abstract"]=p.get("abstract","") if pub["publish_abstracts"] else ""
+        if out["abstract"]:
+            # Abstracts come from public metadata (OpenAlex/arXiv); the source is stated on the page.
+            out["abstract_source"]=p.get("abstract_source","") or ("arxiv" if (p.get("identifiers") or {}).get("arxiv") else "")
+            out["oa_pdf"]=safe_url(p.get("oa_pdf",""))
         # Drafts are opt-in AND marked explicitly; draft does not alter classification or review status.
         draft=p.get("ai_draft")
         if pub["publish_ai_drafts"] and draft and not draft.get("stale") and draft.get("summary_zh"):
@@ -84,7 +88,7 @@ def build(config,root=ROOT,out:Path|None=None,include_imports=False,now=None):
     events=[e for e in store["events"] if e["paper_id"] in visible and e["kind"] in {"discovered","revised","metadata-updated"}]
     last=store.get("last_run",{"status":"not-run","at":None,"counts":{},"sources":[]})
     # Status labels and query coverage only, no raw request bodies or credentials.
-    payload={"site":{"name":config["name"],"name_zh":config["name_zh"],"timezone":config["display_timezone"],"preview":include_imports},"built_at":iso(now),"status":last,"last_full_success":store.get("last_full_success"),"index_count":len(seeds),"papers":papers,"events":events[-500:],"integrations":{"zotero":store.get("zotero_last_run",{}),"llm":store.get("llm_last_run",{})},"policy":{"abstracts":config["publication"]["publish_abstracts"],"ai_drafts":config["publication"]["publish_ai_drafts"]}}
+    payload={"site":{"name":config["name"],"name_zh":config["name_zh"],"timezone":config["display_timezone"],"preview":include_imports},"built_at":iso(now),"status":last,"last_full_success":store.get("last_full_success"),"index_count":len(seeds),"papers":papers,"events":events[-500:],"integrations":{"zotero":store.get("zotero_last_run",{}),"llm":store.get("llm_last_run",{})},"topics":config.get("topics",[]),"policy":{"abstracts":config["publication"]["publish_abstracts"],"ai_drafts":config["publication"]["publish_ai_drafts"]}}
     serialized=json.dumps(payload,ensure_ascii=False,separators=(",",":")).replace("<","\\u003c").replace("\u2028","\\u2028").replace("\u2029","\\u2029")
     (out/"data.js").write_text("window.ATLAS = "+serialized+";\n",encoding="utf-8")
     write_json(out/"data.json",payload)

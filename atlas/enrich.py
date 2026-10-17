@@ -16,8 +16,8 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from .common import ROOT, read_json, write_json, iso, digest
-from .pdf_text import NoPdf, PdfError, download_pdf, load_pages, select_pages
+from .common import ROOT, read_json, write_json, iso, digest, parse_time, utcnow
+from .pdf_text import NoPdf, PdfError, download_external_pdf, download_pdf, load_pages, select_pages
 from .pipeline import EMPTY
 
 PROMPT_VERSION = "3d-seg-evidence-v3"
@@ -220,7 +220,8 @@ def validate_analysis(result, pages: list[dict], pdf_url: str, snippets: list[di
 def pdf_url_for(paper: dict) -> str:
     ids = (paper.get("identifiers") or {}).get("arxiv") or []
     if not ids:
-        return ""
+        # Library entries without a preprint can still have a legal open copy.
+        return str(paper.get("oa_pdf") or "")
     return f"https://arxiv.org/pdf/{ids[0]}v{paper.get('version') or 1}"
 
 def call_model(paper: dict, snippets: list[dict], cfg: dict, key: str, base: str, model: str, extra=None) -> dict:
@@ -287,14 +288,107 @@ def generate(paper: dict, pages: list[dict], cfg: dict, key: str, base: str, mod
         draft["repaired"] = str(error)
         return draft
 
+def run_library_enrichment(config: dict, root=ROOT, environ=None, *, generator=None, page_loader=None, limit=None, now=None) -> dict:
+    """Evidence drafts for curated library entries that have a legal open PDF.
+
+    Journal papers without a preprint never reach the arXiv pipeline; when the
+    metadata step found an open-access copy, the same evidence rules apply.
+    """
+    env = os.environ if environ is None else environ
+    cfg = config.get("llm") or {}
+    root = Path(root)
+    path = root / "data/seed.json"
+    seeds = read_json(path, [])
+    stamp = iso(now or utcnow())
+    retry_days = int(cfg.get("library_pdf_retry_days", 90))
+    moment = now or utcnow()
+    report = {"at": stamp, "status": "disabled", "scope": "library", "attempted": 0, "succeeded": 0,
+              "skipped": [], "errors": []}
+    def save() -> None:
+        write_json(path, seeds)
+    if not cfg.get("enabled"):
+        save()
+        return report
+    key = str(env.get("LLM_API_KEY", "")).strip()
+    base = str(env.get("LLM_BASE_URL", "")).strip() or "https://api.openai.com/v1"
+    model = str(env.get("LLM_MODEL", "")).strip()
+    if not key or not model:
+        report.update(status="not-configured",
+                      note="Set the repository secret LLM_API_KEY and variable LLM_MODEL to enable library drafts.")
+        save()
+        return report
+    report["model"] = model
+    budget = max(0, int(limit)) if limit else max(0, int(cfg.get("library_max_per_run", 12)))
+    report["budget"] = budget
+    loader = page_loader or default_page_loader
+    editorial = read_json(root / "data/editorial.json", {})
+    attempted = 0
+    for seed in seeds:
+        if attempted >= budget:
+            break
+        if not str(seed.get("oa_pdf") or ""):
+            continue
+        pdf_state = seed.get("oa_pdf_status") or {}
+        if pdf_state.get("result") == "missing" and pdf_state.get("at"):
+            try:
+                if (moment - parse_time(pdf_state["at"])).days < retry_days:
+                    continue
+            except ValueError:
+                pass
+        if editorial.get(seed.get("id"), {}).get("state") == "rejected":
+            continue
+        expected = digest([seed.get("title"), seed.get("abstract", ""), seed.get("version")])
+        draft = seed.get("ai_draft") or {}
+        if (draft.get("source_hash") == expected and draft.get("prompt_version") in ACCEPTED_DRAFT_VERSIONS
+                and not draft.get("stale")):
+            continue
+        try:
+            pages = loader(seed, cfg, root)
+        except Exception as error:
+            reason = str(error)[:80] if isinstance(error, PdfError) else type(error).__name__
+            if isinstance(error, NoPdf):
+                # A dead open-access link is recorded so the entry backs off instead of retrying forever.
+                seed["oa_pdf_status"] = {"at": stamp, "result": "missing", "reason": reason[:60]}
+                save()
+            report["skipped"].append({"id": seed.get("id"), "reason": reason})
+            continue
+        attempted += 1
+        report["attempted"] = attempted
+        save()
+        try:
+            run = generator or generate
+            draft = run(seed, pages, cfg, key, base, model)
+            draft.update(model=model, prompt_version=PROMPT_VERSION, generated_at=iso(),
+                         human_approved=False, stale=False, source_hash=expected,
+                         scope=draft.get("scope", "oa-pdf"),
+                         input_pages=[p["page"] for p in pages])
+            seed["ai_draft"] = draft
+            report["succeeded"] += 1
+        except Exception as error:
+            entry = {"id": seed.get("id"), "type": type(error).__name__}
+            message = str(error)
+            if re.fullmatch(r"[a-z0-9\-]{3,40}", message):
+                entry["detail"] = message
+            report["errors"].append(entry)
+        save()
+    report["status"] = "failed" if report["errors"] and report["succeeded"] == 0 else ("partial" if report["errors"] else "ok")
+    return report
+
 def default_page_loader(paper: dict, cfg: dict, root: Path) -> list[dict]:
     ids = (paper.get("identifiers") or {}).get("arxiv") or []
     if not ids:
-        raise NoPdf("no-arxiv-id")
-    path = download_pdf(ids[0], paper.get("version") or 1, Path(root) / ".cache/pdfs",
-                        interval=float(cfg.get("request_interval_seconds", 3.0)),
-                        timeout=int(cfg.get("timeout_seconds", 150)),
-                        max_bytes=int(cfg.get("max_pdf_bytes", 60_000_000)))
+        url = str(paper.get("oa_pdf") or "")
+        if not url:
+            raise NoPdf("no-open-pdf")
+        path = download_external_pdf(url, paper.get("id") or "library", Path(root) / ".cache/pdfs",
+                                     interval=float(cfg.get("request_interval_seconds", 3.0)),
+                                     timeout=int(cfg.get("timeout_seconds", 150)),
+                                     max_bytes=int(cfg.get("max_pdf_bytes", 60_000_000)))
+    else:
+        path = download_pdf(ids[0], paper.get("version") or 1, Path(root) / ".cache/pdfs",
+                            interval=float(cfg.get("request_interval_seconds", 3.0)),
+                            timeout=int(cfg.get("timeout_seconds", 150)),
+                            max_bytes=int(cfg.get("max_pdf_bytes", 60_000_000)))
     pages = load_pages(path, max_pages=int(cfg.get("max_pdf_pages", 40)))
     return select_pages(pages, max_chars=int(cfg.get("max_input_chars", 48_000)))
 

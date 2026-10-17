@@ -167,3 +167,11 @@ python scripts/review.py 'arxiv:实际编号' --state rejected --public no
 - **运行红叉语义**：只有抓取来源全部失败或 AI 草稿步骤完全失败才触发 `report-failure`；部分来源失败只在站点状态栏显示“部分来源需要检查”，不阻断部署。
 - **并发推送**：数据提交步骤在 push 前先执行 `git pull --rebase --autostash`，避免与人工提交互相覆盖。
 - **相关配置**：`llm.include_imported`、`seed_lookup.{enabled,max_per_run,min_title_score,retry_days}`。
+
+## 专题与期刊摘要（2026-10-17 新增）
+
+- **首页专题**：`config.json` 的 `topics` 定义专题分组（研究专题 / 方法专题 / 场景与来源），可在不改代码的情况下增删改；一篇论文可属于多个专题。点击专题卡片后地址变为 `#topic=<id>`，可直接分享；面包屑可一键返回全部专题。
+- **期刊论文摘要**：库内题录默认没有摘要，`scripts/fetch_metadata.py` 用 OpenAlex 元数据按 DOI 补齐（无 DOI 时按标题严格匹配，相似度 ≥0.97 且作者姓氏一致），写入 `data/seed.json` 的 `abstract`、`abstract_source`、`oa_pdf`，并记录 `abstract_lookup` 标记。未命中 120 天后重试；DOI 不存在（404）记为未命中而不是错误。
+- **仅摘要标记**：`publication.publish_abstracts=true` 后，公开页展示摘要并标注来源与“未获取全文 · 仅提供摘要”；没有 AI 解读的论文在列表卡片上显示“仅摘要”标签，可在专题“仅摘要记录”集中查看。
+- **开放获取全文解读**：若 OpenAlex 给出合法的开放获取 PDF，`scripts/enrich_library.py` 会用与 arXiv 相同的证据规则生成中文 AI 解读（`scope: oa-pdf`，引用直接链到该 PDF 的页码）；链接失效（404）记录 90 天退避，不再反复重试。
+- **额度**：`metadata.max_per_run`（默认 200）、`llm.library_max_per_run`（默认 12）；手动补跑可在 Actions 里填 `metadata` / `library` 输入。

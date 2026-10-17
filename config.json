@@ -7,7 +7,7 @@
   "publication": {
     "publish_imported_references": true,
     "publish_auto_candidates": true,
-    "publish_abstracts": false,
+    "publish_abstracts": true,
     "publish_ai_drafts": true,
     "include_related": true
   },
@@ -55,7 +55,8 @@
     "timeout_seconds": 150,
     "max_pdf_bytes": 60000000,
     "token_parameter": "max_completion_tokens",
-    "include_imported": true
+    "include_imported": true,
+    "library_max_per_run": 12
   },
   "zotero": {
     "enabled": false,
@@ -72,5 +73,201 @@
     "retry_days": 120,
     "max_seconds": 300,
     "max_consecutive_errors": 3
-  }
+  },
+  "metadata": {
+    "enabled": true,
+    "mailto": "1075293835@qq.com",
+    "request_interval_seconds": 1.0,
+    "max_per_run": 200,
+    "max_seconds": 300,
+    "max_consecutive_errors": 4,
+    "min_title_score": 0.97,
+    "retry_days": 120
+  },
+  "topics": [
+    {
+      "group": "研究专题",
+      "desc": "按域偏移的研究设定划分：同一篇论文可能同时属于多个专题。",
+      "items": [
+        {
+          "id": "da",
+          "name": "域适应 (DA)",
+          "desc": "源域有标签、目标域无标签或弱标签的跨域适配",
+          "match": {
+            "tracks": [
+              "DA"
+            ]
+          }
+        },
+        {
+          "id": "dg",
+          "name": "域泛化 (DG)",
+          "desc": "训练阶段看不到目标域，追求未见域的鲁棒性",
+          "match": {
+            "tracks": [
+              "DG"
+            ]
+          }
+        },
+        {
+          "id": "tta",
+          "name": "测试时自适应 (TTA)",
+          "desc": "推理阶段在线更新，通常不需要源域数据",
+          "match": {
+            "tracks": [
+              "TTA"
+            ]
+          }
+        },
+        {
+          "id": "ov",
+          "name": "开放词汇 / 开放世界",
+          "desc": "语言驱动、类无关或开放类别集合的分割与理解",
+          "match": {
+            "tracks": [
+              "OV"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "group": "方法专题",
+      "desc": "按技术路线聚合，关键词来自题录级自动初筛，需结合原文核对。",
+      "items": [
+        {
+          "id": "selftrain",
+          "name": "自训练与伪标签",
+          "desc": "教师-学生、伪标签、类别平衡",
+          "match": {
+            "methods": [
+              "self-training",
+              "pseudo-label",
+              "class-balance"
+            ]
+          }
+        },
+        {
+          "id": "prototype",
+          "name": "原型与对比学习",
+          "desc": "原型聚类、对比/度量学习、特征对齐",
+          "match": {
+            "methods": [
+              "prototype",
+              "contrastive",
+              "clustering",
+              "alignment"
+            ]
+          }
+        },
+        {
+          "id": "crossmodal",
+          "name": "跨模态与视觉语言",
+          "desc": "图像-点云-文本对齐、基础模型与提示适配",
+          "match": {
+            "methods": [
+              "cross-modal",
+              "vision-language",
+              "prompt-adapter",
+              "foundation-model",
+              "foundation"
+            ]
+          }
+        },
+        {
+          "id": "generative",
+          "name": "生成式与数据增广",
+          "desc": "扩散、风格迁移、混样与增广策略",
+          "match": {
+            "methods": [
+              "diffusion",
+              "augmentation",
+              "mixing",
+              "nerf"
+            ]
+          }
+        },
+        {
+          "id": "efficient",
+          "name": "数据高效与不确定性",
+          "desc": "主动学习、不确定性建模与知识蒸馏",
+          "match": {
+            "methods": [
+              "active-learning",
+              "uncertainty",
+              "distillation"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "group": "场景与来源",
+      "desc": "按数据形态、应用领域与文献来源划分。",
+      "items": [
+        {
+          "id": "lidar",
+          "name": "LiDAR 与点云",
+          "desc": "室外激光雷达、点云与距离图像",
+          "match": {
+            "keywords": [
+              "lidar",
+              "point cloud",
+              "pointcloud",
+              "depth image",
+              "range image"
+            ]
+          }
+        },
+        {
+          "id": "remote",
+          "name": "遥感与高光谱",
+          "desc": "航空/卫星影像、高光谱与地表覆盖",
+          "match": {
+            "keywords": [
+              "remote sensing",
+              "hyperspectral",
+              "aerial",
+              "satellite",
+              "land cover"
+            ]
+          }
+        },
+        {
+          "id": "medical",
+          "name": "医学与生物影像",
+          "desc": "CT/MRI、超声、病理与器官分割",
+          "match": {
+            "keywords": [
+              "medical",
+              "clinical",
+              "ct image",
+              "mri",
+              "echocardiograph",
+              "histopath",
+              "lesion",
+              "organ segmentation",
+              "ultrasound"
+            ]
+          }
+        },
+        {
+          "id": "journal",
+          "name": "期刊与会议论文",
+          "desc": "发表在期刊或会议（含同时有预印本的版本）",
+          "match": {
+            "venue_named": true
+          }
+        },
+        {
+          "id": "abstractonly",
+          "name": "仅摘要记录",
+          "desc": "暂未获取全文，先提供摘要与出处",
+          "match": {
+            "abstract_only": true
+          }
+        }
+      ]
+    }
+  ]
 }

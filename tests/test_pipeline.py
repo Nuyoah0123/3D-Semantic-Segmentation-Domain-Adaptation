@@ -12,10 +12,12 @@ from atlas.arxiv_source import parse_feed, query_window, SourceError
 from atlas.pipeline import EMPTY, merge_paper, run_update
 from atlas.triage import classify
 from atlas.site import public_records, build, to_ris
-from atlas.enrich import PROMPT_VERSION, build_snippets, generate, run_enrichment, validate_analysis
+from atlas.enrich import (PROMPT_VERSION, build_snippets, default_page_loader, generate, pdf_url_for,
+                          run_enrichment, run_library_enrichment, validate_analysis)
 from atlas.zotero_sync import sanitize_item, run_sync
 from atlas.seed_lookup import MARKER, run_seed_lookup, title_score
 from atlas.pdf_text import NoPdf, download_pdf
+from atlas.metadata import MARKER as ABSTRACT_MARKER, reconstruct_abstract, run_metadata_backfill, work_url
 import urllib.error
 
 NOW=datetime(2026,10,13,12,tzinfo=timezone.utc)
@@ -175,7 +177,24 @@ class BuildTests(TempProject):
     def test_unreviewed_candidates_can_publish(self):self.assertEqual(len(public_records(self.cfg,[],self.load_paper(),{})),1)
     def test_private_field_not_published(self):
         s=self.load_paper();s["records"][paper()["id"]]["private_note"]="DO-NOT-PUBLISH"
-        result=json.dumps(public_records(self.cfg,[],s,{}));self.assertNotIn("DO-NOT-PUBLISH",result);self.assertNotIn(paper()["abstract"],result)
+        result=json.dumps(public_records(self.cfg,[],s,{}));self.assertNotIn("DO-NOT-PUBLISH",result)
+    def test_abstract_follows_publication_switch(self):
+        s=self.load_paper()
+        self.cfg["publication"]["publish_abstracts"]=False
+        self.assertEqual(public_records(self.cfg,[],s,{})[0].get("abstract"),"")
+        self.cfg["publication"]["publish_abstracts"]=True
+        out=public_records(self.cfg,[],s,{})[0]
+        self.assertEqual(out["abstract"],paper()["abstract"]);self.assertEqual(out["abstract_source"],"arxiv")
+    def test_abstract_source_and_oa_pdf_published(self):
+        s=copy.deepcopy(EMPTY)
+        entry={"id":"W0001","title":"Journal study of domain shift","authors":["A B"],"imported":True,
+               "classification":{"bucket":"related","tracks":["DA"],"task":"semantic","methods":[]},
+               "identifiers":{"doi":["10.1/x"],"arxiv":[]},"abstract":"Abstract text.",
+               "abstract_source":"openalex","oa_pdf":"https://example.org/a.pdf","review_status":"imported-unreviewed"}
+        out=public_records(self.cfg,[entry],s,{})[0]
+        self.assertEqual(out["abstract_source"],"openalex");self.assertEqual(out["oa_pdf"],"https://example.org/a.pdf")
+        entry["oa_pdf"]="javascript:alert(1)"
+        self.assertEqual(public_records(self.cfg,[entry],s,{})[0]["oa_pdf"],"")
     def test_rejected_not_publish(self):self.assertEqual(public_records(self.cfg,[],self.load_paper(),{paper()["id"]:{"state":"rejected"}}),[])
     def test_manual_tracks_override(self):
         r=public_records(self.cfg,[],self.load_paper(),{paper()["id"]:{"tracks":["DG"]}})
@@ -357,6 +376,70 @@ class PdfTests(unittest.TestCase):
         with patch("atlas.pdf_text.urllib.request.urlopen",side_effect=fake_open),tempfile.TemporaryDirectory() as tmp:
             with self.assertRaises(NoPdf):download_pdf("2610.99999",1,Path(tmp),interval=0)
 
+class MetadataTests(TempProject):
+    def seed(self,doi="10.1234/abc",title="Prototype learning for cross-domain segmentation",abstract=""):
+        return {"id":"W0001","title":title,"authors":["A B"],"identifiers":{"doi":[doi] if doi else [],"arxiv":[]},
+                "abstract":abstract,"date_basis":"imported_bibliographic_date"}
+    def work(self,title="Prototype learning for cross-domain segmentation",abstract=True,pdf=""):
+        return {"title":title,"publication_year":2024,
+                "abstract_inverted_index":{"We":[0],"study":[1],"domain":[2],"shift.":[3]} if abstract else None,
+                "best_oa_location":{"pdf_url":pdf} if pdf else {},
+                "primary_location":{"source":{"display_name":"IEEE Transactions on Pattern Analysis and Machine Intelligence"}}}
+    def run_fill(self,seeds,replies,limit=None,now=NOW):
+        write_json(self.root/"data/seed.json",seeds)
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            if not replies: raise AssertionError("unexpected fetch")
+            item=replies.pop(0)
+            if isinstance(item,Exception): raise item
+            return item
+        report=run_metadata_backfill(self.cfg,self.root,fetch=fetch,now=now,limit=limit)
+        return report,calls
+    def test_reconstruct_abstract_orders_tokens(self):
+        self.assertEqual(reconstruct_abstract({"b":[1],"a":[0]}),"a b");self.assertEqual(reconstruct_abstract(None),"")
+    def test_fills_abstract_and_open_pdf(self):
+        r,calls=self.run_fill([self.seed()],[self.work(pdf="https://example.org/paper.pdf")])
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(r["filled"],1);self.assertEqual(r["with_pdf"],1)
+        self.assertEqual(seed["abstract"],"We study domain shift.")
+        self.assertEqual(seed["abstract_source"],"openalex")
+        self.assertEqual(seed["oa_pdf"],"https://example.org/paper.pdf")
+        self.assertEqual(seed["venue"][:3],"IEE")
+        self.assertEqual(seed[ABSTRACT_MARKER]["result"],"ok")
+        self.assertIn("mailto=",calls[0]);self.assertIn("format=json",calls[0])
+    def test_no_doi_uses_title_search_with_strict_match(self):
+        r,_=self.run_fill([self.seed(doi="")],[{"results":[self.work(title="A totally different study of something else")]}])
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(r["filled"],0);self.assertEqual(seed[ABSTRACT_MARKER]["result"],"none")
+        self.assertFalse(seed.get("abstract"))
+    def test_title_search_hit_fills(self):
+        r,_=self.run_fill([self.seed(doi="")],[{"results":[self.work()]}])
+        self.assertEqual(r["filled"],1)
+    def test_existing_abstract_skipped(self):
+        r,calls=self.run_fill([self.seed(abstract="Already present.")],[])
+        self.assertEqual(r["checked"],0);self.assertEqual(calls,[])
+    def test_recent_none_marker_skips(self):
+        seed=self.seed();seed[ABSTRACT_MARKER]={"at":iso(NOW),"result":"none"}
+        r,calls=self.run_fill([seed],[])
+        self.assertEqual(r["checked"],0);self.assertEqual(calls,[])
+    def test_unknown_doi_recorded_as_miss(self):
+        def fetch(url):
+            raise urllib.error.HTTPError(url,404,"nf",None,None)
+        write_json(self.root/"data/seed.json",[self.seed()])
+        r=run_metadata_backfill(self.cfg,self.root,fetch=fetch,now=NOW)
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(r["errors"],[]);self.assertEqual(r["none"],1)
+        self.assertEqual(seed[ABSTRACT_MARKER]["result"],"none")
+    def test_consecutive_errors_abort(self):
+        self.cfg["metadata"]["max_consecutive_errors"]=1
+        seeds=[self.seed(),dict(self.seed(),id="W0002")]
+        r,_=self.run_fill(seeds,[SourceError("offline")])
+        self.assertEqual(r["checked"],1);self.assertEqual(r["aborted"],"source-unavailable")
+    def test_work_url_shapes(self):
+        self.assertIn("https://doi.org/10.1234/abc",work_url(self.cfg,doi="https://doi.org/10.1234/abc"))
+        self.assertIn("search=",work_url(self.cfg,title="Prototype learning"))
+
 class LookupTests(TempProject):
     def seed(self,title="Domain Adaptation for 3D Semantic Segmentation",authors=None):
         return {"id":"W0001","title":title,"authors":authors if authors is not None else ["Test Author"],"identifiers":{"arxiv":[],"doi":[]}}
@@ -394,6 +477,14 @@ class LookupTests(TempProject):
         self.assertEqual(r["checked"],1);self.assertEqual(len(r["errors"]),1)
         self.assertEqual(r["status"],"partial")
         self.assertNotIn(MARKER,read_json(self.root/"data/seed.json")[0])
+    def test_unknown_doi_recorded_as_miss(self):
+        def fetch(url):
+            raise urllib.error.HTTPError(url,404,"nf",None,None)
+        write_json(self.root/"data/seed.json",[self.seed()])
+        r=run_metadata_backfill(self.cfg,self.root,fetch=fetch,now=NOW)
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(r["errors"],[]);self.assertEqual(r["none"],1)
+        self.assertEqual(seed[ABSTRACT_MARKER]["result"],"none")
     def test_consecutive_errors_abort(self):
         self.cfg["seed_lookup"]["max_consecutive_errors"]=1
         seeds=[self.seed(),dict(self.seed(),id="W0002"),dict(self.seed(),id="W0003")]
@@ -417,6 +508,66 @@ class LookupTests(TempProject):
     def test_title_score_boundaries(self):
         self.assertEqual(title_score("Domain Adaptation for 3D Semantic Segmentation","domain   adaptation for 3d semantic-segmentation!"),1.0)
         self.assertLess(title_score("LiDAR segmentation survey","Point cloud segmentation survey"),0.97)
+
+class LibraryAITests(TempProject):
+    def analysis(self):
+        q="Our method improves the target-domain mIoU by 12.5 points over the baseline."
+        return {"summary_zh":"论文研究 LiDAR 点云跨域分割，摸上目标域 mIoU 12.5 个百分点。".replace("摸上","提升"),
+                "problem":{"text":"跨域需要缓解域偏移。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]},
+                "method":{"text":"作者提出一种域适应方法。","evidence":[{"page":1,"quote":q}]},
+                "findings":[{"text":"目标域 mIoU 提升 12.5 个百分点。","evidence":[{"page":1,"quote":q}]}],
+                "limitations":[],"role":{"setting":"UDA","supervision":"源域有标签","modalities":"LiDAR","datasets":"未说明","evaluation":"mIoU"}}
+    def seed(self):
+        return {"id":"W0001","title":"Journal study of cross-domain segmentation","authors":["A B"],
+                "abstract":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds.",
+                "oa_pdf":"https://example.org/paper.pdf","identifiers":{"doi":["10.1/x"],"arxiv":[]},
+                "date_basis":"imported_bibliographic_date",
+                "classification":{"bucket":"related","tracks":["DA"],"task":"semantic","methods":[]}}
+    def run_library(self,seeds,limit=None):
+        write_json(self.root/"data/seed.json",seeds)
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        loader=lambda p,cfg,root:copy.deepcopy(AITests.PAGES)
+        gen=lambda p,pages,cfg,key,base,model:copy.deepcopy(self.analysis())
+        return run_library_enrichment(self.cfg,self.root,env,generator=gen,page_loader=loader,limit=limit)
+    def test_draft_written_with_oa_scope(self):
+        self.cfg["llm"]["enabled"]=True
+        r=self.run_library([self.seed()],limit=1)
+        self.assertEqual(r["attempted"],1);self.assertEqual(r["succeeded"],1)
+        draft=read_json(self.root/"data/seed.json")[0]["ai_draft"]
+        self.assertEqual(draft["scope"],"oa-pdf");self.assertFalse(draft["human_approved"])
+        self.assertEqual(draft["prompt_version"],PROMPT_VERSION)
+    def test_entry_without_open_pdf_skipped(self):
+        self.cfg["llm"]["enabled"]=True
+        seed=self.seed();seed.pop("oa_pdf")
+        r=self.run_library([seed],limit=5)
+        self.assertEqual(r["attempted"],0);self.assertEqual(r["succeeded"],0)
+    def test_second_run_does_not_regenerate(self):
+        self.cfg["llm"]["enabled"]=True
+        seed=self.seed()
+        first=self.run_library([seed],limit=1)
+        stored=read_json(self.root/"data/seed.json")
+        second=self.run_library(stored,limit=1)
+        self.assertEqual(first["succeeded"],1);self.assertEqual(second["attempted"],0)
+    def test_dead_open_pdf_backs_off(self):
+        self.cfg["llm"]["enabled"]=True
+        def loader(paper,cfg,root):raise NoPdf("http-404")
+        write_json(self.root/"data/seed.json",[self.seed()])
+        env={"LLM_API_KEY":"test","LLM_BASE_URL":"https://example.org/v1","LLM_MODEL":"test"}
+        first=run_library_enrichment(self.cfg,self.root,env,page_loader=loader,now=NOW,limit=1)
+        self.assertEqual(first["skipped"][0]["reason"],"http-404")
+        seed=read_json(self.root/"data/seed.json")[0]
+        self.assertEqual(seed["oa_pdf_status"]["result"],"missing")
+        second=run_library_enrichment(self.cfg,self.root,env,page_loader=loader,now=NOW,limit=1)
+        self.assertEqual(second["attempted"],0);self.assertEqual(second["skipped"],[])
+    def test_pdf_url_prefers_open_copy_without_preprint(self):
+        self.assertEqual(pdf_url_for({"identifiers":{"arxiv":[]},"oa_pdf":"https://example.org/a.pdf"}),"https://example.org/a.pdf")
+        self.assertEqual(pdf_url_for({"identifiers":{"arxiv":["2610.00001"]},"version":2}),"https://arxiv.org/pdf/2610.00001v2")
+    def test_loader_without_sources_reports_nopdf(self):
+        with self.assertRaises(NoPdf):default_page_loader({"identifiers":{"arxiv":[]}},self.cfg["llm"],self.root)
+    def test_external_pdf_requires_https(self):
+        from atlas.pdf_text import download_external_pdf
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(NoPdf):download_external_pdf("http://example.org/a.pdf","k",Path(tmp))
 
 class ZoteroTests(TempProject):
     def row(self):return {"key":"ABCD1234","data":{"itemType":"journalArticle","title":"Domain Adaptation for 3D Semantic Segmentation","abstractNote":"We study domain adaptation for LiDAR semantic segmentation.","DOI":"10.1234/abc","creators":[{"creatorType":"author","firstName":"Test","lastName":"Author"}],"date":"2025","note":"private","attachments":["/private/file.pdf"],"collections":["SECRETNAME"],"tags":[{"tag":"track:dg"},{"tag":"private:idea"}]}}

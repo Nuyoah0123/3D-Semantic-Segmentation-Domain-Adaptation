@@ -17,6 +17,14 @@ on:
         description: 'Library arXiv title lookups per run (0=default cap)'
         type: number
         default: 0
+      metadata:
+        description: 'OpenAlex abstract lookups per run (0=default cap)'
+        type: number
+        default: 0
+      library:
+        description: 'AI drafts for library entries with open PDFs (0=default cap)'
+        type: number
+        default: 0
   push:
     branches: [main]
     paths:
@@ -83,6 +91,23 @@ jobs:
         env:
           ATLAS_LOOKUP_LIMIT: ${{ inputs.lookup }}
         run: python scripts/resolve_seeds.py
+      - name: Fetch abstracts and open-access links for library entries (optional)
+        id: metadata
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        env:
+          ATLAS_METADATA_LIMIT: ${{ inputs.metadata }}
+        run: python scripts/fetch_metadata.py
+      - name: Generate AI drafts for library entries with open PDFs (optional)
+        id: library
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          ATLAS_LIBRARY_LIMIT: ${{ inputs.library }}
+        run: python scripts/enrich_library.py
       - name: Generate evidence-linked Chinese AI drafts (optional)
         id: llm
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)

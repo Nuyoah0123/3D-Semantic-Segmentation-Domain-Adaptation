@@ -69,6 +69,39 @@ def download_pdf(arxiv: str, version: int | None, cache_dir: Path, *, interval: 
         return path
     raise last or NoPdf("http-404")
 
+def download_external_pdf(url: str, cache_key: str, cache_dir: Path, *, interval: float = 1.0,
+                           timeout: int = 90, max_bytes: int = 60_000_000) -> Path:
+    """Download an open-access PDF (repository/publisher link) into the cache."""
+    if not str(url).startswith("https://"):
+        raise NoPdf("insecure-url")
+    cache_dir = Path(cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    safe = re.sub(r"[^A-Za-z0-9._-]+", "_", cache_key)[:80] or "document"
+    path = cache_dir / f"oa-{safe}.pdf"
+    if path.exists():
+        head = path.read_bytes()[:5]
+        if head == b"%PDF-" and 0 < path.stat().st_size <= max_bytes:
+            return path
+        path.unlink()
+    wait = interval - (time.monotonic() - _last_request[0])
+    if wait > 0:
+        time.sleep(wait)
+    _last_request[0] = time.monotonic()
+    request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/pdf"})
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            data = response.read(max_bytes + 1)
+    except urllib.error.HTTPError as error:
+        raise NoPdf(f"http-{error.code}") from None
+    except urllib.error.URLError as error:
+        raise PdfError("network-" + type(error.reason).__name__) from None
+    if len(data) > max_bytes:
+        raise PdfError("pdf-too-large")
+    if not data.startswith(b"%PDF-"):
+        raise NoPdf("not-a-pdf")
+    path.write_bytes(data)
+    return path
+
 def load_pages(pdf_path: Path, *, max_pages: int = 40, max_chars_per_page: int = 80_000) -> list[dict]:
     try:
         import pymupdf as fitz
