@@ -175,3 +175,15 @@ python scripts/review.py 'arxiv:实际编号' --state rejected --public no
 - **仅摘要标记**：`publication.publish_abstracts=true` 后，公开页展示摘要并标注来源与“未获取全文 · 仅提供摘要”；没有 AI 解读的论文在列表卡片上显示“仅摘要”标签，可在专题“仅摘要记录”集中查看。
 - **开放获取全文解读**：若 OpenAlex 给出合法的开放获取 PDF，`scripts/enrich_library.py` 会用与 arXiv 相同的证据规则生成中文 AI 解读（`scope: oa-pdf`，引用直接链到该 PDF 的页码）；链接失效（404）记录 90 天退避，不再反复重试。
 - **额度**：`metadata.max_per_run`（默认 200）、`llm.library_max_per_run`（默认 12）；手动补跑可在 Actions 里填 `metadata` / `library` 输入。
+
+## AI 解读改为五段式（2026-10-17）
+
+AI 草稿的提示词升级为 `3d-seg-reading-v4`，每篇论文按固定五段回答：
+
+1. **解决的问题**（problem）：任务设定、痛点、被解决的具体问题
+2. **使用方法**（method）：核心方法、关键组件、训练/推理策略
+3. **得到的结果**（findings）：作者报告的主要结果（数字必须与原文一致）
+4. **尚未解决的问题**（open_problems）：每条标注 kind——`limitation`（作者承认的局限）或 `future-work`（作者提出的未来方向）
+5. **对后续读者的启发**（insights）：2-3 条编辑推断（方法选型、评测协议、可迁移经验、值得跟进的方向），可选附引用，不得引入论文之外的数字或事实
+
+校验规则不变：结论必须引用候选句编号；数字必须出现在被引用的句子里；无法核实的结论会被丢弃并在 `ai_draft.dropped` 记录（不公开）。旧版 v3 草稿仍可正常展示（第 4 段回退到“作者说明的局限”），并会在后续运行中被逐步重新生成为 v4（把 `drafts` 手动补跑填大即可加速，例如 60/次）。

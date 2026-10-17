@@ -34,8 +34,23 @@ function pdfPageURL(p,page){const id=(p.identifiers&&p.identifiers.arxiv&&p.iden
 function quoteBlock(p,ev){if(!ev||!ev.quote)return "";const u=pdfPageURL(p,ev.page);return `<blockquote class="evidence">${esc(ev.quote)}${u?` <a href="${esc(u)}" target="_blank" rel="noopener noreferrer">PDF p.${esc(String(ev.page))} ↗</a>`:`<span class="muted"> p.${esc(String(ev.page))}</span>`}</blockquote>`;}
 function claimBlock(p,c){if(!c||!c.text)return "";return `<p>${esc(c.text)}</p>${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}`;}
 function claimList(p,items){return (items||[]).map(c=>`<li>${esc(c.text)}${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}</li>`).join("");}
-function aiSection(p){const d=p.ai_draft;if(!d||!d.summary_zh)return "";const roles=d.role?Object.keys(ROLE_LABELS).filter(k=>d.role[k]).map(k=>`<tr><td>${ROLE_LABELS[k]}</td><td>${esc(d.role[k])}</td></tr>`).join(""):"";
- return `<h3>AI 解读 <span class="chip ai">AI 生成 · 待人工复核</span></h3><p class="disclaimer">由 ${esc(d.model||"模型")} 依据论文 PDF 页面文本生成（${esc(SCOPE_LABEL[d.scope]||d.scope||"pdf-evidence")}）；每条结论附原文引用与页码。不是人工精读，不能替代原文核对。</p><p><b>中文摘要：</b>${esc(d.summary_zh)}</p>${d.problem?`<h3>研究问题</h3>${claimBlock(p,d.problem)}`:""}${d.method?`<h3>方法</h3>${claimBlock(p,d.method)}`:""}${(d.findings||[]).length?`<h3>主要结果</h3><ul class="ai">${claimList(p,d.findings)}</ul>`:""}${(d.limitations||[]).length?`<h3>作者说明的局限</h3><ul class="ai">${claimList(p,d.limitations)}</ul>`:""}${roles?`<h3>实验设置</h3><table class="roletable"><tbody>${roles}</tbody></table>`:""}`;}
+const OPEN_KIND={limitation:"作者承认的局限","future-work":"作者提出的未来方向"};
+function claimListKinds(p,items){return (items||[]).map(c=>`<li>${OPEN_KIND[c.kind]?`<span class="chip kind">${OPEN_KIND[c.kind]}</span> `:""}${esc(c.text)}${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}</li>`).join("");}
+function insightList(p,items){return (items||[]).map(c=>`<li>${esc(c.text)}${(c.evidence||[]).map(e=>quoteBlock(p,e)).join("")}</li>`).join("");}
+function aiSection(p){
+ const d=p.ai_draft;if(!d||!d.summary_zh)return "";
+ const roles=d.role?Object.keys(ROLE_LABELS).filter(k=>d.role[k]).map(k=>`<tr><td>${ROLE_LABELS[k]}</td><td>${esc(d.role[k])}</td></tr>`).join(""):"";
+ const open=(d.open_problems&&d.open_problems.length)?d.open_problems:(d.limitations||[]);
+ return `<h3>AI 解读 <span class="chip ai">AI 生成 · 待人工复核</span></h3>
+ <p class="disclaimer">由 ${esc(d.model||"模型")} 依据论文全文生成（${esc(SCOPE_LABEL[d.scope]||d.scope||"pdf-evidence")}）；按“问题 → 方法 → 结果 → 未解决 → 启发”五段整理，结论附原文引用与页码。不是人工精读，不能替代原文核对。</p>
+ <p><b>中文摘要：</b>${esc(d.summary_zh)}</p>
+ ${d.problem?`<h3>① 解决的问题</h3>${claimBlock(p,d.problem)}`:""}
+ ${d.method?`<h3>② 使用方法</h3>${claimBlock(p,d.method)}`:""}
+ ${(d.findings||[]).length?`<h3>③ 得到的结果</h3><ul class="ai">${claimList(p,d.findings)}</ul>`:""}
+ ${open.length?`<h3>④ 尚未解决的问题</h3><ul class="ai">${claimListKinds(p,open)}</ul>`:`<h3>④ 尚未解决的问题</h3><p class="muted">作者未明确提到局限或未来方向，本条暂缺。</p>`}
+ ${(d.insights||[]).length?`<h3>⑤ 对后续读者的启发 <span class="chip kind">编辑推断</span></h3><p class="disclaimer">以下为编辑基于本文证据的综合推断，不是作者原文结论，请结合原文核对。</p><ul class="ai">${insightList(p,d.insights)}</ul>`:""}
+ ${roles?`<h3>实验设置</h3><table class="roletable"><tbody>${roles}</tbody></table>`:""}`;}
+
 const TOPICS=D.topics||[];
 const topicItems=TOPICS.flatMap(g=>(g.items||[]));
 const topicById=id=>topicItems.find(t=>t.id===id);

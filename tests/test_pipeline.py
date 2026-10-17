@@ -229,7 +229,8 @@ class AITests(TempProject):
                 "problem":{"text":"跨域点云分割需要缓解域偏移。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]},
                 "method":{"text":"作者提出一种域适应方法并在目标域上评估。","evidence":[{"page":1,"quote":q}]},
                 "findings":[{"text":"目标域 mIoU 提升 12.5 个百分点。","evidence":[{"page":1,"quote":q}]}],
-                "limitations":[],
+                "open_problems":[{"text":"作者未说明跨模态场景。","kind":"limitation","evidence":[{"page":1,"quote":q}]}],
+                "insights":[{"text":"该思路可迁移到其他点云任务。","evidence":[]}],
                 "role":{"setting":"UDA","supervision":"源域有标签，目标域无标签","modalities":"LiDAR 点云","datasets":"未说明","evaluation":"目标域 mIoU"}}
     def test_valid_analysis(self):
         out=validate_analysis(self.analysis(),self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
@@ -288,6 +289,27 @@ class AITests(TempProject):
         out["findings"]=[dict(item) for _ in range(6)]
         result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
         self.assertNotIn("extra_field",result);self.assertEqual(len(result["findings"]),5)
+    def test_open_problem_kind_normalised(self):
+        out=self.analysis();out["open_problems"]=[{"text":"作者未考虑雨天场景。","kind":"weird","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]}]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertEqual(result["open_problems"][0]["kind"],"limitation")
+    def test_insight_without_evidence_allowed(self):
+        out=self.analysis()
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertEqual(len(result["insights"]),1);self.assertEqual(result["insights"][0]["evidence"],[])
+    def test_insight_with_ungrounded_number_dropped(self):
+        out=self.analysis();out["insights"]=[{"text":"提升 97.5 个点。","evidence":[]}]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertEqual(result["insights"],[]);self.assertEqual(result["dropped"][-1]["field"],"insights")
+    def test_legacy_limitations_shape_still_valid(self):
+        out=self.analysis();out.pop("open_problems");out.pop("insights")
+        out["limitations"]=[{"text":"作者未说明。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]}]
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1")
+        self.assertEqual(len(result["open_problems"]),1);self.assertEqual(result["insights"],[])
+    def test_bad_evidence_drops_only_that_item(self):
+        out=self.analysis();out["findings"].append({"text":"另一个结果。","evidence":[{"snippet":"S99"}]})
+        result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",build_snippets(self.PAGES))
+        self.assertEqual(len(result["findings"]),1);self.assertEqual(result["dropped"][0]["field"],"findings")
     def test_summary_number_repair_pass(self):
         bad=self.analysis();bad["summary_zh"]="论文报告目标域 mIoU 提升 97.5 个百分点。"
         good=self.analysis();calls=[]
@@ -516,7 +538,8 @@ class LibraryAITests(TempProject):
                 "problem":{"text":"跨域需要缓解域偏移。","evidence":[{"page":1,"quote":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds."}]},
                 "method":{"text":"作者提出一种域适应方法。","evidence":[{"page":1,"quote":q}]},
                 "findings":[{"text":"目标域 mIoU 提升 12.5 个百分点。","evidence":[{"page":1,"quote":q}]}],
-                "limitations":[],"role":{"setting":"UDA","supervision":"源域有标签","modalities":"LiDAR","datasets":"未说明","evaluation":"mIoU"}}
+                "open_problems":[{"text":"作者未说明跨模态场景。","kind":"limitation","evidence":[{"page":1,"quote":q}]}],
+                "insights":[{"text":"该思路可迁移到其他点云任务。","evidence":[]}],"role":{"setting":"UDA","supervision":"源域有标签","modalities":"LiDAR","datasets":"未说明","evaluation":"mIoU"}}
     def seed(self):
         return {"id":"W0001","title":"Journal study of cross-domain segmentation","authors":["A B"],
                 "abstract":"We study domain adaptation for 3D semantic segmentation of LiDAR point clouds.",

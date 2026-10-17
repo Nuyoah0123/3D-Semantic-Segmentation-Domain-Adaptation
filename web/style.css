@@ -19,3 +19,4 @@
 .chip.abstract{background:#fdf3e3;border-color:#ecd7b0;color:#8a5a1f}
 .absmeta{font-size:.78rem;color:var(--muted);margin:.15rem 0 .5rem}
 .absmeta a{color:var(--green)}
+.chip.kind{background:#eef6ec;border-color:#d5e6d2;color:var(--green)}
