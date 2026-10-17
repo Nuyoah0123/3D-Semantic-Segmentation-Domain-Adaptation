@@ -311,7 +311,7 @@ class AITests(TempProject):
         result=validate_analysis(out,self.PAGES,"https://arxiv.org/pdf/2610.00001v1",build_snippets(self.PAGES))
         self.assertEqual(len(result["findings"]),1);self.assertEqual(result["dropped"][0]["field"],"findings")
     def test_legacy_drafts_paused_by_default(self):
-        self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1)
+        self.cfg["llm"].update(enabled=True,max_per_run=1,max_per_utc_day=1,regenerate_legacy_drafts=False)
         p=paper();s=copy.deepcopy(EMPTY);merge_paper(s,[],p,iso(NOW))
         rec=s["records"][p["id"]]
         rec["ai_draft"]={"summary_zh":"旧版草稿","stale":False,"prompt_version":"3d-seg-evidence-v3",
