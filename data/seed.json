@@ -8272,7 +8272,7 @@
     "legacy_core": true,
     "oa_pdf": "https://iris.uniroma1.it/bitstream/11573/1666767/1/Saltori_CoSMix_2022.pdf",
     "abstract_lookup": {
-      "at": "2026-10-17T09:31:55Z",
+      "at": "2026-10-17T17:56:06Z",
       "result": "ok",
       "source": "openalex",
       "abstract": false,
@@ -14103,7 +14103,9 @@
       "doi": [
         "10.1016/j.neucom.2023.127190"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2403.11256"
+      ]
     },
     "url": "https://linkinghub.elsevier.com/retrieve/pii/S0925231223013139",
     "venue": "Neurocomputing",
@@ -14137,6 +14139,12 @@
       "at": "2026-10-17T03:14:54Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2403.11256"
     }
   },
   {
@@ -14155,7 +14163,9 @@
       "doi": [
         "10.1109/ICCV51070.2023.01744"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2303.09083"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10378580/",
     "venue": "2023 IEEE/CVF International Conference on Computer Vision (ICCV)",
@@ -14189,6 +14199,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2303.09083"
     }
   },
   {
@@ -14359,6 +14375,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -14530,6 +14551,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -14600,7 +14626,9 @@
     "date_basis": "imported_bibliographic_date",
     "identifiers": {
       "doi": [],
-      "arxiv": []
+      "arxiv": [
+        "2311.10845"
+      ]
     },
     "url": "https://link.springer.com/10.1007/978-3-031-73039-9_26",
     "venue": "Computer Vision – ECCV 2024",
@@ -14628,6 +14656,12 @@
       "at": "2026-10-17T03:14:54Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2311.10845"
     }
   },
   {
@@ -15160,6 +15194,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -15437,7 +15476,9 @@
       "doi": [
         "10.1007/978-981-99-8435-0_37"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2309.10649"
+      ]
     },
     "url": "https://doi.org/10.1007/978-981-99-8435-0_37",
     "venue": "Pattern Recognition and Computer Vision",
@@ -15466,6 +15507,12 @@
       "at": "2026-10-17T03:14:54Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2309.10649"
     }
   },
   {
@@ -15559,6 +15606,11 @@
       "at": "2026-10-17T03:14:54Z",
       "result": "none",
       "source": "openalex"
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -16056,7 +16108,9 @@
       "doi": [
         "10.1109/ICCV48922.2021.00702"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2107.14724"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/9710520/",
     "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
@@ -16089,6 +16143,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2107.14724"
     }
   },
   {
@@ -16108,7 +16168,9 @@
       "doi": [
         "10.1109/TPAMI.2023.3310261"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2308.14619"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/10234713",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -16330,6 +16392,12 @@
         7,
         8
       ]
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2308.14619"
     }
   },
   {
@@ -16518,7 +16586,9 @@
       "doi": [
         "10.1109/CVPR46437.2021.01511"
       ],
-      "arxiv": []
+      "arxiv": [
+        "2007.08488"
+      ]
     },
     "url": "https://ieeexplore.ieee.org/document/9578920/",
     "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -16552,6 +16622,12 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "matched",
+      "score": 1.0,
+      "arxiv": "2007.08488"
     }
   },
   {
@@ -16775,6 +16851,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   },
   {
@@ -16830,6 +16911,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": false
+    },
+    "arxiv_lookup": {
+      "at": "2026-10-17T17:55:06Z",
+      "result": "none",
+      "score": 0.0
     }
   }
 ]
