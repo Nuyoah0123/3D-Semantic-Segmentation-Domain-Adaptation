@@ -784,6 +784,11 @@
       "source": "openalex",
       "abstract": true,
       "pdf": true
+    },
+    "oa_pdf_status": {
+      "at": "2026-10-17T03:50:51Z",
+      "result": "missing",
+      "reason": "http-404"
     }
   },
   {
@@ -3186,7 +3191,12 @@
     "legacy_core": false,
     "legacy_setting_clues": [
       "SFDA"
-    ]
+    ],
+    "abstract_lookup": {
+      "at": "2026-10-17T03:50:49Z",
+      "result": "none",
+      "source": "openalex"
+    }
   },
   {
     "id": "W0054",
@@ -8123,7 +8133,7 @@
     "legacy_core": true,
     "oa_pdf": "https://iris.uniroma1.it/bitstream/11573/1666767/1/Saltori_CoSMix_2022.pdf",
     "abstract_lookup": {
-      "at": "2026-10-17T03:14:54Z",
+      "at": "2026-10-17T03:50:49Z",
       "result": "ok",
       "source": "openalex",
       "abstract": false,
@@ -9559,7 +9569,12 @@
       "note": "此前题录/摘要初筛；未经全文审核。"
     },
     "legacy_group": "support3d",
-    "legacy_core": false
+    "legacy_core": false,
+    "abstract_lookup": {
+      "at": "2026-10-17T03:50:49Z",
+      "result": "none",
+      "source": "openalex"
+    }
   },
   {
     "id": "W0156",
