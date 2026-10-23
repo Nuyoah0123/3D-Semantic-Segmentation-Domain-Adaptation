@@ -954,7 +954,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1302,7 +1302,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1680,7 +1680,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1936,7 +1936,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2288,7 +2288,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2543,7 +2543,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -3707,7 +3707,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -5744,7 +5744,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6019,7 +6019,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6263,7 +6263,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6581,7 +6581,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6927,7 +6927,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7266,7 +7266,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7555,7 +7555,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7800,7 +7800,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8072,7 +8072,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8313,10 +8313,10 @@
         "Shinkyu Park",
         "Ivan Viola"
       ],
-      "abstract": "Training-free weighted aggregation is widely used to lift 2D semantic features onto 3D Gaussians for open-vocabulary scene understanding, yet its theoretical role remains insufficiently understood. Existing analyses typically justify this operation from the rendering side, treating Gaussian features as linearly composable Euclidean variables for reconstructing 2D feature maps. However, this view does not match downstream 3D usage, where each Gaussian is often queried independently in a cosine-based embedding space. We revisit feature lifting from the 3D side and formulate per-Gaussian assignment as a cosine alignment problem on the CLIP unit sphere. Under this objective, the L2-normalized semantic back-projected feature emerges as the closed-form solution, providing a complementary interpretation of the standard lifting rule from the perspective of per-Gaussian semantic assignment. The same formulation further yields a norm decomposition into intra-view and inter-view consistency, suggesting that feature magnitude itself can serve as a semantic reliability signal. Calibrated by effective multi-view support, this reliability score guides a mode-voting refinement that preserves CLIP feature validity by avoiding linear averaging. Experiments on open-vocabulary 3D semantic segmentation show that NormLift is an efficient, training-free framework that achieves strong performance across evaluation protocols.",
+      "abstract": "Training-free weighted aggregation is widely used to lift 2D semantic features onto 3D Gaussians for open-vocabulary scene understanding, yet its theoretical role remains insufficiently understood. Existing analyses typically justify this operation from the rendering side, treating Gaussian features as linearly composable Euclidean variables for reconstructing 2D feature maps. However, this view does not match downstream 3D usage, where each Gaussian is often queried independently in a cosine-based embedding space. We revisit feature lifting from the 3D side and formulate per-Gaussian assignment as a cosine alignment problem on the CLIP unit sphere. Under this objective, the $\\ell_2$-normalized semantic back-projected feature emerges as the closed-form solution, providing a complementary interpretation of the standard lifting rule from the perspective of per-Gaussian semantic assignment. This solution is still a convex combination of the observed directions, so every lifted feature is inherently a mixture. Such mixing is unavoidable for any per-Gaussian estimator, and the question is whether it can be measured. The same formulation answers this: the norm of the back-projected feature decomposes into intra-view and inter-view consistency, so the feature magnitude quantifies how mixed the observations are and serves as a semantic reliability signal. Calibrated by effective multi-view support, this reliability score identifies the Gaussians whose lifted direction has drifted and guides a mode-voting refinement that corrects them by copying a single observed CLIP direction instead of averaging. Experiments on open-vocabulary 3D semantic segmentation show that NormLift is an efficient, training-free framework that achieves strong performance across evaluation protocols. Our code is available at https://github.com/kaust-violab/NormLift_release",
       "published": "2026-09-16T16:35:35Z",
-      "updated": "2026-09-16T16:35:35Z",
-      "version": 1,
+      "updated": "2026-10-21T10:53:14Z",
+      "version": 2,
       "identifiers": {
         "arxiv": [
           "2609.18898"
@@ -8326,14 +8326,14 @@
       "url": "https://arxiv.org/abs/2609.18898",
       "pdf": "https://arxiv.org/pdf/2609.18898",
       "venue": "arXiv",
-      "comment": "20 pages, 6 figures",
+      "comment": "Accepted at NeurIPS 2026",
       "categories": [
         "cs.CV"
       ],
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -8357,55 +8357,62 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": [],
+      "versions": [
+        {
+          "title": "NormLift: From Lifted Features To Semantic Reliability In 3D Gaussian Splatting",
+          "version": 1,
+          "updated": "2026-09-16T16:35:35Z",
+          "published": "2026-09-16T16:35:35Z"
+        }
+      ],
       "ai_draft": {
-        "summary_zh": "论文面向3D Gaussian Splatting中的开放词汇3D语义分割，重新从CLIP单位球面上的余弦对齐解释2D特征向3D Gaussian的提升，并由回投特征范数构造可靠性分数，配合KNN模式投票进行无训练细化。作者报告其在ScanNet和LERF-OVS协议上取得较强表现，并显著提升后处理效率。",
+        "summary_zh": "论文面向开放词汇3D语义分割，重新审视将2D CLIP特征提升到3D Gaussian上的机制。NormLift以CLIP单位球面上的余弦对齐建模提升过程，用特征范数和有效多视图支持估计语义可靠性，并以可靠性引导模式投票细化。作者报告其在ScanNet上优于既有训练式与免训练方法，同时具有效率和2D协议迁移表现。",
         "problem": {
-          "text": "论文针对现有语义回投主要从渲染侧、以欧氏线性重构解释的问题，指出这种视角与下游将每个Gaussian作为独立CLIP语义原子、通过单位球面上的余弦相似度进行查询的实际用法不一致。因此，需要一种符合CLIP几何和3D Gaussian独立语义查询方式的特征提升与质量评估方法。",
+          "text": "论文针对3D Gaussian Spl̈atting中的语义特征提升问题：现有方法通常按alpha混合贡献加权聚合2D特征，但下游任务往往将每个Gaussian作为独立语义原子，并在CLIP单位球面上以余弦相似度查询，因而存在渲染侧线性重构与3D语义使用方式不匹配的痛点。",
           "evidence": [
             {
               "page": 1,
-              "quote": "Despite its widespread adoption, the role of back-projection has been analyzed almost from the render- ing side, where the formula arises as an approximate solution to a 2D feature reconstruction objective, derived under simplifying assumptions or characterized by bounded approximation guarantees."
+              "quote": "The dominant strategy is a simple weighted aggregation: each Gaussian receives the average of the 2D features it contributes to, weighted by its alpha-blending contribution along each pixel ray."
             },
             {
-              "page": 1,
-              "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is Preprint."
+              "page": 2,
+              "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is measured by cosine on the unit sphere rather than by Euclidean reconstruction error."
             }
           ]
         },
         "method": {
-          "text": "NormLift将每个Gaussian的特征分配表述为CLIP单位球面上的余弦对齐问题，得到经过ℓ2归一化的语义回投特征作为闭式最优解。回投特征的范数被分解为视图内一致性与视图间一致性，并结合有效多视图支持校准为Gaussian级可靠性分数；随后利用该分数进行KNN模式投票，复制最受支持邻居的单一CLIP方向，避免线性平均造成的语义模糊。整个框架无需训练，按Gaussian独立运行。",
+          "text": "NormLift从3D侧将每个Gaussian的特征提升表述为CLIP单位球面上的余弦对齐问题，得到ℓ2归一化语义反投影特征这一闭式解。由于提升结果仍是多视图观测方向的凸组合，方法进一步将其范数分解为视图内一致性与视图间一致性，并结合有效多视图支持构造语义可靠性分数。随后，利用该分数进行空间邻域模式投票：对不可靠Gaussian复制单一、连贯的邻居CLIP方向，而不是线性平均邻域特征，并通过保守边际条件决定是否替换。",
           "evidence": [
             {
-              "page": 1,
-              "quote": "We revisit feature lifting from the 3D side and formulate per-Gaussian assignment as a cosine alignment problem on the CLIP unit sphere."
+              "page": 2,
+              "quote": "In summary, our contributions are: • We formulate per-Gaussian feature lifting as a cosine alignment problem on the CLIP unit sphere and show that the ℓ2-normalized back-projected feature is its closed-form optimum."
             },
             {
-              "page": 3,
-              "quote": "Section 3.3 shows that the same norm admits an algebraic decomposition into intra- and inter-view consistency, yielding the optimal direction (its unit vector) and a reliability measure (its norm) simultaneously; we calibrate this norm by effective multi-view support to obtain R(j)."
-            },
-            {
-              "page": 1,
-              "quote": "Under this objective, the ℓ2-normalized semantic back-projected feature emerges as the closed-form solution, providing a complementary interpretation of the standard lifting rule from the perspective of per-Gaussian semantic assignment.[cs.CV] The same formulation further yields a norm decomposition into intra-view and"
+              "page": 2,
+              "quote": "• Guided by R(j), we design a mode-voting refinement that corrects unreliable Gaussians by copying a single observed CLIP direction from spatial neighbors rather than linearly averaging them, in accordance with the non-linearity of the CLIP semantic manifold."
             }
           ]
         },
         "findings": [
           {
-            "text": "在ScanNet开放词汇3D语义分割上，NormLift持续优于既有的无训练和有训练基线。",
+            "text": "在ScanNet的开放词汇3D语义分割实验中，作者报告NormLift取得最佳mIoU和mAcc，并优于训练式与免训练两类方法。",
             "evidence": [
               {
-                "page": 2,
-                "quote": "Experiments on ScanNet show that NormLift consistently improves over prior training-free and training-based baselines on open-vocabulary 3D semantic segmentation."
+                "page": 9,
+                "quote": "4.1 Open-vocabulary 3D experiments We evaluate NormLift on ScanNet [Dai et al., 2017] for open-vocabulary 3D semantic segmentation, following the OpenGaussian protocol [Wu et al., 2024b] (Appendix F.1)."
+              },
+              {
+                "page": 9,
+                "quote": "NormLift achieves the best mIoU and mAcc, outperforming both families."
               }
             ]
           },
           {
-            "text": "作者报告，经过有效多视图支持校准的可靠性分数与下游准确率呈单调关联，并且提供了与opacity大体互补的信号。",
+            "text": "可靠性分数与下游准确率呈单调关联，并提供了超出opacity或可见性启发式的互补信号。",
             "evidence": [
               {
                 "page": 2,
-                "quote": "Calibrated by an effective view count to discount single-view dominance, the norm yields a per- Gaussian reliability score that, in our experiments, aligns monotonically with downstream accuracy and captures information largely complementary to opacity (Sec. 4.1, Appendix E.2)."
+                "quote": "Calibrated by an effective view count to discount single- view dominance, the norm yields a per-Gaussian reliability score that, in our experiments, aligns monotonically with downstream accuracy and captures information largely complementary to opacity (Sec. 4.1, Appendix E.3)."
               },
               {
                 "page": 2,
@@ -8414,7 +8421,7 @@
             ]
           },
           {
-            "text": "可靠性引导的KNN细化在峰值内存相当的条件下，比SFS的后提升流程快6.7×。",
+            "text": "作者报告可靠性引导的KNN细化在后处理阶段比SFS快6.7×，且峰值内存相当。",
             "evidence": [
               {
                 "page": 2,
@@ -8423,20 +8430,28 @@
             ]
           },
           {
-            "text": "在LERF-OVS的基于2D渲染的评测协议中，NormLift取得最佳平均定位准确率。",
+            "text": "组件消融显示，移除细化会带来最大性能下降；去除可靠性权重或将模式选择改为距离加权线性平均也会降低结果，支持可靠性感知模式投票的设计。",
             "evidence": [
               {
-                "page": 2,
-                "quote": "The lifted features further transfer to a 2D rendering-based protocol on LERF-OVS, where NormLift attains the best mean localization accuracy."
+                "page": 9,
+                "quote": "4.2 Ablation study Component ablation: Table 2 shows that each component contributes to NormLift."
+              },
+              {
+                "page": 9,
+                "quote": "These results support reliability-aware mode voting, which selects a coherent neighbor feature instead of averaging nearby CLIP features."
               }
             ]
           },
           {
-            "text": "作者将NormLift定位为高效、无训练的框架，并报告其在多种评测协议上取得较强表现。",
+            "text": "提升后的特征还迁移到LERF-OVS的2D渲染协议，作者报告NormLift取得最佳平均定位准确率，并显示出合理的2D泛化表现。",
             "evidence": [
               {
-                "page": 1,
-                "quote": "Experiments on open-vocabulary 3D semantic segmen- tation show that NormLift is an efficient, training-free framework that achieves strong performance across evaluation protocols."
+                "page": 2,
+                "quote": "The lifted features further transfer to a 2D rendering-based protocol on LERF-OVS, where NormLift attains the best mean localization accuracy."
+              },
+              {
+                "page": 9,
+                "quote": "We further evaluate 2D rendering on LERF-OVS in Appendix G: although the 2D protocol composites Gaussians rather than querying them independently, our formulation remains competitive, indicating reasonable 2D generalization."
               }
             ]
           }
@@ -8444,173 +8459,184 @@
         "open_problems": [],
         "insights": [
           {
-            "text": "编辑推断：当下游语义查询采用余弦相似度时，直接在归一化特征空间中定义提升目标，可能比单纯追求2D特征图的欧氏重构更贴合任务用途。",
+            "text": "编辑推断：当下游以单位球面上的独立语义向量进行查询时，提升目标应与余弦几何保持一致，而不宜只依据渲染重构误差设计。",
             "evidence": [
+              {
+                "page": 2,
+                "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is measured by cosine on the unit sphere rather than by Euclidean reconstruction error."
+              },
               {
                 "page": 2,
                 "quote": "This mismatch motivates a complementary, 3D-side perspective on the same lifting operation, one that reflects the geometry of CLIP and the way each Gaussian is consumed downstream."
-              },
-              {
-                "page": 3,
-                "quote": "This per-Gaussian view is complementary to rendering-side analyses and matches the cosine-based geometry under which lifted features are actually queried downstream."
               }
             ]
           },
           {
-            "text": "编辑推断：可靠性评估可以优先从特征聚合过程内部构造，并与可见性或opacity信号联合分析，而不必完全依赖外部启发式。",
+            "text": "编辑推断：多视图聚合不仅要估计语义方向，还应评估观测混合程度与有效视图支持，以避免单一视图主导造成的虚高可靠性。",
             "evidence": [
               {
-                "page": 3,
-                "quote": "In contrast, our reliability signal is obtained internally from the same lifting formulation: the norm of the back-projected feature algebraically factors into intra-view and inter-view consistency, and is then calibrated by effective multi-view support."
+                "page": 7,
+                "quote": "Since a single dominant view can still yield a high norm, we further calibrate it with effective multi-view support."
               },
               {
-                "page": 3,
-                "quote": "We further show empirically that R(j) overlaps with opacity-based signals only at the zero-evidence boundary and is largely independent of opacity for the remaining 84% of Gaussians (Sec. 4.1, Appendix E.2), indicating that it provides information complementary to existing visibility- and rendering-based cues."
+                "page": 7,
+                "quote": "3.3.2 Calibrating with effective views The norm ∥fj∥alone does not distinguish many agreeing views from a single dominant one."
               }
             ]
           },
           {
-            "text": "编辑推断：后续工作应同时考察3D分割与2D渲染迁移协议，并将语义质量、推理效率和内存开销一并纳入比较。",
+            "text": "编辑推断：在非线性语义空间中，选择已有的连贯方向可能比继续平均邻域特征更稳健；评测时可同时检查独立Gaussian查询与2D渲染协议。",
             "evidence": [
               {
-                "page": 2,
-                "quote": "Its reliability-guided KNN refinement is lightweight, running 6.7× faster than SFS’s post-lifting pipeline with matched peak memory."
+                "page": 7,
+                "quote": "The non-linearity of the CLIP semantic manifold (Section 3.1.3, Property 3) suggests a constraint: linearly averaging neighboring CLIP features can drift off-manifold, so refinement should instead copy a single coherent direction from nearby candidates rather than blend them."
               },
               {
-                "page": 2,
-                "quote": "The lifted features further transfer to a 2D rendering-based protocol on LERF-OVS, where NormLift attains the best mean localization accuracy."
+                "page": 9,
+                "quote": "We further evaluate 2D rendering on LERF-OVS in Appendix G: although the 2D protocol composites Gaussians rather than querying them independently, our formulation remains competitive, indicating reasonable 2D generalization."
               }
             ]
           }
         ],
         "role": {
-          "setting": "3D Gaussian Splatting中的开放词汇3D语义分割与下游2D渲染协议；未说明UDA、DG或TTA源域/目标域划分。",
-          "supervision": "训练-free；不进行场景级语义优化，直接将2D特征提升到3D Gaussian并进行可靠性引导的细化。",
-          "modalities": "3D Gaussian primitives与多视图2D图像特征，主要使用CLIP特征；Gaussian包含位置、协方差、opacity和颜色。",
-          "datasets": "ScanNet；LERF-OVS用于基于2D渲染的迁移评测。",
-          "evaluation": "ScanNet采用OpenGaussian协议，报告mIoU与mAcc；LERF-OVS采用2D渲染协议，报告平均定位准确率，并比较速度与峰值内存。"
+          "setting": "开放词汇3D语义分割；以3D Gaussian为独立语义原子，并补充2D渲染协议评测。",
+          "supervision": "核心方法为training-free；实验同时与训练式和免训练基线比较。",
+          "modalities": "3D Gaussian Splatting表示与多视图2D CLIP特征；支持3D查询和2D渲染。",
+          "datasets": "ScanNet用于主要3D语义分割实验；LERF-OVS用于2D渲染与定位评测。",
+          "evaluation": "ScanNet遵循OpenGaussian协议，报告mIoU和mAcc；LERF-OVS报告平均定位准确率，并进行消融与效率比较。"
         },
         "evidence": [
           {
-            "claim": "论文针对现有语义回投主要从渲染侧、以欧氏线性重构解释的问题，指出这种视角与下游将每个Gaussian作为独立CLIP语义原子、通过单位球面上的余弦相似度进行查询的实际用法不一致。因此，需要一种符合CLIP几何和3D Gaussian独立语义查询方式的特征提升与质量评估方法。",
+            "claim": "论文针对3D Gaussian Spl̈atting中的语义特征提升问题：现有方法通常按alpha混合贡献加权聚合2D特征，但下游任务往往将每个Gaussian作为独立语义原子，并在CLIP单位球面上以余弦相似度查询，因而存在渲染侧线性重构与3D语义使用方式不匹配的痛点。",
             "page": 1,
-            "quote": "Despite its widespread adoption, the role of back-projection has been analyzed almost from the render- ing side, where the formula arises as an approximate solution to a 2D feature reconstruction objective, derived under simplifying assumptions or characterized by bounded approximation guarantees.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=1"
+            "quote": "The dominant strategy is a simple weighted aggregation: each Gaussian receives the average of the 2D features it contributes to, weighted by its alpha-blending contribution along each pixel ray.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=1"
           },
           {
-            "claim": "论文针对现有语义回投主要从渲染侧、以欧氏线性重构解释的问题，指出这种视角与下游将每个Gaussian作为独立CLIP语义原子、通过单位球面上的余弦相似度进行查询的实际用法不一致。因此，需要一种符合CLIP几何和3D Gaussian独立语义查询方式的特征提升与质量评估方法。",
-            "page": 1,
-            "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is Preprint.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=1"
-          },
-          {
-            "claim": "NormLift将每个Gaussian的特征分配表述为CLIP单位球面上的余弦对齐问题，得到经过ℓ2归一化的语义回投特征作为闭式最优解。回投特征的范数被分解为视图内一致性与视图间一致性，并结合有效多视图支持校准为Gaussian级可靠性分数；随后利用该分数进行KNN模式投票，复制最受支持邻居的单一CLIP方向，避免线性平均造成的语义模糊。整个框架无需训练，按Gaussian独立运行。",
-            "page": 1,
-            "quote": "We revisit feature lifting from the 3D side and formulate per-Gaussian assignment as a cosine alignment problem on the CLIP unit sphere.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=1"
-          },
-          {
-            "claim": "NormLift将每个Gaussian的特征分配表述为CLIP单位球面上的余弦对齐问题，得到经过ℓ2归一化的语义回投特征作为闭式最优解。回投特征的范数被分解为视图内一致性与视图间一致性，并结合有效多视图支持校准为Gaussian级可靠性分数；随后利用该分数进行KNN模式投票，复制最受支持邻居的单一CLIP方向，避免线性平均造成的语义模糊。整个框架无需训练，按Gaussian独立运行。",
-            "page": 3,
-            "quote": "Section 3.3 shows that the same norm admits an algebraic decomposition into intra- and inter-view consistency, yielding the optimal direction (its unit vector) and a reliability measure (its norm) simultaneously; we calibrate this norm by effective multi-view support to obtain R(j).",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=3"
-          },
-          {
-            "claim": "NormLift将每个Gaussian的特征分配表述为CLIP单位球面上的余弦对齐问题，得到经过ℓ2归一化的语义回投特征作为闭式最优解。回投特征的范数被分解为视图内一致性与视图间一致性，并结合有效多视图支持校准为Gaussian级可靠性分数；随后利用该分数进行KNN模式投票，复制最受支持邻居的单一CLIP方向，避免线性平均造成的语义模糊。整个框架无需训练，按Gaussian独立运行。",
-            "page": 1,
-            "quote": "Under this objective, the ℓ2-normalized semantic back-projected feature emerges as the closed-form solution, providing a complementary interpretation of the standard lifting rule from the perspective of per-Gaussian semantic assignment.[cs.CV] The same formulation further yields a norm decomposition into intra-view and",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=1"
-          },
-          {
-            "claim": "在ScanNet开放词汇3D语义分割上，NormLift持续优于既有的无训练和有训练基线。",
+            "claim": "论文针对3D Gaussian Spl̈atting中的语义特征提升问题：现有方法通常按alpha混合贡献加权聚合2D特征，但下游任务往往将每个Gaussian作为独立语义原子，并在CLIP单位球面上以余弦相似度查询，因而存在渲染侧线性重构与3D语义使用方式不匹配的痛点。",
             "page": 2,
-            "quote": "Experiments on ScanNet show that NormLift consistently improves over prior training-free and training-based baselines on open-vocabulary 3D semantic segmentation.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is measured by cosine on the unit sphere rather than by Euclidean reconstruction error.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "作者报告，经过有效多视图支持校准的可靠性分数与下游准确率呈单调关联，并且提供了与opacity大体互补的信号。",
+            "claim": "NormLift从3D侧将每个Gaussian的特征提升表述为CLIP单位球面上的余弦对齐问题，得到ℓ2归一化语义反投影特征这一闭式解。由于提升结果仍是多视图观测方向的凸组合，方法进一步将其范数分解为视图内一致性与视图间一致性，并结合有效多视图支持构造语义可靠性分数。随后，利用该分数进行空间邻域模式投票：对不可靠Gaussian复制单一、连贯的邻居CLIP方向，而不是线性平均邻域特征，并通过保守边际条件决定是否替换。",
             "page": 2,
-            "quote": "Calibrated by an effective view count to discount single-view dominance, the norm yields a per- Gaussian reliability score that, in our experiments, aligns monotonically with downstream accuracy and captures information largely complementary to opacity (Sec. 4.1, Appendix E.2).",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "quote": "In summary, our contributions are: • We formulate per-Gaussian feature lifting as a cosine alignment problem on the CLIP unit sphere and show that the ℓ2-normalized back-projected feature is its closed-form optimum.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "作者报告，经过有效多视图支持校准的可靠性分数与下游准确率呈单调关联，并且提供了与opacity大体互补的信号。",
+            "claim": "NormLift从3D侧将每个Gaussian的特征提升表述为CLIP单位球面上的余弦对齐问题，得到ℓ2归一化语义反投影特征这一闭式解。由于提升结果仍是多视图观测方向的凸组合，方法进一步将其范数分解为视图内一致性与视图间一致性，并结合有效多视图支持构造语义可靠性分数。随后，利用该分数进行空间邻域模式投票：对不可靠Gaussian复制单一、连贯的邻居CLIP方向，而不是线性平均邻域特征，并通过保守边际条件决定是否替换。",
+            "page": 2,
+            "quote": "• Guided by R(j), we design a mode-voting refinement that corrects unreliable Gaussians by copying a single observed CLIP direction from spatial neighbors rather than linearly averaging them, in accordance with the non-linearity of the CLIP semantic manifold.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
+          },
+          {
+            "claim": "在ScanNet的开放词汇3D语义分割实验中，作者报告NormLift取得最佳mIoU和mAcc，并优于训练式与免训练两类方法。",
+            "page": 9,
+            "quote": "4.1 Open-vocabulary 3D experiments We evaluate NormLift on ScanNet [Dai et al., 2017] for open-vocabulary 3D semantic segmentation, following the OpenGaussian protocol [Wu et al., 2024b] (Appendix F.1).",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
+          },
+          {
+            "claim": "在ScanNet的开放词汇3D语义分割实验中，作者报告NormLift取得最佳mIoU和mAcc，并优于训练式与免训练两类方法。",
+            "page": 9,
+            "quote": "NormLift achieves the best mIoU and mAcc, outperforming both families.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
+          },
+          {
+            "claim": "可靠性分数与下游准确率呈单调关联，并提供了超出opacity或可见性启发式的互补信号。",
+            "page": 2,
+            "quote": "Calibrated by an effective view count to discount single- view dominance, the norm yields a per-Gaussian reliability score that, in our experiments, aligns monotonically with downstream accuracy and captures information largely complementary to opacity (Sec. 4.1, Appendix E.3).",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
+          },
+          {
+            "claim": "可靠性分数与下游准确率呈单调关联，并提供了超出opacity或可见性启发式的互补信号。",
             "page": 2,
             "quote": "The reliability score is largely independent of opacity except in a small zero-evidence regime, capturing a per-Gaussian signal beyond what visibility-based heuristics provide.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "可靠性引导的KNN细化在峰值内存相当的条件下，比SFS的后提升流程快6.7×。",
+            "claim": "作者报告可靠性引导的KNN细化在后处理阶段比SFS快6.7×，且峰值内存相当。",
             "page": 2,
             "quote": "Its reliability-guided KNN refinement is lightweight, running 6.7× faster than SFS’s post-lifting pipeline with matched peak memory.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "在LERF-OVS的基于2D渲染的评测协议中，NormLift取得最佳平均定位准确率。",
+            "claim": "组件消融显示，移除细化会带来最大性能下降；去除可靠性权重或将模式选择改为距离加权线性平均也会降低结果，支持可靠性感知模式投票的设计。",
+            "page": 9,
+            "quote": "4.2 Ablation study Component ablation: Table 2 shows that each component contributes to NormLift.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
+          },
+          {
+            "claim": "组件消融显示，移除细化会带来最大性能下降；去除可靠性权重或将模式选择改为距离加权线性平均也会降低结果，支持可靠性感知模式投票的设计。",
+            "page": 9,
+            "quote": "These results support reliability-aware mode voting, which selects a coherent neighbor feature instead of averaging nearby CLIP features.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
+          },
+          {
+            "claim": "提升后的特征还迁移到LERF-OVS的2D渲染协议，作者报告NormLift取得最佳平均定位准确率，并显示出合理的2D泛化表现。",
             "page": 2,
             "quote": "The lifted features further transfer to a 2D rendering-based protocol on LERF-OVS, where NormLift attains the best mean localization accuracy.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "作者将NormLift定位为高效、无训练的框架，并报告其在多种评测协议上取得较强表现。",
-            "page": 1,
-            "quote": "Experiments on open-vocabulary 3D semantic segmen- tation show that NormLift is an efficient, training-free framework that achieves strong performance across evaluation protocols.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=1"
+            "claim": "提升后的特征还迁移到LERF-OVS的2D渲染协议，作者报告NormLift取得最佳平均定位准确率，并显示出合理的2D泛化表现。",
+            "page": 9,
+            "quote": "We further evaluate 2D rendering on LERF-OVS in Appendix G: although the 2D protocol composites Gaussians rather than querying them independently, our formulation remains competitive, indicating reasonable 2D generalization.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
           },
           {
-            "claim": "编辑推断：当下游语义查询采用余弦相似度时，直接在归一化特征空间中定义提升目标，可能比单纯追求2D特征图的欧氏重构更贴合任务用途。",
+            "claim": "编辑推断：当下游以单位球面上的独立语义向量进行查询时，提升目标应与余弦几何保持一致，而不宜只依据渲染重构误差设计。",
+            "page": 2,
+            "quote": "However, this is not how Gaussians are typically used in downstream 3D tasks: each is queried independently as a semantic primitive on the CLIP feature space, where similarity is measured by cosine on the unit sphere rather than by Euclidean reconstruction error.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
+          },
+          {
+            "claim": "编辑推断：当下游以单位球面上的独立语义向量进行查询时，提升目标应与余弦几何保持一致，而不宜只依据渲染重构误差设计。",
             "page": 2,
             "quote": "This mismatch motivates a complementary, 3D-side perspective on the same lifting operation, one that reflects the geometry of CLIP and the way each Gaussian is consumed downstream.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=2"
           },
           {
-            "claim": "编辑推断：当下游语义查询采用余弦相似度时，直接在归一化特征空间中定义提升目标，可能比单纯追求2D特征图的欧氏重构更贴合任务用途。",
-            "page": 3,
-            "quote": "This per-Gaussian view is complementary to rendering-side analyses and matches the cosine-based geometry under which lifted features are actually queried downstream.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=3"
+            "claim": "编辑推断：多视图聚合不仅要估计语义方向，还应评估观测混合程度与有效视图支持，以避免单一视图主导造成的虚高可靠性。",
+            "page": 7,
+            "quote": "Since a single dominant view can still yield a high norm, we further calibrate it with effective multi-view support.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=7"
           },
           {
-            "claim": "编辑推断：可靠性评估可以优先从特征聚合过程内部构造，并与可见性或opacity信号联合分析，而不必完全依赖外部启发式。",
-            "page": 3,
-            "quote": "In contrast, our reliability signal is obtained internally from the same lifting formulation: the norm of the back-projected feature algebraically factors into intra-view and inter-view consistency, and is then calibrated by effective multi-view support.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=3"
+            "claim": "编辑推断：多视图聚合不仅要估计语义方向，还应评估观测混合程度与有效视图支持，以避免单一视图主导造成的虚高可靠性。",
+            "page": 7,
+            "quote": "3.3.2 Calibrating with effective views The norm ∥fj∥alone does not distinguish many agreeing views from a single dominant one.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=7"
           },
           {
-            "claim": "编辑推断：可靠性评估可以优先从特征聚合过程内部构造，并与可见性或opacity信号联合分析，而不必完全依赖外部启发式。",
-            "page": 3,
-            "quote": "We further show empirically that R(j) overlaps with opacity-based signals only at the zero-evidence boundary and is largely independent of opacity for the remaining 84% of Gaussians (Sec. 4.1, Appendix E.2), indicating that it provides information complementary to existing visibility- and rendering-based cues.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=3"
+            "claim": "编辑推断：在非线性语义空间中，选择已有的连贯方向可能比继续平均邻域特征更稳健；评测时可同时检查独立Gaussian查询与2D渲染协议。",
+            "page": 7,
+            "quote": "The non-linearity of the CLIP semantic manifold (Section 3.1.3, Property 3) suggests a constraint: linearly averaging neighboring CLIP features can drift off-manifold, so refinement should instead copy a single coherent direction from nearby candidates rather than blend them.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=7"
           },
           {
-            "claim": "编辑推断：后续工作应同时考察3D分割与2D渲染迁移协议，并将语义质量、推理效率和内存开销一并纳入比较。",
-            "page": 2,
-            "quote": "Its reliability-guided KNN refinement is lightweight, running 6.7× faster than SFS’s post-lifting pipeline with matched peak memory.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
-          },
-          {
-            "claim": "编辑推断：后续工作应同时考察3D分割与2D渲染迁移协议，并将语义质量、推理效率和内存开销一并纳入比较。",
-            "page": 2,
-            "quote": "The lifted features further transfer to a 2D rendering-based protocol on LERF-OVS, where NormLift attains the best mean localization accuracy.",
-            "source": "https://arxiv.org/pdf/2609.18898v1#page=2"
+            "claim": "编辑推断：在非线性语义空间中，选择已有的连贯方向可能比继续平均邻域特征更稳健；评测时可同时检查独立Gaussian查询与2D渲染协议。",
+            "page": 9,
+            "quote": "We further evaluate 2D rendering on LERF-OVS in Appendix G: although the 2D protocol composites Gaussians rather than querying them independently, our formulation remains competitive, indicating reasonable 2D generalization.",
+            "source": "https://arxiv.org/pdf/2609.18898v2#page=9"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-17T06:18:12Z",
+        "generated_at": "2026-10-23T19:34:03Z",
         "human_approved": false,
         "stale": false,
-        "source_hash": "9ea8f2d3f7bc0352f5808bb1dfb12a5d4c15551c6ab718cd0271d4a25c7719a3",
+        "source_hash": "8bb6270e20011cfa4d33e6575f60f1277447828936f95918be987248650b4ef6",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
           2,
-          3,
-          4,
-          6,
+          7,
           8,
           9,
+          10,
+          13,
           14,
-          15,
           16,
           17,
           18,
@@ -8646,7 +8672,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32337,7 +32363,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32905,7 +32931,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -35969,7 +35995,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -37063,7 +37089,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -38355,7 +38381,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -40024,7 +40050,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -40338,7 +40364,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -42429,7 +42455,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -42687,7 +42713,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -42877,7 +42903,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-21T19:31:10Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -43225,7 +43251,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -43477,7 +43503,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -43744,7 +43770,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -44043,20 +44069,21 @@
       ],
       "abstract": "Assuming that neither source data nor source model parameters are accessible, black-box domain adaptation (BBDA) represents a highly practical yet challenging setting, where transferable knowledge is limited to the predictions of a black-box source model. Existing approaches exploit such knowledge via pseudo-label refinement or by leveraging vision-language models (ViLs), but they often fail to reconcile the inherent discrepancy between task-specific knowledge from black-box models and language-aligned semantic priors of ViLs, resulting in suboptimal integration and degraded adaptation performance. To address this challenge, we propose adaptive Dual-Teacher Distillation with Subnetwork Rectification (DDSR), a framework that explicitly reconciles these complementary yet inconsistent knowledge sources. DDSR employs an adaptive prediction fusion strategy to integrate predictions from the black-box source model and a ViL, generating reliable pseudo-labels for the target domain. A subnetwork-based regularization mechanism mitigates overfitting to noisy supervision by enforcing output consistency and gradient divergency. Furthermore, progressively improved target predictions iteratively refine both pseudo-labels and ViL prompts, enhancing semantic alignment. Finally, class-wise prototypes are used to further optimize target predictions via self-training. Extensive experiments on multiple benchmark datasets demonstrate that DDSR consistently outperforms state-of-the-art methods, including those with access to source data or source model parameters.",
       "published": "2026-03-24T07:54:19Z",
-      "updated": "2026-05-01T13:36:31Z",
-      "version": 3,
+      "updated": "2026-10-20T05:35:00Z",
+      "version": 5,
       "identifiers": {
         "arxiv": [
           "2603.22908"
         ],
         "doi": [
+          "10.1109/tcsvt.2026.3745811",
           "10.48550/arXiv.2603.22908"
         ]
       },
       "url": "https://arxiv.org/abs/2603.22908",
       "pdf": "https://arxiv.org/pdf/2603.22908",
       "venue": "arXiv",
-      "comment": "Under Review",
+      "comment": "Accepted by IEEE TCSVT 2026",
       "categories": [
         "cs.CV",
         "cs.LG"
@@ -44064,7 +44091,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -44091,7 +44118,14 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": [],
+      "versions": [
+        {
+          "title": "Adaptive Dual-Teacher Distillation with Subnetwork Rectification for Bridging Semantic Gaps in Black-Box Domain Adaptation",
+          "version": 3,
+          "updated": "2026-05-01T13:36:31Z",
+          "published": "2026-03-24T07:54:19Z"
+        }
+      ],
       "ai_draft": {
         "summary_zh": "论文研究黑盒域适应：源数据及源模型内部结构不可访问，目标模型只能查询黑盒源模型预测并利用无标注目标数据进行适应。作者提出DDSR，通过黑盒模型与CLIP双教师融合、子网络正则化、渐进式自蒸馏和原型校正生成伪标签；实验表明其在多个基准上持续优于现有方法。",
         "problem": {
@@ -44339,7 +44373,7 @@
         "prompt_version": "3d-seg-reading-v4",
         "generated_at": "2026-10-17T06:45:20Z",
         "human_approved": false,
-        "stale": false,
+        "stale": true,
         "source_hash": "26dd00fb5ee133380887b826fa3cbf3dc1896d963683c8080793b4ea2d7f0410",
         "scope": "pdf-evidence",
         "input_pages": [
@@ -44384,7 +44418,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -44695,7 +44729,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -44995,7 +45029,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45291,7 +45325,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45551,7 +45585,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45868,7 +45902,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -46162,7 +46196,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -48865,7 +48899,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T03:33:33Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -53946,7 +53980,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T17:54:45Z",
-      "last_seen": "2026-10-17T17:54:45Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -59624,7 +59658,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-20T19:32:20Z",
-      "last_seen": "2026-10-21T19:31:10Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -63210,7 +63244,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-21T19:31:10Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -63501,7 +63535,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-21T19:31:10Z",
+      "last_seen": "2026-10-23T19:31:20Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -65159,28 +65193,1871 @@
           16
         ]
       }
+    },
+    "arxiv:2610.29845": {
+      "id": "arxiv:2610.29845",
+      "title": "RangeNav: Task-Aligned LiDAR Range-Image Pretraining for Robot Navigation",
+      "authors": [
+        "Samuel Foo Enze",
+        "Manthan Patel",
+        "Fan Yang",
+        "Linus Kramer",
+        "Pascal Roth",
+        "Marco Hutter",
+        "Cesar Cadena"
+      ],
+      "abstract": "Autonomous mobile robots operating in dense crowds and cluttered sites require $360^\\circ$ perception to react to surrounding hazards. While panoramic LiDAR offers full-surround coverage, learning representations within reinforcement learning (RL) is sample-inefficient under sparse rewards, and existing 3D pretrained point-cloud encoders are too memory-heavy for massively parallel RL simulation. We present RangeNav, a compact (183k parameters) LiDAR range-image encoder pretrained entirely on synthetic data. RangeNav uses anisotropic convolutions and circular padding to handle the extreme aspect ratio and azimuthal seam of range images. We pretrain the network using a navigation-aligned objective combining range reconstruction, semantic segmentation, and bird's-eye-view (BEV) prediction, then freeze it for policy learning. In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in procedurally generated training and out-of-distribution realistic test environments, respectively. Zero-shot real-world deployments on a Unitree B2-W quadruped demonstrate robust navigation through dense crowds, low-light settings, and construction zones where limited-field-of-view depth policies struggle. Code and models will be open-sourced. Project website: https://rangenav.github.io/.",
+      "published": "2026-10-21T15:06:08Z",
+      "updated": "2026-10-22T07:24:01Z",
+      "version": 2,
+      "identifiers": {
+        "arxiv": [
+          "2610.29845"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.29845",
+      "pdf": "https://arxiv.org/pdf/2610.29845",
+      "venue": "arXiv",
+      "comment": "9 pages, 6 figures, 5 tables. Added project website to abstract and updated author affiliation; research content unchanged",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "semantic",
+        "methods": [
+          "alignment"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文面向大规模并行强化学习中的机器人导航，提出一种轻量级LiDAR全景距离图预训练编码器。方法在合成数据上联合学习距离重建、语义分割与BEV预测，并冻结编码器供导航策略使用；仿真和零样本真实部署均显示出较好的导航表现。",
+        "problem": {
+          "text": "论文要解决全景LiDAR表征在强化学习导航中的样本效率与计算开销问题：稀疏点云奖励使表征学习低效，通用三维点云编码器又难以适应大规模并行仿真；同时，RGB和深度相机存在光照、缺失值与视场受限等问题。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "While panoramic LiDAR offers full-surround coverage, learning representations within rein- forcement learning (RL) is sample-inefficient under sparse Point Cloud rewards, and existing 3D pretrained point-cloud encoders are Range Image too memory-heavy for massively parallel RL simulation."
+            },
+            {
+              "page": 1,
+              "quote": "Yet pretrained shifts, and depth cameras return noisy or missing values representations for LiDAR-based navigation remain underex- beyond a few meters, in sunlight, and on reflective or plored."
+            }
+          ]
+        },
+        "method": {
+          "text": "论文将LiDAR扫描投影为全景距离图，设计仅含183k参数的轻量级编码器，并用各向异性卷积与环形填充处理距离图的极端宽高比和方位角接缝。预训练阶段联合优化距离重建、语义分割和BEV预测，使表征保留几何、语义、障碍边界与俯视可通行性信息；随后冻结编码器，将空间潜变量与本体感知、相对目标输入循环式actor–critic导航策略。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "RangeNav Encoder uses anisotropic convolutions and circular padding to handle LatentOct the extreme aspect ratio and azimuthal seam of range images."
+            },
+            {
+              "page": 2,
+              "quote": "METHOD1) A navigation-aligned pretraining recipe combining range reconstruction, semantic segmentation, and BEV predic- Our approach consists of three stages."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在程序生成的仿真训练环境中，相比仅进行距离重建的基线，加入语义和BEV监督使导航成功率平均提高32.03个百分点。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively."
+              }
+            ]
+          },
+          {
+            "text": "在分布外的真实感仿真测试环境中，相比仅进行距离重建的基线，加入语义和BEV监督使导航成功率平均提高23.73个百分点。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively."
+              }
+            ]
+          },
+          {
+            "text": "与深度策略相比，论文报告其LiDAR策略具有相当的平均成功率、更短的导航时间和更高的成功加权指标。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Compared with the depth-based work guides visual navigation encoders with auxiliary su- policy of [3], our LiDAR policy achieves comparable average pervision, including action and temporal-distance predic- SR, shorter navigation times, and higher success weighted tions [24], dynamics and progress targets [25], depth pr"
+              }
+            ]
+          },
+          {
+            "text": "在Unitree B2-W四足机器人上的零样本真实部署中，策略能够在密集人群、低照度环境和施工区域中进行导航；这些场景也是有限视场深度策略容易受限的环境。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Zero-shot real-world deployments on a Unitree B2-W quadruped demonstrate robust navigation[cs.RO] through dense crowds, low-light settings, and construction zones where limited-field-of-view depth policies struggle."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "作者指出，预训练LiDAR表征对紧凑导航编码器的有效性仍是一个开放问题。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "effectiveness as pretraining sources for compact navigation LiDAR addresses these weaknesses with 360◦coverage, met- encoders remains an open question."
+              }
+            ],
+            "kind": "future-work"
+          },
+          {
+            "text": "作者指出，面向强化学习导航的预训练距离图编码器仍缺乏充分探索。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "However, these systems are optimized and benchmarked for In simulation, our pretraining recipe improves navigation semantic perception, and pretrained range encoders remain success rate (SR) over a reconstruction-only baseline by largely unexplored for RL navigation."
+              }
+            ],
+            "kind": "future-work"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：若预训练表征最终服务于导航控制，重建目标之外加入语义和BEV等任务相关监督，可能比单一外观或几何重建更契合下游决策需求。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "(c) We pretrain the network using a navigation-aligned objective combining range reconstruction, semantic segmentation, and (d) Decoder22 bird’s-eye-view (BEV) prediction, then freeze it for policy learning."
+              },
+              {
+                "page": 2,
+                "quote": "semantics, obstacle boundaries, and top-down traversability Notably, RangeNet++ [7] showed that spherical projection information."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：全景距离图在保留LiDAR环视覆盖的同时，具有固定形状和易批处理特征，适合大规模并行强化学习中的轻量化表征学习。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "the fixed scan pattern of spinning LiDARs, we spherically b) LiDAR representations: Most general-purpose Li- project each scan onto a 2D range image [7]."
+              },
+              {
+                "page": 2,
+                "quote": "Projecting 3D point clouds [2], image-goal navigation [9], [14], and visual affordance into 2D range images yields fixed-shape tensors for efficient prediction [15]–[17]."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：评测时应同时区分程序生成训练环境、分布外仿真环境与零样本真实部署，以更清楚地观察表征的迁移能力。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively."
+              },
+              {
+                "page": 1,
+                "quote": "Zero-shot real-world deployments on a Unitree B2-W quadruped demonstrate robust navigation[cs.RO] through dense crowds, low-light settings, and construction zones where limited-field-of-view depth policies struggle."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "LiDAR全景距离图导航；在合成数据预训练、仿真中训练策略，并进行零样本真实部署。",
+          "supervision": "预训练使用距离重建、语义分割和BEV监督；导航阶段采用强化学习，编码器冻结。",
+          "modalities": "全景LiDAR距离图，结合里程计、本体感知和相对目标信息。",
+          "datasets": "TartanGround生成的合成LiDAR距离图及其保留场景；真实部署使用Unitree B2-W。",
+          "evaluation": "仿真以导航成功率为主，并比较导航时间和成功加权指标；另评估零样本真实部署。"
+        },
+        "evidence": [
+          {
+            "claim": "论文要解决全景LiDAR表征在强化学习导航中的样本效率与计算开销问题：稀疏点云奖励使表征学习低效，通用三维点云编码器又难以适应大规模并行仿真；同时，RGB和深度相机存在光照、缺失值与视场受限等问题。",
+            "page": 1,
+            "quote": "While panoramic LiDAR offers full-surround coverage, learning representations within rein- forcement learning (RL) is sample-inefficient under sparse Point Cloud rewards, and existing 3D pretrained point-cloud encoders are Range Image too memory-heavy for massively parallel RL simulation.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "论文要解决全景LiDAR表征在强化学习导航中的样本效率与计算开销问题：稀疏点云奖励使表征学习低效，通用三维点云编码器又难以适应大规模并行仿真；同时，RGB和深度相机存在光照、缺失值与视场受限等问题。",
+            "page": 1,
+            "quote": "Yet pretrained shifts, and depth cameras return noisy or missing values representations for LiDAR-based navigation remain underex- beyond a few meters, in sunlight, and on reflective or plored.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "论文将LiDAR扫描投影为全景距离图，设计仅含183k参数的轻量级编码器，并用各向异性卷积与环形填充处理距离图的极端宽高比和方位角接缝。预训练阶段联合优化距离重建、语义分割和BEV预测，使表征保留几何、语义、障碍边界与俯视可通行性信息；随后冻结编码器，将空间潜变量与本体感知、相对目标输入循环式actor–critic导航策略。",
+            "page": 1,
+            "quote": "RangeNav Encoder uses anisotropic convolutions and circular padding to handle LatentOct the extreme aspect ratio and azimuthal seam of range images.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "论文将LiDAR扫描投影为全景距离图，设计仅含183k参数的轻量级编码器，并用各向异性卷积与环形填充处理距离图的极端宽高比和方位角接缝。预训练阶段联合优化距离重建、语义分割和BEV预测，使表征保留几何、语义、障碍边界与俯视可通行性信息；随后冻结编码器，将空间潜变量与本体感知、相对目标输入循环式actor–critic导航策略。",
+            "page": 2,
+            "quote": "METHOD1) A navigation-aligned pretraining recipe combining range reconstruction, semantic segmentation, and BEV predic- Our approach consists of three stages.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "在程序生成的仿真训练环境中，相比仅进行距离重建的基线，加入语义和BEV监督使导航成功率平均提高32.03个百分点。",
+            "page": 1,
+            "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "在分布外的真实感仿真测试环境中，相比仅进行距离重建的基线，加入语义和BEV监督使导航成功率平均提高23.73个百分点。",
+            "page": 1,
+            "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "与深度策略相比，论文报告其LiDAR策略具有相当的平均成功率、更短的导航时间和更高的成功加权指标。",
+            "page": 2,
+            "quote": "Compared with the depth-based work guides visual navigation encoders with auxiliary su- policy of [3], our LiDAR policy achieves comparable average pervision, including action and temporal-distance predic- SR, shorter navigation times, and higher success weighted tions [24], dynamics and progress targets [25], depth pr",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "在Unitree B2-W四足机器人上的零样本真实部署中，策略能够在密集人群、低照度环境和施工区域中进行导航；这些场景也是有限视场深度策略容易受限的环境。",
+            "page": 1,
+            "quote": "Zero-shot real-world deployments on a Unitree B2-W quadruped demonstrate robust navigation[cs.RO] through dense crowds, low-light settings, and construction zones where limited-field-of-view depth policies struggle.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "作者指出，预训练LiDAR表征对紧凑导航编码器的有效性仍是一个开放问题。",
+            "page": 1,
+            "quote": "effectiveness as pretraining sources for compact navigation LiDAR addresses these weaknesses with 360◦coverage, met- encoders remains an open question.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "作者指出，面向强化学习导航的预训练距离图编码器仍缺乏充分探索。",
+            "page": 2,
+            "quote": "However, these systems are optimized and benchmarked for In simulation, our pretraining recipe improves navigation semantic perception, and pretrained range encoders remain success rate (SR) over a reconstruction-only baseline by largely unexplored for RL navigation.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "编辑推断：若预训练表征最终服务于导航控制，重建目标之外加入语义和BEV等任务相关监督，可能比单一外观或几何重建更契合下游决策需求。",
+            "page": 1,
+            "quote": "(c) We pretrain the network using a navigation-aligned objective combining range reconstruction, semantic segmentation, and (d) Decoder22 bird’s-eye-view (BEV) prediction, then freeze it for policy learning.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "编辑推断：若预训练表征最终服务于导航控制，重建目标之外加入语义和BEV等任务相关监督，可能比单一外观或几何重建更契合下游决策需求。",
+            "page": 2,
+            "quote": "semantics, obstacle boundaries, and top-down traversability Notably, RangeNet++ [7] showed that spherical projection information.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "编辑推断：全景距离图在保留LiDAR环视覆盖的同时，具有固定形状和易批处理特征，适合大规模并行强化学习中的轻量化表征学习。",
+            "page": 2,
+            "quote": "the fixed scan pattern of spinning LiDARs, we spherically b) LiDAR representations: Most general-purpose Li- project each scan onto a 2D range image [7].",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "编辑推断：全景距离图在保留LiDAR环视覆盖的同时，具有固定形状和易批处理特征，适合大规模并行强化学习中的轻量化表征学习。",
+            "page": 2,
+            "quote": "Projecting 3D point clouds [2], image-goal navigation [9], [14], and visual affordance into 2D range images yields fixed-shape tensors for efficient prediction [15]–[17].",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=2"
+          },
+          {
+            "claim": "编辑推断：评测时应同时区分程序生成训练环境、分布外仿真环境与零样本真实部署，以更清楚地观察表征的迁移能力。",
+            "page": 1,
+            "quote": "In simulation, adding semantic and BEV supervision increases success rates over a reconstruction-only baseline by an average of 32.03 and 23.73 percentage points (pp) in proce- durally generated training and out-of-distribution realistic test (e) environments, respectively.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          },
+          {
+            "claim": "编辑推断：评测时应同时区分程序生成训练环境、分布外仿真环境与零样本真实部署，以更清楚地观察表征的迁移能力。",
+            "page": 1,
+            "quote": "Zero-shot real-world deployments on a Unitree B2-W quadruped demonstrate robust navigation[cs.RO] through dense crowds, low-light settings, and construction zones where limited-field-of-view depth policies struggle.",
+            "source": "https://arxiv.org/pdf/2610.29845v2#page=1"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:36:54Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "93f7a7e444a1328045ecf55adf7c2bcb9e891eb5ea53e4087e72a5fef910f7ae",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "arxiv:2610.31476": {
+      "id": "arxiv:2610.31476",
+      "title": "Point-Level Refinable Semantic Mapping for Spatial Understanding",
+      "authors": [
+        "Taimeng Fu",
+        "Yi Du",
+        "Zitong Zhan",
+        "Qiwei Du",
+        "Shaoshu Su",
+        "Zhipeng Zhao",
+        "Chen Wang"
+      ],
+      "abstract": "Open-vocabulary 3D semantic maps have emerged as a key spatial memory representation for long-horizon robot autonomy, enabling robots to reason about objects, their spatial relationships, and past observations across time. However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accumulated but previously integrated points are rarely reevaluated. Consequently, perception errors accumulate over time, and outdated points persist after objects move or disappear. Although recent dynamic mapping methods update object-level representations in changing scenes, they do not explicitly revise noisy or obsolete points within each object. We propose an online refinable semantic mapping framework that continuously refines object representations through probabilistic point-level confidence updating. Each object point maintains a confidence score that is updated online using multi-view temporal evidence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated points. Combined with object tracking and re-identification to preserve instance identities under motion and relocation, our framework enables object-centric semantic maps to be continuously refined rather than monotonically accumulated. Experiments demonstrate improved mapping accuracy over the previous method by 3.46% on Replica and 2.55% on ScanNet, show robustness in dynamic environments and under perception noise, and provide an effective spatial memory for object navigation and embodied question-answering with success rates of 82.4% and 76.7%.",
+      "published": "2026-10-22T16:02:16Z",
+      "updated": "2026-10-22T16:02:16Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.31476"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.31476",
+      "pdf": "https://arxiv.org/pdf/2610.31476",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "Point-Level Refinable Semantic Mapping for Spatial Understanding\nOpen-vocabulary 3D semantic maps have emerged as a key spatial memory representation for long-horizon robot autonom"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文研究动态环境下的在线开放词汇三维语义建图，针对仅追加点云导致感知误差与过时几何持续累积的问题，以多视角时序证据更新逐点置信度，并结合目标跟踪与重识别维护实例身份。作者报告在Replica和ScanNet上建图准确性提升，模拟分割误差实验也显示出较好的抗噪表现。对于多个外观相似实例造成的身份歧义，方法选择跳过重识别。",
+        "problem": {
+          "text": "研究动态环境中的在线开放词汇三维语义建图。现有物体中心地图主要面向静态场景，采用仅追加点的融合策略，较少重新评估已融合点；因此感知错误会持续累积，物体移动或消失后，其旧位置的点仍可能残留。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accu- removed mulated but previously integrated points are rarely reevalu- ated."
+            },
+            {
+              "page": 1,
+              "quote": "Consequently, perception errors accumulate over time, and outdated points persist after objects move or disappear."
+            }
+          ]
+        },
+        "method": {
+          "text": "为物体中的每个点维护置信度，并依据多视角时序证据在线更新：一致观测增强可靠点，不一致的分割掩码、深度测量和可见性线索抑制伪点及过时点。同时，对视野内运动使用二维跟踪，对视野外搬移使用基于特征的重识别，以维持实例身份。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated "
+            },
+            {
+              "page": 4,
+              "quote": "When an instance is not associated fore use 2D tracking for in-view object motion and feature- with any detection in the current frame, it may be either based re-identification for out-of-view object relocation to (1) a “ghost” instance introduced by previous erroneous maintain consistent instance IDs."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，相较此前方法，建图准确性在Replica上提升3.46%，在ScanNet上提升2.55%；该句未明确这些提升对应的具体指标及计算口径。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "It handles dynamic[cs.RO] improved mapping accuracy over the previous method by objects that newly appear, move within the robot’s view, or 3.46% on Replica and 2.55% on ScanNet, show robustness in are relocated out of view and later re-identified."
+              }
+            ]
+          },
+          {
+            "text": "Replica评测中，作者方法的mIoU、F-mIoU、mAcc分别为0.2629、0.5530、0.4671，DualMap对应为0.2538、0.5207、0.4024。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Dataset Method mIoU F-mIoU mAcc Method ∆mIoU ∆F-mIoU ∆mAcc ConceptGraphs 0.1501 0.3858 0.3559 DualMap -11.62% -3.06% -10.13% HOV-SG 0.2050 0.4846 0.3835 Ours -6.29% -3.04% -7.77% Replica DualMap 0.2538 0.5207 0.4024 Ours 0.2629 0.5530 0.4671 ConceptGraphs 0.0882 0.3077 0.3538 HOV-SG 0.1333 0.3381 0.3714 ScanNet DualMap"
+              }
+            ]
+          },
+          {
+            "text": "在Replica上的模拟分割误差实验中，作者方法的∆mIoU、∆F-mIoU、∆mAcc分别为-6.29%、-3.04%、-7.77%，DualMap对应为-11.62%、-3.06%、-10.13%；作者方法在这些指标上的下降幅度均较小。这里的扰动属于模拟分割误差，不能直接等同于真实感知噪声。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "semantic mapping performance on the Replica dataset."
+              },
+              {
+                "page": 5,
+                "quote": "Dataset Method mIoU F-mIoU mAcc Method ∆mIoU ∆F-mIoU ∆mAcc ConceptGraphs 0.1501 0.3858 0.3559 DualMap -11.62% -3.06% -10.13% HOV-SG 0.2050 0.4846 0.3835 Ours -6.29% -3.04% -7.77% Replica DualMap 0.2538 0.5207 0.4024 Ours 0.2629 0.5530 0.4671 ConceptGraphs 0.0882 0.3077 0.3538 HOV-SG 0.1333 0.3381 0.3714 ScanNet DualMap"
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "当已移除物体同时匹配到地图中的多个实例时，例如多个相同椅子，方法将其身份判为有歧义并跳过重识别，尚不能在这种情况下恢复唯一实例身份。",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "If the removed object o′rSpecifically, for two objects oi, oj, we merge them if matches multiple instances in the map, such as a removed ⟨f iclip , fjclip ⟩≥τclipfrag , chair matching several identical chairs in an office, we treat ⟨f idino , fjdino ⟩≥τdino,frag (12) its identity as ambiguous and skip re-identification"
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：动态语义地图的方法选型不应只关注新点如何融合，也应检查旧点能否依据后续观测被纠正，避免将融合结果视为永久有效。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accu- removed mulated but previously integrated points are rarely reevalu- ated."
+              },
+              {
+                "page": 1,
+                "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated "
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：可将局部几何维护与实例身份维护分开设计：前者依靠逐点证据更新，后者依靠跟踪与重识别，分别处理残留几何和身份连续性。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated "
+              },
+              {
+                "page": 4,
+                "quote": "When an instance is not associated fore use 2D tracking for in-view object motion and feature- with any detection in the current frame, it may be either based re-identification for out-of-view object relocation to (1) a “ghost” instance introduced by previous erroneous maintain consistent instance IDs."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：后续评测值得单独考察相似实例造成的身份歧义；跳过不确定匹配能避免贸然赋予身份，但不代表已解决重识别问题。",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "If the removed object o′rSpecifically, for two objects oi, oj, we merge them if matches multiple instances in the map, such as a removed ⟨f iclip , fjclip ⟩≥τclipfrag , chair matching several identical chairs in an office, we treat ⟨f idino , fjdino ⟩≥τdino,frag (12) its identity as ambiguous and skip re-identification"
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "动态环境下的在线开放词汇三维语义建图，涉及物体出现、移动和搬移后重识别；未说明源域与目标域，不应归为UDA、DG或TTA。",
+          "supervision": "建图训练所需标注及监督设置未说明；感知提示使用由LLM生成的开放词汇类别列表。",
+          "modalities": "输入为RGB-D流及相机位姿，构建物体实例点云；使用分割掩码、深度、可见性以及CLIP和DINO特征。",
+          "datasets": "主要建图评测数据集为Replica、ScanNet；模拟分割误差实验使用Replica。所给句子未明确区分各数据集的仿真或真实采集属性。",
+          "evaluation": "建图指标包括mIoU、F-mIoU、mAcc；另有模拟分割误差下的指标变化评测。具体数据划分、类别协议及提升计算口径未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "研究动态环境中的在线开放词汇三维语义建图。现有物体中心地图主要面向静态场景，采用仅追加点的融合策略，较少重新评估已融合点；因此感知错误会持续累积，物体移动或消失后，其旧位置的点仍可能残留。",
+            "page": 1,
+            "quote": "However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accu- removed mulated but previously integrated points are rarely reevalu- ated.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "研究动态环境中的在线开放词汇三维语义建图。现有物体中心地图主要面向静态场景，采用仅追加点的融合策略，较少重新评估已融合点；因此感知错误会持续累积，物体移动或消失后，其旧位置的点仍可能残留。",
+            "page": 1,
+            "quote": "Consequently, perception errors accumulate over time, and outdated points persist after objects move or disappear.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "为物体中的每个点维护置信度，并依据多视角时序证据在线更新：一致观测增强可靠点，不一致的分割掩码、深度测量和可见性线索抑制伪点及过时点。同时，对视野内运动使用二维跟踪，对视野外搬移使用基于特征的重识别，以维持实例身份。",
+            "page": 1,
+            "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated ",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "为物体中的每个点维护置信度，并依据多视角时序证据在线更新：一致观测增强可靠点，不一致的分割掩码、深度测量和可见性线索抑制伪点及过时点。同时，对视野内运动使用二维跟踪，对视野外搬移使用基于特征的重识别，以维持实例身份。",
+            "page": 4,
+            "quote": "When an instance is not associated fore use 2D tracking for in-view object motion and feature- with any detection in the current frame, it may be either based re-identification for out-of-view object relocation to (1) a “ghost” instance introduced by previous erroneous maintain consistent instance IDs.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=4"
+          },
+          {
+            "claim": "作者报告，相较此前方法，建图准确性在Replica上提升3.46%，在ScanNet上提升2.55%；该句未明确这些提升对应的具体指标及计算口径。",
+            "page": 1,
+            "quote": "It handles dynamic[cs.RO] improved mapping accuracy over the previous method by objects that newly appear, move within the robot’s view, or 3.46% on Replica and 2.55% on ScanNet, show robustness in are relocated out of view and later re-identified.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "Replica评测中，作者方法的mIoU、F-mIoU、mAcc分别为0.2629、0.5530、0.4671，DualMap对应为0.2538、0.5207、0.4024。",
+            "page": 5,
+            "quote": "Dataset Method mIoU F-mIoU mAcc Method ∆mIoU ∆F-mIoU ∆mAcc ConceptGraphs 0.1501 0.3858 0.3559 DualMap -11.62% -3.06% -10.13% HOV-SG 0.2050 0.4846 0.3835 Ours -6.29% -3.04% -7.77% Replica DualMap 0.2538 0.5207 0.4024 Ours 0.2629 0.5530 0.4671 ConceptGraphs 0.0882 0.3077 0.3538 HOV-SG 0.1333 0.3381 0.3714 ScanNet DualMap",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=5"
+          },
+          {
+            "claim": "在Replica上的模拟分割误差实验中，作者方法的∆mIoU、∆F-mIoU、∆mAcc分别为-6.29%、-3.04%、-7.77%，DualMap对应为-11.62%、-3.06%、-10.13%；作者方法在这些指标上的下降幅度均较小。这里的扰动属于模拟分割误差，不能直接等同于真实感知噪声。",
+            "page": 5,
+            "quote": "semantic mapping performance on the Replica dataset.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=5"
+          },
+          {
+            "claim": "在Replica上的模拟分割误差实验中，作者方法的∆mIoU、∆F-mIoU、∆mAcc分别为-6.29%、-3.04%、-7.77%，DualMap对应为-11.62%、-3.06%、-10.13%；作者方法在这些指标上的下降幅度均较小。这里的扰动属于模拟分割误差，不能直接等同于真实感知噪声。",
+            "page": 5,
+            "quote": "Dataset Method mIoU F-mIoU mAcc Method ∆mIoU ∆F-mIoU ∆mAcc ConceptGraphs 0.1501 0.3858 0.3559 DualMap -11.62% -3.06% -10.13% HOV-SG 0.2050 0.4846 0.3835 Ours -6.29% -3.04% -7.77% Replica DualMap 0.2538 0.5207 0.4024 Ours 0.2629 0.5530 0.4671 ConceptGraphs 0.0882 0.3077 0.3538 HOV-SG 0.1333 0.3381 0.3714 ScanNet DualMap",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=5"
+          },
+          {
+            "claim": "当已移除物体同时匹配到地图中的多个实例时，例如多个相同椅子，方法将其身份判为有歧义并跳过重识别，尚不能在这种情况下恢复唯一实例身份。",
+            "page": 4,
+            "quote": "If the removed object o′rSpecifically, for two objects oi, oj, we merge them if matches multiple instances in the map, such as a removed ⟨f iclip , fjclip ⟩≥τclipfrag , chair matching several identical chairs in an office, we treat ⟨f idino , fjdino ⟩≥τdino,frag (12) its identity as ambiguous and skip re-identification",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=4"
+          },
+          {
+            "claim": "编辑推断：动态语义地图的方法选型不应只关注新点如何融合，也应检查旧点能否依据后续观测被纠正，避免将融合结果视为永久有效。",
+            "page": 1,
+            "quote": "However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accu- removed mulated but previously integrated points are rarely reevalu- ated.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "编辑推断：动态语义地图的方法选型不应只关注新点如何融合，也应检查旧点能否依据后续观测被纠正，避免将融合结果视为永久有效。",
+            "page": 1,
+            "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated ",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "编辑推断：可将局部几何维护与实例身份维护分开设计：前者依靠逐点证据更新，后者依靠跟踪与重识别，分别处理残留几何和身份连续性。",
+            "page": 1,
+            "quote": "Each object point maintains a confidence Relocated & Reidentified22 score that is updated online using multi-view temporal evi- 02:23 02:02 00:14 01:50 dence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated ",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=1"
+          },
+          {
+            "claim": "编辑推断：可将局部几何维护与实例身份维护分开设计：前者依靠逐点证据更新，后者依靠跟踪与重识别，分别处理残留几何和身份连续性。",
+            "page": 4,
+            "quote": "When an instance is not associated fore use 2D tracking for in-view object motion and feature- with any detection in the current frame, it may be either based re-identification for out-of-view object relocation to (1) a “ghost” instance introduced by previous erroneous maintain consistent instance IDs.",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=4"
+          },
+          {
+            "claim": "编辑推断：后续评测值得单独考察相似实例造成的身份歧义；跳过不确定匹配能避免贸然赋予身份，但不代表已解决重识别问题。",
+            "page": 4,
+            "quote": "If the removed object o′rSpecifically, for two objects oi, oj, we merge them if matches multiple instances in the map, such as a removed ⟨f iclip , fjclip ⟩≥τclipfrag , chair matching several identical chairs in an office, we treat ⟨f idino , fjdino ⟩≥τdino,frag (12) its identity as ambiguous and skip re-identification",
+            "source": "https://arxiv.org/pdf/2610.31476v1#page=4"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:34:39Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "a27a7c0792b2de04251c9c4282e2abb52724ae67d00ee192658f4eb4ff0e71d0",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8
+        ]
+      }
+    },
+    "arxiv:2610.31293": {
+      "id": "arxiv:2610.31293",
+      "title": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "authors": [
+        "Thanh-Khoi Nguyen",
+        "Thien-Phuc Tran",
+        "Minh-Triet Tran"
+      ],
+      "abstract": "Online semantic 3D Gaussian Splatting (3DGS) enables open-vocabulary scene understanding from streaming observations. However, existing methods recover geometric context missing from image-derived semantic features using an additionally learned 3D network, incurring extra training and runtime overhead. We observe that such geometric-semantic evidence may already exist in the agent's observation history and can be retrieved rather than learned. Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior. RecallGS follows a recall-ground-fuse pipeline: CLIP retrieves relevant observations, alpha-compositing weights identify geometrically supported views, and aggregate their semantic features over each Gaussian's rendered footprint. On ScanNet and ScanNet++, RecallGS achieves strong semantic segmentation performance at 2.48 FPS, demonstrating that geometric-semantic context can be effectively recovered from observation history without an additional learned 3D branch.",
+      "published": "2026-10-22T13:55:31Z",
+      "updated": "2026-10-22T13:55:31Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.31293"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.31293",
+      "pdf": "https://arxiv.org/pdf/2610.31293",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "OV"
+        ],
+        "task": "semantic",
+        "methods": [
+          "vision-language"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "n Splatting\nOnline semantic 3D Gaussian Splatting (3DGS) enables open-vocabulary scene understanding from streaming observations. However, existing methods recover geometric contex"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "RecallGS面向流式观测下的在线开放词汇语义高斯建图，尝试以历史观测替代额外学习的几何语义分支。方法无需额外训练，通过CLIP召回历史视图、依据透明度合成权重验证几何支持，再融合高斯渲染覆盖区域内的历史语义特征。作者报告其在ScanNet和ScanNet++上取得较强的语义分割表现，运行速度为2.48 FPS；所给句子未说明具体分割指标及数值。",
+        "problem": {
+          "text": "解决在线语义高斯建图中图像语言特征缺乏几何上下文的问题。现有管线通过额外学习的几何分支补足上下文，但该分支依赖大规模带位姿的室内场景数据训练，并增加显存消耗和推理延迟。本文希望直接复用历史观测中的几何语义证据，降低这类额外开销。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "2 Thanh-Khoi Nguyen Despite this progress, existing online semantic 3DGS pipelines recover the geometric context missing from image-derived language features through an additional learned 3D branch, rather than directly reusing geometric-semantic evidence from past observations."
+            },
+            {
+              "page": 2,
+              "quote": "This 3D branch, however, must be trained on large-scale posed 3D indoor scene data, which is costly to collect and introduces additional GPU-memory consumption and latency that directly reduce the online reconstruction speed."
+            }
+          ]
+        },
+        "method": {
+          "text": "提出无需额外训练的RecallGS，将历史观测作为非参数化几何语义先验，采用“召回—几何验证—融合”流程：CLIP检索相关历史观测，透明度合成权重识别具有几何支持的视图，再在每个高斯的完整渲染覆盖区域内聚合历史语义特征。这里的免训练指新增机制，不代表所有基础模型均未经预训练。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior."
+            },
+            {
+              "page": 1,
+              "quote": "RecallGS follows a recall-ground-fuse pipeline: CLIP retrieves relevant observations,[cs.CV] alpha-compositing weights identify geometrically supported views, and aggregate their semantic features over each Gaussian’s rendered footprint."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，在ScanNet和ScanNet++上取得较强的语义分割表现，运行速度为2.48 FPS，且不需要额外学习的几何分支。所给句子未说明具体分割指标、分割数值或相对基线的提升幅度。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "On ScanNet and ScanNet++, RecallGS achieves strong semantic segmen- tation performance at 2.48 FPS, demonstrating that geometric-semantic context can be effectively recovered from observation history without an additional learned 3D branch."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，各组件均对语义准确性有独立贡献，组合后能够从历史观测中有效获取几何语义上下文，同时保持高效在线推理；具体消融数值未说明。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "Our experiments show that each component contributes independently to semantic accuracy, and that their combination enables effective geometric-semantic reasoning from observation history while maintaining efficient online inference Our contributions are as follows: – We show that an agent’s observation history can ser"
+              }
+            ]
+          }
+        ],
+        "open_problems": [],
+        "insights": [
+          {
+            "text": "编辑推断：在持续观测同一环境的任务中，可优先考察历史证据检索能否替代部分额外学习模块，而不必默认缺失的几何上下文只能通过参数学习补足。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "This suggests that part of the geometric prior EmbodiedSplat’s 3D branch must learn from parameters could instead be recovered from the agent’s own trajectory, treating its accumulated observation history as a non-parametric geometric-semantic prior queried on demand rather than compressed once and discarded."
+              },
+              {
+                "page": 4,
+                "quote": "In contrast, we recover complementary geometric-semantic evidence directly from the agent’s own observation history and route it to the current Gaussians through a lightweight recall-ground-fuse mechanism without an additional learned 3D semantic branch."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：历史记忆融合应区分外观相似与物理对应；采用廉价检索筛选候选，再进行几何验证，是兼顾证据可靠性与在线计算开销的可借鉴设计。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "First, semantic similarity does not imply physical correspondence: a CLIP-based retrieval system[21] may return frames containing a visually similar object-another chair, table, or door-at an entirely different location."
+              },
+              {
+                "page": 7,
+                "quote": "We adopt a coarse-to-fine strategy that first uses inexpensive appearance-based retrieval to select a small set of plausible observations from Ht−1W , and applies geometry- dependent verification only to the recalled candidates (Sec. 3.5)."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：复现在线评测时，应明确限制未来帧访问和离线逐场景优化，避免把离线可用信息带入流式处理协议。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "(5) The model must produce St using only O1:t, without access to future frames or offline per-scene optimization."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "在线开放词汇语义高斯建图与场景理解；仅使用当前及历史观测。源域与目标域未说明，不应归为UDA、DG或TTA。",
+          "supervision": "RecallGS新增机制无需额外训练，也不进行离线逐场景优化；使用已有CLIP特征。重建骨干的具体训练监督条件未说明。",
+          "modalities": "输入为带相机内参和位姿的RGB观测流；维护高斯场景表示、CLIP语义特征及历史观测记忆。",
+          "datasets": "ScanNet、ScanNet++。所给句子未展开真实数据与仿真实验的区分，也未说明数据划分。",
+          "evaluation": "报告语义分割表现与运行速度2.48 FPS；具体分割指标和数值未说明。在线协议禁止使用未来帧及离线逐场景优化。"
+        },
+        "evidence": [
+          {
+            "claim": "解决在线语义高斯建图中图像语言特征缺乏几何上下文的问题。现有管线通过额外学习的几何分支补足上下文，但该分支依赖大规模带位姿的室内场景数据训练，并增加显存消耗和推理延迟。本文希望直接复用历史观测中的几何语义证据，降低这类额外开销。",
+            "page": 2,
+            "quote": "2 Thanh-Khoi Nguyen Despite this progress, existing online semantic 3DGS pipelines recover the geometric context missing from image-derived language features through an additional learned 3D branch, rather than directly reusing geometric-semantic evidence from past observations.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=2"
+          },
+          {
+            "claim": "解决在线语义高斯建图中图像语言特征缺乏几何上下文的问题。现有管线通过额外学习的几何分支补足上下文，但该分支依赖大规模带位姿的室内场景数据训练，并增加显存消耗和推理延迟。本文希望直接复用历史观测中的几何语义证据，降低这类额外开销。",
+            "page": 2,
+            "quote": "This 3D branch, however, must be trained on large-scale posed 3D indoor scene data, which is costly to collect and introduces additional GPU-memory consumption and latency that directly reduce the online reconstruction speed.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=2"
+          },
+          {
+            "claim": "提出无需额外训练的RecallGS，将历史观测作为非参数化几何语义先验，采用“召回—几何验证—融合”流程：CLIP检索相关历史观测，透明度合成权重识别具有几何支持的视图，再在每个高斯的完整渲染覆盖区域内聚合历史语义特征。这里的免训练指新增机制，不代表所有基础模型均未经预训练。",
+            "page": 1,
+            "quote": "Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=1"
+          },
+          {
+            "claim": "提出无需额外训练的RecallGS，将历史观测作为非参数化几何语义先验，采用“召回—几何验证—融合”流程：CLIP检索相关历史观测，透明度合成权重识别具有几何支持的视图，再在每个高斯的完整渲染覆盖区域内聚合历史语义特征。这里的免训练指新增机制，不代表所有基础模型均未经预训练。",
+            "page": 1,
+            "quote": "RecallGS follows a recall-ground-fuse pipeline: CLIP retrieves relevant observations,[cs.CV] alpha-compositing weights identify geometrically supported views, and aggregate their semantic features over each Gaussian’s rendered footprint.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=1"
+          },
+          {
+            "claim": "作者报告，在ScanNet和ScanNet++上取得较强的语义分割表现，运行速度为2.48 FPS，且不需要额外学习的几何分支。所给句子未说明具体分割指标、分割数值或相对基线的提升幅度。",
+            "page": 1,
+            "quote": "On ScanNet and ScanNet++, RecallGS achieves strong semantic segmen- tation performance at 2.48 FPS, demonstrating that geometric-semantic context can be effectively recovered from observation history without an additional learned 3D branch.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=1"
+          },
+          {
+            "claim": "作者报告，各组件均对语义准确性有独立贡献，组合后能够从历史观测中有效获取几何语义上下文，同时保持高效在线推理；具体消融数值未说明。",
+            "page": 3,
+            "quote": "Our experiments show that each component contributes independently to semantic accuracy, and that their combination enables effective geometric-semantic reasoning from observation history while maintaining efficient online inference Our contributions are as follows: – We show that an agent’s observation history can ser",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=3"
+          },
+          {
+            "claim": "编辑推断：在持续观测同一环境的任务中，可优先考察历史证据检索能否替代部分额外学习模块，而不必默认缺失的几何上下文只能通过参数学习补足。",
+            "page": 2,
+            "quote": "This suggests that part of the geometric prior EmbodiedSplat’s 3D branch must learn from parameters could instead be recovered from the agent’s own trajectory, treating its accumulated observation history as a non-parametric geometric-semantic prior queried on demand rather than compressed once and discarded.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=2"
+          },
+          {
+            "claim": "编辑推断：在持续观测同一环境的任务中，可优先考察历史证据检索能否替代部分额外学习模块，而不必默认缺失的几何上下文只能通过参数学习补足。",
+            "page": 4,
+            "quote": "In contrast, we recover complementary geometric-semantic evidence directly from the agent’s own observation history and route it to the current Gaussians through a lightweight recall-ground-fuse mechanism without an additional learned 3D semantic branch.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=4"
+          },
+          {
+            "claim": "编辑推断：历史记忆融合应区分外观相似与物理对应；采用廉价检索筛选候选，再进行几何验证，是兼顾证据可靠性与在线计算开销的可借鉴设计。",
+            "page": 2,
+            "quote": "First, semantic similarity does not imply physical correspondence: a CLIP-based retrieval system[21] may return frames containing a visually similar object-another chair, table, or door-at an entirely different location.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=2"
+          },
+          {
+            "claim": "编辑推断：历史记忆融合应区分外观相似与物理对应；采用廉价检索筛选候选，再进行几何验证，是兼顾证据可靠性与在线计算开销的可借鉴设计。",
+            "page": 7,
+            "quote": "We adopt a coarse-to-fine strategy that first uses inexpensive appearance-based retrieval to select a small set of plausible observations from Ht−1W , and applies geometry- dependent verification only to the recalled candidates (Sec. 3.5).",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=7"
+          },
+          {
+            "claim": "编辑推断：复现在线评测时，应明确限制未来帧访问和离线逐场景优化，避免把离线可用信息带入流式处理协议。",
+            "page": 6,
+            "quote": "(5) The model must produce St using only O1:t, without access to future frames or offline per-scene optimization.",
+            "source": "https://arxiv.org/pdf/2610.31293v1#page=6"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:32:25Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "810cf65c29b4173425336488ce68e1a2ac5813f451645f3250e28b6b9aa73901",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    "arxiv:2610.30908": {
+      "id": "arxiv:2610.30908",
+      "title": "Query-Time Calibration of CLIP Features for Open-Vocabulary 3D Segmentation",
+      "authors": [
+        "Dominik Engel",
+        "Yousef Rajeh",
+        "Leon Sick",
+        "Ivan Viola"
+      ],
+      "abstract": "Lifting vision-language features such as CLIP into 3D Gaussian reconstructions enables open-vocabulary segmentation through natural-language queries. Although CLIP represents a broad range of semantic concepts, the lifted features of individual scenes can exhibit strong directional concentration, while raw cosine similarity does not account for the scene-specific feature distribution. We show that substantial segmentation gains can be obtained by changing how a fixed lifted feature field is compared with text. Our method partially subtracts a shared scene direction from visual features and text prototypes and whitens text prototypes using a fixed reference vocabulary of generic terms. It then uses soft clustering for multiclass prediction and CSLS with a relevance margin against the reference vocabulary for single-query prediction. Beyond reducing directional concentration, scene centering improves class-relative feature separation in every evaluated scene. Across seven lifting methods and four datasets, the resulting query-time calibration consistently improves mean intersection over union in both multiclass and single-query segmentation. These gains require no retraining, source-image re-encoding, or feature re-lifting, demonstrating the value of scene-conditioned comparison for making better use of existing lifted representations.",
+      "published": "2026-10-22T08:31:12Z",
+      "updated": "2026-10-22T08:31:12Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.30908"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.30908",
+      "pdf": "https://arxiv.org/pdf/2610.30908",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "vision-language",
+          "prototype"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "Query-Time Calibration of CLIP Features for Open-Vocabulary 3D Segmentation\nLifting vision-language features such as CLIP into 3D Gaussian reconstructions enab"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文研究固定三维高斯场中提升后的CLIP特征如何用于开放词汇三维分割，针对场景特有的特征方向集中与原始余弦相似度失配问题，提出无需重训练的查询时校准。在七种特征提升方法和四个数据集上，多类与单查询分割的mIoU均得到提升。",
+        "problem": {
+          "text": "论文关注固定三维重建与提升后的CLIP特征在开放词汇分割中的比较失配问题：单个场景的语义分布通常比CLIP训练数据更窄，视觉特征可能存在场景相关的共同方向，而原始余弦相似度没有显式建模该场景分布。论文同时区分多类竞争预测与仅给定一个目标类别的单查询分割，后者还需要拒绝背景区域。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "A particular reconstructed scene typically only presents a narrower semantic distribution than the broad image–text collection used to train CLIP."
+            },
+            {
+              "page": 2,
+              "quote": "The task is then not to choose a winner among known alternatives, but to decide where the target is present and reject the remaining regions."
+            }
+          ]
+        },
+        "method": {
+          "text": "方法以固定的、已提升CLIP特征的三维高斯场为输入，在查询时进行场景条件校准。首先从视觉特征和文本原型中部分减去共享场景方向，并仅利用固定的通用参考词库对白化文本特征；随后对相似度进行分支校准：多类预测使用软聚类细化原语分配，单查询预测使用CSLS及查询相对参考词库竞争者的相关性间隔，从而在不改变几何、重编码源图像或重新提升特征的情况下完成预测。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Our approach partially subtracts a shared scene direction from visual features and text prototypes and fits a regularized text-whitening transform solely to a scene-centered ref- erence bank."
+            },
+            {
+              "page": 2,
+              "quote": "For a single query, we apply reduced CSLS (Lample et al., 2018) to the query and reference-bank scores."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，场景中心化改善了每个评测场景中的类相对特征分离。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Beyond reducing directional concentra- tion, scene centering improves class-relative feature separation in every evaluated scene."
+              }
+            ]
+          },
+          {
+            "text": "在七种特征提升方法和四个数据集上，查询时校准持续提升了多类和单查询分割的平均交并比。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Across seven lifting methods and four datasets, the resulting query-time calibration consistently improves mean intersection over union in both multiclass and single-query segmentation."
+              }
+            ]
+          },
+          {
+            "text": "改进无需重训练、源图像重新编码或特征重新提升，说明场景条件化的比较能够更充分地利用已有的提升特征表示。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "These gains require no retraining, source-image re-encoding, or feature re-lifting, demonstrating the value of scene-conditioned[cs.CV] comparison for making better use of existing lifted representations."
+              }
+            ]
+          },
+          {
+            "text": "组件消融分析考察了特征校准、分数调整和参考词汇对最终分割增益的贡献。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Component ablations examine how feature calibration, score adjustment, and reference vocabulary contribute to the final seg- mentation gains."
+              }
+            ]
+          }
+        ],
+        "open_problems": [],
+        "insights": [
+          {
+            "text": "编辑推断：当三维场景的特征分布与通用视觉语言空间存在偏移时，可优先尝试查询时的场景条件化比较，而不必立即改动重建或特征提升流程。",
+            "evidence": []
+          },
+          {
+            "text": "编辑推断：多类分割与单查询分割应分开评测；前者的类别竞争结果不能单独证明模型具备目标检测与背景拒绝能力。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Strong multiclass performance does not by itself establish this ability, motivating separate evaluation of single-query segmentation."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：固定通用参考词库既可用于文本变换，也可为单查询预测提供负竞争者，值得作为开放词汇三维分割中的通用校准组件继续比较。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "A fixed bank of generic terms defines the text transform independently of the requested class list and supplies negative competitors for single-query segmentation."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "开放词汇三维分割；固定三维高斯场与已提升CLIP特征，覆盖多类和单查询设置。",
+          "supervision": "未说明训练监督；方法在查询时运行，使用文本查询与固定通用参考词库，不进行重训练。",
+          "modalities": "三维高斯场、三维原语视觉特征、CLIP文本特征与自然语言查询。",
+          "datasets": "作者报告使用四个数据集；给定片段未完整列出数据集名称。",
+          "evaluation": "以分割mIoU为主要指标，比较多类与单查询预测，并跨七种特征提升方法和四个数据集评测。"
+        },
+        "evidence": [
+          {
+            "claim": "论文关注固定三维重建与提升后的CLIP特征在开放词汇分割中的比较失配问题：单个场景的语义分布通常比CLIP训练数据更窄，视觉特征可能存在场景相关的共同方向，而原始余弦相似度没有显式建模该场景分布。论文同时区分多类竞争预测与仅给定一个目标类别的单查询分割，后者还需要拒绝背景区域。",
+            "page": 2,
+            "quote": "A particular reconstructed scene typically only presents a narrower semantic distribution than the broad image–text collection used to train CLIP.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "论文关注固定三维重建与提升后的CLIP特征在开放词汇分割中的比较失配问题：单个场景的语义分布通常比CLIP训练数据更窄，视觉特征可能存在场景相关的共同方向，而原始余弦相似度没有显式建模该场景分布。论文同时区分多类竞争预测与仅给定一个目标类别的单查询分割，后者还需要拒绝背景区域。",
+            "page": 2,
+            "quote": "The task is then not to choose a winner among known alternatives, but to decide where the target is present and reject the remaining regions.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "方法以固定的、已提升CLIP特征的三维高斯场为输入，在查询时进行场景条件校准。首先从视觉特征和文本原型中部分减去共享场景方向，并仅利用固定的通用参考词库对白化文本特征；随后对相似度进行分支校准：多类预测使用软聚类细化原语分配，单查询预测使用CSLS及查询相对参考词库竞争者的相关性间隔，从而在不改变几何、重编码源图像或重新提升特征的情况下完成预测。",
+            "page": 2,
+            "quote": "Our approach partially subtracts a shared scene direction from visual features and text prototypes and fits a regularized text-whitening transform solely to a scene-centered ref- erence bank.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "方法以固定的、已提升CLIP特征的三维高斯场为输入，在查询时进行场景条件校准。首先从视觉特征和文本原型中部分减去共享场景方向，并仅利用固定的通用参考词库对白化文本特征；随后对相似度进行分支校准：多类预测使用软聚类细化原语分配，单查询预测使用CSLS及查询相对参考词库竞争者的相关性间隔，从而在不改变几何、重编码源图像或重新提升特征的情况下完成预测。",
+            "page": 2,
+            "quote": "For a single query, we apply reduced CSLS (Lample et al., 2018) to the query and reference-bank scores.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "作者报告，场景中心化改善了每个评测场景中的类相对特征分离。",
+            "page": 1,
+            "quote": "Beyond reducing directional concentra- tion, scene centering improves class-relative feature separation in every evaluated scene.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=1"
+          },
+          {
+            "claim": "在七种特征提升方法和四个数据集上，查询时校准持续提升了多类和单查询分割的平均交并比。",
+            "page": 1,
+            "quote": "Across seven lifting methods and four datasets, the resulting query-time calibration consistently improves mean intersection over union in both multiclass and single-query segmentation.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=1"
+          },
+          {
+            "claim": "改进无需重训练、源图像重新编码或特征重新提升，说明场景条件化的比较能够更充分地利用已有的提升特征表示。",
+            "page": 1,
+            "quote": "These gains require no retraining, source-image re-encoding, or feature re-lifting, demonstrating the value of scene-conditioned[cs.CV] comparison for making better use of existing lifted representations.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=1"
+          },
+          {
+            "claim": "组件消融分析考察了特征校准、分数调整和参考词汇对最终分割增益的贡献。",
+            "page": 2,
+            "quote": "Component ablations examine how feature calibration, score adjustment, and reference vocabulary contribute to the final seg- mentation gains.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "编辑推断：多类分割与单查询分割应分开评测；前者的类别竞争结果不能单独证明模型具备目标检测与背景拒绝能力。",
+            "page": 2,
+            "quote": "Strong multiclass performance does not by itself establish this ability, motivating separate evaluation of single-query segmentation.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          },
+          {
+            "claim": "编辑推断：固定通用参考词库既可用于文本变换，也可为单查询预测提供负竞争者，值得作为开放词汇三维分割中的通用校准组件继续比较。",
+            "page": 2,
+            "quote": "A fixed bank of generic terms defines the text transform independently of the requested class list and supplies negative competitors for single-query segmentation.",
+            "source": "https://arxiv.org/pdf/2610.30908v1#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:35:35Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "a6134517cdfab4e991981a549128f6fbc2f5f0107e5ed83d893cb8333671519b",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    "arxiv:2610.30013": {
+      "id": "arxiv:2610.30013",
+      "title": "ClunoGS: Compact Language 3D Gaussian Splatting via Unified Optimization",
+      "authors": [
+        "Jian Xu",
+        "Yi Li",
+        "Ying Huang",
+        "Siyi Wu",
+        "Bingzhe Li",
+        "Yuede Ji",
+        "Miao Yin"
+      ],
+      "abstract": "Language 3D Gaussian Splatting enables open-vocabulary scene understanding by associating Gaussian primitives with language features. These semantic attributes increase model storage, while most existing 3DGS compression methods are designed mainly to preserve RGB rendering quality. One straightforward approach is to apply sparsification and quantization sequentially. However, pruning based only on rendering quality can remove Gaussians that have small RGB contributions but are important for semantic prediction. Once removed, their semantic information cannot be recovered by later quantization. We propose ClunoGS, a compact framework for Language 3DGS that combines semantics-aware Gaussian sparsification and vector quantization in a unified constrained objective. Semantic supervision is used during sparsification, and the objective jointly considers rendering quality, semantic accuracy, and compactness. We optimize the unified objective with alternating primal, sparsification, quantization, and dual updates. We evaluate ClunoGS on open-vocabulary localization and segmentation using the LERF and ScanNet-10 benchmarks. Under aggressive compression, our unified, semantics-aware formulation substantially alleviates the degradation of semantic representations caused by sequential compression and semantics-agnostic Gaussian sparsification. Ablations further show that jointly coordinating sparsification and quantization better preserves semantic accuracy than applying them independently.",
+      "published": "2026-10-21T16:43:53Z",
+      "updated": "2026-10-21T16:43:53Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.30013"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.30013",
+      "pdf": "https://arxiv.org/pdf/2610.30013",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "via Unified Optimization\nLanguage 3D Gaussian Splatting enables open-vocabulary scene understanding by associating Gaussian primitives with language features. These semantic attri"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "CLUNOGS面向开放词汇场景定位与分割，研究如何压缩Language 3DGS，同时保留RGB渲染质量与语义能力。方法将语义感知高斯稀疏化和属性向量量化纳入统一约束优化，并交替更新。在LERF与ScanNet-10上，作者报告相对对应未压缩模型，序列化存储减少80.9–82.8%，mIoU损失至多1.6个百分点，准确率损失至多1.1个百分点，PSNR损失至多0.07 dB。",
+        "problem": {
+          "text": "论文关注开放词汇Language 3DGS的紧凑化。顺序执行语义学习与压缩，会使语义学习和高斯选择脱节；仅由RGB驱动的稀疏化可能删除语义上重要的高斯，而后续阶段无法恢复这些高斯。因此，需要避免压缩过程不可逆地损伤语义表示。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Applying them sequentially decouples semantic learn- compact semantic indices or an external object-group in-ing from Gaussian selection, so RGB-driven sparsification dex [2, 11]."
+            },
+            {
+              "page": 2,
+              "quote": "We build on LangSplatV2 because its seman-can discard semantically important Gaussians that subse- tic coefficients and RGB attributes share the same Gaussianquent stages cannot recover."
+            }
+          ]
+        },
+        "method": {
+          "text": "提出统一约束优化框架，将RGB与语义任务目标、高斯稀疏化和属性向量量化结合起来；稀疏化期间使用语义监督，同时兼顾渲染质量、语义准确性和紧凑性。求解采用交替原始—对偶过程，协调可微场景优化、稀疏化、量化与对偶更新。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Semantic supervision is used during sparsification, and the objective jointly considers rendering quality, se- mantic accuracy, and compactness."
+            },
+            {
+              "page": 2,
+              "quote": "Earlier neural-field meth- entiable scene optimization, sparsification, quantization,ods encoded semantics in implicit representations, but re- and dual updates.peated volumetric sampling and network evaluation made training and rendering costly [17, 36]."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在LERF与ScanNet-10对应的评测中，相对各自未压缩模型，作者报告序列化存储减少80.9–82.8%，同时mIoU损失至多1.6个百分点、准确率损失至多1.1个百分点、PSNR损失至多0.07 dB。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Across the two benchmarks, CLUNOGS ing repeated volumetric sampling and per-sample network reduces serialized storage by 80.9–82.8% relative to the evaluation [16, 30, 41]."
+              },
+              {
+                "page": 2,
+                "quote": "corresponding uncompressed models, with losses of at Directly attaching high-dimensional vision-language most 1.6 mIoU points, 1.1 accuracy points, and 0.07 dB features to individual Gaussians incurs substantial storage PSNR."
+              },
+              {
+                "page": 1,
+                "quote": "These semantic attributes in- open-vocabulary localization and segmentation using the crease model storage, while most existing 3DGS compres- LERF and ScanNet-10 benchmarks."
+              }
+            ]
+          },
+          {
+            "text": "作者通过PCA可视化报告：先学习语义再压缩、先压缩再学习语义这两种顺序流程均会损伤语义表示，而统一流程能更好地保留语义表示。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Semantic-first learns semantics before compression, whereas Compression-first compresses the 3DGS before semantic learning."
+              },
+              {
+                "page": 1,
+                "quote": "PCA visualizations show that both sequential pipelines degrade seman- tic representations, while our unified pipeline better preserves them."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，消融实验支持联合协调稀疏化与量化有助于更好地保留语义准确性。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Ablations further show sians that have small RGB contributions but are important that jointly coordinating sparsification and quantization for semantic prediction."
+              },
+              {
+                "page": 1,
+                "quote": "Once removed, their semantic in- better preserves semantic accuracy than applying them in- formation cannot be recovered by later quantization."
+              }
+            ]
+          }
+        ],
+        "open_problems": [],
+        "insights": [
+          {
+            "text": "编辑推断：压缩语言场景表示时，宜让语义监督参与高斯选择，而不是仅凭RGB贡献决定删除对象，以降低不可逆语义信息损失的风险。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "We build on LangSplatV2 because its seman-can discard semantically important Gaussians that subse- tic coefficients and RGB attributes share the same Gaussianquent stages cannot recover."
+              },
+              {
+                "page": 1,
+                "quote": "Semantic supervision is used during sparsification, and the objective jointly considers rendering quality, se- mantic accuracy, and compactness."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：评测紧凑语言场景模型时，可同时检查存储、语义任务表现与渲染质量，避免将单一维度的改善等同于整体有效。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Across the two benchmarks, CLUNOGS ing repeated volumetric sampling and per-sample network reduces serialized storage by 80.9–82.8% relative to the evaluation [16, 30, 41]."
+              },
+              {
+                "page": 2,
+                "quote": "corresponding uncompressed models, with losses of at Directly attaching high-dimensional vision-language most 1.6 mIoU points, 1.1 accuracy points, and 0.07 dB features to individual Gaussians incurs substantial storage PSNR."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：比较联合优化方法时，值得加入不同执行顺序的控制实验，以辨别收益是否来自组件间的协调，而非仅来自组件组合。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Semantic-first learns semantics before compression, whereas Compression-first compresses the 3DGS before semantic learning."
+              },
+              {
+                "page": 1,
+                "quote": "PCA visualizations show that both sequential pipelines degrade seman- tic representations, while our unified pipeline better preserves them."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "开放词汇场景定位与分割下的Language 3DGS压缩；未说明源域与目标域划分，不按UDA、DG或TTA描述。",
+          "supervision": "使用RGB重建与语义监督；语义目标来自SAM处理得到的CLIP特征。是否使用人工语义标签未说明。",
+          "modalities": "RGB多视图图像、语言语义特征与文本查询；场景表示为带语义属性的显式高斯。",
+          "datasets": "LERF、ScanNet-10；给定句子未说明数据属于真实采集还是仿真。",
+          "evaluation": "开放词汇定位与分割；报告序列化存储、mIoU、准确率和PSNR，并比较未压缩模型、顺序压缩与顺序控制；具体划分未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "论文关注开放词汇Language 3DGS的紧凑化。顺序执行语义学习与压缩，会使语义学习和高斯选择脱节；仅由RGB驱动的稀疏化可能删除语义上重要的高斯，而后续阶段无法恢复这些高斯。因此，需要避免压缩过程不可逆地损伤语义表示。",
+            "page": 2,
+            "quote": "Applying them sequentially decouples semantic learn- compact semantic indices or an external object-group in-ing from Gaussian selection, so RGB-driven sparsification dex [2, 11].",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "论文关注开放词汇Language 3DGS的紧凑化。顺序执行语义学习与压缩，会使语义学习和高斯选择脱节；仅由RGB驱动的稀疏化可能删除语义上重要的高斯，而后续阶段无法恢复这些高斯。因此，需要避免压缩过程不可逆地损伤语义表示。",
+            "page": 2,
+            "quote": "We build on LangSplatV2 because its seman-can discard semantically important Gaussians that subse- tic coefficients and RGB attributes share the same Gaussianquent stages cannot recover.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "提出统一约束优化框架，将RGB与语义任务目标、高斯稀疏化和属性向量量化结合起来；稀疏化期间使用语义监督，同时兼顾渲染质量、语义准确性和紧凑性。求解采用交替原始—对偶过程，协调可微场景优化、稀疏化、量化与对偶更新。",
+            "page": 1,
+            "quote": "Semantic supervision is used during sparsification, and the objective jointly considers rendering quality, se- mantic accuracy, and compactness.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "提出统一约束优化框架，将RGB与语义任务目标、高斯稀疏化和属性向量量化结合起来；稀疏化期间使用语义监督，同时兼顾渲染质量、语义准确性和紧凑性。求解采用交替原始—对偶过程，协调可微场景优化、稀疏化、量化与对偶更新。",
+            "page": 2,
+            "quote": "Earlier neural-field meth- entiable scene optimization, sparsification, quantization,ods encoded semantics in implicit representations, but re- and dual updates.peated volumetric sampling and network evaluation made training and rendering costly [17, 36].",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "在LERF与ScanNet-10对应的评测中，相对各自未压缩模型，作者报告序列化存储减少80.9–82.8%，同时mIoU损失至多1.6个百分点、准确率损失至多1.1个百分点、PSNR损失至多0.07 dB。",
+            "page": 2,
+            "quote": "Across the two benchmarks, CLUNOGS ing repeated volumetric sampling and per-sample network reduces serialized storage by 80.9–82.8% relative to the evaluation [16, 30, 41].",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "在LERF与ScanNet-10对应的评测中，相对各自未压缩模型，作者报告序列化存储减少80.9–82.8%，同时mIoU损失至多1.6个百分点、准确率损失至多1.1个百分点、PSNR损失至多0.07 dB。",
+            "page": 2,
+            "quote": "corresponding uncompressed models, with losses of at Directly attaching high-dimensional vision-language most 1.6 mIoU points, 1.1 accuracy points, and 0.07 dB features to individual Gaussians incurs substantial storage PSNR.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "在LERF与ScanNet-10对应的评测中，相对各自未压缩模型，作者报告序列化存储减少80.9–82.8%，同时mIoU损失至多1.6个百分点、准确率损失至多1.1个百分点、PSNR损失至多0.07 dB。",
+            "page": 1,
+            "quote": "These semantic attributes in- open-vocabulary localization and segmentation using the crease model storage, while most existing 3DGS compres- LERF and ScanNet-10 benchmarks.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "作者通过PCA可视化报告：先学习语义再压缩、先压缩再学习语义这两种顺序流程均会损伤语义表示，而统一流程能更好地保留语义表示。",
+            "page": 1,
+            "quote": "Semantic-first learns semantics before compression, whereas Compression-first compresses the 3DGS before semantic learning.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "作者通过PCA可视化报告：先学习语义再压缩、先压缩再学习语义这两种顺序流程均会损伤语义表示，而统一流程能更好地保留语义表示。",
+            "page": 1,
+            "quote": "PCA visualizations show that both sequential pipelines degrade seman- tic representations, while our unified pipeline better preserves them.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "作者报告，消融实验支持联合协调稀疏化与量化有助于更好地保留语义准确性。",
+            "page": 1,
+            "quote": "Ablations further show sians that have small RGB contributions but are important that jointly coordinating sparsification and quantization for semantic prediction.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "作者报告，消融实验支持联合协调稀疏化与量化有助于更好地保留语义准确性。",
+            "page": 1,
+            "quote": "Once removed, their semantic in- better preserves semantic accuracy than applying them in- formation cannot be recovered by later quantization.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "编辑推断：压缩语言场景表示时，宜让语义监督参与高斯选择，而不是仅凭RGB贡献决定删除对象，以降低不可逆语义信息损失的风险。",
+            "page": 2,
+            "quote": "We build on LangSplatV2 because its seman-can discard semantically important Gaussians that subse- tic coefficients and RGB attributes share the same Gaussianquent stages cannot recover.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "编辑推断：压缩语言场景表示时，宜让语义监督参与高斯选择，而不是仅凭RGB贡献决定删除对象，以降低不可逆语义信息损失的风险。",
+            "page": 1,
+            "quote": "Semantic supervision is used during sparsification, and the objective jointly considers rendering quality, se- mantic accuracy, and compactness.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "编辑推断：评测紧凑语言场景模型时，可同时检查存储、语义任务表现与渲染质量，避免将单一维度的改善等同于整体有效。",
+            "page": 2,
+            "quote": "Across the two benchmarks, CLUNOGS ing repeated volumetric sampling and per-sample network reduces serialized storage by 80.9–82.8% relative to the evaluation [16, 30, 41].",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "编辑推断：评测紧凑语言场景模型时，可同时检查存储、语义任务表现与渲染质量，避免将单一维度的改善等同于整体有效。",
+            "page": 2,
+            "quote": "corresponding uncompressed models, with losses of at Directly attaching high-dimensional vision-language most 1.6 mIoU points, 1.1 accuracy points, and 0.07 dB features to individual Gaussians incurs substantial storage PSNR.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=2"
+          },
+          {
+            "claim": "编辑推断：比较联合优化方法时，值得加入不同执行顺序的控制实验，以辨别收益是否来自组件间的协调，而非仅来自组件组合。",
+            "page": 1,
+            "quote": "Semantic-first learns semantics before compression, whereas Compression-first compresses the 3DGS before semantic learning.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          },
+          {
+            "claim": "编辑推断：比较联合优化方法时，值得加入不同执行顺序的控制实验，以辨别收益是否来自组件间的协调，而非仅来自组件组合。",
+            "page": 1,
+            "quote": "PCA visualizations show that both sequential pipelines degrade seman- tic representations, while our unified pipeline better preserves them.",
+            "source": "https://arxiv.org/pdf/2610.30013v1#page=1"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:36:16Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "7e94e76fe2796dea410edee541c6b00ad30b90e72d8358d3c4e20b1298408e22",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11
+        ]
+      }
+    },
+    "arxiv:2610.29761": {
+      "id": "arxiv:2610.29761",
+      "title": "OMAR: Open-World Multi-Attribute Reasoning for Scene-Conditioned Shelf Organization",
+      "authors": [
+        "Benedikt Kreis",
+        "Rohit Menon",
+        "Benno Wingender",
+        "Muhammad Ehsan Ullah",
+        "Nils Dengler",
+        "Maren Bennewitz"
+      ],
+      "abstract": "With the advent of foundation models, robots are increasingly capable of understanding and executing explicitly specified human tasks. Extending these capabilities to open-ended tasks, however, requires robots to infer appropriate actions from the observed scene. Household organization exemplifies this challenge, as robots must often act without detailed instructions, predefined object vocabularies, or known object-receptacle associations. While robots may follow instructions or learn organization preferences from demonstrations, inferring the latent organization of an occasionally changing scene and placing a novel object consistently with it remains challenging. We propose an open-world multi-attribute reasoning pipeline that grounds unknown objects across views and constructs an instance-level 3D scene graph for placement reasoning. First, a vision-language model proposes labels together with attributes such as content and packaging type, which are grounded through segmentation, depth, and multi-view association. Then, an LLM reasons over this representation to infer the latent shelf organization and rank scene-consistent object placements without explicitly user-provided preferences. The resulting placement rankings guide subsequent geometric and kinematic feasibility checks for execution. Our experimental evaluation shows that our approach leads to improved instance mapping and placement coherence over single-view language-grounding and geometry-only baselines, enabling autonomous placement of previously unseen objects without predefined object-receptacle mappings or class-specific retraining.",
+      "published": "2026-10-21T13:59:13Z",
+      "updated": "2026-10-21T13:59:13Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.29761"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.29761",
+      "pdf": "https://arxiv.org/pdf/2610.29761",
+      "venue": "arXiv",
+      "comment": "",
+      "categories": [
+        "cs.RO"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "vision-language",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "OMAR: Open-World Multi-Attribute Reasoning for Scene-Conditioned Shelf Organization\nWith the advent of foundation mo"
+          },
+          {
+            "label": "OV-related",
+            "quote": "仅有 open-set/open-world 线索，开放词汇设置待确认"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "OMAR面向货架场景中的开放世界整理：机器人需从多视角RGB-D观测中理解未知物体及货架组织，并在无用户偏好、预定义物体词表或固定物体-容器映射时，选择语义一致且几何可执行的放置位置。作者报告其提升了实例映射与放置一致性。",
+        "problem": {
+          "text": "论文研究场景条件下的货架整理问题：机器人从桌面拾取未知物体，并将其放到多层货架上与现有组织最一致的位置。难点在于货架组织偏好是隐含且可能变化的，单靠类别标签、预定义词表或物体-容器映射不足以支持多属性语义判断，还需满足几何与运动学可行性。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "When storing groceries, a robot must determine where els (LLMs) offer semantic knowledge beyond predefined a previously unseen object belongs, even without detailed object sets, supporting the prediction of semantically plau- instructions or user-provided preferences."
+            },
+            {
+              "page": 1,
+              "quote": "pipelines address grasp-placement compatibility througharXiv:2610.29761v1 We study scene-conditioned shelf organization, in which task-aware 6-DoF grasp selection and feasibility evalua- the robot must infer the latent organization from the observed tion [4]–[6], but do not infer the shelf’s latent organization arrange"
+            }
+          ]
+        },
+        "method": {
+          "text": "OMAR采用开放世界、多属性、多视角推理流程。机器人通过多视角RGB-D观测、分割、深度和跨视角关联建立实例级三维场景图，并保留不同视角产生的标签假设以处理遮挡和语义不一致。VLM提供内容、包装类型、可食用性和朝向等属性，LLM据此推断隐含的货架组织并生成语义候选；随后结合目标物体三维模型、抓取生成、几何候选采样、可行性筛选和无碰撞运动规划，选择并执行最高评分的抓取—放置方案。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "view We propose an open-world multi-attribute reasoning pipeline that grounds unknown objects across views and constructs Scene GraphOct an instance-level 3D scene graph for placement reasoning."
+            },
+            {
+              "page": 3,
+              "quote": "Afterwards, we predict placement candidates across all shelf boards (D) by sampling geometrically possible candidates on the map and match them with semantically suitable candidates predicted based on the 3D semantic scene graph."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告的实验评估显示，OMAR相较于单视角语言接地和仅基于几何的基线，在实例映射和放置一致性方面取得改进。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Our approach combines open-[cs.RO] evaluation shows that our approach leads to improved instance world multi-attribute and multi-view instance mapping to generate a 3D mapping and placement coherence over single-view language- semantic scene graph, which enables scene-conditioned placement reasoning grounding and geome"
+              },
+              {
+                "page": 2,
+                "quote": "GraspGPT [18] and Foundation-instance mapping and placement coherence over single-view Grasp [19] leverage semantic knowledge to bias grasplanguage-grounding and geometry-only baselines."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "多视角观测仍可能是不完整且彼此不一致的聚合结果，这会给统一场景表示带来挑战。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "view set, however, remains an aggregation of partial and potentially inconsistent observations."
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：对于货架整理这类任务，仅做语义匹配或仅做几何规划都不充分，较稳妥的系统设计是将场景组织推理与抓取、可达性和碰撞检查联合起来。",
+            "evidence": []
+          },
+          {
+            "text": "编辑推断：多视角实例级表示比单帧类别识别更适合支撑遮挡场景下的放置推理，评测时应同时关注实例映射质量与最终放置的一致性。",
+            "evidence": []
+          },
+          {
+            "text": "编辑推断：多属性之间可能产生冲突，因此后续工作可重点研究属性在具体场景组织中的相对作用及其不确定性管理。",
+            "evidence": []
+          }
+        ],
+        "role": {
+          "setting": "开放世界货架整理：从桌面拾取未知物体，并放置到多层货架上语义最一致的位置。",
+          "supervision": "不依赖用户显式偏好、预定义物体词表或固定物体-容器映射；其他监督条件未说明。",
+          "modalities": "多视角RGB-D观测、分割掩码、深度、VLM/LLM语义描述、目标物体三维模型。",
+          "datasets": "未说明。",
+          "evaluation": "评估实例映射与放置一致性，并与单视角语言接地和几何基线比较。"
+        },
+        "evidence": [
+          {
+            "claim": "论文研究场景条件下的货架整理问题：机器人从桌面拾取未知物体，并将其放到多层货架上与现有组织最一致的位置。难点在于货架组织偏好是隐含且可能变化的，单靠类别标签、预定义词表或物体-容器映射不足以支持多属性语义判断，还需满足几何与运动学可行性。",
+            "page": 1,
+            "quote": "When storing groceries, a robot must determine where els (LLMs) offer semantic knowledge beyond predefined a previously unseen object belongs, even without detailed object sets, supporting the prediction of semantically plau- instructions or user-provided preferences.",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=1"
+          },
+          {
+            "claim": "论文研究场景条件下的货架整理问题：机器人从桌面拾取未知物体，并将其放到多层货架上与现有组织最一致的位置。难点在于货架组织偏好是隐含且可能变化的，单靠类别标签、预定义词表或物体-容器映射不足以支持多属性语义判断，还需满足几何与运动学可行性。",
+            "page": 1,
+            "quote": "pipelines address grasp-placement compatibility througharXiv:2610.29761v1 We study scene-conditioned shelf organization, in which task-aware 6-DoF grasp selection and feasibility evalua- the robot must infer the latent organization from the observed tion [4]–[6], but do not infer the shelf’s latent organization arrange",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=1"
+          },
+          {
+            "claim": "OMAR采用开放世界、多属性、多视角推理流程。机器人通过多视角RGB-D观测、分割、深度和跨视角关联建立实例级三维场景图，并保留不同视角产生的标签假设以处理遮挡和语义不一致。VLM提供内容、包装类型、可食用性和朝向等属性，LLM据此推断隐含的货架组织并生成语义候选；随后结合目标物体三维模型、抓取生成、几何候选采样、可行性筛选和无碰撞运动规划，选择并执行最高评分的抓取—放置方案。",
+            "page": 1,
+            "quote": "view We propose an open-world multi-attribute reasoning pipeline that grounds unknown objects across views and constructs Scene GraphOct an instance-level 3D scene graph for placement reasoning.",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=1"
+          },
+          {
+            "claim": "OMAR采用开放世界、多属性、多视角推理流程。机器人通过多视角RGB-D观测、分割、深度和跨视角关联建立实例级三维场景图，并保留不同视角产生的标签假设以处理遮挡和语义不一致。VLM提供内容、包装类型、可食用性和朝向等属性，LLM据此推断隐含的货架组织并生成语义候选；随后结合目标物体三维模型、抓取生成、几何候选采样、可行性筛选和无碰撞运动规划，选择并执行最高评分的抓取—放置方案。",
+            "page": 3,
+            "quote": "Afterwards, we predict placement candidates across all shelf boards (D) by sampling geometrically possible candidates on the map and match them with semantically suitable candidates predicted based on the 3D semantic scene graph.",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=3"
+          },
+          {
+            "claim": "作者报告的实验评估显示，OMAR相较于单视角语言接地和仅基于几何的基线，在实例映射和放置一致性方面取得改进。",
+            "page": 1,
+            "quote": "Our approach combines open-[cs.RO] evaluation shows that our approach leads to improved instance world multi-attribute and multi-view instance mapping to generate a 3D mapping and placement coherence over single-view language- semantic scene graph, which enables scene-conditioned placement reasoning grounding and geome",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=1"
+          },
+          {
+            "claim": "作者报告的实验评估显示，OMAR相较于单视角语言接地和仅基于几何的基线，在实例映射和放置一致性方面取得改进。",
+            "page": 2,
+            "quote": "GraspGPT [18] and Foundation-instance mapping and placement coherence over single-view Grasp [19] leverage semantic knowledge to bias grasplanguage-grounding and geometry-only baselines.",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=2"
+          },
+          {
+            "claim": "多视角观测仍可能是不完整且彼此不一致的聚合结果，这会给统一场景表示带来挑战。",
+            "page": 3,
+            "quote": "view set, however, remains an aggregation of partial and potentially inconsistent observations.",
+            "source": "https://arxiv.org/pdf/2610.29761v1#page=3"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:37:31Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "0b5820ff2d12d5cea040900135221d50fc0c3d7c79e0842c08c8981d69040d52",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "arxiv:2610.29374": {
+      "id": "arxiv:2610.29374",
+      "title": "AOV-GS: Active Open-Vocabulary Semantic Mapping with 3D Gaussian Splatting",
+      "authors": [
+        "Rodion Shkokov",
+        "Tatiana Zemskova",
+        "Dmitry Yudin"
+      ],
+      "abstract": "Robots deployed in human-centered environments need maps that support both geometric navigation and open-vocabulary semantic queries beyond a fixed label set. A key challenge is enriching such maps with semantic information without relying on manually annotated segmentation masks or closed-set semantic categories. Existing geometry-driven active mapping maximizes coverage but treats semantics as a passive by-product of the collected trajectory, whereas active semantic mapping typically depends on supervised semantic segmentation. We present AOV-GS, an active 3D Gaussian mapping system that guides exploration using frozen foundation models. During coarse exploration, AOV-GS re-ranks geometrically promising candidate views according to CLIP mask-embedding novelty computed from SAM instance segmentation, biasing exploration toward semantically informative regions. Frozen SAM and CLIP provide instance masks and language-aligned embeddings throughout mapping, while a lightweight scene-specific language field is fitted offline directly to the collected CLIP embeddings rather than manually annotated masks, enabling open-vocabulary text-query segmentation on novel views. In a controlled comparison using the same SAM-CLIP perception stack, AOV-GS improves average language-field mIoU over geometry-only active planning by 1.3 percentage points on Replica (34.6% on eight scenes) and by 1.8 points on Matterport3D (23.1% on five scenes). With CorrCLIP, AOV-GS reaches 35.6% on Replica, 2.0 points above the matched Geometry-based + CorrCLIP baseline. Novel-view PSNR remains comparable to the geometry-only baseline on both datasets while depth L1 improves on Replica. Code is available at https://github.com/OptimusFaber/AOV-GS.",
+      "published": "2026-10-21T08:02:14Z",
+      "updated": "2026-10-21T08:02:14Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.29374"
+        ],
+        "doi": [
+          "10.1007/978-3-032-41546-2_20"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2610.29374",
+      "pdf": "https://arxiv.org/pdf/2610.29374",
+      "venue": "AIST 2026, Lecture Notes in Computer Science, vol. 16795, pp. 312-328, Springer, Cham (2027)",
+      "comment": "17 pages, 7 figures, 7 tables. Published at AIST 2026",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-23T19:31:20Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "OV"
+        ],
+        "task": "semantic",
+        "methods": [
+          "vision-language",
+          "alignment",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "AOV-GS: Active Open-Vocabulary Semantic Mapping with 3D Gaussian Splatting\nRobots deployed in human-centered environments need map"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "AOV-GS研究开放词汇主动语义建图：以冻结的SAM和CLIP引导视点选择，探索后离线训练高斯语言场，支持新视角文本查询分割，无需人工分割掩码或逐场景分割器微调。在Habitat仿真、真值相机位姿条件下，相同SAM–CLIP感知配置中，Replica与Matterport3D平均语言场mIoU分别为34.6%和23.1%，较纯几何规划提高1.3和1.8个百分点；新视角重建质量保持相当。",
+        "problem": {
+          "text": "面向未见场景的开放词汇主动语义建图，研究机器人能否利用冻结基础模型选择探索视点，在不依赖人工标注分割掩码或封闭类别集合的条件下改善开放词汇分割，同时保持有竞争力的RGB-D重建质量。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "A key challenge is enriching such maps with semantic information without relying on manually annotatedOct segmentation masks or closed-set semantic categories."
+            },
+            {
+              "page": 2,
+              "quote": "This paper addresses the following question: Can a robot actively explore an unseen scene using frozen foundation models, improve open-vocabulary segmenta- tion through viewpoint selection, and preserve competitive RGB-D reconstruction quality?"
+            }
+          ]
+        },
+        "method": {
+          "text": "AOV-GS在粗探索阶段，以SAM实例掩码的CLIP嵌入新颖性重排几何规划器筛出的候选视点，引导探索语义新颖的物体实例；后续细化阶段恢复纯几何评分。SAM与CLIP保持冻结，提供掩码和语言对齐嵌入；探索后直接以采集的CLIP嵌入离线拟合场景专属语言场，而非使用人工标注掩码，实现新视角开放词汇文本查询分割。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Our contributions are: – A coarse exploration NBV criterion that re-ranks the top-K candidates pro- duced by the geometric planner according to CLIP mask-embedding novelty, steering the robot toward semantically novel object instances while reverting to geometry-only scoring during later refinement stages."
+            },
+            {
+              "page": 1,
+              "quote": "Frozen[cs.CV] SAM and CLIP provide instance masks and language-aligned embed- dings throughout mapping, while a lightweight scene-specific language field is fitted offline directly to the collected CLIP embeddings rather than manually annotated masks, enabling open-vocabulary text-query segmentation on novel views."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在相同SAM–CLIP感知配置的受控比较中，相比纯几何主动规划，Replica平均语言场mIoU达到34.6%，提高1.3个百分点；Matterport3D达到23.1%，提高1.8个百分点。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In a controlled comparison using the same SAM–CLIP perception stack, AOV-GS improves average language-field mIoU over geometry-only active planning by 1.3 percentage points on Replica (34.6% on eight scenes) and by 1.8 points on Matterport3D (23.1% on five scenes)."
+              }
+            ]
+          },
+          {
+            "text": "采用CorrCLIP时，Replica上的mIoU达到35.6%，比匹配的Geometry-based + CorrCLIP基线高2.0个百分点。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "With CorrCLIP, AOV-GS reaches 35.6% on Replica, 2.0 points above the matched Geometry-based + CorrCLIP baseline."
+              }
+            ]
+          },
+          {
+            "text": "在所评测的数据集上，新视角PSNR与纯几何基线相当；Replica上的深度L1有所改善。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Novel-view PSNR remains comparable to the geometry-only baseline on both datasets while depth L1 improves on Replica."
+              }
+            ]
+          },
+          {
+            "text": "作者指出，Replica各场景的结果存在异质性，平均收益并不意味着各场景表现一致。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Under the matched SAM–CLIP stack, AOV-GS reaches 34.6% on Replica (+1.3 pp) and 23.1% on MP3D (+1.8 pp); the per-scene Replica results are heterogeneous and are analyzed explicitly."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "评测均使用Habitat真值相机位姿，未评估估计位姿或SLAM定位噪声条件，因此这些条件下的效果尚未得到验证。",
+            "evidence": [
+              {
+                "page": 7,
+                "quote": "All methods in our comparisons receive the same ground-truth Habitat camera poses; none is evaluated with estimated poses or SLAM localization noise."
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：可将语义新颖性用作几何候选视点的重排信号，而非替代几何规划；这种设计适合在保留几何探索框架的同时加入语义目标。",
+            "evidence": [
+              {
+                "page": 5,
+                "quote": "Semantic novelty re-weights geometrically strong candidates rather than replac- ing geometry-driven planning: when geometric scores among top candidates are close, the product can move the argmax toward views whose rendered masks contain embeddings far from B (Fig. 2)."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：比较主动探索策略时，应匹配感知配置，并同时检查场景级表现，避免将感知模型变化或少数场景收益误归因于规划策略。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In a controlled comparison using the same SAM–CLIP perception stack, AOV-GS improves average language-field mIoU over geometry-only active planning by 1.3 percentage points on Replica (34.6% on eight scenes) and by 1.8 points on Matterport3D (23.1% on five scenes)."
+              },
+              {
+                "page": 2,
+                "quote": "Under the matched SAM–CLIP stack, AOV-GS reaches 34.6% on Replica (+1.3 pp) and 23.1% on MP3D (+1.8 pp); the per-scene Replica results are heterogeneous and are analyzed explicitly."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：阅读或复现时应区分在线主动采集与离线语言场训练，也应将真值位姿仿真结果与含定位误差的部署效果分开讨论。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "– An active open-vocabulary semantic mapping pipeline combining online se- mantic exploration with offline LangSplatV2 language-field construction, without per-scene segmenter fine-tuning."
+              },
+              {
+                "page": 7,
+                "quote": "All methods in our comparisons receive the same ground-truth Habitat camera poses; none is evaluated with estimated poses or SLAM localization noise."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "开放词汇主动语义建图与新视角文本查询分割；在Habitat中探索未见场景，不属于UDA、DG或TTA，未设置源域—目标域适应协议。",
+          "supervision": "冻结SAM和CLIP，无逐场景分割器微调；语言场以CLIP掩码嵌入为监督，不使用人工分割掩码；实验提供真值相机位姿。",
+          "modalities": "带位姿RGB-D观测、高斯场景表示、SAM实例掩码、CLIP语言对齐嵌入及文本查询。",
+          "datasets": "Habitat仿真中的Replica与Matterport3D室内基准；不能据此视为真实机器人部署验证。",
+          "evaluation": "平均语言场mIoU、新视角PSNR与深度L1；匹配SAM–CLIP或CorrCLIP配置比较主动规划，所有方法使用相同真值相机位姿。"
+        },
+        "evidence": [
+          {
+            "claim": "面向未见场景的开放词汇主动语义建图，研究机器人能否利用冻结基础模型选择探索视点，在不依赖人工标注分割掩码或封闭类别集合的条件下改善开放词汇分割，同时保持有竞争力的RGB-D重建质量。",
+            "page": 1,
+            "quote": "A key challenge is enriching such maps with semantic information without relying on manually annotatedOct segmentation masks or closed-set semantic categories.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "面向未见场景的开放词汇主动语义建图，研究机器人能否利用冻结基础模型选择探索视点，在不依赖人工标注分割掩码或封闭类别集合的条件下改善开放词汇分割，同时保持有竞争力的RGB-D重建质量。",
+            "page": 2,
+            "quote": "This paper addresses the following question: Can a robot actively explore an unseen scene using frozen foundation models, improve open-vocabulary segmenta- tion through viewpoint selection, and preserve competitive RGB-D reconstruction quality?",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=2"
+          },
+          {
+            "claim": "AOV-GS在粗探索阶段，以SAM实例掩码的CLIP嵌入新颖性重排几何规划器筛出的候选视点，引导探索语义新颖的物体实例；后续细化阶段恢复纯几何评分。SAM与CLIP保持冻结，提供掩码和语言对齐嵌入；探索后直接以采集的CLIP嵌入离线拟合场景专属语言场，而非使用人工标注掩码，实现新视角开放词汇文本查询分割。",
+            "page": 2,
+            "quote": "Our contributions are: – A coarse exploration NBV criterion that re-ranks the top-K candidates pro- duced by the geometric planner according to CLIP mask-embedding novelty, steering the robot toward semantically novel object instances while reverting to geometry-only scoring during later refinement stages.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=2"
+          },
+          {
+            "claim": "AOV-GS在粗探索阶段，以SAM实例掩码的CLIP嵌入新颖性重排几何规划器筛出的候选视点，引导探索语义新颖的物体实例；后续细化阶段恢复纯几何评分。SAM与CLIP保持冻结，提供掩码和语言对齐嵌入；探索后直接以采集的CLIP嵌入离线拟合场景专属语言场，而非使用人工标注掩码，实现新视角开放词汇文本查询分割。",
+            "page": 1,
+            "quote": "Frozen[cs.CV] SAM and CLIP provide instance masks and language-aligned embed- dings throughout mapping, while a lightweight scene-specific language field is fitted offline directly to the collected CLIP embeddings rather than manually annotated masks, enabling open-vocabulary text-query segmentation on novel views.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "在相同SAM–CLIP感知配置的受控比较中，相比纯几何主动规划，Replica平均语言场mIoU达到34.6%，提高1.3个百分点；Matterport3D达到23.1%，提高1.8个百分点。",
+            "page": 1,
+            "quote": "In a controlled comparison using the same SAM–CLIP perception stack, AOV-GS improves average language-field mIoU over geometry-only active planning by 1.3 percentage points on Replica (34.6% on eight scenes) and by 1.8 points on Matterport3D (23.1% on five scenes).",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "采用CorrCLIP时，Replica上的mIoU达到35.6%，比匹配的Geometry-based + CorrCLIP基线高2.0个百分点。",
+            "page": 1,
+            "quote": "With CorrCLIP, AOV-GS reaches 35.6% on Replica, 2.0 points above the matched Geometry-based + CorrCLIP baseline.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "在所评测的数据集上，新视角PSNR与纯几何基线相当；Replica上的深度L1有所改善。",
+            "page": 1,
+            "quote": "Novel-view PSNR remains comparable to the geometry-only baseline on both datasets while depth L1 improves on Replica.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "作者指出，Replica各场景的结果存在异质性，平均收益并不意味着各场景表现一致。",
+            "page": 2,
+            "quote": "Under the matched SAM–CLIP stack, AOV-GS reaches 34.6% on Replica (+1.3 pp) and 23.1% on MP3D (+1.8 pp); the per-scene Replica results are heterogeneous and are analyzed explicitly.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=2"
+          },
+          {
+            "claim": "评测均使用Habitat真值相机位姿，未评估估计位姿或SLAM定位噪声条件，因此这些条件下的效果尚未得到验证。",
+            "page": 7,
+            "quote": "All methods in our comparisons receive the same ground-truth Habitat camera poses; none is evaluated with estimated poses or SLAM localization noise.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=7"
+          },
+          {
+            "claim": "编辑推断：可将语义新颖性用作几何候选视点的重排信号，而非替代几何规划；这种设计适合在保留几何探索框架的同时加入语义目标。",
+            "page": 5,
+            "quote": "Semantic novelty re-weights geometrically strong candidates rather than replac- ing geometry-driven planning: when geometric scores among top candidates are close, the product can move the argmax toward views whose rendered masks contain embeddings far from B (Fig. 2).",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=5"
+          },
+          {
+            "claim": "编辑推断：比较主动探索策略时，应匹配感知配置，并同时检查场景级表现，避免将感知模型变化或少数场景收益误归因于规划策略。",
+            "page": 1,
+            "quote": "In a controlled comparison using the same SAM–CLIP perception stack, AOV-GS improves average language-field mIoU over geometry-only active planning by 1.3 percentage points on Replica (34.6% on eight scenes) and by 1.8 points on Matterport3D (23.1% on five scenes).",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=1"
+          },
+          {
+            "claim": "编辑推断：比较主动探索策略时，应匹配感知配置，并同时检查场景级表现，避免将感知模型变化或少数场景收益误归因于规划策略。",
+            "page": 2,
+            "quote": "Under the matched SAM–CLIP stack, AOV-GS reaches 34.6% on Replica (+1.3 pp) and 23.1% on MP3D (+1.8 pp); the per-scene Replica results are heterogeneous and are analyzed explicitly.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=2"
+          },
+          {
+            "claim": "编辑推断：阅读或复现时应区分在线主动采集与离线语言场训练，也应将真值位姿仿真结果与含定位误差的部署效果分开讨论。",
+            "page": 2,
+            "quote": "– An active open-vocabulary semantic mapping pipeline combining online se- mantic exploration with offline LangSplatV2 language-field construction, without per-scene segmenter fine-tuning.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=2"
+          },
+          {
+            "claim": "编辑推断：阅读或复现时应区分在线主动采集与离线语言场训练，也应将真值位姿仿真结果与含定位误差的部署效果分开讨论。",
+            "page": 7,
+            "quote": "All methods in our comparisons receive the same ground-truth Habitat camera poses; none is evaluated with estimated poses or SLAM localization noise.",
+            "source": "https://arxiv.org/pdf/2610.29374v1#page=7"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-23T19:33:07Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "8ff5a38cf468ca1a7fbae6000ab4609923874a651d511506b2aa90aaeaa1e7d6",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-21T19:31:10Z",
-      "last_success": "2026-10-21T19:31:10Z"
+      "completed_until": "2026-10-23T19:31:20Z",
+      "last_success": "2026-10-23T19:31:20Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-21T19:31:10Z",
-      "last_success": "2026-10-21T19:31:10Z"
+      "completed_until": "2026-10-23T19:31:20Z",
+      "last_success": "2026-10-23T19:31:20Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-21T19:31:10Z",
-      "last_success": "2026-10-21T19:31:10Z"
+      "completed_until": "2026-10-23T19:31:20Z",
+      "last_success": "2026-10-23T19:31:20Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-22T19:23:20Z",
-      "last_success": "2026-10-22T19:23:20Z"
+      "completed_until": "2026-10-23T19:31:20Z",
+      "last_success": "2026-10-23T19:31:20Z"
     }
   },
   "events": [
@@ -66808,9 +68685,74 @@
       "paper_id": "W0164",
       "title": "Target Semantics Clustering via Text Representations for Robust Universal Domain Adaptation",
       "at": "2026-10-22T19:23:20Z"
+    },
+    {
+      "key": "85ac12e74a55125ffbdcd374",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.29845",
+      "title": "RangeNav: Task-Aligned LiDAR Range-Image Pretraining for Robot Navigation",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "f5bc921311050be798b1b7a1",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.31476",
+      "title": "Point-Level Refinable Semantic Mapping for Spatial Understanding",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "3ad36a08e5cf3ded7f0aae51",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.31293",
+      "title": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "9c82fbbe2d5655f738e93b39",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.30908",
+      "title": "Query-Time Calibration of CLIP Features for Open-Vocabulary 3D Segmentation",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "f211ff8ebb54c06369def7b5",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.30013",
+      "title": "ClunoGS: Compact Language 3D Gaussian Splatting via Unified Optimization",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "99db07cdeeeaefe67ffc10a3",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.29761",
+      "title": "OMAR: Open-World Multi-Attribute Reasoning for Scene-Conditioned Shelf Organization",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "a7996c8c26d18071e8daf4ea",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.29374",
+      "title": "AOV-GS: Active Open-Vocabulary Semantic Mapping with 3D Gaussian Splatting",
+      "at": "2026-10-23T19:31:20Z"
+    },
+    {
+      "key": "e6bee665cd66533718a5e2f0",
+      "kind": "revised",
+      "paper_id": "W0046",
+      "title": "Adaptive Dual-Teacher Distillation with Subnetwork Rectification for Bridging Semantic Gaps in Black-Box Domain Adaptation",
+      "at": "2026-10-23T19:31:20Z",
+      "previous_version": 3
+    },
+    {
+      "key": "d749ee3816ba790bb70e2a19",
+      "kind": "revised",
+      "paper_id": "arxiv:2609.18898",
+      "title": "NormLift: From Lifted Features To Semantic Reliability In 3D Gaussian Splatting",
+      "at": "2026-10-23T19:31:20Z",
+      "previous_version": 1
     }
   ],
-  "revision_cursor": 173,
+  "revision_cursor": 213,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -68237,55 +70179,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-23T19:31:20Z",
+      "status": "ok",
+      "counts": {
+        "new": 7,
+        "revised": 2,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 42,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-14T19:31:10Z",
+          "end": "2026-10-23T19:31:20Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-14T19:31:10Z",
+          "end": "2026-10-23T19:31:20Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-14T19:31:10Z",
+          "end": "2026-10-23T19:31:20Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 10
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-15T19:23:20Z",
+          "end": "2026-10-23T19:31:20Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 238
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-22T19:23:20Z",
+    "at": "2026-10-23T19:31:20Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-22T19:23:20Z",
-    "status": "partial",
+    "at": "2026-10-23T19:31:20Z",
+    "status": "ok",
     "counts": {
-      "new": 0,
-      "revised": 1,
-      "existing": 1,
+      "new": 7,
+      "revised": 2,
+      "existing": 0,
       "metadata": 0,
-      "unchanged": 38,
+      "unchanged": 42,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
         "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-22T19:23:20Z",
+        "end": "2026-10-23T19:31:20Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 0
       },
       {
         "source": "domain-generalization",
         "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-22T19:23:20Z",
+        "end": "2026-10-23T19:31:20Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: HTTP 429"
+        "status": "ok",
+        "matched": 1
       },
       {
         "source": "open-vocabulary",
         "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-22T19:23:20Z",
+        "end": "2026-10-23T19:31:20Z",
         "backlog_days": 0,
-        "status": "failed",
-        "error": "SourceError: arXiv unavailable after retries: TimeoutError: The read operation timed out"
+        "status": "ok",
+        "matched": 10
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-22T19:23:20Z",
+        "start": "2026-10-15T19:23:20Z",
+        "end": "2026-10-23T19:31:20Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -68294,14 +70289,14 @@
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 231
+        "total_known": 238
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-21T19:31:10Z",
+  "last_full_success": "2026-10-23T19:31:20Z",
   "llm_last_run": {
-    "at": "2026-10-22T19:32:24Z",
+    "at": "2026-10-23T19:31:43Z",
     "status": "ok",
     "attempted": 8,
     "succeeded": 8,
@@ -68318,6 +70313,7 @@
     "2026-10-19": 8,
     "2026-10-20": 8,
     "2026-10-21": 8,
-    "2026-10-22": 8
+    "2026-10-22": 8,
+    "2026-10-23": 8
   }
 }
