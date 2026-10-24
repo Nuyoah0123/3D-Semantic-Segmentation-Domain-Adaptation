@@ -29,7 +29,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -365,7 +365,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -693,7 +693,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2588,7 +2588,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2856,7 +2856,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -3149,7 +3149,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3430,7 +3430,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -4028,7 +4028,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4299,7 +4299,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4587,7 +4587,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4884,7 +4884,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -5172,7 +5172,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -5432,7 +5432,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -9200,7 +9200,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-19T20:41:18Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -9703,7 +9703,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-19T20:41:18Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -10034,7 +10034,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -11421,7 +11421,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -13363,7 +13363,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -16496,7 +16496,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -16703,7 +16703,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -16960,7 +16960,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -20163,8 +20163,8 @@
       ],
       "abstract": "Open-vocabulary 3D Gaussian segmentation typically binds semantic features to the per-Gaussian state via per-scene gradient training (1-4 h) or the more recent closed-form distillation. Both commit each primitive to a single feature; therefore, boundary Gaussians spanning multiple 2D instances are forced into a hard decision that degrades retrieval accuracy and yields unstable mask boundaries at render time. We present DIGS, a training-free framework with two stages, class-agnostic mapping and multi-modal encoding, that decouples instance discovery from linguistic naming. At the Gaussian level, our distribution-informed representation maintains an explicit top-$M$ label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions at boundary primitives allows a late-argmax renderer to recover clean instance boundaries. A bidirectional state machine aggregates these distributions into a persistent class-agnostic instance ontology. The instance-level encoding stage then fuses the CLIP visual embedding of each instance's isolated 3D footprint with the CLIP-text embedding of an LLM-generated attribute description, disambiguating visually similar instances. On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0-3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms. It reaches 71.95% mean mIoU on LERF-OVS, outperforming both the training-free SFS and training-based LaGa baselines. DIGS also achieves the highest mean mIoU on LERF-Mask and 3D-OVS and surpasses Gaga and ObjectGS on Replica under their respective evaluation protocols. Code is available at https://github.com/ZephyrZos/DIGS.",
       "published": "2026-10-12T04:52:38Z",
-      "updated": "2026-10-12T04:52:38Z",
-      "version": 1,
+      "updated": "2026-10-17T02:40:31Z",
+      "version": 2,
       "identifiers": {
         "arxiv": [
           "2610.16177"
@@ -20174,14 +20174,14 @@
       "url": "https://arxiv.org/abs/2610.16177",
       "pdf": "https://arxiv.org/pdf/2610.16177",
       "venue": "arXiv",
-      "comment": "",
+      "comment": "Accepted at NeurIPS 2026",
       "categories": [
         "cs.CV"
       ],
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-19T20:41:18Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -20206,11 +20206,18 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": [],
+      "versions": [
+        {
+          "title": "DIGS: Distribution-Informed Gaussian Splatting for Training-Free Open-Vocabulary 3D Segmentation",
+          "version": 1,
+          "updated": "2026-10-12T04:52:38Z",
+          "published": "2026-10-12T04:52:38Z"
+        }
+      ],
       "ai_draft": {
-        "summary_zh": "DIGS 面向 3D Gaussian Splatting 的训练免除开放词汇三维分割，将类无关实例建图与语言命名解耦。作者报告称，其分布式高斯表示、延迟取最大渲染和多模态实例编码改善了边界质量、查询消歧与推理效率，并在多个基准上优于对比方法。",
+        "summary_zh": "DIGS面向开放词汇三维高斯分割，将类别无关实例发现与语言命名解耦，以标签分布和延迟argmax改善边界，并融合CLIP视觉特征与LLM属性描述。作者报告其在LERF-OVS上达到71.95%平均mIoU，单张A100上每场景映射及编码耗时1.0–3.2分钟。“免训练”指语义处理流程，底层三维高斯场景仍需预先训练并冻结；部分评测使用测试帧RGB辅助检测，不能与原生三维查询混为一谈。",
         "problem": {
-          "text": "论文针对 3DGS 中开放词汇三维分割的核心矛盾：每个高斯通常只存储单一语义状态，导致跨实例边界模糊或语义混合；同时，既有方法依赖逐场景梯度优化，成本高且将语言信号固化到场景表示中。作者希望在不进行逐场景训练的情况下，同时改善边界保真度与语言查询能力。",
+          "text": "解决支持文本查询的开放词汇三维高斯分割中，边界保真与逐场景训练成本难以兼顾的问题。作者指出，将每个高斯绑定到单一语义状态，会使跨实例边界处理受限；既有设计未在统一的逐高斯表示中解除训练成本与边界质量的耦合。该任务属于开放词汇分割，而非域适应、域泛化或测试时适应。",
           "evidence": [
             {
               "page": 1,
@@ -20223,48 +20230,30 @@
           ]
         },
         "method": {
-          "text": "DIGS 是训练免除的两阶段框架：第一阶段进行类无关建图，为每个高斯维护经 tempered Dirichlet 规则更新的 top-M 标签分布，并在像素级融合后采用 late-argmax 渲染，使边界高斯保留相邻实例的多峰证据；同时通过双向状态机形成持久化的类无关实例本体。第二阶段为稳定实例提取孤立三维足迹的 CLIP 视觉嵌入，并与 LLM 生成属性描述的 CLIP 文本嵌入融合，用于开放词汇检索，无需重新投票或重新优化。",
+          "text": "在高斯层面保存显式top-M标签分布，以温化Dirichlet规则更新，并保留边界高斯的多峰标签证据，通过延迟argmax渲染恢复实例边界。在实例层面，将实例独立三维区域的CLIP视觉嵌入与LLM生成属性描述的CLIP文本嵌入融合，以区分外观相似实例。",
           "evidence": [
             {
               "page": 1,
-              "quote": "We present DIGS, a training-free framework with two stages, class-agnostic map- ping and multi-modal encoding, that decouples instance discovery from linguistic naming."
+              "quote": "At the Gaussian level, our distribution-informed representation maintains an explicit top-M label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions[cs.CV] at boundary primitives allows a late-argmax renderer to recover clean instance boundaries."
             },
             {
               "page": 1,
-              "quote": "At the Gaussian level, our distribution-informed representation maintains an explicit top-M label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions at boundary primitives allows[cs.CV] a late-argmax renderer to recover clean instance boundaries."
+              "quote": "The instance-level encoding stage then fuses the CLIP visual embedding of each instance’s isolated 3D footprint with the CLIP-text embedding of an LLM-generated attribute description, disambiguating visually similar instances."
             }
           ]
         },
         "findings": [
           {
-            "text": "在 LERF-OVS 的 OpenGaussian 3D-native 协议下，DIGS 达到 71.95% mean mIoU，优于训练免除的 SFS 和训练式的 LaGa。",
+            "text": "在LERF-OVS的OpenGaussian原生三维协议下，作者报告平均mIoU为71.95、平均mAcc为85.35；相较训练式基线LaGa和免训练基线SFS，mIoU分别提高+11.40和+9.79。",
             "evidence": [
               {
-                "page": 1,
-                "quote": "It reaches 71.95% mean mIoU on LERF-OVS, out- performing both the training-free SFS and training-based LaGa baselines."
+                "page": 8,
+                "quote": "Table 2 reports DIGS at 71.95 mean mIoU and 85.35 mean mAcc on LERF-OVS under the OpenGaussian 3D-native protocol, exceeding the strongest training-based baseline LaGa by +11.40 mIoU and the closest training-free comparator SFS by +9.79 mIoU; against LangSplatV2‡’s strongest reported 58.27, the gap widens to +13.68 (it"
               }
             ]
           },
           {
-            "text": "在 LERF-Mask 和 3D-OVS 上，DIGS 均取得最高 mean mIoU；在 Replica 上，DIGS 也超过了 Gaga 和 ObjectGS，具体比较遵循各自评测协议。",
-            "evidence": [
-              {
-                "page": 1,
-                "quote": "DIGS also achieves the highest mean mIoU on LERF-Mask and 3D-OVS and surpasses Gaga and ObjectGS on Replica under their respective evaluation protocols."
-              }
-            ]
-          },
-          {
-            "text": "在单张 A100 上，DIGS 的建图与实例编码耗时为每场景 1.0–3.2 分钟，原生三维查询耗时为 5.4 ms。",
-            "evidence": [
-              {
-                "page": 1,
-                "quote": "On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0–3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms."
-              }
-            ]
-          },
-          {
-            "text": "消融结果显示，仅使用 CLIP 的 DIGS 达到 66.85 mean mIoU；加入 LLM 文本融合后进一步提升 5.10，说明作者报告的收益同时来自边界保持表示与属性消歧。",
+            "text": "消融结果中，仅使用CLIP的DIGS达到66.85平均mIoU；加入LLM融合后进一步增加+5.10。作者据此将保留边界的分布表示视为主要性能来源，并报告属性描述融合带来额外收益。",
             "evidence": [
               {
                 "page": 8,
@@ -20273,116 +20262,190 @@
             ]
           },
           {
-            "text": "在 LERF-Mask 的检测桥接设置下，DIGS 达到 91.71 mean mIoU 和 86.91 mean mBIoU，比此前最佳的 ObjectGS 高 3.3 mean mIoU，并在两项指标上领先既有方法。",
+            "text": "在提供测试帧RGB的检测桥接评测中，作者报告平均mIoU为91.71、平均mBIoU为86.91，较ObjectGS提高+3.3 mIoU；该结果不应视作仅依赖原生三维文本检索的表现。",
             "evidence": [
+              {
+                "page": 8,
+                "quote": "With test-frame RGB available, we evaluated DIGS in detection-bridging mode (§3.6)."
+              },
               {
                 "page": 8,
                 "quote": "Table 3 shows DIGS at 91.71 mean mIoU and 86.91 mean mBIoU, +3.3 mIoU over the previous best ObjectGS and leading every prior method on both mIoU and mBIoU across all three scenes; the dominance on the boundary-sensitive mBIoU metric directly evidences the boundary-fidelity gain from top-M + late-argmax, addressing the"
               }
             ]
-          }
-        ],
-        "open_problems": [
+          },
           {
-            "text": "作者指出，3D-OVS 中的对象空间分离、且现有最强方法已超过 95% mean mIoU，使该基准的进一步提升空间有限；这意味着该评测设置对方法差异的区分能力受到限制。",
+            "text": "在3D-OVS的检测桥接查询模式下，作者报告96.45平均mIoU，为所比较方法中的最高均值。",
             "evidence": [
               {
                 "page": 9,
-                "quote": "The strongest methods already exceed LangSplat [5] 92.5 94.2 96.1 94.1 90.0 93.4 LangSplatV2 [6] 93.0 94.9 96.6 96.1 92.3 94.6 95% mean mIoU on these spatially sep- LaGa [10] 96.8 92.8 96.9 97.0 93.0 95.3 arated objects, leaving limited headroom."
+                "quote": "mode (§3.6), Table 4 reports DIGS at 96.45 mean mIoU on 3D-OVS, the high- Method Bed Bench Lawn Room Sofa Mean est mean across all prior methods, sur- LERF [34] 73.5 53.2 73.7 46.6 27.0 54.8 passing the strongest training-based base- 3D-OVS [42] 89.5 89.3 88.2 92.8 74.0 86.8 lines ObjectGS [12] (96.4) and LaGa [10] GG "
               }
-            ],
-            "kind": "limitation"
+            ]
+          },
+          {
+            "text": "在单张A100上，LERF-OVS每场景映射与实例编码耗时1.0–3.2分钟，取决于是否启用LLM融合；原生三维查询耗时5.4毫秒。这些时间对应映射、编码及查询，不代表底层场景重建无需训练。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0–3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms."
+              },
+              {
+                "page": 7,
+                "quote": "The 3DGS reconstruction was a fixed Mip-Splatting [44] model trained for 30,000 iterations to fit the RGB scene; the resulting Gaussians were frozen for the rest of the pipeline."
+              }
+            ]
           }
         ],
+        "open_problems": [],
         "insights": [
           {
-            "text": "编辑推断：若任务重点是实例边界，保留高斯的多标签分布并延迟离散化，可能比直接绑定单一语义特征更稳健。",
-            "evidence": []
+            "text": "编辑推断：边界处保留多标签不确定性、待像素聚合后再决策，是值得迁移到其他实例语义表示中的设计思路，避免过早硬分配。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "Boundary Gaussians, which typically hold comparable evidence for adjacent labels, contribute proportionally to both sides and the final label is decided by the majority vote of neighbouring non-ambiguous Gaussians; this suppresses the staircase boundary artefacts that characterise hard-label rendering."
+              }
+            ]
           },
           {
-            "text": "编辑推断：将类无关实例建图与语言命名解耦，有助于分别分析几何建图质量、查询消歧能力和语言模型带来的增益。",
-            "evidence": []
+            "text": "编辑推断：评测时应分别报告原生三维检索与测试图像辅助检测的结果，否则难以判断收益来自实例地图、语言检索还是额外视觉输入。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "At query time, the prompt is matched by cosine similarity, with j∗= arg maxj∈Istable cos(ej, CLIPtext(q)), in O(|Istable|) cosines per prompt; the predicted mask is then obtained by indexing the Late-Argmax label map ˆLtest rendered at the test viewpoint Mqˆ = 1[ˆLtest = j∗]."
+              },
+              {
+                "page": 6,
+                "quote": "When the evaluation protocol supplies the test-frame RGB, an open-vocabulary 2D detector can resolve the what, while the 3D instance field supplies the where via IoU matching against ˆLtest."
+              }
+            ]
           },
           {
-            "text": "编辑推断：比较开放词汇三维分割方法时，应严格区分 3D-native、带测试帧 RGB 的检测桥接及不同数据集协议，避免把协议差异误判为方法差异。",
-            "evidence": []
+            "text": "编辑推断：选择“免训练”方案时，应核对免除的是语义优化还是完整场景构建；同时可考虑将语言编码后置，以复用类别无关实例地图。",
+            "evidence": [
+              {
+                "page": 7,
+                "quote": "The 3DGS reconstruction was a fixed Mip-Splatting [44] model trained for 30,000 iterations to fit the RGB scene; the resulting Gaussians were frozen for the rest of the pipeline."
+              },
+              {
+                "page": 6,
+                "quote": "Computed once post-mapping, the embeddings support arbitrary downstream retrieval without re-running the voting pipeline."
+              }
+            ]
           }
         ],
         "role": {
-          "setting": "3D Gaussian Splatting 上的训练免除开放词汇三维实例分割与文本查询，包含 3D-native 和检测桥接设置。",
-          "supervision": "语义阶段不进行逐场景梯度训练；使用类无关 SAM 掩码、冻结的 RGB 3DGS，并在部分协议中使用测试帧 RGB。",
-          "modalities": "输入为多视角 RGB/三维高斯场景；使用 SAM 掩码、CLIP 图文嵌入、LLM 属性描述，部分设置使用检测器。",
+          "setting": "开放词汇三维高斯分割，支持文本驱动实例检索；不是源域到目标域的迁移任务，源域与目标域划分未说明。",
+          "supervision": "语义映射与编码免逐场景梯度训练，使用预训练模型及SAM类别无关掩码；底层Mip-Splatting先拟合RGB场景，再冻结高斯。",
+          "modalities": "RGB场景观测、三维高斯、实例掩码、文本查询及LLM属性描述；检测桥接模式额外使用测试帧RGB。真实与仿真属性未说明。",
           "datasets": "LERF-OVS、LERF-Mask、3D-OVS、Replica。",
-          "evaluation": "按各基准协议评测；使用 mean mIoU、mAcc@0.25、mean mBIoU 或 mAcc 等指标。"
+          "evaluation": "LERF-OVS采用原生三维协议，报告mIoU、mAcc@0.25；LERF-Mask报告mIoU、mBIoU；3D-OVS报告mIoU；Replica沿用Gaga与ObjectGS协议。"
         },
         "evidence": [
           {
-            "claim": "论文针对 3DGS 中开放词汇三维分割的核心矛盾：每个高斯通常只存储单一语义状态，导致跨实例边界模糊或语义混合；同时，既有方法依赖逐场景梯度优化，成本高且将语言信号固化到场景表示中。作者希望在不进行逐场景训练的情况下，同时改善边界保真度与语言查询能力。",
+            "claim": "解决支持文本查询的开放词汇三维高斯分割中，边界保真与逐场景训练成本难以兼顾的问题。作者指出，将每个高斯绑定到单一语义状态，会使跨实例边界处理受限；既有设计未在统一的逐高斯表示中解除训练成本与边界质量的耦合。该任务属于开放词汇分割，而非域适应、域泛化或测试时适应。",
             "page": 1,
             "quote": "Open-vocabulary segmentation on 3D Gaussian Splatting (3DGS) [4] requires a per-Gaussian semantic representation that supports text queries.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=1"
           },
           {
-            "claim": "论文针对 3DGS 中开放词汇三维分割的核心矛盾：每个高斯通常只存储单一语义状态，导致跨实例边界模糊或语义混合；同时，既有方法依赖逐场景梯度优化，成本高且将语言信号固化到场景表示中。作者希望在不进行逐场景训练的情况下，同时改善边界保真度与语言查询能力。",
+            "claim": "解决支持文本查询的开放词汇三维高斯分割中，边界保真与逐场景训练成本难以兼顾的问题。作者指出，将每个高斯绑定到单一语义状态，会使跨实例边界处理受限；既有设计未在统一的逐高斯表示中解除训练成本与边界质量的耦合。该任务属于开放词汇分割，而非域适应、域泛化或测试时适应。",
             "page": 1,
             "quote": "No prior design, however, resolves the coupling between training cost and boundary fidelity within a single per-Gaussian representation.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=1"
           },
           {
-            "claim": "DIGS 是训练免除的两阶段框架：第一阶段进行类无关建图，为每个高斯维护经 tempered Dirichlet 规则更新的 top-M 标签分布，并在像素级融合后采用 late-argmax 渲染，使边界高斯保留相邻实例的多峰证据；同时通过双向状态机形成持久化的类无关实例本体。第二阶段为稳定实例提取孤立三维足迹的 CLIP 视觉嵌入，并与 LLM 生成属性描述的 CLIP 文本嵌入融合，用于开放词汇检索，无需重新投票或重新优化。",
+            "claim": "在高斯层面保存显式top-M标签分布，以温化Dirichlet规则更新，并保留边界高斯的多峰标签证据，通过延迟argmax渲染恢复实例边界。在实例层面，将实例独立三维区域的CLIP视觉嵌入与LLM生成属性描述的CLIP文本嵌入融合，以区分外观相似实例。",
             "page": 1,
-            "quote": "We present DIGS, a training-free framework with two stages, class-agnostic map- ping and multi-modal encoding, that decouples instance discovery from linguistic naming.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
+            "quote": "At the Gaussian level, our distribution-informed representation maintains an explicit top-M label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions[cs.CV] at boundary primitives allows a late-argmax renderer to recover clean instance boundaries.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=1"
           },
           {
-            "claim": "DIGS 是训练免除的两阶段框架：第一阶段进行类无关建图，为每个高斯维护经 tempered Dirichlet 规则更新的 top-M 标签分布，并在像素级融合后采用 late-argmax 渲染，使边界高斯保留相邻实例的多峰证据；同时通过双向状态机形成持久化的类无关实例本体。第二阶段为稳定实例提取孤立三维足迹的 CLIP 视觉嵌入，并与 LLM 生成属性描述的 CLIP 文本嵌入融合，用于开放词汇检索，无需重新投票或重新优化。",
+            "claim": "在高斯层面保存显式top-M标签分布，以温化Dirichlet规则更新，并保留边界高斯的多峰标签证据，通过延迟argmax渲染恢复实例边界。在实例层面，将实例独立三维区域的CLIP视觉嵌入与LLM生成属性描述的CLIP文本嵌入融合，以区分外观相似实例。",
             "page": 1,
-            "quote": "At the Gaussian level, our distribution-informed representation maintains an explicit top-M label distribution per primitive, updated by a tempered Dirichlet rule; preservation of multi-peaked label distributions at boundary primitives allows[cs.CV] a late-argmax renderer to recover clean instance boundaries.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
+            "quote": "The instance-level encoding stage then fuses the CLIP visual embedding of each instance’s isolated 3D footprint with the CLIP-text embedding of an LLM-generated attribute description, disambiguating visually similar instances.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=1"
           },
           {
-            "claim": "在 LERF-OVS 的 OpenGaussian 3D-native 协议下，DIGS 达到 71.95% mean mIoU，优于训练免除的 SFS 和训练式的 LaGa。",
-            "page": 1,
-            "quote": "It reaches 71.95% mean mIoU on LERF-OVS, out- performing both the training-free SFS and training-based LaGa baselines.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
+            "claim": "在LERF-OVS的OpenGaussian原生三维协议下，作者报告平均mIoU为71.95、平均mAcc为85.35；相较训练式基线LaGa和免训练基线SFS，mIoU分别提高+11.40和+9.79。",
+            "page": 8,
+            "quote": "Table 2 reports DIGS at 71.95 mean mIoU and 85.35 mean mAcc on LERF-OVS under the OpenGaussian 3D-native protocol, exceeding the strongest training-based baseline LaGa by +11.40 mIoU and the closest training-free comparator SFS by +9.79 mIoU; against LangSplatV2‡’s strongest reported 58.27, the gap widens to +13.68 (it",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=8"
           },
           {
-            "claim": "在 LERF-Mask 和 3D-OVS 上，DIGS 均取得最高 mean mIoU；在 Replica 上，DIGS 也超过了 Gaga 和 ObjectGS，具体比较遵循各自评测协议。",
-            "page": 1,
-            "quote": "DIGS also achieves the highest mean mIoU on LERF-Mask and 3D-OVS and surpasses Gaga and ObjectGS on Replica under their respective evaluation protocols.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
-          },
-          {
-            "claim": "在单张 A100 上，DIGS 的建图与实例编码耗时为每场景 1.0–3.2 分钟，原生三维查询耗时为 5.4 ms。",
-            "page": 1,
-            "quote": "On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0–3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=1"
-          },
-          {
-            "claim": "消融结果显示，仅使用 CLIP 的 DIGS 达到 66.85 mean mIoU；加入 LLM 文本融合后进一步提升 5.10，说明作者报告的收益同时来自边界保持表示与属性消歧。",
+            "claim": "消融结果中，仅使用CLIP的DIGS达到66.85平均mIoU；加入LLM融合后进一步增加+5.10。作者据此将保留边界的分布表示视为主要性能来源，并报告属性描述融合带来额外收益。",
             "page": 8,
             "quote": "The gain decomposes cleanly: DIGS (CLIP) alone reaches 66.85 mean mIoU, isolating the boundary-preserving top-M representation as the primary lever; LLM fusion contributes a further +5.10, with DIGS leading on every scene and the largest gap on attribute-dense Figurines.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=8"
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=8"
           },
           {
-            "claim": "在 LERF-Mask 的检测桥接设置下，DIGS 达到 91.71 mean mIoU 和 86.91 mean mBIoU，比此前最佳的 ObjectGS 高 3.3 mean mIoU，并在两项指标上领先既有方法。",
+            "claim": "在提供测试帧RGB的检测桥接评测中，作者报告平均mIoU为91.71、平均mBIoU为86.91，较ObjectGS提高+3.3 mIoU；该结果不应视作仅依赖原生三维文本检索的表现。",
+            "page": 8,
+            "quote": "With test-frame RGB available, we evaluated DIGS in detection-bridging mode (§3.6).",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=8"
+          },
+          {
+            "claim": "在提供测试帧RGB的检测桥接评测中，作者报告平均mIoU为91.71、平均mBIoU为86.91，较ObjectGS提高+3.3 mIoU；该结果不应视作仅依赖原生三维文本检索的表现。",
             "page": 8,
             "quote": "Table 3 shows DIGS at 91.71 mean mIoU and 86.91 mean mBIoU, +3.3 mIoU over the previous best ObjectGS and leading every prior method on both mIoU and mBIoU across all three scenes; the dominance on the boundary-sensitive mBIoU metric directly evidences the boundary-fidelity gain from top-M + late-argmax, addressing the",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=8"
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=8"
           },
           {
-            "claim": "作者指出，3D-OVS 中的对象空间分离、且现有最强方法已超过 95% mean mIoU，使该基准的进一步提升空间有限；这意味着该评测设置对方法差异的区分能力受到限制。",
+            "claim": "在3D-OVS的检测桥接查询模式下，作者报告96.45平均mIoU，为所比较方法中的最高均值。",
             "page": 9,
-            "quote": "The strongest methods already exceed LangSplat [5] 92.5 94.2 96.1 94.1 90.0 93.4 LangSplatV2 [6] 93.0 94.9 96.6 96.1 92.3 94.6 95% mean mIoU on these spatially sep- LaGa [10] 96.8 92.8 96.9 97.0 93.0 95.3 arated objects, leaving limited headroom.",
-            "source": "https://arxiv.org/pdf/2610.16177v1#page=9"
+            "quote": "mode (§3.6), Table 4 reports DIGS at 96.45 mean mIoU on 3D-OVS, the high- Method Bed Bench Lawn Room Sofa Mean est mean across all prior methods, sur- LERF [34] 73.5 53.2 73.7 46.6 27.0 54.8 passing the strongest training-based base- 3D-OVS [42] 89.5 89.3 88.2 92.8 74.0 86.8 lines ObjectGS [12] (96.4) and LaGa [10] GG ",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=9"
+          },
+          {
+            "claim": "在单张A100上，LERF-OVS每场景映射与实例编码耗时1.0–3.2分钟，取决于是否启用LLM融合；原生三维查询耗时5.4毫秒。这些时间对应映射、编码及查询，不代表底层场景重建无需训练。",
+            "page": 1,
+            "quote": "On a single A100, DIGS completes mapping and instance encoding on LERF-OVS in 1.0–3.2 min per scene, depending on whether LLM fusion is enabled, and serves native 3D queries in 5.4 ms.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=1"
+          },
+          {
+            "claim": "在单张A100上，LERF-OVS每场景映射与实例编码耗时1.0–3.2分钟，取决于是否启用LLM融合；原生三维查询耗时5.4毫秒。这些时间对应映射、编码及查询，不代表底层场景重建无需训练。",
+            "page": 7,
+            "quote": "The 3DGS reconstruction was a fixed Mip-Splatting [44] model trained for 30,000 iterations to fit the RGB scene; the resulting Gaussians were frozen for the rest of the pipeline.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=7"
+          },
+          {
+            "claim": "编辑推断：边界处保留多标签不确定性、待像素聚合后再决策，是值得迁移到其他实例语义表示中的设计思路，避免过早硬分配。",
+            "page": 6,
+            "quote": "Boundary Gaussians, which typically hold comparable evidence for adjacent labels, contribute proportionally to both sides and the final label is decided by the majority vote of neighbouring non-ambiguous Gaussians; this suppresses the staircase boundary artefacts that characterise hard-label rendering.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=6"
+          },
+          {
+            "claim": "编辑推断：评测时应分别报告原生三维检索与测试图像辅助检测的结果，否则难以判断收益来自实例地图、语言检索还是额外视觉输入。",
+            "page": 6,
+            "quote": "At query time, the prompt is matched by cosine similarity, with j∗= arg maxj∈Istable cos(ej, CLIPtext(q)), in O(|Istable|) cosines per prompt; the predicted mask is then obtained by indexing the Late-Argmax label map ˆLtest rendered at the test viewpoint Mqˆ = 1[ˆLtest = j∗].",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=6"
+          },
+          {
+            "claim": "编辑推断：评测时应分别报告原生三维检索与测试图像辅助检测的结果，否则难以判断收益来自实例地图、语言检索还是额外视觉输入。",
+            "page": 6,
+            "quote": "When the evaluation protocol supplies the test-frame RGB, an open-vocabulary 2D detector can resolve the what, while the 3D instance field supplies the where via IoU matching against ˆLtest.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=6"
+          },
+          {
+            "claim": "编辑推断：选择“免训练”方案时，应核对免除的是语义优化还是完整场景构建；同时可考虑将语言编码后置，以复用类别无关实例地图。",
+            "page": 7,
+            "quote": "The 3DGS reconstruction was a fixed Mip-Splatting [44] model trained for 30,000 iterations to fit the RGB scene; the resulting Gaussians were frozen for the rest of the pipeline.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=7"
+          },
+          {
+            "claim": "编辑推断：选择“免训练”方案时，应核对免除的是语义优化还是完整场景构建；同时可考虑将语言编码后置，以复用类别无关实例地图。",
+            "page": 6,
+            "quote": "Computed once post-mapping, the embeddings support arbitrary downstream retrieval without re-running the voting pipeline.",
+            "source": "https://arxiv.org/pdf/2610.16177v2#page=6"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-17T08:35:57Z",
+        "generated_at": "2026-10-24T18:22:52Z",
         "human_approved": false,
         "stale": false,
-        "source_hash": "7057717366de0e8fd34379660a6f3cd9fca967833fc371186d13b1d1dfa9b146",
+        "source_hash": "7ea4e413a997f33fa27fb8c58363f8b8f1544244a086d731b098b5a9d2ffcd2b",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
@@ -38985,9 +39048,9 @@
         }
       ],
       "ai_draft": {
-        "summary_zh": "论文研究无监督CLIP适应中的伪标签噪声问题。方法结合原型一致性、邻域一致性与自适应样本加权，在无标注目标图像上筛选和修正伪标签。作者报告其在多项基准上取得优于现有方法的结果，并保持计算效率。",
+        "summary_zh": "论文研究无监督 CLIP 适应中的伪标签噪声问题，面向无标签目标域提出结合原型一致性与邻域一致性的 ALPHA 框架，并通过自适应权重降低错误伪标签影响。作者在 11 个基准数据集上报告了具有效率优势的最优性能。",
         "problem": {
-          "text": "论文针对无监督CLIP适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，错误伪标签可能在自训练中累积并损害适应效果；同时，依赖固定置信度阈值的过滤方法在完全无监督条件下并不可靠。",
+          "text": "论文针对无监督 CLIP 适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，固定置信度阈值在缺少真实标签时难以稳定筛除错误伪标签，进而造成错误累积和适应性能下降。",
           "evidence": [
             {
               "page": 1,
@@ -39000,159 +39063,172 @@
           ]
         },
         "method": {
-          "text": "作者提出ALPHA无监督适应框架。首先以零样本CLIP预测生成伪标签，并通过PICS利用样本与所属类别原型的类内紧致性及与其他类别的类间分离度筛选较可靠样本；随后用NALR利用邻居间的局部语义一致性动态修正伪标签。训练中还根据伪标签估计正确性进行自适应加权，使更可靠的样本发挥更大作用。",
+          "text": "作者提出 ALPHA 无监督适应框架。PICS 根据样本与所属类别原型的类内紧致性及其与其他类别的类间分离度筛选伪标签；NALR 利用邻域样本的局部语义一致性动态修正伪标签，并通过自适应权重按估计正确性调节伪标签样本对训练的影响。训练中使用弱增强图像生成伪标签、强增强图像进行自训练，并维护记忆库迭代更新类别原型。",
           "evidence": [
             {
               "page": 1,
-              "quote": "The proposed method comprises two key components: PICS, which assesses pseudo-label accuracy based on in-class feature compactness and cross-class feature separation; and NALR, which exploits semantic similarities among neighboring samples to refine pseudo-labels dynamically."
+              "quote": "In this work, we propose a novel adaptive pseudo-labeling framework that enhances CLIP’s adaptation performance by integrating prototype consistency and neighborhood-based consistency."
             },
             {
               "page": 1,
-              "quote": "Additionally, we introduce an adaptive weighting mechanism that2025 adjusts the influence of pseudo-labeled samples during training according to their estimated correctness."
+              "quote": "The proposed method comprises two key components: PICS, which assesses pseudo-label accuracy based on in-class feature compactness and cross-class feature separation; and NALR, which exploits semantic similarities among neighboring samples to refine pseudo-labels dynamically."
             }
           ]
         },
         "findings": [
           {
-            "text": "作者报告，ALPHA能够提升伪标签准确性，并改善CLIP在无监督适应场景下的适应性能。",
+            "text": "作者在 11 个基准数据集上报告了该方法在无监督适应场景中的 state-of-the-art 性能，同时获得更准确的伪标签并保持计算效率。",
             "evidence": [
               {
                 "page": 1,
-                "quote": "In this work, we propose a novel adaptive pseudo-labeling framework that enhances CLIP’s adaptation performance by integrating prototype consistency and neighborhood-based consistency."
+                "quote": "Extensive experiments on 11 benchmark datasets demonstrate that our method achieves state-of-the-art performance in unsupervised adaptation scenarios, delivering more accurate pseudo-labels while maintaining computational efficiency.Oct 16 Index Terms—Unsupervised Adaptation, Vision-Language Models,✦Pseudo-labeling, Se"
               }
             ]
           },
           {
-            "text": "PICS以类内紧致性和类间分离度识别更可靠的伪标签；当样本更接近自身类别而不是其他类别时，样本被视为干净伪标签，并优先用于自训练。",
-            "evidence": [
-              {
-                "page": 4,
-                "quote": "clean pseudo-labels, identified by comparing their in-class compactness ϕ(xi) with their cross-class separation ψ(xi)."
-              },
-              {
-                "page": 4,
-                "quote": "These methods cap- model to focus on accurate pseudo-labels during training, ture diverse aspects of the data distribution, ensuring robust thereby improving performance, as shown in Figure 3."
-              }
-            ]
-          },
-          {
-            "text": "NALR通过邻居一致性增强噪声伪标签的局部语义协调性，从而强化局部一致性。",
+            "text": "作者报告 PICS 能够依据类内紧致性和类间分离度识别较可靠的伪标签，从而减少对低质量伪标签的依赖。",
             "evidence": [
               {
                 "page": 3,
-                "quote": "(b) NALR: Enhances noisy pseudo-labels by enforcing neighbor consistency, aligning predictions with neighboring samples."
+                "quote": "N To address these challenges, we propose PICS (Prototype- X log p(y = ˆyi | Ev(A(xi))), (4) Lst = −1 N based Intra-class and Cross-class Scoring), a novel method i=1 for detecting noisy pseudo-labels."
+              },
+              {
+                "page": 3,
+                "quote": "As illustrated in Figure 2, PCc=1 exp (ζ(Ev(A(xi)), Zc)) PICS operates on the principle that a correct pseudo-label (5) corresponds to an image with high similarity to its as-To mitigate confirmation bias in CLIP [4], we incorporate signed class and low similarity to other classes."
               }
             ]
           },
           {
-            "text": "作者在11个基准数据集上进行了实验，报告方法达到当前先进性能，同时保持计算效率并获得更准确的伪标签。",
+            "text": "作者报告邻域一致性能够利用邻近样本的局部语义关联修正噪声伪标签，并改善训练稳定性，尤其是在训练早期。",
             "evidence": [
               {
                 "page": 1,
-                "quote": "Extensive experiments on 11 benchmark datasets demonstrate that our method achieves state-of-the-art performance in unsupervised adaptation scenarios, delivering more accurate pseudo-labels while maintaining computational efficiency.Jul 22 Index Terms—Unsupervised Adaptation, Vision-Language Models, Pseudo-labeling, Se"
-              }
-            ]
-          },
-          {
-            "text": "作者进一步报告，该方法相较现有先进方法具有优越性，并在不同领域上表现出较强的泛化能力。",
-            "evidence": [
+                "quote": "However, it does not incorporate Refinement) refines pseudo-labels by exploiting local se- explicit filtering mechanisms for the generated pseudo- mantic coherence among neighbors."
+              },
               {
-                "page": 2,
-                "quote": "Extensive experiments on 11 and enhance pseudo-label selection, FGBC [14] employs challenging benchmarks confirm our method’s superiority a flexible graph-based balanced classifier with class-aware over state-of-the-art approaches, with strong generalization threshold adjustments."
+                "page": 1,
+                "quote": "In contrast, ReCLIP [7] enhances label reliability consistent samples, improving training stability, especially during the early stages."
               }
             ]
           }
         ],
-        "open_problems": [],
+        "open_problems": [
+          {
+            "text": "作者指出，依赖标签传播的适应框架可能计算开销较大，在大规模数据集上的可扩展性仍然不足。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "putationally intensive, and dependence on label propaga- However, these pseudo-labels are often unreliable under do- tion hampers scalability, particularly for large-scale datasets."
+              }
+            ],
+            "kind": "limitation"
+          },
+          {
+            "text": "作者认为域偏移和复杂场景仍会导致伪标签不可靠，并持续引发训练中的错误累积，因此如何在无真实标签条件下稳定修正伪标签仍是开放问题。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "main shifts or in complex settings like satellite imagery [1], Consequently, the fundamental challenge persists: how to [4], leading to error accumulation during training and re- reliably refine pseudo-labels under domain shift without duced adaptation performance."
+              }
+            ],
+            "kind": "future-work"
+          }
+        ],
         "insights": [
           {
-            "text": "编辑推断：当CLIP置信度存在偏差时，结合特征空间结构进行伪标签筛选，可能比单一阈值过滤更稳健。",
+            "text": "编辑推断：无监督适应中，单一置信度阈值可能不足，可将原型结构、类间关系与邻域一致性结合起来评估伪标签。",
             "evidence": []
           },
           {
-            "text": "编辑推断：伪标签筛选、邻域修正与样本加权可以作为相互独立的模块评估，有助于分析性能提升究竟来自何种一致性信号。",
+            "text": "编辑推断：评测此类方法时，应同时关注伪标签质量、适应性能与计算效率，避免只报告最终分类结果。",
             "evidence": []
           },
           {
-            "text": "编辑推断：后续研究应在不同域偏移和类别分布条件下同时报告伪标签质量、适应性能与计算开销，以检验方法的可迁移性。",
+            "text": "编辑推断：训练早期的可靠样本不足是关键阶段，动态样本加权和记忆库更新值得作为稳定自训练的通用设计。",
             "evidence": []
           }
         ],
         "role": {
-          "setting": "无监督CLIP适应；使用无标注目标图像，应对域偏移。源域信息未说明。",
-          "supervision": "目标数据无人工标签，利用零样本预测生成伪标签并进行自训练；未使用目标域真值监督。",
-          "modalities": "图像与文本双模态；使用CLIP视觉编码器、文本编码器及视觉和文本嵌入。",
-          "datasets": "作者报告在11个基准数据集上实验；EuroSAT用于嵌入可视化。具体数据集清单未说明。",
-          "evaluation": "以多数据集无监督适应结果比较，报告伪标签准确性、适应性能、计算效率和跨域泛化；具体指标与评测协议未说明。"
+          "setting": "无监督 CLIP 适应；使用无标签目标域数据，面向域偏移下的视觉分类适应。",
+          "supervision": "无监督适应，不使用目标域真实标签；伪标签由零样本 CLIP 预测生成并用于自训练。",
+          "modalities": "图像与文本双模态；CLIP 视觉编码器提取图像特征，文本编码器生成类别文本原型。",
+          "datasets": "作者报告在 11 个基准数据集上进行实验，但给出的句子未列出具体数据集名称。",
+          "evaluation": "以无监督适应性能、伪标签准确性和计算效率为主要评测口径；具体指标与协议未说明。"
         },
         "evidence": [
           {
-            "claim": "论文针对无监督CLIP适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，错误伪标签可能在自训练中累积并损害适应效果；同时，依赖固定置信度阈值的过滤方法在完全无监督条件下并不可靠。",
+            "claim": "论文针对无监督 CLIP 适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，固定置信度阈值在缺少真实标签时难以稳定筛除错误伪标签，进而造成错误累积和适应性能下降。",
             "page": 1,
             "quote": "Conventional pseudo-label filtering approaches, which rely on fixed confidence thresholds, tend to be unreliable in fully unsupervised settings.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
           },
           {
-            "claim": "论文针对无监督CLIP适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，错误伪标签可能在自训练中累积并损害适应效果；同时，依赖固定置信度阈值的过滤方法在完全无监督条件下并不可靠。",
+            "claim": "论文针对无监督 CLIP 适应中的伪标签可靠性问题：域偏移会降低零样本预测质量，固定置信度阈值在缺少真实标签时难以稳定筛除错误伪标签，进而造成错误累积和适应性能下降。",
             "page": 1,
             "quote": "main shifts or in complex settings like satellite imagery [1], Consequently, the fundamental challenge persists: how to [4], leading to error accumulation during training and re- reliably refine pseudo-labels under domain shift without duced adaptation performance.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
           },
           {
-            "claim": "作者提出ALPHA无监督适应框架。首先以零样本CLIP预测生成伪标签，并通过PICS利用样本与所属类别原型的类内紧致性及与其他类别的类间分离度筛选较可靠样本；随后用NALR利用邻居间的局部语义一致性动态修正伪标签。训练中还根据伪标签估计正确性进行自适应加权，使更可靠的样本发挥更大作用。",
-            "page": 1,
-            "quote": "The proposed method comprises two key components: PICS, which assesses pseudo-label accuracy based on in-class feature compactness and cross-class feature separation; and NALR, which exploits semantic similarities among neighboring samples to refine pseudo-labels dynamically.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
-          },
-          {
-            "claim": "作者提出ALPHA无监督适应框架。首先以零样本CLIP预测生成伪标签，并通过PICS利用样本与所属类别原型的类内紧致性及与其他类别的类间分离度筛选较可靠样本；随后用NALR利用邻居间的局部语义一致性动态修正伪标签。训练中还根据伪标签估计正确性进行自适应加权，使更可靠的样本发挥更大作用。",
-            "page": 1,
-            "quote": "Additionally, we introduce an adaptive weighting mechanism that2025 adjusts the influence of pseudo-labeled samples during training according to their estimated correctness.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
-          },
-          {
-            "claim": "作者报告，ALPHA能够提升伪标签准确性，并改善CLIP在无监督适应场景下的适应性能。",
+            "claim": "作者提出 ALPHA 无监督适应框架。PICS 根据样本与所属类别原型的类内紧致性及其与其他类别的类间分离度筛选伪标签；NALR 利用邻域样本的局部语义一致性动态修正伪标签，并通过自适应权重按估计正确性调节伪标签样本对训练的影响。训练中使用弱增强图像生成伪标签、强增强图像进行自训练，并维护记忆库迭代更新类别原型。",
             "page": 1,
             "quote": "In this work, we propose a novel adaptive pseudo-labeling framework that enhances CLIP’s adaptation performance by integrating prototype consistency and neighborhood-based consistency.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
           },
           {
-            "claim": "PICS以类内紧致性和类间分离度识别更可靠的伪标签；当样本更接近自身类别而不是其他类别时，样本被视为干净伪标签，并优先用于自训练。",
-            "page": 4,
-            "quote": "clean pseudo-labels, identified by comparing their in-class compactness ϕ(xi) with their cross-class separation ψ(xi).",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=4"
-          },
-          {
-            "claim": "PICS以类内紧致性和类间分离度识别更可靠的伪标签；当样本更接近自身类别而不是其他类别时，样本被视为干净伪标签，并优先用于自训练。",
-            "page": 4,
-            "quote": "These methods cap- model to focus on accurate pseudo-labels during training, ture diverse aspects of the data distribution, ensuring robust thereby improving performance, as shown in Figure 3.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=4"
-          },
-          {
-            "claim": "NALR通过邻居一致性增强噪声伪标签的局部语义协调性，从而强化局部一致性。",
-            "page": 3,
-            "quote": "(b) NALR: Enhances noisy pseudo-labels by enforcing neighbor consistency, aligning predictions with neighboring samples.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=3"
-          },
-          {
-            "claim": "作者在11个基准数据集上进行了实验，报告方法达到当前先进性能，同时保持计算效率并获得更准确的伪标签。",
+            "claim": "作者提出 ALPHA 无监督适应框架。PICS 根据样本与所属类别原型的类内紧致性及其与其他类别的类间分离度筛选伪标签；NALR 利用邻域样本的局部语义一致性动态修正伪标签，并通过自适应权重按估计正确性调节伪标签样本对训练的影响。训练中使用弱增强图像生成伪标签、强增强图像进行自训练，并维护记忆库迭代更新类别原型。",
             "page": 1,
-            "quote": "Extensive experiments on 11 benchmark datasets demonstrate that our method achieves state-of-the-art performance in unsupervised adaptation scenarios, delivering more accurate pseudo-labels while maintaining computational efficiency.Jul 22 Index Terms—Unsupervised Adaptation, Vision-Language Models, Pseudo-labeling, Se",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=1"
+            "quote": "The proposed method comprises two key components: PICS, which assesses pseudo-label accuracy based on in-class feature compactness and cross-class feature separation; and NALR, which exploits semantic similarities among neighboring samples to refine pseudo-labels dynamically.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
           },
           {
-            "claim": "作者进一步报告，该方法相较现有先进方法具有优越性，并在不同领域上表现出较强的泛化能力。",
-            "page": 2,
-            "quote": "Extensive experiments on 11 and enhance pseudo-label selection, FGBC [14] employs challenging benchmarks confirm our method’s superiority a flexible graph-based balanced classifier with class-aware over state-of-the-art approaches, with strong generalization threshold adjustments.",
-            "source": "https://arxiv.org/pdf/2507.22075v1#page=2"
+            "claim": "作者在 11 个基准数据集上报告了该方法在无监督适应场景中的 state-of-the-art 性能，同时获得更准确的伪标签并保持计算效率。",
+            "page": 1,
+            "quote": "Extensive experiments on 11 benchmark datasets demonstrate that our method achieves state-of-the-art performance in unsupervised adaptation scenarios, delivering more accurate pseudo-labels while maintaining computational efficiency.Oct 16 Index Terms—Unsupervised Adaptation, Vision-Language Models,✦Pseudo-labeling, Se",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
+          },
+          {
+            "claim": "作者报告 PICS 能够依据类内紧致性和类间分离度识别较可靠的伪标签，从而减少对低质量伪标签的依赖。",
+            "page": 3,
+            "quote": "N To address these challenges, we propose PICS (Prototype- X log p(y = ˆyi | Ev(A(xi))), (4) Lst = −1 N based Intra-class and Cross-class Scoring), a novel method i=1 for detecting noisy pseudo-labels.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=3"
+          },
+          {
+            "claim": "作者报告 PICS 能够依据类内紧致性和类间分离度识别较可靠的伪标签，从而减少对低质量伪标签的依赖。",
+            "page": 3,
+            "quote": "As illustrated in Figure 2, PCc=1 exp (ζ(Ev(A(xi)), Zc)) PICS operates on the principle that a correct pseudo-label (5) corresponds to an image with high similarity to its as-To mitigate confirmation bias in CLIP [4], we incorporate signed class and low similarity to other classes.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=3"
+          },
+          {
+            "claim": "作者报告邻域一致性能够利用邻近样本的局部语义关联修正噪声伪标签，并改善训练稳定性，尤其是在训练早期。",
+            "page": 1,
+            "quote": "However, it does not incorporate Refinement) refines pseudo-labels by exploiting local se- explicit filtering mechanisms for the generated pseudo- mantic coherence among neighbors.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
+          },
+          {
+            "claim": "作者报告邻域一致性能够利用邻近样本的局部语义关联修正噪声伪标签，并改善训练稳定性，尤其是在训练早期。",
+            "page": 1,
+            "quote": "In contrast, ReCLIP [7] enhances label reliability consistent samples, improving training stability, especially during the early stages.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
+          },
+          {
+            "claim": "作者指出，依赖标签传播的适应框架可能计算开销较大，在大规模数据集上的可扩展性仍然不足。",
+            "page": 1,
+            "quote": "putationally intensive, and dependence on label propaga- However, these pseudo-labels are often unreliable under do- tion hampers scalability, particularly for large-scale datasets.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
+          },
+          {
+            "claim": "作者认为域偏移和复杂场景仍会导致伪标签不可靠，并持续引发训练中的错误累积，因此如何在无真实标签条件下稳定修正伪标签仍是开放问题。",
+            "page": 1,
+            "quote": "main shifts or in complex settings like satellite imagery [1], Consequently, the fundamental challenge persists: how to [4], leading to error accumulation during training and re- reliably refine pseudo-labels under domain shift without duced adaptation performance.",
+            "source": "https://arxiv.org/pdf/2507.22075v2#page=1"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-17T08:28:00Z",
+        "generated_at": "2026-10-24T18:22:12Z",
         "human_approved": false,
-        "stale": true,
-        "source_hash": "fc5fd7442b88f3fad282e796186259902ba5f9d27c12740797b291def198281c",
+        "stale": false,
+        "source_hash": "ec34a8b9eb3f788b6db6d5e08ed8a6e6c1f4daeae371b59b66fdb2a26086f39f",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
@@ -42903,7 +42979,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -44127,263 +44203,207 @@
         }
       ],
       "ai_draft": {
-        "summary_zh": "论文研究黑盒域适应：源数据及源模型内部结构不可访问，目标模型只能查询黑盒源模型预测并利用无标注目标数据进行适应。作者提出DDSR，通过黑盒模型与CLIP双教师融合、子网络正则化、渐进式自蒸馏和原型校正生成伪标签；实验表明其在多个基准上持续优于现有方法。",
+        "summary_zh": "论文研究黑盒域适应：无法访问源数据及源模型内部信息，只能利用其对目标样本的预测，在无目标真值标签条件下训练目标模型。DDSR融合黑盒源模型与CLIP的预测，并通过子网络正则化缓解噪声监督。作者报告其在多个基准上达到现有黑盒域适应方法的最先进水平，但所给片段未说明具体数据集、评测指标及提升数值。",
         "problem": {
-          "text": "论文针对黑盒域适应（BBDA）中的跨域预测问题：源数据、源模型架构及参数均不可访问，目标模型只能获得黑盒源模型的预测。分布偏移会使源模型在目标样本上产生噪声预测，而黑盒模型的任务特定知识与视觉语言模型的通用语义先验又可能产生冲突，导致伪标签质量和适应性能受限。",
+          "text": "论文针对黑盒域适应设定：源数据以及源模型的架构、参数不可访问。同时，黑盒源模型与视觉语言模型提供的知识并不完全一致，联合指导目标模型时可能产生冲突监督。研究重点是协调这两类知识，而不是开放词汇识别。",
           "evidence": [
             {
               "page": 1,
-              "quote": "In this setting, both represents a highly practical yet challenging setting, where the source data and the internal details of the source model, transferable knowledge is limited to the predictions of a black- such as its architecture and parameters, are inaccessible, box source model."
+              "quote": "Finally, class- such as its architecture and parameters, are inaccessible,[cs.CV] wise prototypes are used to further optimize target predictions which makes BBDA highly challenging."
             },
             {
-              "page": 1,
-              "quote": "prior work [12] has empirically shown that directly combining To address this issue, black-box domain adaptation (BBDA) the predictions from ViLs and black-box models (e.g., via [7] treats the source model as a black-box predictor, trans- naive averaging) does not yield optimal performance in the Z. Zhang, J. Li, W. Xu"
+              "page": 2,
+              "quote": "Such discrep- remains competitive with several UDA and SFDA meth- ancies can give rise to conflicting supervisory signals when ods that have access to source data or source-model both sources are used to guide the target model."
             }
           ]
         },
         "method": {
-          "text": "DDSR采用分阶段框架。首先，将黑盒源模型与CLIP作为双教师，对目标样本进行预测，并通过基于预测熵的自适应融合整合二者信息，生成伪标签监督目标网络；随后利用与目标网络共享部分结构和参数的子网络，通过输出一致性与梯度发散正则化抑制噪声伪标签导致的过拟合。训练过程中，目标模型的预测被用于渐进式修正伪标签和CLIP提示，最后依据类级原型及最近原型对目标预测和标签进行校正。",
+          "text": "DDSR以黑盒源模型的任务知识和CLIP的语言对齐语义先验作为互补监督，通过自适应预测融合生成目标域伪标签；引入子网络，以输出一致性和梯度差异约束目标模型，缓解对噪声监督的过拟合。",
           "evidence": [
             {
               "page": 2,
-              "quote": "Target samples [5], [25] addresses this limitation by assuming that the source are fed into both teachers to obtain predictions, which are inte- data are inaccessible during adaptation, while the pre-trained grated by an adaptive prediction fusion module."
+              "quote": "priors of CLIP, we propose an adaptive prediction fusion While these ViL-assisted SFDA methods improve semantic strategy that reconciles their complementary yet incon- guidance and adaptation performance, they still assume access sistent predictions to generate reliable pseudo-labels."
             },
             {
               "page": 2,
-              "quote": "Although SFDA through output alignment and gradient divergence."
+              "quote": "This troduce a subnetwork to regularize the target model via motivates the need for approaches, such as our DDSR frame- output consistency and gradient divergence."
             }
           ]
         },
         "findings": [
           {
-            "text": "作者报告称，DDSR在多个基准数据集上的实验持续优于现有先进方法。",
+            "text": "作者报告，在多个基准上的实验中，DDSR达到现有黑盒域适应方法中的最先进水平；所给片段未提供具体指标或提升幅度。",
             "evidence": [
               {
                 "page": 1,
-                "quote": "Extensive experiments on multiple benchmark datasets demonstrate that DDSR consistently outperforms state- accurate predictions on target samples."
-              },
-              {
-                "page": 2,
-                "quote": "This setting better reflects real-world scenarios, such as cross- • Extensive experiments on multiple benchmarks validate institutional collaboration and commercial model deployment, the effectiveness of DDSR and show that it consistently where data sharing and model exposure are restricted."
+                "quote": "Extensive experiments on multiple benchmarks demonstrate that DDSR achieves state-of-the-art performance privacy, BBDA does not require the target model to share among existing BBDA methods and remains competitive with the same structure as the source model, since the latter’s many approaches that have access to source"
               }
             ]
           },
           {
-            "text": "作者报告称，DDSR不仅优于黑盒域适应相关方法，也优于能够访问源数据或源模型参数的方法。",
+            "text": "作者指出，提示学习保留了CLIP预训练获得的跨模态对齐能力，相比完整微调或适配器具有更高的参数效率；片段未给出量化比较。",
             "evidence": [
               {
-                "page": 2,
-                "quote": "This setting better reflects real-world scenarios, such as cross- • Extensive experiments on multiple benchmarks validate institutional collaboration and commercial model deployment, the effectiveness of DDSR and show that it consistently where data sharing and model exposure are restricted."
-              },
-              {
-                "page": 2,
-                "quote": "How- outperforms state-of-the-art methods, including those ever, BBDA poses unique challenges in addressing domain with access to source data or source model parameters."
-              }
-            ]
-          },
-          {
-            "text": "作者将自适应预测融合、子网络正则化、渐进式伪标签与提示修正以及类级原型校正作为提升伪标签可靠性和目标适应性能的关键组成。",
-            "evidence": [
-              {
-                "page": 2,
-                "quote": "This strategy that reconciles their complementary yet incon- motivates the need for approaches, such as our DDSR frame- sistent predictions to generate reliable pseudo-labels."
-              },
-              {
-                "page": 2,
-                "quote": "In addition, class-wise prototypes are source data and source model parameters, while allowing introduced to rectify target predictions, facilitating more only query access to the predictions of the source model."
+                "page": 6,
+                "quote": "This prompt learning preserves CLIP’s cross-modal of xit extracted by the feature extractor.alignment from large-scale pretraining and is significantly Then, we calculate the cosine distance between each sample more parameter-efficient than full fine-tuning or adapters [41]."
               }
             ]
           }
         ],
         "open_problems": [
           {
-            "text": "作者指出，框架目前采用CLIP提供语义监督，但未来可以替换或扩展为其他视觉语言模型，以提供互补的语义监督。",
+            "text": "作者承认，即使经过前一阶段的伪标签与视觉语言模型提示优化，由于缺少目标真值标签，所得监督仍不可避免地含有噪声。",
             "evidence": [
               {
-                "page": 3,
-                "quote": "Nevertheless, our framework is flex- teacher."
-              },
-              {
-                "page": 3,
-                "quote": "Trained on large-scale image-text paired data, CLIP ible and could alternatively incorporate other ViLs to provide provides strong semantic understanding and cross-domain gen- complementary semantic supervision in future extensions."
+                "page": 6,
+                "quote": "The overall loss function for the subnetwork rectification is C. Stage Two composed of the above two loss functions as follows: Although Stage One progressively refines the pseudo-labels Lsr = ϵ · Lod + ζ · Lwg, (13) and ViL prompts, the resulting supervision inevitably remains noisy due to the absence of ground-truth "
               }
             ],
-            "kind": "future-work"
+            "kind": "limitation"
           }
         ],
         "insights": [
           {
-            "text": "编辑推断：在黑盒适应中，直接平均不同教师的预测可能不足，依据不确定性或置信度进行动态融合更值得优先评估。",
+            "text": "编辑推断：选择视觉语言模型辅助域适应时，应关注其语义先验与任务模型预测的冲突，不能仅因二者互补就默认简单融合有效。",
             "evidence": [
               {
-                "page": 3,
-                "quote": "Specifically, the entropy of the predictions from the eral BBDA approaches [12], [13] leverage CLIP to enhance two models is leveraged to adaptively determine their weights pseudo-label quality and mitigate noisy supervision."
+                "page": 2,
+                "quote": "Such discrep- remains competitive with several UDA and SFDA meth- ancies can give rise to conflicting supervisory signals when ods that have access to source data or source-model both sources are used to guide the target model."
+              },
+              {
+                "page": 2,
+                "quote": "priors of CLIP, we propose an adaptive prediction fusion While these ViL-assisted SFDA methods improve semantic strategy that reconciles their complementary yet incon- guidance and adaptation performance, they still assume access sistent predictions to generate reliable pseudo-labels."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：评测黑盒适应方法时，应明确源数据、模型参数与预测接口的访问权限，避免将不同信息条件下的结果直接等同。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Finally, class- such as its architecture and parameters, are inaccessible,[cs.CV] wise prototypes are used to further optimize target predictions which makes BBDA highly challenging."
               },
               {
                 "page": 1,
-                "quote": "prior work [12] has empirically shown that directly combining To address this issue, black-box domain adaptation (BBDA) the predictions from ViLs and black-box models (e.g., via [7] treats the source model as a black-box predictor, trans- naive averaging) does not yield optimal performance in the Z. Zhang, J. Li, W. Xu"
+                "quote": "popular [8], the BBDA paradigm, where the target model queries the source model for predictions, aligns well with this trend."
               }
             ]
           },
           {
-            "text": "编辑推断：当伪标签噪声较强时，可将结构共享的正则化、预测迭代修正与原型校正组合使用，而不只依赖单一自训练机制。",
+            "text": "编辑推断：原型自训练可作为已有适应表示的后续整理步骤；阅读贡献时，应区分通用组件与论文提出的核心机制。",
             "evidence": [
               {
-                "page": 2,
-                "quote": "the feature extractor and classifier from the source model To mitigate overfitting to noisy pseudo-labels arising from and optimizes the target model via entropy minimization imperfect fusion and domain shift, we introduce a subnetwork and information maximization."
+                "page": 6,
+                "quote": "We emphasize that prototype-based self-training 3) Self-Distillation and Prompt Learning: As optimization itself is not a methodological novelty of DDSR."
               },
               {
-                "page": 3,
-                "quote": "In Stage Two, further refinement is performed by the need for a principled mechanism, such as our DDSR computing class-wise prototypes and reassigning each sample framework, to reconcile these complementary sources and to the class of its nearest prototype."
-              }
-            ]
-          },
-          {
-            "text": "编辑推断：评测黑盒适应方法时，应明确区分仅可查询源模型预测的设置与可访问源参数或源数据的设置，避免混淆比较条件。",
-            "evidence": [
-              {
-                "page": 2,
-                "quote": "In addition, class-wise prototypes are source data and source model parameters, while allowing introduced to rectify target predictions, facilitating more only query access to the predictions of the source model."
-              },
-              {
-                "page": 2,
-                "quote": "How- outperforms state-of-the-art methods, including those ever, BBDA poses unique challenges in addressing domain with access to source data or source model parameters."
+                "page": 6,
+                "quote": "Stage Two thus serves to consolidate the target-strategy [40] to update the pseudo-labels ˆy at the end of each domain class structure established in Stage One and furtherepoch, stabilizing updates and mitigating noise: refine the target model."
               }
             ]
           }
         ],
         "role": {
-          "setting": "黑盒域适应；源域与目标域共享标签空间，源数据及源模型内部结构不可访问，仅可查询源模型预测。",
-          "supervision": "目标域无标注；使用黑盒源模型预测、CLIP预测及目标模型自训练生成和修正伪标签。",
-          "modalities": "视觉输入与视觉语言模型提供的图像—文本语义信息；具体任务数据形态未说明。",
-          "datasets": "多个基准数据集，但具体数据集名称未说明。",
-          "evaluation": "在多个基准上与现有先进方法比较，报告整体性能优于相关方法；具体指标与协议未说明。"
+          "setting": "黑盒域适应，属于无监督域适应范畴；源数据及源模型内部不可访问，仅查询其目标样本预测。具体源域与目标域未说明。",
+          "supervision": "适应阶段不访问目标真值标签，使用黑盒预测、CLIP语义先验及伪标签训练；源模型原始训练的具体监督协议未说明。",
+          "modalities": "涉及视觉样本与CLIP文本提示；是否涉及点云或三维语义分割未说明。",
+          "datasets": "仅提及多个基准，具体数据集名称及真实或仿真属性未说明。",
+          "evaluation": "报告与现有黑盒域适应方法比较的总体表现；具体指标、数值、数据划分及评测协议未说明。"
         },
         "evidence": [
           {
-            "claim": "论文针对黑盒域适应（BBDA）中的跨域预测问题：源数据、源模型架构及参数均不可访问，目标模型只能获得黑盒源模型的预测。分布偏移会使源模型在目标样本上产生噪声预测，而黑盒模型的任务特定知识与视觉语言模型的通用语义先验又可能产生冲突，导致伪标签质量和适应性能受限。",
+            "claim": "论文针对黑盒域适应设定：源数据以及源模型的架构、参数不可访问。同时，黑盒源模型与视觉语言模型提供的知识并不完全一致，联合指导目标模型时可能产生冲突监督。研究重点是协调这两类知识，而不是开放词汇识别。",
             "page": 1,
-            "quote": "In this setting, both represents a highly practical yet challenging setting, where the source data and the internal details of the source model, transferable knowledge is limited to the predictions of a black- such as its architecture and parameters, are inaccessible, box source model.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=1"
+            "quote": "Finally, class- such as its architecture and parameters, are inaccessible,[cs.CV] wise prototypes are used to further optimize target predictions which makes BBDA highly challenging.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=1"
           },
           {
-            "claim": "论文针对黑盒域适应（BBDA）中的跨域预测问题：源数据、源模型架构及参数均不可访问，目标模型只能获得黑盒源模型的预测。分布偏移会使源模型在目标样本上产生噪声预测，而黑盒模型的任务特定知识与视觉语言模型的通用语义先验又可能产生冲突，导致伪标签质量和适应性能受限。",
+            "claim": "论文针对黑盒域适应设定：源数据以及源模型的架构、参数不可访问。同时，黑盒源模型与视觉语言模型提供的知识并不完全一致，联合指导目标模型时可能产生冲突监督。研究重点是协调这两类知识，而不是开放词汇识别。",
+            "page": 2,
+            "quote": "Such discrep- remains competitive with several UDA and SFDA meth- ancies can give rise to conflicting supervisory signals when ods that have access to source data or source-model both sources are used to guide the target model.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=2"
+          },
+          {
+            "claim": "DDSR以黑盒源模型的任务知识和CLIP的语言对齐语义先验作为互补监督，通过自适应预测融合生成目标域伪标签；引入子网络，以输出一致性和梯度差异约束目标模型，缓解对噪声监督的过拟合。",
+            "page": 2,
+            "quote": "priors of CLIP, we propose an adaptive prediction fusion While these ViL-assisted SFDA methods improve semantic strategy that reconciles their complementary yet incon- guidance and adaptation performance, they still assume access sistent predictions to generate reliable pseudo-labels.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=2"
+          },
+          {
+            "claim": "DDSR以黑盒源模型的任务知识和CLIP的语言对齐语义先验作为互补监督，通过自适应预测融合生成目标域伪标签；引入子网络，以输出一致性和梯度差异约束目标模型，缓解对噪声监督的过拟合。",
+            "page": 2,
+            "quote": "This troduce a subnetwork to regularize the target model via motivates the need for approaches, such as our DDSR frame- output consistency and gradient divergence.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=2"
+          },
+          {
+            "claim": "作者报告，在多个基准上的实验中，DDSR达到现有黑盒域适应方法中的最先进水平；所给片段未提供具体指标或提升幅度。",
             "page": 1,
-            "quote": "prior work [12] has empirically shown that directly combining To address this issue, black-box domain adaptation (BBDA) the predictions from ViLs and black-box models (e.g., via [7] treats the source model as a black-box predictor, trans- naive averaging) does not yield optimal performance in the Z. Zhang, J. Li, W. Xu",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=1"
+            "quote": "Extensive experiments on multiple benchmarks demonstrate that DDSR achieves state-of-the-art performance privacy, BBDA does not require the target model to share among existing BBDA methods and remains competitive with the same structure as the source model, since the latter’s many approaches that have access to source",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=1"
           },
           {
-            "claim": "DDSR采用分阶段框架。首先，将黑盒源模型与CLIP作为双教师，对目标样本进行预测，并通过基于预测熵的自适应融合整合二者信息，生成伪标签监督目标网络；随后利用与目标网络共享部分结构和参数的子网络，通过输出一致性与梯度发散正则化抑制噪声伪标签导致的过拟合。训练过程中，目标模型的预测被用于渐进式修正伪标签和CLIP提示，最后依据类级原型及最近原型对目标预测和标签进行校正。",
+            "claim": "作者指出，提示学习保留了CLIP预训练获得的跨模态对齐能力，相比完整微调或适配器具有更高的参数效率；片段未给出量化比较。",
+            "page": 6,
+            "quote": "This prompt learning preserves CLIP’s cross-modal of xit extracted by the feature extractor.alignment from large-scale pretraining and is significantly Then, we calculate the cosine distance between each sample more parameter-efficient than full fine-tuning or adapters [41].",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=6"
+          },
+          {
+            "claim": "作者承认，即使经过前一阶段的伪标签与视觉语言模型提示优化，由于缺少目标真值标签，所得监督仍不可避免地含有噪声。",
+            "page": 6,
+            "quote": "The overall loss function for the subnetwork rectification is C. Stage Two composed of the above two loss functions as follows: Although Stage One progressively refines the pseudo-labels Lsr = ϵ · Lod + ζ · Lwg, (13) and ViL prompts, the resulting supervision inevitably remains noisy due to the absence of ground-truth ",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=6"
+          },
+          {
+            "claim": "编辑推断：选择视觉语言模型辅助域适应时，应关注其语义先验与任务模型预测的冲突，不能仅因二者互补就默认简单融合有效。",
             "page": 2,
-            "quote": "Target samples [5], [25] addresses this limitation by assuming that the source are fed into both teachers to obtain predictions, which are inte- data are inaccessible during adaptation, while the pre-trained grated by an adaptive prediction fusion module.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
+            "quote": "Such discrep- remains competitive with several UDA and SFDA meth- ancies can give rise to conflicting supervisory signals when ods that have access to source data or source-model both sources are used to guide the target model.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=2"
           },
           {
-            "claim": "DDSR采用分阶段框架。首先，将黑盒源模型与CLIP作为双教师，对目标样本进行预测，并通过基于预测熵的自适应融合整合二者信息，生成伪标签监督目标网络；随后利用与目标网络共享部分结构和参数的子网络，通过输出一致性与梯度发散正则化抑制噪声伪标签导致的过拟合。训练过程中，目标模型的预测被用于渐进式修正伪标签和CLIP提示，最后依据类级原型及最近原型对目标预测和标签进行校正。",
+            "claim": "编辑推断：选择视觉语言模型辅助域适应时，应关注其语义先验与任务模型预测的冲突，不能仅因二者互补就默认简单融合有效。",
             "page": 2,
-            "quote": "Although SFDA through output alignment and gradient divergence.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
+            "quote": "priors of CLIP, we propose an adaptive prediction fusion While these ViL-assisted SFDA methods improve semantic strategy that reconciles their complementary yet incon- guidance and adaptation performance, they still assume access sistent predictions to generate reliable pseudo-labels.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=2"
           },
           {
-            "claim": "作者报告称，DDSR在多个基准数据集上的实验持续优于现有先进方法。",
+            "claim": "编辑推断：评测黑盒适应方法时，应明确源数据、模型参数与预测接口的访问权限，避免将不同信息条件下的结果直接等同。",
             "page": 1,
-            "quote": "Extensive experiments on multiple benchmark datasets demonstrate that DDSR consistently outperforms state- accurate predictions on target samples.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=1"
+            "quote": "Finally, class- such as its architecture and parameters, are inaccessible,[cs.CV] wise prototypes are used to further optimize target predictions which makes BBDA highly challenging.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=1"
           },
           {
-            "claim": "作者报告称，DDSR在多个基准数据集上的实验持续优于现有先进方法。",
-            "page": 2,
-            "quote": "This setting better reflects real-world scenarios, such as cross- • Extensive experiments on multiple benchmarks validate institutional collaboration and commercial model deployment, the effectiveness of DDSR and show that it consistently where data sharing and model exposure are restricted.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "作者报告称，DDSR不仅优于黑盒域适应相关方法，也优于能够访问源数据或源模型参数的方法。",
-            "page": 2,
-            "quote": "This setting better reflects real-world scenarios, such as cross- • Extensive experiments on multiple benchmarks validate institutional collaboration and commercial model deployment, the effectiveness of DDSR and show that it consistently where data sharing and model exposure are restricted.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "作者报告称，DDSR不仅优于黑盒域适应相关方法，也优于能够访问源数据或源模型参数的方法。",
-            "page": 2,
-            "quote": "How- outperforms state-of-the-art methods, including those ever, BBDA poses unique challenges in addressing domain with access to source data or source model parameters.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "作者将自适应预测融合、子网络正则化、渐进式伪标签与提示修正以及类级原型校正作为提升伪标签可靠性和目标适应性能的关键组成。",
-            "page": 2,
-            "quote": "This strategy that reconciles their complementary yet incon- motivates the need for approaches, such as our DDSR frame- sistent predictions to generate reliable pseudo-labels.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "作者将自适应预测融合、子网络正则化、渐进式伪标签与提示修正以及类级原型校正作为提升伪标签可靠性和目标适应性能的关键组成。",
-            "page": 2,
-            "quote": "In addition, class-wise prototypes are source data and source model parameters, while allowing introduced to rectify target predictions, facilitating more only query access to the predictions of the source model.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "作者指出，框架目前采用CLIP提供语义监督，但未来可以替换或扩展为其他视觉语言模型，以提供互补的语义监督。",
-            "page": 3,
-            "quote": "Nevertheless, our framework is flex- teacher.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=3"
-          },
-          {
-            "claim": "作者指出，框架目前采用CLIP提供语义监督，但未来可以替换或扩展为其他视觉语言模型，以提供互补的语义监督。",
-            "page": 3,
-            "quote": "Trained on large-scale image-text paired data, CLIP ible and could alternatively incorporate other ViLs to provide provides strong semantic understanding and cross-domain gen- complementary semantic supervision in future extensions.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=3"
-          },
-          {
-            "claim": "编辑推断：在黑盒适应中，直接平均不同教师的预测可能不足，依据不确定性或置信度进行动态融合更值得优先评估。",
-            "page": 3,
-            "quote": "Specifically, the entropy of the predictions from the eral BBDA approaches [12], [13] leverage CLIP to enhance two models is leveraged to adaptively determine their weights pseudo-label quality and mitigate noisy supervision.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=3"
-          },
-          {
-            "claim": "编辑推断：在黑盒适应中，直接平均不同教师的预测可能不足，依据不确定性或置信度进行动态融合更值得优先评估。",
+            "claim": "编辑推断：评测黑盒适应方法时，应明确源数据、模型参数与预测接口的访问权限，避免将不同信息条件下的结果直接等同。",
             "page": 1,
-            "quote": "prior work [12] has empirically shown that directly combining To address this issue, black-box domain adaptation (BBDA) the predictions from ViLs and black-box models (e.g., via [7] treats the source model as a black-box predictor, trans- naive averaging) does not yield optimal performance in the Z. Zhang, J. Li, W. Xu",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=1"
+            "quote": "popular [8], the BBDA paradigm, where the target model queries the source model for predictions, aligns well with this trend.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=1"
           },
           {
-            "claim": "编辑推断：当伪标签噪声较强时，可将结构共享的正则化、预测迭代修正与原型校正组合使用，而不只依赖单一自训练机制。",
-            "page": 2,
-            "quote": "the feature extractor and classifier from the source model To mitigate overfitting to noisy pseudo-labels arising from and optimizes the target model via entropy minimization imperfect fusion and domain shift, we introduce a subnetwork and information maximization.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
+            "claim": "编辑推断：原型自训练可作为已有适应表示的后续整理步骤；阅读贡献时，应区分通用组件与论文提出的核心机制。",
+            "page": 6,
+            "quote": "We emphasize that prototype-based self-training 3) Self-Distillation and Prompt Learning: As optimization itself is not a methodological novelty of DDSR.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=6"
           },
           {
-            "claim": "编辑推断：当伪标签噪声较强时，可将结构共享的正则化、预测迭代修正与原型校正组合使用，而不只依赖单一自训练机制。",
-            "page": 3,
-            "quote": "In Stage Two, further refinement is performed by the need for a principled mechanism, such as our DDSR computing class-wise prototypes and reassigning each sample framework, to reconcile these complementary sources and to the class of its nearest prototype.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=3"
-          },
-          {
-            "claim": "编辑推断：评测黑盒适应方法时，应明确区分仅可查询源模型预测的设置与可访问源参数或源数据的设置，避免混淆比较条件。",
-            "page": 2,
-            "quote": "In addition, class-wise prototypes are source data and source model parameters, while allowing introduced to rectify target predictions, facilitating more only query access to the predictions of the source model.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
-          },
-          {
-            "claim": "编辑推断：评测黑盒适应方法时，应明确区分仅可查询源模型预测的设置与可访问源参数或源数据的设置，避免混淆比较条件。",
-            "page": 2,
-            "quote": "How- outperforms state-of-the-art methods, including those ever, BBDA poses unique challenges in addressing domain with access to source data or source model parameters.",
-            "source": "https://arxiv.org/pdf/2603.22908v3#page=2"
+            "claim": "编辑推断：原型自训练可作为已有适应表示的后续整理步骤；阅读贡献时，应区分通用组件与论文提出的核心机制。",
+            "page": 6,
+            "quote": "Stage Two thus serves to consolidate the target-strategy [40] to update the pseudo-labels ˆy at the end of each domain class structure established in Stage One and furtherepoch, stabilizing updates and mitigating noise: refine the target model.",
+            "source": "https://arxiv.org/pdf/2603.22908v5#page=6"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-17T06:45:20Z",
+        "generated_at": "2026-10-24T18:21:38Z",
         "human_approved": false,
-        "stale": true,
-        "source_hash": "26dd00fb5ee133380887b826fa3cbf3dc1896d963683c8080793b4ea2d7f0410",
+        "stale": false,
+        "source_hash": "d7b04ab753886723740cf5fde033a2abd9f38c020f7555c605ea8c96d67fce08",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
           2,
-          3,
+          6,
           7,
           8,
-          9,
-          10
+          9
         ]
       }
     },
@@ -49148,7 +49168,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T05:40:04Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -54227,7 +54247,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -54467,7 +54487,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -54724,7 +54744,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -54994,7 +55014,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -55318,7 +55338,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -55526,7 +55546,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-18T18:15:46Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -55968,7 +55988,255 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": []
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文研究无监督跨域语义分割：利用有标注源域和无标注目标域缓解域偏移及伪标签质量、类别不均衡问题。作者提出 HIAST，通过实例自适应选择、难类伪标签增强和区域自适应正则化改进自训练，并在多个跨域基准上报告了优于现有方法的性能。",
+        "problem": {
+          "text": "论文针对 UDA 语义分割中的域偏移与目标域无标注问题，重点解决自训练伪标签偏向高置信度和易分类别、忽略小目标及难类别，以及现有组合方法可扩展性和灵活性不足的痛点。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Domain shifts refer to the divergence building schemes based on the self-training (ST) framework between training data (source domain) and the testing data [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [26], (target domain), induced by factors such as the variance in [27], [28], [29], [30], [31], [32]."
+            },
+            {
+              "page": 1,
+              "quote": "These meth- Although these mixed methods can achieve better perfor- mance, the serious coupling between sub-modules causes • Chuang Zhu, Kebin Liu, and Wenqi Tang are with the School of Artificial the degradation of scalability and flexibility."
+            }
+          ]
+        },
+        "method": {
+          "text": "HIAST 先通过对抗训练进行预热，粗略对齐源域与目标域；随后使用实例自适应选择器生成更具质量与多样性的目标域伪标签，并以难感知伪标签增强在不同目标图像间融合难类别信息。模型还采用区域自适应正则化，对伪标签区域进行平滑、对非伪标签区域进行锐化，并加入一致性约束以增强监督信号。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "generation phase, the selector IAS filters pseudo-labels generated by In this work, we propose a hard-aware instance adaptive G, where G is the frozen M. (c): Self-training phase, target images and corresponding pseudo-labels are augmented by HPLA during self- self-training framework (HIAST) for UDA semantic seg- train"
+            },
+            {
+              "page": 2,
+              "quote": "We also develop constraint is further developed to provide stronger super- a hard-aware pseudo-label augmentation (HPLA) scheme vising information for the non-pseudo-label region."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在 GTA5 → Cityscapes、SYNTHIA → Cityscapes 和 Cityscapes → Oxford RobotCar 等 UDA 语义分割实验中，作者报告 HIAST 相比现有先进方法取得了更优性能。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Experiments on GTA5 →Cityscapes, SYNTHIA →Cityscapes, and Cityscapes →Oxford RobotCar demonstrate the superior performance of our approach compared with the state-of-the-art methods."
+              }
+            ]
+          },
+          {
+            "text": "实例自适应选择能够提升伪标签的类别多样性和有效区域覆盖，尤其改善骑行者、自行车等难类别的伪标签质量。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "(c): IAST has improved the diversity of categories and produced more valid regions, especially for these hard classes such as rider and bike."
+              },
+              {
+                "page": 2,
+                "quote": "It effectively improves the quality of pseudo- (HPLA)."
+              }
+            ]
+          },
+          {
+            "text": "难感知伪标签增强可利用不同目标域图像之间的信息，提高难类别伪标签的比例，并在训练过程中动态提升这些类别的占比。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "(d): HIAST further improves the proportion of hard classes by augmentation which transfers pixels (regions surrounded by red dashed line) from other target domain images."
+              },
+              {
+                "page": 2,
+                "quote": "The proposed we introduce a novel parameter selection strategy under HPLA can select hard classes and dynamically raise their the UDA setting."
+              }
+            ]
+          },
+          {
+            "text": "区域自适应正则化和非伪标签区域的一致性约束，为被忽略区域提供了更强的监督信号。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Then we employ an instance adaptive selector (IAS) in considering pseudo- prediction of the non-pseudo-label region."
+              },
+              {
+                "page": 2,
+                "quote": "To further improve larization to provide stronger supervision for the ignored and enrich pseudo-labels for hard classes, we propose region."
+              }
+            ]
+          }
+        ],
+        "open_problems": [],
+        "insights": [
+          {
+            "text": "编辑推断：当目标域存在长尾类别和难分区域时，伪标签策略不宜只依赖全局置信度阈值，实例层面的选择机制可能更适合控制类别覆盖与冗余。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "This will result in the ignorance of key information for (a) Warm-up some images, where almost all the hard-class pixels have low predicted scores."
+              },
+              {
+                "page": 2,
+                "quote": "Therefore, it is important to (b) Pseudo-label generation design an instance adaptive pseudo-label generation strat- HPLA egy to reduce data redundancy and increase the diversity of pseudo-labels."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：跨图像伪标签增强与区域级正则化可以作为相互独立的模块评估，有助于分析伪标签扩充和优化约束各自的贡献。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "It effectively improves the quality of pseudo- (HPLA)."
+              },
+              {
+                "page": 2,
+                "quote": "• Region-based regularization is designed to smooth the The paper is organized as follows: in Section 2, we prediction of the pseudo-label region and sharpen the review techniques that are related to our work; in Section 3,"
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：评测 UDA 自训练方法时，除最终分割性能外，还应关注伪标签的类别多样性、难类别覆盖和非伪标签区域的学习效果。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "(b): CBST is biased to such predominant classes as road and vegetation, other classes are almost ignored."
+              },
+              {
+                "page": 2,
+                "quote": "To further improve larization to provide stronger supervision for the ignored and enrich pseudo-labels for hard classes, we propose region."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "无监督跨域语义分割；从有标注源域迁移到无标注目标域，面向源目标域偏移。",
+          "supervision": "源域使用标注数据；目标域无标注，依靠生成的伪标签和一致性约束进行自训练。",
+          "modalities": "以图像及其像素级语义分割预测为主要数据形态，并结合输出空间的对抗训练与伪标签。",
+          "datasets": "GTA5 → Cityscapes、SYNTHIA → Cityscapes、Cityscapes → Oxford RobotCar。",
+          "evaluation": "在开放 UDA 语义分割基准上与现有先进方法进行性能比较；给出的句子未说明具体指标。"
+        },
+        "evidence": [
+          {
+            "claim": "论文针对 UDA 语义分割中的域偏移与目标域无标注问题，重点解决自训练伪标签偏向高置信度和易分类别、忽略小目标及难类别，以及现有组合方法可扩展性和灵活性不足的痛点。",
+            "page": 1,
+            "quote": "Domain shifts refer to the divergence building schemes based on the self-training (ST) framework between training data (source domain) and the testing data [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [26], (target domain), induced by factors such as the variance in [27], [28], [29], [30], [31], [32].",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=1"
+          },
+          {
+            "claim": "论文针对 UDA 语义分割中的域偏移与目标域无标注问题，重点解决自训练伪标签偏向高置信度和易分类别、忽略小目标及难类别，以及现有组合方法可扩展性和灵活性不足的痛点。",
+            "page": 1,
+            "quote": "These meth- Although these mixed methods can achieve better perfor- mance, the serious coupling between sub-modules causes • Chuang Zhu, Kebin Liu, and Wenqi Tang are with the School of Artificial the degradation of scalability and flexibility.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=1"
+          },
+          {
+            "claim": "HIAST 先通过对抗训练进行预热，粗略对齐源域与目标域；随后使用实例自适应选择器生成更具质量与多样性的目标域伪标签，并以难感知伪标签增强在不同目标图像间融合难类别信息。模型还采用区域自适应正则化，对伪标签区域进行平滑、对非伪标签区域进行锐化，并加入一致性约束以增强监督信号。",
+            "page": 2,
+            "quote": "generation phase, the selector IAS filters pseudo-labels generated by In this work, we propose a hard-aware instance adaptive G, where G is the frozen M. (c): Self-training phase, target images and corresponding pseudo-labels are augmented by HPLA during self- self-training framework (HIAST) for UDA semantic seg- train",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "HIAST 先通过对抗训练进行预热，粗略对齐源域与目标域；随后使用实例自适应选择器生成更具质量与多样性的目标域伪标签，并以难感知伪标签增强在不同目标图像间融合难类别信息。模型还采用区域自适应正则化，对伪标签区域进行平滑、对非伪标签区域进行锐化，并加入一致性约束以增强监督信号。",
+            "page": 2,
+            "quote": "We also develop constraint is further developed to provide stronger super- a hard-aware pseudo-label augmentation (HPLA) scheme vising information for the non-pseudo-label region.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "在 GTA5 → Cityscapes、SYNTHIA → Cityscapes 和 Cityscapes → Oxford RobotCar 等 UDA 语义分割实验中，作者报告 HIAST 相比现有先进方法取得了更优性能。",
+            "page": 1,
+            "quote": "Experiments on GTA5 →Cityscapes, SYNTHIA →Cityscapes, and Cityscapes →Oxford RobotCar demonstrate the superior performance of our approach compared with the state-of-the-art methods.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=1"
+          },
+          {
+            "claim": "实例自适应选择能够提升伪标签的类别多样性和有效区域覆盖，尤其改善骑行者、自行车等难类别的伪标签质量。",
+            "page": 2,
+            "quote": "(c): IAST has improved the diversity of categories and produced more valid regions, especially for these hard classes such as rider and bike.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "实例自适应选择能够提升伪标签的类别多样性和有效区域覆盖，尤其改善骑行者、自行车等难类别的伪标签质量。",
+            "page": 2,
+            "quote": "It effectively improves the quality of pseudo- (HPLA).",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "难感知伪标签增强可利用不同目标域图像之间的信息，提高难类别伪标签的比例，并在训练过程中动态提升这些类别的占比。",
+            "page": 2,
+            "quote": "(d): HIAST further improves the proportion of hard classes by augmentation which transfers pixels (regions surrounded by red dashed line) from other target domain images.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "难感知伪标签增强可利用不同目标域图像之间的信息，提高难类别伪标签的比例，并在训练过程中动态提升这些类别的占比。",
+            "page": 2,
+            "quote": "The proposed we introduce a novel parameter selection strategy under HPLA can select hard classes and dynamically raise their the UDA setting.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "区域自适应正则化和非伪标签区域的一致性约束，为被忽略区域提供了更强的监督信号。",
+            "page": 2,
+            "quote": "Then we employ an instance adaptive selector (IAS) in considering pseudo- prediction of the non-pseudo-label region.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "区域自适应正则化和非伪标签区域的一致性约束，为被忽略区域提供了更强的监督信号。",
+            "page": 2,
+            "quote": "To further improve larization to provide stronger supervision for the ignored and enrich pseudo-labels for hard classes, we propose region.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：当目标域存在长尾类别和难分区域时，伪标签策略不宜只依赖全局置信度阈值，实例层面的选择机制可能更适合控制类别覆盖与冗余。",
+            "page": 2,
+            "quote": "This will result in the ignorance of key information for (a) Warm-up some images, where almost all the hard-class pixels have low predicted scores.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：当目标域存在长尾类别和难分区域时，伪标签策略不宜只依赖全局置信度阈值，实例层面的选择机制可能更适合控制类别覆盖与冗余。",
+            "page": 2,
+            "quote": "Therefore, it is important to (b) Pseudo-label generation design an instance adaptive pseudo-label generation strat- HPLA egy to reduce data redundancy and increase the diversity of pseudo-labels.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：跨图像伪标签增强与区域级正则化可以作为相互独立的模块评估，有助于分析伪标签扩充和优化约束各自的贡献。",
+            "page": 2,
+            "quote": "It effectively improves the quality of pseudo- (HPLA).",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：跨图像伪标签增强与区域级正则化可以作为相互独立的模块评估，有助于分析伪标签扩充和优化约束各自的贡献。",
+            "page": 2,
+            "quote": "• Region-based regularization is designed to smooth the The paper is organized as follows: in Section 2, we prediction of the pseudo-label region and sharpen the review techniques that are related to our work; in Section 3,",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：评测 UDA 自训练方法时，除最终分割性能外，还应关注伪标签的类别多样性、难类别覆盖和非伪标签区域的学习效果。",
+            "page": 2,
+            "quote": "(b): CBST is biased to such predominant classes as road and vegetation, other classes are almost ignored.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          },
+          {
+            "claim": "编辑推断：评测 UDA 自训练方法时，除最终分割性能外，还应关注伪标签的类别多样性、难类别覆盖和非伪标签区域的学习效果。",
+            "page": 2,
+            "quote": "To further improve larization to provide stronger supervision for the ignored and enrich pseudo-labels for hard classes, we propose region.",
+            "source": "https://arxiv.org/pdf/2302.06992v2#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-24T18:21:01Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "7f87fba531826dbfac10fe067cda840ca4bfe08333ce9e442155057de77ca46d",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          9,
+          10
+        ]
+      }
     },
     "W0245": {
       "id": "W0245",
@@ -59658,7 +59926,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-20T19:32:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -63244,7 +63512,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -63535,7 +63803,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -65227,7 +65495,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -65528,7 +65796,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -65800,7 +66068,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -66041,7 +66309,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -66281,7 +66549,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -66579,7 +66847,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -66775,7 +67043,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-23T19:31:20Z",
+      "last_seen": "2026-10-24T18:19:44Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -67041,23 +67309,23 @@
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-23T19:31:20Z",
-      "last_success": "2026-10-23T19:31:20Z"
+      "completed_until": "2026-10-24T18:19:44Z",
+      "last_success": "2026-10-24T18:19:44Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-23T19:31:20Z",
-      "last_success": "2026-10-23T19:31:20Z"
+      "completed_until": "2026-10-24T18:19:44Z",
+      "last_success": "2026-10-24T18:19:44Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-23T19:31:20Z",
-      "last_success": "2026-10-23T19:31:20Z"
+      "completed_until": "2026-10-24T18:19:44Z",
+      "last_success": "2026-10-24T18:19:44Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-23T19:31:20Z",
-      "last_success": "2026-10-23T19:31:20Z"
+      "completed_until": "2026-10-24T18:19:44Z",
+      "last_success": "2026-10-24T18:19:44Z"
     }
   },
   "events": [
@@ -68750,9 +69018,17 @@
       "title": "NormLift: From Lifted Features To Semantic Reliability In 3D Gaussian Splatting",
       "at": "2026-10-23T19:31:20Z",
       "previous_version": 1
+    },
+    {
+      "key": "ec4b4d379f424392648b3851",
+      "kind": "revised",
+      "paper_id": "arxiv:2610.16177",
+      "title": "DIGS: Distribution-Informed Gaussian Splatting for Training-Free Open-Vocabulary 3D Segmentation",
+      "at": "2026-10-24T18:19:44Z",
+      "previous_version": 1
     }
   ],
-  "revision_cursor": 213,
+  "revision_cursor": 15,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -70232,55 +70508,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-24T18:19:44Z",
+      "status": "ok",
+      "counts": {
+        "new": 0,
+        "revised": 1,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 48,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-16T19:31:20Z",
+          "end": "2026-10-24T18:19:44Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-16T19:31:20Z",
+          "end": "2026-10-24T18:19:44Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-16T19:31:20Z",
+          "end": "2026-10-24T18:19:44Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 8
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-16T19:31:20Z",
+          "end": "2026-10-24T18:19:44Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 238
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-23T19:31:20Z",
+    "at": "2026-10-24T18:19:44Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-23T19:31:20Z",
+    "at": "2026-10-24T18:19:44Z",
     "status": "ok",
     "counts": {
-      "new": 7,
-      "revised": 2,
+      "new": 0,
+      "revised": 1,
       "existing": 0,
       "metadata": 0,
-      "unchanged": 42,
+      "unchanged": 48,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-23T19:31:20Z",
+        "start": "2026-10-16T19:31:20Z",
+        "end": "2026-10-24T18:19:44Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-23T19:31:20Z",
+        "start": "2026-10-16T19:31:20Z",
+        "end": "2026-10-24T18:19:44Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 1
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-14T19:31:10Z",
-        "end": "2026-10-23T19:31:20Z",
+        "start": "2026-10-16T19:31:20Z",
+        "end": "2026-10-24T18:19:44Z",
         "backlog_days": 0,
         "status": "ok",
-        "matched": 10
+        "matched": 8
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-15T19:23:20Z",
-        "end": "2026-10-23T19:31:20Z",
+        "start": "2026-10-16T19:31:20Z",
+        "end": "2026-10-24T18:19:44Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -70294,13 +70623,18 @@
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-23T19:31:20Z",
+  "last_full_success": "2026-10-24T18:19:44Z",
   "llm_last_run": {
-    "at": "2026-10-23T19:31:43Z",
+    "at": "2026-10-24T18:20:06Z",
     "status": "ok",
-    "attempted": 8,
-    "succeeded": 8,
-    "skipped": [],
+    "attempted": 4,
+    "succeeded": 4,
+    "skipped": [
+      {
+        "id": "arxiv:2609.16755",
+        "reason": "http-404"
+      }
+    ],
     "errors": [],
     "model": "gpt-6.1-sol",
     "budget": 8,
@@ -70314,6 +70648,7 @@
     "2026-10-20": 8,
     "2026-10-21": 8,
     "2026-10-22": 8,
-    "2026-10-23": 8
+    "2026-10-23": 8,
+    "2026-10-24": 4
   }
 }
