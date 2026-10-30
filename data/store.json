@@ -29,7 +29,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -345,10 +345,10 @@
         "Yuan Liu",
         "Taku Komura"
       ],
-      "abstract": "Generating high-quality and controllable camera motion is essential for AI-assisted cinematography, video synthesis, and 3D scene understanding. We introduce TKCAM, a Text- and Keyframe-conditioned CAMera-motion synthesis framework based on generative masked modeling. We represent camera dynamics using a 12-dimensional kinematic feature comprising position, velocity, and a continuous rotation representation and discretize them into hierarchical motion tokens via a Residual Vector Quantizer (RVQ). A two-stage masked transformer architecture then learns to reconstruct and refine these tokens, utilizing explicit self- and cross-attention modules for multimodal conditioning. A central feature of our framework is sparse visual keyframe conditioning: users can provide free-form text prompts together with RGB observations at selected timestamps, which provide temporally localized visual guidance for generating coherent in-between trajectories. Furthermore, to advance evaluation standards, we curate RealEstate10K-Cap, a large-scale text-camera dataset, and establish a cross-domain benchmark with a Universal CLaTr Evaluator. Extensive experiments demonstrate that TKCAM surpasses recent state-of-the-art baselines on Fréchet distance (FID), text-motion matching scores, and retrieval metrics (R@K), while additional analyses evaluate temporal smoothness and cross-domain generalization. Code is available at https://github.com/linearalgebrayhz/TKCAM.",
+      "abstract": "Generating high-quality and controllable camera motion is essential for AI-assisted cinematography, video synthesis, and 3D scene understanding. We introduce TKCAM, a Text- and Keyframe-conditioned CAMera-motion synthesis framework based on generative masked modeling. We represent camera dynamics using a 12-dimensional kinematic feature comprising position, velocity, and a continuous rotation representation and discretize them into hierarchical motion tokens via a Residual Vector Quantizer (RVQ). A two-stage masked transformer architecture then learns to reconstruct and refine these tokens, utilizing explicit self- and cross-attention modules for multimodal conditioning. A central feature of our framework is sparse visual keyframe conditioning: users can provide free-form text prompts together with RGB observations at selected timestamps, which provide temporally localized visual guidance for generating coherent in-between trajectories. Furthermore, to advance evaluation standards, we curate RealEstate10K-Cap, a large-scale text-camera dataset, and establish a cross-domain benchmark with a Universal CLaTr Evaluator. Extensive experiments demonstrate that TKCAM surpasses recent state-of-the-art baselines on Fréchet distance (FID), text-motion matching scores, and retrieval metrics (R@K), while additional analyses evaluate temporal smoothness and cross-domain generalization. Code and RealEstate10K-Cap dataset are available at https://github.com/linearalgebrayhz/TKCAM.",
       "published": "2026-10-08T02:20:16Z",
-      "updated": "2026-10-08T02:20:16Z",
-      "version": 1,
+      "updated": "2026-10-29T06:23:05Z",
+      "version": 2,
       "identifiers": {
         "arxiv": [
           "2610.11105"
@@ -365,7 +365,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -380,7 +380,7 @@
         "evidence": [
           {
             "label": "DG",
-            "quote": "while additional analyses evaluate temporal smoothness and cross-domain generalization. Code is available at https://github.com/linearalgebrayhz/TKCAM."
+            "quote": "while additional analyses evaluate temporal smoothness and cross-domain generalization. Code and RealEstate10K-Cap dataset are available at https://github.com/linearalgebrayhz/TKCAM."
           }
         ],
         "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
@@ -388,11 +388,18 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": [],
+      "versions": [
+        {
+          "title": "TKCAM: Text and Keyframe to Camera Trajectory Generation",
+          "version": 1,
+          "updated": "2026-10-08T02:20:16Z",
+          "published": "2026-10-08T02:20:16Z"
+        }
+      ],
       "ai_draft": {
-        "summary_zh": "论文研究文本与稀疏RGB关键帧条件下的6-DoF相机轨迹生成，提出基于分层运动token与掩码建模的TKCAM，并构建配套数据集和跨域评测器。实验显示其在轨迹质量、文本-运动匹配与检索指标上优于近期基线。",
+        "summary_zh": "本文研究文本与稀疏视觉关键帧条件下的相机轨迹生成，而非语义分割或域适应。TKCAM将相机运动离散为分层令牌，以双阶段掩码Transformer重建并细化轨迹。作者构建RealEstate10K-Cap及跨域评测协议，报告其在混合域基准上的FID、文本—运动匹配和检索指标优于所比较基线，并验证了纯文本与文本—关键帧条件下的语义一致性和平移平滑性。",
         "problem": {
-          "text": "论文针对从稀疏、符号化语言生成具有几何一致性、时间连贯性和语义对齐性的3D相机运动问题，重点解决语言对几何与时序约束不足、直接回归易漂移，以及现有方法难以利用稀疏视觉观察进行灵活控制等痛点。",
+          "text": "研究如何将文本意图转化为几何与时序一致的相机轨迹，并允许用户以选定时刻的稀疏视觉观测控制运动。主要痛点是语言对几何与时间信息描述不足、直接回归可能发生语义偏移，以及已有控制机制往往要求显式相机状态、场景几何或其他结构化输入。",
           "evidence": [
             {
               "page": 1,
@@ -405,21 +412,21 @@
           ]
         },
         "method": {
-          "text": "TKCAM先用包含位置、速度和连续旋转表示的运动特征描述相机动态，再通过RVQ将连续轨迹离散为分层运动token。随后采用两阶段掩码Transformer：基础模型通过运动自注意力建模时间动态，并以跨注意力注入文本和RGB关键帧条件；残差模型以粗到细方式细化高层量化token。推理时支持文本单独生成，以及利用起始、结束或其他稀疏关键帧进行双向轨迹补全。",
+          "text": "TKCAM采用生成式掩码建模：以包含位置、速度和连续旋转表示的12维运动学特征描述相机动态，经残差向量量化器离散为分层运动令牌；双阶段掩码Transformer负责重建与细化令牌，并通过显式自注意力与交叉注意力进行多模态条件融合。",
           "evidence": [
             {
               "page": 1,
               "quote": "We represent camera dynamics using a 12-dimensional kinematic feature comprising position, velocity, and a continuous rotation representation and discretize them into hierarchical motion tokens via a[cs.CV] Residual Vector Quantizer (RVQ)."
             },
             {
-              "page": 2,
-              "quote": "To learn the multimodal correspondences, we train a base masked transformer that performs conditional demasking to reconstruct the masked motion tokens."
+              "page": 1,
+              "quote": "A two-stage masked transformer architecture then learns to reconstruct and refine these tokens, utilizing explicit self- and cross- attention modules for multimodal conditioning."
             }
           ]
         },
         "findings": [
           {
-            "text": "在混合域基准上，TKCAM在FID、基于CLaTr的文本—运动匹配分数和R@K检索指标上超过近期先进基线。",
+            "text": "作者报告，在混合域基准上，TKCAM的FID、基于CLaTr的文本—运动匹配分数及检索指标R@K优于近期所比较的先进基线；给定句子未提供具体指标数值。",
             "evidence": [
               {
                 "page": 2,
@@ -428,12 +435,8 @@
             ]
           },
           {
-            "text": "实验表明，TKCAM在文本单独条件和文本—关键帧条件下都能生成语义一致、平移运动平滑的相机轨迹，并支持连贯的关键帧之间轨迹生成。",
+            "text": "作者报告，在纯文本和文本—关键帧两种设置下，生成轨迹均具有语义忠实性和平滑的平移运动。",
             "evidence": [
-              {
-                "page": 2,
-                "quote": "As a result, at inference, TKCAM supports both text-only generation and animator-style keyframe conditioning: users can provide free-form text prompts alongside sparse RGB keyframes (e.g., first-frame or start/end observations), which serve as temporally localized visual guidance while the model generates coherent in-b"
-              },
               {
                 "page": 2,
                 "quote": "We conduct extensive experiments to validate that TKCAM generates semantically faithful camera trajectories with smooth translational motion under both text-only and text-keyframe settings."
@@ -441,37 +444,29 @@
             ]
           },
           {
-            "text": "作者构建了RealEstate10K-Cap数据集，将高质量相机轨迹与具有时间定位的场景字幕配对，数据包含25K条标注序列、约5 million帧和约50小时内容。",
-            "evidence": [
-              {
-                "page": 2,
-                "quote": "RealEstate10K-Cap couples high-quality 3D camera trajectories with temporally grounded directorial captions."
-              },
-              {
-                "page": 2,
-                "quote": "Specifically, the corpus comprises 25K annotated sequences (5 million frames, approximately 50 hours in total) across diverse real estate environments."
-              }
-            ]
-          },
-          {
-            "text": "作者建立了面向不同相机运动域的Universal CLaTr Evaluator，并通过重新训练对比目标支持跨域评测。",
-            "evidence": [
-              {
-                "page": 2,
-                "quote": "Furthermore, a significant bottleneck in current camera generation research is the absence of a standardized and cross-domain evaluation metric."
-              },
-              {
-                "page": 2,
-                "quote": "To support evaluation across different camera-motion domains, we further construct a Universal CLaTr Evaluator by retraining the CLaTr contrastive objective [7] on a balanced mixture of indoor, cinematic, and character-centric trajectory data."
-              }
-            ]
-          },
-          {
-            "text": "消融实验支持12维运动表示、RVQ离散化和双掩码Transformer架构的作用。",
+            "text": "消融实验支持12维运动学表示、RVQ离散化及双掩码Transformer架构的有效性；具体增益未说明。",
             "evidence": [
               {
                 "page": 2,
                 "quote": "Furthermore, ablations support the benefits of our 12-dimensional kinematic representation, RVQ discretization, and the dual masked transformer architecture."
+              }
+            ]
+          },
+          {
+            "text": "选定时间戳的RGB观测通过交叉注意力提供软视觉引导，支持双向生成连贯的中间轨迹，不要求用户输入显式相机外参。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "RGB observations at selected timestamps provide soft visual guidance through cross-attention, enabling bidirectional generation of coherent in-between trajectories without requiring explicit camera extrinsics as user input."
+              }
+            ]
+          },
+          {
+            "text": "作者构建RealEstate10K-Cap，将重建相机轨迹与具有时间定位和场景感知信息的描述配对，并建立使用Universal CLaTr Evaluator的跨域评测协议。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "• We curate RealEstate10K-Cap, a large-scale dataset of reconstructed camera trajectories paired with temporally grounded, scene-aware captions, and establish a cross-domain evaluation protocol with a Universal CLaTr Evaluator."
               }
             ]
           }
@@ -479,24 +474,11 @@
         "open_problems": [],
         "insights": [
           {
-            "text": "编辑推断：当任务同时需要全局文本语义和局部时序约束时，稀疏关键帧与跨注意力结合是一种值得优先考虑的条件控制方式。",
-            "evidence": [
-              {
-                "page": 1,
-                "quote": "A central feature of our framework is sparse visual keyframe conditioning: users can provide free-form text prompts together with RGB observations at selected timestamps, which provide tempo- rally localized visual guidance for generating coherent in-between trajectories."
-              },
-              {
-                "page": 2,
-                "quote": "Instead of complex token-level masking heuristics, we adopt a simple attention design within the transformer blocks: a motion-motion self-attention module to capture the temporal dynamics of the trajectory, followed by a motion-condition cross-attention module to directly inject the text and visual keyframe embeddings."
-              }
-            ]
-          },
-          {
-            "text": "编辑推断：对于长序列轨迹生成，可关注并行、双向的掩码解码，以减少单向生成中的误差累积，并提升起止关键帧补全能力。",
+            "text": "编辑推断：需要利用起止视觉观测生成中间运动时，可优先考察支持双向条件融合的掩码生成范式，而不只采用单向自回归建模。",
             "evidence": [
               {
                 "page": 3,
-                "quote": "While AR models excel at capturing discrete multimodal distributions, their strict sequential generation nature often leads to error accumulation over long sequences."
+                "quote": "More critically, the unidirectional (left-to-right) autoregressive paradigm limits their ability to condition on future observations, making animator-style tasks like filling the gap between a start and an end keyframe more difficult."
               },
               {
                 "page": 3,
@@ -505,11 +487,24 @@
             ]
           },
           {
-            "text": "编辑推断：评测相机轨迹生成时，不宜只看几何距离，还应同时检查文本语义匹配、检索表现、时间平滑性与跨域泛化。",
+            "text": "编辑推断：构建语言—几何配对数据时，可先从轨迹提取确定性运动约束，再让视觉语言模型补充场景语义，以约束其对运动的描述。",
             "evidence": [
               {
-                "page": 1,
-                "quote": "Extensive experiments demonstrate that TKCAM surpasses recent state-of-the-art baselines on Fréchet distance (FID), text-motion matching scores, and retrieval metrics (R@K), while additional analyses evalu- ate temporal smoothness and cross-domain generalization."
+                "page": 3,
+                "quote": "To keep motion descriptions consis- tent with the trajectories while adding scene detail, we leverage a two-stage captioning pipeline that couples deterministic trajectory analysis with generative visual grounding."
+              },
+              {
+                "page": 4,
+                "quote": "The VLM is strictly prompted to treat the deterministic geometric prior as an immutable constraint (absolute motion), while enriching it with salient scene elements, spatial layouts, and cinematic pace."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：跨域比较生成模型时，应同时关注评估器的训练域组成与基线重训控制，避免只依据单一域的表征评价生成质量。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "To support evaluation across different camera-motion domains, we further construct a Universal CLaTr Evaluator by retraining the CLaTr contrastive objective [7] on a balanced mixture of indoor, cinematic, and character-centric trajectory data."
               },
               {
                 "page": 2,
@@ -519,128 +514,110 @@
           }
         ],
         "role": {
-          "setting": "文本或文本加稀疏RGB关键帧条件下的6-DoF相机轨迹生成，并进行混合域与跨域评测。",
-          "supervision": "使用带相机轨迹和时间定位场景字幕的配对数据训练；未说明其他监督设置。",
-          "modalities": "输入为文本和选定时间戳的RGB观察，输出为连续3D相机运动轨迹及其离散运动token。",
-          "datasets": "RealEstate10K-Cap，基于RealEstate10K构建，覆盖多样室内环境；另使用室内、电影和角色中心轨迹进行跨域评测。",
-          "evaluation": "采用FID、CLaTr文本—运动匹配分数、R@K检索指标，并分析时间平滑性、跨域泛化和评测器的人类评价。"
+          "setting": "文本或文本与稀疏关键帧条件下的相机轨迹生成，含混合域评测；未定义源域—目标域适应设置，不应归为UDA、DG、TTA或开放词汇任务。",
+          "supervision": "训练数据包含相机轨迹及时间定位的文本描述；描述由几何规则与视觉语言模型辅助构建。人工标注比例未说明。",
+          "modalities": "文本、选定时间戳的RGB关键帧，以及包含位置、速度与旋转表示的相机运动序列；输出为相机轨迹。",
+          "datasets": "构建于真实室内采集数据RealEstate10K之上的RealEstate10K-Cap；评估器训练混合室内、电影和角色中心轨迹，完整数据集清单未说明。",
+          "evaluation": "混合域基准采用Universal CLaTr Evaluator，报告FID、文本—运动匹配及R@K；另有平滑性分析、消融、受控基线重训和评估器人工评价。"
         },
         "evidence": [
           {
-            "claim": "论文针对从稀疏、符号化语言生成具有几何一致性、时间连贯性和语义对齐性的3D相机运动问题，重点解决语言对几何与时序约束不足、直接回归易漂移，以及现有方法难以利用稀疏视觉观察进行灵活控制等痛点。",
+            "claim": "研究如何将文本意图转化为几何与时序一致的相机轨迹，并允许用户以选定时刻的稀疏视觉观测控制运动。主要痛点是语言对几何与时间信息描述不足、直接回归可能发生语义偏移，以及已有控制机制往往要求显式相机状态、场景几何或其他结构化输入。",
             "page": 1,
             "quote": "Yet translating sparse, symbolic language into metrically consistent 3D motion remains challenging: language under-specifies geometry and timing; naïve regression drifts semantically; and existing datasets rarely couple reliable camera annotations with temporally grounded captions or standardized tools for evaluating t",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=1"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=1"
           },
           {
-            "claim": "论文针对从稀疏、符号化语言生成具有几何一致性、时间连贯性和语义对齐性的3D相机运动问题，重点解决语言对几何与时序约束不足、直接回归易漂移，以及现有方法难以利用稀疏视觉观察进行灵活控制等痛点。",
+            "claim": "研究如何将文本意图转化为几何与时序一致的相机轨迹，并允许用户以选定时刻的稀疏视觉观测控制运动。主要痛点是语言对几何与时间信息描述不足、直接回归可能发生语义偏移，以及已有控制机制往往要求显式相机状态、场景几何或其他结构化输入。",
             "page": 2,
             "quote": "Second, existing control mechanisms commonly rely on explicit camera states, scene geometry, or other structured inputs, whereas users may instead wish to guide motion using sparse visual observations at selected timestamps.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           },
           {
-            "claim": "TKCAM先用包含位置、速度和连续旋转表示的运动特征描述相机动态，再通过RVQ将连续轨迹离散为分层运动token。随后采用两阶段掩码Transformer：基础模型通过运动自注意力建模时间动态，并以跨注意力注入文本和RGB关键帧条件；残差模型以粗到细方式细化高层量化token。推理时支持文本单独生成，以及利用起始、结束或其他稀疏关键帧进行双向轨迹补全。",
+            "claim": "TKCAM采用生成式掩码建模：以包含位置、速度和连续旋转表示的12维运动学特征描述相机动态，经残差向量量化器离散为分层运动令牌；双阶段掩码Transformer负责重建与细化令牌，并通过显式自注意力与交叉注意力进行多模态条件融合。",
             "page": 1,
             "quote": "We represent camera dynamics using a 12-dimensional kinematic feature comprising position, velocity, and a continuous rotation representation and discretize them into hierarchical motion tokens via a[cs.CV] Residual Vector Quantizer (RVQ).",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=1"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=1"
           },
           {
-            "claim": "TKCAM先用包含位置、速度和连续旋转表示的运动特征描述相机动态，再通过RVQ将连续轨迹离散为分层运动token。随后采用两阶段掩码Transformer：基础模型通过运动自注意力建模时间动态，并以跨注意力注入文本和RGB关键帧条件；残差模型以粗到细方式细化高层量化token。推理时支持文本单独生成，以及利用起始、结束或其他稀疏关键帧进行双向轨迹补全。",
-            "page": 2,
-            "quote": "To learn the multimodal correspondences, we train a base masked transformer that performs conditional demasking to reconstruct the masked motion tokens.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "claim": "TKCAM采用生成式掩码建模：以包含位置、速度和连续旋转表示的12维运动学特征描述相机动态，经残差向量量化器离散为分层运动令牌；双阶段掩码Transformer负责重建与细化令牌，并通过显式自注意力与交叉注意力进行多模态条件融合。",
+            "page": 1,
+            "quote": "A two-stage masked transformer architecture then learns to reconstruct and refine these tokens, utilizing explicit self- and cross- attention modules for multimodal conditioning.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=1"
           },
           {
-            "claim": "在混合域基准上，TKCAM在FID、基于CLaTr的文本—运动匹配分数和R@K检索指标上超过近期先进基线。",
+            "claim": "作者报告，在混合域基准上，TKCAM的FID、基于CLaTr的文本—运动匹配分数及检索指标R@K优于近期所比较的先进基线；给定句子未提供具体指标数值。",
             "page": 2,
             "quote": "On our mixed-domain benchmark, TKCAM outperforms recent state-of-the-art baselines on Fréchet distance (FID), CLaTr-based text–motion matching score, and retrieval metrics (R@K).",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           },
           {
-            "claim": "实验表明，TKCAM在文本单独条件和文本—关键帧条件下都能生成语义一致、平移运动平滑的相机轨迹，并支持连贯的关键帧之间轨迹生成。",
-            "page": 2,
-            "quote": "As a result, at inference, TKCAM supports both text-only generation and animator-style keyframe conditioning: users can provide free-form text prompts alongside sparse RGB keyframes (e.g., first-frame or start/end observations), which serve as temporally localized visual guidance while the model generates coherent in-b",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
-          },
-          {
-            "claim": "实验表明，TKCAM在文本单独条件和文本—关键帧条件下都能生成语义一致、平移运动平滑的相机轨迹，并支持连贯的关键帧之间轨迹生成。",
+            "claim": "作者报告，在纯文本和文本—关键帧两种设置下，生成轨迹均具有语义忠实性和平滑的平移运动。",
             "page": 2,
             "quote": "We conduct extensive experiments to validate that TKCAM generates semantically faithful camera trajectories with smooth translational motion under both text-only and text-keyframe settings.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           },
           {
-            "claim": "作者构建了RealEstate10K-Cap数据集，将高质量相机轨迹与具有时间定位的场景字幕配对，数据包含25K条标注序列、约5 million帧和约50小时内容。",
-            "page": 2,
-            "quote": "RealEstate10K-Cap couples high-quality 3D camera trajectories with temporally grounded directorial captions.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
-          },
-          {
-            "claim": "作者构建了RealEstate10K-Cap数据集，将高质量相机轨迹与具有时间定位的场景字幕配对，数据包含25K条标注序列、约5 million帧和约50小时内容。",
-            "page": 2,
-            "quote": "Specifically, the corpus comprises 25K annotated sequences (5 million frames, approximately 50 hours in total) across diverse real estate environments.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
-          },
-          {
-            "claim": "作者建立了面向不同相机运动域的Universal CLaTr Evaluator，并通过重新训练对比目标支持跨域评测。",
-            "page": 2,
-            "quote": "Furthermore, a significant bottleneck in current camera generation research is the absence of a standardized and cross-domain evaluation metric.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
-          },
-          {
-            "claim": "作者建立了面向不同相机运动域的Universal CLaTr Evaluator，并通过重新训练对比目标支持跨域评测。",
-            "page": 2,
-            "quote": "To support evaluation across different camera-motion domains, we further construct a Universal CLaTr Evaluator by retraining the CLaTr contrastive objective [7] on a balanced mixture of indoor, cinematic, and character-centric trajectory data.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
-          },
-          {
-            "claim": "消融实验支持12维运动表示、RVQ离散化和双掩码Transformer架构的作用。",
+            "claim": "消融实验支持12维运动学表示、RVQ离散化及双掩码Transformer架构的有效性；具体增益未说明。",
             "page": 2,
             "quote": "Furthermore, ablations support the benefits of our 12-dimensional kinematic representation, RVQ discretization, and the dual masked transformer architecture.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           },
           {
-            "claim": "编辑推断：当任务同时需要全局文本语义和局部时序约束时，稀疏关键帧与跨注意力结合是一种值得优先考虑的条件控制方式。",
-            "page": 1,
-            "quote": "A central feature of our framework is sparse visual keyframe conditioning: users can provide free-form text prompts together with RGB observations at selected timestamps, which provide tempo- rally localized visual guidance for generating coherent in-between trajectories.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=1"
-          },
-          {
-            "claim": "编辑推断：当任务同时需要全局文本语义和局部时序约束时，稀疏关键帧与跨注意力结合是一种值得优先考虑的条件控制方式。",
+            "claim": "选定时间戳的RGB观测通过交叉注意力提供软视觉引导，支持双向生成连贯的中间轨迹，不要求用户输入显式相机外参。",
             "page": 2,
-            "quote": "Instead of complex token-level masking heuristics, we adopt a simple attention design within the transformer blocks: a motion-motion self-attention module to capture the temporal dynamics of the trajectory, followed by a motion-condition cross-attention module to directly inject the text and visual keyframe embeddings.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "quote": "RGB observations at selected timestamps provide soft visual guidance through cross-attention, enabling bidirectional generation of coherent in-between trajectories without requiring explicit camera extrinsics as user input.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           },
           {
-            "claim": "编辑推断：对于长序列轨迹生成，可关注并行、双向的掩码解码，以减少单向生成中的误差累积，并提升起止关键帧补全能力。",
+            "claim": "作者构建RealEstate10K-Cap，将重建相机轨迹与具有时间定位和场景感知信息的描述配对，并建立使用Universal CLaTr Evaluator的跨域评测协议。",
+            "page": 2,
+            "quote": "• We curate RealEstate10K-Cap, a large-scale dataset of reconstructed camera trajectories paired with temporally grounded, scene-aware captions, and establish a cross-domain evaluation protocol with a Universal CLaTr Evaluator.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
+          },
+          {
+            "claim": "编辑推断：需要利用起止视觉观测生成中间运动时，可优先考察支持双向条件融合的掩码生成范式，而不只采用单向自回归建模。",
             "page": 3,
-            "quote": "While AR models excel at capturing discrete multimodal distributions, their strict sequential generation nature often leads to error accumulation over long sequences.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=3"
+            "quote": "More critically, the unidirectional (left-to-right) autoregressive paradigm limits their ability to condition on future observations, making animator-style tasks like filling the gap between a start and an end keyframe more difficult.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=3"
           },
           {
-            "claim": "编辑推断：对于长序列轨迹生成，可关注并行、双向的掩码解码，以减少单向生成中的误差累积，并提升起止关键帧补全能力。",
+            "claim": "编辑推断：需要利用起止视觉观测生成中间运动时，可优先考察支持双向条件融合的掩码生成范式，而不只采用单向自回归建模。",
             "page": 3,
             "quote": "This enables parallel decoding and bidirectional keyframe conditioning via masked generation, with an explicit cross-attention mechanism for multimodal conditioning.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=3"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=3"
           },
           {
-            "claim": "编辑推断：评测相机轨迹生成时，不宜只看几何距离，还应同时检查文本语义匹配、检索表现、时间平滑性与跨域泛化。",
-            "page": 1,
-            "quote": "Extensive experiments demonstrate that TKCAM surpasses recent state-of-the-art baselines on Fréchet distance (FID), text-motion matching scores, and retrieval metrics (R@K), while additional analyses evalu- ate temporal smoothness and cross-domain generalization.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=1"
+            "claim": "编辑推断：构建语言—几何配对数据时，可先从轨迹提取确定性运动约束，再让视觉语言模型补充场景语义，以约束其对运动的描述。",
+            "page": 3,
+            "quote": "To keep motion descriptions consis- tent with the trajectories while adding scene detail, we leverage a two-stage captioning pipeline that couples deterministic trajectory analysis with generative visual grounding.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=3"
           },
           {
-            "claim": "编辑推断：评测相机轨迹生成时，不宜只看几何距离，还应同时检查文本语义匹配、检索表现、时间平滑性与跨域泛化。",
+            "claim": "编辑推断：构建语言—几何配对数据时，可先从轨迹提取确定性运动约束，再让视觉语言模型补充场景语义，以约束其对运动的描述。",
+            "page": 4,
+            "quote": "The VLM is strictly prompted to treat the deterministic geometric prior as an immutable constraint (absolute motion), while enriching it with salient scene elements, spatial layouts, and cinematic pace.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=4"
+          },
+          {
+            "claim": "编辑推断：跨域比较生成模型时，应同时关注评估器的训练域组成与基线重训控制，避免只依据单一域的表征评价生成质量。",
+            "page": 2,
+            "quote": "To support evaluation across different camera-motion domains, we further construct a Universal CLaTr Evaluator by retraining the CLaTr contrastive objective [7] on a balanced mixture of indoor, cinematic, and character-centric trajectory data.",
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
+          },
+          {
+            "claim": "编辑推断：跨域比较生成模型时，应同时关注评估器的训练域组成与基线重训控制，避免只依据单一域的表征评价生成质量。",
             "page": 2,
             "quote": "We further validate the framework through controlled baseline retraining, temporal-smoothness analysis, and human evaluation of the proposed evaluator.",
-            "source": "https://arxiv.org/pdf/2610.11105v1#page=2"
+            "source": "https://arxiv.org/pdf/2610.11105v2#page=2"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-17T09:33:38Z",
+        "generated_at": "2026-10-30T20:07:52Z",
         "human_approved": false,
         "stale": false,
-        "source_hash": "9b68905f5aa898ed8b0c9e09b925f54727dc7db132365a67e20f5dae10c8b665",
+        "source_hash": "95ecb13ff83ed21e31c8d32e41d89b3ba293f93a5d7764bb79cc97724bbe2ecd",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
@@ -693,7 +670,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2588,7 +2565,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2856,7 +2833,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -3149,7 +3126,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -3430,7 +3407,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -4028,7 +4005,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4299,7 +4276,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4587,7 +4564,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -4884,7 +4861,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -10034,7 +10011,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -13363,7 +13340,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -16496,7 +16473,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -16703,7 +16680,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -20181,7 +20158,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-14T19:38:04Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -42979,7 +42956,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -49168,7 +49145,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T05:40:04Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -54247,7 +54224,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -54487,7 +54464,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -54744,7 +54721,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -55014,7 +54991,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -55338,7 +55315,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -55546,7 +55523,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-18T18:15:46Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -59907,8 +59884,8 @@
       ],
       "abstract": "Robots that follow natural-language instructions unlock a wide range of autonomous applications in households, warehouses, and labs. Real-world environments are diverse and often heavily cluttered, requiring robots to plan over multiple steps, act, and replan as they work toward a goal. We present CLARO (CLutter-Aware Robot Orchestrator), a VLM agent that orchestrates a set of perception and manipulation skills: open-vocabulary object detection, segmentation, 6-DoF grasping, and non-prehensile pushing to locate and retrieve a language-specified target in clutter. CLARO maintains a memory of its past actions to support long-horizon execution, and emits manipulation targets (grasp poses/3D waypoints) allowing transfer across robot arms without task-specific training. We evaluate CLARO against a range of methods on a dynamic simulation environment and standard image-based benchmarks, demonstrating strong generalization across object classes, lighting, and clutter levels. CLARO attains an average success rate of 89.1%, a relative improvement of over 16% on the strongest competing method in high cluttered scenes. We further analyze performance along grounding and grasping axes to characterize where each method succeeds and fails. Finally, we deploy CLARO on a robot arm across diverse cluttered scenes, achieving a success rate of 88.8%, and demonstrating strong sim2real generalizability.",
       "published": "2026-10-16T01:31:37Z",
-      "updated": "2026-10-16T01:31:37Z",
-      "version": 1,
+      "updated": "2026-10-25T21:29:05Z",
+      "version": 2,
       "identifiers": {
         "arxiv": [
           "2610.24016"
@@ -59926,7 +59903,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-20T19:32:20Z",
-      "last_seen": "2026-10-24T18:19:44Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -59947,101 +59924,88 @@
       "review_status": "candidate",
       "full_text_read": false,
       "warnings": [],
-      "versions": [],
+      "versions": [
+        {
+          "title": "CLARO: Clutter Aware Robot Orchestrator for Open-Vocabulary Grasping using VLM Agents",
+          "version": 1,
+          "updated": "2026-10-16T01:31:37Z",
+          "published": "2026-10-16T01:31:37Z"
+        }
+      ],
       "ai_draft": {
-        "summary_zh": "论文研究杂乱、动态环境中的开放词汇抓取：目标可能被遮挡，机器人需要多步搜索、整理场景并闭环重规划。CLARO以VLM代理调用感知与操作工具，结合记忆和推搡，在仿真与真实机械臂上取得较高成功率，并展现跨环境与跨机械臂泛化能力。",
+        "summary_zh": "CLARO研究杂乱场景中由自然语言指定目标的开放词汇机器人抓取，而非语义分割或域适应。系统以VLM智能体编排检测、分割、抓取与推移工具，利用历史记忆支持多步搜索和重规划，无需任务特定训练。作者在动态仿真与图像基准上报告较强泛化，平均成功率为89.1%；真实机械臂实验的平均成功率为88.8%。",
         "problem": {
-          "text": "论文针对自然语言指定目标在杂乱、动态场景中的开放词汇抓取问题。目标可能被遮挡，传统单次抓取方法无法主动搜索和整理场景，而端到端VLA方法又难以超越训练分布，因此需要具备多步闭环感知、规划与操作能力的系统。",
+          "text": "解决杂乱环境中语言指定目标的定位与取回问题，任务属于开放词汇抓取。目标可能被遮挡，机器人需要多步操作；现有方法在开放词汇定位、闭环规划、长期记忆和非抓取式操作等能力的组合上仍有不足。",
           "evidence": [
             {
               "page": 1,
-              "quote": "An instruc- These methods are trained on large datasets comprising tion like “hand me the small screwdriver behind the mug” static RGB-D scenes in which the target is assumed to requires grounding an open-vocabulary referred object and be visible and graspable from the camera view."
+              "quote": "We present CLARO (CLutter-Aware Robot Orchestrator), a VLM agent that orchestrates a set of perception and ma- nipulation skills: open-vocabulary object detection, seg-[cs.RO] mentation, 6-DoF grasping, and non-prehensile pushing to locate and retrieve a language-specified target in clut- ter."
             },
             {
               "page": 2,
-              "quote": "Neither framework suffices: RGS generates planning traces, reasons about occlusions, and cannot search through clutter, and VLAs do not generalize executes motion that actively declutters the scene while beyond their training distribution, yet retrieving a target in searching for the target."
+              "quote": "VLA policies are closed-loop but tied to their training motion distribution and embodiment; existing training-free methods add open-vocabulary grounding and closed-loop planning but lack long-horizon memory or non-prehensile manipulation."
             }
           ]
         },
         "method": {
-          "text": "CLARO是训练免费的工具调用型VLM代理，以当前RGB-D观测和历史工具调用、结果及推理轨迹为依据，循环选择感知或操作工具并重新规划。其组件包括开放词汇目标定位、候选抓取排序、抓取执行和非抓取式推搡；当目标被遮挡时，代理通过主动整理场景逐步暴露目标，再执行可行抓取，并可跨机械臂部署而无需针对任务重新训练。",
+          "text": "CLARO以VLM智能体编排开放词汇目标检测、分割、6-DoF抓取和非抓取式推移工具，在杂乱场景中寻找并取回语言指定的目标。系统保存历史动作以支持长时程执行，并输出抓取位姿或3D路点等操作目标，使其无需任务特定训练即可跨机械臂迁移。",
           "evidence": [
             {
               "page": 1,
-              "quote": "with a VLM planner invoking perception and manipulation tools Finally, we deploy CLARO on a robot arm across diverse conditioned on a past memory of tool calls and outcomes."
+              "quote": "We present CLARO (CLutter-Aware Robot Orchestrator), a VLM agent that orchestrates a set of perception and ma- nipulation skills: open-vocabulary object detection, seg-[cs.RO] mentation, 6-DoF grasping, and non-prehensile pushing to locate and retrieve a language-specified target in clut- ter."
             },
             {
-              "page": 3,
-              "quote": "CLARO grasp synthesis, grounding the target via visual prompt- prevents this through long-term memory over past images, ing and ranking candidate grasps, while removing obsta- tool calls, and reasoning traces; (iii) Manipulation in clutter cles when the target is blocked [29]."
+              "page": 1,
+              "quote": "CLARO maintains a memory of its past actions to sup- port long-horizon execution, and emits manipulation tar- gets (grasp poses/3D waypoints) allowing transfer across robot arms without task-specific training."
             }
           ]
         },
         "findings": [
           {
-            "text": "在动态仿真环境和标准图像抓取基准上，CLARO相较所比较的方法表现出较强的跨物体类别、光照和杂乱程度泛化能力。",
+            "text": "作者在动态仿真环境和标准图像基准上开展评测，报告对物体类别、光照和杂乱程度具有较强泛化；平均成功率为89.1%，在高度杂乱场景中相对最强竞争方法提升超过16%。所给句子未进一步明确该平均成功率的汇总范围。",
             "evidence": [
               {
                 "page": 1,
-                "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, Figure 1."
+                "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, demonstrating strong generalization across object classes, lighting, and clutter levels."
               },
               {
                 "page": 1,
-                "quote": "(c) further analyze performance along grounding and grasping Tool-calling VLM agents such as CLARO close it at the tool level axes to characterize where each method succeeds and fails."
+                "quote": "CLARO attains an average suc- cess rate of 89.1%, a relative improvement of over 16% on the strongest competing method in high cluttered scenes."
               }
             ]
           },
           {
-            "text": "CLARO的平均成功率为89.1%，在高杂乱场景中相对最强竞争方法提升超过16%。",
+            "text": "真实机械臂实验覆盖80次试验、40个物体及不同杂乱程度，作者报告平均成功率为88.8%。该结果应与仿真和图像基准结果分开理解。",
             "evidence": [
               {
-                "page": 1,
-                "quote": "(b) Vision cess rate of 89.1%, a relative improvement of over 16% on language action policies close the loop at the action level, map- the strongest competing method in high cluttered scenes."
+                "page": 3,
+                "quote": "We deploy CLARO on a robotic arm across 80 trials cov- VLM, verifies each execution through depth and fingertip ering 40 objects in two clutter levels, achieving an aver- feedback, and re-invokes the planner, conditioned on ear- age success rate of 88.8%."
               }
             ]
           },
           {
-            "text": "作者报告CLARO在比较中持续优于所有方法，并在高杂乱成功率上相对最强基线提升16%。",
+            "text": "作者报告系统能够在不重新训练的情况下跨机械臂和环境迁移。",
             "evidence": [
               {
                 "page": 2,
-                "quote": "CLARO consistently outperforms all methods, re-plan [11]."
-              },
-              {
-                "page": 2,
-                "quote": "Such methods are suitable for clutter manip- with a relative improvement of 16% in high-clutter suc- ulation precisely because robot environments are dynamic, cess rate over the strongest baseline."
-              }
-            ]
-          },
-          {
-            "text": "在真实机械臂部署中，CLARO跨多种杂乱场景取得88.8%的成功率，并展示出较强的仿真到真实泛化能力。",
-            "evidence": [
-              {
-                "page": 1,
-                "quote": "cluttered scenes, achieving a success rate of 88.8%, and demonstrating strong sim2real generalizability."
-              }
-            ]
-          },
-          {
-            "text": "仿真基准包含600个回合；真实机械臂实验覆盖80次试验、40个物体和两种杂乱程度。",
-            "evidence": [
-              {
-                "page": 5,
-                "quote": "The benchmark comprises 600 episodes: 3rent scene and prior outcomes (Supp."
-              },
-              {
-                "page": 2,
-                "quote": "We deploy CLARO on a robotic arm across 80 trials cov- grounding, occlusion reasoning, and re-planning (Fig. 1)."
-              },
-              {
-                "page": 2,
-                "quote": "ering 40 objects in two clutter levels, achieving an aver- 2"
+                "quote": "Tool-calling VLM agents, which show strong cluttered workspaces using a robotic arm, and transfers spatial reasoning beyond conventional VLMs, are naturally across robot arms and environments without retraining."
               }
             ]
           }
         ],
         "open_problems": [
           {
-            "text": "关节物体操作不在本文范围内；作者指出可通过扩展技能库加入旋转把手、抓取并拉动等技能，同时保留现有记忆与重规划循环。",
+            "text": "关节式物体操作不在本文研究范围内。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "VLAs map ticulated manipulation is outside the scope of this work, but RGB observations and language to motor actions, trained the toolshed is the natural place to extend it: skills such on large-scale simulation and tele-operation corpora to pro- as rotate handle or grasp and pull would be ex- vide fine-grained, close"
+              }
+            ],
+            "kind": "limitation"
+          },
+          {
+            "text": "作者提出可通过扩展工具集加入转动把手、抓取并拉动等技能，将系统拓展到关节式操作，同时保留现有记忆与重规划循环。",
             "evidence": [
               {
                 "page": 3,
@@ -60057,123 +60021,162 @@
         ],
         "insights": [
           {
-            "text": "编辑推断：当目标可被遮挡且场景会因操作持续变化时，工具调用、结果反馈和历史记忆组成的闭环架构，比单次抓取预测更适合处理搜索与重规划。",
-            "evidence": []
+            "text": "编辑推断：面对遮挡目标，可优先考虑将推移、抓取与历史记忆联合编排，而不只提升单次抓取预测能力；关键是让操作主动改变可观测条件。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "CLARO grasp synthesis, grounding the target via visual prompt- prevents this through long-term memory over past images, ing and ranking candidate grasps, while removing obsta- tool calls, and reasoning traces; (iii) Manipulation in clutter cles when the target is blocked [29]."
+              },
+              {
+                "page": 3,
+                "quote": "CLARO adds a non-prehensile push tool reveal it and to suggest grasp locations, which it executes that can expose a target without grasping."
+              }
+            ]
           },
           {
-            "text": "编辑推断：评测此类系统时，应同时区分仿真、标准图像基准和真实机械臂部署，并分别观察杂乱、光照及跨环境泛化表现。",
-            "evidence": []
+            "text": "编辑推断：评测时应分别考察动态交互、静态图像理解与真实机器人执行，避免用其中一种结果替代对整个闭环系统的判断。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, demonstrating strong generalization across object classes, lighting, and clutter levels."
+              },
+              {
+                "page": 3,
+                "quote": "We deploy CLARO on a robotic arm across 80 trials cov- VLM, verifies each execution through depth and fingertip ering 40 objects in two clutter levels, achieving an aver- feedback, and re-invokes the planner, conditioned on ear- age success rate of 88.8%."
+              }
+            ]
           },
           {
-            "text": "编辑推断：非抓取式操作可作为开放词汇抓取系统的重要补充，使“先暴露目标、后完成抓取”成为可扩展的技能组合。",
-            "evidence": []
+            "text": "编辑推断：若希望复用到其他机械臂或操作任务，可关注高层规划与执行工具的接口解耦，并通过扩展技能集而非整体重构来增加任务能力。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "CLARO maintains a memory of its past actions to sup- port long-horizon execution, and emits manipulation tar- gets (grasp poses/3D waypoints) allowing transfer across robot arms without task-specific training."
+              },
+              {
+                "page": 3,
+                "quote": "They excel posed to CLARO exactly as grasp and push are, leaving at contact-rich, articulated and pick-and-place tasks [9], but the memory and replanning loop unchanged."
+              }
+            ]
           }
         ],
         "role": {
-          "setting": "杂乱、动态场景中的自然语言指定目标抓取；包含仿真环境、图像基准和真实机械臂部署。",
-          "supervision": "CLARO为训练免费的VLM代理；作者同时比较开放词汇方法与训练型VLM基线。",
-          "modalities": "RGB-D观测、自然语言指令、VLM规划，以及抓取和推搡等机器人操作。",
-          "datasets": "仿真物体来自BOP和Digital Twin Catalogue；另使用标准图像抓取基准，并开展真实机械臂试验。",
-          "evaluation": "仿真与图像基准比较成功表现；真实部署报告成功率，并考察物体、光照和杂乱程度变化。"
+          "setting": "语言指定目标的开放词汇机器人抓取，涉及杂乱与遮挡场景；包含仿真及真实部署，不是UDA、DG或TTA设定，未定义源域与目标域。",
+          "supervision": "作者称其为无需训练的闭环VLM智能体，无需环境特定微调；底层模型的预训练数据与监督细节未说明。",
+          "modalities": "自然语言指令与RGB-D观测；使用检测、分割、抓取及推移工具，输出抓取位姿或空间路点。",
+          "datasets": "仿真物体来自BOP与Digital Twin Catalogue模型集合；标准图像式RGS基准的具体名称未说明。",
+          "evaluation": "动态仿真、标准图像式RGS基准及真实机械臂试验；报告成功率，并考察物体类别、光照和杂乱程度变化。"
         },
         "evidence": [
           {
-            "claim": "论文针对自然语言指定目标在杂乱、动态场景中的开放词汇抓取问题。目标可能被遮挡，传统单次抓取方法无法主动搜索和整理场景，而端到端VLA方法又难以超越训练分布，因此需要具备多步闭环感知、规划与操作能力的系统。",
+            "claim": "解决杂乱环境中语言指定目标的定位与取回问题，任务属于开放词汇抓取。目标可能被遮挡，机器人需要多步操作；现有方法在开放词汇定位、闭环规划、长期记忆和非抓取式操作等能力的组合上仍有不足。",
             "page": 1,
-            "quote": "An instruc- These methods are trained on large datasets comprising tion like “hand me the small screwdriver behind the mug” static RGB-D scenes in which the target is assumed to requires grounding an open-vocabulary referred object and be visible and graspable from the camera view.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
+            "quote": "We present CLARO (CLutter-Aware Robot Orchestrator), a VLM agent that orchestrates a set of perception and ma- nipulation skills: open-vocabulary object detection, seg-[cs.RO] mentation, 6-DoF grasping, and non-prehensile pushing to locate and retrieve a language-specified target in clut- ter.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
           },
           {
-            "claim": "论文针对自然语言指定目标在杂乱、动态场景中的开放词汇抓取问题。目标可能被遮挡，传统单次抓取方法无法主动搜索和整理场景，而端到端VLA方法又难以超越训练分布，因此需要具备多步闭环感知、规划与操作能力的系统。",
+            "claim": "解决杂乱环境中语言指定目标的定位与取回问题，任务属于开放词汇抓取。目标可能被遮挡，机器人需要多步操作；现有方法在开放词汇定位、闭环规划、长期记忆和非抓取式操作等能力的组合上仍有不足。",
             "page": 2,
-            "quote": "Neither framework suffices: RGS generates planning traces, reasons about occlusions, and cannot search through clutter, and VLAs do not generalize executes motion that actively declutters the scene while beyond their training distribution, yet retrieving a target in searching for the target.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=2"
+            "quote": "VLA policies are closed-loop but tied to their training motion distribution and embodiment; existing training-free methods add open-vocabulary grounding and closed-loop planning but lack long-horizon memory or non-prehensile manipulation.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=2"
           },
           {
-            "claim": "CLARO是训练免费的工具调用型VLM代理，以当前RGB-D观测和历史工具调用、结果及推理轨迹为依据，循环选择感知或操作工具并重新规划。其组件包括开放词汇目标定位、候选抓取排序、抓取执行和非抓取式推搡；当目标被遮挡时，代理通过主动整理场景逐步暴露目标，再执行可行抓取，并可跨机械臂部署而无需针对任务重新训练。",
+            "claim": "CLARO以VLM智能体编排开放词汇目标检测、分割、6-DoF抓取和非抓取式推移工具，在杂乱场景中寻找并取回语言指定的目标。系统保存历史动作以支持长时程执行，并输出抓取位姿或3D路点等操作目标，使其无需任务特定训练即可跨机械臂迁移。",
             "page": 1,
-            "quote": "with a VLM planner invoking perception and manipulation tools Finally, we deploy CLARO on a robot arm across diverse conditioned on a past memory of tool calls and outcomes.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
+            "quote": "We present CLARO (CLutter-Aware Robot Orchestrator), a VLM agent that orchestrates a set of perception and ma- nipulation skills: open-vocabulary object detection, seg-[cs.RO] mentation, 6-DoF grasping, and non-prehensile pushing to locate and retrieve a language-specified target in clut- ter.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
           },
           {
-            "claim": "CLARO是训练免费的工具调用型VLM代理，以当前RGB-D观测和历史工具调用、结果及推理轨迹为依据，循环选择感知或操作工具并重新规划。其组件包括开放词汇目标定位、候选抓取排序、抓取执行和非抓取式推搡；当目标被遮挡时，代理通过主动整理场景逐步暴露目标，再执行可行抓取，并可跨机械臂部署而无需针对任务重新训练。",
+            "claim": "CLARO以VLM智能体编排开放词汇目标检测、分割、6-DoF抓取和非抓取式推移工具，在杂乱场景中寻找并取回语言指定的目标。系统保存历史动作以支持长时程执行，并输出抓取位姿或3D路点等操作目标，使其无需任务特定训练即可跨机械臂迁移。",
+            "page": 1,
+            "quote": "CLARO maintains a memory of its past actions to sup- port long-horizon execution, and emits manipulation tar- gets (grasp poses/3D waypoints) allowing transfer across robot arms without task-specific training.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
+          },
+          {
+            "claim": "作者在动态仿真环境和标准图像基准上开展评测，报告对物体类别、光照和杂乱程度具有较强泛化；平均成功率为89.1%，在高度杂乱场景中相对最强竞争方法提升超过16%。所给句子未进一步明确该平均成功率的汇总范围。",
+            "page": 1,
+            "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, demonstrating strong generalization across object classes, lighting, and clutter levels.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
+          },
+          {
+            "claim": "作者在动态仿真环境和标准图像基准上开展评测，报告对物体类别、光照和杂乱程度具有较强泛化；平均成功率为89.1%，在高度杂乱场景中相对最强竞争方法提升超过16%。所给句子未进一步明确该平均成功率的汇总范围。",
+            "page": 1,
+            "quote": "CLARO attains an average suc- cess rate of 89.1%, a relative improvement of over 16% on the strongest competing method in high cluttered scenes.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
+          },
+          {
+            "claim": "真实机械臂实验覆盖80次试验、40个物体及不同杂乱程度，作者报告平均成功率为88.8%。该结果应与仿真和图像基准结果分开理解。",
             "page": 3,
-            "quote": "CLARO grasp synthesis, grounding the target via visual prompt- prevents this through long-term memory over past images, ing and ranking candidate grasps, while removing obsta- tool calls, and reasoning traces; (iii) Manipulation in clutter cles when the target is blocked [29].",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=3"
+            "quote": "We deploy CLARO on a robotic arm across 80 trials cov- VLM, verifies each execution through depth and fingertip ering 40 objects in two clutter levels, achieving an aver- feedback, and re-invokes the planner, conditioned on ear- age success rate of 88.8%.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
           },
           {
-            "claim": "在动态仿真环境和标准图像抓取基准上，CLARO相较所比较的方法表现出较强的跨物体类别、光照和杂乱程度泛化能力。",
-            "page": 1,
-            "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, Figure 1.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
-          },
-          {
-            "claim": "在动态仿真环境和标准图像抓取基准上，CLARO相较所比较的方法表现出较强的跨物体类别、光照和杂乱程度泛化能力。",
-            "page": 1,
-            "quote": "(c) further analyze performance along grounding and grasping Tool-calling VLM agents such as CLARO close it at the tool level axes to characterize where each method succeeds and fails.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
-          },
-          {
-            "claim": "CLARO的平均成功率为89.1%，在高杂乱场景中相对最强竞争方法提升超过16%。",
-            "page": 1,
-            "quote": "(b) Vision cess rate of 89.1%, a relative improvement of over 16% on language action policies close the loop at the action level, map- the strongest competing method in high cluttered scenes.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
-          },
-          {
-            "claim": "作者报告CLARO在比较中持续优于所有方法，并在高杂乱成功率上相对最强基线提升16%。",
+            "claim": "作者报告系统能够在不重新训练的情况下跨机械臂和环境迁移。",
             "page": 2,
-            "quote": "CLARO consistently outperforms all methods, re-plan [11].",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=2"
+            "quote": "Tool-calling VLM agents, which show strong cluttered workspaces using a robotic arm, and transfers spatial reasoning beyond conventional VLMs, are naturally across robot arms and environments without retraining.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=2"
           },
           {
-            "claim": "作者报告CLARO在比较中持续优于所有方法，并在高杂乱成功率上相对最强基线提升16%。",
-            "page": 2,
-            "quote": "Such methods are suitable for clutter manip- with a relative improvement of 16% in high-clutter suc- ulation precisely because robot environments are dynamic, cess rate over the strongest baseline.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=2"
-          },
-          {
-            "claim": "在真实机械臂部署中，CLARO跨多种杂乱场景取得88.8%的成功率，并展示出较强的仿真到真实泛化能力。",
-            "page": 1,
-            "quote": "cluttered scenes, achieving a success rate of 88.8%, and demonstrating strong sim2real generalizability.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=1"
-          },
-          {
-            "claim": "仿真基准包含600个回合；真实机械臂实验覆盖80次试验、40个物体和两种杂乱程度。",
-            "page": 5,
-            "quote": "The benchmark comprises 600 episodes: 3rent scene and prior outcomes (Supp.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=5"
-          },
-          {
-            "claim": "仿真基准包含600个回合；真实机械臂实验覆盖80次试验、40个物体和两种杂乱程度。",
-            "page": 2,
-            "quote": "We deploy CLARO on a robotic arm across 80 trials cov- grounding, occlusion reasoning, and re-planning (Fig. 1).",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=2"
-          },
-          {
-            "claim": "仿真基准包含600个回合；真实机械臂实验覆盖80次试验、40个物体和两种杂乱程度。",
-            "page": 2,
-            "quote": "ering 40 objects in two clutter levels, achieving an aver- 2",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=2"
-          },
-          {
-            "claim": "关节物体操作不在本文范围内；作者指出可通过扩展技能库加入旋转把手、抓取并拉动等技能，同时保留现有记忆与重规划循环。",
+            "claim": "关节式物体操作不在本文研究范围内。",
             "page": 3,
             "quote": "VLAs map ticulated manipulation is outside the scope of this work, but RGB observations and language to motor actions, trained the toolshed is the natural place to extend it: skills such on large-scale simulation and tele-operation corpora to pro- as rotate handle or grasp and pull would be ex- vide fine-grained, close",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=3"
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
           },
           {
-            "claim": "关节物体操作不在本文范围内；作者指出可通过扩展技能库加入旋转把手、抓取并拉动等技能，同时保留现有记忆与重规划循环。",
+            "claim": "作者提出可通过扩展工具集加入转动把手、抓取并拉动等技能，将系统拓展到关节式操作，同时保留现有记忆与重规划循环。",
+            "page": 3,
+            "quote": "VLAs map ticulated manipulation is outside the scope of this work, but RGB observations and language to motor actions, trained the toolshed is the natural place to extend it: skills such on large-scale simulation and tele-operation corpora to pro- as rotate handle or grasp and pull would be ex- vide fine-grained, close",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
+          },
+          {
+            "claim": "作者提出可通过扩展工具集加入转动把手、抓取并拉动等技能，将系统拓展到关节式操作，同时保留现有记忆与重规划循环。",
             "page": 3,
             "quote": "They excel posed to CLARO exactly as grasp and push are, leaving at contact-rich, articulated and pick-and-place tasks [9], but the memory and replanning loop unchanged.",
-            "source": "https://arxiv.org/pdf/2610.24016v1#page=3"
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
+          },
+          {
+            "claim": "编辑推断：面对遮挡目标，可优先考虑将推移、抓取与历史记忆联合编排，而不只提升单次抓取预测能力；关键是让操作主动改变可观测条件。",
+            "page": 3,
+            "quote": "CLARO grasp synthesis, grounding the target via visual prompt- prevents this through long-term memory over past images, ing and ranking candidate grasps, while removing obsta- tool calls, and reasoning traces; (iii) Manipulation in clutter cles when the target is blocked [29].",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
+          },
+          {
+            "claim": "编辑推断：面对遮挡目标，可优先考虑将推移、抓取与历史记忆联合编排，而不只提升单次抓取预测能力；关键是让操作主动改变可观测条件。",
+            "page": 3,
+            "quote": "CLARO adds a non-prehensile push tool reveal it and to suggest grasp locations, which it executes that can expose a target without grasping.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
+          },
+          {
+            "claim": "编辑推断：评测时应分别考察动态交互、静态图像理解与真实机器人执行，避免用其中一种结果替代对整个闭环系统的判断。",
+            "page": 1,
+            "quote": "We evaluate CLARO against a range of methods on a dynamic simu- lation environment and standard image-based benchmarks, demonstrating strong generalization across object classes, lighting, and clutter levels.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
+          },
+          {
+            "claim": "编辑推断：评测时应分别考察动态交互、静态图像理解与真实机器人执行，避免用其中一种结果替代对整个闭环系统的判断。",
+            "page": 3,
+            "quote": "We deploy CLARO on a robotic arm across 80 trials cov- VLM, verifies each execution through depth and fingertip ering 40 objects in two clutter levels, achieving an aver- feedback, and re-invokes the planner, conditioned on ear- age success rate of 88.8%.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
+          },
+          {
+            "claim": "编辑推断：若希望复用到其他机械臂或操作任务，可关注高层规划与执行工具的接口解耦，并通过扩展技能集而非整体重构来增加任务能力。",
+            "page": 1,
+            "quote": "CLARO maintains a memory of its past actions to sup- port long-horizon execution, and emits manipulation tar- gets (grasp poses/3D waypoints) allowing transfer across robot arms without task-specific training.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=1"
+          },
+          {
+            "claim": "编辑推断：若希望复用到其他机械臂或操作任务，可关注高层规划与执行工具的接口解耦，并通过扩展技能集而非整体重构来增加任务能力。",
+            "page": 3,
+            "quote": "They excel posed to CLARO exactly as grasp and push are, leaving at contact-rich, articulated and pick-and-place tasks [9], but the memory and replanning loop unchanged.",
+            "source": "https://arxiv.org/pdf/2610.24016v2#page=3"
           }
         ],
         "model": "gpt-6.1-sol",
         "prompt_version": "3d-seg-reading-v4",
-        "generated_at": "2026-10-20T19:33:21Z",
+        "generated_at": "2026-10-30T20:07:05Z",
         "human_approved": false,
         "stale": false,
-        "source_hash": "ae0bf73b23cd4603deff98aed4ea7bf717ed789b615ead7f48f46bc963b8950f",
+        "source_hash": "1025487a2ee2b81e975f11e351f6bafbddc4d13c36e3c313651e7d8b1fee20dd",
         "scope": "pdf-evidence",
         "input_pages": [
           1,
@@ -63512,7 +63515,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-27T20:12:02Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -63803,7 +63806,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-21T19:31:10Z",
-      "last_seen": "2026-10-27T20:12:02Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -65495,7 +65498,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -65796,7 +65799,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -66068,7 +66071,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -66309,7 +66312,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -66549,7 +66552,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -66847,7 +66850,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -67043,7 +67046,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-23T19:31:20Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -67337,7 +67340,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-26T20:42:00Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -67660,7 +67663,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-27T20:12:02Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -68004,7 +68007,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-27T20:12:02Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-10-30T20:03:28Z",
       "classification": {
         "bucket": "excluded",
         "tracks": [],
@@ -68019,28 +68022,899 @@
       "full_text_read": false,
       "warnings": [],
       "versions": []
+    },
+    "arxiv:2610.39516": {
+      "id": "arxiv:2610.39516",
+      "title": "Robust LIDAR Sensor-to-Sensor Domain Generalization via Accumulated-Point Scene Completion",
+      "authors": [
+        "Christoph B Rist",
+        "Larissa T Triess",
+        "Markus Enzweiler",
+        "Dariu M Gavrila"
+      ],
+      "abstract": "We study domain generalization for LIDAR semantic segmentation. Deep neural networks achieve strong performance on 3D point clouds, yet real-world LIDAR exhibits sensor-specific sampling patterns that hinder transfer across datasets. In many applications, performance on completely unseen sensors is crucial. A model should preferably work on a new setup without prior access to its data or labels. To this end, we introduce a source-only training scheme that adds an occupancy prediction auxiliary objective. We aggregate source-domain scans into a simple world model and use it as the supervision signal, replacing single-scan standard segmentation training. A key property of our approach is that it does not alter the input scan. During training and testing the network consumes the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective. At deployment, there is no runtime overhead as the auxiliary head can be dropped for pure segmentation, or kept to obtain scene completion alongside semantic segmentation. In an experimental evaluation across distinct LIDAR datasets, we demonstrate that a model's generalization to new domains can be significantly affected by how it is supervised. In certain setups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without prediction refinement. At the same time, our method maintains competitive source-domain segmentation performance and incurs no additional inference cost.",
+      "published": "2026-10-29T07:14:26Z",
+      "updated": "2026-10-29T07:14:26Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.39516"
+        ],
+        "doi": [
+          "10.1109/iv66570.2026.11623951"
+        ]
+      },
+      "url": "https://arxiv.org/abs/2610.39516",
+      "pdf": "https://arxiv.org/pdf/2610.39516",
+      "venue": "arXiv",
+      "comment": "2026 IEEE Intelligent Vehicles Symposium (IV)",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-30T20:03:28Z",
+      "last_seen": "2026-10-30T20:03:28Z",
+      "classification": {
+        "bucket": "core",
+        "tracks": [
+          "DA",
+          "DG"
+        ],
+        "task": "semantic",
+        "methods": [],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "ups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without prediction refinement. At the sam"
+          },
+          {
+            "label": "DG",
+            "quote": "Robust LIDAR Sensor-to-Sensor Domain Generalization via Accumulated-Point Scene Completion\nWe study domain generalization for LIDAR semantic segmentati"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "本文研究激光雷达语义分割的传感器间域泛化：仅使用源域数据与标签训练，不接触目标域扫描、标签或传感器先验。方法以源域多帧点云累积生成占据监督，在保持单帧输入不变的情况下加入辅助预测任务。作者报告，部分设置下未见域性能得到改善，同时保持有竞争力的源域分割性能；部署时移除辅助头，不增加推理开销。方法依赖源域序列能够可靠配准，所给句子未说明具体量化结果。",
+        "problem": {
+          "text": "解决激光雷达语义分割中由传感器特有采样模式引起的跨数据集迁移困难，目标是在事先无法访问新传感器数据或标签的条件下，让模型适用于新设置。这属于面向未见传感器的域泛化，而非利用目标域数据进行适应。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Deep neural networks achieve strong perfor- mance on 3D point clouds, yet real-world LIDAR exhibits sensor- specific sampling patterns that hinder transfer across datasets."
+            },
+            {
+              "page": 1,
+              "quote": "A model should preferably work on a new setup without prior access to its data or labels."
+            }
+          ]
+        },
+        "method": {
+          "text": "以源域累积点云构建占据监督，在共享编码器特征上增加占据解码器及相应损失，辅助学习几何表示。训练与测试始终使用相同的单帧激光雷达输入，只通过占据目标丰富监督信号，而不修改输入扫描。",
+          "evidence": [
+            {
+              "page": 3,
+              "quote": "Fig. 2: Proposed method: We add an occupancy prediction task based on accumulated LiDAR points while training on the source domain to improve model generalization (orange blocks)."
+            },
+            {
+              "page": 1,
+              "quote": "During training and testing the network consumesOct the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，在部分实验设置中，无需目标扫描、目标标签、传感器先验或预测细化，未见域上的性能仍能得到改善；所给句子未说明提升幅度。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In certain setups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without[cs.CV] prediction refinement."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，方法保持了有竞争力的源域语义分割性能，并且不增加推理成本。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "At the same time, our method maintains Fig. 1: Sensor-to-sensor Domain Generalization with richer competitive source-domain segmentation performance and incurs supervision: Comparing two training signals on the source no additional inference cost."
+              }
+            ]
+          },
+          {
+            "text": "部署时可以移除占据辅助头，仅保留语义分割模型；也可以保留该头，同时输出场景补全结果。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "At deployment, there is no runtime overhead as the auxiliary head can be dropped29 for pure segmentation, or kept to obtain scene completion alongside semantic segmentation."
+              },
+              {
+                "page": 3,
+                "quote": "When this task is removed at test time, a vanilla semantic segmentation model remains."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "方法以源域序列能够可靠配准为前提，才能生成累积监督；所给句子未说明配准不可靠时的处理方式或性能。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Our approach B. Domain Adaptation assumes that source sequences can be registered reliably to A common pattern in UDA for images is to attach multi-generate aggregated supervision."
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：研究跨传感器泛化时，可将“丰富监督”与“修改输入”作为不同方法路线分别评估，避免把收益都归因于输入增强。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "During training and testing the network consumesOct the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective."
+              },
+              {
+                "page": 1,
+                "quote": "In an experimental evaluation across distinct LIDAR datasets, we demonstrate that a model’s generalization to new domains can be significantly affected by how it is supervised."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：若部署预算严格，可优先考虑训练期几何辅助任务，并验证移除辅助头后是否仍保留分割收益。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "At deployment, there is no runtime overhead as the auxiliary head can be dropped29 for pure segmentation, or kept to obtain scene completion alongside semantic segmentation."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：复现时应核查源域序列配准质量，并严格隔离目标域数据，确保累积监督和评测协议符合源域独占的域泛化设定。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Our approach B. Domain Adaptation assumes that source sequences can be registered reliably to A common pattern in UDA for images is to attach multi-generate aggregated supervision."
+              },
+              {
+                "page": 2,
+                "quote": "For LIDAR, a pre-training strategy sensor models, or target scans), sensor-agnostic, and alternating on heterogeneous datasets shows similar robustness alters only the supervision signal via an auxiliary head benefits [23]."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "激光雷达语义分割的传感器间域泛化（DG）；源域训练、未见目标域测试，不使用目标域扫描、标签或传感器模型。",
+          "supervision": "使用源域激光雷达数据与标签；源域累积点云提供占据辅助监督。训练与测试均输入单帧扫描。",
+          "modalities": "激光雷达点云；多帧累积用于生成训练监督，不作为模型的多帧输入。",
+          "datasets": "SemanticKITTI、nuScenes、Waymo；具体实验中的完整源域与目标域配对未说明。",
+          "evaluation": "跨不同传感器及采样模式的数据集评估语义分割，并与标准分割训练进行消融比较；具体指标、划分与量化结果未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "解决激光雷达语义分割中由传感器特有采样模式引起的跨数据集迁移困难，目标是在事先无法访问新传感器数据或标签的条件下，让模型适用于新设置。这属于面向未见传感器的域泛化，而非利用目标域数据进行适应。",
+            "page": 1,
+            "quote": "Deep neural networks achieve strong perfor- mance on 3D point clouds, yet real-world LIDAR exhibits sensor- specific sampling patterns that hinder transfer across datasets.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "解决激光雷达语义分割中由传感器特有采样模式引起的跨数据集迁移困难，目标是在事先无法访问新传感器数据或标签的条件下，让模型适用于新设置。这属于面向未见传感器的域泛化，而非利用目标域数据进行适应。",
+            "page": 1,
+            "quote": "A model should preferably work on a new setup without prior access to its data or labels.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "以源域累积点云构建占据监督，在共享编码器特征上增加占据解码器及相应损失，辅助学习几何表示。训练与测试始终使用相同的单帧激光雷达输入，只通过占据目标丰富监督信号，而不修改输入扫描。",
+            "page": 3,
+            "quote": "Fig. 2: Proposed method: We add an occupancy prediction task based on accumulated LiDAR points while training on the source domain to improve model generalization (orange blocks).",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=3"
+          },
+          {
+            "claim": "以源域累积点云构建占据监督，在共享编码器特征上增加占据解码器及相应损失，辅助学习几何表示。训练与测试始终使用相同的单帧激光雷达输入，只通过占据目标丰富监督信号，而不修改输入扫描。",
+            "page": 1,
+            "quote": "During training and testing the network consumesOct the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "作者报告，在部分实验设置中，无需目标扫描、目标标签、传感器先验或预测细化，未见域上的性能仍能得到改善；所给句子未说明提升幅度。",
+            "page": 1,
+            "quote": "In certain setups, performance on unseen domains improves without any explicit domain adaptation (no target scans, no target labels, no sensor priors) and without[cs.CV] prediction refinement.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "作者报告，方法保持了有竞争力的源域语义分割性能，并且不增加推理成本。",
+            "page": 1,
+            "quote": "At the same time, our method maintains Fig. 1: Sensor-to-sensor Domain Generalization with richer competitive source-domain segmentation performance and incurs supervision: Comparing two training signals on the source no additional inference cost.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "部署时可以移除占据辅助头，仅保留语义分割模型；也可以保留该头，同时输出场景补全结果。",
+            "page": 1,
+            "quote": "At deployment, there is no runtime overhead as the auxiliary head can be dropped29 for pure segmentation, or kept to obtain scene completion alongside semantic segmentation.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "部署时可以移除占据辅助头，仅保留语义分割模型；也可以保留该头，同时输出场景补全结果。",
+            "page": 3,
+            "quote": "When this task is removed at test time, a vanilla semantic segmentation model remains.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=3"
+          },
+          {
+            "claim": "方法以源域序列能够可靠配准为前提，才能生成累积监督；所给句子未说明配准不可靠时的处理方式或性能。",
+            "page": 2,
+            "quote": "Our approach B. Domain Adaptation assumes that source sequences can be registered reliably to A common pattern in UDA for images is to attach multi-generate aggregated supervision.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=2"
+          },
+          {
+            "claim": "编辑推断：研究跨传感器泛化时，可将“丰富监督”与“修改输入”作为不同方法路线分别评估，避免把收益都归因于输入增强。",
+            "page": 1,
+            "quote": "During training and testing the network consumesOct the same single-frame LIDAR input, only the supervision signal is enriched via the occupancy objective.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "编辑推断：研究跨传感器泛化时，可将“丰富监督”与“修改输入”作为不同方法路线分别评估，避免把收益都归因于输入增强。",
+            "page": 1,
+            "quote": "In an experimental evaluation across distinct LIDAR datasets, we demonstrate that a model’s generalization to new domains can be significantly affected by how it is supervised.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "编辑推断：若部署预算严格，可优先考虑训练期几何辅助任务，并验证移除辅助头后是否仍保留分割收益。",
+            "page": 1,
+            "quote": "At deployment, there is no runtime overhead as the auxiliary head can be dropped29 for pure segmentation, or kept to obtain scene completion alongside semantic segmentation.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=1"
+          },
+          {
+            "claim": "编辑推断：复现时应核查源域序列配准质量，并严格隔离目标域数据，确保累积监督和评测协议符合源域独占的域泛化设定。",
+            "page": 2,
+            "quote": "Our approach B. Domain Adaptation assumes that source sequences can be registered reliably to A common pattern in UDA for images is to attach multi-generate aggregated supervision.",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=2"
+          },
+          {
+            "claim": "编辑推断：复现时应核查源域序列配准质量，并严格隔离目标域数据，确保累积监督和评测协议符合源域独占的域泛化设定。",
+            "page": 2,
+            "quote": "For LIDAR, a pre-training strategy sensor models, or target scans), sensor-agnostic, and alternating on heterogeneous datasets shows similar robustness alters only the supervision signal via an auxiliary head benefits [23].",
+            "source": "https://arxiv.org/pdf/2610.39516v1#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-30T20:04:30Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "99c27849e38242c84964bb748454d126e4c1dfe65ce9904282987eb0de1220a1",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "arxiv:2610.40094": {
+      "id": "arxiv:2610.40094",
+      "title": "RepConTUR: A Report-Conditioned Volumetric Multimodal Model for Abdominal Tumor Segmentation",
+      "authors": [
+        "Seunghwan Lee",
+        "Sangjoon Park",
+        "Jongmin Lee",
+        "Yoon Jo Kim",
+        "Wonyoung Cho",
+        "Jin Sung Kim",
+        "Han Joo Chae"
+      ],
+      "abstract": "Tumor delineation is required for radiotherapy planning, yet automatic segmentation is limited by errors, predominantly false positives, that distort dose and increase editing time. The radiology report accompanies the scan and localizes disease at the suborgan level, but existing text-promptable models condition on short referring phrases, and most operate in 2D. We present RepConTUR, a single native-3D early-fusion multimodal model that conditions volumetric abdominal tumor segmentation on the narrative report. We extend AbdomenAtlas 3.0 to a suborgan-level promptable segmentation dataset and generate report-based VQA pairs, yielding four report-derived tasks on the same annotations: referring segmentation (RES), report-grounded segmentation (GSEG), report generation (RRG), and visual question answering (VQA). We train RepConTUR, comprising a 3D CT encoder, an early-fusion language model, and a native-3D segmentation module, jointly on the four tasks. Across liver, kidney and pancreas, RepConTUR attains the highest Dice similarity coefficient (DSC), instance-wise precision, and detection F1 among the text-promptable baselines, and adding the report raises mean precision while leaving recall comparable. Against two vision-only specialists, nnU-Net and the report-supervised R-Super, RepConTUR attains the highest value on every in-domain metric for liver and pancreas and the highest mean DSC, recall, precision, and detection F1 over the four out-of-distribution public cohorts. Ablations indicate that conditioning on the narrative report raises detection F1 from 0.499 to 0.528 within the same model, that joint GSEG training raises RES F1 from 0.450 to 0.482, and that the native-3D segmentation module raises GSEG F1 from 0.139 to 0.528 over its 2D counterpart. Code is available at https://github.com/Oncosoft-Research/RepConTUR.",
+      "published": "2026-10-29T13:59:44Z",
+      "updated": "2026-10-29T13:59:44Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.40094"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.40094",
+      "pdf": "https://arxiv.org/pdf/2610.40094",
+      "venue": "arXiv",
+      "comment": "Submitted to CVPR 2027",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-30T20:03:28Z",
+      "last_seen": "2026-10-30T20:03:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "cross-modal"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "RepConTUR面向腹部肿瘤体积分割，将叙述性放射学报告作为预测条件，以补充短提示难以表达的器官内部定位信息。模型采用原生三维视觉与分割模块，在语言模型中早期融合影像和报告，并进行多任务联合训练。作者报告，其在文本可提示基线中取得最高的DSC、实例级精确率和检测F1；消融实验显示，报告条件、联合分割任务及原生三维分割模块均带来性能改善。",
+        "problem": {
+          "text": "论文针对放疗肿瘤勾画中的自动分割错误，尤其是假阳性造成剂量失真和额外编辑负担的问题。现有器官级文本提示不能充分指定器官内部的详细区域，因此需要更细粒度的文本条件来指导肿瘤定位与分割。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "Unlike diagnos- nantly false positives, that distort dose and increase edit-29 tic reading, radiotherapy target contouring routinely com- ing time."
+            },
+            {
+              "page": 2,
+              "quote": "R- “tumor in liver CT”), which cannot indicate a detailed intra- Super converts report-derived tumor count and size into organ region and may not capture suborgan-level informa- voxel-wise losses [3], Guo et al. use report text as weak tion [70, 71]."
+            }
+          ]
+        },
+        "method": {
+          "text": "RepConTUR采用三维CT编码器、早期融合语言模型和原生三维分割模块，并联合训练四项任务。视觉token与报告文本从语言模型首层开始共同处理，使影像和报告在生成分割结果前进行联合推理。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "In radiotherapy, instance- fusion language model, and a native-3D segmentation mod- wise recall and precision are as clinically important as ule, jointly on the four tasks."
+            },
+            {
+              "page": 2,
+              "quote": "UniBioMed [61] couples an MLLM with report text from the first LLM layer, so vision and text are a SAM-style segmentation module for grounded biomedi- reasoned over jointly."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "作者报告，RepConTUR在所比较的文本可提示基线中取得最高的DSC、实例级精确率和检测F1。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "False positives in particular distort the dose distribu- creas, RepConTUR attains the highest Dice similarity co- tion and raise normal-tissue exposure and toxicity risk [44], efficient (DSC), instance-wise precision, and detection F1 and these errors increase the editing time [57]."
+              },
+              {
+                "page": 1,
+                "quote": "A sepa- among the text-promptable baselines, and adding the re- rate line of work uses the radiology report as training-time port raises mean precision while leaving recall compara- supervision to improve tumor detection and segmentation."
+              }
+            ]
+          },
+          {
+            "text": "同一模型内的消融实验显示，加入叙述性报告条件后，检测F1从0.499提高到0.528。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Ablations image alone at inference time [64], so the report cannot di- indicate that conditioning on the narrative report raises de- rectly inform the prediction."
+              },
+              {
+                "page": 1,
+                "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76]."
+              }
+            ]
+          },
+          {
+            "text": "联合GSEG训练使RES的F1从0.450提高到0.482。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76]."
+              }
+            ]
+          },
+          {
+            "text": "与二维对应模块相比，原生三维分割模块使GSEG的F1从0.139提高到0.528。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76]."
+              },
+              {
+                "page": 1,
+                "quote": "Some works adopt a F1 from 0.139 to 0.528 over its 2D counterpart."
+              }
+            ]
+          }
+        ],
+        "open_problems": [],
+        "insights": [
+          {
+            "text": "编辑推断：评估报告条件的价值时，可固定影像、目标短语和目标掩码，仅改变是否提供完整报告，以减少目标定义变化带来的混淆。",
+            "evidence": [
+              {
+                "page": 4,
+                "quote": "many tumors it contains, whereas others give only an organ- GSEG reuses the same target mask and referring phrase but level finding without a suborgan."
+              },
+              {
+                "page": 4,
+                "quote": "For a tumor the report places only at the sures the additional benefit of report context beyond the tar- organ level, the component is assigned to every suborgan get phrase, with the image and requested target held fixed."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：面向放疗的分割评测不宜只关注体素重叠，还应同时考察实例级检测表现，尤其是假阳性相关表现。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "In radiotherapy, instance- fusion language model, and a native-3D segmentation mod- wise recall and precision are as clinically important as ule, jointly on the four tasks."
+              },
+              {
+                "page": 1,
+                "quote": "False positives in particular distort the dose distribu- creas, RepConTUR attains the highest Dice similarity co- tion and raise normal-tissue exposure and toxicity risk [44], efficient (DSC), instance-wise precision, and detection F1 and these errors increase the editing time [57]."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：报告是否在推理时可用，应作为方法选型的重要条件；仅以报告提供训练监督的方法，与预测时直接利用报告的方法不宜混为一谈。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Furthermore, existing MLLM-based during training and drops it at inference [64]."
+              },
+              {
+                "page": 2,
+                "quote": "In iting their abilities to interpret report information that refers contrast, we condition 3D tumor segmentation on the narra- to 3D context [11, 30, 38]."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "腹部肿瘤三维指代／报告条件分割；含域内比较与分布外公共队列评测，但源域、目标域及适应协议未说明，不能据此归为UDA、DG或TTA。",
+          "supervision": "利用肿瘤掩码与报告构造多任务监督；分割条件包括亚器官级指代短语和可选叙述性报告，不属于已明确声明的开放词汇设定。",
+          "modalities": "体积CT与文本，包括指代短语、结构化及叙述性放射学报告，以及报告衍生问答。",
+          "datasets": "主要任务数据基于AbdomenAtlas 3.0扩展构建；编码器预训练涉及CT-RATE与Merlin。完整评测数据集名单未说明。",
+          "evaluation": "报告DSC、实例级精确率、召回率及检测F1；包含文本可提示基线、纯视觉方法比较和组件消融。完整划分及匹配阈值未说明。"
+        },
+        "evidence": [
+          {
+            "claim": "论文针对放疗肿瘤勾画中的自动分割错误，尤其是假阳性造成剂量失真和额外编辑负担的问题。现有器官级文本提示不能充分指定器官内部的详细区域，因此需要更细粒度的文本条件来指导肿瘤定位与分割。",
+            "page": 1,
+            "quote": "Unlike diagnos- nantly false positives, that distort dose and increase edit-29 tic reading, radiotherapy target contouring routinely com- ing time.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "论文针对放疗肿瘤勾画中的自动分割错误，尤其是假阳性造成剂量失真和额外编辑负担的问题。现有器官级文本提示不能充分指定器官内部的详细区域，因此需要更细粒度的文本条件来指导肿瘤定位与分割。",
+            "page": 2,
+            "quote": "R- “tumor in liver CT”), which cannot indicate a detailed intra- Super converts report-derived tumor count and size into organ region and may not capture suborgan-level informa- voxel-wise losses [3], Guo et al. use report text as weak tion [70, 71].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=2"
+          },
+          {
+            "claim": "RepConTUR采用三维CT编码器、早期融合语言模型和原生三维分割模块，并联合训练四项任务。视觉token与报告文本从语言模型首层开始共同处理，使影像和报告在生成分割结果前进行联合推理。",
+            "page": 1,
+            "quote": "In radiotherapy, instance- fusion language model, and a native-3D segmentation mod- wise recall and precision are as clinically important as ule, jointly on the four tasks.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "RepConTUR采用三维CT编码器、早期融合语言模型和原生三维分割模块，并联合训练四项任务。视觉token与报告文本从语言模型首层开始共同处理，使影像和报告在生成分割结果前进行联合推理。",
+            "page": 2,
+            "quote": "UniBioMed [61] couples an MLLM with report text from the first LLM layer, so vision and text are a SAM-style segmentation module for grounded biomedi- reasoned over jointly.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=2"
+          },
+          {
+            "claim": "作者报告，RepConTUR在所比较的文本可提示基线中取得最高的DSC、实例级精确率和检测F1。",
+            "page": 1,
+            "quote": "False positives in particular distort the dose distribu- creas, RepConTUR attains the highest Dice similarity co- tion and raise normal-tissue exposure and toxicity risk [44], efficient (DSC), instance-wise precision, and detection F1 and these errors increase the editing time [57].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "作者报告，RepConTUR在所比较的文本可提示基线中取得最高的DSC、实例级精确率和检测F1。",
+            "page": 1,
+            "quote": "A sepa- among the text-promptable baselines, and adding the re- rate line of work uses the radiology report as training-time port raises mean precision while leaving recall compara- supervision to improve tumor detection and segmentation.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "同一模型内的消融实验显示，加入叙述性报告条件后，检测F1从0.499提高到0.528。",
+            "page": 1,
+            "quote": "Ablations image alone at inference time [64], so the report cannot di- indicate that conditioning on the narrative report raises de- rectly inform the prediction.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "同一模型内的消融实验显示，加入叙述性报告条件后，检测F1从0.499提高到0.528。",
+            "page": 1,
+            "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "联合GSEG训练使RES的F1从0.450提高到0.482。",
+            "page": 1,
+            "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "与二维对应模块相比，原生三维分割模块使GSEG的F1从0.139提高到0.528。",
+            "page": 1,
+            "quote": "tection F1 from 0.499 to 0.528 within the same model, that Text-guided segmentation models have achieved strong joint GSEG training raises RES F1 from 0.450 to 0.482, results on referring segmentation (RES) and grounded seg- and that the native-3D segmentation module raises GSEG mentation (GSEG) [31, 33, 45, 63, 76].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "与二维对应模块相比，原生三维分割模块使GSEG的F1从0.139提高到0.528。",
+            "page": 1,
+            "quote": "Some works adopt a F1 from 0.139 to 0.528 over its 2D counterpart.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "编辑推断：评估报告条件的价值时，可固定影像、目标短语和目标掩码，仅改变是否提供完整报告，以减少目标定义变化带来的混淆。",
+            "page": 4,
+            "quote": "many tumors it contains, whereas others give only an organ- GSEG reuses the same target mask and referring phrase but level finding without a suborgan.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=4"
+          },
+          {
+            "claim": "编辑推断：评估报告条件的价值时，可固定影像、目标短语和目标掩码，仅改变是否提供完整报告，以减少目标定义变化带来的混淆。",
+            "page": 4,
+            "quote": "For a tumor the report places only at the sures the additional benefit of report context beyond the tar- organ level, the component is assigned to every suborgan get phrase, with the image and requested target held fixed.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=4"
+          },
+          {
+            "claim": "编辑推断：面向放疗的分割评测不宜只关注体素重叠，还应同时考察实例级检测表现，尤其是假阳性相关表现。",
+            "page": 1,
+            "quote": "In radiotherapy, instance- fusion language model, and a native-3D segmentation mod- wise recall and precision are as clinically important as ule, jointly on the four tasks.",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "编辑推断：面向放疗的分割评测不宜只关注体素重叠，还应同时考察实例级检测表现，尤其是假阳性相关表现。",
+            "page": 1,
+            "quote": "False positives in particular distort the dose distribu- creas, RepConTUR attains the highest Dice similarity co- tion and raise normal-tissue exposure and toxicity risk [44], efficient (DSC), instance-wise precision, and detection F1 and these errors increase the editing time [57].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=1"
+          },
+          {
+            "claim": "编辑推断：报告是否在推理时可用，应作为方法选型的重要条件；仅以报告提供训练监督的方法，与预测时直接利用报告的方法不宜混为一谈。",
+            "page": 2,
+            "quote": "Furthermore, existing MLLM-based during training and drops it at inference [64].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=2"
+          },
+          {
+            "claim": "编辑推断：报告是否在推理时可用，应作为方法选型的重要条件；仅以报告提供训练监督的方法，与预测时直接利用报告的方法不宜混为一谈。",
+            "page": 2,
+            "quote": "In iting their abilities to interpret report information that refers contrast, we condition 3D tumor segmentation on the narra- to 3D context [11, 30, 38].",
+            "source": "https://arxiv.org/pdf/2610.40094v1#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-30T20:06:14Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "fd5df69da46e46fe5ad64f5ea09b80b7cabec4fedec2fb074b7cb81c761bcb5f",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          14
+        ]
+      }
+    },
+    "arxiv:2610.40495": {
+      "id": "arxiv:2610.40495",
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "authors": [
+        "Oliver Hahn",
+        "Rodrigo Marcuzzi",
+        "Sangeetha Grama Srinivasan",
+        "Alessandro Burzio",
+        "Sherwin Bahmani",
+        "Jiahui Huang",
+        "Stefan Roth",
+        "Shengyu Huang",
+        "Qunjie Zhou",
+        "Laura Leal-Taixé"
+      ],
+      "abstract": "We present LucidLyra, a framework that makes generatively reconstructed 3D scenes directly queryable for semantics and instances in a feed-forward manner from video latents. While generative 3D reconstruction can synthesize virtual environments from a single image, downstream applications in robotics and physical AI require not only visual realism but also access to scene semantics and object identities. Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization. To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, open-vocabulary segmentation, and object grouping without per-scene optimization, while training requires neither manual 3D annotations nor captured multi-view data. Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality. Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time. By turning renderable but unstructured outputs into queryable 3D worlds, LucidLyra enables downstream applications including 3D scene editing, 3D asset mining, and robotic simulation.",
+      "published": "2026-10-29T17:18:51Z",
+      "updated": "2026-10-29T17:18:51Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2610.40495"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2610.40495",
+      "pdf": "https://arxiv.org/pdf/2610.40495",
+      "venue": "arXiv",
+      "comment": "Project Page: https://research.nvidia.com/labs/sil/projects/lucidlyra",
+      "categories": [
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-10-30T20:03:28Z",
+      "last_seen": "2026-10-30T20:03:28Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "OV"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "distillation",
+          "foundation-model"
+        ],
+        "basis": "title+abstract",
+        "certainty": "needs-review",
+        "evidence": [
+          {
+            "label": "OV",
+            "quote": "del to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, ope"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "LucidLyra面向单图条件下的生成式场景重建与理解，将视频生成模型和冻结视觉基础模型的知识蒸馏到统一高斯表示，支持开放词汇语义分割、类别无关实例分组及新视角渲染，无需逐场景优化。作者报告，在静态LucidLyra-SDG上，语义mIoU与实例mTrackPR较最强可比基线分别提升31.7和9.8个百分点。真实图像条件实验评估的是生成补全，而非真实场景完整重建；动态扩展存在小幅重建质量权衡。",
+        "problem": {
+          "text": "解决单图生成场景只有几何与外观、缺少可查询语义和实例结构的问题。现有理解方法依赖采集的多视图场景，或需要昂贵的逐场景处理；核心挑战是将不完美的生成与感知信号整合为一致表示，同时兼顾几何、外观、语义、实例与生成质量。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization."
+            },
+            {
+              "page": 2,
+              "quote": "The central challenge is to turn complementary but imperfect generative and perceptual signals into a consistent 3D representation while balancing geometry, appearance, semantics, and instances without compromising generation quality."
+            }
+          ]
+        },
+        "method": {
+          "text": "通过多任务蒸馏，将相机可控视频扩散模型与冻结视觉基础模型的互补知识整合到统一高斯表示，联合预测几何、外观、开放词汇语义和类别无关实例线索。对生成视图中的教师预测进行跨视图整合，再将其与几何、外观共同蒸馏到高斯基元上的持久语义场与实例场。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues."
+            },
+            {
+              "page": 3,
+              "quote": "We consolidate the teacher predictions across the generated views and distill them into persistent semantic and instance fields on the Gaussian primitives, jointly with geometry and appearance."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "在静态LucidLyra-SDG上，相较最强可比基线，语义mIoU和类别无关实例mTrackPR分别提升31.7和9.8个百分点；保持重建保真度，PSNR较Lyra提升0.53 dB。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "On our static LucidLyra-SDG benchmark, LucidLyra improves semantic mIoU and class-agnostic instance mTrackPR over the strongest comparable baseline by 31.7 and 9.8 percentage points, while maintaining reconstruction fidelity, with a modest PSNR gain of 0.53 dB over Lyra."
+              }
+            ]
+          },
+          {
+            "text": "作者报告，在整理的合成与真实图像条件基准上优于结合生成式重建的高斯分割基线，同时保持重建质量。其中真实图像条件基准以ADE20K验证图像驱动生成补全，不能等同于真实场景完整几何上的验证。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality."
+              },
+              {
+                "page": 8,
+                "quote": "Our three curated 25-scene benchmarks use propagated reference annotations with human review and refinement: LucidLyra-SDG and LucidLyra-SDG Dynamic cover static and dynamic generated scenes, while LucidLyra-ADE20K uses real ADE20K validation images [114] to condition generated completions."
+              }
+            ]
+          },
+          {
+            "text": "作者将潜变量表示扩展到单目视频输入，报告可重建跨时间的结构化动态场景。",
+            "evidence": [
+              {
+                "page": 2,
+                "quote": "Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "轨迹后期才显露、且首帧没有种子掩码的区域被排除在实例监督之外。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "Regions disoccluded late in a trajectory lacking a first-frame seed are excluded from instance supervision."
+              }
+            ],
+            "kind": "limitation"
+          },
+          {
+            "text": "动态场景上的理解能力伴随小幅重建质量权衡；静态场景则保持新视角重建保真度。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "LucidLyra consis- tently outperforms two-stage baselines across optimization-based, mask-lifting, and feed-forward 3DGS segmentation methods, while maintaining novel-view reconstruction fidelity on static scenes with a small reconstruction trade-off on dynamic scenes."
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：生成式场景理解可优先考虑共享表示与联合蒸馏，而非重建后附加标签；跨视图整合教师信号是值得复用的设计。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "We consolidate the teacher predictions across the generated views and distill them into persistent semantic and instance fields on the Gaussian primitives, jointly with geometry and appearance."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：阅读评测结果时，应区分“与固定生成轨迹一致”和“恢复真实场景”；真实图像作为生成条件，并不自动构成真实场景重建验证。",
+            "evidence": [
+              {
+                "page": 8,
+                "quote": "We evaluate agreement with fixed generated trajectories and their annotations."
+              },
+              {
+                "page": 8,
+                "quote": "Our three curated 25-scene benchmarks use propagated reference annotations with human review and refinement: LucidLyra-SDG and LucidLyra-SDG Dynamic cover static and dynamic generated scenes, while LucidLyra-ADE20K uses real ADE20K validation images [114] to condition generated completions."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：复用首帧掩码传播方案时，应检查后续显露区域的监督覆盖，避免把可生成的区域误认为已获得充分实例监督。",
+            "evidence": [
+              {
+                "page": 6,
+                "quote": "Regions disoccluded late in a trajectory lacking a first-frame seed are excluded from instance supervision."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "单图条件生成式场景重建与理解，支持开放词汇语义分割及类别无关实例分组，并扩展至单目视频；未明确设定UDA、DG或TTA源域与目标域。",
+          "supervision": "使用生成视频与冻结教师模型提供蒸馏监督；训练不需要人工三维标注或采集的多视图数据，推理无需逐场景优化；评测参考标注经人工审核与细化。",
+          "modalities": "输入图像或单目视频；利用视频潜变量、生成RGB视图及视觉语言特征；输出含几何、外观、语义与实例特征的高斯场景。",
+          "datasets": "训练基于扩充教师目标的Lyra-SDG；评测使用LucidLyra-SDG、LucidLyra-SDG Dynamic及以ADE20K图像为条件的LucidLyra-ADE20K。",
+          "evaluation": "联合评估重建与理解，报告语义mIoU、类别无关实例mTrackPR及PSNR；与固定生成轨迹及其标注比较，覆盖静态、动态和真实图像条件生成场景。"
+        },
+        "evidence": [
+          {
+            "claim": "解决单图生成场景只有几何与外观、缺少可查询语义和实例结构的问题。现有理解方法依赖采集的多视图场景，或需要昂贵的逐场景处理；核心挑战是将不完美的生成与感知信号整合为一致表示，同时兼顾几何、外观、语义、实例与生成质量。",
+            "page": 2,
+            "quote": "Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=2"
+          },
+          {
+            "claim": "解决单图生成场景只有几何与外观、缺少可查询语义和实例结构的问题。现有理解方法依赖采集的多视图场景，或需要昂贵的逐场景处理；核心挑战是将不完美的生成与感知信号整合为一致表示，同时兼顾几何、外观、语义、实例与生成质量。",
+            "page": 2,
+            "quote": "The central challenge is to turn complementary but imperfect generative and perceptual signals into a consistent 3D representation while balancing geometry, appearance, semantics, and instances without compromising generation quality.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=2"
+          },
+          {
+            "claim": "通过多任务蒸馏，将相机可控视频扩散模型与冻结视觉基础模型的互补知识整合到统一高斯表示，联合预测几何、外观、开放词汇语义和类别无关实例线索。对生成视图中的教师预测进行跨视图整合，再将其与几何、外观共同蒸馏到高斯基元上的持久语义场与实例场。",
+            "page": 2,
+            "quote": "To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=2"
+          },
+          {
+            "claim": "通过多任务蒸馏，将相机可控视频扩散模型与冻结视觉基础模型的互补知识整合到统一高斯表示，联合预测几何、外观、开放词汇语义和类别无关实例线索。对生成视图中的教师预测进行跨视图整合，再将其与几何、外观共同蒸馏到高斯基元上的持久语义场与实例场。",
+            "page": 3,
+            "quote": "We consolidate the teacher predictions across the generated views and distill them into persistent semantic and instance fields on the Gaussian primitives, jointly with geometry and appearance.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=3"
+          },
+          {
+            "claim": "在静态LucidLyra-SDG上，相较最强可比基线，语义mIoU和类别无关实例mTrackPR分别提升31.7和9.8个百分点；保持重建保真度，PSNR较Lyra提升0.53 dB。",
+            "page": 3,
+            "quote": "On our static LucidLyra-SDG benchmark, LucidLyra improves semantic mIoU and class-agnostic instance mTrackPR over the strongest comparable baseline by 31.7 and 9.8 percentage points, while maintaining reconstruction fidelity, with a modest PSNR gain of 0.53 dB over Lyra.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=3"
+          },
+          {
+            "claim": "作者报告，在整理的合成与真实图像条件基准上优于结合生成式重建的高斯分割基线，同时保持重建质量。其中真实图像条件基准以ADE20K验证图像驱动生成补全，不能等同于真实场景完整几何上的验证。",
+            "page": 2,
+            "quote": "Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=2"
+          },
+          {
+            "claim": "作者报告，在整理的合成与真实图像条件基准上优于结合生成式重建的高斯分割基线，同时保持重建质量。其中真实图像条件基准以ADE20K验证图像驱动生成补全，不能等同于真实场景完整几何上的验证。",
+            "page": 8,
+            "quote": "Our three curated 25-scene benchmarks use propagated reference annotations with human review and refinement: LucidLyra-SDG and LucidLyra-SDG Dynamic cover static and dynamic generated scenes, while LucidLyra-ADE20K uses real ADE20K validation images [114] to condition generated completions.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=8"
+          },
+          {
+            "claim": "作者将潜变量表示扩展到单目视频输入，报告可重建跨时间的结构化动态场景。",
+            "page": 2,
+            "quote": "Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=2"
+          },
+          {
+            "claim": "轨迹后期才显露、且首帧没有种子掩码的区域被排除在实例监督之外。",
+            "page": 6,
+            "quote": "Regions disoccluded late in a trajectory lacking a first-frame seed are excluded from instance supervision.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=6"
+          },
+          {
+            "claim": "动态场景上的理解能力伴随小幅重建质量权衡；静态场景则保持新视角重建保真度。",
+            "page": 3,
+            "quote": "LucidLyra consis- tently outperforms two-stage baselines across optimization-based, mask-lifting, and feed-forward 3DGS segmentation methods, while maintaining novel-view reconstruction fidelity on static scenes with a small reconstruction trade-off on dynamic scenes.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=3"
+          },
+          {
+            "claim": "编辑推断：生成式场景理解可优先考虑共享表示与联合蒸馏，而非重建后附加标签；跨视图整合教师信号是值得复用的设计。",
+            "page": 3,
+            "quote": "We consolidate the teacher predictions across the generated views and distill them into persistent semantic and instance fields on the Gaussian primitives, jointly with geometry and appearance.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=3"
+          },
+          {
+            "claim": "编辑推断：阅读评测结果时，应区分“与固定生成轨迹一致”和“恢复真实场景”；真实图像作为生成条件，并不自动构成真实场景重建验证。",
+            "page": 8,
+            "quote": "We evaluate agreement with fixed generated trajectories and their annotations.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=8"
+          },
+          {
+            "claim": "编辑推断：阅读评测结果时，应区分“与固定生成轨迹一致”和“恢复真实场景”；真实图像作为生成条件，并不自动构成真实场景重建验证。",
+            "page": 8,
+            "quote": "Our three curated 25-scene benchmarks use propagated reference annotations with human review and refinement: LucidLyra-SDG and LucidLyra-SDG Dynamic cover static and dynamic generated scenes, while LucidLyra-ADE20K uses real ADE20K validation images [114] to condition generated completions.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=8"
+          },
+          {
+            "claim": "编辑推断：复用首帧掩码传播方案时，应检查后续显露区域的监督覆盖，避免把可生成的区域误认为已获得充分实例监督。",
+            "page": 6,
+            "quote": "Regions disoccluded late in a trajectory lacking a first-frame seed are excluded from instance supervision.",
+            "source": "https://arxiv.org/pdf/2610.40495v1#page=6"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-10-30T20:05:21Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "7472dd03d778cf4351707e22a4147d9cbb8e37d5160a17c4b73516fe53ff2e72",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          6,
+          8,
+          9,
+          10,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-10-29T20:29:48Z",
-      "last_success": "2026-10-29T20:29:48Z"
+      "completed_until": "2026-10-30T20:03:28Z",
+      "last_success": "2026-10-30T20:03:28Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-10-29T20:29:48Z",
-      "last_success": "2026-10-29T20:29:48Z"
+      "completed_until": "2026-10-30T20:03:28Z",
+      "last_success": "2026-10-30T20:03:28Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-10-29T20:29:48Z",
-      "last_success": "2026-10-29T20:29:48Z"
+      "completed_until": "2026-10-30T20:03:28Z",
+      "last_success": "2026-10-30T20:03:28Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-10-29T20:29:48Z",
-      "last_success": "2026-10-29T20:29:48Z"
+      "completed_until": "2026-10-30T20:03:28Z",
+      "last_success": "2026-10-30T20:03:28Z"
     }
   },
   "events": [
@@ -69762,9 +70636,46 @@
       "paper_id": "arxiv:2610.33868",
       "title": "RelateGS: Reliable Semantic and Relational Evidence for 3D Scene Understanding with Gaussian Splatting",
       "at": "2026-10-27T20:12:02Z"
+    },
+    {
+      "key": "88542ae3900dce3316195bae",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.39516",
+      "title": "Robust LIDAR Sensor-to-Sensor Domain Generalization via Accumulated-Point Scene Completion",
+      "at": "2026-10-30T20:03:28Z"
+    },
+    {
+      "key": "1fb3241db25552e10804fd5d",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.40094",
+      "title": "RepConTUR: A Report-Conditioned Volumetric Multimodal Model for Abdominal Tumor Segmentation",
+      "at": "2026-10-30T20:03:28Z"
+    },
+    {
+      "key": "4aaa3244d69435bd0828d823",
+      "kind": "discovered",
+      "paper_id": "arxiv:2610.40495",
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "at": "2026-10-30T20:03:28Z"
+    },
+    {
+      "key": "b8229144c4ef804798dd7b93",
+      "kind": "revised",
+      "paper_id": "arxiv:2610.24016",
+      "title": "CLARO: Clutter Aware Robot Orchestrator for Open-Vocabulary Grasping using VLM Agents",
+      "at": "2026-10-30T20:03:28Z",
+      "previous_version": 1
+    },
+    {
+      "key": "371b2c67e468e582056f9fde",
+      "kind": "revised",
+      "paper_id": "arxiv:2610.11105",
+      "title": "TKCAM: Text and Keyframe to Camera Trajectory Generation",
+      "at": "2026-10-30T20:03:28Z",
+      "previous_version": 1
     }
   ],
-  "revision_cursor": 215,
+  "revision_cursor": 11,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -71562,55 +72473,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-10-30T20:03:28Z",
+      "status": "ok",
+      "counts": {
+        "new": 3,
+        "revised": 2,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 43,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-22T20:29:48Z",
+          "end": "2026-10-30T20:03:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 2
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-22T20:29:48Z",
+          "end": "2026-10-30T20:03:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 3
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-22T20:29:48Z",
+          "end": "2026-10-30T20:03:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 3
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-22T20:29:48Z",
+          "end": "2026-10-30T20:03:28Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 0
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 244
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-10-29T20:29:48Z",
+    "at": "2026-10-30T20:03:28Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-10-29T20:29:48Z",
+    "at": "2026-10-30T20:03:28Z",
     "status": "ok",
     "counts": {
-      "new": 0,
-      "revised": 0,
+      "new": 3,
+      "revised": 2,
       "existing": 0,
       "metadata": 0,
-      "unchanged": 47,
+      "unchanged": 43,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-21T20:29:35Z",
-        "end": "2026-10-29T20:29:48Z",
+        "start": "2026-10-22T20:29:48Z",
+        "end": "2026-10-30T20:03:28Z",
         "backlog_days": 0,
         "status": "ok",
-        "matched": 1
+        "matched": 2
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-21T20:29:35Z",
-        "end": "2026-10-29T20:29:48Z",
+        "start": "2026-10-22T20:29:48Z",
+        "end": "2026-10-30T20:03:28Z",
         "backlog_days": 0,
         "status": "ok",
-        "matched": 1
+        "matched": 3
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-21T20:29:35Z",
-        "end": "2026-10-29T20:29:48Z",
+        "start": "2026-10-22T20:29:48Z",
+        "end": "2026-10-30T20:03:28Z",
         "backlog_days": 0,
         "status": "ok",
-        "matched": 5
+        "matched": 3
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-21T20:29:35Z",
-        "end": "2026-10-29T20:29:48Z",
+        "start": "2026-10-22T20:29:48Z",
+        "end": "2026-10-30T20:03:28Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 0
@@ -71619,17 +72583,17 @@
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 241
+        "total_known": 244
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-10-29T20:29:48Z",
+  "last_full_success": "2026-10-30T20:03:28Z",
   "llm_last_run": {
-    "at": "2026-10-29T20:30:11Z",
+    "at": "2026-10-30T20:03:50Z",
     "status": "ok",
-    "attempted": 0,
-    "succeeded": 0,
+    "attempted": 5,
+    "succeeded": 5,
     "skipped": [
       {
         "id": "arxiv:2609.16755",
@@ -71652,6 +72616,7 @@
     "2026-10-23": 8,
     "2026-10-24": 4,
     "2026-10-26": 1,
-    "2026-10-27": 1
+    "2026-10-27": 1,
+    "2026-10-30": 5
   }
 }
