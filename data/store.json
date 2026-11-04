@@ -931,7 +931,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1279,7 +1279,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1657,7 +1657,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -1913,7 +1913,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -2265,7 +2265,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -2520,7 +2520,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -3684,7 +3684,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -6240,7 +6240,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6558,7 +6558,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -6904,7 +6904,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7243,7 +7243,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7532,7 +7532,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -7777,7 +7777,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8049,7 +8049,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -8310,7 +8310,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -8649,7 +8649,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-13T20:47:44Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32099,7 +32099,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32403,7 +32403,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -32971,7 +32971,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -36035,7 +36035,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -37129,7 +37129,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -38421,7 +38421,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -40103,7 +40103,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -40417,7 +40417,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -42508,7 +42508,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -42766,7 +42766,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-15T19:20:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -43304,7 +43304,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -43556,7 +43556,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -43823,7 +43823,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -44144,7 +44144,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -44415,7 +44415,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -44726,7 +44726,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -45026,7 +45026,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45322,7 +45322,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45582,7 +45582,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -45899,7 +45899,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -46193,7 +46193,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-16T13:56:19Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -48346,7 +48346,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T03:33:33Z",
-      "last_seen": "2026-10-28T20:29:35Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -48896,7 +48896,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T03:33:33Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -53977,7 +53977,7 @@
       "imported": true,
       "origin": "arxiv",
       "first_seen": "2026-10-17T17:54:45Z",
-      "last_seen": "2026-10-29T20:29:48Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -68054,7 +68054,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-30T20:03:28Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -68335,7 +68335,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-30T20:03:28Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -68637,7 +68637,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-10-30T20:03:28Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [
@@ -68923,7 +68923,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-11-02T23:39:32Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -69183,7 +69183,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-11-03T21:54:37Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "core",
         "tracks": [
@@ -69424,7 +69424,7 @@
       "imported": false,
       "origin": "arxiv",
       "first_seen": "2026-11-03T21:54:37Z",
-      "last_seen": "2026-11-03T21:54:37Z",
+      "last_seen": "2026-11-04T22:05:57Z",
       "classification": {
         "bucket": "related",
         "tracks": [],
@@ -69685,28 +69685,388 @@
           8
         ]
       }
+    },
+    "arxiv:2611.05106": {
+      "id": "arxiv:2611.05106",
+      "title": "Label-Preserving Fourier Domain Adaptation with Generative-AI and Real Style Donors for 3D Mitral Valve Segmentation",
+      "authors": [
+        "Javeria Javed",
+        "Ahmed Salim",
+        "Muhammad Mahboob Ur Rahman"
+      ],
+      "abstract": "Accurate segmentation of the mitral valve from three-dimensional transesophageal echocardiography (3D TEE) is severely restricted by the scarcity of publicly available expert- annotated volumetric datasets. To address this critical limitation, we investigated Fourier Domain Adaptation (FDA), utilizing general-purpose generative-AI images (from platforms like Chat- GPT, Google Gemini, and Microsoft MAI) as annotation-free style donors for 3D mitral valve segmentation. We employed a DeepMitral residual U-Net model on the public MVSeg2023 dataset, comparing six conditions over three runs: real-only training, traditional augmentation, FDA with each generative source, and a non-AI FDA control using real-image style donors, plus an optimization-matched real-only control and a \\b{eta} sensitivity analysis. Case-level paired testing showed that FDA with these generative sources led to significant reductions in boundary- and surface-related errors across all three donor conditions relative to the primary real-only baseline. However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved generator-dependent. ChatGPT-FDA showed a significant GDS advantage over the optimization-matched control but not over the primary baseline, and Gemini-FDA showed no significant GDS difference. Notably, only MAI-FDA provided a statistically robust and significant increase in GDS compared to the primary baseline. The \\b{eta} sensitivity was not robust across training runs. These findings confirm that FDA remains an important augmentation mechanism. While generative-AI images offer a practical means of acquiring style diversity without new annotations, the non-AI control performed comparably to ChatGPT-FDA, so we do not conclude that this approach is superior to training with real-image donors.",
+      "published": "2026-11-03T16:01:44Z",
+      "updated": "2026-11-03T16:01:44Z",
+      "version": 1,
+      "identifiers": {
+        "arxiv": [
+          "2611.05106"
+        ],
+        "doi": []
+      },
+      "url": "https://arxiv.org/abs/2611.05106",
+      "pdf": "https://arxiv.org/pdf/2611.05106",
+      "venue": "arXiv",
+      "comment": "7 pages, 1 figure, 3 tables, submitted to IEEE for possible publication",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "imported": false,
+      "origin": "arxiv",
+      "first_seen": "2026-11-04T22:05:57Z",
+      "last_seen": "2026-11-04T22:05:57Z",
+      "classification": {
+        "bucket": "related",
+        "tracks": [
+          "DA"
+        ],
+        "task": "segmentation-unspecified",
+        "methods": [
+          "augmentation"
+        ],
+        "basis": "title+abstract",
+        "certainty": "clear-keywords",
+        "evidence": [
+          {
+            "label": "DA",
+            "quote": "Label-Preserving Fourier Domain Adaptation with Generative-AI and Real Style Donors for 3D Mitral Valve Segmentation\nAccurate segmentation of"
+          }
+        ],
+        "note": "自动关键词初筛；标签可能来自背景或对比描述，不代表已核实任务设置、实验条件或论文贡献。"
+      },
+      "review_status": "candidate",
+      "full_text_read": false,
+      "warnings": [],
+      "versions": [],
+      "ai_draft": {
+        "summary_zh": "论文研究3D TEE二尖瓣叶片分割中的标注数据稀缺与2D生成图像—3D体数据不匹配问题。方法以生成式AI或非AI图像作风格供体，采用切片级FDA迁移外观并复用真实掩膜。作者报告其可降低边界误差，但GDS收益依赖供体，MAI-FDA相对主基线提升最稳定。",
+        "problem": {
+          "text": "论文针对3D TEE二尖瓣分割的标注瓶颈：逐体积精确标注耗时，现有训练数据规模有限；同时，通用生成模型输出2D图像而非可直接用于训练的3D体素掩膜，造成维度与标注不匹配。",
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "To address this critical limitation, 3D TEE volume can take a trained operator upwards of two we investigated Fourier Domain Adaptation (FDA), utilizing2026 general-purpose generative-AI images (from platforms like Chat- hours [4], making it impractical for routine clinical workflows."
+            },
+            {
+              "page": 1,
+              "quote": "We ask whether this paradigm extends from 2D image morphology because it captures the dynamic, saddle-shaped classification to 3D TEE segmentation, a substantially harder leaflet geometry that two-dimensional imaging cannot fully problem for two reasons."
+            }
+          ]
+        },
+        "method": {
+          "text": "作者不把生成图像当作需要额外标注的独立样本，而将其作为外观风格供体。对真实、已有专家掩膜的3D TEE体积逐切片实施2D FDA，仅替换低频幅度分量并保留真实图像相位，再原样复用真实掩膜；比较真实数据、传统增强、三种生成式AI供体及非AI供体条件，并用相同DeepMitral训练协议进行评估。",
+          "evidence": [
+            {
+              "page": 2,
+              "quote": "Kazeminia et al. and Yi et al. subsequently than treating synthetic images as independent training ex- surveyed the rapid expansion of GAN applications across amples requiring annotation, we use each 2D image purely medical image synthesis, segmentation, and cross-modality as a style reference and apply Fourier Domain "
+            },
+            {
+              "page": 3,
+              "quote": "Since the anterior and posterior leaflets Mr and a synthetic 2D image Is, we applied conventional are merged into one foreground class, GDS reduces to the 2D FDA [12] independently to each slice of Ir (i.e., FDA standard Dice coefficient; we retain the term GDS to reflect was not implemented as a 3D Fourier transform)."
+            }
+          ]
+        },
+        "findings": [
+          {
+            "text": "相较于不使用FDA的设置，三类生成式来源的FDA均报告了边界和表面相关误差的显著降低，说明该策略对几何质量具有改善作用。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Case-level paired testing showed that FDA with these fundamental data bottleneck of medical image segmentation generative sources led to significant reductions in boundary- and persists: MVSeg2023 provides only 105 annotated training surface-related errors across all three donor conditions relative volumes, an order of"
+              }
+            ]
+          },
+          {
+            "text": "GDS收益具有生成器依赖性：ChatGPT-FDA相对优化更新数匹配的真实数据对照有显著优势，但未超过主基线；Gemini-FDA与主基线的GDS差异不显著。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "ChatGPT-FDA showed a significant GDS nnU-Net in other anatomical domains [6]."
+              },
+              {
+                "page": 1,
+                "quote": "Because 3D TEE[eess.IV] advantage over the optimization-matched control but not over annotation requires simultaneous expertise in cardiac anatomy the primary baseline, and Gemini-FDA showed no significant and ultrasound interpretation, this scarcity is unlikely to be GDS difference."
+              }
+            ]
+          },
+          {
+            "text": "在作者报告的条件中，只有MAI-FDA相对主基线取得统计上明确且稳健的GDS提升。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Notably, only MAI-FDA provided a statistically resolved through additional manual labelling alone."
+              },
+              {
+                "page": 1,
+                "quote": "robust and significant increase in GDS compared to the primary baseline."
+              }
+            ]
+          },
+          {
+            "text": "非AI风格供体与ChatGPT-FDA表现相近，表明观察到的收益不能简单归因于生成式AI本身。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "While generative-AI images offer a practical Generative Adversarial Networks (GANs) have been used to means of acquiring style diversity without new annotations, the augment liver lesion classification [7], and surveys of GAN- non-AI control performed comparably to ChatGPT-FDA, so we based medical image synthesis docum"
+              }
+            ]
+          },
+          {
+            "text": "作者据此认为，FDA仍是有价值的增强方式，但其核心重叠指标的效果并非对所有生成来源都一致。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved that power state-of-the-art segmentation frameworks such as generator-dependent."
+              },
+              {
+                "page": 1,
+                "quote": "A parallel line of work has explored synthetic data gen- These findings confirm that FDA remains an important augmen- eration as a remedy for small medical imaging datasets."
+              }
+            ]
+          }
+        ],
+        "open_problems": [
+          {
+            "text": "GDS效果对风格供体或生成器存在依赖，部分供体未能相对主基线带来显著提升，说明供体选择与稳定收益之间的关系仍未解决。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved that power state-of-the-art segmentation frameworks such as generator-dependent."
+              },
+              {
+                "page": 1,
+                "quote": "Because 3D TEE[eess.IV] advantage over the optimization-matched control but not over annotation requires simultaneous expertise in cardiac anatomy the primary baseline, and Gemini-FDA showed no significant and ultrasound interpretation, this scarcity is unlikely to be GDS difference."
+              }
+            ],
+            "kind": "limitation"
+          },
+          {
+            "text": "FDA参数β的敏感性在不同训练运行之间并不稳健，方法对该参数的稳定性仍是未解决问题。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "The β sensitivity was not robust across training runs."
+              }
+            ],
+            "kind": "limitation"
+          }
+        ],
+        "insights": [
+          {
+            "text": "编辑推断：若采用FDA式增强，应同时报告匹配优化预算的真实数据对照，避免把额外训练更新误判为数据增强收益。",
+            "evidence": [
+              {
+                "page": 3,
+                "quote": "Because the FDA sets batches per epoch, i.e., 390 updates; each FDA condition (145 contain more volumes than the baseline and therefore receive volumes) yields 36 mini-batches per epoch, i.e., 540 updates."
+              },
+              {
+                "page": 3,
+                "quote": "more optimization updates, we additionally trained a 540- The primary baseline used the 105 real training volumes update real-only control matching their budget."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：二尖瓣这类边界敏感任务不宜只看重叠指标，应结合HD95和表面误差评估几何质量。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "Case-level paired testing showed that FDA with these fundamental data bottleneck of medical image segmentation generative sources led to significant reductions in boundary- and persists: MVSeg2023 provides only 105 annotated training surface-related errors across all three donor conditions relative volumes, an order of"
+              },
+              {
+                "page": 3,
+                "quote": "Segmentation quality is assessed with the Generalized Dice Score (GDS) for overlap, the 95th-percentile Hausdorff Dis- C. Slice-wise 2D Fourier Domain Adaptation tance (HD95) for boundary discrepancy, and Surface Distance Given a real 3D TEE volume Ir with expert leaflet mask for mean surface error."
+              }
+            ]
+          },
+          {
+            "text": "编辑推断：生成式AI供体应与非AI风格供体并列比较，并进行供体来源追踪，以区分生成器能力与一般外观扰动的作用。",
+            "evidence": [
+              {
+                "page": 1,
+                "quote": "While generative-AI images offer a practical Generative Adversarial Networks (GANs) have been used to means of acquiring style diversity without new annotations, the augment liver lesion classification [7], and surveys of GAN- non-AI control performed comparably to ChatGPT-FDA, so we based medical image synthesis docum"
+              },
+              {
+                "page": 2,
+                "quote": "FDA and related style-donor control, a provenance-tracked FDA param- Fourier-based augmentation strategies have since been applied eter sensitivity analysis, and case-level paired statistical to source-free medical image domain adaptation [21]."
+              }
+            ]
+          }
+        ],
+        "role": {
+          "setting": "3D TEE二尖瓣叶片分割；以真实标注体积为基础，将2D图像外观迁移到真实3D训练体积。经典源域/目标域划分未明确。",
+          "supervision": "真实训练体积具有专家叶片掩膜；2D生成图像无分割标注，仅作风格参考；验证和测试均为真实专家标注体积。",
+          "modalities": "输入为3D经食管超声心动图（TEE）体积；风格供体为生成式AI或非AI的2D图像；输出为二值叶片分割。",
+          "datasets": "公开MVSeg2023数据集，包含训练、验证和测试体积；实验将前叶与后叶合并为单一二值叶片类别。",
+          "evaluation": "使用GDS评估重叠，HD95评估边界差异，平均表面误差评估表面质量；在相同留出测试体积上进行病例级比较。"
+        },
+        "evidence": [
+          {
+            "claim": "论文针对3D TEE二尖瓣分割的标注瓶颈：逐体积精确标注耗时，现有训练数据规模有限；同时，通用生成模型输出2D图像而非可直接用于训练的3D体素掩膜，造成维度与标注不匹配。",
+            "page": 1,
+            "quote": "To address this critical limitation, 3D TEE volume can take a trained operator upwards of two we investigated Fourier Domain Adaptation (FDA), utilizing2026 general-purpose generative-AI images (from platforms like Chat- hours [4], making it impractical for routine clinical workflows.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "论文针对3D TEE二尖瓣分割的标注瓶颈：逐体积精确标注耗时，现有训练数据规模有限；同时，通用生成模型输出2D图像而非可直接用于训练的3D体素掩膜，造成维度与标注不匹配。",
+            "page": 1,
+            "quote": "We ask whether this paradigm extends from 2D image morphology because it captures the dynamic, saddle-shaped classification to 3D TEE segmentation, a substantially harder leaflet geometry that two-dimensional imaging cannot fully problem for two reasons.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "作者不把生成图像当作需要额外标注的独立样本，而将其作为外观风格供体。对真实、已有专家掩膜的3D TEE体积逐切片实施2D FDA，仅替换低频幅度分量并保留真实图像相位，再原样复用真实掩膜；比较真实数据、传统增强、三种生成式AI供体及非AI供体条件，并用相同DeepMitral训练协议进行评估。",
+            "page": 2,
+            "quote": "Kazeminia et al. and Yi et al. subsequently than treating synthetic images as independent training ex- surveyed the rapid expansion of GAN applications across amples requiring annotation, we use each 2D image purely medical image synthesis, segmentation, and cross-modality as a style reference and apply Fourier Domain ",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=2"
+          },
+          {
+            "claim": "作者不把生成图像当作需要额外标注的独立样本，而将其作为外观风格供体。对真实、已有专家掩膜的3D TEE体积逐切片实施2D FDA，仅替换低频幅度分量并保留真实图像相位，再原样复用真实掩膜；比较真实数据、传统增强、三种生成式AI供体及非AI供体条件，并用相同DeepMitral训练协议进行评估。",
+            "page": 3,
+            "quote": "Since the anterior and posterior leaflets Mr and a synthetic 2D image Is, we applied conventional are merged into one foreground class, GDS reduces to the 2D FDA [12] independently to each slice of Ir (i.e., FDA standard Dice coefficient; we retain the term GDS to reflect was not implemented as a 3D Fourier transform).",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=3"
+          },
+          {
+            "claim": "相较于不使用FDA的设置，三类生成式来源的FDA均报告了边界和表面相关误差的显著降低，说明该策略对几何质量具有改善作用。",
+            "page": 1,
+            "quote": "Case-level paired testing showed that FDA with these fundamental data bottleneck of medical image segmentation generative sources led to significant reductions in boundary- and persists: MVSeg2023 provides only 105 annotated training surface-related errors across all three donor conditions relative volumes, an order of",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "GDS收益具有生成器依赖性：ChatGPT-FDA相对优化更新数匹配的真实数据对照有显著优势，但未超过主基线；Gemini-FDA与主基线的GDS差异不显著。",
+            "page": 1,
+            "quote": "ChatGPT-FDA showed a significant GDS nnU-Net in other anatomical domains [6].",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "GDS收益具有生成器依赖性：ChatGPT-FDA相对优化更新数匹配的真实数据对照有显著优势，但未超过主基线；Gemini-FDA与主基线的GDS差异不显著。",
+            "page": 1,
+            "quote": "Because 3D TEE[eess.IV] advantage over the optimization-matched control but not over annotation requires simultaneous expertise in cardiac anatomy the primary baseline, and Gemini-FDA showed no significant and ultrasound interpretation, this scarcity is unlikely to be GDS difference.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "在作者报告的条件中，只有MAI-FDA相对主基线取得统计上明确且稳健的GDS提升。",
+            "page": 1,
+            "quote": "Notably, only MAI-FDA provided a statistically resolved through additional manual labelling alone.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "在作者报告的条件中，只有MAI-FDA相对主基线取得统计上明确且稳健的GDS提升。",
+            "page": 1,
+            "quote": "robust and significant increase in GDS compared to the primary baseline.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "非AI风格供体与ChatGPT-FDA表现相近，表明观察到的收益不能简单归因于生成式AI本身。",
+            "page": 1,
+            "quote": "While generative-AI images offer a practical Generative Adversarial Networks (GANs) have been used to means of acquiring style diversity without new annotations, the augment liver lesion classification [7], and surveys of GAN- non-AI control performed comparably to ChatGPT-FDA, so we based medical image synthesis docum",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "作者据此认为，FDA仍是有价值的增强方式，但其核心重叠指标的效果并非对所有生成来源都一致。",
+            "page": 1,
+            "quote": "However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved that power state-of-the-art segmentation frameworks such as generator-dependent.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "作者据此认为，FDA仍是有价值的增强方式，但其核心重叠指标的效果并非对所有生成来源都一致。",
+            "page": 1,
+            "quote": "A parallel line of work has explored synthetic data gen- These findings confirm that FDA remains an important augmen- eration as a remedy for small medical imaging datasets.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "GDS效果对风格供体或生成器存在依赖，部分供体未能相对主基线带来显著提升，说明供体选择与稳定收益之间的关系仍未解决。",
+            "page": 1,
+            "quote": "However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved that power state-of-the-art segmentation frameworks such as generator-dependent.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "GDS效果对风格供体或生成器存在依赖，部分供体未能相对主基线带来显著提升，说明供体选择与稳定收益之间的关系仍未解决。",
+            "page": 1,
+            "quote": "Because 3D TEE[eess.IV] advantage over the optimization-matched control but not over annotation requires simultaneous expertise in cardiac anatomy the primary baseline, and Gemini-FDA showed no significant and ultrasound interpretation, this scarcity is unlikely to be GDS difference.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "FDA参数β的敏感性在不同训练运行之间并不稳健，方法对该参数的稳定性仍是未解决问题。",
+            "page": 1,
+            "quote": "The β sensitivity was not robust across training runs.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "编辑推断：若采用FDA式增强，应同时报告匹配优化预算的真实数据对照，避免把额外训练更新误判为数据增强收益。",
+            "page": 3,
+            "quote": "Because the FDA sets batches per epoch, i.e., 390 updates; each FDA condition (145 contain more volumes than the baseline and therefore receive volumes) yields 36 mini-batches per epoch, i.e., 540 updates.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=3"
+          },
+          {
+            "claim": "编辑推断：若采用FDA式增强，应同时报告匹配优化预算的真实数据对照，避免把额外训练更新误判为数据增强收益。",
+            "page": 3,
+            "quote": "more optimization updates, we additionally trained a 540- The primary baseline used the 105 real training volumes update real-only control matching their budget.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=3"
+          },
+          {
+            "claim": "编辑推断：二尖瓣这类边界敏感任务不宜只看重叠指标，应结合HD95和表面误差评估几何质量。",
+            "page": 1,
+            "quote": "Case-level paired testing showed that FDA with these fundamental data bottleneck of medical image segmentation generative sources led to significant reductions in boundary- and persists: MVSeg2023 provides only 105 annotated training surface-related errors across all three donor conditions relative volumes, an order of",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "编辑推断：二尖瓣这类边界敏感任务不宜只看重叠指标，应结合HD95和表面误差评估几何质量。",
+            "page": 3,
+            "quote": "Segmentation quality is assessed with the Generalized Dice Score (GDS) for overlap, the 95th-percentile Hausdorff Dis- C. Slice-wise 2D Fourier Domain Adaptation tance (HD95) for boundary discrepancy, and Surface Distance Given a real 3D TEE volume Ir with expert leaflet mask for mean surface error.",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=3"
+          },
+          {
+            "claim": "编辑推断：生成式AI供体应与非AI风格供体并列比较，并进行供体来源追踪，以区分生成器能力与一般外观扰动的作用。",
+            "page": 1,
+            "quote": "While generative-AI images offer a practical Generative Adversarial Networks (GANs) have been used to means of acquiring style diversity without new annotations, the augment liver lesion classification [7], and surveys of GAN- non-AI control performed comparably to ChatGPT-FDA, so we based medical image synthesis docum",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=1"
+          },
+          {
+            "claim": "编辑推断：生成式AI供体应与非AI风格供体并列比较，并进行供体来源追踪，以区分生成器能力与一般外观扰动的作用。",
+            "page": 2,
+            "quote": "FDA and related style-donor control, a provenance-tracked FDA param- Fourier-based augmentation strategies have since been applied eter sensitivity analysis, and case-level paired statistical to source-free medical image domain adaptation [21].",
+            "source": "https://arxiv.org/pdf/2611.05106v1#page=2"
+          }
+        ],
+        "model": "gpt-6.1-sol",
+        "prompt_version": "3d-seg-reading-v4",
+        "generated_at": "2026-11-04T22:07:29Z",
+        "human_approved": false,
+        "stale": false,
+        "source_hash": "25a6be0b4be3169414efc647e27a7fd916e403b35d051729d8a4f5c9900616b9",
+        "scope": "pdf-evidence",
+        "input_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
     }
   },
   "queries": {
     "domain-adaptation": {
       "query_hash": "52a0e3ccb5dcd110a89f76d62f205b770feabd580d61865036a2d120984fe103",
-      "completed_until": "2026-11-03T21:54:37Z",
-      "last_success": "2026-11-03T21:54:37Z"
+      "completed_until": "2026-11-04T22:05:57Z",
+      "last_success": "2026-11-04T22:05:57Z"
     },
     "domain-generalization": {
       "query_hash": "34da850c85904e713808457a261b5e71ec38af5f1ba43ae66b255e7ccec87643",
-      "completed_until": "2026-11-03T21:54:37Z",
-      "last_success": "2026-11-03T21:54:37Z"
+      "completed_until": "2026-11-04T22:05:57Z",
+      "last_success": "2026-11-04T22:05:57Z"
     },
     "open-vocabulary": {
       "query_hash": "c8ec8aae43f6a1ec15d3f4d452aee7ff452d90e96c7ce39fd4c7829b000a56e1",
-      "completed_until": "2026-11-03T21:54:37Z",
-      "last_success": "2026-11-03T21:54:37Z"
+      "completed_until": "2026-11-04T22:05:57Z",
+      "last_success": "2026-11-04T22:05:57Z"
     },
     "test-time-adaptation": {
       "query_hash": "c784e33a5515a6f3fe7d2856ccf48db2b801efbc836af1ba5609208716d981ea",
-      "completed_until": "2026-11-03T21:54:37Z",
-      "last_success": "2026-11-03T21:54:37Z"
+      "completed_until": "2026-11-04T22:05:57Z",
+      "last_success": "2026-11-04T22:05:57Z"
     }
   },
   "events": [
@@ -71486,9 +71846,16 @@
       "paper_id": "arxiv:2611.00582",
       "title": "SaddleSense: Saddle-Shaped Modules for 3D Shape Sensing with Single-Axis Off-the-Shelf Bend Sensors",
       "at": "2026-11-03T21:54:37Z"
+    },
+    {
+      "key": "b35e60e9769bd7670bb9c776",
+      "kind": "discovered",
+      "paper_id": "arxiv:2611.05106",
+      "title": "Label-Preserving Fourier Domain Adaptation with Generative-AI and Real Style Donors for 3D Mitral Valve Segmentation",
+      "at": "2026-11-04T22:05:57Z"
     }
   ],
-  "revision_cursor": 171,
+  "revision_cursor": 211,
   "runs": [
     {
       "at": "2026-10-13T20:47:44Z",
@@ -73551,55 +73918,108 @@
         }
       ],
       "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
+    },
+    {
+      "at": "2026-11-04T22:05:57Z",
+      "status": "ok",
+      "counts": {
+        "new": 1,
+        "revised": 0,
+        "existing": 0,
+        "metadata": 0,
+        "unchanged": 48,
+        "conflict": 0
+      },
+      "sources": [
+        {
+          "source": "domain-adaptation",
+          "start": "2026-10-27T21:54:37Z",
+          "end": "2026-11-04T22:05:57Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 4
+        },
+        {
+          "source": "domain-generalization",
+          "start": "2026-10-27T21:54:37Z",
+          "end": "2026-11-04T22:05:57Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 3
+        },
+        {
+          "source": "open-vocabulary",
+          "start": "2026-10-27T21:54:37Z",
+          "end": "2026-11-04T22:05:57Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "test-time-adaptation",
+          "start": "2026-10-27T21:54:37Z",
+          "end": "2026-11-04T22:05:57Z",
+          "backlog_days": 0,
+          "status": "ok",
+          "matched": 1
+        },
+        {
+          "source": "known-revisions",
+          "status": "ok",
+          "checked": 40,
+          "total_known": 248
+        }
+      ],
+      "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
     }
   ],
   "zotero_last_run": {
-    "at": "2026-11-03T21:54:37Z",
+    "at": "2026-11-04T22:05:57Z",
     "status": "disabled",
     "added": 0,
     "matched": 0,
     "conflicts": 0
   },
   "last_run": {
-    "at": "2026-11-03T21:54:37Z",
+    "at": "2026-11-04T22:05:57Z",
     "status": "ok",
     "counts": {
-      "new": 2,
+      "new": 1,
       "revised": 0,
       "existing": 0,
       "metadata": 0,
-      "unchanged": 46,
+      "unchanged": 48,
       "conflict": 0
     },
     "sources": [
       {
         "source": "domain-adaptation",
-        "start": "2026-10-26T23:39:32Z",
-        "end": "2026-11-03T21:54:37Z",
+        "start": "2026-10-27T21:54:37Z",
+        "end": "2026-11-04T22:05:57Z",
         "backlog_days": 0,
         "status": "ok",
-        "matched": 3
+        "matched": 4
       },
       {
         "source": "domain-generalization",
-        "start": "2026-10-26T23:39:32Z",
-        "end": "2026-11-03T21:54:37Z",
+        "start": "2026-10-27T21:54:37Z",
+        "end": "2026-11-04T22:05:57Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 3
       },
       {
         "source": "open-vocabulary",
-        "start": "2026-10-26T23:39:32Z",
-        "end": "2026-11-03T21:54:37Z",
+        "start": "2026-10-27T21:54:37Z",
+        "end": "2026-11-04T22:05:57Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 1
       },
       {
         "source": "test-time-adaptation",
-        "start": "2026-10-26T23:39:32Z",
-        "end": "2026-11-03T21:54:37Z",
+        "start": "2026-10-27T21:54:37Z",
+        "end": "2026-11-04T22:05:57Z",
         "backlog_days": 0,
         "status": "ok",
         "matched": 1
@@ -73608,17 +74028,17 @@
         "source": "known-revisions",
         "status": "ok",
         "checked": 40,
-        "total_known": 247
+        "total_known": 248
       }
     ],
     "note": "新增指本站首次发现；修订另计；关键词初筛不等于全文审核。"
   },
-  "last_full_success": "2026-11-03T21:54:37Z",
+  "last_full_success": "2026-11-04T22:05:57Z",
   "llm_last_run": {
-    "at": "2026-11-03T21:55:00Z",
+    "at": "2026-11-04T22:06:34Z",
     "status": "ok",
-    "attempted": 2,
-    "succeeded": 2,
+    "attempted": 1,
+    "succeeded": 1,
     "skipped": [
       {
         "id": "arxiv:2609.16755",
@@ -73632,6 +74052,7 @@
   },
   "llm_budget": {
     "2026-11-02": 1,
-    "2026-11-03": 2
+    "2026-11-03": 2,
+    "2026-11-04": 1
   }
 }
